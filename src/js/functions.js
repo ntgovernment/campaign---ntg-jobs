@@ -1,0 +1,356 @@
+(function () {
+    initPriorityNav();
+    initResponsiveMenu();
+    initMmenu();
+    initMenuEdge();
+    initSuperfish();
+    initSideNav();
+    initInPageNav();
+    initScrollToTop();
+    initImageComparison();
+    initResponsiveTable();
+    initFlickity();
+    initCountUp();
+})();
+
+function initPriorityNav() {
+    var mainNav = document.querySelector('.ntg-main-nav');
+    if (!mainNav) {
+        return false;
+    }
+    
+    new PriorityNav('.ntg-main-nav');
+}
+
+function initResponsiveMenu() {
+    var mainNav = document.getElementById('mainmenu');
+    if( !mainNav) {
+        return false;
+    }
+
+    responsivemenu.init({
+        wrapper: document.querySelector('#mainmenu'),
+    });
+}
+
+function initMmenu() {
+    const mmenuWrapper = document.getElementById('mmenu-wrapper');
+    if (!mmenuWrapper) {
+        return false;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const mmenu = new Mmenu('#mmenu-wrapper', {
+            "offCanvas": {
+                "position": "right-front"
+            }
+        });
+
+        const API = mmenu.API;
+
+        // closes the menu automatically if screen is resized above 992px
+        window.addEventListener('resize', function () {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                API.close();
+            }
+        });
+    });
+}
+
+// dynamically shifts main nav dropdown position based on window width
+function initMenuEdge() {
+    var links = document.querySelectorAll('.ntg-main-nav__links > li');
+
+    if (!links) {
+        return false
+    }
+
+    links.forEach(link => {
+        var second = link.querySelector('ul > li > ul');
+        var third = link.querySelector('ul > li > ul > li > ul');
+
+        if ((second || third) && !link.classList.contains("more")) {
+            link.addEventListener('mouseenter', function () {
+                avoidEdge();
+            });
+            link.addEventListener('keydown', function () {
+                avoidEdge();
+            });
+            link.addEventListener('touchstart', function () {
+                avoidEdge();
+            });
+        }
+
+        function avoidEdge() {
+            var offset = offset(link);
+            var left = offset.left;
+            var width_1 = 300; // second level width
+            var width_2 = 600; // third level width
+            var wnWidth = window.innerWidth;
+
+            var isSecondVisible = left + width_1 <= wnWidth;
+            var isThirdVisible = left + width_2 <= wnWidth;
+
+            if (!isThirdVisible) {
+                link.classList.add("edge");
+            } else {
+                link.classList.remove("edge");
+            }
+
+            if (!isSecondVisible) {
+                link.classList.add("all");
+            } else {
+                link.classList.remove("all");
+            }
+
+            function offset(elem) {
+                var rect = elem.getBoundingClientRect();
+                
+                return {
+                    left: rect.left + window.scrollX,
+                }
+            }
+        }
+    });
+}
+
+function initSuperfish() {
+    $(document).ready(function () {
+        $('ul.sf-menu').superfish({
+            // options
+            delay: 250,
+            speed: 250,
+            speedOut: 250,
+            cssArrows: false
+        });
+    });
+}
+
+// dynamically add all h2 elements on the page into anchor list
+function initInPageNav() {
+    var inPageNav = document.getElementById('in-page-nav');
+    if (!inPageNav) {
+        return false;
+    }
+
+    var list = inPageNav.querySelector('ul');
+    document.querySelectorAll('#content h2').forEach(function (element, index) {
+        if (index === 0) {
+            return false;
+        }
+
+        var heading = element;
+        if (element.querySelector('a')) {
+            element = element.querySelector('a');
+            heading = element.parentElement;
+        }
+        
+        list.insertAdjacentHTML(
+            'beforeend',
+            '<li><a href="#' +
+                element.innerHTML
+                    .replace(/&amp;/g, 'and')
+                    .replace(/[^a-z0-9 ]/gi, '')
+                    .replace(/\s/g, '-')
+                    .toLowerCase() +
+                '">' +
+                element.innerHTML +
+                '</a></li>'
+        );
+        element.setAttribute(
+            'id',
+            element.innerHTML
+                .replace(/&amp;/g, 'and')
+                .replace(/[^a-z0-9 ]/gi, '')
+                .replace(/\s/g, '-')
+                .toLowerCase()
+        );
+    });
+}
+
+// adds accordion functionality to nested items in the side navigation
+function initSideNav() {
+    var sideNavParents = document.querySelectorAll('.ntg-side-nav__collapser');
+    if (!sideNavParents) {
+        return false;
+    }
+
+    for (var i = 0; i < sideNavParents.length; i++) {
+        sideNavParents[i].addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var thisNext = this.parentElement.getElementsByClassName('collapse')[0];
+
+            if (thisNext.classList.contains('show')) {
+                thisNext.classList.remove('show');
+                this.classList.add('collapsed');
+            } else {
+                thisNext.classList.add('show');
+                this.classList.remove('collapsed');
+            }
+        });
+    }
+}
+
+function initScrollToTop() {
+    var backToTop = document.querySelector('.back-to-top');
+    if (!backToTop) {
+        return false;
+    }
+
+    var backToTopLink = backToTop.querySelector('.back-to-top button');
+    var footer = document.querySelector('.ntg-footer');
+    var isGoUpOn = false;
+    var scrollHighSensor = 500;
+
+    window.addEventListener('scroll', function () {
+        buttonUpService(this);
+        checkFooterPosition();
+    });
+
+    window.addEventListener('resize', function () {
+        checkFooterPosition();
+    });
+
+    backToTopLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        // workaround to ensure the focus is reset to the top of the page when using keyboard
+        document.querySelector('header a').focus({ preventScroll: true });
+        scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
+    });
+
+    // checks the scroll position of the page and determines whether the back to top button should be visible
+    function buttonUpService() {
+        if (!isGoUpOn) {
+            if (window.pageYOffset > scrollHighSensor) {
+                isGoUpOn = true;
+                fadeIn(backToTop);
+            }
+        } else {
+            if (window.pageYOffset <= scrollHighSensor) {
+                fadeOut(backToTop);
+                isGoUpOn = false;
+            }
+        }
+    }
+
+    function checkFooterPosition() {
+        var scrollBottom = document.body.clientHeight - document.documentElement.clientHeight - document.documentElement.scrollTop;
+        if (scrollBottom < footer.offsetHeight) {
+            backToTop.style.marginBottom = footer.offsetHeight - scrollBottom + 'px';
+        } else {
+            backToTop.style.marginBottom = 0;
+        }
+    }
+}
+
+function initImageComparison() {
+    var imageComparison = document.querySelectorAll('.ntg-image-comparison__wrapper');
+    if (!imageComparison) {
+        return false;
+    }
+
+    imageComparison.forEach(function(element) {
+        new Cocoen(element);
+    });
+}
+
+function initResponsiveTable() {
+    document.querySelectorAll('[class*="custom-table-"]').forEach(function (element) {
+        responsiveCellHeaders(element);
+        addTableAria(element);
+    });
+}
+
+function initFlickity() {
+    var carousels = document.querySelectorAll('.flickity-carousel');
+    if (!carousels) {
+        return false;
+    }
+
+    carousels.forEach(function (carousel) {
+        var flkty = new Flickity(carousel, {
+            // options
+            cellAlign: 'center'
+        });
+    });
+
+    /**
+     * @todo Vanilla JS implementation of keyboard focus
+     */
+}
+
+function toggleCarouselButton() {
+    var carousels = document.querySelectorAll('.carousel');
+    var paused = false;
+    
+    // filter out carousels that haven't been initialized
+    var initializedCarousels = Array.prototype.filter.call(carousels, function(carousel) {
+      return carousel.getAttribute('data-bs-interval') !== null || carousel.getAttribute('data-bs-interval') !== "false";
+    });
+    
+    initializedCarousels.forEach(function(carousel) {
+        let bootstrapCarousel = new bootstrap.Carousel(carousel);
+        const toggleButton = carousel.querySelector('.toggleCarouselBtn');
+        
+        if (toggleButton) {
+            let playPauseIcon = toggleButton.querySelector('i');
+            toggleButton.addEventListener('click', function(e) {
+                if (paused){
+                    bootstrapCarousel.cycle();
+                    playPauseIcon.classList.remove("fa-play");
+                    playPauseIcon.classList.add("fa-pause");
+                    paused = false;
+                }
+                else {
+                    bootstrapCarousel.pause();
+                    playPauseIcon.classList.remove("fa-pause");
+                    playPauseIcon.classList.add("fa-play");
+                    paused = true;
+                }
+            })
+        }
+        
+    })
+}
+
+function initCountUp() {
+    var values = document.querySelectorAll('.count-up');
+
+    values.forEach(function (value) {
+        var target = value.innerHTML.replace(/[^\d.]/g, '');
+
+        // default options
+        var decimalPlaces = 0;
+        var prefix = '';
+        var suffix = '';
+
+        // check for decimal places
+        if (target.includes('.')) {
+            decimalPlaces = target.split('.')[1].length;
+        }
+
+        // check for prefix
+        if (value.hasAttribute('data-prefix')) {
+            prefix = value.getAttribute('data-prefix');
+        }
+
+        // check for suffix
+        if (value.hasAttribute('data-suffix')) {
+            suffix = value.getAttribute('data-suffix');
+        }
+
+        const countUp = new CountUp(value, target, {
+            decimalPlaces: decimalPlaces,
+            duration: 3,
+            prefix: prefix,
+            suffix: suffix,
+            enableScrollSpy: true,
+            scrollSpyOnce: 1
+        });
+    });
+}

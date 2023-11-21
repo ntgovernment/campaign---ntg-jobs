@@ -1,0 +1,63 @@
+$font-weight-bold:            700;
+
+$font-size-root:              null;
+$font-size-base:              1rem;
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer * .5;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            300;
+
+$small-font-size:             .875em;
+
+$sub-sup-font-size:           .75em;
+
+// fusv-disable
+$text-muted:                  var(--#{$prefix}secondary-color); // Deprecated in 5.3.0
+// fusv-enable
+
+$initialism-font-size:        $small-font-size;
+
+$blockquote-margin-y:         $spacer;
+$blockquote-font-size:        $font-size-base * 1.25;
+$blockquote-footer-color:     #6c757d;
+$blockquote-footer-font-size: $small-font-size;
+
+$hr-margin-y:                 $spacer;
+$hr-color:                    inherit;
+
+// fusv-disable
+$hr-bg-color:                 null; // Deprecated in v5.2.0
+$hr-height:                   null; // Deprecated in v5.2.0
+// fusv-enable
+
+$hr-border-color:             null; // Allows for inherited colors
+$hr-border-width:             var(--#{$prefix}border-width);
+$hr-opacity:                  .25;
+
+$vr-border-width:             var(--#{$prefix}border-width);
+
+$legend-margin-bottom:        .5rem;
+$legend-font-size:            1.5rem;
+$legend-font-weight:          null;
+
+$dt-font-weight:              $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-padding:                .1875em;
+$mark-color:                  $body-color;

@@ -1,0 +1,20 @@
+.btn {
+    &:focus {
+        @include focus();
+    }
+
+    &-secondary {
+        color: $btn-secondary-colour;
+
+        &:hover,
+        &:focus {
+            color: $btn-secondary-colour;
+        }
+    }
+
+    &-close {
+        &:focus {
+            @include focus();
+        }
+    }
+}

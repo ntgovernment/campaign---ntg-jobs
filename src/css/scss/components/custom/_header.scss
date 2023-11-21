@@ -1,0 +1,63 @@
+.page-header-container {
+    @include media-breakpoint-down(sm) {
+        background-color: $primary;
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.ntg-header {
+    @include media-breakpoint-up(sm) {
+        background-color: $primary;
+        padding: 1.5rem 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+
+        @include media-breakpoint-up(sm) {
+            align-items: center;
+            flex-flow: row nowrap;
+        }
+    }
+
+    &__logo {
+        max-width: 215px;
+        width: 100%;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: 1px solid $white;
+        }
+    }
+
+    &__text {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        margin-top: 0.25rem;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: 0.5rem;
+        }
+    }
+}
