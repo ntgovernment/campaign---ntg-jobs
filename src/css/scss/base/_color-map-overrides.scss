@@ -5,6 +5,18 @@
 //Adding text color for light and dark mode as an example
 // Light mode
 //Use the main color for each theme-colors
+$theme-colors-text: (
+    "primary":    $white,
+    "secondary":  $ntg-dark-gray,
+    "tertiary":   $white,
+    "success":    $white,
+    "info":       $white,
+    "warning":    $ntg-dark-gray,
+    "danger":     $ntg-dark-gray,
+    "light":      $ntg-dark-gray,
+    "dark":       $white
+);
+
 @each $color-name, $color-values in $base-colors {
     $theme-colors-text: map-merge($theme-colors-text, (
         #{$color-name}: map.get($color-values, "text-color")
@@ -20,6 +32,12 @@
 @each $color-name, $color-values in $base-colors {
     $theme-colors-border-subtle: map-merge($theme-colors-border-subtle, (
         #{$color-name}: map.get($color-values, "border-subtle-color")
+    ));
+}
+
+@each $color-name, $color-values in $base-colors {
+    $utilities-bg-subtle: map-merge($utilities-bg-subtle, (
+        #{$color-name}-subtle: var(--#{$prefix}#{$color-name}-bg-subtle),
     ));
 }
 

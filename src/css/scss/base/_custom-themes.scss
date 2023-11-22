@@ -10,14 +10,26 @@
 @each $color, $value in $base-colors {
     [data-bs-theme="#{$color}"] {
         --bs-primary: #{map.get($value, "primary")};
+        --bs-primary-rgb: to-rgb(map.get($value, "primary"));
         --bs-primary-text: #{map.get($value, "primary-text")};
         --bs-secondary: #{map.get($value, "secondary")};
+        --bs-secondary-rgb: to-rgb(map.get($value, "secondary"));
         --bs-secondary-text: #{map.get($value, "secondary-text")};
         --bs-tertiary: #{map.get($value, "tertiary")};
+        --bs-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
         --bs-tertiary-text: #{map.get($value, "tertiary-text")};
         --bs-body-bg: #{map.get($value, "main")};
-        --bs-body-bg-rgb: to-rgb(map.get($value, "main"));
-
+        --bs-body-bg-rgb: #{to-rgb(map.get($value, "main"))};
+        --bs-primary-text-emphasis: #{shade-color(map.get($value, "primary"), 60%)};
+        --bs-secondary-text-emphasis: #{shade-color(map.get($value, "secondary"), 60%)};
+        --bs-tertiary-text-emphasis: #{shade-color(map.get($value, "tertiary"), 60%)};
+        --bs-primary-bg-subtle: #{tint-color(map.get($value, "primary"), 60%)};
+        --bs-secondary-bg-subtle: #{tint-color(map.get($value, "secondary"), 60%)};
+        --bs-tertiary-bg-subtle: #{tint-color(map.get($value, "tertiary"), 60%)};
+        --bs-primary-border-subtle: #{tint-color(map.get($value, "primary"), 30%)};
+        --bs-secondary-border-subtle: #{tint-color(map.get($value, "secondary"), 30%)};
+        --bs-tertiary-border-subtle: #{tint-color(map.get($value, "tertiary"), 30%)};
+        
         .btn-primary {
             @include button-variant(map.get($value, "primary"), map.get($value, "primary"), map.get($value, "primary-text"))
         }
@@ -27,7 +39,6 @@
         .btn-tertiary {
             @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
         }
-
         .btn-outline-primary {
             @include button-outline-variant(map.get($value, "primary"))
         }

@@ -17,11 +17,12 @@
 @import "../../../node_modules/bootstrap/scss/variables-dark"; // required
 
 @import "../../../node_modules/bootstrap/scss/maps"; // required
-@import '../../../node_modules/bootstrap/scss/mixins'; // required
-@import '../../../node_modules/bootstrap/scss/root'; // required
 
 //Adding text color for light and dark mode as an example
 @import './base/color-map-overrides';
+
+@import '../../../node_modules/bootstrap/scss/mixins'; // required
+@import '../../../node_modules/bootstrap/scss/root'; // required
 
 @import '../../../node_modules/bootstrap/scss/utilities'; // required
 @import '../../../node_modules/bootstrap/scss/reboot'; // required
