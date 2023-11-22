@@ -1,0 +1,21 @@
+@use "sass:map";
+
+@each $color, $value in $theme-colors-text {
+    [data-bs-theme="#{$color}"] {
+        --bs-body-color: #{$value};
+        --bs-body-color-rgb: #{to-rgb($value)};
+    }
+}
+
+@each $color, $value in $base-colors {
+    [data-bs-theme="#{$color}"] {
+        --bs-primary: #{map.get($value, "primary")};
+        --bs-primary-text: #{map.get($value, "primary-text")};
+        --bs-secondary: #{map.get($value, "secondary")};
+        --bs-secondary-text: #{map.get($value, "secondary-text")};
+        --bs-tertiary: #{map.get($value, "tertiary")};
+        --bs-tertiary-text: #{map.get($value, "tertiary-text")};
+        --bs-body-bg: #{map.get($value, "main")};
+        --bs-body-bg-rgb: to-rgb(map.get($value, "main"));
+    }
+}

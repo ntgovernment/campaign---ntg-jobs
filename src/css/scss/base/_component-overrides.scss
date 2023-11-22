@@ -1,0 +1,39 @@
+@each $color, $value in $theme-colors-text  {
+    .btn-#{$color} {
+        @if $color == "primary" {
+            --#{$prefix}btn-bg: var(--bs-primary);
+            --#{$prefix}btn-border-color: var(--bs-primary);
+            --#{$prefix}btn-color: var(--bs-primary-text);
+
+        } @else if $color == "secondary" {
+            --#{$prefix}btn-bg: var(--bs-secondary);
+            --#{$prefix}btn-border-color: var(--bs-secondary);
+            --#{$prefix}btn-color: var(--bs-secondary-text);
+
+        } @else if $color == "tertiary" {
+            --#{$prefix}btn-bg: var(--bs-tertiary);
+            --#{$prefix}btn-border-color: var(--bs-tertiary);
+            --#{$prefix}btn-color: var(--bs-tertiary-text);
+
+        } @else {
+            --#{$prefix}btn-color: #{$value};
+        }
+    }
+}
+
+@each $color, $value in $theme-colors-text  {
+    .bg-#{$color} {
+        @if $color == "primary" {
+            color: var(--bs-primary-text);
+
+        } @else if $color == "secondary" {
+            color: var(--bs-secondary-text);
+
+        } @else if $color == "tertiary" {
+            color: var(--bs-tertiary-text);
+
+        } @else {
+            color: #{$value};
+        }
+    }
+}

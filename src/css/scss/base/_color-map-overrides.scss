@@ -1,13 +1,27 @@
+@use "sass:map";
+
 //Check custom-map-overrides for overriding theme colors
+
 //Adding text color for light and dark mode as an example
 // Light mode
-$custom-colors-text: ("custom-color": #712cf9);
-$custom-colors-bg-subtle: ("custom-color": #e1d2fe);
-$custom-colors-border-subtle: ("custom-color": #bfa1fc);
+//Use the main color for each theme-colors
+@each $color-name, $color-values in $base-colors {
+    $theme-colors-text: map-merge($theme-colors-text, (
+        #{$color-name}: map.get($color-values, "text-color")
+    ));
+}
 
-$theme-colors-text: map-merge($theme-colors-text, $custom-colors-text);
-$theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, $custom-colors-bg-subtle);
-$theme-colors-border-subtle: map-merge($theme-colors-border-subtle, $custom-colors-border-subtle);
+@each $color-name, $color-values in $base-colors {
+    $theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, (
+        #{$color-name}: map.get($color-values, "bg-subtle-color")
+    ));
+}
+
+@each $color-name, $color-values in $base-colors {
+    $theme-colors-border-subtle: map-merge($theme-colors-border-subtle, (
+        #{$color-name}: map.get($color-values, "border-subtle-color")
+    ));
+}
 
 // Dark mode
 $custom-colors-text-dark: ("custom-color": #e1d2f2);
