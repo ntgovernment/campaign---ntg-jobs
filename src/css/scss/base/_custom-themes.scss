@@ -3,7 +3,7 @@
 @each $color, $value in $theme-colors-text {
     [data-bs-theme="#{$color}"] {
         --bs-body-color: #{$value};
-        --bs-body-color-rgb: #{to-rgb($value)};
+        --bs-body-color-rgb: #{to-rgb($value)};  
     }
 }
 
@@ -17,5 +17,26 @@
         --bs-tertiary-text: #{map.get($value, "tertiary-text")};
         --bs-body-bg: #{map.get($value, "main")};
         --bs-body-bg-rgb: to-rgb(map.get($value, "main"));
+
+        .btn-primary {
+            @include button-variant(map.get($value, "primary"), map.get($value, "primary"), map.get($value, "primary-text"))
+        }
+        .btn-secondary {
+            @include button-variant(map.get($value, "secondary"), map.get($value, "secondary"), map.get($value, "secondary-text"))
+        }
+        .btn-tertiary {
+            @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
+        }
+
+        .btn-outline-primary {
+            @include button-outline-variant(map.get($value, "primary-text"))
+        }
+        .btn-outline-secondary {
+            @include button-outline-variant(map.get($value, "secondary-text"))
+        }
+        .btn-outline-tertiary {
+            @include button-outline-variant(map.get($value, "tertiary-text"))
+        }
+        
     }
 }
