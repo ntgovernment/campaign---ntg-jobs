@@ -11,6 +11,6 @@ require('bootstrap/js/dist/dropdown');
 // require('bootstrap/js/dist/offcanvas');
 // require('bootstrap/js/dist/popover');
 // require('bootstrap/js/dist/scrollspy');
-// require('bootstrap/js/dist/tab');
+require('bootstrap/js/dist/tab');
 // require('bootstrap/js/dist/toast');
 // require('bootstrap/js/dist/tooltip');
