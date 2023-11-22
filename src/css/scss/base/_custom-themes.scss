@@ -29,13 +29,13 @@
         }
 
         .btn-outline-primary {
-            @include button-outline-variant(map.get($value, "primary-text"))
+            @include button-outline-variant(map.get($value, "primary"))
         }
         .btn-outline-secondary {
-            @include button-outline-variant(map.get($value, "secondary-text"))
+            @include button-outline-variant(map.get($value, "secondary"))
         }
         .btn-outline-tertiary {
-            @include button-outline-variant(map.get($value, "tertiary-text"))
+            @include button-outline-variant(map.get($value, "tertiary"))
         }
         
     }
