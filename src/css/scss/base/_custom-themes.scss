@@ -17,6 +17,8 @@
 
             --bs-link-color: #{$primary-text};
             --bs-link-color-rgb: #{to-rgb($primary-text)};
+            --bs-link-hover-color: #{$primary-text};
+            --bs-link-hover-color-rgb: #{to-rgb($primary-text)};
 
             // Override for text-colored button for primary them
             // This is to ensure the button gets primary color even when there is no theme selected on root
@@ -33,6 +35,8 @@
 
             --bs-link-color: #{$secondary-text};
             --bs-link-color-rgb: #{to-rgb($secondary-text)};
+            --bs-link-hover-color: #{$secondary-text};
+            --bs-link-hover-color-rgb: #{to-rgb($secondary-text)};
 
 
             // Override for text-colored button for secondary them
@@ -50,6 +54,8 @@
 
             --bs-link-color: #{$tertiary-text};
             --bs-link-color-rgb: #{to-rgb($tertiary-text)};
+            --bs-link-hover-color: #{$tertiary-text};
+            --bs-link-hover-color-rgb: #{to-rgb($tertiary-text)};
 
              // Override for text-colored button for tertiary them
             // This is to ensure the button gets tertiary color even when there is no theme selected on root
@@ -88,14 +94,21 @@
         --bs-secondary-border-subtle: #{tint-color(map.get($value, "secondary"), 30%)};
         --bs-tertiary-border-subtle: #{tint-color(map.get($value, "tertiary"), 30%)};
 
-        --bs-link-color: #{map.get($value, "text-color")};
-        --bs-link-color-rgb: #{to-rgb(map.get($value, "text-color"))};
+        --bs-link-color: #{map.get($value, "link-color")};
+        --bs-link-color-rgb: #{to-rgb(map.get($value, "link-color"))};
+        --bs-link-hover-color: #{map.get($value, "link-hover-color")};
+        --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "link-hover-color"))};
 
         [data-bs-theme="primary"] {
             --current-theme-color: var(--bs-primary);
             --current-theme-text-color: var(--bs-primary-text);
             --current-theme-color-darker: #{darken(map.get($value, "primary"), 6)};
             --current-theme-color-lighter: #{lighten(map.get($value, "primary"), 4)};
+
+            --bs-link-color: #{map.get($value, "primary-link-color")};
+            --bs-link-color-rgb: #{to-rgb(map.get($value, "primary-link-color"))};
+            --bs-link-hover-color: #{map.get($value, "primary-link-hover-color")};
+            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "primary-link-hover-color"))};
 
             // Override for text-colored button for primary
             // This is to ensure the button gets primary color when primary theme is selected
@@ -110,6 +123,11 @@
             --current-theme-color-darker: #{darken(map.get($value, "secondary"), 6)};
             --current-theme-color-lighter: #{lighten(map.get($value, "secondary"), 4)};
 
+            --bs-link-color: #{map.get($value, "secondary-link-color")};
+            --bs-link-color-rgb: #{to-rgb(map.get($value, "secondary-link-color"))};
+            --bs-link-hover-color: #{map.get($value, "secondary-link-hover-color")};
+            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "secondary-link-hover-color"))};
+
             // Override for text-colored button for secondary
             // This is to ensure the button gets secondary color when secondary theme is selected
             .btn-outline-default {
@@ -122,6 +140,11 @@
             --current-theme-text-color: var(--bs-tertiary-text);
             --current-theme-color-darker: #{darken(map.get($value, "tertiary"), 6)};
             --current-theme-color-lighter: #{lighten(map.get($value, "tertiary"), 4)};
+
+            --bs-link-color: #{map.get($value, "tertiary-link-color")};
+            --bs-link-color-rgb: #{to-rgb(map.get($value, "tertiary-link-color"))};
+            --bs-link-hover-color: #{map.get($value, "tertiary-link-hover-color")};
+            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "tertiary-link-hover-color"))};
 
             // Override for text-colored button for tertiary
             // This is to ensure the button gets tertiary color when tertiary theme is selected
