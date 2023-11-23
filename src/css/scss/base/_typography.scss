@@ -1,33 +1,35 @@
+@use "sass:map";
+
 /*INTITAL (MOBILE) TYPESCALE*/
 :root {
     font-size: 16px;
     /*sets the value for 1rem (--base-font-size)*/
     --base-font-size: 16px;
     --scale: 1.2;
-    /* Major Third Scale*/
 
-    --h6-size: calc(var(--base-font-size) * var(--scale));
+    @media (min-width: 768px) {
+      font-size: 19px;
+      --base-font-size: 19px;
+    }
+
+    --h6-size: var(--base-font-size);
     --h5-size: calc(var(--h6-size) * var(--scale));
     --h4-size: calc(var(--h5-size) * var(--scale));
     --h3-size: calc(var(--h4-size) * var(--scale));
     --h2-size: calc(var(--h3-size) * var(--scale));
     --h1-size: calc(var(--h2-size) * var(--scale));
 }
-  
-@media (max-width: 767px) {
-    :root {
-        --scale: 1.11;
-    }
-}
-  
-  @media (min-width: 768px) {
-    :root {
-      font-size: 19px;
-      --base-font-size: 19px;
-    }
-  }
 
-  
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-family-base:            "Ubuntu", var(--#{$prefix}font-sans-serif);
+ 
 $font-weight-bold:            700;
 
 $font-size-root:              null;
@@ -48,6 +50,9 @@ $headings-font-style:         null;
 $headings-font-weight:        500;
 $headings-line-height:        1.2;
 $headings-color:              inherit;
+
+$btn-font-weight:             $font-weight-bold;
+$btn-border-width:            2px;
 
 $lead-font-size:              calc(var(--base-font-size) * var(--scale));
 $lead-font-weight:            300;
@@ -91,3 +96,8 @@ $list-inline-padding:         .5rem;
 
 $mark-padding:                .1875em;
 $mark-color:                  $body-color;
+
+//Set default links to be bold
+a {
+  font-weight: 700;
+}

@@ -6,13 +6,13 @@
 // Light mode
 //Use the main color for each theme-colors
 $theme-colors-text: (
-    "primary":    $white,
-    "secondary":  $ntg-dark-gray,
-    "tertiary":   $white,
+    "primary":    $primary-text,
+    "secondary":  $secondary-text,
+    "tertiary":   $tertiary-text,
     "success":    $white,
     "info":       $white,
     "warning":    $ntg-dark-gray,
-    "danger":     $ntg-dark-gray,
+    "danger":     $white,
     "light":      $ntg-dark-gray,
     "dark":       $white
 );

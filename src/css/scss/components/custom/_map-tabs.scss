@@ -1,0 +1,51 @@
+.map-tabs {
+    background-color: var(--current-theme-color);
+    color: var(--current-theme-text-color);
+    
+    .nav {
+        --#{$prefix}nav-link-padding-x: #{$nav-link-padding-x};
+        --#{$prefix}nav-link-padding-y: 1rem;
+        @include rfs($nav-link-font-size, --#{$prefix}nav-link-font-size);
+        --#{$prefix}nav-link-font-weight: #{$nav-link-font-weight};
+        --#{$prefix}nav-link-color: var(--current-theme-text-color);
+        --#{$prefix}nav-link-hover-color: var(--current-theme-text-color);
+        --#{$prefix}nav-link-disabled-color: #{$nav-link-disabled-color};
+
+        &-tabs-wrapper {
+            background-color: var(--current-theme-color-lighter);
+        }
+
+        &-tabs {
+            --#{$prefix}nav-tabs-border-width: 3px;
+            --#{$prefix}nav-tabs-border-color: transparent;
+            --#{$prefix}nav-tabs-border-radius: 0;
+            --#{$prefix}nav-tabs-link-hover-border-color: var(--current-theme-text-color);
+            --#{$prefix}nav-tabs-link-active-color: var(--current-theme-text-color);
+            --#{$prefix}nav-tabs-link-active-bg: transparent;
+            --#{$prefix}nav-tabs-link-active-border-color: var(--current-theme-text-color);
+
+            flex-wrap: nowrap;
+        }
+
+        &-link {
+            text-transform: uppercase;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+            line-height: 1.5;
+            opacity: 0.6;
+
+            &.active,
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+    }
+
+    .tab-content {
+        min-height: 750px;
+    }
+}

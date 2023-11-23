@@ -7,8 +7,66 @@
     }
 }
 
+@each $color, $value in $theme-colors {
+    @if $color == "primary" {
+        [data-bs-theme="#{$color}"] {
+            --current-theme-color: #{$primary};
+            --current-theme-text-color: #{$primary-text};
+            --current-theme-color-darker: #{darken($primary, 6)};
+            --current-theme-color-lighter: #{lighten($primary, 4)};
+
+            --bs-link-color: #{$primary-text};
+            --bs-link-color-rgb: #{to-rgb($primary-text)};
+
+            // Override for text-colored button for primary them
+            // This is to ensure the button gets primary color even when there is no theme selected on root
+            .btn-outline-default {
+                @include button-outline-variant($primary-text)
+            }
+        }
+    } @else if $color == "secondary" {
+        [data-bs-theme="#{$color}"] {
+            --current-theme-color: #{$secondary};
+            --current-theme-text-color: #{$secondary-text};
+            --current-theme-color-darker: #{darken($secondary, 6)};
+            --current-theme-color-lighter: #{lighten($secondary, 4)};
+
+            --bs-link-color: #{$secondary-text};
+            --bs-link-color-rgb: #{to-rgb($secondary-text)};
+
+
+            // Override for text-colored button for secondary them
+            // This is to ensure the button gets secondary color even when there is no theme selected on root
+            .btn-outline-default {
+                @include button-outline-variant($secondary-text)
+            }
+        }
+    } @else if $color == "tertiary" {
+        [data-bs-theme="#{$color}"] {
+            --current-theme-color: #{$tertiary};
+            --current-theme-text-color: #{$tertiary-text};
+            --current-theme-color-darker: #{darken($tertiary, 6)};
+            --current-theme-color-lighter: #{lighten($tertiary, 4)};
+
+            --bs-link-color: #{$tertiary-text};
+            --bs-link-color-rgb: #{to-rgb($tertiary-text)};
+
+             // Override for text-colored button for tertiary them
+            // This is to ensure the button gets tertiary color even when there is no theme selected on root
+            .btn-outline-default {
+                @include button-outline-variant($tertiary-text)
+            }
+        }
+    }
+}
+
 @each $color, $value in $base-colors {
     [data-bs-theme="#{$color}"] {
+        --current-theme-color: #{map.get($value, "main")};
+        --current-theme-text-color: #{map.get($value, "text-color")};
+        --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
+        --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};
+
         --bs-primary: #{map.get($value, "primary")};
         --bs-primary-rgb: to-rgb(map.get($value, "primary"));
         --bs-primary-text: #{map.get($value, "primary-text")};
@@ -29,6 +87,48 @@
         --bs-primary-border-subtle: #{tint-color(map.get($value, "primary"), 30%)};
         --bs-secondary-border-subtle: #{tint-color(map.get($value, "secondary"), 30%)};
         --bs-tertiary-border-subtle: #{tint-color(map.get($value, "tertiary"), 30%)};
+
+        --bs-link-color: #{map.get($value, "text-color")};
+        --bs-link-color-rgb: #{to-rgb(map.get($value, "text-color"))};
+
+        [data-bs-theme="primary"] {
+            --current-theme-color: var(--bs-primary);
+            --current-theme-text-color: var(--bs-primary-text);
+            --current-theme-color-darker: #{darken(map.get($value, "primary"), 6)};
+            --current-theme-color-lighter: #{lighten(map.get($value, "primary"), 4)};
+
+            // Override for text-colored button for primary
+            // This is to ensure the button gets primary color when primary theme is selected
+            .btn-outline-default {
+                @include button-outline-variant(map.get($value, "primary-text"))
+            }
+        }
+
+        [data-bs-theme="secondary"] {
+            --current-theme-color: var(--bs-secondary);
+            --current-theme-text-color: var(--bs-secondary-text);
+            --current-theme-color-darker: #{darken(map.get($value, "secondary"), 6)};
+            --current-theme-color-lighter: #{lighten(map.get($value, "secondary"), 4)};
+
+            // Override for text-colored button for secondary
+            // This is to ensure the button gets secondary color when secondary theme is selected
+            .btn-outline-default {
+                @include button-outline-variant(map.get($value, "secondary-text"))
+            }
+        }
+
+        [data-bs-theme="tertiary"] {
+            --current-theme-color: var(--bs-tertiary);
+            --current-theme-text-color: var(--bs-tertiary-text);
+            --current-theme-color-darker: #{darken(map.get($value, "tertiary"), 6)};
+            --current-theme-color-lighter: #{lighten(map.get($value, "tertiary"), 4)};
+
+            // Override for text-colored button for tertiary
+            // This is to ensure the button gets tertiary color when tertiary theme is selected
+            .btn-outline-default {
+                @include button-outline-variant(map.get($value, "tertiary-text"))
+            }
+        }
         
         .btn-primary {
             @include button-variant(map.get($value, "primary"), map.get($value, "primary"), map.get($value, "primary-text"))
@@ -39,6 +139,7 @@
         .btn-tertiary {
             @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
         }
+
         .btn-outline-primary {
             @include button-outline-variant(map.get($value, "primary"))
         }
@@ -47,6 +148,11 @@
         }
         .btn-outline-tertiary {
             @include button-outline-variant(map.get($value, "tertiary"))
+        }
+
+        //Button outline that takes the default font color as the color and border for the theme
+        .btn-outline-default {
+            @include button-outline-variant(map.get($value, "text-color"))
         }
         
     }

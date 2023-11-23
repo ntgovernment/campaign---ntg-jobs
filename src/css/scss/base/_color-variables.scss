@@ -36,13 +36,15 @@
   $ntg-dark-gray: #2B292D;
   $ntg-territory-stone: #D7D2CB;
   
-  
   // Colours
   //These colors are only provided to generate utilities classes. Primary, secondary and tertiary colors are defined using the custom-themes.scss files
   $primary: $ntg-dark-green;
   $secondary: $ntg-territory-stone;
   $tertiary: $ntg-charcoal-grey;
-
+  $primary-text: $white;
+  $secondary-text: $ntg-dark-gray;
+  $tertiary-text: $white;
+  
   $body-color: $ntg-dark-gray;
   $info: #107CC0;
   $warning: #EE6320;
@@ -50,6 +52,7 @@
   $success: #107810;
   $light: #f8f9fa;
   $dark: #212529;
+  $red: red;
   
   $base-colors: (
     "desert-yam" : (
