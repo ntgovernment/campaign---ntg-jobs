@@ -1,10 +1,19 @@
+.btn-chevron-right {
+    @extend .fa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &::after {
+        content: "\f054";
+        line-height: 1;
+    }
+}
+
 .btn {
     &:focus {
         @include focus();
-    }
-
-    &-secondary {
-
     }
 
     &-close {
