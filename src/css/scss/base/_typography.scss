@@ -28,7 +28,7 @@ $font-weight-semibold:        600;
 $font-weight-bold:            700;
 $font-weight-bolder:          bolder;
 
-$font-family-base:            "Ubuntu", var(--#{$prefix}font-sans-serif);
+$font-family-base:            "Lato", var(--#{$prefix}font-sans-serif);
  
 $font-weight-bold:            700;
 
@@ -45,9 +45,9 @@ $h5-font-size:                var(--h5-size);
 $h6-font-size:                var(--h6-size);
 
 $headings-margin-bottom:      $spacer * 1.25;
-$headings-font-family:        null;
+$headings-font-family:        "Ubuntu", var(--#{$prefix}font-sans-serif);;
 $headings-font-style:         null;
-$headings-font-weight:        500;
+$headings-font-weight:        700;
 $headings-line-height:        1.2;
 $headings-color:              inherit;
 

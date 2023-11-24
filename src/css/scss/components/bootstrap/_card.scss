@@ -1,16 +1,50 @@
 .card {
+    --#{$prefix}card-bg: var(--current-theme-color);
+    --#{$prefix}card-color:var(--current-theme-text-color);
+    --#{$prefix}card-cap-bg: var(--current-theme-color);
+
     $this: &;
+
+    video, iframe, &-img-top {
+        min-height: 250px;
+    }
+
+    &-img, &-video {
+        &--long {
+            aspect-ratio: 0.79/1;
+        }
+    }
+
+    &-link {
+        font-family: $headings-font-family;
+        text-decoration: none;
+
+        &:hover {
+            @extend %text-decorate;
+        }
+    }
+
+    &-text {
+        *:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            @extend .listing-flush;
+            @extend .listing-style--chevron;
+
+            li:before {
+                color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
+            }
+        }
+    }
+
+    &-footer {
+        font-size: 16px;
+    }
 
     &:focus-within {
         @include focus();
-
-        #{$this}-footer {
-            a {
-                i {
-                    margin-left: 1rem;
-                }
-            }
-        }
     }
 
     &-img-top {
@@ -20,33 +54,5 @@
     .img-fluid {
         object-fit: cover;
         height: 100%;
-    }
-
-    &-title {
-        @include font-size($h5-font-size);
-    }
-
-    &-footer {
-        background-color: transparent;
-        border-top: 0;
-        padding: 1rem;
-        
-        a {
-            i {
-                font-size: 0.8rem;
-                margin-left: 0.5rem;
-                transition: 0.2s ease-in-out;
-            }
-
-            &:hover {
-                i {
-                    margin-left: 1rem;
-                }
-            }
-
-            &:focus {
-                outline: none;
-            }
-        }
     }
 }
