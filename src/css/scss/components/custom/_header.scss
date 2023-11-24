@@ -1,6 +1,22 @@
+:root {
+    --header-text-color: #{$white};
+}
+
+.header-scroll {
+    --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
+    background-color: var(--bs-secondary, #{$ntg-territory-stone});
+
+    .ntg-header__logo {
+        filter: invert(1);
+    }
+}
+
 .page-header-container {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+
     @include media-breakpoint-down(sm) {
-        background-color: $primary;
         padding: 0.5rem 0;
         display: flex;
         align-items: center;
@@ -10,23 +26,19 @@
 
 .ntg-header {
     @include media-breakpoint-up(sm) {
-        background-color: $primary;
         padding: 1.5rem 0;
     }
 
     &__wrapper {
         display: flex;
-        flex-flow: column nowrap;
-
-        @include media-breakpoint-up(sm) {
-            align-items: center;
-            flex-flow: row nowrap;
-        }
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__logo {
         max-width: 215px;
         width: 100%;
+        transition: 0.2s filter ease-in-out;
 
         @include media-breakpoint-down(sm) {
             display: none;
@@ -35,29 +47,51 @@
         @include media-breakpoint-up(sm) {
             padding-right: 1rem;
             margin-right: 1rem;
-            border-right: 1px solid $white;
         }
     }
 
-    &__text {
-        color: $white;
-        text-decoration: none;
+    &__search {
+        position: relative;
 
-        &:hover {
-            color: $white;
-            text-decoration: underline;
+        button[type="submit"] {
+            --bs-btn-active-border-color: transparent;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+
+            &:active {
+                border-width: 0;
+            }
+
+            &::after {
+                content: "\f002";
+                @extend .fa;
+                color: var(--header-text-color);
+                cursor: pointer;
+                font-size: 1rem;
+                transition: 0.2s transform ease-in-out;
+                font-weight: bold;
+            }
+
+            &:hover {
+                &::after {
+                    transform: translateX(2px);
+                }
+            }
         }
-    }
 
-    &__title {
-        margin-bottom: 0;
-    }
 
-    &__subtitle {
-        margin-top: 0.25rem;
+        input {
+            padding-right: 2rem;
+            border-color: var(--header-text-color);
+            color: var(--header-text-color);
+        }
 
-        @include media-breakpoint-up(sm) {
-            margin-top: 0.5rem;
+        ::placeholder {
+            color: var(--header-text-color);
+            opacity: 1;
         }
     }
 }

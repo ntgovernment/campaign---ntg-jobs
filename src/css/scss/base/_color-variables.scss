@@ -54,6 +54,9 @@
   $dark: #212529;
   $red: red;
   
+  //Gradients
+  $black-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(0, 0, 0, 0.00) 100%);
+  
   $base-colors: (
     "desert-yam" : (
       "main": $ntg-desert-yam,
