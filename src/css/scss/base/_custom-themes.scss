@@ -162,7 +162,6 @@
         .btn-tertiary {
             @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
         }
-
         .btn-outline-primary {
             @include button-outline-variant(map.get($value, "primary"))
         }
@@ -177,6 +176,5 @@
         .btn-outline-default {
             @include button-outline-variant(map.get($value, "text-color"))
         }
-        
     }
 }

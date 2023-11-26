@@ -22,7 +22,7 @@
             cursor: pointer;
 
             i {
-                color: $secondary;
+                color: var(--bs-secondary-text, #{$ntg-dark-gray});
             }
         }
 
@@ -31,7 +31,7 @@
         }
 
         i {
-            color: $white;
+            color: var(--bs-secondary-text, #{$ntg-dark-gray});
             font-size: 1.5rem;
             transition: 0.2s color ease-in-out;
         }
@@ -125,6 +125,8 @@
     }
 
     &__link {
+        padding-bottom: 0;
+
         > a {
             color: var(--header-text-color);
             font-weight: bold;
@@ -198,16 +200,19 @@
                 &:first-child {
                     padding: 0 4rem 0 0;
                     margin-bottom: 3rem;
-                    border-right: 1px solid $primary;
-                    min-width: 300px;
-                    max-width: 300px;
+                    flex: 0 0 400px;
+                }
+
+                &:last-child {
+                    max-width: min-content;
+                    padding: 0 0 0 3rem;
                 }
             }
         }
 
         &-columns {
-            column-count: 3;
-            column-gap: 0;
+            column-count: 2;
+            column-gap: 1rem;
 
             @include media-breakpoint-down(xxl) {
                 column-count: 2;
@@ -238,8 +243,6 @@
         }
 
         h2, h3 {
-            @include font-size(16px);
-            // white-space: nowrap;
             margin-bottom: 1rem;
             color: var(--bs-secondary-text, #{$ntg-dark-gray});
 
@@ -250,32 +253,11 @@
                 text-decoration-thickness: 3px;
                 text-underline-offset: 2px;
                 transition: 0.2s text-decoration-color;
-                // position: relative;
 
-                // &:after {
-                //     content: '';
-                //     background-color: $primary;
-                //     position: absolute;
-                //     left: 0;
-                //     right: 0;
-                //     bottom: -6px;
-                //     height: 3px;
-                //     transition: 0.25s transform ease-in-out;
-                //     transform: scaleX(0);
-                // }
-            
                 &:hover {
                     text-decoration-color: rgba($primary, 1);
-                    
-                    // &:after {
-                    //     transform: scaleX(1);
-                    // }
                 }
             }
-        }
-
-        h3 {
-            text-transform: uppercase;
         }
 
         ul {
@@ -286,7 +268,8 @@
 
         li {
             margin-bottom: 0.5rem;
-
+            break-inside: avoid-column;
+            
             a {
                 color: inherit;
 

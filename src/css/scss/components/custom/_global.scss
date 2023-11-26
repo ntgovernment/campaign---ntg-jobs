@@ -40,7 +40,7 @@ a {
 }
 
 
-ul:not(.nav-tabs) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links) {
     margin-bottom: $paragraph-margin-bottom;
 
     li:not(:last-child) {

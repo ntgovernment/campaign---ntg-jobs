@@ -1,9 +1,10 @@
 (function () {
     initMegaMenu();
-    initPriorityNav();
+    // initPriorityNav();
     initResponsiveMenu();
     initMmenu();
     initMenuEdge();
+    initStickyHeader();
     initSuperfish();
     initSideNav();
     initInPageNav();
@@ -14,6 +15,16 @@
     initCountUp();
 })();
 
+function initStickyHeader() {
+    const header = document.querySelector(".page-header-container");
+    const banner = document.querySelector(".ntg-banner");
+    if (!banner) {
+        var stickyHeader = new StickyHeader(header);
+    } else {
+        var stickyHeader = new StickyHeader(header, banner);
+    }
+    stickyHeader.init();
+}
 
 function initMegaMenu() {
     ResponsiveHelper.addRange({
