@@ -2,31 +2,41 @@
     --header-text-color: #{$white};
 }
 
-.header-scroll {
-    --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
-    background-color: var(--bs-secondary, #{$ntg-territory-stone});
-
-    .ntg-header {
-        padding: 0.5rem 0;
-    }
-
-    //TODO: Work this out for all themes
-    .ntg-header__logo {
-        filter: invert(1);
-    }
-}
-
 .page-header-container {
-    position: fixed;
-    z-index: 9999;
+    background: transparent;
     width: 100%;
-    transition: 0.2s background-color ease-in-out;
+    position: fixed;
+    z-index: 999;
+    transition: 0.25s transform ease-in-out, 0.2s background-color ease-in-out, 0.2s box-shadow ease-in-out;
 
     @include media-breakpoint-down(sm) {
         padding: 0.5rem 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+body:not(.mm-wrapper--opened) {
+    .page-header-container {
+        &.header-hide {
+            transform: translateY(-100%);
+        }
+
+        &.header-scroll {
+            --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
+            background-color: var(--bs-secondary, #{$ntg-territory-stone});
+            box-shadow: 0 2px 8px rgba($black, 0.2);
+
+            .ntg-header {
+                padding: 0.5rem 0;
+            }
+
+            // TODO: Work this out for all themes
+            .ntg-header__logo {
+                filter: invert(1);
+            }
+        }
     }
 }
 

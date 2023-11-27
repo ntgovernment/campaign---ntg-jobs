@@ -179,7 +179,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Lato", var(--bs-font-sans-serif);
+  --bs-body-font-family: "Ubuntu", var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5795,12 +5795,12 @@ textarea.form-control-lg {
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-title-color: ;
   --bs-card-subtitle-color: ;
-  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-width: 0;
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-border-radius: 0;
   --bs-card-box-shadow: ;
-  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-inner-border-radius: 0;
+  --bs-card-cap-padding-y: 1rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
   --bs-card-cap-color: ;
@@ -19030,15 +19030,40 @@ textarea.form-control-lg {
   --bs-card-color:var(--current-theme-text-color);
   --bs-card-cap-bg: var(--current-theme-color);
 }
+.card:not(.card--links):focus-within {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 3px solid #e35205;
+  outline-offset: 2px;
+}
+.card-img-zoom, .card-img-zoom-rotate {
+  overflow: hidden;
+}
+.card-img-zoom .card-img-top, .card-img-zoom-rotate .card-img-top {
+  -webkit-transition: 0.5s -webkit-transform ease;
+  transition: 0.5s -webkit-transform ease;
+  transition: 0.5s transform ease;
+  transition: 0.5s transform ease, 0.5s -webkit-transform ease;
+}
+.card:hover .card-img-zoom .card-img-top {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.card:hover .card-img-zoom-rotate .card-img-top {
+  -webkit-transform: scale(1.15) rotate(5deg);
+          transform: scale(1.15) rotate(5deg);
+}
 .card video, .card iframe, .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 250px;
 }
-.card-img--long, .card-video--long {
-  aspect-ratio: 0.79/1;
+.card iframe {
+  height: 100%;
 }
-.card-link {
-  font-family: "Ubuntu", var(--bs-font-sans-serif);
-  text-decoration: none;
+.card--tall .card-img-top,
+.card--tall .card-video {
+  aspect-ratio: 0.79/1;
 }
 .card-body > *:last-child {
   margin-bottom: 0;
@@ -19049,23 +19074,14 @@ textarea.form-control-lg {
 .card-text > *:last-child {
   margin-bottom: 0;
 }
-.card-footer {
+.card-link {
   font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.6px;
 }
-.card:focus-within {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  outline: 3px solid #e35205;
-  outline-offset: 2px;
-}
-.card-img-top {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card .img-fluid {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+.card-link:focus {
+  outline: none;
 }
 
 .carousel-item.ratio img {
@@ -19265,11 +19281,13 @@ h3:target,
 ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li:before,
 .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
 .link-chevron-right:before,
+.card-link:before,
 .btn-chevron-right:before,
 .fa:after,
 .ntg-image-comparison .cocoen-drag:after,
 .ntg-header__search button[type=submit]:after,
 .link-chevron-right:after,
+.card-link:after,
 .btn-chevron-right:after {
   display: inline-block;
   font-style: normal;
@@ -19592,21 +19610,20 @@ a:focus {
   outline-offset: 2px;
 }
 
-.link-chevron-right {
+.link-chevron-right, .card-link {
   padding-right: 3px;
 }
-.link-chevron-right::after {
+.link-chevron-right::after, .card-link::after {
   content: "\f054";
-  padding-left: 1rem;
-  margin-top: 2px;
-  -webkit-transition: 0.2s ease-in-out transform;
-  transition: 0.2s ease-in-out transform;
-  font-weight: bold;
   color: var(--current-theme-text-color, #4F1F6F);
+  font-weight: 700;
+  padding-left: 0.75rem;
+  margin-top: 2px;
+  -webkit-transition: 0.2s margin-left ease-in-out;
+  transition: 0.2s margin-left ease-in-out;
 }
-.link-chevron-right:hover::after {
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
+.link-chevron-right:hover::after, .card-link:hover::after, .link-chevron-right:focus::after, .card-link:focus::after {
+  margin-left: 0.25rem;
 }
 
 ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
@@ -19620,7 +19637,17 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron, .card-text u
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
   content: "\f054";
+  font-size: 0.8rem;
+  font-weight: 700;
   padding-right: 0.5rem;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li > a, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a {
+  -webkit-transition: 0.2s margin-left ease-in-out;
+  transition: 0.2s margin-left ease-in-out;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
+  margin-left: 0.25rem;
+  text-decoration: none;
 }
 
 #content p + ul {
@@ -19674,24 +19701,15 @@ input[type=search]::-webkit-search-results-decoration {
   --header-text-color: #fff;
 }
 
-.header-scroll {
-  --header-text-color: var(--bs-secondary-text, #2B292D);
-  background-color: var(--bs-secondary, #D7D2CB);
-}
-.header-scroll .ntg-header {
-  padding: 0.5rem 0;
-}
-.header-scroll .ntg-header__logo {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
-
 .page-header-container {
-  position: fixed;
-  z-index: 9999;
+  background: transparent;
   width: 100%;
-  -webkit-transition: 0.2s background-color ease-in-out;
-  transition: 0.2s background-color ease-in-out;
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: 0.2s background-color ease-in-out, 0.25s -webkit-transform ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
+  transition: 0.2s background-color ease-in-out, 0.25s -webkit-transform ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.2s background-color ease-in-out, 0.2s box-shadow ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.2s background-color ease-in-out, 0.2s box-shadow ease-in-out, 0.25s -webkit-transform ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
 @media (max-width: 575.98px) {
   .page-header-container {
@@ -19706,6 +19724,24 @@ input[type=search]::-webkit-search-results-decoration {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+body:not(.mm-wrapper--opened) .page-header-container.header-hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+body:not(.mm-wrapper--opened) .page-header-container.header-scroll {
+  --header-text-color: var(--bs-secondary-text, #2B292D);
+  background-color: var(--bs-secondary, #D7D2CB);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header {
+  padding: 0.5rem 0;
+}
+body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__logo {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .ntg-header {
@@ -20532,7 +20568,7 @@ body.search-panel--is-hidden .search-global {
   z-index: 999;
   background-color: transparent;
   margin: 0;
-  font-family: "Lato", var(--bs-font-sans-serif);
+  font-family: "Ubuntu", var(--bs-font-sans-serif);
 }
 .search-global .form-search {
   background-color: transparent;
