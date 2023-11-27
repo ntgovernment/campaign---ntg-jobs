@@ -5,24 +5,49 @@
 
     $this: &;
 
+    &:not(.card--links):focus-within {
+        @include focus();
+    }
+
+    &-img-zoom,
+    &-img-zoom-rotate {
+        overflow: hidden;
+
+        #{$this}-img-top {
+            transition: 0.5s transform ease;
+        }
+    }
+
+    &:hover {
+        #{$this}-img-zoom {
+            #{$this}-img-top {
+                transform: scale(1.15);
+            }
+        }
+
+        #{$this}-img-zoom-rotate {
+            #{$this}-img-top {
+                transform: scale(1.15) rotate(5deg);
+            }
+        }
+    }
+
     video, iframe, img {
+        object-fit: cover;
         min-height: 250px;
     }
 
-    &-img, &-video {
-        &--long {
-            aspect-ratio: 0.79/1;
-        }
+    iframe {
+        height: 100%;
     }
 
-    &-link {
-        font-family: $headings-font-family;
-        text-decoration: none;
-
-        &:hover {
-            @extend %text-decorate;
+    &--tall {
+        #{$this}-img-top,
+        #{$this}-video {
+            aspect-ratio: 0.79 / 1;
         }
     }
+    
 
     &-body {
         > * {
@@ -49,20 +74,19 @@
         }
     }
 
-    &-footer {
+    &-link {
+        @extend .link-chevron-right;
         font-size: 16px;
-    }
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.6px;
 
-    &:focus-within {
-        @include focus();
-    }
+        &:hover {
+            @extend %text-decorate;
+        }
 
-    &-img-top {
-        object-fit: cover;
-    }
-    
-    .img-fluid {
-        object-fit: cover;
-        height: 100%;
+        &:focus {
+            outline: none;
+        }
     }
 }

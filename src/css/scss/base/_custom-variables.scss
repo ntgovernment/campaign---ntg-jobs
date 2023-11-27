@@ -42,9 +42,13 @@ $aspect-ratios: (
 );
 
 // Typography
-$font-family-base: 'Lato', var(--bs-font-sans-serif);
+$font-family-base: 'Ubuntu', var(--bs-font-sans-serif);
 
 // Cards
+$card-cap-padding-y: $spacer;
+$card-border-width: 0;
+$card-border-radius: 0;
+$card-inner-border-radius: 0;
 $card-height: 100%;
 
 // Accordions

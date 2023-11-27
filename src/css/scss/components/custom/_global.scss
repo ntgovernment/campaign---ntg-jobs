@@ -19,29 +19,30 @@ a {
     }
 }
 
+// apply a right chevron icon to any link with this class
 .link-chevron-right {
     @extend .fa;
     padding-right: 3px;
 
     &::after {
         content: "\f054";
-        padding-left: 1rem;
-        margin-top: 2px;
-        transition: 0.2s ease-in-out transform;
-        font-weight: bold;
         color: var(--current-theme-text-color, $ntg-bush-plum);
+        font-weight: 700;
+        padding-left: 0.75rem;
+        margin-top: 2px;
+        transition: 0.2s margin-left ease-in-out;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         &::after {
-            transform: translateX(3px);
+            margin-left: 0.25rem;
         }
     }
 }
 
-
 ul:not(.nav-tabs):not(.ntg-main-nav__links) {
-    // margin-bottom: $paragraph-margin-bottom; // comment out as it adds extra spacing to cards
+    // margin-bottom: $paragraph-margin-bottom; // commenting this out as it adds unnecessary spacing to cards
 
     li:not(:last-child) {
         padding-bottom: 0.75rem;
@@ -55,10 +56,25 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
         &--chevron {
             list-style-type: none;
 
-            li::before {
-                @extend .fa;
-                content: "\f054";
-                padding-right: 0.5rem;
+            li {
+                &::before {
+                    @extend .fa;
+                    content: "\f054";
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    padding-right: 0.5rem;
+                    
+                }
+
+                > a {
+                    transition: 0.2s margin-left ease-in-out;
+
+                    &:hover,
+                    &:focus {
+                        margin-left: 0.25rem;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
