@@ -38,6 +38,7 @@ function fadeIn(el, display) {
     initResponsiveMenu();
     initMmenu();
     initMenuEdge();
+    initStickyHeader();
     initSuperfish();
     initSideNav();
     initInPageNav();
@@ -48,6 +49,16 @@ function fadeIn(el, display) {
     initCountUp();
 })();
 
+function initStickyHeader() {
+    const header = document.querySelector(".page-header-container");
+    const banner = document.querySelector(".ntg-banner");
+    if (!banner) {
+        var stickyHeader = new StickyHeader(header);
+    } else {
+        var stickyHeader = new StickyHeader(header, banner);
+    }
+    stickyHeader.init();
+}
 
 function initMegaMenu() {
     ResponsiveHelper.addRange({

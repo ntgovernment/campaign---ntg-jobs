@@ -19198,8 +19198,8 @@ h3:target,
 [class*=" icon-"]:before,
 [class*=" icon-"]:after,
 .fa:before,
-ul:not(.nav-tabs):not(.ntg-main-nav*).listing-style--chevron li:before,
-.card-text ul:not(.nav-tabs):not(.ntg-main-nav*) li:before,
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li:before,
+.card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
 .link-chevron-right:before,
 .btn-chevron-right:before,
 .fa:after,
@@ -19545,19 +19545,19 @@ a:focus {
           transform: translateX(3px);
 }
 
-ul:not(.nav-tabs):not(.ntg-main-nav*) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   margin-bottom: 1.25rem;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav*) li:not(:last-child) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
   padding-bottom: 0.75rem;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav*).listing-flush, .card-text ul:not(.nav-tabs):not(.ntg-main-nav*) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-flush, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   padding-left: 0;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav*).listing-style--chevron, .card-text ul:not(.nav-tabs):not(.ntg-main-nav*) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   list-style-type: none;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav*).listing-style--chevron li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav*) li::before {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-style--chevron li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
   content: "\f054";
   padding-right: 0.5rem;
 }
@@ -19636,6 +19636,9 @@ input[type=search]::-webkit-search-results-decoration {
   --header-text-color: var(--bs-secondary-text, #2B292D);
   background-color: var(--bs-secondary, #D7D2CB);
 }
+.header-scroll .ntg-header {
+  padding: 0.5rem 0;
+}
 .header-scroll .ntg-header__logo {
   -webkit-filter: invert(1);
           filter: invert(1);
@@ -19661,6 +19664,10 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+.ntg-header {
+  -webkit-transition: 0.2s padding ease-in-out;
+  transition: 0.2s padding ease-in-out;
+}
 @media (min-width: 576px) {
   .ntg-header {
     padding: 1.5rem 0;
@@ -19972,7 +19979,7 @@ input[type=search]::-webkit-search-results-decoration {
   cursor: pointer;
 }
 .ntg-main-nav__search:hover i {
-  color: #D7D2CB;
+  color: var(--bs-secondary-text, #2B292D);
 }
 .ntg-main-nav__search:focus {
   -webkit-box-shadow: none !important;
@@ -19981,7 +19988,7 @@ input[type=search]::-webkit-search-results-decoration {
   outline-offset: 2px;
 }
 .ntg-main-nav__search i {
-  color: #fff;
+  color: var(--bs-secondary-text, #2B292D);
   font-size: 1.5rem;
   -webkit-transition: 0.2s color ease-in-out;
   transition: 0.2s color ease-in-out;
@@ -20148,17 +20155,23 @@ input[type=search]::-webkit-search-results-decoration {
 .ntg-main-nav__panel-wrapper > *:first-child {
   padding: 0 4rem 0 0;
   margin-bottom: 3rem;
-  border-right: 1px solid #092522;
-  min-width: 300px;
-  max-width: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
+}
+.ntg-main-nav__panel-wrapper > *:last-child {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  padding: 0 0 0 3rem;
 }
 .ntg-main-nav__panel-columns {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
 }
 @media (max-width: 1399.98px) {
   .ntg-main-nav__panel-columns {
@@ -20177,7 +20190,6 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 0 3rem 3rem 3rem;
 }
 .ntg-main-nav__panel h2, .ntg-main-nav__panel .h2, .ntg-main-nav__panel h3, .ntg-main-nav__panel .h3 {
-  font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--bs-secondary-text, #2B292D);
 }
@@ -20197,9 +20209,6 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-text-decoration-color: #092522;
           text-decoration-color: #092522;
 }
-.ntg-main-nav__panel h3, .ntg-main-nav__panel .h3 {
-  text-transform: uppercase;
-}
 .ntg-main-nav__panel ul {
   list-style: none;
   padding: 0;
@@ -20207,6 +20216,9 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .ntg-main-nav__panel li {
   margin-bottom: 0.5rem;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid-column;
 }
 .ntg-main-nav__panel li a {
   color: inherit;
