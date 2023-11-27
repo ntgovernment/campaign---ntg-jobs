@@ -1,17 +1,53 @@
-.accordion-button {
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:focus {
-        @include focus();
-    }
-}
-
 .accordion {
+    &-item {
+        &:not(:first-of-type) {
+            margin-top: 1rem;
+        }
+    }
+
     &-header {
+        @include font-size(16px);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(19px);
+        }
+
         &:target {
-            display: inherit;
+            display: block;
+        }
+    }
+
+    &-button {
+        font-size: inherit;
+        font-weight: inherit;
+        gap: 0.5rem;
+
+        &:focus {
+            @include focus();
+        }
+
+        &:after {
+            background-position: center;
+
+            @include media-breakpoint-down(lg) {
+                width: 0.875rem;
+                height: 0.875rem;
+                background-size: 0.875rem;
+            }
+        }
+    }
+
+    &-collapse {
+        padding: 0 1.5rem;
+    }
+
+    &-body {
+        padding: 1rem 0;
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

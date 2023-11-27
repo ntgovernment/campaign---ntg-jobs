@@ -5,30 +5,59 @@
 
     $this: &;
 
-    video, iframe, &-img-top {
-        min-height: 250px;
+    &:not(.card--links):focus-within {
+        @include focus();
     }
 
-    &-img, &-video {
-        &--long {
-            aspect-ratio: 0.79/1;
+    &-img-zoom,
+    &-img-zoom-rotate {
+        overflow: hidden;
+
+        #{$this}-img-top {
+            transition: 0.5s transform ease;
         }
     }
 
-    &-link {
-        font-family: $headings-font-family;
-        text-decoration: none;
+    &:hover {
+        #{$this}-img-zoom {
+            #{$this}-img-top {
+                transform: scale(1.15);
+            }
+        }
 
-        &:hover {
-            @extend %text-decorate;
+        #{$this}-img-zoom-rotate {
+            #{$this}-img-top {
+                transform: scale(1.15) rotate(5deg);
+            }
+        }
+    }
+
+    video, iframe, img {
+        object-fit: cover;
+        min-height: 250px;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    &--tall {
+        #{$this}-img-top,
+        #{$this}-video {
+            aspect-ratio: 0.79 / 1;
+        }
+    }
+    
+
+    &-body {
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
     &-text {
-        *:last-child {
-            margin-bottom: 0;
-        }
-
         ul {
             @extend .listing-flush;
             @extend .listing-style--chevron;
@@ -37,22 +66,27 @@
                 color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
             }
         }
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
-    &-footer {
+    &-link {
+        @extend .link-chevron-right;
         font-size: 16px;
-    }
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.6px;
 
-    &:focus-within {
-        @include focus();
-    }
+        &:hover {
+            @extend %text-decorate;
+        }
 
-    &-img-top {
-        object-fit: cover;
-    }
-    
-    .img-fluid {
-        object-fit: cover;
-        height: 100%;
+        &:focus {
+            outline: none;
+        }
     }
 }

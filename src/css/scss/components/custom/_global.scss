@@ -19,29 +19,30 @@ a {
     }
 }
 
+// apply a right chevron icon to any link with this class
 .link-chevron-right {
     @extend .fa;
     padding-right: 3px;
 
     &::after {
         content: "\f054";
-        padding-left: 1rem;
-        margin-top: 2px;
-        transition: 0.2s ease-in-out transform;
-        font-weight: bold;
         color: var(--current-theme-text-color, $ntg-bush-plum);
+        font-weight: 700;
+        padding-left: 0.75rem;
+        margin-top: 2px;
+        transition: 0.2s margin-left ease-in-out;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         &::after {
-            transform: translateX(3px);
+            margin-left: 0.25rem;
         }
     }
 }
 
-
 ul:not(.nav-tabs):not(.ntg-main-nav__links) {
-    margin-bottom: $paragraph-margin-bottom;
+    // margin-bottom: $paragraph-margin-bottom; // commenting this out as it adds unnecessary spacing to cards
 
     li:not(:last-child) {
         padding-bottom: 0.75rem;
@@ -55,10 +56,25 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
         &--chevron {
             list-style-type: none;
 
-            li::before {
-                @extend .fa;
-                content: "\f054";
-                padding-right: 0.5rem;
+            li {
+                &::before {
+                    @extend .fa;
+                    content: "\f054";
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    padding-right: 0.5rem;
+                    
+                }
+
+                > a {
+                    transition: 0.2s margin-left ease-in-out;
+
+                    &:hover,
+                    &:focus {
+                        margin-left: 0.25rem;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
@@ -111,22 +127,4 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; 
-}
-
-// overrides components to be full width on standard or landing width layouts by subtracting .col-lg-8 width from .container width at different breakpoints
-.standard,
-.landing {
-    .full-width-override {
-        @include media-breakpoint-up(xxl) {
-            margin-right: calc((1320px - 880px) * -1);
-        }
-
-        @include media-breakpoint-between(xl, xxl) {
-            margin-right: calc((1140px - 760px) * -1);
-        }
-
-        @include media-breakpoint-between(lg, xl) {
-            margin-right: calc((960px - 640px) * -1);
-        }
-    }
 }
