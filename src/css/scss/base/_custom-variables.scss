@@ -16,7 +16,6 @@ $spacers: (
   8: $spacer * 6,
 );
 
-
 $enable-dark-mode: true;
 $enable-rounded: true;
 $enable-shadows: false;
@@ -42,7 +41,6 @@ $aspect-ratios: (
   "32x9": calc(9 / 32 * 100%)
 );
 
-
 // Typography
 $font-family-base: 'Lato', var(--bs-font-sans-serif);
 
@@ -50,15 +48,30 @@ $font-family-base: 'Lato', var(--bs-font-sans-serif);
 $card-height: 100%;
 
 // Accordions
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.5rem;
+$accordion-color: $primary; // temporary
+$accordion-bg: $white; // temporary
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-button-color: $primary; // temporary
 $accordion-button-active-bg: none;
-$accordion-button-active-color: $primary;
+$accordion-button-active-color: $primary; // temporary
 $accordion-button-focus-border-color: transparent;
 $accordion-button-focus-box-shadow: none;
+$accordion-icon-width: 17px;
+$accordion-icon-color: $primary; // temporary
+$accordion-icon-active-color: $primary; // temporary
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{$accordion-icon-color}' /></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{$accordion-icon-active-color}' /></svg>");
+$accordion-icon-transform: rotate(180deg);
 
 // Alerts
 $alert-border-width: 3px;
 
 // Buttons
+$btn-padding-x: 1rem;
+$btn-padding-y: 0.5rem;
 $btn-secondary-colour: #fff;
 
 // Breadcrumbs
@@ -67,7 +80,6 @@ $breadcrumb-active-color: $body-color;
 
 // Table
 $table-border-color: $body-color;
-
 
 /* -------- Custom -------- */
   
@@ -84,7 +96,3 @@ $focus-width: 3px;
 $outline-offset-width: 2px;
 
 $stretched-link-pseudo-element: before;
-
-//Buttons
-$btn-padding-x: 1rem;
-$btn-padding-y: 0.5rem;
