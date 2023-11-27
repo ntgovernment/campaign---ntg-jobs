@@ -5,7 +5,7 @@
 
     $this: &;
 
-    video, iframe, &-img-top {
+    video, iframe, img {
         min-height: 250px;
     }
 
@@ -24,17 +24,27 @@
         }
     }
 
-    &-text {
-        *:last-child {
-            margin-bottom: 0;
+    &-body {
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
+    }
 
+    &-text {
         ul {
             @extend .listing-flush;
             @extend .listing-style--chevron;
 
             li:before {
                 color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
+            }
+        }
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
