@@ -62,7 +62,7 @@
         "build:autoprefix:dev": "postcss -u autoprefixer -r dist/css/main.css",
         "build:css": "sass --no-source-map --style expanded \"./src/css/scss/main.scss\" \"./dist/css/main.css\" && concat -o ./dist/css/plugins.css ./src/css/plugins/*.css",
         "build:css:dev": "sass --style expanded \"./src/css/scss/main.scss\" \"./dist/css/main.css\" && concat -o ./dist/css/plugins.css ./src/css/plugins/*.css",
-        "build:html": "find ./src/pages -name '*.html' -type f -exec cp {} dist \\;",
+        "build:html": "rsync -r --include='*.html' --include='*.json' --exclude='*' ./src/pages/ dist/",
         "build:assets": "cp -r ./src/assets ./dist",
         "build:matrix": "cp -r ./dist/assets/images ./dist/css/mysource_files",
         "build:js": "browserify ./src/js/bootstrap.js --outfile ./dist/js/bootstrap.js && cp -R ./src/js/plugins ./dist/js && browserify ./src/js/utils.js --outfile ./dist/js/utils.js && browserify ./src/js/functions.js --outfile ./dist/js/functions.js && uglifyjs ./dist/js/bootstrap.js --compress -o ./dist/js/bootstrap.min.js",

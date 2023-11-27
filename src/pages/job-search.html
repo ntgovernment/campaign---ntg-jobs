@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Home | Brainium Starter Template</title>
+        <title>NTG Jobs| Brainium Starter Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- fonts -->
@@ -12,6 +12,30 @@
         <!-- styles -->
         <link rel="stylesheet" href="css/plugins.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <style>
+            .search-container input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .search-container input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .search-container input[type=submit]:hover {
+                background-color: #45a049;
+            }
+        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -474,342 +498,201 @@
                 </div>
             </section>
 
-            <main id="content">
-                <div class="py-4 container">
-                    <div class="list-group">
-                        <a href="./cards.html" class="list-group-item list-group-item-action" aria-current="true">
-                          Cards
-                        </a>
 
-                      </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="map-tabs" data-bs-theme="dark-blue">
-                        <div class="nav-tabs-wrapper">
-                            <div class="container">
-                                <ul class="nav nav-tabs" id="tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane" aria-selected="true">
-                                        Darwin & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">
-                                        Alice Springs & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">
-                                        Uluru & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-4-pane" type="button" role="tab" aria-controls="tab-4-pane" aria-selected="false">
-                                        Kakadu & surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-5" data-bs-toggle="tab" data-bs-target="#tab-5-pane" type="button" role="tab" aria-controls="tab-5-pane" aria-selected="false">
-                                        Arnhem Land
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-6" data-bs-toggle="tab" data-bs-target="#tab-6-pane" type="button" role="tab" aria-controls="tab-6-pane" aria-selected="false">
-                                        Tenant Creek and Barkly Region
-                                    </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="tab-content py-5" id="tab-content">
-                                <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    <div class="tab-pane__top text-center pb-3">
-                                        <div class="tab-pane__sub-title pb-2">Living in the Northern Territory</div>
-                                        <h2 class="tab-pane__title">This is a heading text</h2>
-                                    </div>
-
-                                    <div class="tab-pane__bottom col-md-6">
-                                        <h3>Explore Tennant Creek and Surrounds</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                        <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                        <button class="btn btn-outline-default rounded-pill">Explore Tennant Creek and Surrounds</button>
-                                    </div>
-                                    
-                                </div>
-                                <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                </div>
-                                <div class="tab-pane fade" id="tab-4-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-5-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-6-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="text-and-image position-relative" data-bs-theme="territory-stone">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-6 px-0">
-                                    <div class="text-and-image__image h-100">
-                                        <!-- <img class="img-fluid h-100 w-100 object-fit-cover" src="./assets/images/migration.png"> -->
-                                        <iframe class="h-100 w-100" src="https://www.youtube.com/embed/_Tk9_kPpO1U?si=2h9dL5ceYS-w9RQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="text-and-image__content p-2 p-lg-5">
-                                        <h2>What to do in the Territory</h2>
-
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. <a href="#">This is an example of a long link</a> Fusce quis augue ut felis pulvinar ultrices.
-                                        </p>
-                                        
-                                        <ul class="listing-style--chevron listing-flush">
-                                            <li><a href="#">Museums</a></li>
-                                            <li><a href="#">Sport</a></li>
-                                            <li><a href="#">Culture</a></li>
-                                            <li><a href="#">Community groups</a></li>
-                                            <li><a href="#">Restaurants</a></li>
-                                        </ul>    
-
-                                        <p>
-                                            <a href="#" class="btn btn-outline-default rounded-pill btn-chevron-right">Learn more</a>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class="map-tabs" data-bs-theme="dark-blue">
-                        <div class="nav-tabs-wrapper">
-                            <div class="container">
-                                <ul class="nav nav-tabs" id="tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane" aria-selected="true">
-                                        Darwin & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">
-                                        Alice Springs & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">
-                                        Uluru & Surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-4-pane" type="button" role="tab" aria-controls="tab-4-pane" aria-selected="false">
-                                        Kakadu & surrounds
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-5" data-bs-toggle="tab" data-bs-target="#tab-5-pane" type="button" role="tab" aria-controls="tab-5-pane" aria-selected="false">
-                                        Arnhem Land
-                                    </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tab-6" data-bs-toggle="tab" data-bs-target="#tab-6-pane" type="button" role="tab" aria-controls="tab-6-pane" aria-selected="false">
-                                        Tenant Creek and Barkly Region
-                                    </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="tab-content py-5" id="tab-content">
-                                <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    <div class="tab-pane__top text-center pb-3">
-                                        <div class="tab-pane__sub-title pb-2">Living in the Northern Territory</div>
-                                        <h2 class="tab-pane__title">This is a heading text</h2>
-                                    </div>
-
-                                    <div class="tab-pane__bottom col-md-6">
-                                        <h3>Explore Tennant Creek and Surrounds</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                        <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                        <button class="btn btn-outline-default rounded-pill">Explore Tennant Creek and Surrounds</button>
-                                    </div>
-                                    
-                                </div>
-                                <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                </div>
-                                <div class="tab-pane fade" id="tab-4-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-5-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a eros rutrum, molestie augue a, hendrerit ligula. Nulla efficitur nisl id metus convallis fringilla. Nulla facilisi. Phasellus eleifend pretium ultrices. Donec eu massa sollicitudin, faucibus lacus non, suscipit nisi. Proin eget lacus magna. Ut non tempor dui. Donec ut sapien scelerisque, feugiat elit sit amet, interdum sapien. Maecenas mattis gravida dolor, ut cursus felis pulvinar a. Fusce quis augue ut felis pulvinar ultrices.</p>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tab-6-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                    <h2>This is a heading text</h2>
-                                    <p>Sed porttitor, odio eu venenatis dictum, orci justo pretium lacus, eu condimentum dolor velit non sapien. Ut non sollicitudin ex, a imperdiet mi. Ut dapibus elit nec rutrum blandit. Aliquam vel nibh arcu. Integer vehicula nunc at nisl dictum condimentum. Ut rutrum ullamcorper sapien egestas placerat. Praesent pharetra interdum varius.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
+            <main class="py-4 py-sm-5">
                 <div class="container">
-                    
-                    <div class="py-4">
-                        <h2>Buttons</h2>
-                        <div class="row gy-2">
-                            <div class="col-auto"><button type="button" class="btn btn-primary">Primary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-secondary">Secondary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-tertiary">Tertiary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-success">Success</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-danger">Danger</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-warning">Warning</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-info">Info</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-light">Light</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-dark">Dark</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-desert-yam">Desert Yam</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-bush-plum">Bush Plum</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-top-end">Top End</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-charcoal-grey">Charcoal Grey</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-charcoal-grey-20">Charcoal Grey 20</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-fairy-wren">Fairy Wren</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-fairy-wren-7">Fairy Wren 7</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-big-rivers">Big Rivers</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-baby-blue">Baby Blue</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-dark-green">Dark Green</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-olive-green">Olive Green</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-barkly">Barkly</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-dark-blue">Dark Blue</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-central-australia">Central Australia</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-dark-gray">Dark Gray</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-territory-stone">Territory Stone</button></div>
-                        </div>
-                    </div>
+                    <h2>Search Jobs</h2>
 
-                    <div class="py-4">
-                        <h2>Buttons Outline</h2>
-                        <div class="row gy-2">
-                            <div class="col-auto"><button type="button" class="btn btn-outline-primary">Primary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-secondary">Secondary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-tertiary">Tertiary</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-success">Success</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-danger">Danger</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-warning">Warning</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-info">Info</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-light">Light</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-dark">Dark</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-desert-yam">Desert Yam</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-bush-plum">Bush Plum</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-top-end">Top End</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-charcoal-grey">Charcoal Grey</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-charcoal-grey-20">Charcoal Grey 20</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-fairy-wren">Fairy Wren</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-fairy-wren-7">Fairy Wren 7</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-big-rivers">Big Rivers</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-baby-blue">Baby Blue</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-dark-green">Dark Green</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-olive-green">Olive Green</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-barkly">Barkly</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-dark-blue">Dark Blue</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-central-australia">Central Australia</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-dark-gray">Dark Gray</button></div>
-                            <div class="col-auto"><button type="button" class="btn btn-outline-territory-stone">Territory Stone</button></div>
-                        </div>
-                    </div>
+                    <div class="search-container">
+                        <form method="post" id="vacancySearchForm">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="keyword" class="form-label">Keywords and Vacancy Number</label>
+                                    <input type="text" class="form-control" id="keyword" name="keyword">
+                                </div>
+                            </div>
 
-                    <div class="py-4">
-                        <h2>Backgrounds</h2>
-                        <div class="row gy-2">
-                            <div class="col-auto"><div class="bg-primary p-1">Primary</div></div>
-                            <div class="col-auto"><div class="bg-secondary p-1">Secondary</div></div>
-                            <div class="col-auto"><div class="bg-tertiary p-1">Tertiary</div></div>
-                            <div class="col-auto"><div class="bg-success p-1">Success</div></div>
-                            <div class="col-auto"><div class="bg-danger p-1">Danger</div></div>
-                            <div class="col-auto"><div class="bg-warning p-1">Warning</div></div>
-                            <div class="col-auto"><div class="bg-info p-1">Info</div></div>
-                            <div class="col-auto"><div class="bg-light p-1">Light</div></div>
-                            <div class="col-auto"><div class="bg-dark p-1">Dark</div></div>
-                            <div class="col-auto"><div class="bg-desert-yam p-1">Desert Yam</div></div>
-                            <div class="col-auto"><div class="bg-bush-plum p-1">Bush Plum</div></div>
-                            <div class="col-auto"><div class="bg-top-end p-1">Top End</div></div>
-                            <div class="col-auto"><div class="bg-charcoal-grey p-1">Charcoal Grey</div></div>
-                            <div class="col-auto"><div class="bg-charcoal-grey-20 p-1">Charcoal Grey 20</div></div>
-                            <div class="col-auto"><div class="bg-fairy-wren p-1">Fairy Wren</div></div>
-                            <div class="col-auto"><div class="bg-fairy-wren-7 p-1">Fairy Wren 7</div></div>
-                            <div class="col-auto"><div class="bg-big-rivers p-1">Big Rivers</div></div>
-                            <div class="col-auto"><div class="bg-baby-blue p-1">Baby Blue</div></div>
-                            <div class="col-auto"><div class="bg-dark-green p-1">Dark Green</div></div>
-                            <div class="col-auto"><div class="bg-olive-green p-1">Olive Green</div></div>
-                            <div class="col-auto"><div class="bg-barkly p-1">Barkly</div></div>
-                            <div class="col-auto"><div class="bg-dark-blue p-1">Dark Blue</div></div>
-                            <div class="col-auto"><div class="bg-central-australia p-1">Central Australia</div></div>
-                            <div class="col-auto"><div class="bg-dark-gray p-1">Dark Gray</div></div>
-                            <div class="col-auto"><div class="bg-territory-stone p-1">Territory Stone</div></div>
-                        </div>
-                    </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="department" class="form-label">Department</label>
+                                    <select id="department" name="department" class="form-select" aria-label="Department" multiple>
+                                        <option value="Aboriginal Areas Protection Authority">Aboriginal Areas Protection Authority</option>
+                                        <option value="Auditor-General's Office">Auditor-General's Office</option>
+                                        <option value="Batchelor Institute of Indigenous Tertiary Education">Batchelor Institute of Indigenous Tertiary Education</option>
+                                        <option value="Department of Corporate and Digital Development">Department of Corporate and Digital Development</option>
+                                        <option value="Department of Education">Department of Education</option>
+                                        <option value="Department of Environment, Parks and Water Security">Department of Environment, Parks and Water Security</option>
+                                        <option value="Department of Health">Department of Health</option>
+                                        <option value="Department of Industry, Tourism and Trade">Department of Industry, Tourism and Trade</option>
+                                        <option value="Department of Infrastructure, Planning and Logistics">Department of Infrastructure, Planning and Logistics</option>
+                                        <option value="Department of Territory Families, Housing and Communities">Department of Territory Families, Housing and Communities</option>
+                                        <option value="Department of the Attorney-General and Justice">Department of the Attorney-General and Justice</option>
+                                        <option value="Department of the Chief Minister and Cabinet">Department of the Chief Minister and Cabinet</option>
+                                        <option value="Department of the Legislative Assembly">Department of the Legislative Assembly</option>
+                                        <option value="Department of Treasury and Finance">Department of Treasury and Finance</option>
+                                        <option value="Jacana Energy">Jacana Energy</option>
+                                        <option value="Land Development Corporation">Land Development Corporation</option>
+                                        <option value="Northern Territory Electoral Commission">Northern Territory Electoral Commission</option>
+                                        <option value="NT Legal Aid Commission">NT Legal Aid Commission</option>
+                                        <option value="NT Police, Fire and Emergency Services">NT Police, Fire and Emergency Services</option>
+                                        <option value="Office of the Independent Commissioner Against Corruption (NT)">Office of the Independent Commissioner Against Corruption (NT)</option>
+                                        <option value="Office of the Ombudsman">Office of the Ombudsman</option>
+                                        <option value="Power and Water Corporation">Power and Water Corporation</option>
+                                        <option value="Territory Generation">Territory Generation</option>
+                                      </select>
+                                </div>
 
-                    <div class="py-4">
-                        <h2>Backgrounds Subtle</h2>
-                        <div class="row gy-2">
-                            <div class="col-auto"><div class="bg-primary-subtle p-1">Primary</div></div>
-                            <div class="col-auto"><div class="bg-secondary-subtle p-1">Secondary</div></div>
-                            <div class="col-auto"><div class="bg-tertiary-subtle p-1">Tertiary</div></div>
-                            <div class="col-auto"><div class="bg-success-subtle p-1">Success</div></div>
-                            <div class="col-auto"><div class="bg-danger-subtle p-1">Danger</div></div>
-                            <div class="col-auto"><div class="bg-warning-subtle p-1">Warning</div></div>
-                            <div class="col-auto"><div class="bg-info-subtle p-1">Info</div></div>
-                            <div class="col-auto"><div class="bg-light-subtle p-1">Light</div></div>
-                            <div class="col-auto"><div class="bg-dark-subtle p-1">Dark</div></div>
-                            <div class="col-auto"><div class="bg-desert-yam-subtle p-1">Desert Yam</div></div>
-                            <div class="col-auto"><div class="bg-bush-plum-subtle p-1">Bush Plum</div></div>
-                            <div class="col-auto"><div class="bg-top-end-subtle p-1">Top End</div></div>
-                            <div class="col-auto"><div class="bg-charcoal-grey-subtle p-1">Charcoal Grey</div></div>
-                            <div class="col-auto"><div class="bg-charcoal-grey-20-subtle p-1">Charcoal Grey 20</div></div>
-                            <div class="col-auto"><div class="bg-fairy-wren-subtle p-1">Fairy Wren</div></div>
-                            <div class="col-auto"><div class="bg-fairy-wren-7-subtle p-1">Fairy Wren 7</div></div>
-                            <div class="col-auto"><div class="bg-big-rivers-subtle p-1">Big Rivers</div></div>
-                            <div class="col-auto"><div class="bg-baby-blue-subtle p-1">Baby Blue</div></div>
-                            <div class="col-auto"><div class="bg-dark-green-subtle p-1">Dark Green</div></div>
-                            <div class="col-auto"><div class="bg-olive-green-subtle p-1">Olive Green</div></div>
-                            <div class="col-auto"><div class="bg-barkly-subtle p-1">Barkly</div></div>
-                            <div class="col-auto"><div class="bg-dark-blue-subtle p-1">Dark Blue</div></div>
-                            <div class="col-auto"><div class="bg-central-australia-subtle p-1">Central Australia</div></div>
-                            <div class="col-auto"><div class="bg-dark-gray-subtle p-1">Dark Gray</div></div>
-                            <div class="col-auto"><div class="bg-territory-stone-subtle p-1">Territory Stone</div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container py-4 py-sm-5">
-                    <h1>Homepage</h1>
+                                <div class="col-md-3">
+                                    <label for="classification" class="form-label">Classification</label>
+                                    <select id="classification" name="classification" class="form-select" aria-label="Classification">
+                                        <option value="Aboriginal Areas Protection Authority">Aboriginal Areas Protection Authority</option>
+                                        <option value="Auditor-General's Office">Auditor-General's Office</option>
+                                        <option value="Batchelor Institute of Indigenous Tertiary Education">Batchelor Institute of Indigenous Tertiary Education</option>
+                                        <option value="Department of Corporate and Digital Development">Department of Corporate and Digital Development</option>
+                                        <option value="Department of Education">Department of Education</option>
+                                        <option value="Department of Environment, Parks and Water Security">Department of Environment, Parks and Water Security</option>
+                                        <option value="Department of Health">Department of Health</option>
+                                        <option value="Department of Industry, Tourism and Trade">Department of Industry, Tourism and Trade</option>
+                                        <option value="Department of Infrastructure, Planning and Logistics">Department of Infrastructure, Planning and Logistics</option>
+                                        <option value="Department of Territory Families, Housing and Communities">Department of Territory Families, Housing and Communities</option>
+                                        <option value="Department of the Attorney-General and Justice">Department of the Attorney-General and Justice</option>
+                                        <option value="Department of the Chief Minister and Cabinet">Department of the Chief Minister and Cabinet</option>
+                                        <option value="Department of the Legislative Assembly">Department of the Legislative Assembly</option>
+                                        <option value="Department of Treasury and Finance">Department of Treasury and Finance</option>
+                                        <option value="Jacana Energy">Jacana Energy</option>
+                                        <option value="Land Development Corporation">Land Development Corporation</option>
+                                        <option value="Northern Territory Electoral Commission">Northern Territory Electoral Commission</option>
+                                        <option value="NT Legal Aid Commission">NT Legal Aid Commission</option>
+                                        <option value="NT Police, Fire and Emergency Services">NT Police, Fire and Emergency Services</option>
+                                        <option value="Office of the Independent Commissioner Against Corruption (NT)">Office of the Independent Commissioner Against Corruption (NT)</option>
+                                        <option value="Office of the Ombudsman">Office of the Ombudsman</option>
+                                        <option value="Power and Water Corporation">Power and Water Corporation</option>
+                                        <option value="Territory Generation">Territory Generation</option>
+                                      </select>
+                                </div>
 
-                    <a href="#">Hello world</a>
+                                <div class="col-md-3">
+                                    <label for="location" class="form-label">Location</label>
+                                    <select id="location" name="location" class="form-select" aria-label="Job locations" multiple>
+                                        <option value=""> All </option>
+                                        <option value="Alice Springs">Alice Springs</option>
+                                        <option value="Darwin Region">Darwin Region</option>
+                                        <option value="Katherine">Katherine</option>
+                                        <option value="Nhulunbuy">Nhulunbuy</option>
+                                        <option value="Tennant Creek">Tennant Creek</option>
+                                        <option value="Remote">Remote</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="vacancy" class="form-label">Vacancy</label>
+                                    <select id="vacancy" name="vacancy" class="form-select" aria-label="Vacancy" multiple>
+                                        <option value=""> All </option>
+                                        <option value="Ongoing (Permanent) - Full Time">Ongoing (Permanent) - Full Time</option>
+                                        <option value="Ongoing (Permanent) - Part Time">Ongoing (Permanent) - Part Time</option>
+                                        <option value="Fixed (Temporary) - Full Time">Fixed (Temporary) - Full Time</option>
+                                        <option value="Fixed (Temporary) - Part Time">Fixed (Temporary) - Part Time</option>
+                                        <option value="Casual">Casual</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <a data-bs-toggle="collapse" href="#expandSearch" role="button" aria-expanded="false" aria-controls="expandSearch">
+                                    Expand search
+                                  </a>
+                            </div>
+                            <div class="collapse" id="expandSearch">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="renumerationFrom" class="form-label">Renumeration from</label>
+                                        <select id="renumerationFrom" name="renumerationFrom" class="form-select" aria-label="Renumeration From">
+                                            <option value="0">$0</option>
+                                            <option value="30">$30k</option>
+                                            <option value="40">$40k</option>
+                                            <option value="50">$50k</option>
+                                            <option value="60">$60k</option>
+                                            <option value="70">$70k</option>
+                                            <option value="80">$80k</option>
+                                            <option value="100">$100k</option>
+                                            <option value="120">$120k</option>
+                                            <option value="150">$150k</option>
+                                            <option value="200">$200k</option>
+                                            <option value="250">$250k</option>
+                                            <option value="350">$350k</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="renumerationTo" class="form-label">Renumeration to</label>
+                                        <select id="renumerationTo" name="renumerationTo" class="form-select" aria-label="Renumeration To">
+                                            <option value="0">$0</option>
+                                            <option value="30">$30k</option>
+                                            <option value="40">$40k</option>
+                                            <option value="50">$50k</option>
+                                            <option value="60">$60k</option>
+                                            <option value="70">$70k</option>
+                                            <option value="80">$80k</option>
+                                            <option value="100">$100k</option>
+                                            <option value="120">$120k</option>
+                                            <option value="150">$150k</option>
+                                            <option value="200">$200k</option>
+                                            <option value="250">$250k</option>
+                                            <option value="350">$350k</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="salaryFrom" class="form-label">Salary from</label>
+                                        <select id="salaryFrom" name="salaryFrom" class="form-select" aria-label="Salary From">
+                                            <option value="0">$0</option>
+                                            <option value="30">$30k</option>
+                                            <option value="40">$40k</option>
+                                            <option value="50">$50k</option>
+                                            <option value="60">$60k</option>
+                                            <option value="70">$70k</option>
+                                            <option value="80">$80k</option>
+                                            <option value="100">$100k</option>
+                                            <option value="120">$120k</option>
+                                            <option value="150">$150k</option>
+                                            <option value="200">$200k</option>
+                                            <option value="250">$250k</option>
+                                            <option value="350">$350k</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="salaryTo" class="form-label">Salary to</label>
+                                        <select id="salaryTo" name="salaryTo" class="form-select" aria-label="Salary To">
+                                            <option value="0">$0</option>
+                                            <option value="30">$30k</option>
+                                            <option value="40">$40k</option>
+                                            <option value="50">$50k</option>
+                                            <option value="60">$60k</option>
+                                            <option value="70">$70k</option>
+                                            <option value="80">$80k</option>
+                                            <option value="100">$100k</option>
+                                            <option value="120">$120k</option>
+                                            <option value="150">$150k</option>
+                                            <option value="200">$200k</option>
+                                            <option value="250">$250k</option>
+                                            <option value="350">$350k</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="listedTime" class="form-label">Salary to</label>
+                                        <select id="listedTime" name="listedTime" class="form-select" aria-label="Listed Time">
+                                            <option value="">Anytime</option>
+                                            <option value="today">Today</option>
+                                            <option value="40">Last 3 days</option>
+                                            <option value="50">Last 7 days</option>
+                                            <option value="60">Last 14 days</option>
+                                            <option value="70">Last 30 days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
                 </div>
             </main>
 
@@ -864,7 +747,7 @@
         </div>
     </body>
 
-    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
 
     <!-- scripts -->
     <script type="text/javascript" src="js/bundle.js"></script>

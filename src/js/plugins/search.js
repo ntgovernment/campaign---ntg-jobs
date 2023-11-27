@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     body.classList.add('search-panel--is-hidden');
     searchInput.addEventListener("focus", addFocusClass);
     searchInput.addEventListener("blur", removeFocusClass);
-    // searchButton.addEventListener("click", openSearchOverlay);
+    searchButton.addEventListener("click", openSearchOverlay);
     closeButton.addEventListener("click", closeSearchOverlay);
     document.addEventListener('keyup', checkKeyboardInput);
 });
