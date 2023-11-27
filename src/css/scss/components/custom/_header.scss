@@ -20,6 +20,7 @@
     position: fixed;
     z-index: 9999;
     width: 100%;
+    transition: 0.2s background-color ease-in-out;
 
     @include media-breakpoint-down(sm) {
         padding: 0.5rem 0;
