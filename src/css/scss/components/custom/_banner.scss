@@ -1,27 +1,57 @@
 .ntg-banner {
     .ratio {
-        min-height: 250px;
+        &:before {
+            padding-top: clamp(350px, 28.125%, 650px);
+        }
     }
 
-    .container,
-    &__text {
+    .container {
         height: 100%;
     }
 
-    &__text {
+    &__overlay {
+        &::after {
+            content: '';
+            background: linear-gradient(to bottom, $black, transparent, transparent); 
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__image,
+    &__video {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content,
+    &__wrapper {
+        height: 100%;
+    }
+
+    &__wrapper {    
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__text {
+        color: $white;
+        text-shadow: 1px 1px 0.5px $black;
+        
+        h1 {
+            @include font-size(68px);
+            padding: 50px 0;
+        }
         
         > * {
             &:last-child {
                 margin-bottom: 0;
             }
         }
-    }
-
-    img {
-        display: block;
-        width: 100%;
     }
 }
