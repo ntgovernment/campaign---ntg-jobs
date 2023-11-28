@@ -9,7 +9,7 @@
     initSideNav();
     initInPageNav();
     initScrollToTop();
-    initImageComparison();
+    // initImageComparison();
     initResponsiveTable();
     initFlickity();
     initCountUp();
