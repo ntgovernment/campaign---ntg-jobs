@@ -24,17 +24,16 @@ class CustomFlickity {
     changeCellOnLinkFocus() {
         const cellElements = this.carousel.getCellElements();
 
-        for(let i = 0; i < cellElements.length; i++) {
+        for (let i = 0; i < cellElements.length; i++) {
             const links = cellElements[i].querySelectorAll("a");
 
-            if(links.length > 0) {
+            if (links.length > 0) {
                 links.forEach((link) => {
                     link.addEventListener("focus", (e) => {
                         this.carousel.select(i);
                     })
-                })
+                });
             }
-
         }
     }
     

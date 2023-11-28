@@ -389,21 +389,37 @@ function initResponsiveTable() {
 }
 
 function initFlickity() {
-    var carousels = document.querySelectorAll('.flickity-carousel');
+    var carousels = document.querySelectorAll('.card-carousel');
     if (!carousels) {
         return false;
     }
 
     carousels.forEach(function (carousel) {
+        var alignment = carousel.getAttribute('data-align');
+        if (!alignment) {
+            alignment = 'center';
+        }
+
         var flkty = new Flickity(carousel, {
             // options
-            cellAlign: 'center'
+            cellAlign: alignment,
+            pageDots: false
         });
-    });
 
-    /**
-     * @todo Vanilla JS implementation of keyboard focus
-     */
+        const cellElements = flkty.getCellElements();
+
+        for (let i = 0; i < cellElements.length; i++) {
+            const links = cellElements[i].querySelectorAll('a');
+
+            if (links.length > 0) {
+                links.forEach((link) => {
+                    link.addEventListener("focus", (e) => {
+                        flkty.select(i);
+                    })
+                });
+            }
+        }
+    });
 }
 
 function toggleCarouselButton() {

@@ -423,21 +423,40 @@ function initResponsiveTable() {
 }
 
 function initFlickity() {
-    var carousels = document.querySelectorAll('.flickity-carousel');
+    var carousels = document.querySelectorAll('.card-carousel');
     if (!carousels) {
         return false;
     }
 
     carousels.forEach(function (carousel) {
-        var flkty = new Flickity(carousel, {
-            // options
-            cellAlign: 'center'
-        });
-    });
+        if (carousel.classList.contains('flow-right')) {
+            var flkty = new Flickity(carousel, {
+                // options
+                cellAlign: 'left',
+                pageDots: false
+            });
+        } else {
+            var flkty = new Flickity(carousel, {
+                // options
+                cellAlign: 'center',
+                pageDots: false
+            });
+        }
 
-    /**
-     * @todo Vanilla JS implementation of keyboard focus
-     */
+        const cellElements = flkty.getCellElements();
+
+        for (let i = 0; i < cellElements.length; i++) {
+            const links = cellElements[i].querySelectorAll('a');
+
+            if (links.length > 0) {
+                links.forEach((link) => {
+                    link.addEventListener("focus", (e) => {
+                        flkty.select(i);
+                    })
+                });
+            }
+        }
+    });
 }
 
 function toggleCarouselButton() {
