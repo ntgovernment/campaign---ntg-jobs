@@ -1,21 +1,16 @@
 .ntg-cards-and-sticky-text {
     &__text {
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
             position: sticky;
             top: 100px; // replace with header height
         }
-    
-        > * {
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
     }
 
-    &__tag {
-        // add Helvetica Neue font here
-        font-size: 16px;
+    &__subtitle {
+        font-family: $font-ubuntu-condensed;
+        @include font-size(16px);
         font-weight: 700;
         text-transform: uppercase;
+        @extend .ls-2;
     }
 }

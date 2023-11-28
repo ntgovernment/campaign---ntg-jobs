@@ -21,18 +21,20 @@
     &:hover {
         #{$this}-img-zoom {
             #{$this}-img-top {
-                transform: scale(1.15);
+                transform: scale(1.1);
             }
         }
 
         #{$this}-img-zoom-rotate {
             #{$this}-img-top {
-                transform: scale(1.15) rotate(5deg);
+                transform: scale(1.1) rotate(3deg);
             }
         }
     }
 
-    video, iframe, img {
+    video,
+    iframe,
+    img {
         object-fit: cover;
         min-height: 250px;
     }
@@ -40,15 +42,7 @@
     iframe {
         height: 100%;
     }
-
-    &--tall {
-        #{$this}-img-top,
-        #{$this}-video {
-            aspect-ratio: 0.79 / 1;
-        }
-    }
     
-
     &-body {
         > * {
             &:last-child {
@@ -57,10 +51,14 @@
         }
     }
 
+    &-title {
+        @include font-size($h4-font-size);
+    }
+
     &-text {
         ul {
             @extend .listing-flush;
-            @extend .listing-style--chevron;
+            @extend .listing-chevron;
 
             li:before {
                 color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
@@ -77,9 +75,7 @@
     &-link {
         @extend .link-chevron-right;
         font-size: 16px;
-        text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: 1.6px;
 
         &:hover {
             @extend %text-decorate;
@@ -87,6 +83,27 @@
 
         &:focus {
             outline: none;
+        }
+    }
+
+    &--tall {
+        #{$this}-img-top,
+        #{$this}-video {
+            @include media-breakpoint-up(lg) {
+                aspect-ratio: 0.79 / 1;
+            }
+        }
+    }
+
+    &--small {
+        video,
+        iframe,
+        img {
+            min-height: 150px;
+        }
+
+        #{$this}-body {
+            font-size: 16px;
         }
     }
 }

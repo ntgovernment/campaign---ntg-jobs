@@ -42,7 +42,10 @@ $aspect-ratios: (
 );
 
 // Typography
-$font-family-base: 'Ubuntu', var(--bs-font-sans-serif);
+$font-ubuntu: 'Ubuntu', var(--bs-font-sans-serif);
+$font-ubuntu-condensed: 'Ubuntu Condensed', var(--bs-font-sans-serif);
+
+$font-family-base: $font-ubuntu;
 
 // Cards
 $card-cap-padding-y: $spacer;

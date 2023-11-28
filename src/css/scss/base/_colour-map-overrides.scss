@@ -1,10 +1,8 @@
 @use "sass:map";
 
-//Check custom-map-overrides for overriding theme colors
+// check custom-map-overrides for overriding theme colors
 
-//Adding text color for light and dark mode as an example
-// Light mode
-//Use the main color for each theme-colors
+// Light Mode
 $theme-colors-text: (
     "primary":    $primary-text,
     "secondary":  $secondary-text,
@@ -41,7 +39,7 @@ $theme-colors-text: (
     ));
 }
 
-// Dark mode
+// Dark Mode
 $custom-colors-text-dark: ("custom-color": #e1d2f2);
 $custom-colors-bg-subtle-dark: ("custom-color": #8951fa);
 $custom-colors-border-subtle-dark: ("custom-color": #e1d2f2);
