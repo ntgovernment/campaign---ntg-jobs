@@ -19012,6 +19012,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).listing-chevron li:before,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 #wrapper .page-header-container,
 #wrapper .ntg-footer {

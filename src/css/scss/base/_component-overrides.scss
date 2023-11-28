@@ -12,7 +12,7 @@
     }
 }
 
-//Set the color
+// set the color
 @each $color, $value in $theme-colors  {
     .bg-#{$color} {
         --current-bg-color: #{$value};
