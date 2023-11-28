@@ -429,19 +429,16 @@ function initFlickity() {
     }
 
     carousels.forEach(function (carousel) {
-        if (carousel.classList.contains('flow-right')) {
-            var flkty = new Flickity(carousel, {
-                // options
-                cellAlign: 'left',
-                pageDots: false
-            });
-        } else {
-            var flkty = new Flickity(carousel, {
-                // options
-                cellAlign: 'center',
-                pageDots: false
-            });
+        var alignment = carousel.getAttribute('data-align');
+        if (!alignment) {
+            alignment = 'center';
         }
+
+        var flkty = new Flickity(carousel, {
+            // options
+            cellAlign: alignment,
+            pageDots: false
+        });
 
         const cellElements = flkty.getCellElements();
 
