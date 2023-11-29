@@ -1,3 +1,23 @@
 .ntg-highlights {
-    
+    &__highlight {
+        position: relative;
+        padding-left: 1rem;
+        border-left: 4px solid $primary; // temporary
+
+        &:focus-within {
+            @include focus();
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 }
