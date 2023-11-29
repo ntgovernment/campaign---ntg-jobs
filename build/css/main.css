@@ -20227,6 +20227,16 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   pointer-events: none;
 }
 
+.ntg-image-columns figure {
+  margin-bottom: 0;
+}
+.ntg-image-columns img {
+  width: 100%;
+  max-height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #in-page-nav {
   position: relative;
   margin: 2rem 0 2.5rem 0;
