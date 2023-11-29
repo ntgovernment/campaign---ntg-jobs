@@ -1,0 +1,24 @@
+.ntg-related-pages {
+    ul {
+        margin-bottom: 0;
+        @extend .listing-flush; // temporary
+        @extend .listing-chevron; // temporary
+        columns: 4;
+
+        @include media-breakpoint-down(xl) {
+            columns: 3;
+        }
+
+        @include media-breakpoint-down(lg) {
+            columns: 2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            columns: 1;
+        }
+    }
+
+    li {
+        break-inside: avoid-column;
+    }
+}
