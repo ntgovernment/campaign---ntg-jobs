@@ -389,7 +389,7 @@ function initResponsiveTable() {
 }
 
 function initFlickity() {
-    var carousels = document.querySelectorAll('.card-carousel');
+    var carousels = document.querySelectorAll('.cards-carousel');
     if (!carousels) {
         return false;
     }

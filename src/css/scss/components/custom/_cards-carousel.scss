@@ -1,6 +1,55 @@
 .ntg-cards-carousel {
     $this: &;
-    overflow: clip;
+    overflow-x: clip;
+
+    // TODO: fix cell spacing and alignment
+    .carousel-cell {
+        padding-right: 2rem;
+        
+        @include media-breakpoint-down(lg) {
+            padding-right: 1.5rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-right: 1rem;
+        }
+    }
+
+    .flickity-button {
+        background: transparent;
+        border: 2px solid $primary; // temporary
+        width: 50px;
+        height: 50px;
+        transition: 0.2s background ease-in-out;
+
+        @include media-breakpoint-down(md) {
+            width: 40px;
+            height: 40px;
+        }
+
+        &:hover,
+        &:focus {
+            background: $primary; // temporary
+
+            .flickity-button-icon {
+                fill: $white;
+            }
+        }
+
+        &:focus {
+            @include focus();
+        }
+
+        .flickity-button-icon {
+            fill: $primary; // temporary
+            width: 35%;
+            height: 35%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.2s fill ease-in-out;
+        }
+    }
 
     &--flow-right {
         #{$this}__content {
@@ -13,7 +62,7 @@
             overflow: visible;
         }
 
-        .card-carousel {
+        .cards-carousel {
             margin-top: 2rem;
             
             @include media-breakpoint-down(md) {
@@ -23,52 +72,20 @@
 
         .carousel-cell {
             width: 25%;
-            margin-right: 1.5rem;
 
             @include media-breakpoint-down(lg) {
                 width: 50%;
-                margin-right: 1.125rem;
             }
 
             @include media-breakpoint-down(md) {
                 width: 100%;
-                margin-right: 0.75rem;
-            }
-        }
-
-        body.standard,
-        body.landing {
-            .carousel-cell {
-                width: 50%;
-            }
-        }
-
-        .flickity-button {
-            transition: 0.2s background ease-in-out;
-
-            &:hover,
-            &:focus {
-                background: $primary;
-
-                .flickity-button-icon {
-                    fill: $white;
-                }
-            }
-
-            &:focus {
-                @include focus();
             }
         }
 
         .flickity-prev-next-button {
-            background: $dark;
-            width: 50px;
-            height: 50px;
             top: calc(-2rem - 25px);
 
             @include media-breakpoint-down(md) {
-                width: 40px;
-                height: 40px;
                 top: calc(-2rem - 20px);
             }
 
@@ -83,16 +100,6 @@
             &.next {
                 right: 0;
             }
-
-            .flickity-button-icon {
-                fill: $white;
-                width: 40%;
-                height: 40%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                transition: 0.2s fill ease-in-out;
-            }
         }
     }
 
@@ -101,22 +108,64 @@
             text-align: center;
         }
 
+        .cards-carousel {
+            @media (max-width: 1500px) {
+                padding-bottom: 66px;
+            }
+        }
+
         .carousel-cell {
             width: calc(100% / 3);
-            margin-right: 1.5rem;
 
             @include media-breakpoint-down(lg) {
                 width: 50%;
-                margin-right: 1.125rem;
             }
 
             @include media-breakpoint-down(md) {
                 width: 100%;
-                margin-right: 0.75rem;
+            }
+        }
+
+        .flickity-button {
+            border-width: 3px;
+        }
+
+        .flickity-prev-next-button {
+            @include media-breakpoint-down(md) {
+                top: calc(100% - 20px);
+            }
+
+            @media (max-width: 1500px) {
+                top: calc(100% - 25px);
+            }
+
+            &.previous {
+                left: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    left: calc(50% - 45px);
+                }
+
+                @media (min-width: 1500px) {
+                    left: -66px;
+                }
+            }
+
+            &.next {
+                right: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    right: calc(50% - 45px);
+                }
+
+                @media (min-width: 1500px) {
+                    right: -66px;
+                }
             }
         }
     }
 
+    // TODO: blocker so that cells slide behind content
     &--tall {
         #{$this}__content {
             @include media-breakpoint-up(md) {
@@ -131,11 +180,25 @@
 
         .carousel-cell {
             width: 50%;
-            margin-right: 1.5rem;
 
             @include media-breakpoint-down(lg) {
                 width: 100%;
-                margin-right: 0.75rem;
+            }
+        }
+
+        .flickity-button {
+            background: $light; // temporary
+            border-width: 0;
+            box-shadow: 0 0 10px rgba(99, 101, 107, 0.5);
+
+            .flickity-button-icon {
+                fill: $black; // temporary
+                width: 35%;
+                height: 35%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: 0.2s fill ease-in-out;
             }
         }
     }
