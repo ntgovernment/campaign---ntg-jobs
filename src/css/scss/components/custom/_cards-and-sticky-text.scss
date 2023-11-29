@@ -1,5 +1,5 @@
 .ntg-cards-and-sticky-text {
-    &__text {
+    &__content {
         @include media-breakpoint-up(md) {
             position: sticky;
             top: 100px; // replace with header height

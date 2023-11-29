@@ -1,13 +1,6 @@
 .ntg-cards-carousel {
     $this: &;
-
-    &__subtitle {
-        font-family: $font-ubuntu;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.6px;
-    }
+    overflow: clip;
 
     &--flow-right {
         #{$this}__content {
