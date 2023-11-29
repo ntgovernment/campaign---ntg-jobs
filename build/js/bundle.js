@@ -43,7 +43,7 @@ function fadeIn(el, display) {
     initSideNav();
     initInPageNav();
     initScrollToTop();
-    initImageComparison();
+    // initImageComparison();
     initResponsiveTable();
     initFlickity();
     initCountUp();
