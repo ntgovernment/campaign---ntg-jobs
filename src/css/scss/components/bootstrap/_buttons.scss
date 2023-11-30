@@ -1,17 +1,54 @@
-.btn-chevron-right {
+/**
+* generate buttons with icons by specifying a fontawesome unicode
+* e.g. "\f054" for chevron-right
+* optionally, disable icon animation by specifying $transition: false
+*/
+@mixin btn-icon($unicode, $animation: true) {
     @extend .fa;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    gap: 1rem;
 
     &::after {
-        content: "\f054";
-        line-height: 1;
+        content: $unicode;
+        font-weight: 700 !important;
+        margin-left: 1rem;
+        transition: 0.15s margin-left ease-in-out;
+    }
+
+    @if $animation {
+        &:not(.btn-sm):not(.btn-lg) {
+            @include btn-icon-animation($btn-padding-x);
+        }
+
+        &.btn-sm {
+            @include btn-icon-animation($btn-padding-x-sm);
+        }
+
+        &.btn-lg {
+            @include btn-icon-animation($btn-padding-x-lg);
+        }
+    }
+}
+
+@mixin btn-icon-animation($spacing) {
+    &:hover,
+    &:focus {
+        padding-right: calc($spacing - 0.25rem);
+
+        &::after {
+            margin-left: 1.25rem;
+        }
     }
 }
 
 .btn {
+    transition: color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        padding 0.15s ease-in-out;
+
     &:focus {
         @include focus();
     }
@@ -21,4 +58,12 @@
             @include focus();
         }
     }
+}
+
+.btn-chevron-right {
+    @include btn-icon("\f054");
+}
+
+.btn-external {
+    @include btn-icon("\f35d", $animation: false);
 }
