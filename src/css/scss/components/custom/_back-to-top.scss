@@ -1,15 +1,23 @@
 .back-to-top {
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    display: none;
-    background: #595959;
-    border-radius: 50px;
+    background: $white; // temporary
+    border: 3px solid $white; // temporary
+    border-radius: 50%;
+    box-shadow: 0px 2px 8px rgba($black, 0.15);
+    transition: 0.2s background ease-in-out, 0.2s border-color ease-in-out;
     z-index: 1000;
-    transition: 0.2s background ease-in-out;
 
-    &:hover {
-        background: $secondary;
+    &:hover,
+    &:focus-within {
+        background: $black; // temporary
+        border: 3px solid $black; // temporary
+
+        i {
+            color: $white; // temporary
+        }
     }
 
     button {
@@ -20,13 +28,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 9px 13px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+
+        @include media-breakpoint-down(md) {
+            width: 42px;
+            height: 42px;
+        }
+
+        &:focus {
+            @include focus();
+        }
     }
 
     i {
-        color: $white;
-        height: 22px;
-        display: flex;
-        align-items: center;
+        color: $black; // temporary
+        transition: 0.2s color ease-in-out;
     }
 }

@@ -62,7 +62,7 @@
             overflow: visible;
         }
 
-        .cards-carousel {
+        .flickity-carousel {
             margin-top: 2rem;
             
             @include media-breakpoint-down(md) {
@@ -108,7 +108,7 @@
             text-align: center;
         }
 
-        .cards-carousel {
+        .flickity-carousel {
             @media (max-width: 1500px) {
                 padding-bottom: 66px;
             }

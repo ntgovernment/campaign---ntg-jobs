@@ -349,12 +349,12 @@ function initScrollToTop() {
     // checks the scroll position of the page and determines whether the back to top button should be visible
     function buttonUpService() {
         if (!isGoUpOn) {
-            if (window.pageYOffset > scrollHighSensor) {
+            if (window.scrollY > scrollHighSensor) {
                 isGoUpOn = true;
                 fadeIn(backToTop);
             }
         } else {
-            if (window.pageYOffset <= scrollHighSensor) {
+            if (window.scrollY <= scrollHighSensor) {
                 fadeOut(backToTop);
                 isGoUpOn = false;
             }
@@ -363,8 +363,10 @@ function initScrollToTop() {
 
     function checkFooterPosition() {
         var scrollBottom = document.body.clientHeight - document.documentElement.clientHeight - document.documentElement.scrollTop;
-        if (scrollBottom < footer.offsetHeight) {
-            backToTop.style.marginBottom = footer.offsetHeight - scrollBottom + 'px';
+        var backToTopHeight = backToTop.offsetHeight;
+        var backToTopOffset = parseFloat(getComputedStyle(backToTop).getPropertyValue('bottom'));
+        if (scrollBottom < footer.offsetHeight - (backToTopHeight / 2) - backToTopOffset) {
+            backToTop.style.marginBottom = footer.offsetHeight - scrollBottom - (backToTopHeight / 2) - backToTopOffset + 'px';
         } else {
             backToTop.style.marginBottom = 0;
         }
@@ -390,7 +392,7 @@ function initResponsiveTable() {
 }
 
 function initFlickity() {
-    var carousels = document.querySelectorAll('.cards-carousel');
+    var carousels = document.querySelectorAll('.flickity-carousel');
     if (!carousels) {
         return false;
     }

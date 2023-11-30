@@ -1,12 +1,112 @@
 .ntg-image-carousel {
-    .toggleCarouselBtn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        
-        i {
-            pointer-events: none;
+    overflow-x: clip;
+
+    .flickity-carousel {
+        @media (max-width: 1500px) {
+            padding-bottom: 66px;
         }
+    }
+
+    .flickity-viewport {
+        overflow: visible;
+    }
+
+    
+    .carousel-cell {
+        width: 100%;
+        margin-right: 82px;
+
+        @media (max-width: 1500px) {
+            margin-right: 2rem;
+        }
+
+        &:not(.is-selected) {
+            img {
+                opacity: 0.2;
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+    .flickity-button {
+        background: transparent;
+        border: 3px solid $primary; // temporary
+        width: 50px;
+        height: 50px;
+        transition: 0.2s background ease-in-out;
+    
+        @include media-breakpoint-down(md) {
+            width: 40px;
+            height: 40px;
+        }
+    
+        &:hover,
+        &:focus {
+            background: $primary; // temporary
+    
+            .flickity-button-icon {
+                fill: $white;
+            }
+        }
+    
+        &:focus {
+            @include focus();
+        }
+    
+        .flickity-button-icon {
+            fill: $primary; // temporary
+            width: 35%;
+            height: 35%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.2s fill ease-in-out;
+        }
+    }
+
+    .flickity-prev-next-button {
+        @include media-breakpoint-down(md) {
+            top: calc(100% - 20px);
+        }
+
+        @media (max-width: 1500px) {
+            top: calc(100% - 25px);
+        }
+
+        &.previous {
+            left: calc(50% - 55px);
+
+            @include media-breakpoint-down(md) {
+                left: calc(50% - 45px);
+            }
+
+            @media (min-width: 1500px) {
+                left: -66px;
+            }
+        }
+
+        &.next {
+            right: calc(50% - 55px);
+
+            @include media-breakpoint-down(md) {
+                right: calc(50% - 45px);
+            }
+
+            @media (min-width: 1500px) {
+                right: -66px;
+            }
+        }
+    }
+
+    figure {
+        margin-bottom: 0;
+    }
+
+    figcaption {
+        margin-top: 0.5rem;
+    }
+
+    img {
+        transition: 0.2s opacity, 0.2s filter;
     }
 }
