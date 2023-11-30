@@ -47,6 +47,7 @@ function fadeIn(el, display) {
     initResponsiveTable();
     initFlickity();
     initCountUp();
+    initResizeButtons();
 })();
 
 function initStickyHeader() {
@@ -525,4 +526,26 @@ function initCountUp() {
             scrollSpyOnce: 1
         });
     });
+}
+
+// resizes any buttons on a page as small buttons below a certain breakpoint
+function initResizeButtons() {
+    $('.btn:not(.btn-sm)').each(function () {
+        var btn = $(this);
+        const breakpoint = 974;
+
+        handleSizing(btn, breakpoint);
+
+        $(window).on('resize', function () {
+            handleSizing(btn, breakpoint);
+        });
+    });
+
+    function handleSizing(e, breakpoint) {
+        if ($(window).width() <= breakpoint) {
+            e.addClass('btn-sm');
+        } else {
+            e.removeClass('btn-sm');
+        }
+    }
 }

@@ -1,0 +1,12 @@
+.ntg-cta-links {
+    background-color: var(--current-theme-color);
+    color: var(--current-theme-text-color);
+    position: relative;
+
+    img, video, iframe {
+        object-fit: cover;
+        min-height: 300px;
+        width: 100%;
+        height: 100%;
+    }
+}
