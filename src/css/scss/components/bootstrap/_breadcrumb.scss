@@ -1,7 +1,21 @@
 .breadcrumb {
+    margin-bottom: 0;
+
     &-item {
-        &.active {
-            margin-top: 1px;
+        max-width: calc(20ch + 16.75px + $breadcrumb-item-padding-x);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: $breadcrumb-item-padding-x;
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        + .breadcrumb-item {
+            padding-left: 0;
         }
     }
 }

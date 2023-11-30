@@ -1,9 +1,5 @@
 .ntg-banner {
-    .ratio {
-        &:before {
-            padding-top: clamp(350px, 28.125%, 650px);
-        }
-    }
+    $this: &;
 
     .container {
         height: 100%;
@@ -52,6 +48,61 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    &--solid {
+        .ratio {
+            &:before {
+                padding-top: clamp(300px, var(--bs-aspect-ratio), 600px); // min and max banner size
+            }
+        }
+
+        #{$this}__wrapper {
+            padding-bottom: 2rem;
+        }
+
+        .breadcrumb {
+            justify-content: center;
+            padding-top: 2rem;
+        }
+    }
+    
+    &--fade {
+        .ratio {
+            &:before {
+                padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
+            }
+        }
+
+        #{$this}__overlay {
+            &::after {
+                background: $black-white-gradient; // temporary
+            }
+        }
+
+        #{$this}__wrapper {
+            padding-bottom: calc(140px);
+        }
+
+        .breadcrumb {
+            text-shadow: 1px 1px 0.5px $black;
+
+            .breadcrumb-item {
+                a, &.active {
+                    color: $white;
+                }
+        
+                + .breadcrumb-item {
+                    &::before {
+                        filter: brightness(0) invert(100%);
+                    }
+                }
+            }
+        }
+
+        + main {
+            margin-top: -140px;
         }
     }
 }
