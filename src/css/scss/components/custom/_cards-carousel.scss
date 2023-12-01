@@ -202,4 +202,54 @@
             }
         }
     }
+
+    &--testimonial {
+        .flickity-carousel {
+            padding-bottom: 66px;
+        }
+
+        .flickity-viewport {
+            overflow: visible;
+        }
+
+        .carousel-cell {
+            width: calc(100% / 3);
+
+            @include media-breakpoint-down(lg) {
+                width: 50%;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+
+            .card {
+                transform: rotate(3.325deg);
+            }
+        }
+        
+        .flickity-prev-next-button {
+            top: calc(100% - 25px);
+            
+            @include media-breakpoint-down(md) {
+                top: calc(100% - 20px);
+            }
+
+            &.previous {
+                left: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    left: calc(50% - 45px);
+                }
+            }
+
+            &.next {
+                right: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    right: calc(50% - 45px);
+                }
+            }
+        }
+    }
 }

@@ -19013,6 +19013,45 @@ textarea.form-control-lg {
 .card--small .card-body {
   font-size: 16px;
 }
+.card--flip .card-inner {
+  -webkit-transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s transform ease-in-out;
+  transition: 0.3s transform ease-in-out, 0.3s -webkit-transform ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.card--flip .card-front,
+.card--flip .card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.card--flip .card-front {
+  color: #fff;
+  background-color: #FB471F;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card--flip .card-back {
+  color: #fff;
+  background-color: #FB471F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.card--flip:hover .card-inner, .card--flip:focus .card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
 .card--flip img {
   min-height: unset;
   height: 100%;
@@ -19041,26 +19080,6 @@ textarea.form-control-lg {
 }
 .card--flip .card-img-overlay > * {
   position: relative;
-}
-.card--flip .card-front {
-  color: #fff;
-  background-color: #FB471F;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.card--flip .card-back {
-  color: #fff;
-  background-color: #FB471F;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .card--flip .card-body,
 .card--flip .card-footer {
@@ -19477,6 +19496,51 @@ h3:target,
           transform: translate(-50%, -50%);
   -webkit-transition: 0.2s fill ease-in-out;
   transition: 0.2s fill ease-in-out;
+}
+.ntg-cards-carousel--testimonial .flickity-carousel {
+  padding-bottom: 66px;
+}
+.ntg-cards-carousel--testimonial .flickity-viewport {
+  overflow: visible;
+}
+.ntg-cards-carousel--testimonial .carousel-cell {
+  width: 33.3333333333%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+@media (max-width: 991.98px) {
+  .ntg-cards-carousel--testimonial .carousel-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .ntg-cards-carousel--testimonial .carousel-cell {
+    width: 100%;
+  }
+}
+.ntg-cards-carousel--testimonial .flickity-prev-next-button {
+  top: calc(100% - 25px);
+}
+@media (max-width: 767.98px) {
+  .ntg-cards-carousel--testimonial .flickity-prev-next-button {
+    top: calc(100% - 20px);
+  }
+}
+.ntg-cards-carousel--testimonial .flickity-prev-next-button.previous {
+  left: calc(50% - 55px);
+}
+@media (max-width: 767.98px) {
+  .ntg-cards-carousel--testimonial .flickity-prev-next-button.previous {
+    left: calc(50% - 45px);
+  }
+}
+.ntg-cards-carousel--testimonial .flickity-prev-next-button.next {
+  right: calc(50% - 55px);
+}
+@media (max-width: 767.98px) {
+  .ntg-cards-carousel--testimonial .flickity-prev-next-button.next {
+    right: calc(50% - 45px);
+  }
 }
 
 .ntg-cta-links {

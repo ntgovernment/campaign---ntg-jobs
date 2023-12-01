@@ -111,7 +111,7 @@
     &--flip {
         #{$this}-inner {
             transition: 0.3s transform ease-in-out;
-            transform-style: preserve-3d;
+            transform-style: preserve-3d; // causes jagged edges in Firefox, need to fix
         }
 
         #{$this}-front,
