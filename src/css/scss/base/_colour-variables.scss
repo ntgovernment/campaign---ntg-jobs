@@ -30,7 +30,7 @@ $ntg-big-rivers: #F2A900;
 $ntg-baby-blue: #B1E2F9;
 $ntg-dark-green: #092522;
 $ntg-olive-green: #104735;
-$ntg-barkly: #B05831;
+$ntg-barkly: #FB471F;
 $ntg-dark-blue: #0E2C4D;
 $ntg-central-australia: #E5004D;
 $ntg-dark-gray: #2B292D;
@@ -59,6 +59,7 @@ $red: red;
 /* -------- Gradients -------- */
 $black-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(0, 0, 0, 0.00) 100%);
 $black-white-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(255, 255, 255, 100.00) 100%);
+$black-gradient-subtle: linear-gradient(0, rgba(0, 0, 0, 0.52) 4.18%, rgba(0, 0, 0, 0.00) 38.51%);
 
 $base-colors: (
 	"desert-yam" : (

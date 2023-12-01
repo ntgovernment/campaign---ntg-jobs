@@ -42,7 +42,7 @@
     iframe {
         height: 100%;
     }
-    
+
     &-body {
         > * {
             &:last-child {
@@ -104,6 +104,91 @@
 
         #{$this}-body {
             font-size: 16px;
+        }
+    }
+
+    // TODO: fix stretched link interaction
+    &--flip {
+        #{$this}-inner {
+            transition: 0.3s transform ease-in-out;
+            transform-style: preserve-3d;
+        }
+
+        #{$this}-front,
+        #{$this}-back {
+            backface-visibility: hidden;
+        }
+
+        #{$this}-front {
+            color: $white;
+            background-color: $ntg-barkly; // fallback; temporary
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            
+        }
+
+        #{$this}-back {
+            color: $white; // temporary
+            background-color: $ntg-barkly; // temporary
+            display: flex;
+            flex-direction: column;
+            transform: rotateY(180deg);
+        }
+
+        &:hover,
+        &:focus {
+            #{$this}-inner {
+                transform: rotateY(180deg);
+            }
+        }
+
+        img {
+            min-height: unset;
+            height: 100%;
+        }
+
+        #{$this}-img-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &::before {
+                content: "";
+                background: $black-gradient-subtle;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            > * {
+                position: relative;
+            }
+        }
+
+        #{$this}-body,
+        #{$this}-footer {
+            padding: 2.25rem 3.375rem;
+        }
+
+        #{$this}-body {
+            padding-bottom: 0;
+        }
+
+        #{$this}-footer {
+            padding-top: 0;
+
+            a {
+                color: inherit;
+
+                &::after {
+                    color: $ntg-dark-gray; // temporary
+                }
+            }
         }
     }
 }
