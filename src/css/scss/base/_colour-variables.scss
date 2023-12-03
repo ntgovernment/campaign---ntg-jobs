@@ -58,7 +58,7 @@ $red: red;
 
 /* -------- Gradients -------- */
 $black-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(0, 0, 0, 0.00) 100%);
-$black-white-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(255, 255, 255, 100.00) 100%);
+$theme-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, var(--current-theme-color, #fff)); // fallback on white as default
 $black-gradient-subtle: linear-gradient(0, rgba(0, 0, 0, 0.52) 4.18%, rgba(0, 0, 0, 0.00) 38.51%);
 
 $base-colors: (
@@ -396,7 +396,7 @@ $theme-colors: (
 	"dark":       $dark
 );
 
-// Use the main color for each theme-colors
+// use the main color for each theme-colors
 @each $color-name, $color-values in $base-colors {
 	$theme-colors: map-merge($theme-colors, (
 		#{$color-name}: map.get($color-values, main)

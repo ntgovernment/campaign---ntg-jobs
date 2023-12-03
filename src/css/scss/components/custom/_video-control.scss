@@ -17,7 +17,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        color: $primary; // TODO: adapt to colour theme
+        color: $body-color;
         font-weight: 700 !important;
         transition: 0.2s color ease-in-out;
     }
@@ -36,7 +36,7 @@
 
     &:hover,
     &:focus {
-        background-color: $primary; // TODO: adapt to colour theme
+        background-color: rgba($black, 0.5);
 
         &::before {
             color: $white;

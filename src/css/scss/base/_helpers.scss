@@ -20,13 +20,12 @@ a {
     }
 }
 
-// apply a right chevron icon to any link with this class
 .link-chevron-right {
     @extend .fa;
     padding-right: 3px;
 
     &::after {
-        content: "\f054";
+        content: '\f054';
         color: var(--current-theme-text-color, $ntg-bush-plum);
         font-weight: 700 !important;
         padding-left: 0.75rem;
@@ -43,13 +42,13 @@ a {
 }
 
 ul:not(.nav-tabs):not(.ntg-main-nav__links) {
-    // margin-bottom: $paragraph-margin-bottom; // commented out as it adds unnecessary spacing to cards
+    margin-bottom: $paragraph-margin-bottom;
 
     li:not(:last-child) {
-        padding-bottom: 0.75rem;
+        margin-bottom: 16px;
     }
 
-    &.listing {
+    &.list {
         &-flush {
             padding-left: 0;
         }
@@ -58,15 +57,21 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
             list-style-type: none;
 
             li {
+                position: relative;
+                padding-left: calc(9.5px + 0.5rem);
+
                 &::before {
                     @extend .fa;
                     content: "\f054";
                     font-size: 0.8rem;
                     font-weight: 700 !important;
-                    padding-right: 0.5rem;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
                 }
 
                 > a {
+                    display: inline-block;
                     transition: 0.2s margin-left ease-in-out;
 
                     &:hover,

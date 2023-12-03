@@ -1,8 +1,8 @@
 .ntg-related-pages {
     ul {
+        @extend .list-flush !optional;
+        @extend .list-chevron !optional;
         margin-bottom: 0;
-        @extend .listing-flush; // temporary
-        @extend .listing-chevron; // temporary
         columns: 4;
 
         @include media-breakpoint-down(xl) {

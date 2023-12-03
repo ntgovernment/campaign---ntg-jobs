@@ -100,7 +100,7 @@
 
         #{$this}__overlay {
             &::after {
-                background: $black-white-gradient; // TODO: adapt to colour theme
+                background: $theme-gradient;
             }
         }
 

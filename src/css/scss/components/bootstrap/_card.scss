@@ -57,8 +57,8 @@
 
     &-text {
         ul {
-            @extend .listing-flush;
-            @extend .listing-chevron;
+            @extend .list-flush !optional;
+            @extend .list-chevron !optional;
 
             li:before {
                 color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
