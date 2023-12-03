@@ -2,15 +2,24 @@
     margin-bottom: 0;
 
     &-item {
-        max-width: calc(20ch + 16.75px + $breadcrumb-item-padding-x);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        padding-right: $breadcrumb-item-padding-x;
+        max-width: calc(20ch + 16.75px + $breadcrumb-item-padding-x);
+        margin-right: $breadcrumb-item-padding-x;
+
+        &:focus-within {
+            @include focus();
+        }
 
         a {
-            &:hover {
+            &:hover,
+            &:focus {
                 text-decoration: none;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
 

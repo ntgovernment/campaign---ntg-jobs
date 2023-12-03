@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="css/plugins.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
-    <body>
+    <body class="full-width">
         <div id="wrapper">
-            <nav class="skip-link" aria-label="skip links navigation">
+            <nav class="skip-link" aria-label="Skip links navigation">
                 <a class="skip-link__link" href="#content">Skip to main content</a>
                 <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
             </nav>
@@ -209,64 +209,122 @@
                 </header>
             </div>
 
-            <!-- <section class="ntg-banner ntg-banner--solid">
-                <div class="ratio ratio-21x9">
-                    <div class="ntg-banner__overlay">
-                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;">
-                            <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
-                        </video>
-                        <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" />
-                    </div>
-                    <div class="ntg-banner__content">
-                        <div class="container">
-                            <div class="ntg-banner__wrapper">
-                                <div class="ntg-banner__text">
-                                    <h1>Components</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Content</li>
-                        </ol>
-                    </nav>
-                </div>
-            </section> -->
+            <!--@@ Hero Banner @@-->
 
-            <section class="ntg-banner ntg-banner--fade">
-                <div class="ratio ratio-21x9">
+            <section class="ntg-hero-banner">
+                <div class="ratio ratio-16x9">
                     <div class="ntg-banner__overlay">
-                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;">
-                            <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
+
+                        <!-- Option 1: Video -->
+                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                            <source src="assets/videos/homepage-video.mp4" type="video/mp4">
                         </video>
+                        <button class="video-control pause" aria-label="Playback"></button>
+
+                        <!-- Option 2: Image -->
                         <!-- <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" /> -->
-                    </div>
-                    <div class="ntg-banner__content">
-                        <div class="container">
-                            <div class="ntg-banner__wrapper">
-                                <div class="ntg-banner__text">
-                                    <h1>Components</h1>
-                                </div>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Content</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
 
-            <main class="py-4 py-sm-5" id="content">
+            <!--@@ End @@-->
+
+            <!--@@ Solid Banner @@-->
+
+            <section class="ntg-banner ntg-banner--solid">
+                <div class="ratio ratio-16x9">
+
+                    <div class="ntg-banner__overlay">
+
+                        <!--@@ Option 1: Video @@-->
+                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                            <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
+                        </video>
+
+                        <!--@@ Option 2: Image @@-->
+                        <!-- <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" /> -->
+
+                    </div>
+
+                    <div class="ntg-banner__content">
+                        <div class="container">
+                            <div class="ntg-banner__wrapper">
+
+                                <div class="ntg-banner__text">
+                                    <h1>Solid banner</h1>
+                                </div>
+
+                                <button class="video-control pause" aria-label="Video Playback Control"></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--@@ End @@-->
+
+            <!--@@ Fading Banner @@-->
+
+            <section class="ntg-banner ntg-banner--fade">
+                <div class="ratio ratio-16x9">
+
+                    <div class="ntg-banner__overlay">
+
+                        <!-- Option 1: Video -->
+                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                            <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
+                        </video>
+                        
+                        <!-- Option 2: Image -->
+                        <!-- <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" /> -->
+
+                    </div>
+
+                    <div class="ntg-banner__content">
+                        <div class="container">
+                            <div class="ntg-banner__wrapper">
+                                
+                                <div class="ntg-banner__text">
+                                    <h1>Fading banner</h1>
+                                </div>
+
+                                <!-- If these breadcrumbs are shown, the main breadcrumbs should be hidden. -->
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Components</li>
+                                    </ol>
+                                </nav>
+
+                                <button class="video-control pause" aria-label="Video Playback Control"></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--@@ End @@-->
+
+            <main class="pb-4 pb-sm-5" id="content">
+
+                <!-- <nav aria-label="breadcrumb">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Components</li>
+                        </ol>
+                    </div>
+                </nav> -->
+                
                 <section class="ntg-introduction">
                     <div class="container">
-                        <!-- Style 1 -->
+
+                        <!--@@ Style 1 @@-->
                         <p class="lead fw-bold">
                             With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant
                             place to call home.
@@ -277,7 +335,7 @@
                             plenty to see in between. Darwin is closer to South-East Asia than many other Australian capital cities.
                         </p>
                         
-                        <!-- Style 2 -->
+                        <!--@@ Style 2 @@-->
                         <p class="lead">
                             With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant
                             place to call home.
@@ -288,7 +346,7 @@
                             plenty to see in between. Darwin is closer to South-East Asia than many other Australian capital cities.
                         </p>
 
-                        <!-- Style 3 -->
+                        <!--@@ Style 3 @@-->
                         <p class="lead fw-bold">
                             While much of Australia shivers through the winter months of June-July, in the NT the sun is shining and the great
                             outdoors beckon.
@@ -308,7 +366,7 @@
                             </div>
                         </div>
 
-                        <!-- Style 4 -->
+                        <!--@@ Style 4 @@-->
                         <p class="lead text-center">
                             When you move to the Northern Territory you can get around by using public transport, taxi, share rides and even
                             e-scooter and e-bikes in some regions.
@@ -619,13 +677,13 @@
                             </div>
                             <div class="col">
                                 <div class="card border-0 rounded-0" data-bs-theme="charcoal-grey-20">
-                                    <iframe
+                                    <!-- <iframe
                                         src="https://www.youtube.com/embed/_Tk9_kPpO1U?si=2h9dL5ceYS-w9RQhl&autoplay=1&mute=1&loop=1&controls=0"
                                         title="YouTube video player"
                                         frameborder="0"
                                         allow="autoplay; encrypted-media"
                                         tabindex="-1"
-                                    ></iframe>
+                                    ></iframe> -->
                                     <div class="card-body">
                                         <h3 class="card-title">Healthcare</h3>
                                         <p class="card-text">In the Territory you will find unrivalled opportunity to propel your career, create a new business or grow your professional network.</p>
@@ -667,13 +725,13 @@
                             </div>
                             <div class="col">
                                 <div class="card" data-bs-theme="charcoal-grey-20">
-                                    <iframe
+                                    <!-- <iframe
                                         src="https://www.youtube.com/embed/_Tk9_kPpO1U?si=2h9dL5ceYS-w9RQhl&autoplay=1&mute=1&loop=1&controls=0"
                                         title="YouTube video player"
                                         frameborder="0"
                                         allow="autoplay; encrypted-media"
                                         tabindex="-1"
-                                    ></iframe>
+                                    ></iframe> -->
                                     <div class="card-body">
                                         <h4 class="card-title">Healthcare</h4>
                                         <p class="card-text">In the Territory you will find unrivalled opportunity to propel your career, create a new business or grow your professional network.</p>
@@ -723,13 +781,13 @@
                             </div>
                             <div class="col">
                                 <div class="card card--links" data-bs-theme="charcoal-grey-20">
-                                    <iframe
+                                    <!-- <iframe
                                         src="https://www.youtube.com/embed/_Tk9_kPpO1U?si=2h9dL5ceYS-w9RQhl&autoplay=1&mute=1&loop=1&controls=0"
                                         title="YouTube video player"
                                         frameborder="0"
                                         allow="autoplay; encrypted-media"
                                         tabindex="-1"
-                                    ></iframe>
+                                    ></iframe> -->
                                     <div class="card-body">
                                         <h3 class="card-title">Healthcare</h3>
                                         <div class="card-text">

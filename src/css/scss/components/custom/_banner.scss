@@ -1,5 +1,7 @@
 .ntg-banner {
     $this: &;
+    color: $white;
+    text-shadow: $text-shadow;
 
     .container {
         height: 100%;
@@ -8,7 +10,7 @@
     &__overlay {
         &::after {
             content: '';
-            background: $black-gradient; 
+            background: $black-gradient;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -36,73 +38,74 @@
     }
 
     &__text {
-        color: $white;
-        text-shadow: 1px 1px 0.5px $black;
+        text-align: center;
         
         h1 {
             @include font-size(68px);
-            padding: 50px 0;
         }
-        
-        > * {
-            &:last-child {
-                margin-bottom: 0;
+    }
+
+    .breadcrumb {
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .breadcrumb-item {
+            a,
+            &.active {
+                color: inherit;
+            }
+
+            + .breadcrumb-item {
+                &::before {
+                    filter: brightness(0) invert(100%) drop-shadow($text-shadow);
+                }
             }
         }
     }
 
+    /* Banner Options */
+
     &--solid {
         .ratio {
             &:before {
-                padding-top: clamp(300px, var(--bs-aspect-ratio), 600px); // min and max banner size
+                // min and max banner size; scales with bootstrap ratio
+                padding-top: clamp(300px, var(--bs-aspect-ratio), 600px); 
             }
         }
 
         #{$this}__wrapper {
-            padding-bottom: 2rem;
-        }
+            padding-bottom: 50px;
 
-        .breadcrumb {
-            justify-content: center;
-            padding-top: 2rem;
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 1rem;
+            }
         }
     }
     
     &--fade {
         .ratio {
             &:before {
-                padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
+                // min and max banner size; scales with bootstrap ratio
+                padding-top: clamp(440px, var(--bs-aspect-ratio), 740px);
+            }
+        }
+
+        #{$this}__wrapper {
+            padding-bottom: 120px;
+
+            @include media-breakpoint-down(sm) {
+                padding-bottom: calc(120px + 1rem);
             }
         }
 
         #{$this}__overlay {
             &::after {
-                background: $black-white-gradient; // temporary
-            }
-        }
-
-        #{$this}__wrapper {
-            padding-bottom: calc(140px);
-        }
-
-        .breadcrumb {
-            text-shadow: 1px 1px 0.5px $black;
-
-            .breadcrumb-item {
-                a, &.active {
-                    color: $white;
-                }
-        
-                + .breadcrumb-item {
-                    &::before {
-                        filter: brightness(0) invert(100%);
-                    }
-                }
+                background: $black-white-gradient; // TODO: adapt to colour theme
             }
         }
 
         + main {
-            margin-top: -140px;
+            margin-top: -70px;
         }
     }
 }
