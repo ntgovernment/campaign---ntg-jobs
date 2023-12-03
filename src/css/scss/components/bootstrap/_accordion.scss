@@ -1,4 +1,6 @@
 .accordion {
+    // TODO: adapt to colour theme
+
     &-item {
         &:not(:first-of-type) {
             margin-top: 1rem;
@@ -6,11 +8,7 @@
     }
 
     &-header {
-        @include font-size(16px);
-
-        @include media-breakpoint-up(lg) {
-            @include font-size(19px);
-        }
+        font-size: $font-size-base;
 
         &:target {
             display: block;

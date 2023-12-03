@@ -10,7 +10,8 @@ a {
     @extend %text-decorate;
     transition: 0.2s text-decoration ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: none;
     }
 
