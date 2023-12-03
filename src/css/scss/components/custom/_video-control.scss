@@ -17,6 +17,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        vertical-align: middle;
         color: $body-color;
         font-weight: 700 !important;
         transition: 0.2s color ease-in-out;
@@ -31,6 +32,7 @@
     &.play {
         &::before {
             content: '\f04b';
+            margin-left: 2px;
         }
     }
 

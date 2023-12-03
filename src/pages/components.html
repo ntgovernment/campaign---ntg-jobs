@@ -216,10 +216,10 @@
                     <div class="ntg-banner__overlay">
 
                         <!-- Option 1: Video -->
-                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                        <video id="hero-banner" class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
                             <source src="assets/videos/homepage-video.mp4" type="video/mp4">
                         </video>
-                        <button class="video-control pause" aria-label="Playback"></button>
+                        <button class="video-control pause" aria-label="Video Playback Control" data-video="hero-banner"></button>
 
                         <!-- Option 2: Image -->
                         <!-- <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" /> -->
@@ -238,7 +238,7 @@
                     <div class="ntg-banner__overlay">
 
                         <!--@@ Option 1: Video @@-->
-                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                        <video id="solid-banner" class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
                             <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
                         </video>
 
@@ -255,7 +255,7 @@
                                     <h1>Solid banner</h1>
                                 </div>
 
-                                <button class="video-control pause" aria-label="Video Playback Control"></button>
+                                <button class="video-control pause" aria-label="Video Playback Control" data-video="solid-banner"></button>
                                 
                             </div>
                         </div>
@@ -274,7 +274,7 @@
                     <div class="ntg-banner__overlay">
 
                         <!-- Option 1: Video -->
-                        <video class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                        <video id="fading-banner" class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
                             <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
                         </video>
                         
@@ -299,7 +299,7 @@
                                     </ol>
                                 </nav>
 
-                                <button class="video-control pause" aria-label="Video Playback Control"></button>
+                                <button class="video-control pause" aria-label="Video Playback Control" data-video="fading-banner"></button>
 
                             </div>
                         </div>
@@ -649,6 +649,8 @@
 
                 <!--@@ End @@-->
 
+                <!--@@ Cards @@-->
+
                 <section class="ntg-cards pt-5">
                     <div class="container">
                         <h2>Cards</h2>
@@ -911,6 +913,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!--@@ End @@-->
 
                 <section class="ntg-cards-and-sticky-text pt-5">
                     <div class="container">
@@ -1347,9 +1351,10 @@
 
                 <section class="ntg-featured-testimonial py-8">
                     <div class="ntg-featured-testimonial__background">
-                        <video autoplay mute loop style="object-position: 50% 50%;">
+                        <video id="testimonial" autoplay mute loop style="object-position: 50% 50%;">
                             <source src="assets/videos/seadarwin-on-beach.mp4" type="video/mp4">
                         </video>
+                        <button class="video-control pause" aria-label="Video Playback Control" data-video="testimonial"></button>
                     </div>
                     <div class="ntg-featured-testimonial__content">
                         <div class="container">
