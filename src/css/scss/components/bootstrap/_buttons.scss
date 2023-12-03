@@ -3,6 +3,7 @@
 * e.g. "\f054" for chevron-right
 * optionally, disable icon animation by specifying $transition: false
 */
+
 @mixin btn-icon($unicode, $animation: true) {
     @extend .fa;
     display: inline-flex;
@@ -21,7 +22,8 @@
             @include btn-icon-animation($btn-padding-x);
         }
 
-        &.btn-sm {
+        &.btn-sm,
+        &.btn-sm.btn-lg {
             @include btn-icon-animation($btn-padding-x-sm);
         }
 
@@ -43,7 +45,10 @@
 }
 
 .btn {
-    transition: color 0.15s ease-in-out,
+    // TODO: adapt to colour theme
+
+    transition:
+        color 0.15s ease-in-out,
         background-color 0.15s ease-in-out,
         border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out,
