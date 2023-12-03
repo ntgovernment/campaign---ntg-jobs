@@ -733,25 +733,32 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   margin-bottom: 1.25rem;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-flush, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-flush, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   padding-left: 0;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   list-style-type: none;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li::before, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li {
+  position: relative;
+  padding-left: calc(9.5px + 0.5rem);
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li::before, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
   content: "\f054";
   font-size: 0.8rem;
   font-weight: 700 !important;
-  padding-right: 0.5rem;
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a, .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a {
+  display: inline-block;
   -webkit-transition: 0.2s margin-left ease-in-out;
   transition: 0.2s margin-left ease-in-out;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:hover, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:focus, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:hover, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:focus, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
   margin-left: 0.25rem;
   text-decoration: none;
 }
@@ -19004,15 +19011,16 @@ textarea.form-control-lg {
   outline: none;
 }
 @media (min-width: 992px) {
-  .card--tall .card-img-top,
-  .card--tall .card-video {
+  .card--tall video,
+  .card--tall iframe,
+  .card--tall img {
     aspect-ratio: 0.79/1;
   }
 }
 .card--small video,
 .card--small iframe,
 .card--small img {
-  min-height: 150px;
+  height: 150px;
 }
 .card--small .card-body {
   font-size: 16px;
@@ -19305,10 +19313,27 @@ textarea.form-control-lg {
 .ntg-call-to-action-links img, .ntg-call-to-action-links video, .ntg-call-to-action-links iframe {
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 300px;
+  min-height: 600px;
   width: 100%;
   height: 100%;
 }
+@media (max-width: 575.98px) {
+  .ntg-call-to-action-links img, .ntg-call-to-action-links video, .ntg-call-to-action-links iframe {
+    min-height: 300px;
+  }
+}
+.ntg-call-to-action-links__content {
+  padding: 80px;
+}
+@media (max-width: 575.98px) {
+  .ntg-call-to-action-links__content {
+    padding: 2rem 0.75rem;
+  }
+}
+.ntg-call-to-action-links__content > *:last-child {
+  margin-bottom: 0;
+}
+
 .callout {
   position: relative;
   padding: 1.5rem 1.5rem 1.5rem 2rem;
@@ -19627,6 +19652,12 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
+.ntg-featured-testimonial__background .video-control {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
 .ntg-featured-testimonial__content {
   position: relative;
   width: 100%;
@@ -19668,7 +19699,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 .btn-external:before,
 .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
 .card-link:before,
-.ntg-call-to-action-links ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
+.ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
 .ntg-featured-testimonial__content blockquote:before,
 .fa:after,
 .ntg-header__search button[type=submit]:after,
@@ -21205,6 +21236,7 @@ body.search-panel--is-hidden .search-global {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  vertical-align: middle;
   color: #2B292D;
   font-weight: 700 !important;
   -webkit-transition: 0.2s color ease-in-out;
@@ -21215,6 +21247,7 @@ body.search-panel--is-hidden .search-global {
 }
 .video-control.play::before {
   content: "\f04b";
+  margin-left: 2px;
 }
 .video-control:hover, .video-control:focus {
   background-color: rgba(0, 0, 0, 0.5);

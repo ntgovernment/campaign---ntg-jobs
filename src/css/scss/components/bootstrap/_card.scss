@@ -87,8 +87,9 @@
     }
 
     &--tall {
-        #{$this}-img-top,
-        #{$this}-video {
+        video,
+        iframe,
+        img {
             @include media-breakpoint-up(lg) {
                 aspect-ratio: 0.79 / 1;
             }
@@ -99,7 +100,7 @@
         video,
         iframe,
         img {
-            min-height: 150px;
+            height: 150px;
         }
 
         #{$this}-body {
