@@ -13,4 +13,8 @@ require('bootstrap/js/dist/dropdown');
 // require('bootstrap/js/dist/scrollspy');
 require('bootstrap/js/dist/tab');
 // require('bootstrap/js/dist/toast');
-// require('bootstrap/js/dist/tooltip');
+window.bootstrap.Tooltip = require('bootstrap/js/dist/tooltip');
+
+//Enable tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

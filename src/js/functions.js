@@ -15,7 +15,18 @@
     // initCountUp();
     initResizeButtons();
     initVideoControl();
+    initSumoSelect();
 })();
+
+function initSumoSelect() {
+    const selectWithMultipleSelection = $('#vacancySearchForm select[multiple]');
+    selectWithMultipleSelection.SumoSelect({search: true, searchText: 'Enter here.'});
+
+    const selectWithSingleSelection = $('#vacancySearchForm select:not([multiple])');
+    selectWithSingleSelection.SumoSelect();
+
+
+}
 
 function initStickyHeader() {
     const header = document.querySelector(".page-header-container");

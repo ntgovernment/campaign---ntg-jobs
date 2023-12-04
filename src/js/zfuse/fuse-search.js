@@ -114,9 +114,10 @@ class NTGJobSearch {
         const searchTerm = formData.get("keyword"),
         agency = formData.getAll("agency[]"),
         location = formData.getAll("location[]"),
-        vacancyType = formData.getAll("vacancy[]");
+        vacancyType = formData.getAll("vacancy[]"),
+        category = formData.getAll("jobCategory[]");
 
-        if(this._isEmptyOrNull(searchTerm) && this._isEmptyOrNull(agency) && this._isEmptyOrNull(location) && this._isEmptyOrNull(vacancyType) ) {
+        if(this._isEmptyOrNull(searchTerm) && this._isEmptyOrNull(agency) && this._isEmptyOrNull(location) && this._isEmptyOrNull(vacancyType) && this._isEmptyOrNull(category) ) {
             return "";
         }
 
@@ -144,6 +145,10 @@ class NTGJobSearch {
 
         if(!this._isEmptyOrNull(vacancyType)) {
             searchQuery["$and"].push({ "vacancyType": this._wrapInQuotesAndJoin(vacancyType) });
+        }
+
+        if(!this._isEmptyOrNull(category)) {
+            searchQuery["$and"].push({ "employmentCategoryList.employmentCategoryCodeDesc": this._wrapInQuotesAndJoin(category) });
         }
 
         return searchQuery;
@@ -220,6 +225,7 @@ class NTGJobSearch {
                     "weight": 2
                 },
                 "locationList.locationCodeDesc",
+                "employmentCategoryList.employmentCategoryCodeDesc",
                 {
                     "name": "vacancyType",
                     "weight": 2,

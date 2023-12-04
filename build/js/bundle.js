@@ -49,7 +49,14 @@ function fadeIn(el, display) {
     // initCountUp();
     initResizeButtons();
     initVideoControl();
+    initSumoSelect();
 })();
+
+function initSumoSelect() {
+    const vacancySearchForm = $('#vacancySearchForm select');
+
+    vacancySearchForm.SumoSelect({search: true, searchText: 'Enter here.'});
+}
 
 function initStickyHeader() {
     const header = document.querySelector(".page-header-container");
