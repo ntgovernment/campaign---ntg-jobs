@@ -1,11 +1,17 @@
 .ntg-footer {
-    background-color: $primary;
-    border-top: 0.25rem solid $secondary;
-    padding: 1.5rem 0;
+    background-color: var(--current-theme-color);
     color: $white;
 
-    @include media-breakpoint-up(lg) {
-        padding: 3rem 0;
+    &__top {
+        padding: 1.5rem 0;
+
+        @include media-breakpoint-up(lg) {
+            padding: 3rem 0;
+        }
+    }
+
+    &__bottom {
+        background-color: var(--current-theme-color-lighter);
     }
 
     .row {
