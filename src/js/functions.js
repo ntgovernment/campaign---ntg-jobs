@@ -24,8 +24,6 @@ function initSumoSelect() {
 
     const selectWithSingleSelection = $('#vacancySearchForm select:not([multiple])');
     selectWithSingleSelection.SumoSelect();
-
-
 }
 
 function initStickyHeader() {

@@ -1,0 +1,14 @@
+.ntg-job-tabs {
+    .nav {
+        &-link {
+            &.active,
+            &:hover {
+                background-color: $white;
+                color: $ntg-dark-gray;
+                --#{$prefix}nav-tabs-link-hover-border-color: transparent ;
+                --#{$prefix}nav-tabs-link-active-border-color: transparent;
+
+            }
+        }
+    }
+}

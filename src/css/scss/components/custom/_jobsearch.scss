@@ -1,12 +1,12 @@
 .jobsearch-wrapper {
-    padding: 10rem 0;
+    padding: 8rem 0;
     --text-color: #{$white};
     --bs-link-color-rgb: 255,255,255;
     --bs-link-hover-color-rgb: 204,204,204;
     color: var(--text-color);
 
     @include media-breakpoint-up(lg) {
-        padding: 15rem 0;
+        padding: 10rem 0;
     }
 
     .SumoSelect {

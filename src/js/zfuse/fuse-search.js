@@ -3,33 +3,180 @@
 class NTGJobSearch {
     constructor() {
         const api = ""
-        const fields = {
-            "keywords" : document.getElementById("keywords"),
-            "vacancyNumber": document.getElementById("vacancyNumber")
-        }
 
         //Setup vacancy search form
         const vacancySearchForm = document.getElementById("vacancySearchForm");
+        this.searchResultsWrapper = document.getElementById("searchResults");
         
         this._fetchNTGJobs().then((data) => {
             this._setupFuseSearch(data);
 
             vacancySearchForm && vacancySearchForm.addEventListener("submit", this._onFormSubmitCb.bind(this));
+            
+            //Check the url params and display the results based on the initial parameters provided
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+
+            const searchFormData = new FormData();
+
+            for (const key of urlParams.keys()) {
+                const paramsArray = urlParams.get(key).split(',');
+                
+                paramsArray.forEach((param) => {
+                    searchFormData.append(key, param)
+                })
+            }
+
+            this._populateFieldsPerSearchParam(searchFormData);
+            //Search and filter
+            const searchResults = this._search(this._buildSearchQuery(searchFormData));
+
+            const filteredResults = this._filterSearchResults(searchResults, searchFormData);
+            
+            this._showResults(filteredResults);
+
         })
     }
 
+    _populateFieldsPerSearchParam(formData) {
+        const searchTerm = formData.get("keyword"),
+        agency = formData.getAll("agency[]"),
+        location = formData.getAll("location[]"),
+        vacancyType = formData.getAll("vacancy[]"),
+        category = formData.getAll("jobCategory[]"),
+        renumerationFrom = formData.get("renumerationFrom"),
+        renumerationTo = formData.get("renumerationTo"),
+        salaryFrom = formData.get("salaryFrom"),
+        salaryTo = formData.get("salaryTo"),
+        listedTime = formData.get("listedTime");
+
+
+        if(!this._isEmptyOrNull(searchTerm)) {
+            document.getElementById("keyword").value = searchTerm
+        }
+
+        if(!this._isEmptyOrNull(agency)) {
+            agency.forEach((agency) => {
+                $('#agency')[0].sumo.selectItem(agency);
+            })
+        }
+
+        if(!this._isEmptyOrNull(location)) {
+            location.forEach((location) => {
+                $('#location')[0].sumo.selectItem(location);
+            })
+        }
+
+        if(!this._isEmptyOrNull(vacancyType)) {
+            vacancyType.forEach((vacancyType) => {
+                $('#vacancy')[0].sumo.selectItem(vacancyType);
+            })
+        }
+
+        if(!this._isEmptyOrNull(category)) {
+            category.forEach((category) => {
+                $('#jobCategory')[0].sumo.selectItem(category);
+            })
+        }
+
+        if(!this._isEmptyOrNull(renumerationFrom)) {
+            $('#renumerationFrom')[0].sumo.selectItem(renumerationFrom);
+        }
+
+        if(!this._isEmptyOrNull(renumerationTo)) {
+            $('#renumerationTo')[0].sumo.selectItem(renumerationTo);
+        }
+
+        if(!this._isEmptyOrNull(salaryFrom)) {
+            $('#salaryFrom')[0].sumo.selectItem(salaryFrom);
+        }
+
+        if(!this._isEmptyOrNull(salaryTo)) {
+            $('#salaryTo')[0].sumo.selectItem(salaryTo);
+        }
+
+        if(!this._isEmptyOrNull(listedTime)) {
+            $('#listedTime')[0].sumo.selectItem(listedTime);
+        }
+    }
 
     _onFormSubmitCb(e) {
         e && e.preventDefault();
 
         const formData = new FormData(e.target);
 
+        //Change the url when the form is submitted
+        var url = new URL(window.location.href);
+        var params = new URLSearchParams("");
+
+        for (const key of formData.keys()) {
+            params.set(key, formData.getAll(key).join(','));
+        }
+
+        url.search = params.toString();
+
+        history.pushState({}, "", url);
+
+        //Search and filter
         const searchResults = this._search(this._buildSearchQuery(formData));
 
         const filteredResults = this._filterSearchResults(searchResults, formData);
 
+        this._showResults(filteredResults);
+    }
 
-        console.log(filteredResults);
+    _showResults(results) {
+        if(results.length <= 0) {
+            this.searchResultsWrapper.innerText = "No results found"; 
+            return false;
+        }
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("search-results-wrapper");
+
+        wrapper.innerHTML = `<p>No of results: ${results.length}</p><div class="accordion accordion-block__items" id="jobsearchAccordion"></div></div>`;
+
+        //Create the content body
+        const accordion = wrapper.querySelector(".accordion");
+
+        results.forEach((result) => {
+            const { rtfId, jobTitle, positionNumber, agency, section, locationList, vacancyType, primaryObjective, specialInstructions, attachmentsList, vacancyDesignationList, url } = result;
+
+            let accordionItem = document.createElement("div");
+            accordionItem.classList.add("accordion-item");
+
+            let dataTemplate = `<h2 class="accordion-header py-4" id="heading-${rtfId}">
+                <button class="accordion-button collapsed py-0 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${rtfId}" aria-expanded="false">
+                    ${jobTitle}
+                </button>
+                <div class="salaryRange" style="font-size:14px; font-weight: normal">
+                        ${this._getSalaryDetails(vacancyDesignationList) && this._getSalaryDetails(vacancyDesignationList).salaryText}
+                </div>
+            </h2>
+            <div id="collapse-${rtfId}" class="accordion-collapse multi-collapse accordion-item-content collapse" data-bs-parent="#jobsearchAccordion">
+                <div class="accordion-body"></div>
+            </div>`;
+
+            accordionItem.insertAdjacentHTML("afterbegin", dataTemplate);
+
+            const accordionBody = accordionItem.querySelector(".accordion-body");
+
+            positionNumber && accordionBody.appendChild(this._createDescriptionRow("Vacancy Number", positionNumber));
+            agency && accordionBody.appendChild(this._createDescriptionRow("Agency", agency));
+            section && accordionBody.appendChild(this._createDescriptionRow("Work unit", section));
+            vacancyType && accordionBody.appendChild(this._createDescriptionRow("Vacancy Type", vacancyType));
+            primaryObjective && accordionBody.appendChild(this._createDescriptionRow("Primary Objectives", primaryObjective));
+            specialInstructions && accordionBody.appendChild(this._createDescriptionRow("Special Instructions", specialInstructions));
+
+            locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
+            attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments"));
+
+            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-4 btn btn-primary title="${url}">Apply now</a>`)
+            accordion.appendChild(accordionItem);
+        });
+
+        this.searchResultsWrapper.innerHTML = "";
+        this.searchResultsWrapper.appendChild(wrapper);
     }
 
     _search(searchQuery) {
@@ -55,6 +202,10 @@ class NTGJobSearch {
         salaryTo = formData.get("salaryTo"),
         listedTime = formData.get("listedTime"),
         filteredResults = [];
+
+        if(this._isEmptyOrNull(renumerationFrom) || this._isEmptyOrNull(renumerationTo) || this._isEmptyOrNull(salaryFrom) || this._isEmptyOrNull(salaryTo) || this._isEmptyOrNull(listedTime)) {
+            return searchResults;
+        }
 
         searchResults.forEach(element => {
             const dateListed = element.dateAdded;
@@ -156,6 +307,62 @@ class NTGJobSearch {
 
     /**
      * 
+     * @param {string} title | This will be used as the title for the row
+     * @param {string | []} description | Can be string or array. If an array, it would not work unless specialDesc is defined
+     * @param {String} specialDesc | location and attachments specialDesc available, will generate the descriptions based on those
+     * @returns 
+     */
+    _createDescriptionRow(title, description, specialDesc) {
+        let row = document.createElement("div");
+        row.classList.add("row","mb-2", "mb-sm-0");
+
+        row.innerHTML = `<div class="col-sm-3 col-md-2">
+            <strong class="title">${title}</strong>
+        </div>`;
+
+        if (Array.isArray(description) && specialDesc == "location") {
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
+            ${description.map((element) => element.locationCodeDesc).join(', ')}
+        </div>`);
+        } else if (Array.isArray(description) && specialDesc == "attachments") {
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
+                <table class="table w-auto table-attachments" summary="Job attachment">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>File Extension</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody> 
+
+                </tbody>
+            </table>
+        </div>`);
+
+            const attachmentTableBody = row.querySelector(".table-attachments tbody");
+
+            description.forEach((attachment) => {
+                const tableRow = `<tr>
+                <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
+                <td>${attachment.fileExtension}</td>
+                <td><a href="${attachment.fileURL}" class="text-nowrap" target="_blank" rel="noopener" title="Opens in a new window"><i class="fas fa-download me-half"></i>Download<i class="fal fa-external-link ms-half d-none"></i></a></td>
+            </tr>`;
+
+                attachmentTableBody.insertAdjacentHTML("beforeend", tableRow);
+            });
+
+        } else if (!Array.isArray(description)) {
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
+            ${description}
+        </div>`);
+        }
+
+        return row;
+    }
+
+    /**
+     * 
      * @param {Array} vacancyDesignationList | Array of vacancy designation list
      * @returns 
      */
@@ -205,31 +412,17 @@ class NTGJobSearch {
         const fuseOptions = {
             // isCaseSensitive: false,
             includeScore: false,
-            // shouldSort: true,
-            // includeMatches: false,
-            // findAllMatches: false,
-            // minMatchCharLength: 1,
-            // location: 0,
-            threshold: 0.6,
-            // distance: 100,
+            threshold: 0.3,
             useExtendedSearch: true,
             ignoreLocation: true,
-            // ignoreFieldNorm: false,
-            // fieldNormWeight: 1,
             keys: [
                 "primaryObjective", 
                 "positionNumber",
                 "jobTitle",
-                {
-                    "name": "agency",
-                    "weight": 2
-                },
+                "agency",
                 "locationList.locationCodeDesc",
                 "employmentCategoryList.employmentCategoryCodeDesc",
-                {
-                    "name": "vacancyType",
-                    "weight": 2,
-                },
+                "vacancyType"
             ]
         };
         
