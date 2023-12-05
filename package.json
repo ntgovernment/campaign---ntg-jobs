@@ -23,6 +23,7 @@
         "postcss-cli": "^9.1.0",
         "prettier": "^2.4.1",
         "purgecss": "^4.0.3",
+        "rsync": "^0.6.1",
         "sass": "^1.69.0",
         "uglify-js": "^3.14.3"
     },
