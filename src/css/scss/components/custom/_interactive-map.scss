@@ -1,0 +1,18 @@
+.interactive-map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    #NT g:not(.exclude){
+        cursor: pointer;
+
+        &:hover {
+            stroke: white;
+            stroke-width: 2;
+        }
+    }
+
+    path {
+        transition: 0.2s fill cubic-bezier(.54,.61,.96,-0.17);
+    }
+}

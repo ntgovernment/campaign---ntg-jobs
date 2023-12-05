@@ -471,4 +471,4 @@ class NTGJobSearch {
     }
 }
 
-const search = new NTGJobSearch();
+const search = (typeof Fuse != "undefined") && new NTGJobSearch();
