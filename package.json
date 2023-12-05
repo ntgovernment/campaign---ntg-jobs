@@ -46,7 +46,7 @@
         "static-build:autoprefix:dev": "postcss -u autoprefixer -r dist/css/main.css",
         "static-build:css": "sass --style compressed --no-source-map \"./src/css/scss/main.scss\" \"./dist/css/main.css\" && concat -o ./dist/css/plugins.css ./src/css/plugins/*.css",
         "static-build:css:dev": "sass --style expanded \"./src/css/scss/main.scss\" \"./dist/css/main.css\" && concat -o ./dist/css/plugins.css ./src/css/plugins/*.css",
-        "static-build:html": "find ./src/pages -name '*.html' -type f -exec cp {} dist \\;",
+        "static-build:html": "rsync -r --include='*.html' --include='*.json' --exclude='*' ./src/pages/ dist/",
         "static-build:assets": "cp -r ./src/assets ./dist",
         "static-build:js": "browserify ./src/js/bootstrap.js > ./dist/js/bootstrap.js && concat -o ./dist/js/bundle.js ./dist/js/bootstrap.js ./src/js/utils.js ./src/js/**/*.js ./src/js/functions.js && rm -rf ./dist/js/bootstrap.js && uglifyjs ./dist/js/bundle.js --compress -o ./dist/js/bundle.js",
         "static-build:js:dev": "browserify ./src/js/bootstrap.js > ./dist/js/bootstrap.js && concat -o ./dist/js/bundle.js ./dist/js/bootstrap.js ./src/js/utils.js ./src/js/**/*.js ./src/js/functions.js && rm -rf ./dist/js/bootstrap.js",
