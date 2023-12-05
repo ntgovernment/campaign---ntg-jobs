@@ -19253,6 +19253,46 @@ textarea.form-control-lg {
   }
 }
 
+.ntg-tabs {
+  background-color: var(--current-theme-color, #fff);
+  color: var(--current-theme-text-color, #2B292D);
+}
+.ntg-tabs .nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 1rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--current-theme-text-color);
+  --bs-nav-link-hover-color: var(--current-theme-text-color);
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+}
+.ntg-tabs .nav-tabs-wrapper {
+  background-color: var(--current-theme-color-lighter, #D7D2CB);
+}
+.ntg-tabs .nav-tabs {
+  --bs-nav-tabs-border-width: 3px;
+  --bs-nav-tabs-border-color: transparent;
+  --bs-nav-tabs-border-radius: 0;
+  --bs-nav-tabs-link-hover-border-color: var(--current-theme-text-color);
+  --bs-nav-tabs-link-active-color: var(--current-theme-text-color);
+  --bs-nav-tabs-link-active-bg: transparent;
+  --bs-nav-tabs-link-active-border-color: var(--current-theme-text-color);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.ntg-tabs .nav-link {
+  text-transform: uppercase;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+.ntg-tabs .nav-link.active, .ntg-tabs .nav-link:hover {
+  opacity: 1;
+}
+
 .back-to-top {
   display: none;
   position: fixed;
@@ -19805,6 +19845,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
 .ntg-featured-testimonial__content blockquote:before,
 .fa:after,
+.jobsearch-wrapper #expandSearchBtn:after,
 .ntg-header__search button[type=submit]:after,
 .link-chevron-right:after,
 .btn-chevron-right:after,
@@ -20811,45 +20852,6 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   text-decoration: none;
 }
 
-.ntg-map-tabs {
-  background-color: var(--current-theme-color);
-  color: var(--current-theme-text-color);
-}
-.ntg-map-tabs .nav {
-  --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 1rem;
-  --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--current-theme-text-color);
-  --bs-nav-link-hover-color: var(--current-theme-text-color);
-  --bs-nav-link-disabled-color: var(--bs-secondary-color);
-}
-.ntg-map-tabs .nav-tabs-wrapper {
-  background-color: var(--current-theme-color-lighter);
-}
-.ntg-map-tabs .nav-tabs {
-  --bs-nav-tabs-border-width: 3px;
-  --bs-nav-tabs-border-color: transparent;
-  --bs-nav-tabs-border-radius: 0;
-  --bs-nav-tabs-link-hover-border-color: var(--current-theme-text-color);
-  --bs-nav-tabs-link-active-color: var(--current-theme-text-color);
-  --bs-nav-tabs-link-active-bg: transparent;
-  --bs-nav-tabs-link-active-border-color: var(--current-theme-text-color);
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-.ntg-map-tabs .nav-link {
-  text-transform: uppercase;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-  line-height: 1.5;
-  opacity: 0.6;
-}
-.ntg-map-tabs .nav-link.active, .ntg-map-tabs .nav-link:hover {
-  opacity: 1;
-}
 .ntg-map-tabs .tab-content {
   min-height: 750px;
 }
@@ -21363,4 +21365,115 @@ body.search-panel--is-hidden .search-global {
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
+}
+
+.jobsearch-wrapper {
+  padding: 8rem 0;
+  --text-color: #fff;
+  --bs-link-color-rgb: 255,255,255;
+  --bs-link-hover-color-rgb: 204,204,204;
+  color: var(--text-color);
+}
+@media (min-width: 992px) {
+  .jobsearch-wrapper {
+    padding: 10rem 0;
+  }
+}
+.jobsearch-wrapper .SumoSelect {
+  width: 100%;
+}
+.jobsearch-wrapper .SumoSelect > .CaptionCont > label > i {
+  display: none;
+}
+.jobsearch-wrapper .SumoSelect.open .search-txt {
+  padding: 12px 2rem 12px 20px;
+}
+.jobsearch-wrapper .SumoSelect.open > .optWrapper {
+  top: 51px;
+}
+.jobsearch-wrapper input::-webkit-input-placeholder {
+  color: #2B292D;
+  font-style: normal;
+}
+.jobsearch-wrapper input::-moz-placeholder {
+  color: #2B292D;
+  font-style: normal;
+}
+.jobsearch-wrapper input:-ms-input-placeholder {
+  color: #2B292D;
+  font-style: normal;
+}
+.jobsearch-wrapper input::-ms-input-placeholder {
+  color: #2B292D;
+  font-style: normal;
+}
+.jobsearch-wrapper .SumoSelect,
+.jobsearch-wrapper input,
+.jobsearch-wrapper select,
+.jobsearch-wrapper input::placeholder,
+.jobsearch-wrapper .SumoSelect > .CaptionCont > span.placeholder {
+  color: #2B292D;
+  font-style: normal;
+}
+.jobsearch-wrapper .SumoSelect > .CaptionCont,
+.jobsearch-wrapper input {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 12px 2rem 12px 20px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+}
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont {
+  background-color: transparent;
+  color: var(--text-color);
+  --bs-border-width: 3px;
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+  background-size: 20px 16px;
+}
+.jobsearch-wrapper #expandSearch .sumo_renumerationFrom > .CaptionCont > span::before {
+  content: "Renumeration from ";
+}
+.jobsearch-wrapper #expandSearch .sumo_renumerationTo > .CaptionCont > span::before {
+  content: "to ";
+}
+.jobsearch-wrapper #expandSearch .sumo_salaryFrom > .CaptionCont > span::before {
+  content: "Salary from ";
+}
+.jobsearch-wrapper #expandSearch .sumo_salaryTo > .CaptionCont > span::before {
+  content: "to ";
+}
+.jobsearch-wrapper #expandSearch .sumo_listedTime > .CaptionCont > span::before {
+  content: "Listed ";
+}
+.jobsearch-wrapper #expandSearchBtn {
+  position: relative;
+}
+.jobsearch-wrapper #expandSearchBtn.collapsed::before {
+  content: "Expand ";
+}
+.jobsearch-wrapper #expandSearchBtn.collapsed::after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  margin-top: 0;
+}
+.jobsearch-wrapper #expandSearchBtn::before {
+  content: "Collapse ";
+}
+.jobsearch-wrapper #expandSearchBtn::after {
+  position: absolute;
+  right: -2rem;
+  content: "\f078";
+  font-weight: 700;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: -2px;
+}
+.jobsearch-wrapper #expandSearchBtn:hover {
+  padding-right: inherit !important;
+}
+
+.ntg-job-tabs .nav-link.active, .ntg-job-tabs .nav-link:hover {
+  background-color: #fff;
+  color: #2B292D;
+  --bs-nav-tabs-link-hover-border-color: transparent ;
+  --bs-nav-tabs-link-active-border-color: transparent;
 }

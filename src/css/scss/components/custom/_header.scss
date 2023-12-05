@@ -30,7 +30,12 @@ body:not(.mm-wrapper--opened) {
 
             .ntg-header {
                 padding: 0.5rem 0;
+
+                &__logo {
+                    max-width: 170px;
+                }
             }
+            
 
             // TODO: Work this out for all themes
             .ntg-header__logo {
@@ -56,7 +61,7 @@ body:not(.mm-wrapper--opened) {
     &__logo {
         max-width: 215px;
         width: 100%;
-        transition: 0.2s filter ease-in-out;
+        transition: 0.2s filter ease-in-out, 0.2s max-width ease-in-out;
 
         @include media-breakpoint-down(sm) {
             display: none;
@@ -65,6 +70,10 @@ body:not(.mm-wrapper--opened) {
         @include media-breakpoint-up(sm) {
             padding-right: 1rem;
             margin-right: 1rem;
+        }
+
+        img {
+            max-width: 100%;
         }
     }
 

@@ -53,9 +53,11 @@ function fadeIn(el, display) {
 })();
 
 function initSumoSelect() {
-    const vacancySearchForm = $('#vacancySearchForm select');
+    const selectWithMultipleSelection = $('#vacancySearchForm select[multiple]');
+    selectWithMultipleSelection.SumoSelect({search: true, searchText: 'Enter here.'});
 
-    vacancySearchForm.SumoSelect({search: true, searchText: 'Enter here.'});
+    const selectWithSingleSelection = $('#vacancySearchForm select:not([multiple])');
+    selectWithSingleSelection.SumoSelect();
 }
 
 function initStickyHeader() {
