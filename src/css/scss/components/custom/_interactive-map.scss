@@ -13,6 +13,6 @@
     }
 
     path {
-        transition: 0.2s fill cubic-bezier(.54,.61,.96,-0.17);
+        transition: 0.2s fill ease-in-out;
     }
 }
