@@ -27,7 +27,7 @@
             margin-bottom: 0;
 
             li, li::before {
-                page-break-inside: avoid;
+                // page-break-inside: avoid;
                 // break-inside: avoid-column;
             }
 
