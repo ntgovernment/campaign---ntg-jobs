@@ -89,6 +89,12 @@ function initTabsAsAccordions() {
     function resize_vertical_accordions(  ) 
     {
         "use strict";
+
+        const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
+            toggle: false
+        }));
+
         jQuery('.vertab-container').each(function(i, e)
         {
             var index, menu, contents; 
@@ -96,7 +102,6 @@ function initTabsAsAccordions() {
             
             // Setup current tab/panel (default to first tab/panel)
             index = jQuery(this).data('current');
-
 
             if(index === undefined)
             {
@@ -107,6 +112,8 @@ function initTabsAsAccordions() {
             // If using a desktop-size screen, manage as tabbed panels
             if( jQuery( window ).width() > tc_breakpoint)
             {
+                jQuery(container).find('.vertab-content .panel-collapse.collapse').show();
+                
                 // Reset panels heights (Bootstrap's accordions sets heights to zero)
                 jQuery(this).find('.panel-collapse.collapse').css('height','auto');
                 
@@ -124,13 +131,19 @@ function initTabsAsAccordions() {
             }
             else // If using a mobile device (phone + tablets), manage as accordion
             {
-                const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
-                const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
-                    toggle: false
-                }));
-                
+
+                jQuery(container).find('.vertab-content .panel-collapse.collapse').hide();
+
                 // // Clean styles from headings
                 jQuery(this).find('.vertab-content .panel-heading').removeClass('active');
+                
+                // Wait until all panels have collapsed and mark the one the user selected as active.
+                setTimeout(function()
+                {
+                    jQuery(container).find('.vertab-content .panel-heading').eq(index).addClass("active");
+                    jQuery(container).find('.vertab-content .panel-collapse.collapse').eq(index).show();				
+                },1000);
+
             }	
         });	
     }
