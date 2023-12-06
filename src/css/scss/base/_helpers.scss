@@ -57,17 +57,14 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
             list-style-type: none;
 
             li {
-                position: relative;
-                padding-left: calc(9.5px + 0.5rem);
-
                 &::before {
                     @extend .fa;
                     content: "\f054";
-                    font-size: 0.8rem;
+                    font-size: inherit;
                     font-weight: 700 !important;
-                    position: absolute;
-                    top: 4px;
-                    left: 0;
+                    margin-right: 0.5rem;
+                    vertical-align: top;
+                    transform: translateY(1px);
                 }
 
                 > a {
