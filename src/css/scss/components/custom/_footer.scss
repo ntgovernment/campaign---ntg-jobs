@@ -85,11 +85,11 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            transition: 0.2s background-color ease-in-out;
+            transition: 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
 
             &:hover {
                 background-color: var(--current-theme-text-color, #{$white});
-                color: var(--current-theme-color, #{$ntg-dark-gray});
+                color: var(--current-theme-color, #{$ntg-dark-gray}) !important;
             }
 
             i {
@@ -145,7 +145,6 @@
 
     a {
         text-decoration: none;
-        transition: 0.2s transform ease-in-out;
 
         &:hover {
             color: var(--current-theme-text-color, #{$white});
