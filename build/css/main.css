@@ -741,12 +741,17 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-flush, .ntg-related-pages ul:no
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   list-style-type: none;
 }
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li {
+  position: relative;
+  padding-left: calc(9.5px + 0.5rem);
+}
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li::before, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
   content: "\f054";
   font-size: inherit;
   font-weight: 700 !important;
-  margin-right: 0.5rem;
-  vertical-align: top;
+  position: absolute;
+  top: 0;
+  left: 0;
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
 }

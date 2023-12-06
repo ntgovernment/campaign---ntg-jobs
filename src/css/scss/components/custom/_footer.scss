@@ -19,28 +19,6 @@
             padding-bottom: 3rem;
         }
 
-        .tab-pane ul {
-            columns: 2;
-            column-width: auto;
-            column-gap: 1rem;
-
-            margin-bottom: 0;
-
-            li, li::before {
-                // page-break-inside: avoid;
-                // break-inside: avoid-column;
-            }
-
-            a {
-                font-weight: normal;
-            }
-
-            a:hover,
-            a:active {
-                text-decoration: underline !important;
-
-            }
-        }
     }
 
     &__bottom {
@@ -99,50 +77,6 @@
         }
     }
 
-    &-tabs {
-        background-color: transparent;
-        color: var(--current-theme-text-color, #{$white});
-        display: flex;
-        align-items: flex-start;
-
-        .nav-tabs-wrapper {
-            flex-shrink: 0;
-            background-color: transparent;
-            padding-right: 3rem;
-            margin-right: 3rem;
-            border-right: 2px solid var(--current-theme-text-color, #{$white});
-        }
-
-        .nav-item:last-child .nav-link {
-            padding-bottom: 0;
-        }
-
-        .nav-link {
-            padding-top: 0;
-            padding-bottom: 1rem;
-
-            border-color: transparent;
-            text-transform: none;
-
-            &.active,
-            &:hover {
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                text-decoration-thickness: 2px;
-                border-color: transparent;
-            }
-        }
-
-        .nav-tabs {
-            flex-direction: column;
-        }
-
-        .tab-content {
-            flex-grow: 1;
-            margin-bottom: -16px; //To account for the li margin on the links
-        }
-    }
-
     a {
         text-decoration: none;
 
@@ -159,4 +93,114 @@
         max-width: 200px;
         width: 100%;
     }
+
+    .panel-title {
+        cursor:pointer;
+    }
+
+    .vertab {
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            z-index: 10;    
+            
+            .panel-body ul {
+                margin-bottom: 0;
+
+                @include media-breakpoint-up(lg) {
+                    columns: 2;
+                    column-width: auto;
+                    column-gap: 1rem;
+                }
+
+                li {
+                    break-inside: avoid-column;
+                }
+
+                a {
+                    font-weight: normal;
+                }
+
+                a:hover,
+                a:active {
+                    text-decoration: underline !important;
+                }
+            }
+
+            .panel-heading.active .panel-title,
+            .panel-title:hover,
+            .panel-title:focus {
+                position: relative;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-thickness: 2px;
+                opacity: 1;
+            }
+
+            .panel-title {
+                font-size: var(--h5-size);
+                opacity: 0.6;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &-menu {
+            border-right: 2px solid var(--current-theme-text-color, #{$white});
+            padding-right: 5rem;
+            margin-right: 5rem;
+            flex-shrink: 0;
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+
+            .list-group > a {
+                display: block;
+                padding-top: 0;
+                padding-bottom: 1rem;
+                opacity: 0.6;
+                letter-spacing: 1.6px;
+                transition: .2s opacity ease-in-out;
+                font-size: var(--h5-size);
+
+                &.active, &:hover, &:focus {
+                    position: relative;
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 2px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-content {
+            margin-bottom: 1.5rem;
+            color: var(--current-theme-text-color, #{$white});
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .vertab-accordion {
+            flex-grow: 1;
+            max-width: 800px;
+        }
+
+        .vertab-accordion .vertab-content:not(.active) {
+            display: none;
+        }
+
+        .vertab-accordion .vertab-content.active .collapse {
+            display: block;
+        }
+
+        .vertab-container .panel-heading {
+            display: none;
+        }
+    }
+    
 }
