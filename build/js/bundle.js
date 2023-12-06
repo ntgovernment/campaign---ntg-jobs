@@ -50,7 +50,66 @@ function fadeIn(el, display) {
     initResizeButtons();
     initVideoControl();
     initSumoSelect();
+    initInteractiveMap();
 })();
+
+function initInteractiveMap() {
+    const interactiveMapWrapper = document.getElementById("interactive-map");
+    const allGroupsNT = interactiveMapWrapper.querySelectorAll("#NT g:not(.exclude)");
+    const mapTabs = document.getElementById("map-tab");
+
+    if(interactiveMapWrapper && mapTabs && allGroupsNT) {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        //Add Listener to navLinks to toggle map
+        if(navLinks.length > 0) {
+            navLinks.forEach(button => {
+                button.addEventListener("click", e => {
+                    const dataMapRegion = e.target.getAttribute("data-map-region");
+
+                    if(dataMapRegion) {
+                        allGroupsNT.forEach(region => {
+                            if(region.id == dataMapRegion) {
+                                //Fill White if the tab references to the region
+                                region.querySelectorAll("path").forEach(path=> {
+                                    path.setAttribute("fill", "#FFFFFF");
+                                })
+                            } else {
+                                region.querySelectorAll("path").forEach(path=> {
+                                    path.setAttribute("fill", "#6E8094");
+                                })
+                            }
+                        })
+                    }
+                })
+            })
+        }
+
+        //Add listener to map
+        if(interactiveMapWrapper) {
+            const ntRegion = interactiveMapWrapper.querySelector("#NT");
+
+            if(ntRegion) {
+                ntRegion.addEventListener("click", e => {
+                    const closestGroup = e.target.closest("g");
+                    const isExcluded = closestGroup && closestGroup.classList.contains("exclude");
+
+                    if(closestGroup && !isExcluded) {
+                        const closestGroupId = closestGroup.id;
+
+                        navLinks && navLinks.forEach(button => {
+                            const dataMapRegion = button.getAttribute("data-map-region");
+
+                            if(closestGroupId == dataMapRegion) {
+                                button.dispatchEvent(new Event("click"));
+                            }
+                        })
+                    }   
+                })
+            }
+        }
+    }
+}
 
 function initSumoSelect() {
     const selectWithMultipleSelection = $('#vacancySearchForm select[multiple]');

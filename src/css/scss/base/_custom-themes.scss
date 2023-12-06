@@ -72,7 +72,6 @@
         --current-theme-text-color: #{map.get($value, "text-color")};
         --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
         --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};
-
         --bs-primary: #{map.get($value, "primary")};
         --bs-primary-rgb: to-rgb(map.get($value, "primary"));
         --bs-primary-text: #{map.get($value, "primary-text")};
