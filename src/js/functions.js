@@ -151,7 +151,7 @@ function initTabsAsAccordions() {
 
 function initInteractiveMap() {
     const interactiveMapWrapper = document.getElementById("interactive-map");
-    const allGroupsNT = interactiveMapWrapper.querySelectorAll("#NT g:not(.exclude)");
+    const allGroupsNT = interactiveMapWrapper && interactiveMapWrapper.querySelectorAll("#NT g:not(.exclude)");
     const mapTabs = document.getElementById("map-tab");
 
     if(interactiveMapWrapper && mapTabs && allGroupsNT) {

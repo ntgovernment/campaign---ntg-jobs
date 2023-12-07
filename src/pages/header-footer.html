@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home | Brainium Starter Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/43d667f0b2.js" crossorigin="anonymous"></script>
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="skip-link" aria-label="skip links navigation">
+                <a class="skip-link__link" href="#content">Skip to main content</a>
+                <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+            </nav>
+    
+            <nav class="nav-menu-mobile" id="mmenu-wrapper">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                        <ul>
+                            <li><a href="./news-item.html">News item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./components.html">Components</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="search-global">
+                <form action="/search/" method="get" accept-charset="UTF-8">
+                    <div class="search-global__row">
+                        <div class="search-global__field search-global__field--form">
+                            <label for="queries_name_query" class="sr-only">Search</label>
+                            <input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15" maxlength="128" class="form-search" placeholder="Search" />
+                            <button type="submit" id="edit-submit">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Popular searches</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Recently updated pages</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" title="Close search" class="search-global__close">Close</a>
+                </form>
+            </div>
+
+            <div class="page-header-container" data-bs-theme="dark-blue">
+                <header class="ntg-header" role="banner">
+                    <div class="container">
+                        <div class="ntg-header__wrapper">
+                            <a class="ntg-header__logo" href="./index.html">
+                                <svg width="179" class="ntg-header__image" width="198" height="71" >
+                                    <use href="assets/images/logos/logo-territory.svg#logo-territory"></use>
+                                </svg>
+                            </a>
+
+                            <nav class="ntg-main-nav" id="mainmenu">
+                                <div class="ntg-main-nav__wrapper">
+                                    <ul class="ntg-main-nav__links">
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./index.html" role="button">Home</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Home</a>
+                                                            </h2>
+                                                            <p>With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call home.</p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- <div class="ntg-main-nav__panel-group" role="group"> -->
+                                                                <!-- <h3><a href="#">Infrastructure & strategic land</a></h3> -->
+                                                                
+                                                            <!-- </div> -->
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-primary btn-chevron-right rounded-pill text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-2">
+                                                                Make sure you've got everything you need to hit the ground running.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="#" role="button">Work</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Work</a>
+                                                            </h2>
+                                                            <p>With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call home.</p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- <div class="ntg-main-nav__panel-group" role="group"> -->
+                                                                <!-- <h3><a href="#">Infrastructure & strategic land</a></h3> -->
+                                                                
+                                                            <!-- </div> -->
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-primary btn-chevron-right rounded-pill text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-2">
+                                                                Make sure you've got everything you need to hit the ground running.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="#" role="button">Move</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Move</a>
+                                                            </h2>
+                                                            <p>With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call home.</p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- <div class="ntg-main-nav__panel-group" role="group"> -->
+                                                                <!-- <h3><a href="#">Infrastructure & strategic land</a></h3> -->
+                                                                
+                                                            <!-- </div> -->
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-primary btn-chevron-right rounded-pill text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-2">
+                                                                Make sure you've got everything you need to hit the ground running.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="#" role="button">Live</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Live in the Northern Territory</a>
+                                                            </h2>
+                                                            <p>With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call home.</p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- <div class="ntg-main-nav__panel-group" role="group"> -->
+                                                                <!-- <h3><a href="#">Infrastructure & strategic land</a></h3> -->
+                                                                
+                                                            <!-- </div> -->
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-primary btn-chevron-right rounded-pill text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-2">
+                                                                Make sure you've got everything you need to hit the ground running.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="#" role="button">Learn</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Live in the Northern Territory</a>
+                                                            </h2>
+                                                            <p>With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call home.</p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- <div class="ntg-main-nav__panel-group" role="group"> -->
+                                                                <!-- <h3><a href="#">Infrastructure & strategic land</a></h3> -->
+                                                                
+                                                            <!-- </div> -->
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-primary btn-chevron-right rounded-pill text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-2">
+                                                                Make sure you've got everything you need to hit the ground running.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="ntg-main-nav__search d-block d-xl-none">
+                                        <span class="visually-hidden">Search</span>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="ntg-main-nav__mobile">
+                                        <a href="#mmenu-wrapper" aria-label="Open or close menu">
+                                            <span aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="ntg-header__search d-none d-xl-block">
+                                <form>
+                                    <input class="form-control rounded-pill bg-transparent border-3" type="search" placeholder="Search">
+                                    <button class="btn rounded-pill" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
+
+            </div>
+            
+            <!--@@ Hero Banner @@-->
+
+            <section class="ntg-hero-banner">
+                <div class="ratio ratio-16x9">
+                    <div class="ntg-banner__overlay">
+
+                        <!-- Option 1: Video -->
+                        <video id="hero-banner" class="ntg-banner__video" autoplay muted loop style="object-position: 50% 50%;" tabindex="-1">
+                            <source src="assets/videos/homepage-video.mp4" type="video/mp4">
+                        </video>
+                        <button class="video-control pause" aria-label="Video Playback Control" data-video="hero-banner"></button>
+
+                        <!-- Option 2: Image -->
+                        <!-- <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%;" /> -->
+
+                    </div>
+                </div>
+            </section>
+
+            <main id="content">
+                
+            </main>
+
+            <div class="back-to-top" aria-hidden="true">
+                <button>
+                    <span class="visually-hidden">Back to top</span>
+                    <i class="far fa-chevron-up"></i>
+                </button>
+            </div>
+
+            <footer class="ntg-footer" role="contentinfo" data-bs-theme="charcoal-grey-20">
+                    <div class="ntg-footer__top">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center gy-3">
+                                <div class="col-md-3 col-xl-2">
+                                    <a href="#" target="_blank" title="Opens in a new window">
+                                        <svg width="179" class="ntg-header__image" width="198" height="71" >
+                                            <use href="assets/images/logos/logo-ntg-footer.svg#ntglogo"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="ntg-footer__social-section">
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-youtube"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="ntg-footer__mid">
+                        <div class="container">
+                            <div class="vertab-container">
+                                <div class="vertab-menu">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item"> Early Careers </a>
+                                        <a href="#" class="list-group-item"> Correction Careers </a>
+                                        <a href="#" class="list-group-item"> Environment Careers </a>
+                                        <a href="#" class="list-group-item"> Correction Careers </a>
+                                        <a href="#" class="list-group-item"> Early Careers </a>
+                                    </div>
+                                </div>
+
+                                <div id="accordion" class="vertab-accordion panel-group"> 
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse1">
+                                                Early Careers
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse2">
+                                            <h4 class="panel-title">
+                                                Correction Careers
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse3">
+                                                Environment Careers
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>                                            
+                                            </div>
+                                        </div>                                            
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse4">
+                                                Correction Careers
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                        <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse5">
+                                            Early Careers
+                                        </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ntg-footer__bottom">
+                        <div class="container">
+                            <div class="row align-items-start small py-2 gy-1">
+                                <nav class="order-2 order-lg-1 col-lg" aria-label="footer">
+                                    <ul class="mb-0">
+                                        <li>
+                                            <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy"><span>Copyright, disclaimer and privacy</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/law/rights/freedom-of-information"><span>Freedom of information</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/page/interpreter-services"><span>Interpreter services</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><span>Site map</span></a></li>
+                                        <li><a href="#"><span>Contacts</span></a></li>
+                                        <li><a href="#"><span>Feedback</span></a></li>
+                                    </ul>
+                                </nav>
+                                <div class="order-1 order-lg-2 col-lg-auto">
+                                    <p>© 2022 Northern Territory Government.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+            </footer>
+        </div>
+    </body>
+
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</html>

@@ -1,7 +1,6 @@
 .ntg-footer {
-    --bs-link-color-rgb: var(--current-theme-text-color, #{$white});
     background-color: var(--current-theme-color, #{$ntg-dark-gray});
-    color: $white;
+    color: var(--current-theme-text-color, #{$white});
 
     &__top {
         padding-top: 1.5rem;
@@ -64,6 +63,7 @@
             align-items: center;
             justify-content: center;
             transition: 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
+            color: var(--current-theme-text-color, #{$white});
 
             &:hover {
                 background-color: var(--current-theme-text-color, #{$white});
@@ -79,6 +79,7 @@
 
     a {
         text-decoration: none;
+        color: var(--current-theme-text-color, #{$white});
 
         &:hover {
             color: var(--current-theme-text-color, #{$white});
@@ -163,6 +164,7 @@
                 letter-spacing: 1.6px;
                 transition: .2s opacity ease-in-out;
                 font-size: var(--h5-size);
+                color: var(--current-theme-text-color, #{$white});
 
                 &.active, &:hover, &:focus {
                     position: relative;
