@@ -57,6 +57,11 @@ function fadeIn(el, display) {
 function initTabsAsAccordions() {
    // Screen-width breakpoint
     const tc_breakpoint = 992;
+    
+    const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
+    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
+        toggle: false
+    }));
 	
 	// Switch tabs and update panels classes - Adjust container height
     jQuery(".vertab-container .vertab-menu .list-group a").click(function(e) 
@@ -86,7 +91,7 @@ function initTabsAsAccordions() {
 		
 		accordion.find('.collapse.in').each(function()
 		{
-			jQuery(this).collapse('hide');
+			jQuery(this).hide();
 		});		
 		
 		jQuery(this).siblings('.panel-heading').addClass('active');
@@ -123,11 +128,6 @@ function initTabsAsAccordions() {
     function resize_vertical_accordions(  ) 
     {
         "use strict";
-
-        const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
-        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
-            toggle: false
-        }));
 
         jQuery('.vertab-container').each(function(i, e)
         {

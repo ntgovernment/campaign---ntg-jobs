@@ -24,6 +24,11 @@ function initTabsAsAccordions() {
    // Screen-width breakpoint
     const tc_breakpoint = 992;
 	
+    const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
+    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
+        toggle: false
+    }));
+    
 	// Switch tabs and update panels classes - Adjust container height
     jQuery(".vertab-container .vertab-menu .list-group a").click(function(e) 
 	{
@@ -50,11 +55,8 @@ function initTabsAsAccordions() {
 		accordion = jQuery(this).parents('.vertab-accordion');
 		container = accordion.parents('.vertab-container');
 		
-		accordion.find('.collapse.in').each(function()
-		{
-			jQuery(this).collapse('hide');
-		});		
-		
+        collapseList.map(collapse => collapse._element.classList.contains("show") && collapse.hide());
+
 		jQuery(this).siblings('.panel-heading').addClass('active');
 		
 		current = accordion.find('.panel-heading.active');
@@ -90,10 +92,6 @@ function initTabsAsAccordions() {
     {
         "use strict";
 
-        const collapseElementList = document.querySelectorAll('.vertab-content .panel-collapse.collapse');
-        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {
-            toggle: false
-        }));
 
         jQuery('.vertab-container').each(function(i, e)
         {
@@ -112,7 +110,7 @@ function initTabsAsAccordions() {
             // If using a desktop-size screen, manage as tabbed panels
             if( jQuery( window ).width() > tc_breakpoint)
             {
-                jQuery(container).find('.vertab-content .panel-collapse.collapse').show();
+                collapseList.map(collapse => collapse.show());
                 
                 // Reset panels heights (Bootstrap's accordions sets heights to zero)
                 jQuery(this).find('.panel-collapse.collapse').css('height','auto');
@@ -130,18 +128,17 @@ function initTabsAsAccordions() {
                 contents.eq(index).addClass("active");
             }
             else // If using a mobile device (phone + tablets), manage as accordion
-            {
+            {   
+                collapseList.map(collapse => collapse.hide());
 
-                jQuery(container).find('.vertab-content .panel-collapse.collapse').hide();
-
-                // // Clean styles from headings
+                // Clean styles from headings
                 jQuery(this).find('.vertab-content .panel-heading').removeClass('active');
                 
                 // Wait until all panels have collapsed and mark the one the user selected as active.
                 setTimeout(function()
                 {
                     jQuery(container).find('.vertab-content .panel-heading').eq(index).addClass("active");
-                    jQuery(container).find('.vertab-content .panel-collapse.collapse').eq(index).show();				
+                    collapseList[index].show();				
                 },1000);
 
             }	
