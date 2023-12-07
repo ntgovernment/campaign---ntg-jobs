@@ -81,6 +81,7 @@ body:not(.mm-wrapper--opened) {
             top: 50%;
             transform: translateY(-50%);
             font-size: 0;
+            padding: 1rem;
 
             &:active {
                 border-width: 0;

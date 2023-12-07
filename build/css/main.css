@@ -20450,6 +20450,7 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 0;
+  padding: 1rem;
 }
 .ntg-header__search button[type=submit]:active {
   border-width: 0;
@@ -20937,9 +20938,6 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
           flex: 0 0 400px;
 }
 .ntg-main-nav__panel-wrapper > *:last-child {
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
   padding: 0 0 0 3rem;
 }
 .ntg-main-nav__panel-columns {
