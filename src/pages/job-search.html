@@ -453,27 +453,31 @@
                     <div class="ntg-jobs-subsite__menu">
                         <div class="container-fluid">
                             <nav class="nav">
-                                <div class="nav-cell"><a class="nav-link active" aria-current="page" href="#" data-text="Job Search">Job Search</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Career pathways">Career pathways</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Career pathways">Career pathways</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Career pathways">Career pathways</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a></div>
-                                <div class="nav-cell"><a class="nav-link" href="#" data-text="Career pathways">Career pathways</a></div>
+                                <a class="nav-link active" aria-current="page" href="#" data-text="Job Search">Job Search</a>
+                                <a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a>
+                                <a class="nav-link" href="#" data-text="Career pathways">Career pathways</a>
+                                <a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a>
+                                <a class="nav-link" href="#" data-text="Career pathways">Career pathways</a>
+                                <a class="nav-link" href="#" data-text="Career pathways">Career pathways</a>
+                                <a class="nav-link" href="#" data-text="Applying for a job">Applying for a job</a>
+                                <a class="nav-link" href="#" data-text="Career pathways">Career pathways</a>
                             </nav>
                         </div>
                     </div>
 
 
                     <div class="container">
-
-                        <div>
-                            <h2>Search Results</h2>
-
-                            <div id="searchResults">
-
+                        <div class="row align-items-center small py-2 gy-2">
+                            <div class="col-sm">
+                                Don't let opportunities pass you by. Get vacancies emailed to you as soon as they become available.
                             </div>
+                            <div class="col-sm-auto">
+                                <button class="btn btn btn-outline-dark-gray py-1 border-1"><i class="far fa-envelope me-1"></i>Job Alert</button>
+                                <button class="btn btn btn-outline-dark-gray py-1 border-1"><i class="far fa-user me-1"></i>Login</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="searchResults"></div>
                         </div>
                     </div>
                 </section>
@@ -534,4 +538,6 @@
 
     <!-- scripts -->
     <script type="text/javascript" src="js/bundle.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> 
 </html>

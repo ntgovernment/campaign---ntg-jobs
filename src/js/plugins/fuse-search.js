@@ -134,25 +134,34 @@ class NTGJobSearch {
         const wrapper = document.createElement("div");
         wrapper.classList.add("search-results-wrapper");
 
-        wrapper.innerHTML = `<p>No of results: ${results.length}</p><div class="accordion accordion-block__items" id="jobsearchAccordion"></div></div>`;
+        wrapper.innerHTML = `<div class="accordion small" id="jobsearchAccordion"></div><div id="pagination"></div> `;
 
         //Create the content body
         const accordion = wrapper.querySelector(".accordion");
-
         results.forEach((result) => {
-            const { rtfId, jobTitle, positionNumber, agency, section, locationList, vacancyType, primaryObjective, specialInstructions, attachmentsList, vacancyDesignationList, url } = result;
+            const { rtfId, jobTitle, positionNumber, agency, section, locationList, vacancyType, primaryObjective, specialInstructions, attachmentsList, vacancyDesignationList, url, formattedClosingDate} = result;
 
             let accordionItem = document.createElement("div");
             accordionItem.classList.add("accordion-item");
 
-            let dataTemplate = `<h2 class="accordion-header py-4" id="heading-${rtfId}">
-                <button class="accordion-button collapsed py-0 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${rtfId}" aria-expanded="false">
-                    ${jobTitle}
-                </button>
-                <div class="salaryRange" style="font-size:14px; font-weight: normal">
-                        ${this._getSalaryDetails(vacancyDesignationList) && this._getSalaryDetails(vacancyDesignationList).salaryText}
-                </div>
-            </h2>
+            let dataTemplate = `<div class="accordion-header py-2" id="heading-${rtfId}">
+                <a href="#" class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-${rtfId}" aria-expanded="false">
+                    <div class="d-flex justify-content-between align-items-start w-100 pe-3">
+                        <div class="job-title">${jobTitle}</div>
+                        <div class="closing-date">${formattedClosingDate}</div>
+                    </div>    
+                
+                    <div class="vacancy-type">
+                        ${vacancyType}
+                    </div>
+                    
+                    <div class="salaryRange">
+                        ${this._getSalaryDetails(vacancyDesignationList) ? this._getSalaryDetails(vacancyDesignationList).salaryText : ''}
+                    </div>
+                </a>
+                
+
+            </div>
             <div id="collapse-${rtfId}" class="accordion-collapse multi-collapse accordion-item-content collapse" data-bs-parent="#jobsearchAccordion">
                 <div class="accordion-body"></div>
             </div>`;
@@ -171,12 +180,29 @@ class NTGJobSearch {
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
             attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments"));
 
-            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-4 btn btn-primary title="${url}">Apply now</a>`)
+            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>`)
             accordion.appendChild(accordionItem);
         });
 
         this.searchResultsWrapper.innerHTML = "";
         this.searchResultsWrapper.appendChild(wrapper);
+
+        //Add Pagination
+        const noOfItemsPerPage = 10;
+        $("#searchResults .accordion-item").slice(10).hide(); 
+
+        $('#pagination').pagination({ 
+            items: results.length,   
+            itemsOnPage: noOfItemsPerPage,  
+            onPageClick: function (noofele) { 
+                $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start"});
+
+                $("#searchResults .accordion-item").hide() 
+                    .slice(noOfItemsPerPage * (noofele-1), 
+                    noOfItemsPerPage + noOfItemsPerPage * (noofele - 1)).show(); 
+            } 
+        }); 
+        
     }
 
     _search(searchQuery) {
@@ -314,31 +340,31 @@ class NTGJobSearch {
      */
     _createDescriptionRow(title, description, specialDesc) {
         let row = document.createElement("div");
-        row.classList.add("row","mb-2", "mb-sm-0");
+        row.classList.add("row","mb-2");
 
-        row.innerHTML = `<div class="col-sm-3 col-md-2">
+        row.innerHTML = `<div class="col-sm-3 col-md-3">
             <strong class="title">${title}</strong>
         </div>`;
 
         if (Array.isArray(description) && specialDesc == "location") {
-            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-9 description">
             ${description.map((element) => element.locationCodeDesc).join(', ')}
         </div>`);
         } else if (Array.isArray(description) && specialDesc == "attachments") {
-            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
-                <table class="table w-auto table-attachments" summary="Job attachment">
-                <thead>
-                    <tr>
-                        <th>File Name</th>
-                        <th>File Extension</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody> 
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-9 description">
+                    <table class="table w-auto table-attachments" summary="Job attachment">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th style="whitespace:nowrap">File Extension</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
 
-                </tbody>
-            </table>
-        </div>`);
+                    </tbody>
+                </table>
+            </div>`);
 
             const attachmentTableBody = row.querySelector(".table-attachments tbody");
 
@@ -346,14 +372,14 @@ class NTGJobSearch {
                 const tableRow = `<tr>
                 <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
                 <td>${attachment.fileExtension}</td>
-                <td><a href="${attachment.fileURL}" class="text-nowrap" target="_blank" rel="noopener" title="Opens in a new window"><i class="fas fa-download me-half"></i>Download<i class="fal fa-external-link ms-half d-none"></i></a></td>
+                <td><a href="${attachment.fileURL}" class="text-nowrap" target="_blank" rel="noopener" title="Opens in a new window">Download<i class="fas fa-arrow-to-bottom ms-1"></i></a></td>
             </tr>`;
 
                 attachmentTableBody.insertAdjacentHTML("beforeend", tableRow);
             });
 
         } else if (!Array.isArray(description)) {
-            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-10 description">
+            row.insertAdjacentHTML("beforeend", `<div class="col-sm-9 col-md-9 description">
             ${description}
         </div>`);
         }
@@ -367,6 +393,10 @@ class NTGJobSearch {
      * @returns 
      */
     _getSalaryDetails(vacancyDesignationList) {
+        if(vacancyDesignationList.length <= 0) {
+            return false;
+        }
+
         let minimumSalary = 0;
         let maximumSalary = 0;
 
@@ -394,7 +424,7 @@ class NTGJobSearch {
             } else {
                 salaryText = `${minSalaryDesignation.advertisedCode} - Remuneration Package ${minSalaryDesignation.packageRange} (including salary ${minSalaryDesignation.salaryRange}) To ${maxSalaryDesignation.advertisedCode} - Remuneration Package ${maxSalaryDesignation.packageRange} (including salary ${maxSalaryDesignation.salaryRange})`;
             }
-
+            
             return {
                 "salaryText": salaryText,
                 "minSalary": minimumSalary,

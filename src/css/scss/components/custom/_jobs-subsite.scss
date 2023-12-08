@@ -26,20 +26,16 @@
         
         nav {
             display: block;
-        }
-
-        .nav-cell {
-            display: inline-block;
+            white-space: nowrap;
         }
 
         .nav-link {
             --bs-nav-link-padding-y: 1.75rem;
             --bs-nav-link-padding-x: 1rem;
             --bs-nav-link-color: var(--current-theme-secondary-text, #2E3849);
-            display: block;
             border-top: 6px solid transparent;
             border-bottom: 6px solid transparent;
-            background-color: var(--current-theme-color, #{$white});
+            display: inline-block;
 
             &::before {
                 content: attr(data-text);
@@ -58,9 +54,82 @@
 
             &.active,
             &:hover {
+                background-color:var(--current-theme-color, #{$white});
                 color: var(--current-theme-text-color, #2E3849);
                 font-weight: bold;
                 border-top-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+            }
+        }
+    }
+
+    #searchResults {
+        .accordion {
+            &-header {
+                @extend .small;
+            }
+
+            &-item {
+                border: 1px solid var(--current-theme-secondary, #{$ntg-territory-stone});
+                overflow: hidden;
+            }
+
+            &-button {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-decoration: none;
+
+                &:not(.collapsed)::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    background-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+                    top: -999px;
+                    bottom: -9999px;
+                    left: 0;
+                }
+
+                &::after {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1.25rem;
+                }
+
+                .job-title {
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+
+                .closing-date {
+                    white-space: nowrap;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    #pagination {
+        padding: 1rem 0;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: inline-flex;
+            border: 1px solid var(--current-theme-secondary, #{$ntg-territory-stone});
+            padding: 0.5rem 1rem;
+            margin-bottom: 0;
+            gap: 1rem;
+            @extend .small;
+            @extend .rounded-pill;
+            font-weight: bold;
+
+            li {
+                margin-bottom: 0;
+
+                &.active, &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 3px;
+                    text-decoration-thickness: 3px;
+                }
             }
         }
     }
