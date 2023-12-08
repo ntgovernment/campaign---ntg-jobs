@@ -14883,6 +14883,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #f6e2d0;
   --current-theme-color-lighter: #fefdfb;
+  --current-theme-primary: #FBF2EA;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #FBF2EA;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #FBF2EA;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #FBF2EA;
+  --current-theme-body-bg-rgb: 251, 242, 234;
+  --current-theme-primary-text-emphasis: #64615e;
+  --current-theme-secondary-text-emphasis: #64615e;
+  --current-theme-tertiary-text-emphasis: #64615e;
+  --current-theme-primary-bg-subtle: #fdfaf7;
+  --current-theme-secondary-bg-subtle: #fdfaf7;
+  --current-theme-tertiary-bg-subtle: #fdfaf7;
+  --current-theme-primary-border-subtle: #fcf6f0;
+  --current-theme-secondary-border-subtle: #fcf6f0;
+  --current-theme-tertiary-border-subtle: #fcf6f0;
   --bs-primary: #FBF2EA;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -15104,6 +15124,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #3e1857;
   --current-theme-color-lighter: #5a237f;
+  --current-theme-primary: #4F1F6F;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #4F1F6F;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #4F1F6F;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #4F1F6F;
+  --current-theme-body-bg-rgb: 79, 31, 111;
+  --current-theme-primary-text-emphasis: #200c2c;
+  --current-theme-secondary-text-emphasis: #200c2c;
+  --current-theme-tertiary-text-emphasis: #200c2c;
+  --current-theme-primary-bg-subtle: #b9a5c5;
+  --current-theme-secondary-bg-subtle: #b9a5c5;
+  --current-theme-tertiary-bg-subtle: #b9a5c5;
+  --current-theme-primary-border-subtle: #84629a;
+  --current-theme-secondary-border-subtle: #84629a;
+  --current-theme-tertiary-border-subtle: #84629a;
   --bs-primary: #4F1F6F;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -15325,6 +15365,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #007b99;
   --current-theme-color-lighter: #00a3cc;
+  --current-theme-primary: #0093B8;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #0093B8;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #0093B8;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #000;
+  --current-theme-body-bg: #0093B8;
+  --current-theme-body-bg-rgb: 0, 147, 184;
+  --current-theme-primary-text-emphasis: #003b4a;
+  --current-theme-secondary-text-emphasis: #003b4a;
+  --current-theme-tertiary-text-emphasis: #003b4a;
+  --current-theme-primary-bg-subtle: #99d4e3;
+  --current-theme-secondary-bg-subtle: #99d4e3;
+  --current-theme-tertiary-bg-subtle: #99d4e3;
+  --current-theme-primary-border-subtle: #4db3cd;
+  --current-theme-secondary-border-subtle: #4db3cd;
+  --current-theme-tertiary-border-subtle: #4db3cd;
   --bs-primary: #0093B8;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -15546,6 +15606,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #363437;
   --current-theme-color-lighter: #4f4d51;
+  --current-theme-primary: #454347;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #454347;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #454347;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #454347;
+  --current-theme-body-bg-rgb: 69, 67, 71;
+  --current-theme-primary-text-emphasis: #1c1b1c;
+  --current-theme-secondary-text-emphasis: #1c1b1c;
+  --current-theme-tertiary-text-emphasis: #1c1b1c;
+  --current-theme-primary-bg-subtle: #b5b4b5;
+  --current-theme-secondary-bg-subtle: #b5b4b5;
+  --current-theme-tertiary-bg-subtle: #b5b4b5;
+  --current-theme-primary-border-subtle: #7d7b7e;
+  --current-theme-secondary-border-subtle: #7d7b7e;
+  --current-theme-tertiary-border-subtle: #7d7b7e;
   --bs-primary: #454347;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -15767,6 +15847,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #cbc9cb;
   --current-theme-color-lighter: #e4e3e4;
+  --current-theme-primary: #DAD9DA;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #DAD9DA;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #DAD9DA;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #DAD9DA;
+  --current-theme-body-bg-rgb: 218, 217, 218;
+  --current-theme-primary-text-emphasis: #575757;
+  --current-theme-secondary-text-emphasis: #575757;
+  --current-theme-tertiary-text-emphasis: #575757;
+  --current-theme-primary-bg-subtle: #f0f0f0;
+  --current-theme-secondary-bg-subtle: #f0f0f0;
+  --current-theme-tertiary-bg-subtle: #f0f0f0;
+  --current-theme-primary-border-subtle: #e5e4e5;
+  --current-theme-secondary-border-subtle: #e5e4e5;
+  --current-theme-tertiary-border-subtle: #e5e4e5;
   --bs-primary: #DAD9DA;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -15988,6 +16088,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #661966;
   --current-theme-color-lighter: #8f238f;
+  --current-theme-primary: #7F1F7F;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #7F1F7F;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #7F1F7F;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #7F1F7F;
+  --current-theme-body-bg-rgb: 127, 31, 127;
+  --current-theme-primary-text-emphasis: #330c33;
+  --current-theme-secondary-text-emphasis: #330c33;
+  --current-theme-tertiary-text-emphasis: #330c33;
+  --current-theme-primary-bg-subtle: #cca5cc;
+  --current-theme-secondary-bg-subtle: #cca5cc;
+  --current-theme-tertiary-bg-subtle: #cca5cc;
+  --current-theme-primary-border-subtle: #a562a5;
+  --current-theme-secondary-border-subtle: #a562a5;
+  --current-theme-tertiary-border-subtle: #a562a5;
   --bs-primary: #7F1F7F;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -16209,6 +16329,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #ebdbeb;
   --current-theme-color-lighter: #fdfcfd;
+  --current-theme-primary: #F6EFF6;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #F6EFF6;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #F6EFF6;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #F6EFF6;
+  --current-theme-body-bg-rgb: 246, 239, 246;
+  --current-theme-primary-text-emphasis: #626062;
+  --current-theme-secondary-text-emphasis: #626062;
+  --current-theme-tertiary-text-emphasis: #626062;
+  --current-theme-primary-bg-subtle: #fbf9fb;
+  --current-theme-secondary-bg-subtle: #fbf9fb;
+  --current-theme-tertiary-bg-subtle: #fbf9fb;
+  --current-theme-primary-border-subtle: #f9f4f9;
+  --current-theme-secondary-border-subtle: #f9f4f9;
+  --current-theme-tertiary-border-subtle: #f9f4f9;
   --bs-primary: #F6EFF6;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -16430,6 +16570,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #d39400;
   --current-theme-color-lighter: #ffb407;
+  --current-theme-primary: #F2A900;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #F2A900;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #F2A900;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #F2A900;
+  --current-theme-body-bg-rgb: 242, 169, 0;
+  --current-theme-primary-text-emphasis: #614400;
+  --current-theme-secondary-text-emphasis: #614400;
+  --current-theme-tertiary-text-emphasis: #614400;
+  --current-theme-primary-bg-subtle: #fadd99;
+  --current-theme-secondary-bg-subtle: #fadd99;
+  --current-theme-tertiary-bg-subtle: #fadd99;
+  --current-theme-primary-border-subtle: #f6c34d;
+  --current-theme-secondary-border-subtle: #f6c34d;
+  --current-theme-tertiary-border-subtle: #f6c34d;
   --bs-primary: #F2A900;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -16651,6 +16811,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #95d7f7;
   --current-theme-color-lighter: #c4e9fa;
+  --current-theme-primary: #B1E2F9;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #B1E2F9;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #B1E2F9;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #B1E2F9;
+  --current-theme-body-bg-rgb: 177, 226, 249;
+  --current-theme-primary-text-emphasis: #475a64;
+  --current-theme-secondary-text-emphasis: #475a64;
+  --current-theme-tertiary-text-emphasis: #475a64;
+  --current-theme-primary-bg-subtle: #e0f3fd;
+  --current-theme-secondary-bg-subtle: #e0f3fd;
+  --current-theme-tertiary-bg-subtle: #e0f3fd;
+  --current-theme-primary-border-subtle: #c8ebfb;
+  --current-theme-secondary-border-subtle: #c8ebfb;
+  --current-theme-tertiary-border-subtle: #c8ebfb;
   --bs-primary: #B1E2F9;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -16872,6 +17052,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #030c0b;
   --current-theme-color-lighter: #0d3531;
+  --current-theme-primary: #092522;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #D7D2CB;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #454347;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #092522;
+  --current-theme-body-bg-rgb: 9, 37, 34;
+  --current-theme-primary-text-emphasis: #040f0e;
+  --current-theme-secondary-text-emphasis: #565451;
+  --current-theme-tertiary-text-emphasis: #1c1b1c;
+  --current-theme-primary-bg-subtle: #9da8a7;
+  --current-theme-secondary-bg-subtle: #efedea;
+  --current-theme-tertiary-bg-subtle: #b5b4b5;
+  --current-theme-primary-border-subtle: #536664;
+  --current-theme-secondary-border-subtle: #e3e0db;
+  --current-theme-tertiary-border-subtle: #7d7b7e;
   --bs-primary: #092522;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -17093,6 +17293,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #0a2e22;
   --current-theme-color-lighter: #145841;
+  --current-theme-primary: #104735;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #104735;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #104735;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #104735;
+  --current-theme-body-bg-rgb: 16, 71, 53;
+  --current-theme-primary-text-emphasis: #061c15;
+  --current-theme-secondary-text-emphasis: #061c15;
+  --current-theme-tertiary-text-emphasis: #061c15;
+  --current-theme-primary-bg-subtle: #9fb5ae;
+  --current-theme-secondary-bg-subtle: #9fb5ae;
+  --current-theme-tertiary-bg-subtle: #9fb5ae;
+  --current-theme-primary-border-subtle: #587e72;
+  --current-theme-secondary-border-subtle: #587e72;
+  --current-theme-tertiary-border-subtle: #587e72;
   --bs-primary: #104735;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -17314,6 +17534,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #f73104;
   --current-theme-color-lighter: #fb5733;
+  --current-theme-primary: #FB471F;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #FB471F;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #FB471F;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #FB471F;
+  --current-theme-body-bg-rgb: 251, 71, 31;
+  --current-theme-primary-text-emphasis: #641c0c;
+  --current-theme-secondary-text-emphasis: #641c0c;
+  --current-theme-tertiary-text-emphasis: #641c0c;
+  --current-theme-primary-bg-subtle: #fdb5a5;
+  --current-theme-secondary-bg-subtle: #fdb5a5;
+  --current-theme-tertiary-bg-subtle: #fdb5a5;
+  --current-theme-primary-border-subtle: #fc7e62;
+  --current-theme-secondary-border-subtle: #fc7e62;
+  --current-theme-tertiary-border-subtle: #fc7e62;
   --bs-primary: #FB471F;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -17535,6 +17775,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #091d33;
   --current-theme-color-lighter: #11365e;
+  --current-theme-primary: #0E2C4D;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #0E2C4D;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #0E2C4D;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #0E2C4D;
+  --current-theme-body-bg-rgb: 14, 44, 77;
+  --current-theme-primary-text-emphasis: #06121f;
+  --current-theme-secondary-text-emphasis: #06121f;
+  --current-theme-tertiary-text-emphasis: #06121f;
+  --current-theme-primary-bg-subtle: #9fabb8;
+  --current-theme-secondary-bg-subtle: #9fabb8;
+  --current-theme-tertiary-bg-subtle: #9fabb8;
+  --current-theme-primary-border-subtle: #566b82;
+  --current-theme-secondary-border-subtle: #566b82;
+  --current-theme-tertiary-border-subtle: #566b82;
   --bs-primary: #0E2C4D;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -17756,6 +18016,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #c60043;
   --current-theme-color-lighter: #f90054;
+  --current-theme-primary: #E5004D;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #E5004D;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #E5004D;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #E5004D;
+  --current-theme-body-bg-rgb: 229, 0, 77;
+  --current-theme-primary-text-emphasis: #5c001f;
+  --current-theme-secondary-text-emphasis: #5c001f;
+  --current-theme-tertiary-text-emphasis: #5c001f;
+  --current-theme-primary-bg-subtle: #f599b8;
+  --current-theme-secondary-bg-subtle: #f599b8;
+  --current-theme-tertiary-bg-subtle: #f599b8;
+  --current-theme-primary-border-subtle: #ed4d82;
+  --current-theme-secondary-border-subtle: #ed4d82;
+  --current-theme-tertiary-border-subtle: #ed4d82;
   --bs-primary: #E5004D;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -17977,6 +18257,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #fff;
   --current-theme-color-darker: #1c1a1d;
   --current-theme-color-lighter: #353338;
+  --current-theme-primary: #2B292D;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #fff;
+  --current-theme-secondary: #fff;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #fff;
+  --current-theme-tertiary: #2B292D;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #fff;
+  --current-theme-body-bg: #2B292D;
+  --current-theme-body-bg-rgb: 43, 41, 45;
+  --current-theme-primary-text-emphasis: #111012;
+  --current-theme-secondary-text-emphasis: #666666;
+  --current-theme-tertiary-text-emphasis: #111012;
+  --current-theme-primary-bg-subtle: #aaa9ab;
+  --current-theme-secondary-bg-subtle: white;
+  --current-theme-tertiary-bg-subtle: #aaa9ab;
+  --current-theme-primary-border-subtle: #6b696c;
+  --current-theme-secondary-border-subtle: white;
+  --current-theme-tertiary-border-subtle: #6b696c;
   --bs-primary: #2B292D;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #fff;
@@ -18198,6 +18498,26 @@ textarea.form-control-lg {
   --current-theme-text-color: #2B292D;
   --current-theme-color-darker: #cac3ba;
   --current-theme-color-lighter: #e0dcd7;
+  --current-theme-primary: #D7D2CB;
+  --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+  --current-theme-primary-text: #2B292D;
+  --current-theme-secondary: #D7D2CB;
+  --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+  --current-theme-secondary-text: #2B292D;
+  --current-theme-tertiary: #D7D2CB;
+  --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+  --current-theme-tertiary-text: #2B292D;
+  --current-theme-body-bg: #D7D2CB;
+  --current-theme-body-bg-rgb: 215, 210, 203;
+  --current-theme-primary-text-emphasis: #565451;
+  --current-theme-secondary-text-emphasis: #565451;
+  --current-theme-tertiary-text-emphasis: #565451;
+  --current-theme-primary-bg-subtle: #efedea;
+  --current-theme-secondary-bg-subtle: #efedea;
+  --current-theme-tertiary-bg-subtle: #efedea;
+  --current-theme-primary-border-subtle: #e3e0db;
+  --current-theme-secondary-border-subtle: #e3e0db;
+  --current-theme-tertiary-border-subtle: #e3e0db;
   --bs-primary: #D7D2CB;
   --bs-primary-rgb: to-rgb(map.get($value, "primary"));
   --bs-primary-text: #2B292D;
@@ -19513,17 +19833,10 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 768px) {
-  .ntg-cards-and-sticky-text__content {
+  .ntg-cards--sticky-text__content {
     position: sticky;
     top: 100px;
   }
-}
-.ntg-cards-and-sticky-text__subtitle {
-  font-family: "Ubuntu Condensed", var(--bs-font-sans-serif);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 4.16px;
 }
 
 .ntg-cards-carousel {
@@ -21640,11 +21953,68 @@ body.search-panel--is-hidden .search-global {
   padding-right: inherit !important;
 }
 
-.ntg-job-tabs .nav-link.active, .ntg-job-tabs .nav-link:hover {
-  background-color: #fff;
-  color: #2B292D;
-  --bs-nav-tabs-link-hover-border-color: transparent ;
-  --bs-nav-tabs-link-active-border-color: transparent;
+.ntg-jobs-subsite__menu {
+  background-color: var(--current-theme-secondary, #D7D2CB);
+  color: var(--bs-secondary-text, #2E3849);
+  padding-top: 1rem;
+}
+.ntg-jobs-subsite__menu .container-fluid, .ntg-jobs-subsite__menu .container-sm, .ntg-jobs-subsite__menu .container-md, .ntg-jobs-subsite__menu .container-lg, .ntg-jobs-subsite__menu .container-xl, .ntg-jobs-subsite__menu .container-xxl {
+  max-width: 1800px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+.ntg-jobs-subsite__menu .flickity-prev-next-button.previous {
+  left: -10px;
+  -webkit-transform: translateX(-100%) translateY(-50%);
+          transform: translateX(-100%) translateY(-50%);
+}
+.ntg-jobs-subsite__menu .flickity-prev-next-button.next {
+  right: -10px;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+}
+.ntg-jobs-subsite__menu .flickity-button:disabled {
+  opacity: 0;
+}
+.ntg-jobs-subsite__menu nav {
+  display: block;
+  height: 106px;
+  overflow: visible;
+  white-space: nowrap;
+}
+.ntg-jobs-subsite__menu .nav-link {
+  --bs-nav-link-padding-y: 1.75rem;
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-color: var(--current-theme-secondary-text, #2E3849);
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  margin-right: 1rem;
+  width: auto;
+}
+.ntg-jobs-subsite__menu .nav-link::before {
+  content: attr(data-text);
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  font-weight: bold;
+  display: block;
+}
+@media speech {
+  .ntg-jobs-subsite__menu .nav-link::before {
+    display: none;
+  }
+}
+.ntg-jobs-subsite__menu .nav-link.active, .ntg-jobs-subsite__menu .nav-link:hover {
+  background-color: var(--current-theme-color, #fff);
+  color: var(--current-theme-text-color, #2E3849);
+  font-weight: bold;
+  border-top-color: var(--current-theme-tertiary, #104735);
 }
 
 .interactive-map {

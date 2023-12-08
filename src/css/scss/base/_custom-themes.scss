@@ -72,6 +72,27 @@
         --current-theme-text-color: #{map.get($value, "text-color")};
         --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
         --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};
+        --current-theme-primary: #{map.get($value, "primary")};
+        --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
+        --current-theme-primary-text: #{map.get($value, "primary-text")};
+        --current-theme-secondary: #{map.get($value, "secondary")};
+        --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
+        --current-theme-secondary-text: #{map.get($value, "secondary-text")};
+        --current-theme-tertiary: #{map.get($value, "tertiary")};
+        --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
+        --current-theme-tertiary-text: #{map.get($value, "tertiary-text")};
+        --current-theme-body-bg: #{map.get($value, "main")};
+        --current-theme-body-bg-rgb: #{to-rgb(map.get($value, "main"))};
+        --current-theme-primary-text-emphasis: #{shade-color(map.get($value, "primary"), 60%)};
+        --current-theme-secondary-text-emphasis: #{shade-color(map.get($value, "secondary"), 60%)};
+        --current-theme-tertiary-text-emphasis: #{shade-color(map.get($value, "tertiary"), 60%)};
+        --current-theme-primary-bg-subtle: #{tint-color(map.get($value, "primary"), 60%)};
+        --current-theme-secondary-bg-subtle: #{tint-color(map.get($value, "secondary"), 60%)};
+        --current-theme-tertiary-bg-subtle: #{tint-color(map.get($value, "tertiary"), 60%)};
+        --current-theme-primary-border-subtle: #{tint-color(map.get($value, "primary"), 30%)};
+        --current-theme-secondary-border-subtle: #{tint-color(map.get($value, "secondary"), 30%)};
+        --current-theme-tertiary-border-subtle: #{tint-color(map.get($value, "tertiary"), 30%)};
+        
         --bs-primary: #{map.get($value, "primary")};
         --bs-primary-rgb: to-rgb(map.get($value, "primary"));
         --bs-primary-text: #{map.get($value, "primary-text")};

@@ -33,6 +33,7 @@ function fadeIn(el, display) {
 }
 
 (function () {
+    let jobsMenuInit = false;
     initMegaMenu();
     // initPriorityNav();
     initResponsiveMenu();
@@ -52,7 +53,44 @@ function fadeIn(el, display) {
     initSumoSelect();
     initInteractiveMap();
     initTabsAsAccordions();
+    initJobsSlidingMenu();
+
+    window.addEventListener('resize', initJobsSlidingMenu);
 })();
+
+//Helper function
+function getContainerWidthWithPadding(container) {
+    const containerStyles = window.getComputedStyle(container);
+    const containerPaddingLeft = parseFloat(containerStyles.paddingLeft);
+    const containerPaddingRight = parseFloat(containerStyles.paddingRight);
+
+    const containerWidthWithPadding = container.clientWidth - containerPaddingLeft - containerPaddingRight;
+
+    return containerWidthWithPadding;
+}
+
+
+function initJobsSlidingMenu() {
+    const jobSubsiteMenu = document.querySelector(".ntg-jobs-subsite__menu nav");
+    const container = document.querySelector(".ntg-jobs-subsite__menu .container-fluid");
+    let flkty;
+
+    if(jobSubsiteMenu) {
+        const isOverflowing = jobSubsiteMenu.scrollWidth > getContainerWidthWithPadding(container);
+
+        if (isOverflowing) {
+            // Initialize Flickity
+            const flickityOptions = {
+                cellAlign: "left",
+                cellSelector: ".nav-link",
+                pageDots: false
+            };
+
+            flkty = new Flickity(jobSubsiteMenu, flickityOptions);
+            window.removeEventListener('resize', initJobsSlidingMenu);
+        }
+    }
+}
 
 function initTabsAsAccordions() {
    // Screen-width breakpoint
