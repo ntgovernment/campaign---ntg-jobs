@@ -167,6 +167,22 @@
 
     // TODO: blocker so that cells slide behind content
     &--tall {
+        >.container > .row > div:first-child{
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                background-color: var(--current-theme-color, #{$white});
+                position: absolute;
+                top: 0;
+                left: -9999px;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+
         #{$this}__content {
             @include media-breakpoint-up(md) {
                 position: sticky;

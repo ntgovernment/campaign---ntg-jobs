@@ -19687,6 +19687,20 @@ textarea.form-control-lg {
     right: -66px;
   }
 }
+.ntg-cards-carousel--tall > .container > .row > div:first-child {
+  position: relative;
+  z-index: 1;
+}
+.ntg-cards-carousel--tall > .container > .row > div:first-child::after {
+  content: "";
+  background-color: var(--current-theme-color, #fff);
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
 @media (min-width: 768px) {
   .ntg-cards-carousel--tall .ntg-cards-carousel__content {
     position: sticky;
