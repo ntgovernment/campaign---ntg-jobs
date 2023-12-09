@@ -15811,7 +15811,7 @@ class NTGJobSearch {
 
     _showResults(results) {
         if(results.length <= 0) {
-            this.searchResultsWrapper.innerText = "No results found"; 
+            this.searchResultsWrapper.innerText = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
             return false;
         }
 
