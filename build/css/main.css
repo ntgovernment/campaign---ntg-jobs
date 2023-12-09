@@ -21667,8 +21667,8 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
 }
 
 .ntg-related-pages {
-  background-color: var(--current-theme-color);
-  color: var(--current-theme-text-color);
+  background-color: var(--current-theme-color, #D7D2CB);
+  color: var(--current-theme-text-color, #2B292D);
 }
 .ntg-related-pages ul {
   margin-bottom: 0;
@@ -21701,6 +21701,9 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   -webkit-column-break-inside: avoid;
      -moz-column-break-inside: avoid;
           break-inside: avoid-column;
+}
+.ntg-related-pages li::before {
+  color: var(--current-theme-text-color, #fff);
 }
 
 body.search-panel--is-visible {

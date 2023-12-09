@@ -1,7 +1,7 @@
 .ntg-related-pages {
-    background-color: var(--current-theme-color);
-    color: var(--current-theme-text-color);
-    
+    background-color: var(--current-theme-color, #{$ntg-territory-stone});
+    color: var(--current-theme-text-color, #{$ntg-dark-gray});
+
     ul {
         @extend .list-flush !optional;
         @extend .list-chevron !optional;
@@ -23,5 +23,9 @@
 
     li {
         break-inside: avoid-column;
+
+        &::before {
+            color: var(--current-theme-text-color, #{$white});
+        }
     }
 }
