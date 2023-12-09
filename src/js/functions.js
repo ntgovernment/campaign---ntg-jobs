@@ -22,6 +22,7 @@
     initJobsSlidingMenu();
 
     window.addEventListener('resize', initJobsSlidingMenu);
+
 })();
 
 //Helper function
@@ -37,22 +38,22 @@ function getContainerWidthWithPadding(container) {
 
 
 function initJobsSlidingMenu() {
-    const jobSubsiteMenu = document.querySelector(".ntg-jobs-subsite__menu nav");
-    const container = document.querySelector(".ntg-jobs-subsite__menu .container-fluid");
-    let flkty;
+    const jobSubsiteMenu = document.getElementById("navCarousel");
+    const container = document.querySelector(".ntg-jobs-subsite__menu .container");
 
     if(jobSubsiteMenu) {
         const isOverflowing = jobSubsiteMenu.scrollWidth > getContainerWidthWithPadding(container);
 
         if (isOverflowing) {
-            // Initialize Flickity
-            const flickityOptions = {
-                cellAlign: "left",
-                cellSelector: ".nav-link",
-                pageDots: false
-            };
+            $('#navCarousel').slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: false,
+                variableWidth: true
+            });
 
-            flkty = new Flickity(jobSubsiteMenu, flickityOptions);
             window.removeEventListener('resize', initJobsSlidingMenu);
         }
     }
