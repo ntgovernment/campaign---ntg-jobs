@@ -101,7 +101,9 @@ class NTGJobSearch {
     }
 
     _onFormSubmitCb(e) {
-        e && e.preventDefault();
+        if(this.searchResultsWrapper) {
+            e && e.preventDefault();
+        }
 
         const formData = new FormData(e.target);
 
