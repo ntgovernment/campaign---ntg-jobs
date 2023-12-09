@@ -460,8 +460,17 @@ class NTGJobSearch {
     }
 
     async _fetchNTGJobs() {
+        let url;
+
+        if(window.location.host == "nt-dev.nt.gov.au") {
+            console.log("NT Dev server")
+            url = "https://nt-dev.nt.gov.au/ntgjobs/jobs.json"
+        } else {
+            url = "./jobs.json";
+        }
+
         try {
-            const response = await fetch("./jobs.json", {
+            const response = await fetch(url, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
