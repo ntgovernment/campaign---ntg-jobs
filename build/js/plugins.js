@@ -15689,6 +15689,10 @@ class NTGJobSearch {
         //Setup vacancy search form
         const vacancySearchForm = document.getElementById("vacancySearchForm");
         this.searchResultsWrapper = document.getElementById("searchResults");
+
+        if(!this.searchResultsWrapper) {
+            return false;
+        }
         
         this._fetchNTGJobs().then((data) => {
             this._setupFuseSearch(data);
