@@ -1,4 +1,7 @@
 .ntg-related-pages {
+    background-color: var(--current-theme-color);
+    color: var(--current-theme-text-color);
+    
     ul {
         @extend .list-flush !optional;
         @extend .list-chevron !optional;

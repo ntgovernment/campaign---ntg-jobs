@@ -21666,6 +21666,10 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   outline: none;
 }
 
+.ntg-related-pages {
+  background-color: var(--current-theme-color);
+  color: var(--current-theme-text-color);
+}
 .ntg-related-pages ul {
   margin-bottom: 0;
   -webkit-columns: 4;
