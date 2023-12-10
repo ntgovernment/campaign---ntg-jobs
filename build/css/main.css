@@ -19548,6 +19548,23 @@ textarea.form-control-lg {
 * e.g. "\f054" for chevron-right
 * optionally, disable icon animation by specifying $transition: false
 */
+.btn-outline-default {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #fff;
+  --bs-gradient: none;
+}
+
 .btn, #content form input[type=reset], #content form input[type=submit] {
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, padding 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, padding 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -21582,9 +21599,41 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
 .ntg-map-tabs {
   position: relative;
   overflow: hidden;
+  background-color: var(--current-theme-color, #0D2C4D);
+  color: var(--current-theme-text-color, #fff);
+}
+.ntg-map-tabs .nav-tabs-wrapper {
+  background-color: var(--current-theme-color-lighter, #112936);
+}
+.ntg-map-tabs .nav-link {
+  --bs-nav-tabs-link-active-color: var(--current-theme-text-color, #fff);
+  --bs-nav-tabs-link-active-bg: transparent;
+  --bs-nav-tabs-link-active-border-color: var(--current-theme-text-color, #fff);
+}
+.ntg-map-tabs .nav-tabs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ntg-map-tabs .nav-tabs.flickity-enabled {
   display: block;
+  padding: 0 50px;
+}
+.ntg-map-tabs .nav-tabs.flickity-enabled .nav-item {
+  width: 100%;
+  padding-bottom: var(--bs-nav-tabs-border-width, 3px);
+}
+.ntg-map-tabs .nav-tabs.flickity-enabled .nav-item button {
+  width: 100%;
+}
+.ntg-map-tabs .nav-tabs.flickity-enabled .flickity-button {
+  background-color: transparent;
+  border: 2px solid var(--current-theme-text-color, #fff);
+  width: 30px;
+  height: 30px;
+}
+.ntg-map-tabs .nav-tabs.flickity-enabled .flickity-button-icon {
+  fill: var(--current-theme-text-color, #fff);
 }
 @media (min-width: 992px) {
   .ntg-map-tabs .tab-content {

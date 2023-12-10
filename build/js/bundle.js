@@ -32,10 +32,12 @@ function fadeIn(el, display) {
     })();
 }
 
+let mapTabCarousel;
+
 (function () {
     let jobsMenuInit = false;
-    let mapTabCarousel;
 
+    console.log(mapTabCarousel)
     initMegaMenu();
     // initPriorityNav();
     initResponsiveMenu();
@@ -59,7 +61,7 @@ function fadeIn(el, display) {
     initSlidingMenu();
 
     window.addEventListener('resize', initJobsSlidingMenu);
-    // window.addEventListener('resize', initSlidingMenu);
+    window.addEventListener('resize', initSlidingMenu);
 
 })();
 
@@ -108,9 +110,16 @@ function initSlidingMenu() {
                 percentPosition: false,
                 contain: true
             });
+
+            mapTabCarousel.on('change', (index) => {
+                mapTabCarousel.cells[index].element.querySelector("button").dispatchEvent(new Event("click"));
+            });
+
+            mapTabCarousel.select(0);
         }
     } else {
         mapTabCarousel && mapTabCarousel.destroy();
+        mapTabCarousel = undefined;
     }
 }
 
