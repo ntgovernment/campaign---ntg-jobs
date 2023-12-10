@@ -59,10 +59,23 @@ let mapTabCarousel;
     initJobsSlidingMenu();
     initSlidingMenu();
 
-    window.addEventListener('resize', initJobsSlidingMenu);
-    window.addEventListener('resize', initSlidingMenu);
+    window.addEventListener('resize', debounce(function(e){
+        initJobsSlidingMenu(e);
+    }));
+    window.addEventListener('resize', debounce(function(e){
+        initSlidingMenu(e);
+    }));
 
 })();
+
+//debounce for resize
+function debounce(func){
+    var timer;
+    return function(event){
+      if(timer) clearTimeout(timer);
+      timer = setTimeout(func,400,event);
+    };
+  }
 
 //Helper function
 function getContainerWidthWithPadding(container) {
@@ -173,10 +186,10 @@ function initTabsAsAccordions() {
 	});	
 	
 	// Manage resize / rotation events
-	jQuery( window ).on( "resize orientationchange", function(  ) 
-	{
-		resize_vertical_accordions();
-	});
+	jQuery( window ).on( "resize orientationchange", debounce(function() 
+	{   
+        resize_vertical_accordions();
+	})) ;
 	
 	// Scroll accordion to show the current panel
 	jQuery(".vertab-accordion .panel-heading").click(function () 
@@ -193,7 +206,6 @@ function initTabsAsAccordions() {
     function resize_vertical_accordions(  ) 
     {
         "use strict";
-
 
         jQuery('.vertab-container').each(function(i, e)
         {
@@ -289,7 +301,6 @@ function initInteractiveMap() {
         }
 
         function toggleMapRegion(e) {
-            console.log(e.target);
             const dataMapRegion = e.target.getAttribute("data-map-region");
 
             if(dataMapRegion) {
