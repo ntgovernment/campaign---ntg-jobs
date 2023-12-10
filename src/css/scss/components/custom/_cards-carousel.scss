@@ -167,7 +167,6 @@
         }
     }
 
-    // TODO: blocker so that cells slide behind content
     &--tall {
         >.container > .row > div:first-child{
             position: relative;
@@ -223,41 +222,132 @@
 
     &--testimonial {
         .flickity-carousel {
-            padding-bottom: 66px;
+            padding-bottom: 6rem;
+            padding-top: 3rem;
         }
 
         .flickity-viewport {
             overflow: visible;
         }
 
-        $max-testimonials: 10;
-
-        @for $i from 1 through $max-testimonials {
-            .carousel-cell:nth-child(n + #{$i}) .card {
-                transform: rotate(1deg * math.random(9)) translateY(-0.75rem * $i);
-            }
+        .flickity-slider {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 0 0.5em 0.5em 0.5em 0.5em 1fr auto;
+            grid-row-gap: 0.5em!important;
         }
 
         .carousel-cell {
-            width: calc(100% / 3);
+            width: 350px;
+            height: 350px;
+            // width: calc(100% / 4);
 
-            @include media-breakpoint-down(lg) {
-                width: 50%;
+            // @include media-breakpoint-down(lg) {
+            //     width: 50%;
+            // }
+
+            // @include media-breakpoint-down(md) {
+            //     width: 100%;
+            // }
+
+            &:nth-child(n+1) {
+                grid-row: 4/-1;
+                
+                .card {
+                    transform: rotate(-4deg);
+                }
             }
 
-            @include media-breakpoint-down(md) {
-                width: 100%;
+            &:nth-child(n+2) {
+                grid-row: 3/-1;
+                
+                .card {
+                    transform: rotate(2deg);
+                }
+            }
+
+            &:nth-child(n+3) {
+                grid-row: 3/-12;
+                
+                .card {
+                    // transform: rotate(-1deg);
+                }
+            }
+
+            &:nth-child(n+4) {
+                grid-row: 2/-2;
+                
+                .card {
+                    transform: rotate(5deg);
+                }
+            }
+
+            &:nth-child(n+5) {
+                grid-row: 1/-1;
+                
+                .card {
+                    transform: rotate(-4deg);
+                }
+            }
+
+            &:nth-child(n+6) {
+                grid-row: 2/-1;
+                
+                .card {
+                    transform: rotate(2deg);
+                }
+            }
+
+            &:nth-child(n+7) {
+                grid-row: 3/-2;
+                
+                .card {
+                    transform: rotate(-1deg);
+                }
+            }
+
+            &:nth-child(n+8) {
+                grid-row: 4/-2;
+                
+                .card {
+                    transform: rotate(5deg);
+                }
+            }
+
+            &:nth-child(n+9) {
+                grid-row: 3/-1;
+                
+                .card {
+                    transform: rotate(-1deg);
+                }
+            }
+
+            &:nth-child(n+10) {
+                grid-row: 4/-2;
+                
+                .card {
+                    transform: rotate(5deg);
+                }
             }
 
             .card {
-                transform: rotate(3.325deg);
+                height: 100%;
+                // transform: rotate(3.325deg);
+
+                .card-inner {
+                    flex-grow: 1;
+                }
+
+                .card-back {
+                    height: 100%;
+                }
             }
         }
 
 
         
         .flickity-prev-next-button {
-            top: calc(100% - 25px);
+            top: calc(100%);
             
             @include media-breakpoint-down(md) {
                 top: calc(100% - 20px);
