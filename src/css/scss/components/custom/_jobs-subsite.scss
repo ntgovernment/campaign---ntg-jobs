@@ -92,6 +92,8 @@
 
     #searchResults {
         .accordion {
+            --bs-accordion-bg: var(--current-theme-color, #{$white});
+
             &-header {
                 @extend .small;
             }

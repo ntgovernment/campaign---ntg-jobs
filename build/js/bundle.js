@@ -186,7 +186,7 @@ function initTabsAsAccordions() {
 	});	
 	
 	// Manage resize / rotation events
-	jQuery( window ).on( "resize orientationchange", debounce(function() 
+	jQuery( window ).on( "resize", debounce(function() 
 	{   
         resize_vertical_accordions();
 	})) ;

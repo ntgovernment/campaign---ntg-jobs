@@ -22498,6 +22498,12 @@ body.search-panel--is-hidden .search-global {
   font-weight: bold;
   border-top-color: var(--current-theme-tertiary, #104735);
 }
+.ntg-jobs-subsite #searchResults .accordion {
+  --bs-accordion-bg: var(--current-theme-color, #fff);
+  --bs-accordion-color: var(--current-theme-text-color);
+  --bs-accordion-active-color: var(--bs-accordion-color);
+  --bs-accordion-btn-color: var(--bs-accordion-color);
+}
 .ntg-jobs-subsite #searchResults .accordion-item {
   border: 1px solid var(--current-theme-secondary, #D7D2CB);
   overflow: hidden;
