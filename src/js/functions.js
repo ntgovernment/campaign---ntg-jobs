@@ -1,5 +1,7 @@
 (function () {
     let jobsMenuInit = false;
+    let mapTabCarousel;
+
     initMegaMenu();
     // initPriorityNav();
     initResponsiveMenu();
@@ -20,8 +22,10 @@
     initInteractiveMap();
     initTabsAsAccordions();
     initJobsSlidingMenu();
+    // initSlidingMenu();
 
     window.addEventListener('resize', initJobsSlidingMenu);
+    // window.addEventListener('resize', initSlidingMenu);
 
 })();
 
@@ -56,6 +60,23 @@ function initJobsSlidingMenu() {
 
             window.removeEventListener('resize', initJobsSlidingMenu);
         }
+    }
+}
+
+function initSlidingMenu() {
+    const mq = window.matchMedia( "(max-width: 993px)" );
+    const mapTabs = document.getElementById("map-tab");
+
+    if(mq.matches) {
+        if(!mapTabCarousel) {
+            mapTabCarousel = new Flickity(mapTabs, {
+                cellAlign: "left",
+                percentPosition: false,
+                contain: true
+            });
+        }
+    } else {
+        mapTabCarousel && mapTabCarousel.destroy();
     }
 }
 
@@ -196,24 +217,8 @@ function initInteractiveMap() {
         //Add Listener to navLinks to toggle map
         if(navLinks.length > 0) {
             navLinks.forEach(button => {
-                button.addEventListener("click", e => {
-                    const dataMapRegion = e.target.getAttribute("data-map-region");
-
-                    if(dataMapRegion) {
-                        allGroupsNT.forEach(region => {
-                            if(region.id == dataMapRegion) {
-                                //Fill White if the tab references to the region
-                                region.querySelectorAll("path").forEach(path=> {
-                                    path.setAttribute("fill", "#FFFFFF");
-                                })
-                            } else {
-                                region.querySelectorAll("path").forEach(path=> {
-                                    path.setAttribute("fill", "#6E8094");
-                                })
-                            }
-                        })
-                    }
-                })
+                button.addEventListener("click", toggleMapRegion);
+                button.addEventListener("shown.bs.tab", toggleMapRegion);
             })
         }
 
@@ -237,6 +242,26 @@ function initInteractiveMap() {
                             }
                         })
                     }   
+                })
+            }
+        }
+
+        function toggleMapRegion(e) {
+            console.log(e.target);
+            const dataMapRegion = e.target.getAttribute("data-map-region");
+
+            if(dataMapRegion) {
+                allGroupsNT.forEach(region => {
+                    if(region.id == dataMapRegion) {
+                        //Fill White if the tab references to the region
+                        region.querySelectorAll("path").forEach(path=> {
+                            path.setAttribute("fill", "#FFFFFF");
+                        })
+                    } else {
+                        region.querySelectorAll("path").forEach(path=> {
+                            path.setAttribute("fill", "#6E8094");
+                        })
+                    }
                 })
             }
         }

@@ -1,7 +1,19 @@
 .ntg-map-tabs {    
     position: relative;
+    overflow: hidden;
+    
+    .nav-tabs.flickity-enabled {
+        display: block;
+    }
 
     .tab-content {
-        min-height: 650px;
+        @include media-breakpoint-up(lg) {
+            min-height: 650px;
+        }
+    }
+
+    .tab-pane__bottom {
+        position: relative;
+        z-index: 1;
     }
 }
