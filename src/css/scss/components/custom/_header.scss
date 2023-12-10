@@ -39,6 +39,24 @@ body:not(.mm-wrapper--opened) {
     }
 }
 
+.mm-wrapper--opened {
+    .page-header-container {
+        --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
+        background-color: var(--bs-secondary, #{$ntg-territory-stone});
+        box-shadow: 0 2px 8px rgba($black, 0.2);
+        position: sticky;
+        top: 0;
+
+        .ntg-header {
+            padding: 0.5rem 0;
+
+            &__logo {
+                max-width: 170px;
+            }
+        }
+    }
+}
+
 .ntg-header {
     transition: 0.2s padding ease-in-out;
 

@@ -5,11 +5,12 @@
 
 .mm-panels {
     > .mm-panel {
-        background: $primary;
+        background: var(--current-theme-secondary, #{$ntg-territory-stone});
+        color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
 
         .mm-navbar {
-            background: $primary;
-            border-color: rgba(255, 255, 255, 0.4);
+            background: var(--current-theme-secondary, #{$ntg-territory-stone});
+            border-color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
 
             > a {
                 transition: 0.2s background-color ease-in-out;
@@ -19,17 +20,17 @@
                 width: 50px;
 
                 &:before {
-                    border-color: rgba(255, 255, 255, 0.4);
+                    border-color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
                 }
             }
 
             .mm-navbar__title {
-                color: $white;
-                padding: 20px;
+                padding: 30px 20px;
                 justify-content: start;
 
                 > span {
                     text-align: left;
+                    color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
                 }
             }
 
@@ -37,7 +38,7 @@
             &:focus {
                 .mm-btn--prev,
                 .mm-btn--prev + .mm-navbar__title {
-                    background-color: darken($primary, 10%);
+                    // background-color: darken($primary, 10%);
                 }
             }
         }
@@ -50,12 +51,12 @@
             }
 
             a:not(.mm-btn--next) {
-                border-left: 0px solid $secondary;
+                border-left: 0px solid var(--current-theme-secondary-text, #{$ntg-dark-gray});
                 transition: 0.1s border-left-width ease-in-out, 0.2s background-color ease-in-out;
 
                 &:hover,
                 &:focus {
-                    background-color: darken($primary, 10%);
+                    // background-color: darken($primary, 10%);
                     border-left-width: 5px;
                 }
             }
@@ -65,35 +66,38 @@
 
                 &:hover,
                 &:focus {
-                    background-color: darken($primary, 10%);
+                    filter: brightness(120%);
+                    // background-color: darken($primary, 10%);
                 }
             }
         }
 
         .mm-listitem {
             padding: 0 20px 1px 20px;
-            border-color: rgba(255, 255, 255, 0.4);
+            border-color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
+            margin-bottom: 0 !important;
         }
 
         .mm-listitem__btn {
-            border-color: rgba(255, 255, 255, 0.4);
+            border-color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
         }
 
         .mm-listitem__text {
             white-space: normal;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
 
         .mm-btn {
             &:after {
-                border-color: rgba(255, 255, 255, 0.4);
+                border-color: var(--current-theme-secondary-text, #{$ntg-dark-gray});
+                border-width: 3px;
+                height: 12px;
+                width: 12px;
             }
         }
 
         a {
-            color: $white;
-
             &:focus {
                 outline: none;
             }

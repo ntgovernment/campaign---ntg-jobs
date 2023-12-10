@@ -21059,6 +21059,21 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   max-width: 170px;
 }
 
+.mm-wrapper--opened .page-header-container {
+  --header-text-color: var(--bs-secondary-text, #2B292D);
+  background-color: var(--bs-secondary, #D7D2CB);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+.mm-wrapper--opened .page-header-container .ntg-header {
+  padding: 0.5rem 0;
+}
+.mm-wrapper--opened .page-header-container .ntg-header__logo {
+  max-width: 170px;
+}
+
 .ntg-header {
   -webkit-transition: 0.2s padding ease-in-out;
   transition: 0.2s padding ease-in-out;
@@ -21720,11 +21735,12 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
 }
 
 .mm-panels > .mm-panel {
-  background: #092522;
+  background: var(--current-theme-secondary, #D7D2CB);
+  color: var(--current-theme-secondary-text, #2B292D);
 }
 .mm-panels > .mm-panel .mm-navbar {
-  background: #092522;
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--current-theme-secondary, #D7D2CB);
+  border-color: var(--current-theme-secondary-text, #2B292D);
 }
 .mm-panels > .mm-panel .mm-navbar > a {
   -webkit-transition: 0.2s background-color ease-in-out;
@@ -21734,22 +21750,17 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   width: 50px;
 }
 .mm-panels > .mm-panel .mm-navbar .mm-btn--prev:before {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: var(--current-theme-secondary-text, #2B292D);
 }
 .mm-panels > .mm-panel .mm-navbar .mm-navbar__title {
-  color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
 .mm-panels > .mm-panel .mm-navbar .mm-navbar__title > span {
   text-align: left;
-}
-.mm-panels > .mm-panel .mm-navbar:hover .mm-btn--prev,
-.mm-panels > .mm-panel .mm-navbar:hover .mm-btn--prev + .mm-navbar__title, .mm-panels > .mm-panel .mm-navbar:focus .mm-btn--prev,
-.mm-panels > .mm-panel .mm-navbar:focus .mm-btn--prev + .mm-navbar__title {
-  background-color: black;
+  color: var(--current-theme-secondary-text, #2B292D);
 }
 .mm-panels > .mm-panel .mm-listview {
   margin: 20px -20px;
@@ -21758,12 +21769,11 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   margin-top: 0;
 }
 .mm-panels > .mm-panel .mm-listview a:not(.mm-btn--next) {
-  border-left: 0px solid #D7D2CB;
+  border-left: 0px solid var(--current-theme-secondary-text, #2B292D);
   -webkit-transition: 0.1s border-left-width ease-in-out, 0.2s background-color ease-in-out;
   transition: 0.1s border-left-width ease-in-out, 0.2s background-color ease-in-out;
 }
 .mm-panels > .mm-panel .mm-listview a:not(.mm-btn--next):hover, .mm-panels > .mm-panel .mm-listview a:not(.mm-btn--next):focus {
-  background-color: black;
   border-left-width: 5px;
 }
 .mm-panels > .mm-panel .mm-listview a.mm-btn--next {
@@ -21771,25 +21781,27 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   transition: 0.2s background-color ease-in-out;
 }
 .mm-panels > .mm-panel .mm-listview a.mm-btn--next:hover, .mm-panels > .mm-panel .mm-listview a.mm-btn--next:focus {
-  background-color: black;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 .mm-panels > .mm-panel .mm-listitem {
   padding: 0 20px 1px 20px;
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: var(--current-theme-secondary-text, #2B292D);
+  margin-bottom: 0 !important;
 }
 .mm-panels > .mm-panel .mm-listitem__btn {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: var(--current-theme-secondary-text, #2B292D);
 }
 .mm-panels > .mm-panel .mm-listitem__text {
   white-space: normal;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .mm-panels > .mm-panel .mm-btn:after {
-  border-color: rgba(255, 255, 255, 0.4);
-}
-.mm-panels > .mm-panel a {
-  color: #fff;
+  border-color: var(--current-theme-secondary-text, #2B292D);
+  border-width: 3px;
+  height: 12px;
+  width: 12px;
 }
 .mm-panels > .mm-panel a:focus {
   outline: none;

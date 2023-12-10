@@ -467,7 +467,7 @@ function initMmenu() {
     document.addEventListener("DOMContentLoaded", () => {
         const mmenu = new Mmenu('#mmenu-wrapper', {
             "offCanvas": {
-                "position": "right-front"
+                "position": "right"
             }
         });
 
