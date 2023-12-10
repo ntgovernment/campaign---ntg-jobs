@@ -19745,6 +19745,7 @@ textarea.form-control-lg {
      object-fit: cover;
   min-height: 250px;
 }
+.card img,
 .card iframe {
   height: 100%;
 }
@@ -20392,40 +20393,40 @@ textarea.form-control-lg {
           transform: rotate(6deg) translateY(-0.75rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card {
-  -webkit-transform: rotate(7deg) translateY(-1.5rem);
-          transform: rotate(7deg) translateY(-1.5rem);
+  -webkit-transform: rotate(9deg) translateY(-1.5rem);
+          transform: rotate(9deg) translateY(-1.5rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+3) .card {
-  -webkit-transform: rotate(8deg) translateY(-2.25rem);
-          transform: rotate(8deg) translateY(-2.25rem);
+  -webkit-transform: rotate(7deg) translateY(-2.25rem);
+          transform: rotate(7deg) translateY(-2.25rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) .card {
-  -webkit-transform: rotate(7deg) translateY(-3rem);
-          transform: rotate(7deg) translateY(-3rem);
+  -webkit-transform: rotate(2deg) translateY(-3rem);
+          transform: rotate(2deg) translateY(-3rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card {
-  -webkit-transform: rotate(5deg) translateY(-3.75rem);
-          transform: rotate(5deg) translateY(-3.75rem);
+  -webkit-transform: rotate(1deg) translateY(-3.75rem);
+          transform: rotate(1deg) translateY(-3.75rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) .card {
   -webkit-transform: rotate(9deg) translateY(-4.5rem);
           transform: rotate(9deg) translateY(-4.5rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card {
-  -webkit-transform: rotate(7deg) translateY(-5.25rem);
-          transform: rotate(7deg) translateY(-5.25rem);
+  -webkit-transform: rotate(8deg) translateY(-5.25rem);
+          transform: rotate(8deg) translateY(-5.25rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) .card {
-  -webkit-transform: rotate(6deg) translateY(-6rem);
-          transform: rotate(6deg) translateY(-6rem);
+  -webkit-transform: rotate(8deg) translateY(-6rem);
+          transform: rotate(8deg) translateY(-6rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card {
-  -webkit-transform: rotate(2deg) translateY(-6.75rem);
-          transform: rotate(2deg) translateY(-6.75rem);
+  -webkit-transform: rotate(8deg) translateY(-6.75rem);
+          transform: rotate(8deg) translateY(-6.75rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) .card {
-  -webkit-transform: rotate(7deg) translateY(-7.5rem);
-          transform: rotate(7deg) translateY(-7.5rem);
+  -webkit-transform: rotate(2deg) translateY(-7.5rem);
+          transform: rotate(2deg) translateY(-7.5rem);
 }
 .ntg-cards-carousel--testimonial .carousel-cell {
   width: 33.3333333333%;
