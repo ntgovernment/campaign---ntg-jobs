@@ -15364,6 +15364,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
+[data-bs-theme=desert-yam] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=bush-plum] {
   --current-theme-color: #4F1F6F;
@@ -15604,6 +15608,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
+}
+[data-bs-theme=bush-plum] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=top-end] {
@@ -15846,6 +15854,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
+[data-bs-theme=top-end] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=charcoal-grey] {
   --current-theme-color: #454347;
@@ -16086,6 +16098,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
+}
+[data-bs-theme=charcoal-grey] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=charcoal-grey-20] {
@@ -16328,6 +16344,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
+[data-bs-theme=charcoal-grey-20] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=fairy-wren] {
   --current-theme-color: #7F1F7F;
@@ -16568,6 +16588,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
+}
+[data-bs-theme=fairy-wren] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=fairy-wren-7] {
@@ -16810,6 +16834,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
+[data-bs-theme=fairy-wren-7] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=big-rivers] {
   --current-theme-color: #F2A900;
@@ -17050,6 +17078,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
+}
+[data-bs-theme=big-rivers] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=baby-blue] {
@@ -17292,6 +17324,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
+[data-bs-theme=baby-blue] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=dark-green] {
   --current-theme-color: #092522;
@@ -17532,6 +17568,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
+}
+[data-bs-theme=dark-green] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=olive-green] {
@@ -17774,6 +17814,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
+[data-bs-theme=olive-green] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=barkly] {
   --current-theme-color: #FB471F;
@@ -18014,6 +18058,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
+}
+[data-bs-theme=barkly] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=dark-blue] {
@@ -18256,6 +18304,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
+[data-bs-theme=dark-blue] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=central-australia] {
   --current-theme-color: #E5004D;
@@ -18496,6 +18548,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
+}
+[data-bs-theme=central-australia] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 [data-bs-theme=dark-gray] {
@@ -18738,6 +18794,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
+[data-bs-theme=dark-gray] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
 
 [data-bs-theme=territory-stone] {
   --current-theme-color: #D7D2CB;
@@ -18978,6 +19038,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
+}
+[data-bs-theme=territory-stone] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%232B292D' /%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 .btn-primary, #content form input[type=submit] {
@@ -19480,6 +19544,12 @@ textarea.form-control-lg {
   --bs-alert-color: #2B292D;
 }
 
+.accordion {
+  --bs-accordion-bg: var(--current-theme-color, #D7D2CB);
+  --bs-accordion-color: var(--current-theme-text-color);
+  --bs-accordion-active-color: var(--bs-accordion-color);
+  --bs-accordion-btn-color: var(--bs-accordion-color);
+}
 .accordion-item:not(:first-of-type) {
   margin-top: 1rem;
 }
