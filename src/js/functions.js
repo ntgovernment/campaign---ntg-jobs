@@ -22,7 +22,7 @@
     initInteractiveMap();
     initTabsAsAccordions();
     initJobsSlidingMenu();
-    // initSlidingMenu();
+    initSlidingMenu();
 
     window.addEventListener('resize', initJobsSlidingMenu);
     // window.addEventListener('resize', initSlidingMenu);
@@ -666,7 +666,8 @@ function initFlickity() {
         var flkty = new Flickity(carousel, {
             // options
             cellAlign: alignment,
-            pageDots: false
+            pageDots: false,
+            percentPosition: false
         });
 
         const cellElements = flkty.getCellElements();

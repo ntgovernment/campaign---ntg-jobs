@@ -20089,16 +20089,16 @@ textarea.form-control-lg {
   overflow-x: clip;
 }
 .ntg-cards-carousel .carousel-cell {
-  padding-right: 2rem;
+  margin-right: 2rem;
 }
 @media (max-width: 991.98px) {
   .ntg-cards-carousel .carousel-cell {
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 @media (max-width: 767.98px) {
   .ntg-cards-carousel .carousel-cell {
-    padding-right: 1rem;
+    margin-right: 1rem;
   }
 }
 .ntg-cards-carousel .flickity-button {
@@ -21581,9 +21581,19 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
 
 .ntg-map-tabs {
   position: relative;
+  overflow: hidden;
 }
-.ntg-map-tabs .tab-content {
-  min-height: 650px;
+.ntg-map-tabs .nav-tabs.flickity-enabled {
+  display: block;
+}
+@media (min-width: 992px) {
+  .ntg-map-tabs .tab-content {
+    min-height: 650px;
+  }
+}
+.ntg-map-tabs .tab-pane__bottom {
+  position: relative;
+  z-index: 1;
 }
 
 #mmenu-wrapper:not(.mm-menu) {
@@ -22349,9 +22359,46 @@ body.search-panel--is-hidden .search-global {
 }
 
 .interactive-map {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 1092px;
+  height: 585px;
+  margin-left: -150px;
+}
+@media (min-width: 576px) {
+  .interactive-map {
+    margin-left: -125px;
+  }
+}
+@media (min-width: 992px) {
+  .interactive-map {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .interactive-map {
+    right: 0;
+  }
+}
+.interactive-map__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 992px) {
+  .interactive-map__wrapper {
+    display: block;
+  }
 }
 .interactive-map #NT g:not(.exclude) {
   cursor: pointer;
@@ -22363,4 +22410,10 @@ body.search-panel--is-hidden .search-global {
 .interactive-map path {
   -webkit-transition: 0.2s fill ease-in-out;
   transition: 0.2s fill ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .interactive-map svg {
+    width: 1092px;
+    height: 585px;
+  }
 }

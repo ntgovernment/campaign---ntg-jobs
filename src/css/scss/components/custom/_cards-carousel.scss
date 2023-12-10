@@ -4,14 +4,14 @@
 
     // TODO: fix cell spacing and alignment
     .carousel-cell {
-        padding-right: 2rem;
+        margin-right: 2rem;
         
         @include media-breakpoint-down(lg) {
-            padding-right: 1.5rem;
+            margin-right: 1.5rem;
         }
 
         @include media-breakpoint-down(md) {
-            padding-right: 1rem;
+            margin-right: 1rem;
         }
     }
 
