@@ -20383,70 +20383,101 @@ textarea.form-control-lg {
   transition: 0.2s fill ease-in-out;
 }
 .ntg-cards-carousel--testimonial .flickity-carousel {
-  padding-bottom: 66px;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
 }
 .ntg-cards-carousel--testimonial .flickity-viewport {
   overflow: visible;
 }
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+1) .card {
-  -webkit-transform: rotate(5deg) translateY(-0.75rem);
-          transform: rotate(5deg) translateY(-0.75rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card {
-  -webkit-transform: rotate(8deg) translateY(-1.5rem);
-          transform: rotate(8deg) translateY(-1.5rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+3) .card {
-  -webkit-transform: rotate(6deg) translateY(-2.25rem);
-          transform: rotate(6deg) translateY(-2.25rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) .card {
-  -webkit-transform: rotate(5deg) translateY(-3rem);
-          transform: rotate(5deg) translateY(-3rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card {
-  -webkit-transform: rotate(6deg) translateY(-3.75rem);
-          transform: rotate(6deg) translateY(-3.75rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) .card {
-  -webkit-transform: rotate(2deg) translateY(-4.5rem);
-          transform: rotate(2deg) translateY(-4.5rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card {
-  -webkit-transform: rotate(4deg) translateY(-5.25rem);
-          transform: rotate(4deg) translateY(-5.25rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) .card {
-  -webkit-transform: rotate(6deg) translateY(-6rem);
-          transform: rotate(6deg) translateY(-6rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card {
-  -webkit-transform: rotate(1deg) translateY(-6.75rem);
-          transform: rotate(1deg) translateY(-6.75rem);
-}
-.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) .card {
-  -webkit-transform: rotate(2deg) translateY(-7.5rem);
-          transform: rotate(2deg) translateY(-7.5rem);
+.ntg-cards-carousel--testimonial .flickity-slider {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0 0.5em 0.5em 0.5em 0.5em 1fr auto;
+  grid-row-gap: 0.5em !important;
 }
 .ntg-cards-carousel--testimonial .carousel-cell {
-  width: 33.3333333333%;
+  width: 350px;
+  height: 350px;
 }
-@media (max-width: 991.98px) {
-  .ntg-cards-carousel--testimonial .carousel-cell {
-    width: 50%;
-  }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+1) {
+  grid-row: 4/-1;
 }
-@media (max-width: 767.98px) {
-  .ntg-cards-carousel--testimonial .carousel-cell {
-    width: 100%;
-  }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+1) .card {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) {
+  grid-row: 3/-1;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+3) {
+  grid-row: 3/-12;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) {
+  grid-row: 2/-2;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) .card {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) {
+  grid-row: 1/-1;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) {
+  grid-row: 2/-1;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) .card {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) {
+  grid-row: 3/-2;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) {
+  grid-row: 4/-2;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) .card {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) {
+  grid-row: 3/-1;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) {
+  grid-row: 4/-2;
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) .card {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 .ntg-cards-carousel--testimonial .carousel-cell .card {
-  -webkit-transform: rotate(3.325deg);
-          transform: rotate(3.325deg);
+  height: 100%;
+}
+.ntg-cards-carousel--testimonial .carousel-cell .card .card-inner {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.ntg-cards-carousel--testimonial .carousel-cell .card .card-back {
+  height: 100%;
 }
 .ntg-cards-carousel--testimonial .flickity-prev-next-button {
-  top: calc(100% - 25px);
+  top: 100%;
 }
 @media (max-width: 767.98px) {
   .ntg-cards-carousel--testimonial .flickity-prev-next-button {

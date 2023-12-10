@@ -712,15 +712,22 @@ function initFlickity() {
 
     carousels.forEach(function (carousel) {
         var alignment = carousel.getAttribute('data-align');
+        var wrap = carousel.getAttribute('data-wrapAround');
+
         if (!alignment) {
             alignment = 'center';
+        }
+
+        if(!wrap) {
+            wrap = false;
         }
 
         var flkty = new Flickity(carousel, {
             // options
             cellAlign: alignment,
             pageDots: false,
-            percentPosition: false
+            percentPosition: false,
+            wrapAround: wrap
         });
 
         const cellElements = flkty.getCellElements();
