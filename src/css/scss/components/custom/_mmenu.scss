@@ -1,3 +1,6 @@
+.mm-wrapper--position-left .mm-slideout, .mm-wrapper--position-right .mm-slideout {
+    transform: none;
+}
 // fix content flash
 #mmenu-wrapper:not(.mm-menu) {
     display: none;

@@ -21802,6 +21802,11 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   z-index: 1;
 }
 
+.mm-wrapper--position-left .mm-slideout, .mm-wrapper--position-right .mm-slideout {
+  -webkit-transform: none;
+          transform: none;
+}
+
 #mmenu-wrapper:not(.mm-menu) {
   display: none;
 }
@@ -22500,9 +22505,6 @@ body.search-panel--is-hidden .search-global {
 }
 .ntg-jobs-subsite #searchResults .accordion {
   --bs-accordion-bg: var(--current-theme-color, #fff);
-  --bs-accordion-color: var(--current-theme-text-color);
-  --bs-accordion-active-color: var(--bs-accordion-color);
-  --bs-accordion-btn-color: var(--bs-accordion-color);
 }
 .ntg-jobs-subsite #searchResults .accordion-item {
   border: 1px solid var(--current-theme-secondary, #D7D2CB);
