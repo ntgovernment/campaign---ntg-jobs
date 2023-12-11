@@ -21294,6 +21294,10 @@ body:not(.mm-wrapper--opened) .page-header-container.header-scroll .ntg-header__
   z-index: 1;
 }
 
+.ntg-icon-and-description {
+  background-color: var(--current-theme-color, #0E2C4D);
+  color: var(--current-theme-text-color, #fff);
+}
 .ntg-icon-and-description__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

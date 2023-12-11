@@ -1,4 +1,7 @@
 .ntg-icon-and-description {
+    background-color: var(--current-theme-color, #{$ntg-dark-blue});
+    color: var(--current-theme-text-color, #{$white});
+
     &__wrapper {
         display: flex;
         flex-direction: column;
