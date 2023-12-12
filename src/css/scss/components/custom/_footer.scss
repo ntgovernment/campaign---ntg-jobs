@@ -1,6 +1,6 @@
 .ntg-footer {
-    background-color: var(--current-theme-color, #{$ntg-dark-gray});
-    color: var(--current-theme-text-color, #{$white});
+    background-color: $ntg-dark-gray;
+    color: $white;
 
     &__top {
         padding-top: 1.5rem;
@@ -21,7 +21,7 @@
     }
 
     &__bottom {
-        background-color: var(--current-theme-color-lighter, #{lighten($ntg-dark-gray, 4)});
+        background-color: lighten($ntg-dark-gray, 4);
         font-weight: bold;
 
         ul {
@@ -58,16 +58,16 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            border: 2px solid var(--current-theme-text-color, #{$white});
+            border: 2px solid $white;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             transition: 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
-            color: var(--current-theme-text-color, #{$white});
+            color: $white;
 
             &:hover {
-                background-color: var(--current-theme-text-color, #{$white});
-                color: var(--current-theme-color, #{$ntg-dark-gray}) !important;
+                background-color: $white;
+                color: $ntg-dark-gray !important;
             }
 
             i {
@@ -79,10 +79,10 @@
 
     a {
         text-decoration: none;
-        color: var(--current-theme-text-color, #{$white});
+        color: $white;
 
         &:hover {
-            color: var(--current-theme-text-color, #{$white});
+            color: $white;
 
             span {
                 text-decoration: underline;
@@ -150,7 +150,7 @@
         }
 
         &-menu {
-            border-right: 2px solid var(--current-theme-text-color, #{$white});
+            border-right: 2px solid $white;
             padding-right: 5rem;
             margin-right: 5rem;
             flex-shrink: 0;
@@ -168,7 +168,7 @@
                 letter-spacing: 1.6px;
                 transition: .2s opacity ease-in-out;
                 font-size: var(--h5-size);
-                color: var(--current-theme-text-color, #{$white});
+                color: $white;
 
                 &.active, &:hover, &:focus {
                     position: relative;
@@ -182,7 +182,7 @@
 
         &-content {
             margin-bottom: 1.5rem;
-            color: var(--current-theme-text-color, #{$white});
+            color: $white;
 
             @include media-breakpoint-up(lg) {
                 margin-bottom: 0;

@@ -1,6 +1,5 @@
 .card {
     $this: &;
-    --#{$prefix}card-color: var(--current-theme-text-color);
 
     &:not(.card-focus):focus-within {
         @include focus();
@@ -118,7 +117,6 @@
         text-transform: uppercase;
         letter-spacing: 1.33px;
         
-
         &:hover {
             @extend %text-decorate;
         }
