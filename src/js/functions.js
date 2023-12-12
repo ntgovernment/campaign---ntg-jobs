@@ -88,6 +88,7 @@ function initSlidingMenu() {
             mapTabCarousel = new Flickity(mapTabs, {
                 cellAlign: "left",
                 percentPosition: false,
+                pageDots: false,
                 contain: true
             });
 

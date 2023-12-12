@@ -1,8 +1,8 @@
 //Default color definitions
 .ntg-footer {
-    --footer-background-color: #{$ntg-dark-gray};
-    --footer-background-color-light: #{lighten($ntg-dark-gray, 4)};
-    --footer-text-color: #{$white};
+    --footer-background-color: var(--current-theme-color);
+    --footer-background-color-light: var(--current-theme-color-lighter);
+    --footer-text-color:  var(--current-theme-text-color);
 }
 
 //Color definitions when html or body has data-bs-theme

@@ -72,21 +72,25 @@
         --current-theme-text-color: #{map.get($value, "text-color")};
         --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
         --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};
+
         --current-theme-primary: #{map.get($value, "primary")};
         --current-theme-primary-darker: #{darken(map.get($value, "primary"), 6)};
         --current-theme-primary-lighter: #{lighten(map.get($value, "primary"), 4)};
         --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
         --current-theme-primary-text: #{map.get($value, "primary-text")};
+
         --current-theme-secondary: #{map.get($value, "secondary")};
         --current-theme-secondary-darker: #{darken(map.get($value, "secondary"), 6)};
         --current-theme-secondary-lighter: #{lighten(map.get($value, "secondary"), 4)};
         --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
         --current-theme-secondary-text: #{map.get($value, "secondary-text")};
+
         --current-theme-tertiary: #{map.get($value, "tertiary")};
         --current-theme-tertiary-darker: #{darken(map.get($value, "tertiary"), 6)};
         --current-theme-tertiary-lighter: #{lighten(map.get($value, "tertiary"), 4)};
         --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
         --current-theme-tertiary-text: #{map.get($value, "tertiary-text")};
+        
         --current-theme-body-bg: #{map.get($value, "main")};
         --current-theme-body-bg-rgb: #{to-rgb(map.get($value, "main"))};
         --current-theme-primary-text-emphasis: #{shade-color(map.get($value, "primary"), 60%)};
@@ -205,7 +209,7 @@
         }
 
         .accordion {
-            $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{map.get($value, 'text-color')}' /></svg>");
+            $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{map.get($value, 'main')}' /></svg>");
             --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
             --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
         }
