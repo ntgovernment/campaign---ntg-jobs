@@ -168,7 +168,7 @@
     }
 
     &--tall {
-        >.container > .row > div:first-child{
+        > .container > .row > div:first-child{
             position: relative;
             z-index: 1;
 
@@ -185,9 +185,9 @@
         }
 
         #{$this}__content {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 position: sticky;
-                top: 100px; // replace with header height
+                transition: 0.25s top ease-in-out;
             }
         }
 

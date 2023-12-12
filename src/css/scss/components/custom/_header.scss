@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
     --header-text-color: #{$white};
 }
@@ -52,6 +54,31 @@ body:not(.mm-wrapper--opened) {
 
             &__logo {
                 max-width: 170px;
+            }
+        }
+    }
+}
+
+// offset sticky side content if header is visible on screen
+.page-header-container {
+    &:not(.header-hide) {
+        ~ main {
+            .ntg-cards--sticky-content .ntg-cards__content,
+            .ntg-cards-carousel--tall .ntg-cards-carousel__content {
+                @include media-breakpoint-up(lg) {
+                    top: calc(map.get($header-heights, desktop) + 3rem);
+                }
+            }
+        }
+    }
+
+    &.header-hide {
+        ~ main {
+            .ntg-cards--sticky-content .ntg-cards__content,
+            .ntg-cards-carousel--tall .ntg-cards-carousel__content {
+                @include media-breakpoint-up(lg) {
+                    top: 3rem;
+                }
             }
         }
     }
