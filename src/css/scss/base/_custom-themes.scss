@@ -20,7 +20,7 @@
             --bs-link-hover-color: #{$primary-text};
             --bs-link-hover-color-rgb: #{to-rgb($primary-text)};
 
-            // Override for text-colored button for primary them
+            // Override for text-colored button for primary theme
             // This is to ensure the button gets primary color even when there is no theme selected on root
             .btn-outline-default {
                 @include button-outline-variant($primary-text)
@@ -39,7 +39,7 @@
             --bs-link-hover-color-rgb: #{to-rgb($secondary-text)};
 
 
-            // Override for text-colored button for secondary them
+            // Override for text-colored button for secondary theme
             // This is to ensure the button gets secondary color even when there is no theme selected on root
             .btn-outline-default {
                 @include button-outline-variant($secondary-text)
@@ -57,7 +57,7 @@
             --bs-link-hover-color: #{$tertiary-text};
             --bs-link-hover-color-rgb: #{to-rgb($tertiary-text)};
 
-             // Override for text-colored button for tertiary them
+            // Override for text-colored button for tertiary theme
             // This is to ensure the button gets tertiary color even when there is no theme selected on root
             .btn-outline-default {
                 @include button-outline-variant($tertiary-text)
@@ -136,7 +136,7 @@
             --bs-link-hover-color: #{map.get($value, "primary-link-hover-color")};
             --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "primary-link-hover-color"))};
 
-            // Override for text-colored button for primary
+            // Override for text-colored button for primary theme
             // This is to ensure the button gets primary color when primary theme is selected
             .btn-outline-default {
                 @include button-outline-variant(map.get($value, "primary-text"))
@@ -154,7 +154,7 @@
             --bs-link-hover-color: #{map.get($value, "secondary-link-hover-color")};
             --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "secondary-link-hover-color"))};
 
-            // Override for text-colored button for secondary
+            // Override for text-colored button for secondary theme
             // This is to ensure the button gets secondary color when secondary theme is selected
             .btn-outline-default {
                 @include button-outline-variant(map.get($value, "secondary-text"))
@@ -172,7 +172,7 @@
             --bs-link-hover-color: #{map.get($value, "tertiary-link-hover-color")};
             --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "tertiary-link-hover-color"))};
 
-            // Override for text-colored button for tertiary
+            // Override for text-colored button for tertiary theme
             // This is to ensure the button gets tertiary color when tertiary theme is selected
             .btn-outline-default {
                 @include button-outline-variant(map.get($value, "tertiary-text"))
@@ -198,7 +198,7 @@
             @include button-outline-variant(map.get($value, "tertiary"))
         }
 
-        //Button outline that takes the default font color as the color and border for the theme
+        // Button outline that takes the default font color as the color and border for the theme
         .btn-outline-default {
             @include button-outline-variant(map.get($value, "text-color"))
         }

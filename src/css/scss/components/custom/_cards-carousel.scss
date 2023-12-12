@@ -2,7 +2,13 @@
 
 .ntg-cards-carousel {
     $this: &;
+    color: var(--current-theme-text-color, $body-color);
+    background: var(--current-theme-color, transparent);
     overflow-x: clip;
+
+    h2, .tag {
+        color: var(--current-theme-text-color, $ntg-olive-green);
+    }
 
     // TODO: fix cell spacing and alignment
     .carousel-cell {
@@ -17,9 +23,33 @@
         }
     }
 
+    &[data-bs-theme="default"] .card {
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-footer {
+            padding: 0;
+        }
+    }
+
+    &:not([data-bs-theme="default"]) .card {
+        --#{$prefix}card-color: #{$body-color};
+        --#{$prefix}card-bg: #{$white};
+
+        &-link {
+            color: $body-color;
+
+            &::after {
+                color: $ntg-olive-green;
+            }
+        }
+    }
+
     .flickity-button {
         background: transparent;
-        border: 2px solid $primary; // temporary
+        border: 2px solid var(--current-theme-text-color, $primary);
         width: 50px;
         height: 50px;
         transition: 0.2s background ease-in-out;
@@ -31,10 +61,10 @@
 
         &:hover,
         &:focus {
-            background: $primary; // temporary
+            background: var(--current-theme-text-color, $primary);
 
             .flickity-button-icon {
-                fill: $white;
+                fill: var(--current-theme-color, $white);
             }
         }
 
@@ -43,7 +73,7 @@
         }
 
         .flickity-button-icon {
-            fill: $primary; // temporary
+            fill: var(--current-theme-text-color, $primary);
             width: 35%;
             height: 35%;
             top: 50%;
@@ -168,26 +198,28 @@
     }
 
     &--tall {
-        >.container > .row > div:first-child{
+        overflow-y: clip;
+
+        > .container > .row > div:first-child {
             position: relative;
             z-index: 1;
 
             &::after {
                 content: "";
-                background-color: var(--current-theme-color, #{$white});
+                background-color: var(--current-theme-color, $white);
                 position: absolute;
-                top: 0;
+                top: -1px;
                 left: -9999px;
                 right: 0;
-                bottom: 0;
+                bottom: -1px;
                 z-index: -1;
             }
         }
 
         #{$this}__content {
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 position: sticky;
-                top: 100px; // replace with header height
+                transition: 0.25s top ease-in-out;
             }
         }
 
@@ -204,12 +236,21 @@
         }
 
         .flickity-button {
-            background: $light; // temporary
+            background: $white;
             border-width: 0;
             box-shadow: 0 0 10px rgba(99, 101, 107, 0.5);
 
+            &:hover,
+            &:focus {
+                background: var(--current-theme-secondary, $secondary);
+        
+                .flickity-button-icon {
+                    fill: var(--current-theme-secondary-text, $white);
+                }
+            }
+
             .flickity-button-icon {
-                fill: $black; // temporary
+                fill: $black;
                 width: 35%;
                 height: 35%;
                 top: 50%;
@@ -240,17 +281,8 @@
         .carousel-cell {
             width: 350px;
             height: 350px;
-            // width: calc(100% / 4);
 
-            // @include media-breakpoint-down(lg) {
-            //     width: 50%;
-            // }
-
-            // @include media-breakpoint-down(md) {
-            //     width: 100%;
-            // }
-
-            &:nth-child(n+1) {
+            &:nth-child(n + 1) {
                 grid-row: 4/-1;
                 
                 .card {
@@ -258,72 +290,68 @@
                 }
             }
 
-            &:nth-child(n+2) {
-                grid-row: 3/-1;
+            &:nth-child(n + 2) {
+                grid-row: 3 / -1;
                 
                 .card {
                     transform: rotate(2deg);
                 }
             }
 
-            &:nth-child(n+3) {
-                grid-row: 3/-12;
-                
-                .card {
-                    // transform: rotate(-1deg);
-                }
+            &:nth-child(n + 3) {
+                grid-row: 3 / -12;
             }
 
-            &:nth-child(n+4) {
-                grid-row: 2/-2;
+            &:nth-child(n + 4) {
+                grid-row: 2 / -2;
                 
                 .card {
                     transform: rotate(5deg);
                 }
             }
 
-            &:nth-child(n+5) {
-                grid-row: 1/-1;
+            &:nth-child(n + 5) {
+                grid-row: 1 / -1;
                 
                 .card {
                     transform: rotate(-4deg);
                 }
             }
 
-            &:nth-child(n+6) {
-                grid-row: 2/-1;
+            &:nth-child(n + 6) {
+                grid-row: 2 / -1;
                 
                 .card {
                     transform: rotate(2deg);
                 }
             }
 
-            &:nth-child(n+7) {
-                grid-row: 3/-2;
+            &:nth-child(n + 7) {
+                grid-row: 3 / -2;
                 
                 .card {
                     transform: rotate(-1deg);
                 }
             }
 
-            &:nth-child(n+8) {
-                grid-row: 4/-2;
+            &:nth-child(n + 8) {
+                grid-row: 4 / -2;
                 
                 .card {
                     transform: rotate(5deg);
                 }
             }
 
-            &:nth-child(n+9) {
-                grid-row: 3/-1;
+            &:nth-child(n + 9) {
+                grid-row: 3 / -1;
                 
                 .card {
                     transform: rotate(-1deg);
                 }
             }
 
-            &:nth-child(n+10) {
-                grid-row: 4/-2;
+            &:nth-child(n + 10) {
+                grid-row: 4 / -2;
                 
                 .card {
                     transform: rotate(5deg);
@@ -332,7 +360,6 @@
 
             .card {
                 height: 100%;
-                // transform: rotate(3.325deg);
 
                 .card-inner {
                     flex-grow: 1;
@@ -343,8 +370,6 @@
                 }
             }
         }
-
-
         
         .flickity-prev-next-button {
             top: calc(100%);

@@ -1,11 +1,19 @@
 .ntg-cards {
     $this: &;
+    color: var(--current-theme-text-color, $body-color);
+    background: var(--current-theme-color, transparent);
+
+    &__content {
+        h2, .tag {
+            color: var(--current-theme-text-color, $ntg-olive-green);
+        }
+    }
 
     &--sticky-content {
         #{$this}__content {
             @include media-breakpoint-up(md) {
                 position: sticky;
-                top: 100px; // replace with header height
+                transition: 0.25s top ease-in-out;
             }
         }
     }

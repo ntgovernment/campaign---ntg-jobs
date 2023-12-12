@@ -1,50 +1,83 @@
 .card {
-    --#{$prefix}card-bg: var(--current-theme-color);
-    --#{$prefix}card-color:var(--current-theme-text-color);
-    --#{$prefix}card-cap-bg: var(--current-theme-color);
-
     $this: &;
 
-    &:not(.card--links):focus-within {
+    &:not(.card-focus):focus-within {
         @include focus();
     }
 
     &-img-zoom,
     &-img-zoom-rotate {
         overflow: hidden;
+        height: 100%;
+    }
 
+    &-img-zoom {
         #{$this}-img-top {
-            transition: 0.5s transform ease;
+            transition: 0.3s transform ease-out;
         }
     }
 
-    &:hover {
+    &-img-zoom-rotate { 
+        #{$this}-img-top {
+            transition: 0.25s transform ease-out;
+        }
+    }
+
+    &:hover,
+    &:focus-within {
         #{$this}-img-zoom {
             #{$this}-img-top {
-                transform: scale(1.1);
+                transform: scale(1.08);
             }
         }
 
         #{$this}-img-zoom-rotate {
             #{$this}-img-top {
-                transform: scale(1.1) rotate(3deg);
+                transform: scale(1.1) rotate(2deg);
+
             }
         }
     }
 
-    video,
-    iframe,
-    img {
+    img,
+    video {
         object-fit: cover;
+        width: 100%;
         min-height: 250px;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+            min-height: 150px;
+        }
     }
 
-    img,
-    iframe {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 100%;
+
+        > #{$this}-footer {
+            @include media-breakpoint-down(md) {
+                align-self: flex-end;
+
+                #{$this}-link {
+                    &:hover,
+                    &:focus {
+                        &::after {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &-body {
+        @include media-breakpoint-down(lg) {
+            @include font-size(16px);
+        }
+
         > * {
             &:last-child {
                 margin-bottom: 0;
@@ -64,6 +97,10 @@
             li:before {
                 color: var(--current-theme-text-color, $ntg-charcoal-grey-20);
             }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         > * {
@@ -75,9 +112,11 @@
 
     &-link {
         @extend .link-chevron-right;
-        font-size: 16px;
+        @include font-size(16px);
         text-decoration: none;
-
+        text-transform: uppercase;
+        letter-spacing: 1.33px;
+        
         &:hover {
             @extend %text-decorate;
         }
@@ -88,24 +127,38 @@
     }
 
     &--tall {
-        video,
-        iframe,
-        img {
+        img,
+        video {
             @include media-breakpoint-up(lg) {
-                aspect-ratio: 0.79 / 1;
+                min-height: 440px;
+                max-height: 440px;
+            }
+        }
+    }
+
+    &--medium {
+        img,
+        video {
+            max-height: 250px;
+        
+            @include media-breakpoint-down(md) {
+                max-height: 150px;
             }
         }
     }
 
     &--small {
-        video,
-        iframe,
-        img {
-            height: 150px;
+        img,
+        video {
+            max-height: 150px;
+
+            @include media-breakpoint-up(lg) {
+                min-height: 150px;
+            }
         }
 
         #{$this}-body {
-            font-size: 16px;
+            @include font-size(16px);
         }
     }
 

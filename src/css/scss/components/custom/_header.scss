@@ -1,9 +1,10 @@
+@use "sass:map";
 
 .mm-menu {
     --header-text-color: #{$ntg-dark-gray};
 }
 
-//Default color definitions
+// Default color definitions
 .page-header-container,
 .mm-menu {
     --header-special-color: #{$white};
@@ -13,7 +14,7 @@
         --header-text-color: #{$ntg-dark-gray};
     }
 
-    //Default button on the header. If no theme, olive green color is used else tertiary color is used
+    // Default button on the header. If no theme, olive green color is used else tertiary color is used
     .btn-default {
         --bs-btn-color: var(--current-theme-tertiary-text, #fff);
         --bs-btn-bg: var(--current-theme-tertiary, #104735);
@@ -106,6 +107,31 @@ body:not(.mm-wrapper--opened) {
 
                 @include media-breakpoint-up(sm) {
                     max-width: 170px;
+                }
+            }
+        }
+    }
+}
+
+// offset sticky side content if header is visible on screen
+.page-header-container {
+    &:not(.header-hide) {
+        ~ main {
+            .ntg-cards--sticky-content .ntg-cards__content,
+            .ntg-cards-carousel--tall .ntg-cards-carousel__content {
+                @include media-breakpoint-up(lg) {
+                    top: calc(map.get($header-heights, desktop) + 3rem);
+                }
+            }
+        }
+    }
+
+    &.header-hide {
+        ~ main {
+            .ntg-cards--sticky-content .ntg-cards__content,
+            .ntg-cards-carousel--tall .ntg-cards-carousel__content {
+                @include media-breakpoint-up(lg) {
+                    top: 3rem;
                 }
             }
         }
