@@ -1,17 +1,24 @@
+//Default color definitions
+.ntg-map-tabs {
+    --map-tabs-background-color: var(--current-theme-color, #0D2C4D);
+    --map-tabs-background-color-light: var(--current-theme-color-lighter, #112936);
+    --map-tabs-text-color: var(--current-theme-text-color, #{$white});
+}
+
 .ntg-map-tabs {    
     position: relative;
     overflow: hidden;
-    background-color: var(--current-theme-color, #0D2C4D);
-    color: var(--current-theme-text-color, #{$white});
+    background-color: var(--map-tabs-background-color);
+    color: var(--map-tabs-text-color);
 
     .nav-tabs-wrapper {
-        background-color: var(--current-theme-color-lighter, #112936);
+        background-color: var(--map-tabs-background-color-light);
     }
 
     .nav-link {
-        --#{$prefix}nav-tabs-link-active-color: var(--current-theme-text-color, #{$white});
+        --#{$prefix}nav-tabs-link-active-color: var(--map-tabs-text-color);
         --#{$prefix}nav-tabs-link-active-bg: transparent;
-        --#{$prefix}nav-tabs-link-active-border-color: var(--current-theme-text-color, #{$white});
+        --#{$prefix}nav-tabs-link-active-border-color: var(--map-tabs-text-color);
     }
 
     .nav-tabs {
@@ -32,12 +39,12 @@
 
             .flickity-button {
                 background-color: transparent;
-                border: 2px solid var(--current-theme-text-color, #{$white});
+                border: 2px solid var(--map-tabs-text-color);;
                 width: 30px;
                 height: 30px;
 
                 &-icon {
-                    fill: var(--current-theme-text-color, #{$white});
+                    fill: var(--map-tabs-text-color);;
                 }
             }
         }
