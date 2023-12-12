@@ -20918,9 +20918,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 }
 
 .ntg-footer {
-  --footer-background-color: var(--current-theme-color);
-  --footer-background-color-light: var(--current-theme-color-lighter);
-  --footer-text-color: var(--current-theme-text-color);
+  --footer-background-color: #2B292D;
+  --footer-background-color-light: #353338;
+  --footer-text-color: #fff;
 }
 
 [data-bs-theme]:not([data-bs-theme=default]):not([data-bs-theme=""]) .ntg-footer {
