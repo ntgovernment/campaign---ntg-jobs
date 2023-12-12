@@ -1,7 +1,63 @@
 @use "sass:map";
 
-:root {
+.mm-menu {
+    --header-text-color: #{$ntg-dark-gray};
+}
+
+// Default color definitions
+.page-header-container,
+.mm-menu {
+    --header-special-color: #{$white};
+    --header-background-color: #{$ntg-territory-stone};
+
+    &.header-scroll {
+        --header-text-color: #{$ntg-dark-gray};
+    }
+
+    // Default button on the header. If no theme, olive green color is used else tertiary color is used
+    .btn-default {
+        --bs-btn-color: var(--current-theme-tertiary-text, #fff);
+        --bs-btn-bg: var(--current-theme-tertiary, #104735);
+        --bs-btn-border-color: var(--current-theme-tertiary, #104735);
+        --bs-btn-hover-color: var(--current-theme-tertiary-text, #fff);
+        --bs-btn-hover-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
+        --bs-btn-hover-border-color: var(--current-theme-tertiary-bg-subtle, #0d392a);
+        --bs-btn-active-color: var(--current-theme-tertiary-text, #fff);
+        --bs-btn-active-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
+        --bs-btn-active-border-color: var(--current-theme-tertiary-border-subtle, #0d392a);
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: var(--current-theme-tertiary-text, #fff);
+        --bs-btn-disabled-bg: var(--current-theme-tertiary, #104735);
+        --bs-btn-disabled-border-color: var(--current-theme-tertiary, #104735);
+    }
+}
+
+.page-header-container {
     --header-text-color: #{$white};
+}
+
+[data-bs-theme]:not([data-bs-theme="default"]) {
+    .page-header-container.header-scroll,
+    .mm-menu,
+    .mm-wrapper--opened .page-header-container {
+        --header-special-color: var(--current-theme-text-color);
+        --header-background-color: var(--current-theme-secondary);
+        --header-text-color: var(--current-theme-secondary-text);
+    }
+}
+
+.page-header-container[data-bs-theme]:not([data-bs-theme="default"]).header-scroll,
+.mm-wrapper--opened .page-header-container[data-bs-theme]:not([data-bs-theme="default"]),
+.mm-menu[data-bs-theme]:not([data-bs-theme="default"]) {
+    --header-special-color: var(--current-theme-text-color);
+    --header-background-color: var(--current-theme-color);
+    --header-text-color: var(--current-theme-text-color);
+}
+
+
+.mm-wrapper--opened .page-header-container {
+    --header-text-color: #{$ntg-dark-gray};
+    background-color: var(--header-background-color);
 }
 
 .page-header-container {
@@ -10,13 +66,6 @@
     position: fixed;
     z-index: 999;
     transition: 0.25s transform ease-in-out, 0.2s background-color ease-in-out, 0.2s box-shadow ease-in-out;
-
-    @include media-breakpoint-down(sm) {
-        padding: 0.5rem 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 }
 
 body:not(.mm-wrapper--opened) {
@@ -26,15 +75,18 @@ body:not(.mm-wrapper--opened) {
         }
 
         &.header-scroll {
-            --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
-            background-color: var(--bs-secondary, #{$ntg-territory-stone});
+            background-color: var(--header-background-color);
             box-shadow: 0 2px 8px rgba($black, 0.2);
 
             .ntg-header {
                 padding: 0.5rem 0;
 
                 &__logo {
-                    max-width: 170px;
+                    max-width: 140px;
+
+                    @include media-breakpoint-up(sm) {
+                        max-width: 170px;
+                    }
                 }
             }
         }
@@ -43,8 +95,6 @@ body:not(.mm-wrapper--opened) {
 
 .mm-wrapper--opened {
     .page-header-container {
-        --header-text-color: var(--bs-secondary-text, #{$ntg-dark-gray});
-        background-color: var(--bs-secondary, #{$ntg-territory-stone});
         box-shadow: 0 2px 8px rgba($black, 0.2);
         position: sticky;
         top: 0;
@@ -53,7 +103,11 @@ body:not(.mm-wrapper--opened) {
             padding: 0.5rem 0;
 
             &__logo {
-                max-width: 170px;
+                max-width: 140px;
+
+                @include media-breakpoint-up(sm) {
+                    max-width: 170px;
+                }
             }
         }
     }
@@ -86,7 +140,7 @@ body:not(.mm-wrapper--opened) {
 
 .ntg-header {
     transition: 0.2s padding ease-in-out;
-
+    
     @include media-breakpoint-up(sm) {
         padding: 1.5rem 0;
     }
@@ -98,20 +152,17 @@ body:not(.mm-wrapper--opened) {
     }
 
     &__logo {
-        max-width: 215px;
+        max-width: 140px;
         width: 100%;
         transition: 0.2s filter ease-in-out, 0.2s max-width ease-in-out;
-
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
 
         @include media-breakpoint-up(sm) {
             padding-right: 1rem;
             margin-right: 1rem;
+            max-width: 215px;
         }
 
-        img {
+        img, svg {
             max-width: 100%;
         }
     }
@@ -152,8 +203,12 @@ body:not(.mm-wrapper--opened) {
 
         input {
             padding-right: 2rem;
-            border-color: var(--header-text-color);
+            border-color: var(--header-special-color, --header-text-color);
             color: var(--header-text-color);
+
+            &:focus {
+                border-color: var(--header-special-color, --header-text-color);
+            }
         }
 
         ::placeholder {

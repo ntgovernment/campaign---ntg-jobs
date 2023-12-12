@@ -556,15 +556,26 @@ function initResponsiveMenu() {
 
 function initMmenu() {
     const mmenuWrapper = document.getElementById('mmenu-wrapper');
+    const pageHeader = document.getElementsByClassName("page-header-container")[0];
+
     if (!mmenuWrapper) {
         return false;
+    }
+
+    if(pageHeader.getAttribute("data-bs-theme")) {
+        mmenuWrapper.setAttribute("data-bs-theme", pageHeader.getAttribute("data-bs-theme"))
     }
 
     document.addEventListener("DOMContentLoaded", () => {
         const mmenu = new Mmenu('#mmenu-wrapper', {
             "offCanvas": {
                 "position": "right"
-            }
+            },
+            "navbars": [{
+               use: true,
+               position: "bottom",
+               content: '<a class="btn btn-chevron-right btn-default" href="#">Move to the NT Checklist Tool</a>',
+            }]
         });
 
         const API = mmenu.API;
@@ -575,6 +586,20 @@ function initMmenu() {
                 API.close();
             }
         });
+
+        
+        // inserts close button to navbars
+        var panels = document.querySelector('.mm-panels');
+        var close = document.createElement('a');
+        close.setAttribute('class', "mm-btn mm-btn--close-wrapper mm-navbar__btn");
+        close.setAttribute('aria-label', "Close menu");
+        close.setAttribute('href', "#wrapper");
+        close.innerHTML = `<div class="mm-btn--close">
+                                <span class="top-line" aria-hidden="true"></span>
+                                <span class="bot-line" aria-hidden="true"></span>
+                            </div>
+                            <span class="mm-btn--close__text">Close</span>`;
+        panels.prepend(close);
     });
 }
 
