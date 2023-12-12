@@ -1,6 +1,29 @@
+//Default color definitions
 .ntg-footer {
-    background-color: var(--current-theme-color, #{$ntg-dark-gray});
-    color: var(--current-theme-text-color, #{$white});
+    --footer-background-color: #{$ntg-dark-gray};
+    --footer-background-color-light: #{lighten($ntg-dark-gray, 4)};
+    --footer-text-color: #{$white};
+}
+
+//Color definitions when html or body has data-bs-theme
+[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    .ntg-footer {
+        --footer-background-color: var(--current-theme-tertiary);
+        --footer-background-color-light: var(--current-theme-tertiary-lighter);
+        --footer-text-color: var(--current-theme-tertiary-text);
+    }
+}
+
+//Color definitions when footer has data-bs-theme
+.ntg-footer[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    --footer-background-color: var(--current-theme-color);
+    --footer-background-color-light: var(--current-theme-color-lighter);
+    --footer-text-color: var(--current-theme-text-color);
+}
+
+.ntg-footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
 
     &__top {
         padding-top: 1.5rem;
@@ -21,7 +44,7 @@
     }
 
     &__bottom {
-        background-color: var(--current-theme-color-lighter, #{lighten($ntg-dark-gray, 4)});
+        background-color: var(--footer-background-color-light);
         font-weight: bold;
 
         ul {
@@ -31,6 +54,10 @@
             padding: 0;
             margin: 0;
             list-style: none;
+
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
 
             li {
                 margin-bottom: 0 !important;
@@ -58,16 +85,16 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            border: 2px solid var(--current-theme-text-color, #{$white});
+            border: 2px solid var(--footer-text-color);
             display: inline-flex;
             align-items: center;
             justify-content: center;
             transition: 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
-            color: var(--current-theme-text-color, #{$white});
+            color:  var(--footer-text-color);
 
             &:hover {
-                background-color: var(--current-theme-text-color, #{$white});
-                color: var(--current-theme-color, #{$ntg-dark-gray}) !important;
+                background-color: var(--footer-text-color);
+                color:  var(--footer-background-color) !important;
             }
 
             i {
@@ -79,10 +106,10 @@
 
     a {
         text-decoration: none;
-        color: var(--current-theme-text-color, #{$white});
+        color: var(--footer-text-color);
 
         &:hover {
-            color: var(--current-theme-text-color, #{$white});
+            color: var(--footer-text-color);
 
             span {
                 text-decoration: underline;
@@ -150,7 +177,7 @@
         }
 
         &-menu {
-            border-right: 2px solid var(--current-theme-text-color, #{$white});
+            border-right: 2px solid var(--footer-text-color);
             padding-right: 5rem;
             margin-right: 5rem;
             flex-shrink: 0;
@@ -168,7 +195,7 @@
                 letter-spacing: 1.6px;
                 transition: .2s opacity ease-in-out;
                 font-size: var(--h5-size);
-                color: var(--current-theme-text-color, #{$white});
+                color: var(--footer-text-color);
 
                 &.active, &:hover, &:focus {
                     position: relative;
@@ -182,7 +209,7 @@
 
         &-content {
             margin-bottom: 1.5rem;
-            color: var(--current-theme-text-color, #{$white});
+            color:  var(--footer-text-color);
 
             @include media-breakpoint-up(lg) {
                 margin-bottom: 0;

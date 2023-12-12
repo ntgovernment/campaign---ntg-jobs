@@ -73,12 +73,18 @@
         --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
         --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};
         --current-theme-primary: #{map.get($value, "primary")};
+        --current-theme-primary-darker: #{darken(map.get($value, "primary"), 6)};
+        --current-theme-primary-lighter: #{lighten(map.get($value, "primary"), 4)};
         --current-theme-primary-rgb: to-rgb(map.get($value, "primary"));
         --current-theme-primary-text: #{map.get($value, "primary-text")};
         --current-theme-secondary: #{map.get($value, "secondary")};
+        --current-theme-secondary-darker: #{darken(map.get($value, "secondary"), 6)};
+        --current-theme-secondary-lighter: #{lighten(map.get($value, "secondary"), 4)};
         --current-theme-secondary-rgb: to-rgb(map.get($value, "secondary"));
         --current-theme-secondary-text: #{map.get($value, "secondary-text")};
         --current-theme-tertiary: #{map.get($value, "tertiary")};
+        --current-theme-tertiary-darker: #{darken(map.get($value, "tertiary"), 6)};
+        --current-theme-tertiary-lighter: #{lighten(map.get($value, "tertiary"), 4)};
         --current-theme-tertiary-rgb: to-rgb(map.get($value, "tertiary"));
         --current-theme-tertiary-text: #{map.get($value, "tertiary-text")};
         --current-theme-body-bg: #{map.get($value, "main")};
