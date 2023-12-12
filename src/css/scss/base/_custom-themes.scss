@@ -57,7 +57,7 @@
             --bs-link-hover-color: #{$tertiary-text};
             --bs-link-hover-color-rgb: #{to-rgb($tertiary-text)};
 
-             // Override for text-colored button for tertiary them
+            // Override for text-colored button for tertiary them
             // This is to ensure the button gets tertiary color even when there is no theme selected on root
             .btn-outline-default {
                 @include button-outline-variant($tertiary-text)
