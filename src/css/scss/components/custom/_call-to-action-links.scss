@@ -1,8 +1,8 @@
 @use "sass:map";
 
 .ntg-call-to-action-links {
-    color: var(--current-theme-text-color, $secondary-text);
-    background-color: var(--current-theme-color, $secondary);
+    color: var(--current-theme-text-color, $primary-text);
+    background-color: var(--current-theme-color, $primary);
     position: relative;
 
     img, video {
