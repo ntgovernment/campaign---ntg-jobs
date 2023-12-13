@@ -83,25 +83,28 @@ function initSlidingMenu() {
     const mq = window.matchMedia( "(max-width: 993px)" );
     const mapTabs = document.getElementById("map-tab");
 
-    if(mq.matches) {
-        if(!mapTabCarousel) {
-            mapTabCarousel = new Flickity(mapTabs, {
-                cellAlign: "left",
-                percentPosition: false,
-                pageDots: false,
-                contain: true
-            });
-
-            mapTabCarousel.on('change', (index) => {
-                mapTabCarousel.cells[index].element.querySelector("button").dispatchEvent(new Event("click"));
-            });
-
-            mapTabCarousel.select(0);
+    if(mapTabs) {
+        if(mq.matches) {
+            if(!mapTabCarousel) {
+                mapTabCarousel = new Flickity(mapTabs, {
+                    cellAlign: "left",
+                    percentPosition: false,
+                    pageDots: false,
+                    contain: true
+                });
+    
+                mapTabCarousel.on('change', (index) => {
+                    mapTabCarousel.cells[index].element.querySelector("button").dispatchEvent(new Event("click"));
+                });
+    
+                mapTabCarousel.select(0);
+            }
+        } else {
+            mapTabCarousel && mapTabCarousel.destroy();
+            mapTabCarousel = undefined;
         }
-    } else {
-        mapTabCarousel && mapTabCarousel.destroy();
-        mapTabCarousel = undefined;
     }
+
 }
 
 function initTabsAsAccordions() {
@@ -838,7 +841,8 @@ function initFlickity() {
             cellAlign: alignment,
             pageDots: false,
             percentPosition: false,
-            wrapAround: wrap
+            wrapAround: wrap,
+            contain: true
         });
 
         const cellElements = flkty.getCellElements();

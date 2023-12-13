@@ -1,6 +1,29 @@
+//Default color definitions
+.ntg-related-pages {    
+    --related-pages-background-color: #{$ntg-territory-stone};
+    --related-pages-text-color: #{$ntg-dark-gray};
+    --related-pages-special-color: #{$white};
+}
+
+//Color definitions when html or body has data-bs-theme
+[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    .ntg-related-pages {
+        --related-pages-background-color: var(--current-theme-tertiary);
+        --related-pages-text-color: var(--current-theme-tertiary-text);
+        --related-pages-special-color: var(--current-theme-tertiary-text);
+    }
+}
+
+//Color definitions when footer has data-bs-theme
+.ntg-related-pages[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    --related-pages-background-color: var(--current-theme-color);
+    --related-pages-text-color: var(--current-theme-text-color);
+    --related-pages-special-color: var(--current-theme-text-color);
+}
+
 .ntg-related-pages {
-    background-color: var(--current-theme-tertiary, #{$tertiary});
-    color: var(--current-theme-tertairy-text, #{$tertiary-text});
+    background-color: var(--related-pages-background-color);
+    color: var(--related-pages-text-color);
 
     ul {
         @extend .list-flush !optional;
@@ -25,7 +48,7 @@
         break-inside: avoid-column;
 
         &::before {
-            color: var(--current-theme-text-color, #{$tertiary-text});
+            color: var(--related-pages-special-color);
         }
     }
 }
