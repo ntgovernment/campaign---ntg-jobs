@@ -2,8 +2,8 @@
 .ntg-jobs-subsite {
     --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
     --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-    --menu-special-color: var(--current-theme-tertiary, #{$ntg-olive-green});
-    --menu-special-color-text: var(--current-theme-tertiary-text, #{$white});
+    --menu-special-color: var(--current-theme-secondary, #{$ntg-olive-green});
+    --menu-special-color-text: var(--current-theme-secondary-text, #{$white});
     --jobs-subsite-border-color: var(--current-theme-text-color, #{$ntg-territory-stone});
 
     #searchResults .accordion {

@@ -38,13 +38,34 @@
 
     .SumoSelect>.CaptionCont,
     input {
+        --bs-body-bg: #{$white};
         border-radius: 8px;
         font-size: 1rem;
         padding: 12px 2rem 12px 20px;
         border: var(--bs-border-width) solid var(--bs-border-color);
+        background-color: $white;
+    }
+
+    #expandSearchMobile {
+        @include media-breakpoint-up(md) {
+            display: block !important;
+        }
     }
 
     #expandSearch {
+        @include media-breakpoint-down(md) {
+            display: block !important;
+            margin: 1rem 0;
+        }
+
+        .sumo_listedTime,
+        .sumo_salaryTo,
+        .sumo_salaryFrom {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+
         .SumoSelect >.CaptionCont {
             background-color: transparent;
             color: var(--text-color);
@@ -84,8 +105,20 @@
         } 
     }
 
-    
     #expandSearchBtn {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    #expandFullSearch {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    
+    #expandSearchBtn,
+    #expandFullSearch {
         // @include btn-icon("\f078");
         position: relative;
 
