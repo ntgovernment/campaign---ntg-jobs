@@ -1,7 +1,27 @@
+//Default color definitions
+.ntg-jobs-subsite {
+    --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
+    --menu-text-color: var(--current-theme-secondary-text, #2E3849);
+    --menu-special-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+    --menu-special-color-text: var(--current-theme-tertiary-text, #{$white});
+    --jobs-subsite-border-color: var(--current-theme-text-color, #{$ntg-territory-stone});
+
+    #searchResults .accordion {
+        --bs-accordion-bg: var(--current-theme-text-color, #{$white});
+        --bs-accordion-color: var(--current-theme-color);
+        --bs-accordion-active-color: var(--bs-accordion-color);
+        --bs-accordion-btn-color: var(--bs-accordion-color);
+    }
+}
+
+[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) .ntg-jobs-subsite {
+    --jobs-subsite-accordion-border-width: 0;
+}
+
 .ntg-jobs-subsite {
     &__menu {
-        background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
-        color: var(--bs-secondary-text, #2E3849);
+        background-color: var(--menu-background-color);
+        color: var(--menu-text-color);
         padding-top: 1rem;
 
         .container {
@@ -10,64 +30,62 @@
             }
         }
 
-        .slick-disabled {
-            opacity: 0;
-        }
-
-        .slick-prev {
-            left: -35px;
-        }
-
-        .slick-next {
-            right: -35px;
-        }
-
-        .slick-prev:before {
-            content: "\f137";
-        }
-        
-        .slick-next:before {
-            content: "\f138";
-        }
-        
-        .slick-prev, .slick-next {
+        .flickity-prev-next-button {
             width: 30px;
             height: 30px;
-        }
+            background-color: transparent;
+            border: 2px solid var(--menu-special-color);
+            transition: 0.2s background ease-in-out;
 
-        .slick-prev:before, .slick-next:before {
-            font-size: 30px;
-            color: var(--current-theme-tertiary, #{$ntg-olive-green});
-            @extend .fa;
-        }
-
-        #navCarousel {
-            &:not(.slick-slider) {
-                white-space: nowrap;
-
-                > div {
-                    display: inline-block;
+            &:hover {
+                background-color: var(--menu-special-color);
+                
+                .flickity-button-icon {
+                    fill: var(--menu-special-color-text);
                 }
             }
         }
 
-        #navCarousel {
-            &.slick-slider {
-                &::after {
-                    content: '';
-                    background: linear-gradient(to right, transparent 90%, var(--current-theme-tertiary, #{$ntg-territory-stone} 99%));
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: -2px;
-                    pointer-events: none;
-                }
+        .flickity-prev-next-button .flickity-button-icon {
+            fill: var(--menu-special-color);
+            width: 45%;
+            height: 45%;
+            left: 28%;
+            top: 27%;
+        }
+
+        .flickity-prev-next-button.previous {
+            left: 0;
+        }
+
+        .flickity-prev-next-button.next {
+            right: 0;
+            z-index: 3;
+        }
+        
+
+        #jobCarouselMenu {
+            margin-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            padding: 0 2rem;
+
+            &::after {
+                content: '';
+                background: linear-gradient(to right, transparent 90%, var(--menu-background-color) 99%);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: -2px;
+                pointer-events: none;
             }
         }
 
         .nav-cell {
             display: inline-block;
+            margin-bottom: 0 !important;
+            white-space: normal;
             
             a {
                 padding: 1.75rem 1rem;
@@ -107,14 +125,12 @@
 
     #searchResults {
         .accordion {
-            --bs-accordion-bg: var(--current-theme-color, #{$white});
-
             &-header {
                 @extend .small;
             }
 
             &-item {
-                border: 1px solid var(--current-theme-secondary, #{$ntg-territory-stone});
+                border: var(--jobs-subsite-accordion-border-width, 1px) solid var(--menu-background-color);
                 overflow: hidden;
             }
 
@@ -128,7 +144,7 @@
                     content: "";
                     position: absolute;
                     width: 5px;
-                    background-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+                    background-color: var(--menu-special-color);
                     top: -999px;
                     bottom: -9999px;
                     left: 0;
@@ -155,11 +171,12 @@
 
     #pagination {
         padding: 1rem 0;
+
         ul {
             list-style-type: none;
             padding-left: 0;
             display: inline-flex;
-            border: 1px solid var(--current-theme-secondary, #{$ntg-territory-stone});
+            border: 1px solid var(--jobs-subsite-border-color);
             padding: 0.5rem 1rem;
             margin-bottom: 0;
             gap: 1rem;

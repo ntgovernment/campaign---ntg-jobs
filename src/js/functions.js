@@ -1,4 +1,5 @@
 let mapTabCarousel;
+let jobCarouselMenu;
 let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).height();
 
 (function () {
@@ -24,12 +25,9 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     initSumoSelect();
     initInteractiveMap();
     initTabsAsAccordions();
-    initJobsSlidingMenu();
     initSlidingMenu();
+    initJobsSlidingMenu();
 
-    window.addEventListener('resize', debounce(function(e){
-        initJobsSlidingMenu(e);
-    }));
     window.addEventListener('resize', debounce(function(e){
         initSlidingMenu(e);
     }));
@@ -56,25 +54,22 @@ function getContainerWidthWithPadding(container) {
     return containerWidthWithPadding;
 }
 
-
 function initJobsSlidingMenu() {
-    const jobSubsiteMenu = document.getElementById("navCarousel");
+    const jobSubsiteMenu = document.getElementById("jobCarouselMenu");
     const container = document.querySelector(".ntg-jobs-subsite__menu .container");
 
     if(jobSubsiteMenu) {
         const isOverflowing = jobSubsiteMenu.scrollWidth > getContainerWidthWithPadding(container);
 
-        if (isOverflowing) {
-            $('#navCarousel').slick({
-                dots: false,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 1,
-                centerMode: false,
-                variableWidth: true
-            });
-
-            window.removeEventListener('resize', initJobsSlidingMenu);
+        if(isOverflowing) {
+            if(!jobCarouselMenu) {
+                jobCarouselMenu = new Flickity(jobSubsiteMenu, {
+                    cellAlign: "left",
+                    percentPosition: false,
+                    pageDots: false,
+                    contain: false
+                });    
+            }
         }
     }
 }
