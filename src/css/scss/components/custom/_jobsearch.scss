@@ -5,6 +5,10 @@
     --bs-link-hover-color-rgb: 204,204,204;
     color: var(--text-color);
 
+    @include media-breakpoint-down(md) {
+        padding-bottom: 5rem;
+    }
+
     @include media-breakpoint-up(lg) {
         padding: 10rem 0;
     }
@@ -14,6 +18,10 @@
 
         > .CaptionCont>label >i {
             display: none;
+        }
+
+        > .CaptionCont > span {
+            padding-right: 10px;
         }
 
         &.open {
@@ -40,7 +48,7 @@
     input {
         --bs-body-bg: #{$white};
         border-radius: 8px;
-        font-size: 1rem;
+        @extend .small;
         padding: 12px 2rem 12px 20px;
         border: var(--bs-border-width) solid var(--bs-border-color);
         background-color: $white;
@@ -58,13 +66,6 @@
             margin: 1rem 0;
         }
 
-        .sumo_listedTime,
-        .sumo_salaryTo,
-        .sumo_salaryFrom {
-            @include media-breakpoint-down(md) {
-                display: none;
-            }
-        }
 
         .SumoSelect >.CaptionCont {
             background-color: transparent;
