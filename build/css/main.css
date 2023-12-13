@@ -438,7 +438,8 @@ strong {
   font-weight: bolder;
 }
 
-small, .small, .ntg-jobs-subsite #pagination ul, .ntg-jobs-subsite #searchResults .accordion-header {
+small, .small, .ntg-jobs-subsite #pagination ul, .ntg-jobs-subsite #searchResults .accordion-header, .jobsearch-wrapper .SumoSelect > .CaptionCont,
+.jobsearch-wrapper input {
   font-size: calc(var(--base-font-size) / var(--scale));
 }
 
@@ -21782,12 +21783,20 @@ h3:target,
   -webkit-transform: rotate(-4deg);
           transform: rotate(-4deg);
 }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+1) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+1) .card:focus {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) {
   grid-row: 3/-1;
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+2) .card:focus {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+3) {
   grid-row: 3/-12;
@@ -21799,12 +21808,20 @@ h3:target,
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+4) .card:focus {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) {
   grid-row: 1/-1;
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card {
   -webkit-transform: rotate(-4deg);
           transform: rotate(-4deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+5) .card:focus {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) {
   grid-row: 2/-1;
@@ -21813,12 +21830,20 @@ h3:target,
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
 }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+6) .card:focus {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) {
   grid-row: 3/-2;
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card {
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+7) .card:focus {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) {
   grid-row: 4/-2;
@@ -21827,12 +21852,20 @@ h3:target,
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+8) .card:focus {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) {
   grid-row: 3/-1;
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card {
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
+}
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+9) .card:focus {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) {
   grid-row: 4/-2;
@@ -21841,8 +21874,16 @@ h3:target,
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }
+.ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) .card:hover, .ntg-cards-carousel--testimonial .carousel-cell:nth-child(n+10) .card:focus {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
 .ntg-cards-carousel--testimonial .carousel-cell .card {
   height: 100%;
+  -webkit-transition: 0.2s -webkit-transform linear;
+  transition: 0.2s -webkit-transform linear;
+  transition: 0.2s transform linear;
+  transition: 0.2s transform linear, 0.2s -webkit-transform linear;
 }
 .ntg-cards-carousel--testimonial .carousel-cell .card .card-inner {
   -webkit-box-flex: 1;
@@ -23928,6 +23969,11 @@ body.search-panel--is-hidden .search-global {
   --bs-link-hover-color-rgb: 204,204,204;
   color: var(--text-color);
 }
+@media (max-width: 767.98px) {
+  .jobsearch-wrapper {
+    padding-bottom: 5rem;
+  }
+}
 @media (min-width: 992px) {
   .jobsearch-wrapper {
     padding: 10rem 0;
@@ -23938,6 +23984,9 @@ body.search-panel--is-hidden .search-global {
 }
 .jobsearch-wrapper .SumoSelect > .CaptionCont > label > i {
   display: none;
+}
+.jobsearch-wrapper .SumoSelect > .CaptionCont > span {
+  padding-right: 10px;
 }
 .jobsearch-wrapper .SumoSelect.open .search-txt {
   padding: 12px 2rem 12px 20px;
@@ -23973,7 +24022,6 @@ body.search-panel--is-hidden .search-global {
 .jobsearch-wrapper input {
   --bs-body-bg: #fff;
   border-radius: 8px;
-  font-size: 1rem;
   padding: 12px 2rem 12px 20px;
   border: var(--bs-border-width) solid var(--bs-border-color);
   background-color: #fff;
@@ -23989,13 +24037,6 @@ body.search-panel--is-hidden .search-global {
     margin: 1rem 0;
   }
 }
-@media (max-width: 767.98px) {
-  .jobsearch-wrapper #expandSearch .sumo_listedTime,
-  .jobsearch-wrapper #expandSearch .sumo_salaryTo,
-  .jobsearch-wrapper #expandSearch .sumo_salaryFrom {
-    display: none;
-  }
-}
 .jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont {
   background-color: transparent;
   color: var(--text-color);
@@ -24003,19 +24044,19 @@ body.search-panel--is-hidden .search-global {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
   background-size: 20px 16px;
 }
-.jobsearch-wrapper #expandSearch .sumo_renumerationFrom > .CaptionCont > span::before {
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont.renumerationFrom > span::before {
   content: "Renumeration from ";
 }
-.jobsearch-wrapper #expandSearch .sumo_renumerationTo > .CaptionCont > span::before {
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont.renumerationTo > span::before {
   content: "to ";
 }
-.jobsearch-wrapper #expandSearch .sumo_salaryFrom > .CaptionCont > span::before {
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont.salaryFrom > span::before {
   content: "Salary from ";
 }
-.jobsearch-wrapper #expandSearch .sumo_salaryTo > .CaptionCont > span::before {
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont.salaryTo > span::before {
   content: "to ";
 }
-.jobsearch-wrapper #expandSearch .sumo_listedTime > .CaptionCont > span::before {
+.jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont.listedTime > span::before {
   content: "Listed ";
 }
 @media (max-width: 767.98px) {

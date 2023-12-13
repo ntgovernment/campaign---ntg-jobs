@@ -75,32 +75,32 @@
             background-size: 20px 16px;
         }
 
-        .sumo_renumerationFrom {
-            >.CaptionCont > span::before {
+        .SumoSelect {
+            >.CaptionCont.renumerationFrom > span::before {
                 content: "Renumeration from ";
             }
         } 
 
-        .sumo_renumerationTo {
-            >.CaptionCont > span::before {
+        .SumoSelect {
+            >.CaptionCont.renumerationTo > span::before {
                 content: "to ";
             }
         } 
 
-        .sumo_salaryFrom {
-            >.CaptionCont > span::before {
+        .SumoSelect {
+            >.CaptionCont.salaryFrom > span::before {
                 content: "Salary from ";
             }
         } 
 
-        .sumo_salaryTo {
-            >.CaptionCont > span::before {
+        .SumoSelect {
+            >.CaptionCont.salaryTo > span::before {
                 content: "to ";
             }
         } 
 
-        .sumo_listedTime {
-            >.CaptionCont > span::before {
+        .SumoSelect {
+            >.CaptionCont.listedTime > span::before {
                 content: "Listed ";
             }
         } 
