@@ -3,6 +3,7 @@
 
 $white: #fff;
 $black: #000;
+$red: red;
 
 /**
 * NTG Brand Colours
@@ -12,39 +13,53 @@ $ntg-heliconia-orange: #e35205;
 $ntg-arafura-blue: #1f1f5f;
 $ntg-charcoal-grey: #454347;
 $ntg-hot-coral: #c25062;
-$ntg-sky-blue: #127cc0;
+// $ntg-sky-blue: #127cc0;
 $ntg-teal-blue: #007e91;
 $ntg-rubine-red: #980044;
 $ntg-deep-mauve: #845278;
 $ntg-bottle-green: #1e5e5e;
 
 /* -------- Theme Colours -------- */
-$ntg-desert-yam: #FBF2EA;
-$ntg-bush-plum: #4F1F6F;
-$ntg-top-end: #0093B8;
-$ntg-charcoal-grey: #454347;
-$ntg-charcoal-grey-20: #DAD9DA;
-$ntg-fairy-wren: #7F1F7F;
-$ntg-fairy-wren-7: #F6EFF6;
-$ntg-big-rivers: #F2A900;
-$ntg-baby-blue: #B1E2F9;
-$ntg-dark-green: #092522;
-$ntg-olive-green: #104735;
-$ntg-barkly: #FB471F;
-$ntg-dark-blue: #0E2C4D;
-$ntg-central-australia: #E5004D;
-$ntg-dark-gray: #2B292D;
 $ntg-territory-stone: #D7D2CB;
+$ntg-dark-gray: #2B292D;
+$ntg-central-australia: #E5004D;
+$ntg-dark-blue: #0E2C4D;
+$ntg-barkly: #FB471F;
+$ntg-olive-green: #104735;
+$ntg-dark-green: #092522;
+$ntg-baby-blue: #B1E2F9;
+$ntg-big-rivers: #F2A900;
+$ntg-fairy-wren-7: #F6EFF6;
+$ntg-fairy-wren: #7F1F7F;
+$ntg-charcoal-grey-20: #DAD9DA;
+$ntg-charcoal-grey: #454347;
+$ntg-top-end: #0093B8;
+$ntg-bush-plum: #4F1F6F;
+$ntg-desert-yam: #C33726;
+
+$ntg-grey: #919191;
+$ntg-charcoal-grey-10: #EDEDED;
+$ntg-pink: #FFCCDD;
+$ntg-darkest-blue: #0C2430;
+$ntg-baby-orange: #FFB8A8;
+$ntg-green-tree-frog: #7EAA9C;
+$ntg-darker-green: #092522;
+$ntg-sky-blue: #84B5CC;
+$ntg-charcoal-grey-40: #B5B4B5;
+$ntg-charcoal-grey-60: #8F8E91;
+$ntg-desert-yam-7: #FBF2EA;
+$ntg-ocean-blue: #007D9C;
+$ntg-red-dirt: #961B0B;
 
 /** 
 * Colours
 * These colors are only provided to generate utilities classes. Primary, Secondary and Tertiary colors are defined using the custom-themes.scss file.
 */
-$primary: $ntg-dark-green;
-$secondary: $ntg-territory-stone;
-$tertiary: $ntg-charcoal-grey;
-$primary-text: $white;
-$secondary-text: $ntg-dark-gray;
+$primary: $ntg-territory-stone;
+$secondary: $ntg-olive-green;
+$tertiary: $ntg-grey;
+$primary-text: $ntg-dark-gray;
+$secondary-text: $white;
 $tertiary-text: $ntg-dark-gray;
 
 $body-color: $ntg-dark-gray;
@@ -54,7 +69,6 @@ $danger: #C43004;
 $success: #107810;
 $light: #f8f9fa;
 $dark: #212529;
-$red: red;
 
 /* -------- Gradients -------- */
 $black-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, rgba(0, 0, 0, 0.00) 100%);
@@ -62,49 +76,69 @@ $theme-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, va
 $black-gradient-subtle: linear-gradient(0, rgba(0, 0, 0, 0.52) 4.18%, rgba(0, 0, 0, 0.00) 38.51%);
 
 $base-colors: (
-	"desert-yam" : (
-		"main": $ntg-desert-yam,
-		"primary": $ntg-desert-yam,
+	"territory-stone" : (
+		"main": $ntg-territory-stone,
+		"primary": $ntg-territory-stone,
 		"primary-text": $ntg-dark-gray,
 		"primary-link-color": $ntg-dark-gray,
 		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-desert-yam,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-desert-yam,
+		"secondary": $ntg-olive-green,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
+		"tertiary": $ntg-grey,
 		"tertiary-text": $ntg-dark-gray,
 		"tertiary-link-color": $ntg-dark-gray,
 		"tertiary-link-hover-color": $ntg-dark-gray,
 		"text-color": $ntg-dark-gray,
 		"link-color": $ntg-dark-gray,
 		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-desert-yam, 30%),
-		"bg-subtle-color": tint-color($ntg-desert-yam, 60%)
+		"border-subtle-color": tint-color($ntg-territory-stone, 30%),
+		"bg-subtle-color": tint-color($ntg-territory-stone, 60%)
 	),
-	"bush-plum" : (
-		"main": $ntg-bush-plum,
-		"primary": $ntg-bush-plum,
+	"dark-gray" : (
+		"main": $ntg-dark-gray,
+		"primary": $ntg-dark-gray,
 		"primary-text": $white,
 		"primary-link-color": $white,
 		"primary-link-hover-color": $white,
-		"secondary": $ntg-bush-plum,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-bush-plum,
+		"secondary": $ntg-charcoal-grey-10,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-territory-stone,
+		"tertiary-text": $ntg-dark-gray,
+		"tertiary-link-color": $ntg-dark-gray,
+		"tertiary-link-hover-color": $ntg-dark-gray,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-dark-gray, 30%),
+		"bg-subtle-color": tint-color($ntg-dark-gray, 60%)
+	),
+	"central-australia" : (
+		"main": $ntg-central-australia,
+		"primary": $ntg-central-australia,
+		"primary-text": $white,
+		"primary-link-color": $white,
+		"primary-link-hover-color": $white,
+		"secondary": $ntg-pink,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-darkest-blue,
 		"tertiary-text": $white,
 		"tertiary-link-color": $white,
 		"tertiary-link-hover-color": $white,
 		"text-color": $white,
 		"link-color": $white,
 		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-bush-plum, 30%),
-		"bg-subtle-color": tint-color($ntg-bush-plum, 60%)
+		"border-subtle-color": tint-color($ntg-central-australia, 30%),
+		"bg-subtle-color": tint-color($ntg-central-australia, 60%)
 	),
-	"top-end" : (
-		"main": $ntg-top-end,
-		"primary": $ntg-top-end,
+	"dark-blue" : (
+		"main": $ntg-dark-blue,
+		"primary": $ntg-dark-blue,
 		"primary-text": $white,
 		"primary-link-color": $white,
 		"primary-link-hover-color": $white,
@@ -112,135 +146,55 @@ $base-colors: (
 		"secondary-text": $white,
 		"secondary-link-color": $white,
 		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-top-end,
-		"tertiary-text": $black,
+		"tertiary": $ntg-darkest-blue,
+		"tertiary-text": $white,
 		"tertiary-link-color": $white,
 		"tertiary-link-hover-color": $white,
 		"text-color": $white,
 		"link-color": $white,
 		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-top-end, 30%),
-		"bg-subtle-color": tint-color($ntg-top-end, 60%)
+		"border-subtle-color": tint-color($ntg-dark-blue, 30%),
+		"bg-subtle-color": tint-color($ntg-dark-blue, 60%)
 	),
-	"charcoal-grey" : (
-		"main": $ntg-charcoal-grey,
-		"primary": $ntg-charcoal-grey,
+	"barkly" : (
+		"main": $ntg-barkly,
+		"primary": $ntg-barkly,
+		"primary-text": $black,
+		"primary-link-color": $black,
+		"primary-link-hover-color": $black,
+		"secondary": $ntg-baby-orange,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-darkest-blue,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $black,
+		"link-color": $black,
+		"link-hover-color": $black,
+		"border-subtle-color": tint-color($ntg-barkly, 30%),
+		"bg-subtle-color": tint-color($ntg-barkly, 60%)
+	),
+	"olive-green" : (
+		"main": $ntg-olive-green,
+		"primary": $ntg-olive-green,
 		"primary-text": $white,
 		"primary-link-color": $white,
 		"primary-link-hover-color": $white,
-		"secondary": $ntg-charcoal-grey,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-charcoal-grey,
+		"secondary": $ntg-green-tree-frog,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-darker-green,
 		"tertiary-text": $white,
 		"tertiary-link-color": $white,
 		"tertiary-link-hover-color": $white,
 		"text-color": $white,
 		"link-color": $white,
 		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-charcoal-grey, 30%),
-		"bg-subtle-color": tint-color($ntg-charcoal-grey, 60%)
-	),
-	"charcoal-grey-20" : (
-		"main": $ntg-charcoal-grey-20,
-		"primary": $ntg-charcoal-grey-20,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-charcoal-grey-20,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-charcoal-grey-20,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-charcoal-grey-20, 30%),
-		"bg-subtle-color": tint-color($ntg-charcoal-grey-20, 60%)
-	),
-	"fairy-wren" : (
-		"main": $ntg-fairy-wren,
-		"primary": $ntg-fairy-wren,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-fairy-wren,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-fairy-wren,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-fairy-wren, 30%),
-		"bg-subtle-color": tint-color($ntg-fairy-wren, 60%)
-	),
-	"fairy-wren-7" : (
-		"main": $ntg-fairy-wren-7,
-		"primary": $ntg-fairy-wren-7,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-fairy-wren-7,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-fairy-wren-7,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $ntg-dark-gray,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-fairy-wren-7, 30%),
-		"bg-subtle-color": tint-color($ntg-fairy-wren-7, 60%)
-	),
-	"big-rivers" : (
-		"main": $ntg-big-rivers,
-		"primary": $ntg-big-rivers,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-big-rivers,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-big-rivers,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-big-rivers, 30%),
-		"bg-subtle-color": tint-color($ntg-big-rivers, 60%)
-	),
-	"baby-blue" : (
-		"main": $ntg-baby-blue,
-		"primary": $ntg-baby-blue,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-baby-blue,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-baby-blue,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-baby-blue, 30%),
-		"bg-subtle-color": tint-color($ntg-baby-blue, 60%)
+		"border-subtle-color": tint-color($ntg-olive-green, 30%),
+		"bg-subtle-color": tint-color($ntg-olive-green, 60%)
 	),
 	"dark-green" : (
 		"main": $ntg-dark-green,
@@ -252,7 +206,7 @@ $base-colors: (
 		"secondary-text": $ntg-dark-gray,
 		"secondary-link-color": $ntg-dark-gray,
 		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-charcoal-grey,
+		"tertiary": $ntg-darker-green,
 		"tertiary-text": $white,
 		"tertiary-link-color": $white,
 		"tertiary-link-hover-color": $white,
@@ -262,53 +216,153 @@ $base-colors: (
 		"border-subtle-color": tint-color($ntg-dark-green, 30%),
 		"bg-subtle-color": tint-color($ntg-dark-green, 60%)
 	),
-	"olive-green" : (
-		"main": $ntg-olive-green,
-		"primary": $ntg-olive-green,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-olive-green,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-olive-green,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-olive-green, 30%),
-		"bg-subtle-color": tint-color($ntg-olive-green, 60%)
-	),
-	"barkly" : (
-		"main": $ntg-barkly,
-		"primary": $ntg-barkly,
+	"baby-blue" : (
+		"main": $ntg-baby-blue,
+		"primary": $ntg-baby-blue,
 		"primary-text": $ntg-dark-gray,
 		"primary-link-color": $ntg-dark-gray,
 		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-barkly,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-barkly,
+		"secondary": $ntg-top-end,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
+		"tertiary": $ntg-sky-blue,
 		"tertiary-text": $ntg-dark-gray,
 		"tertiary-link-color": $ntg-dark-gray,
 		"tertiary-link-hover-color": $ntg-dark-gray,
 		"text-color": $ntg-dark-gray,
 		"link-color": $ntg-dark-gray,
 		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-barkly, 30%),
-		"bg-subtle-color": tint-color($ntg-barkly, 60%)
+		"border-subtle-color": tint-color($ntg-baby-blue, 30%),
+		"bg-subtle-color": tint-color($ntg-baby-blue, 60%)
 	),
-	"dark-blue" : (
-		"main": $ntg-dark-blue,
-		"primary": $ntg-dark-blue,
+	"big-rivers" : (
+		"main": $ntg-big-rivers,
+		"primary": $ntg-big-rivers,
+		"primary-text": $ntg-dark-gray,
+		"primary-link-color": $ntg-dark-gray,
+		"primary-link-hover-color": $ntg-dark-gray,
+		"secondary": $ntg-dark-blue,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
+		"tertiary": $ntg-darkest-blue,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $ntg-dark-gray,
+		"link-color": $ntg-dark-gray,
+		"link-hover-color": $ntg-dark-gray,
+		"border-subtle-color": tint-color($ntg-big-rivers, 30%),
+		"bg-subtle-color": tint-color($ntg-big-rivers, 60%)
+	),
+	"fairy-wren-7" : (
+		"main": $ntg-fairy-wren-7,
+		"primary": $ntg-fairy-wren-7,
+		"primary-text": $ntg-dark-gray,
+		"primary-link-color": $ntg-dark-gray,
+		"primary-link-hover-color": $ntg-dark-gray,
+		"secondary": $ntg-fairy-wren,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
+		"tertiary": $ntg-bush-plum,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $ntg-dark-gray,
+		"link-color": $ntg-dark-gray,
+		"link-hover-color": $ntg-dark-gray,
+		"border-subtle-color": tint-color($ntg-fairy-wren-7, 30%),
+		"bg-subtle-color": tint-color($ntg-fairy-wren-7, 60%)
+	),
+	"fairy-wren" : (
+		"main": $ntg-fairy-wren,
+		"primary": $ntg-fairy-wren,
 		"primary-text": $white,
 		"primary-link-color": $white,
 		"primary-link-hover-color": $white,
-		"secondary": $ntg-dark-blue,
+		"secondary": $ntg-fairy-wren-7,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-bush-plum,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-fairy-wren, 30%),
+		"bg-subtle-color": tint-color($ntg-fairy-wren, 60%)
+	),
+	"charcoal-grey-20" : (
+		"main": $ntg-charcoal-grey-20,
+		"primary": $ntg-charcoal-grey-20,
+		"primary-text": $ntg-dark-gray,
+		"primary-link-color": $ntg-dark-gray,
+		"primary-link-hover-color": $ntg-dark-gray,
+		"secondary": $ntg-charcoal-grey-40,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-charcoal-grey-60,
+		"tertiary-text": $black,
+		"tertiary-link-color": $black,
+		"tertiary-link-hover-color": $black,
+		"text-color": $ntg-dark-gray,
+		"link-color": $ntg-dark-gray,
+		"link-hover-color": $ntg-dark-gray,
+		"border-subtle-color": tint-color($ntg-charcoal-grey-20, 30%),
+		"bg-subtle-color": tint-color($ntg-charcoal-grey-20, 60%)
+	),
+	"charcoal-grey" : (
+		"main": $ntg-charcoal-grey,
+		"primary": $ntg-charcoal-grey,
+		"primary-text": $white,
+		"primary-link-color": $white,
+		"primary-link-hover-color": $white,
+		"secondary": $white,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-dark-gray,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-charcoal-grey, 30%),
+		"bg-subtle-color": tint-color($ntg-charcoal-grey, 60%)
+	),
+	"top-end" : (
+		"main": $ntg-top-end,
+		"primary": $ntg-top-end,
+		"primary-text": $black,
+		"primary-link-color": $black,
+		"primary-link-hover-color": $black,
+		"secondary": $ntg-desert-yam-7,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-ocean-blue,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-top-end, 30%),
+		"bg-subtle-color": tint-color($ntg-top-end, 60%)
+	),
+	"bush-plum" : (
+		"main": $ntg-bush-plum,
+		"primary": $ntg-bush-plum,
+		"primary-text": $white,
+		"primary-link-color": $white,
+		"primary-link-hover-color": $white,
+		"secondary": $ntg-fairy-wren,
 		"secondary-text": $white,
 		"secondary-link-color": $white,
 		"secondary-link-hover-color": $white,
@@ -319,59 +373,19 @@ $base-colors: (
 		"text-color": $white,
 		"link-color": $white,
 		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-dark-blue, 30%),
-		"bg-subtle-color": tint-color($ntg-dark-blue, 60%)
+		"border-subtle-color": tint-color($ntg-bush-plum, 30%),
+		"bg-subtle-color": tint-color($ntg-bush-plum, 60%)
 	),
-	"central-australia" : (
-		"main": $ntg-central-australia,
-		"primary": $ntg-central-australia,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-central-australia,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-central-australia,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-central-australia, 30%),
-		"bg-subtle-color": tint-color($ntg-central-australia, 60%)
-	),
-	"dark-gray" : (
-		"main": $ntg-dark-gray,
-		"primary": $ntg-dark-gray,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"secondary-text": $white,
-		"tertiary": $ntg-dark-gray,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-dark-gray, 30%),
-		"bg-subtle-color": tint-color($ntg-dark-gray, 60%)
-	),
-	"territory-stone" : (
-		"main": $ntg-territory-stone,
-		"primary": $ntg-territory-stone,
+	"desert-yam-7" : (
+		"main": $ntg-desert-yam-7,
+		"primary": $ntg-desert-yam-7,
 		"primary-text": $ntg-dark-gray,
 		"primary-link-color": $ntg-dark-gray,
 		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-territory-stone,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
+		"secondary": $ntg-olive-green,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
 		"tertiary": $ntg-territory-stone,
 		"tertiary-text": $ntg-dark-gray,
 		"tertiary-link-color": $ntg-dark-gray,
@@ -379,8 +393,68 @@ $base-colors: (
 		"text-color": $ntg-dark-gray,
 		"link-color": $ntg-dark-gray,
 		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-territory-stone, 30%),
-		"bg-subtle-color": tint-color($ntg-territory-stone, 60%)
+		"border-subtle-color": tint-color($ntg-desert-yam-7, 30%),
+		"bg-subtle-color": tint-color($ntg-desert-yam-7, 60%)
+	),
+	"arafura-blue" : (
+		"main": $ntg-arafura-blue,
+		"primary": $ntg-arafura-blue,
+		"primary-text": $white,
+		"primary-link-color": $white,
+		"primary-link-hover-color": $white,
+		"secondary": $ntg-top-end,
+		"secondary-text": $black,
+		"secondary-link-color": $black,
+		"secondary-link-hover-color": $black,
+		"tertiary": $ntg-darkest-blue,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-arafura-blue, 30%),
+		"bg-subtle-color": tint-color($ntg-arafura-blue, 60%)
+	),
+	"white" : (
+		"main": $white,
+		"primary": $white,
+		"primary-text": $ntg-dark-gray,
+		"primary-link-color": $ntg-dark-gray,
+		"primary-link-hover-color": $ntg-dark-gray,
+		"secondary": $ntg-territory-stone,
+		"secondary-text": $ntg-dark-gray,
+		"secondary-link-color": $ntg-dark-gray,
+		"secondary-link-hover-color": $ntg-dark-gray,
+		"tertiary": $ntg-olive-green,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $ntg-dark-gray,
+		"link-color": $ntg-dark-gray,
+		"link-hover-color": $ntg-dark-gray,
+		"border-subtle-color": tint-color($white, 30%),
+		"bg-subtle-color": tint-color($white, 60%)
+	),
+	"desert-yam" : (
+		"main": $ntg-desert-yam,
+		"primary": $ntg-desert-yam,
+		"primary-text": $white,
+		"primary-link-color": $white,
+		"primary-link-hover-color": $white,
+		"secondary": $ntg-red-dirt,
+		"secondary-text": $white,
+		"secondary-link-color": $white,
+		"secondary-link-hover-color": $white,
+		"tertiary": $ntg-dark-gray,
+		"tertiary-text": $white,
+		"tertiary-link-color": $white,
+		"tertiary-link-hover-color": $white,
+		"text-color": $white,
+		"link-color": $white,
+		"link-hover-color": $white,
+		"border-subtle-color": tint-color($ntg-desert-yam, 30%),
+		"bg-subtle-color": tint-color($ntg-desert-yam, 60%)
 	),
 );
 
