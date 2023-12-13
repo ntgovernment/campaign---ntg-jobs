@@ -270,7 +270,7 @@
             display: grid;
             grid-template-columns: repeat(5,1fr);
             grid-template-rows: 0 0.5em 0.5em 0.5em 0.5em 1fr auto;
-            grid-row-gap: 0.5em!important;
+            grid-row-gap: 0.5em !important;
         }
 
         .carousel-cell {
@@ -278,10 +278,15 @@
             height: 350px;
 
             &:nth-child(n + 1) {
-                grid-row: 4/-1;
+                grid-row: 4 / -1;
                 
                 .card {
                     transform: rotate(-4deg);
+                    
+                    &:hover,
+                    &:focus {
+                        transform: rotate(-3deg);
+                    }
                 }
             }
 
@@ -290,6 +295,11 @@
                 
                 .card {
                     transform: rotate(2deg);
+                    
+                    &:hover,
+                    &:focus {
+                        transform: rotate(1deg);
+                    }
                 }
             }
 
@@ -302,6 +312,11 @@
                 
                 .card {
                     transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
                 }
             }
 
@@ -310,6 +325,11 @@
                 
                 .card {
                     transform: rotate(-4deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(-3deg);
+                    }
                 }
             }
 
@@ -318,6 +338,11 @@
                 
                 .card {
                     transform: rotate(2deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(1deg);
+                    }
                 }
             }
 
@@ -326,6 +351,11 @@
                 
                 .card {
                     transform: rotate(-1deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(0);
+                    }
                 }
             }
 
@@ -334,6 +364,11 @@
                 
                 .card {
                     transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
                 }
             }
 
@@ -342,6 +377,11 @@
                 
                 .card {
                     transform: rotate(-1deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(0);
+                    }
                 }
             }
 
@@ -350,11 +390,17 @@
                 
                 .card {
                     transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
                 }
             }
 
             .card {
                 height: 100%;
+                transition: 0.2s transform linear;
 
                 .card-inner {
                     flex-grow: 1;

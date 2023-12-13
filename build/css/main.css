@@ -21957,6 +21957,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 .ntg-featured-testimonial__content blockquote:before,
 .fa:after,
 .jobsearch-wrapper #expandSearchBtn:after,
+.jobsearch-wrapper #expandFullSearch:after,
 .ntg-header__search form button[type=submit]:after,
 .link-chevron-right:after,
 .btn-chevron-right:after,
@@ -23970,10 +23971,30 @@ body.search-panel--is-hidden .search-global {
 }
 .jobsearch-wrapper .SumoSelect > .CaptionCont,
 .jobsearch-wrapper input {
+  --bs-body-bg: #fff;
   border-radius: 8px;
   font-size: 1rem;
   padding: 12px 2rem 12px 20px;
   border: var(--bs-border-width) solid var(--bs-border-color);
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jobsearch-wrapper #expandSearchMobile {
+    display: block !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .jobsearch-wrapper #expandSearch {
+    display: block !important;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .jobsearch-wrapper #expandSearch .sumo_listedTime,
+  .jobsearch-wrapper #expandSearch .sumo_salaryTo,
+  .jobsearch-wrapper #expandSearch .sumo_salaryFrom {
+    display: none;
+  }
 }
 .jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont {
   background-color: transparent;
@@ -23997,21 +24018,36 @@ body.search-panel--is-hidden .search-global {
 .jobsearch-wrapper #expandSearch .sumo_listedTime > .CaptionCont > span::before {
   content: "Listed ";
 }
-.jobsearch-wrapper #expandSearchBtn {
+@media (max-width: 767.98px) {
+  .jobsearch-wrapper #expandSearchBtn {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .jobsearch-wrapper #expandFullSearch {
+    display: none;
+  }
+}
+.jobsearch-wrapper #expandSearchBtn,
+.jobsearch-wrapper #expandFullSearch {
   position: relative;
 }
-.jobsearch-wrapper #expandSearchBtn.collapsed::before {
+.jobsearch-wrapper #expandSearchBtn.collapsed::before,
+.jobsearch-wrapper #expandFullSearch.collapsed::before {
   content: "Expand ";
 }
-.jobsearch-wrapper #expandSearchBtn.collapsed::after {
+.jobsearch-wrapper #expandSearchBtn.collapsed::after,
+.jobsearch-wrapper #expandFullSearch.collapsed::after {
   -webkit-transform: rotate(0);
           transform: rotate(0);
   margin-top: 0;
 }
-.jobsearch-wrapper #expandSearchBtn::before {
+.jobsearch-wrapper #expandSearchBtn::before,
+.jobsearch-wrapper #expandFullSearch::before {
   content: "Collapse ";
 }
-.jobsearch-wrapper #expandSearchBtn::after {
+.jobsearch-wrapper #expandSearchBtn::after,
+.jobsearch-wrapper #expandFullSearch::after {
   position: absolute;
   right: -2rem;
   content: "\f078";
@@ -24020,15 +24056,16 @@ body.search-panel--is-hidden .search-global {
           transform: rotate(180deg);
   margin-top: -2px;
 }
-.jobsearch-wrapper #expandSearchBtn:hover {
+.jobsearch-wrapper #expandSearchBtn:hover,
+.jobsearch-wrapper #expandFullSearch:hover {
   padding-right: inherit !important;
 }
 
 .ntg-jobs-subsite {
   --menu-background-color: var(--current-theme-secondary, #D7D2CB);
   --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-  --menu-special-color: var(--current-theme-tertiary, #104735);
-  --menu-special-color-text: var(--current-theme-tertiary-text, #fff);
+  --menu-special-color: var(--current-theme-secondary, #104735);
+  --menu-special-color-text: var(--current-theme-secondary-text, #fff);
   --jobs-subsite-border-color: var(--current-theme-text-color, #D7D2CB);
 }
 .ntg-jobs-subsite #searchResults .accordion {
