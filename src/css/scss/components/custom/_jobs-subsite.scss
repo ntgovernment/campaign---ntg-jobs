@@ -51,6 +51,21 @@
             }
         }
 
+        #navCarousel {
+            &.slick-slider {
+                &::after {
+                    content: '';
+                    background: linear-gradient(to right, transparent 90%, var(--current-theme-tertiary, #{$ntg-territory-stone} 99%));
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: -2px;
+                    pointer-events: none;
+                }
+            }
+        }
+
         .nav-cell {
             display: inline-block;
             
