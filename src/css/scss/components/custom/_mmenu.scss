@@ -1,7 +1,3 @@
-.mm-wrapper--position-left .mm-slideout, .mm-wrapper--position-right .mm-slideout {
-    transform: none;
-}
-
 // fix content flash
 #mmenu-wrapper:not(.mm-menu) {
     display: none;
@@ -12,44 +8,48 @@
     --mm-color-border: var(--header-text-color);
 }
 
-
 .mm-panels {
     --mm-color-text: var(--header-text-color);
+
     .mm-btn--close {
         line-height: 1;
 
         &::before {
             display: inline-block;
             font-size: 1.5rem;
-            @extend .fal;
+            @extend .fa;
             content: "\f00d";
-            font-weight: 200;
+            font-weight: 300 !important;
             line-height: 1;
             margin-top: 3px;
         }
 
         &-wrapper {
             color: var(--header-text-color) !important;
+            background: linear-gradient(to right, transparent 0%, var(--mm-color-background) 20%);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
             position: absolute;
             right: 0;
-            transform: translateX(-80%);
             z-index: 99;
-            height: 83px;
+            width: 110px;
+            height: 82px;
             transition: 0.2s opacity ease-in-out;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 opacity: 0.6;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
     }
 
-
     > .mm-panel {
-        // background: var(--header-background-color);
         color:  var(--header-text-color);
 
         .mm-navbar {
@@ -126,9 +126,9 @@
             }
 
             a:not(.mm-btn--next) {
+                position: relative;
                 border-left: 0px solid var(--header-text-color);
                 transition: 0.1s border-left-width ease-in-out, 0.2s background-color ease-in-out;
-                position: relative;
             }
 
             a.mm-btn--next {
@@ -138,8 +138,8 @@
 
         .mm-listitem {
             padding: 0 20px 1px 20px;
-            border-color: var(--header-text-color);
             margin-bottom: 0 !important;
+            border-color: var(--header-text-color);
         }
 
         .mm-listitem__btn {

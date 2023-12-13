@@ -6,11 +6,14 @@
     background: var(--current-theme-color, transparent);
     overflow-x: clip;
 
-    h2, .tag {
+    .tag {
+        color: var(--current-theme-text-color, $ntg-dark-green);
+    }
+
+    h2 {
         color: var(--current-theme-text-color, $ntg-olive-green);
     }
 
-    // TODO: fix cell spacing and alignment
     .carousel-cell {
         margin-right: 2rem;
         
@@ -20,17 +23,6 @@
 
         @include media-breakpoint-down(md) {
             margin-right: 1rem;
-        }
-    }
-
-    &[data-bs-theme="default"] .card {
-        &-body {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        &-footer {
-            padding: 0;
         }
     }
 

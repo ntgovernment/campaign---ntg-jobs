@@ -74,11 +74,11 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
 
                 > a {
                     display: inline-block;
-                    transition: 0.2s margin-left ease-in-out;
+                    transition: 0.2s transform ease-in-out;
 
                     &:hover,
                     &:focus {
-                        margin-left: 0.25rem;
+                        transform: translateX(0.25rem);
                         text-decoration: none;
                     }
                 }

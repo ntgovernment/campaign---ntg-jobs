@@ -1,6 +1,4 @@
 .ntg-main-nav {
-    transition: 0.2s padding ease-in-out;
-
     @include media-breakpoint-down(xl) {
         margin-left: 0.5rem;
         order: 2;
@@ -33,7 +31,7 @@
         i {
             color: var(--header-text-color);
             font-size: 1.5rem;
-            transition: 0.2s color ease-in-out;
+            transition: 0.3s filter linear;
         }
     }
 
@@ -151,10 +149,10 @@
             &:before {
                 content: '';
                 background-color: var(--header-special-color, --header-text-color);
-                height: 5px;
+                height: 2px;
                 position: absolute;
-                left: 0;
-                right: 0;
+                left: 1rem;
+                right: 1rem;
                 bottom: 0;
                 transform: scaleX(0);
                 transition: 0.25s transform ease-in-out;
@@ -240,21 +238,17 @@
         }
 
         h2, h3 {
+            @include font-size($h3-font-size);
             margin-bottom: 1rem;
             color: var(--header-text-color);
 
             > a {
                 color: var(--header-text-color);
-                text-decoration: underline;
-                text-decoration-color: rgba(var(--header-text-color), 0);
-                text-decoration-thickness: 3px;
-                text-underline-offset: 2px;
-                transition: 0.2s text-decoration-color;
-
-                &:hover {
-                    text-decoration-color: rgba(var(--header-text-color), 1);
-                }
             }
+        }
+
+        p {
+            @include font-size(16px);
         }
 
         ul {

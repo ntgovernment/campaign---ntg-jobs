@@ -163,8 +163,6 @@
     }
 
     &--flip {
-        overflow: hidden;
-
         &:hover,
         &:focus-within {
             #{$this}-back {

@@ -566,14 +566,14 @@ function initMmenu() {
         return false;
     }
 
-    if(pageHeader.getAttribute("data-bs-theme")) {
+    if (pageHeader.getAttribute("data-bs-theme")) {
         mmenuWrapper.setAttribute("data-bs-theme", pageHeader.getAttribute("data-bs-theme"))
     }
 
     document.addEventListener("DOMContentLoaded", () => {
         const mmenu = new Mmenu('#mmenu-wrapper', {
             "offCanvas": {
-                "position": "right"
+                "position": "right-front"
             },
             "navbars": [{
                use: true,
@@ -590,7 +590,6 @@ function initMmenu() {
                 API.close();
             }
         });
-
         
         // inserts close button to navbars
         var panels = document.querySelector('.mm-panels');

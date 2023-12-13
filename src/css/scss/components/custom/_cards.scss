@@ -4,7 +4,11 @@
     background: var(--current-theme-color, transparent);
 
     &__content {
-        h2, .tag {
+        .tag {
+            color: var(--current-theme-text-color, $ntg-dark-green);
+        }
+
+        h2{
             color: var(--current-theme-text-color, $ntg-olive-green);
         }
     }
