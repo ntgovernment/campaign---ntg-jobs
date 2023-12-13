@@ -162,42 +162,18 @@
         }
     }
 
-    // TODO: fix stretched link interaction
     &--flip {
-        #{$this}-inner {
-            transition: 0.3s transform ease-in-out;
-            transform-style: preserve-3d; // causes jagged edges in Firefox, need to fix
-        }
+        overflow: hidden;
 
-        #{$this}-front,
-        #{$this}-back {
-            backface-visibility: hidden;
+        &:hover,
+        &:focus-within {
+            #{$this}-back {
+                opacity: 1;
+            }
         }
 
         #{$this}-front {
-            color: $white;
-            background-color: $ntg-barkly; // fallback; temporary
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            
-        }
-
-        #{$this}-back {
-            color: $white; // temporary
-            background-color: $ntg-barkly; // temporary
-            display: flex;
-            flex-direction: column;
-            transform: rotateY(180deg);
-        }
-
-        &:hover,
-        &:focus {
-            #{$this}-inner {
-                transform: rotateY(180deg);
-            }
+            height: 100%;
         }
 
         img {
@@ -206,6 +182,7 @@
         }
 
         #{$this}-img-overlay {
+            color: $white;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -225,9 +202,24 @@
             }
         }
 
+        #{$this}-back {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: var(--current-theme-text-color, $black);
+            background-color: var(--current-theme-color, $ntg-barkly);
+            opacity: 0;
+            transition: 0.2s opacity ease-out;
+        }
+
         #{$this}-body,
         #{$this}-footer {
-            padding: 2.25rem 3.375rem;
+            padding: 3.375rem 2.25rem;
         }
 
         #{$this}-body {
