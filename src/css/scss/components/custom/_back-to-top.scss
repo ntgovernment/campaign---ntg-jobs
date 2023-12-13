@@ -3,8 +3,8 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: var(--current-theme-primary-text, $primary-text);
-    border: 3px solid var(--current-theme-primary-text, $primary-text);
+    background-color: var(--current-theme-secondary, $primary);
+    border: 3px solid var(--current-theme-secondary, $primary);
     border-radius: 50%;
     box-shadow: 0px 2px 8px rgba($black, 0.15);
     transition: 0.2s background ease-in-out, 0.2s border-color ease-in-out;
@@ -12,11 +12,11 @@
 
     &:hover,
     &:focus-within {
-        background: var(--current-theme-secondary, $secondary);
-        border: 3px solid var(--current-theme-secondary, $secondary);
+        background: var(--current-theme-tertiary, $secondary);
+        border: 3px solid var(--current-theme-tertiary, $secondary);
 
         i {
-            color: var(--current-theme-secondary-text, $secondary-text);
+            color: var(--current-theme-tertiary-text, $secondary-text);
         }
     }
 
@@ -43,7 +43,7 @@
     }
 
     i {
-        color: var(--current-theme-primary, $primary);
+        color: var(--current-theme-secondary-text, $primary-text);
         transition: 0.2s color ease-in-out;
     }
 }

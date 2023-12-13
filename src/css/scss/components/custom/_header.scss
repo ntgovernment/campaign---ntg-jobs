@@ -40,8 +40,8 @@
     .mm-menu,
     .mm-wrapper--opened .page-header-container {
         --header-special-color: var(--current-theme-text-color);
-        --header-background-color: var(--current-theme-secondary);
-        --header-text-color: var(--current-theme-secondary-text);
+        --header-background-color: var(--current-theme-primary);
+        --header-text-color: var(--current-theme-primary-text);
     }
 }
 

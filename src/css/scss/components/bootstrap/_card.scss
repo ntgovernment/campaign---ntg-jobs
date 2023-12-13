@@ -163,6 +163,8 @@
     }
 
     &--flip {
+        overflow: hidden;
+
         &:hover,
         &:focus-within {
             #{$this}-back {
@@ -209,8 +211,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            color: var(--current-theme-text-color, $black);
-            background-color: var(--current-theme-color, $ntg-barkly);
+            color: var(--current-theme-secondary-text, $black);
+            background-color: var(--current-theme-secondary, $ntg-barkly);
             opacity: 0;
             transition: 0.2s opacity ease-out;
         }
