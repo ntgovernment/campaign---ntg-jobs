@@ -15832,7 +15832,7 @@ class NTGJobSearch {
             let accordionItem = document.createElement("div");
             accordionItem.classList.add("accordion-item");
 
-            let dataTemplate = `<div class="accordion-header py-2" id="heading-${rtfId}">
+            let dataTemplate = `<div class="accordion-header" id="heading-${rtfId}">
                 <a href="#" class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-${rtfId}" aria-expanded="false">
                     <div class="d-flex justify-content-between align-items-start w-100 pe-3">
                         <div class="job-title">${jobTitle}</div>

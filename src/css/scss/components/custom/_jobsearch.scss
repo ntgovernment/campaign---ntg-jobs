@@ -16,7 +16,7 @@
     .SumoSelect {
         width: 100%;
 
-        &:focus, &:focus-visible {
+        &:focus, &:focus-visible, &:focus-within {
             box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
             border-radius: 8px;
         }
@@ -69,6 +69,12 @@
         @include media-breakpoint-down(md) {
             display: block !important;
             margin: 1rem 0;
+        }
+
+        .SumoSelect {
+            &:focus, &:focus-visible, &:focus-within {
+                @extend .rounded-pill;
+            }
         }
 
 

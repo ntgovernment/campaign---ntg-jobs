@@ -24,10 +24,8 @@
         color: var(--menu-text-color);
         padding-top: 1rem;
 
-        .container {
-            @include media-breakpoint-down(md) {
-                padding: 0 40px;
-            }
+        .flickity-button:disabled {
+            opacity: 0;
         }
 
         .flickity-prev-next-button {
@@ -36,9 +34,19 @@
             background-color: transparent;
             border: 2px solid var(--menu-special-color);
             transition: 0.2s background ease-in-out;
+            z-index: 3;
+
+            @media (max-width: 615px) { 
+                background-color: var(--menu-special-color);
+                transition: 0.2s opacity ease-in-out;
+            }
 
             &:hover {
                 background-color: var(--menu-special-color);
+
+                @media (max-width: 615px) { 
+                    opacity: 0.8;
+                }
                 
                 .flickity-button-icon {
                     fill: var(--menu-special-color-text);
@@ -52,15 +60,44 @@
             height: 45%;
             left: 28%;
             top: 27%;
+
+            
+            @media (max-width: 615px) { 
+                fill: $white;
+            }
         }
 
         .flickity-prev-next-button.previous {
-            left: 0;
+            left: -35px;
+
+            @media (min-width: 992px) and (max-width: 1030px) { 
+                left: -15px;
+            }
+
+            @media (min-width: 768px) and (max-width: 800px) { 
+                left: -15px;
+            }
+
+            @media (max-width: 615px) { 
+                left: 0;
+            }
+
         }
 
         .flickity-prev-next-button.next {
-            right: 0;
-            z-index: 3;
+            right: -35px;
+
+            @media (min-width: 992px) and (max-width: 1030px) { 
+                right: -15px;
+            }
+            
+            @media (min-width: 768px) and (max-width: 800px) { 
+                right: -15px;
+            }
+            
+            @media (max-width: 615px) { 
+                right: 0;
+            }
         }
         
 
@@ -68,7 +105,7 @@
             margin-bottom: 0;
             position: relative;
             white-space: nowrap;
-            padding: 0 2rem;
+            padding-left: 0;
 
             &::after {
                 content: '';
@@ -119,6 +156,10 @@
                     font-weight: bold;
                     border-top-color: var(--current-theme-tertiary, #{$ntg-olive-green});
                 }
+
+                &:focus {
+                    outline-offset: -3px
+                }
             }
         }
     }
@@ -165,6 +206,10 @@
                     white-space: nowrap;
                     line-height: 28px;
                 }
+
+                &:focus {
+                    outline-offset: -3px;
+                }
             }
         }
     }
@@ -191,6 +236,10 @@
                     text-decoration: underline;
                     text-underline-offset: 3px;
                     text-decoration-thickness: 3px;
+                }
+
+                a:focus {
+                    @include focus();
                 }
             }
         }

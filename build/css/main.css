@@ -10329,7 +10329,7 @@ textarea.form-control-lg {
   border-radius: 50% !important;
 }
 
-.rounded-pill, .ntg-jobs-subsite #pagination ul, .ntg-main-nav__mobile > a span, .ntg-main-nav__mobile > a:before, .ntg-main-nav__mobile > a:after {
+.rounded-pill, .ntg-jobs-subsite #pagination ul, .jobsearch-wrapper #expandSearch .SumoSelect:focus, .jobsearch-wrapper #expandSearch .SumoSelect:focus-visible, .jobsearch-wrapper #expandSearch .SumoSelect:focus-within, .ntg-main-nav__mobile > a span, .ntg-main-nav__mobile > a:before, .ntg-main-nav__mobile > a:after {
   border-radius: var(--bs-border-radius-pill) !important;
 }
 
@@ -23982,6 +23982,11 @@ body.search-panel--is-hidden .search-global {
 .jobsearch-wrapper .SumoSelect {
   width: 100%;
 }
+.jobsearch-wrapper .SumoSelect:focus, .jobsearch-wrapper .SumoSelect:focus-visible, .jobsearch-wrapper .SumoSelect:focus-within {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
+  border-radius: 8px;
+}
 .jobsearch-wrapper .SumoSelect > .CaptionCont > label > i {
   display: none;
 }
@@ -24125,10 +24130,8 @@ body.search-panel--is-hidden .search-global {
   color: var(--menu-text-color);
   padding-top: 1rem;
 }
-@media (max-width: 767.98px) {
-  .ntg-jobs-subsite__menu .container {
-    padding: 0 40px;
-  }
+.ntg-jobs-subsite__menu .flickity-button:disabled {
+  opacity: 0;
 }
 .ntg-jobs-subsite__menu .flickity-prev-next-button {
   width: 30px;
@@ -24137,9 +24140,22 @@ body.search-panel--is-hidden .search-global {
   border: 2px solid var(--menu-special-color);
   -webkit-transition: 0.2s background ease-in-out;
   transition: 0.2s background ease-in-out;
+  z-index: 3;
+}
+@media (max-width: 615px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button {
+    background-color: var(--menu-special-color);
+    -webkit-transition: 0.2s opacity ease-in-out;
+    transition: 0.2s opacity ease-in-out;
+  }
 }
 .ntg-jobs-subsite__menu .flickity-prev-next-button:hover {
   background-color: var(--menu-special-color);
+}
+@media (max-width: 615px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button:hover {
+    opacity: 0.8;
+  }
 }
 .ntg-jobs-subsite__menu .flickity-prev-next-button:hover .flickity-button-icon {
   fill: var(--menu-special-color-text);
@@ -24151,18 +24167,52 @@ body.search-panel--is-hidden .search-global {
   left: 28%;
   top: 27%;
 }
+@media (max-width: 615px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button .flickity-button-icon {
+    fill: #fff;
+  }
+}
 .ntg-jobs-subsite__menu .flickity-prev-next-button.previous {
-  left: 0;
+  left: -35px;
+}
+@media (min-width: 992px) and (max-width: 1030px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.previous {
+    left: -15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.previous {
+    left: -15px;
+  }
+}
+@media (max-width: 615px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.previous {
+    left: 0;
+  }
 }
 .ntg-jobs-subsite__menu .flickity-prev-next-button.next {
-  right: 0;
-  z-index: 3;
+  right: -35px;
+}
+@media (min-width: 992px) and (max-width: 1030px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.next {
+    right: -15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.next {
+    right: -15px;
+  }
+}
+@media (max-width: 615px) {
+  .ntg-jobs-subsite__menu .flickity-prev-next-button.next {
+    right: 0;
+  }
 }
 .ntg-jobs-subsite__menu #jobCarouselMenu {
   margin-bottom: 0;
   position: relative;
   white-space: nowrap;
-  padding: 0 2rem;
+  padding-left: 0;
 }
 .ntg-jobs-subsite__menu #jobCarouselMenu::after {
   content: "";
@@ -24215,6 +24265,9 @@ body.search-panel--is-hidden .search-global {
   font-weight: bold;
   border-top-color: var(--current-theme-tertiary, #104735);
 }
+.ntg-jobs-subsite__menu .nav-cell a:focus {
+  outline-offset: -3px;
+}
 .ntg-jobs-subsite #searchResults .accordion-item {
   border: var(--jobs-subsite-accordion-border-width, 1px) solid var(--menu-background-color);
   overflow: hidden;
@@ -24254,6 +24307,9 @@ body.search-panel--is-hidden .search-global {
   white-space: nowrap;
   line-height: 28px;
 }
+.ntg-jobs-subsite #searchResults .accordion-button:focus {
+  outline-offset: -3px;
+}
 .ntg-jobs-subsite #pagination {
   padding: 1rem 0;
 }
@@ -24276,6 +24332,12 @@ body.search-panel--is-hidden .search-global {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
+}
+.ntg-jobs-subsite #pagination ul li a:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 3px solid #e35205;
+  outline-offset: 2px;
 }
 
 .interactive-map {
