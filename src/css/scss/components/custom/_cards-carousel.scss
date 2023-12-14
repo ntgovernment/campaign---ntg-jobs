@@ -1,28 +1,51 @@
-@use 'sass:math';
+@use "sass:map";
 
 .ntg-cards-carousel {
     $this: &;
     color: var(--current-theme-text-color, $body-color);
     background: var(--current-theme-color, transparent);
     overflow-x: clip;
+    
+    h2 {
+        color: var(--current-theme-text-color, $ntg-olive-green);
+    }
 
     .tag {
         color: var(--current-theme-text-color, $ntg-dark-green);
     }
 
-    h2 {
-        color: var(--current-theme-text-color, $ntg-olive-green);
-    }
-
     .carousel-cell {
-        margin-right: 2rem;
-        
-        @include media-breakpoint-down(lg) {
-            margin-right: 1.5rem;
+        width: 95%;
+        margin-right: 0.75rem;
+        transition: 0.2s opacity, 0.2s filter;
+
+        &:not(.is-selected) {
+            opacity: 0.2;
+            filter: grayscale(100%);
         }
 
-        @include media-breakpoint-down(md) {
-            margin-right: 1rem;
+        @include media-breakpoint-up(md) {
+            width: calc((100% - 3rem) / 2); // 2 cells in viewport
+            margin-right: 1.5rem;
+
+            &.is-selected + .carousel-cell {
+                opacity: 1;
+                filter: none;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 2rem;
+        }
+    }
+
+    &[data-bs-theme="default"] .card {
+        &:not(.card--flip) {
+            .card-body,
+            .card-footer {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 
@@ -41,19 +64,19 @@
 
     .flickity-button {
         background: transparent;
-        border: 2px solid var(--current-theme-text-color, $primary);
+        border: 2px solid var(--current-theme-text-color, $secondary);
         width: 50px;
         height: 50px;
         transition: 0.2s background ease-in-out;
 
         @include media-breakpoint-down(md) {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         &:hover,
         &:focus {
-            background: var(--current-theme-text-color, $primary);
+            background: var(--current-theme-text-color, $secondary);
 
             .flickity-button-icon {
                 fill: var(--current-theme-color, $white);
@@ -65,7 +88,7 @@
         }
 
         .flickity-button-icon {
-            fill: var(--current-theme-text-color, $primary);
+            fill: var(--current-theme-text-color, $secondary);
             width: 35%;
             height: 35%;
             top: 50%;
@@ -75,117 +98,119 @@
         }
     }
 
-    &--flow-right {
-        #{$this}__content {
-            @include media-breakpoint-up(md) {
-                width: 50%;
-            }
+    @include media-breakpoint-down(md) {
+        .flickity-carousel {
+            padding-bottom: calc(40px + 0.5rem);
         }
 
         .flickity-viewport {
             overflow: visible;
         }
 
-        .flickity-carousel {
-            margin-top: 2rem;
-            
-            @include media-breakpoint-down(md) {
-                margin-top: calc(3rem + 40px);
+        .flickity-prev-next-button {
+            top: calc(100% - 15px);
+    
+            &.previous {
+                left: 0;
+            }
+    
+            &.next {
+                right: calc(100% - 65px);
             }
         }
+    }
 
-        .carousel-cell {
-            width: 25%;
-
-            @include media-breakpoint-down(lg) {
+    &--flow-right {        
+        @include media-breakpoint-up(md) {
+            #{$this}__content {
                 width: 50%;
             }
 
-            @include media-breakpoint-down(md) {
-                width: 100%;
+            .flickity-carousel {
+                padding-top: 2rem;
+            }
+
+            .flickity-viewport {
+                overflow: visible;
+            }
+
+            .flickity-prev-next-button {
+                top: calc(-2rem - 25px);
+
+                &.previous {
+                    left: calc(100% - 110px);
+                }
+
+                &.next {
+                    right: 0;
+                }
             }
         }
 
-        .flickity-prev-next-button {
-            top: calc(-2rem - 25px);
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 6rem) / 4); // 4 cells in viewport
 
-            @include media-breakpoint-down(md) {
-                top: calc(-2rem - 20px);
-            }
-
-            &.previous {
-                left: calc(100% - 110px);
-
-                @include media-breakpoint-down(md) {
-                    left: calc(100% - 90px);
+                &.is-selected {
+                    + .carousel-cell,
+                    + .carousel-cell + .carousel-cell,
+                    + .carousel-cell + .carousel-cell + .carousel-cell {
+                        opacity: 1;
+                        filter: none;
+                    }
                 }
-            }
-
-            &.next {
-                right: 0;
             }
         }
     }
 
     &--centred {
-        #{$this}__content {
-            text-align: center;
-        }
+        @include media-breakpoint-up(md) {
+            #{$this}__content {
+                text-align: center;
+            }
 
-        .flickity-carousel {
-            @media (max-width: 1500px) {
-                padding-bottom: 66px;
+            .flickity-prev-next-button {
+                &.previous {
+                    left: calc(50% - 55px);
+                }
+
+                &.next {
+                    right: calc(50% - 55px);
+                }
             }
         }
 
-        .carousel-cell {
-            margin-right: 2rem;
-            width: calc((100%/3) - 1.5rem);
-            
-            @include media-breakpoint-down(lg) {
-                margin-right: 1.5rem;
-                width: calc(50% - 1rem);
-            }
-    
-            @include media-breakpoint-down(md) {
-                margin-right: 1rem;
-                width: 100%;
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 4rem) / 3);
+
+                &.is-selected {
+                    +.carousel-cell,
+                    +.carousel-cell + .carousel-cell {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
             }
         }
-
-        .flickity-button {
-            border-width: 3px;
-        }
-
-        .flickity-prev-next-button {
-            @include media-breakpoint-down(md) {
-                top: calc(100% - 20px);
+        
+        @media (min-width: map.get($container-max-widths, md)) and (max-width: 1500px) {
+            .flickity-carousel {
+                padding-bottom: calc(50px + 1rem);
             }
 
-            @media (max-width: 1500px) {
+            .flickity-prev-next-button {
                 top: calc(100% - 25px);
             }
+        }
 
-            &.previous {
-                left: calc(50% - 55px);
-
-                @include media-breakpoint-down(md) {
-                    left: calc(50% - 45px);
-                }
-
-                @media (min-width: 1500px) {
+        @media (min-width: 1500px) {
+            .flickity-prev-next-button {
+                &.previous {
                     left: -66px;
                 }
-            }
 
-            &.next {
-                right: calc(50% - 55px);
-
-                @include media-breakpoint-down(md) {
-                    right: calc(50% - 45px);
-                }
-
-                @media (min-width: 1500px) {
+                &.next {
                     right: -66px;
                 }
             }
@@ -193,65 +218,74 @@
     }
 
     &--tall {
-        overflow-y: clip;
+        @include media-breakpoint-up(md) {
+            overflow-y: clip;
 
-        > .container > .row > div:first-child {
-            position: relative;
-            z-index: 1;
-
-            &::after {
-                content: "";
-                background-color: var(--current-theme-color, $white);
-                position: absolute;
-                top: -1px;
-                left: -9999px;
-                right: 0;
-                bottom: -1px;
-                z-index: -1;
-            }
-        }
-
-        #{$this}__content {
-            @include media-breakpoint-up(lg) {
-                position: sticky;
-                transition: 0.25s top ease-in-out;
-            }
-        }
-
-        .flickity-viewport {
-            overflow: visible;
-        }
-
-        .carousel-cell {
-            width: 50%;
-
-            @include media-breakpoint-down(lg) {
-                width: 100%;
-            }
-        }
-
-        .flickity-button {
-            background: $white;
-            border-width: 0;
-            box-shadow: 0 0 10px rgba(99, 101, 107, 0.5);
-
-            &:hover,
-            &:focus {
-                background: var(--current-theme-secondary, $secondary);
+            > .container > .row > div {
+                    &:first-child {
+                        position: relative;
+                        z-index: 1;
         
-                .flickity-button-icon {
-                    fill: var(--current-theme-secondary-text, $white);
+                    &::after {
+                        content: "";
+                        background-color: var(--current-theme-color, $white);
+                        position: absolute;
+                        top: -1px;
+                        bottom: -1px;
+                        left: -9999px;
+                        right: calc(($container-padding-x / 2) * -1);
+                        z-index: -1;
+                    }
                 }
             }
 
-            .flickity-button-icon {
-                fill: $black;
-                width: 35%;
-                height: 35%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                transition: 0.2s fill ease-in-out;
+            #{$this}__content {
+                position: sticky;
+                transition: 0.25s top ease-in-out;
+            }
+
+            .flickity-viewport {
+                overflow: visible;
+            }
+
+            .carousel-cell {
+                width: 100%;
+            }
+
+            .flickity-button {
+                background: $white;
+                border-width: 0;
+                box-shadow: 0 0 10px rgba(99, 101, 107, 0.5);
+                z-index: 1;
+
+                .flickity-button-icon {
+                    fill: $black;
+                }
+            }
+            
+            .flickity-prev-next-button {
+                &.previous {
+                    left: -25px;
+                }
+
+                &.next {
+                    right: -25px;
+                }
+
+                &[disabled] {
+                    display: none;
+                }
+            }
+        }
+        
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 2rem) / 2); // 2 cells in viewport
+
+                &.is-selected + .carousel-cell {
+                    opacity: 1;
+                    filter: none;
+                }
             }
         }
     }
@@ -276,6 +310,11 @@
         .carousel-cell {
             width: 350px;
             height: 350px;
+            
+            &:not(.is-selected) {
+                opacity: 1;
+                filter: none;
+            }
 
             &:nth-child(n + 1) {
                 grid-row: 4 / -1;
