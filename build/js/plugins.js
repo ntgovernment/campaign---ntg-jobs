@@ -15882,6 +15882,8 @@ class NTGJobSearch {
         $('#pagination').pagination({ 
             items: results.length,   
             itemsOnPage: noOfItemsPerPage,  
+            displayedPages: 3,
+            edges: 1,
             onPageClick: function (noofele) { 
                 $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start"});
 

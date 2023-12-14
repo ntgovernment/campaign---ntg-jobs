@@ -3,6 +3,7 @@
     margin: 2rem 0 2.5rem 0;
     padding-left: 1rem;
 
+
     &:before {
         content: '';
         position: absolute;
@@ -10,7 +11,7 @@
         left: 0;
         bottom: -1px;
         width: 5px;
-        background-color: $primary;
+        background-color: var(--current-theme-text-color, #{$ntg-dark-blue});
     }
 
     h2 {
@@ -28,7 +29,7 @@
 
     li {
         line-height: 1;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
 
         &:last-child {
             margin-bottom: 0;
@@ -37,6 +38,7 @@
 
     a {
         display: inline-block;
+        @extend .small;
 
         &:hover {
             text-decoration: none;

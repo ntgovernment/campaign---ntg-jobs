@@ -712,11 +712,7 @@ function initInPageNav() {
     }
 
     var list = inPageNav.querySelector('ul');
-    document.querySelectorAll('#content h2').forEach(function (element, index) {
-        if (index === 0) {
-            return false;
-        }
-
+    document.querySelectorAll('#content h2:not(.excludeAnchorList h2)').forEach(function (element, index) {
         var heading = element;
         if (element.querySelector('a')) {
             element = element.querySelector('a');
@@ -726,18 +722,18 @@ function initInPageNav() {
         list.insertAdjacentHTML(
             'beforeend',
             '<li><a href="#' +
-                element.innerHTML
+                element.innerText
                     .replace(/&amp;/g, 'and')
                     .replace(/[^a-z0-9 ]/gi, '')
                     .replace(/\s/g, '-')
                     .toLowerCase() +
                 '">' +
-                element.innerHTML +
+                element.innerText +
                 '</a></li>'
         );
         element.setAttribute(
             'id',
-            element.innerHTML
+            element.innerText
                 .replace(/&amp;/g, 'and')
                 .replace(/[^a-z0-9 ]/gi, '')
                 .replace(/\s/g, '-')

@@ -439,7 +439,7 @@ strong {
 }
 
 small, .small, .ntg-jobs-subsite #pagination ul, .ntg-jobs-subsite #searchResults .accordion-header, .jobsearch-wrapper .SumoSelect > .CaptionCont,
-.jobsearch-wrapper input {
+.jobsearch-wrapper input, #in-page-nav a {
   font-size: calc(var(--base-font-size) / var(--scale));
 }
 
@@ -22959,7 +22959,7 @@ main {
   left: 0;
   bottom: -1px;
   width: 5px;
-  background-color: #D7D2CB;
+  background-color: var(--current-theme-text-color, #0E2C4D);
 }
 #in-page-nav h2, #in-page-nav .h2 {
   font-size: 1rem;
@@ -22974,7 +22974,7 @@ main {
 }
 #in-page-nav li {
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 #in-page-nav li:last-child {
   margin-bottom: 0;
@@ -24320,9 +24320,9 @@ body.search-panel--is-hidden .search-global {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid var(--jobs-subsite-border-color);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   margin-bottom: 0;
-  gap: 1rem;
+  gap: 1.25rem;
   font-weight: bold;
 }
 .ntg-jobs-subsite #pagination ul li {
