@@ -69,6 +69,7 @@
 @each $color, $value in $base-colors {
     [data-bs-theme="#{$color}"] {
         --current-theme-color: #{map.get($value, "main")};
+        --current-theme-bg-contrast-color: #{map.get($value, "bg-contrast-color")};
         --current-theme-text-color: #{map.get($value, "text-color")};
         --current-theme-color-darker: #{darken(map.get($value, "main"), 6)};
         --current-theme-color-lighter: #{lighten(map.get($value, "main"), 4)};

@@ -434,7 +434,8 @@ $base-colors: (
 		"link-color": $ntg-dark-gray,
 		"link-hover-color": $ntg-dark-gray,
 		"border-subtle-color": tint-color($white, 30%),
-		"bg-subtle-color": tint-color($white, 60%)
+		"bg-subtle-color": tint-color($white, 60%),
+		"bg-contrast-color": $black
 	),
 	"desert-yam" : (
 		"main": $ntg-desert-yam,
