@@ -39,8 +39,8 @@
         }
     }
 
-    img,
-    video {
+    &-img-top,
+    &-video {
         object-fit: cover;
         width: 100%;
         min-height: 250px;
@@ -49,6 +49,14 @@
         @include media-breakpoint-down(md) {
             min-height: 150px;
         }
+    }
+
+    &-icon {
+        object-fit: contain;
+        max-width: 64px;
+        max-height: 64px;
+        width: 100%;
+        height: 100%;
     }
 
     &-wrapper {
@@ -127,8 +135,8 @@
     }
 
     &--tall {
-        img,
-        video {
+        #{$this}-img-top,
+        #{$this}-video {
             @include media-breakpoint-up(lg) {
                 min-height: 440px;
                 max-height: 440px;
@@ -137,8 +145,8 @@
     }
 
     &--medium {
-        img,
-        video {
+        #{$this}-img-top,
+        #{$this}-video {
             max-height: 250px;
         
             @include media-breakpoint-down(md) {
@@ -148,8 +156,8 @@
     }
 
     &--small {
-        img,
-        video {
+        #{$this}-img-top,
+        #{$this}-video {
             max-height: 150px;
 
             @include media-breakpoint-up(lg) {
@@ -159,6 +167,12 @@
 
         #{$this}-body {
             @include font-size(16px);
+        }
+    }
+
+    &--icon {
+        #{$this}-title {
+            @include font-size($h6-font-size);
         }
     }
 
@@ -176,7 +190,7 @@
             height: 100%;
         }
 
-        img {
+        #{$this}-img-top {
             min-height: unset;
             height: 100%;
         }

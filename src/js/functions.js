@@ -830,9 +830,9 @@ function initFlickity() {
             // options
             cellAlign: alignment,
             pageDots: false,
-            percentPosition: false,
-            wrapAround: wrap,
-            contain: true
+            // percentPosition: false,
+            // wrapAround: wrap,
+            // contain: true
         });
 
         const cellElements = flkty.getCellElements();
