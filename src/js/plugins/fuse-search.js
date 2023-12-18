@@ -128,12 +128,16 @@ class NTGJobSearch {
 
         const filteredResults = this._filterSearchResults(searchResults, formData);
 
+        $("#searchSpinner").removeClass("d-none");
         this._showResults(filteredResults);
+        $("#searchSpinner").addClass("d-none");
     }
 
     _showResults(results) {
+        $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start", behaviour: "smooth"});
+
         if(results.length <= 0) {
-            this.searchResultsWrapper.innerText = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
+            this.searchResultsWrapper.innerHTML = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
             return false;
         }
 

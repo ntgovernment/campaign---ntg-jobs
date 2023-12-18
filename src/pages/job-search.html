@@ -438,13 +438,13 @@
                                     <form method="get" id="vacancySearchForm">
                                         <div class="row mb-2">
                                             <div class="col-md-6 col-lg-3">
-                                                <label for="keyword" class="form-label text-nowrap">Search Keywords or vacancy<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Keywords"><i class="fas fa-question-circle"></i></a></label>
+                                                <label for="keyword" class="form-label text-nowrap">Search Keywords or vacancy<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="By vacancy number or classification/level or keyword e.g. communication or nurse"><i class="fas fa-question-circle"></i></a></label>
                                                 <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Keywords or vacancy number">
                                             </div>
                                             
                                             <!--@@ Category field is repeated below for mobile @@-->
                                             <div class="col-md-6 col-lg-3 d-none d-md-block">
-                                                <label for="jobCategory" class="form-label">Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Categories"><i class="fas fa-question-circle"></i></a></label>
+                                                <label for="jobCategory" class="form-label">Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Narrow your search by job category e.g. legal or vacation employment"><i class="fas fa-question-circle"></i></a></label>
                                                 <select id="jobCategory" name="jobCategory[]" class="form-select" aria-label="Job Category" multiple="multiple" placeholder="All Categories">
                                                     <option value="Aboriginal Health Practitioners">Aboriginal Health Practitioners</option>
                                                     <option value="Accounting and Finance">Accounting and Finance</option>
@@ -500,7 +500,7 @@
                                         <div class="collapse" id="expandSearchMobile">
                                             <div class="row mb-2 gy-2">
                                                 <div class="col-md-6 col-lg-3">
-                                                    <label for="department" class="form-label">Department<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Departments"><i class="fas fa-question-circle"></i></a></label>
+                                                    <label for="department" class="form-label">Department<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select a particular department or select multiple"><i class="fas fa-question-circle"></i></a></label>
                                                     <select id="agency" name="agency[]" class="form-select" aria-label="Agency" multiple="multiple" placeholder="All Departments">
                                                         <option value="Aboriginal Areas Protection Authority">Aboriginal Areas Protection Authority</option>
                                                         <option value="Auditor-General's Office">Auditor-General's Office</option>
@@ -527,10 +527,10 @@
                                                         <option value="Territory Generation">Territory Generation</option>
                                                     </select>
                                                 </div>
-
+                        
                                                 <!--@@ Category field is repeated above for desktop @@-->
                                                 <div class="col-md-6 col-lg-3 d-md-none d-block">
-                                                    <label for="jobCategory" class="form-label">Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Categories"><i class="fas fa-question-circle"></i></a></label>
+                                                    <label for="jobCategory" class="form-label">Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Narrow your search by job category e.g. legal or vacation employment"><i class="fas fa-question-circle"></i></a></label>
                                                     <select id="jobCategory" name="jobCategory[]" class="form-select" aria-label="Job Category" multiple="multiple" placeholder="All Categories">
                                                         <option value="Aboriginal Health Practitioners">Aboriginal Health Practitioners</option>
                                                         <option value="Accounting and Finance">Accounting and Finance</option>
@@ -581,9 +581,9 @@
                                                         <option value="Vacation Employment">Vacation Employment</option>
                                                     </select>
                                                 </div>
-                
+                        
                                                 <div class="col-md-6 col-lg-3">
-                                                    <label for="location" class="form-label">Location<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Locations"><i class="fas fa-question-circle"></i></a></label>
+                                                    <label for="location" class="form-label">Location<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select a specific region or location"><i class="fas fa-question-circle"></i></a></label>
                                                     <select id="location" name="location[]" class="form-select" aria-label="Job locations" multiple="multiple" placeholder="All locations">
                                                         <option value="Alice Springs">Alice Springs</option>
                                                         <option value="Darwin">Darwin Region</option>
@@ -593,9 +593,9 @@
                                                         <option value="Remote">Remote</option>
                                                     </select>
                                                 </div>
-                
+                        
                                                 <div class="col-md-6 col-lg-3">
-                                                    <label for="vacancy" class="form-label">Vacancy<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Vacancy Types"><i class="fas fa-question-circle"></i></a></label>
+                                                    <label for="vacancy" class="form-label">Vacancy<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select from full-time, part-time, temp/contract or casual positions"><i class="fas fa-question-circle"></i></a></label>
                                                     <select id="vacancy" name="vacancy[]" class="form-select" aria-label="Vacancy" multiple="multiple" placeholder="All vacancies">
                                                         <option value="Ongoing (Permanent) - Full Time">Ongoing (Permanent) - Full Time</option>
                                                         <option value="Ongoing (Permanent) - Part Time">Ongoing (Permanent) - Part Time</option>
@@ -712,7 +712,7 @@
                                                         </div>
                                                     </div>
                                                     
-
+                        
                                                 </div>
                                             </div>
                                         </div>
@@ -722,7 +722,7 @@
                                                 search
                                             </a>
                                         </div>
-
+                        
                                         <div class="row mt-3 align-items-center">
                                             <div class="col-8 col-md-4">
                                                 <button type="submit" class="btn btn-central-australia rounded-pill w-100 py-2">SEARCH</button>
@@ -777,11 +777,19 @@
                             <div class="col-md">
                                 Don't let opportunities pass you by. Get vacancies emailed to you as soon as they become available.
                             </div>
+                            
                             <div class="col-md-auto">
                                 <button class="btn btn btn-outline-default py-1 border-1"><i class="far fa-envelope me-1"></i>Job Alert</button>
                                 <button class="btn btn btn-outline-default py-1 border-1"><i class="far fa-user me-1"></i>Login</button>
                             </div>
                         </div>
+                        
+                        <div class="text-center d-none" id="searchSpinner">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
                         <div>
                             <div id="searchResults"></div>
                         </div>
