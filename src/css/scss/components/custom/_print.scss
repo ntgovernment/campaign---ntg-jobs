@@ -11,7 +11,7 @@
         --bs-accordion-active-color: #{$black};
         --bs-accordion-btn-color: #{$black};
         --bs-accordion-border-width: 2px;
-        --bs-accordion-border-color: #{$black}
+        --bs-accordion-border-color: #{$black};
     }
 
     .accordion-button {
@@ -26,7 +26,8 @@
         border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
     }
 
-    .accordion .collapse {
+    .accordion .collapse,
+    .ntg-cards > .container > .row {
         display: block !important;
     }
 
@@ -35,8 +36,13 @@
     .ntg-map-tabs,
     .nav-tabs-wrapper,
     .nav-link.active,
-    .ntg-accordion {
+    .ntg-accordion,
+    .ntg-related-pages {
         background-color: #FFF !important;
+        color: #000 !important;
+    }
+
+    .ntg-related-pages li::before {
         color: #000 !important;
     }
 
@@ -72,7 +78,8 @@
         min-height: unset;
     }
 
-    .ntg-call-to-action-links {
+    .ntg-call-to-action-links,
+    .ntg-related-pages {
         border: 2px solid #000;
     }
 
@@ -100,7 +107,12 @@
     .btn,
     .nav-link:not(.active),
     .ntg-banner,
-    #in-page-nav {
+    #in-page-nav,
+    .ntg-featured-testimonial,
+    .ntg-image-carousel,
+    .ntg-icon-and-description,
+    .ntg-jobs-subsite__menu,
+    #pagination {
         display: none !important;
     }
 }
