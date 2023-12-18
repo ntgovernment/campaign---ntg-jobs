@@ -30,7 +30,7 @@
 
     .flickity-button {
         background: transparent;
-        border: 3px solid $primary; // temporary
+        border: 2px solid var(--current-theme-text-color, $secondary);
         width: 50px;
         height: 50px;
         transition: 0.2s background ease-in-out;
@@ -42,10 +42,10 @@
     
         &:hover,
         &:focus {
-            background: $primary; // temporary
+            background: var(--current-theme-text-color, $secondary);
     
             .flickity-button-icon {
-                fill: $white;
+                fill: var(--current-theme-color, $white);
             }
         }
     
@@ -54,7 +54,7 @@
         }
     
         .flickity-button-icon {
-            fill: $primary; // temporary
+            fill: var(--current-theme-text-color, $secondary);
             width: 35%;
             height: 35%;
             top: 50%;

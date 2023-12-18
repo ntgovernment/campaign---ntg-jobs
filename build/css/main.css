@@ -22937,7 +22937,7 @@ main {
 }
 .ntg-image-carousel .flickity-button {
   background: transparent;
-  border: 3px solid #D7D2CB;
+  border: 2px solid var(--current-theme-text-color, #104735);
   width: 50px;
   height: 50px;
   -webkit-transition: 0.2s background ease-in-out;
@@ -22950,10 +22950,10 @@ main {
   }
 }
 .ntg-image-carousel .flickity-button:hover, .ntg-image-carousel .flickity-button:focus {
-  background: #D7D2CB;
+  background: var(--current-theme-text-color, #104735);
 }
 .ntg-image-carousel .flickity-button:hover .flickity-button-icon, .ntg-image-carousel .flickity-button:focus .flickity-button-icon {
-  fill: #fff;
+  fill: var(--current-theme-color, #fff);
 }
 .ntg-image-carousel .flickity-button:focus {
   -webkit-box-shadow: none !important;
@@ -22962,7 +22962,7 @@ main {
   outline-offset: 2px;
 }
 .ntg-image-carousel .flickity-button .flickity-button-icon {
-  fill: #D7D2CB;
+  fill: var(--current-theme-text-color, #104735);
   width: 35%;
   height: 35%;
   top: 50%;
