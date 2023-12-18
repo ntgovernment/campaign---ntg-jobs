@@ -22823,7 +22823,7 @@ main {
   background-color: transparent;
   padding: 0.9336842105rem 1rem;
   padding-left: 1rem;
-  border: 2px solid #fff;
+  border: 2px solid var(--header-special-color);
   border-left-width: 0;
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
