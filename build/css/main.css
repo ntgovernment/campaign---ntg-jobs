@@ -24487,3 +24487,27 @@ body.search-panel--is-hidden .search-global {
     height: 585px;
   }
 }
+
+@media print {
+  body {
+    --bs-body-color: #000 !important;
+  }
+  .page-header-container {
+    position: static !important;
+    --header-text-color: #000 !important;
+  }
+  .ntg-footer {
+    --footer-text-color: #000;
+    --footer-background-color: transparent;
+  }
+  .ntg-footer__top {
+    padding: 1.5rem !important;
+  }
+  .ntg-main-nav,
+  .ntg-header__search,
+  .ntg-footer__social-section,
+  .ntg-footer__mid,
+  .ntg-footer__bottom-links {
+    display: none !important;
+  }
+}
