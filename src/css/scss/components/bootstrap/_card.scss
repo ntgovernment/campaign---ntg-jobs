@@ -1,4 +1,9 @@
 .card {
+    --#{$prefix}card-title-color: var(--current-theme-text-color, #{$ntg-dark-gray});
+    --#{$prefix}card-subtitle-color: var(--current-theme-text-color, #{$ntg-dark-gray});
+    --#{$prefix}card-cap-color: var(--current-theme-text-color, #{$ntg-dark-gray});
+    --#{$prefix}card-color: var(--current-theme-text-color, #{$ntg-dark-gray});
+
     $this: &;
 
     &:not(.card-focus):focus-within {

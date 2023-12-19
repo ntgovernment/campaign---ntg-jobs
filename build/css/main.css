@@ -21067,6 +21067,12 @@ textarea.form-control-lg {
   transition: 0.15s margin-left ease-in-out;
 }
 
+.card {
+  --bs-card-title-color: var(--current-theme-text-color, #2B292D);
+  --bs-card-subtitle-color: var(--current-theme-text-color, #2B292D);
+  --bs-card-cap-color: var(--current-theme-text-color, #2B292D);
+  --bs-card-color: var(--current-theme-text-color, #2B292D);
+}
 .card:not(.card-focus):focus-within {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
