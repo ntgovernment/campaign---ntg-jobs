@@ -14,21 +14,21 @@
         --header-text-color: #{$ntg-dark-gray};
     }
 
-    .btn-default {
-        --bs-btn-color: var(--current-theme-tertiary-text, #fff);
-        --bs-btn-bg: var(--current-theme-tertiary, #104735);
-        --bs-btn-border-color: var(--current-theme-tertiary, #104735);
-        --bs-btn-hover-color: var(--current-theme-tertiary-text, #fff);
-        --bs-btn-hover-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
-        --bs-btn-hover-border-color: var(--current-theme-tertiary-bg-subtle, #0d392a);
-        --bs-btn-active-color: var(--current-theme-tertiary-text, #fff);
-        --bs-btn-active-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
-        --bs-btn-active-border-color: var(--current-theme-tertiary-border-subtle, #0d392a);
-        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-        --bs-btn-disabled-color: var(--current-theme-tertiary-text, #fff);
-        --bs-btn-disabled-bg: var(--current-theme-tertiary, #104735);
-        --bs-btn-disabled-border-color: var(--current-theme-tertiary, #104735);
-    }
+    // .btn-default {
+    //     --bs-btn-color: var(--current-theme-tertiary-text, #fff);
+    //     --bs-btn-bg: var(--current-theme-tertiary, #104735);
+    //     --bs-btn-border-color: var(--current-theme-tertiary, #104735);
+    //     --bs-btn-hover-color: var(--current-theme-tertiary-text, #fff);
+    //     --bs-btn-hover-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
+    //     --bs-btn-hover-border-color: var(--current-theme-tertiary-bg-subtle, #0d392a);
+    //     --bs-btn-active-color: var(--current-theme-tertiary-text, #fff);
+    //     --bs-btn-active-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
+    //     --bs-btn-active-border-color: var(--current-theme-tertiary-border-subtle, #0d392a);
+    //     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    //     --bs-btn-disabled-color: var(--current-theme-tertiary-text, #fff);
+    //     --bs-btn-disabled-bg: var(--current-theme-tertiary, #104735);
+    //     --bs-btn-disabled-border-color: var(--current-theme-tertiary, #104735);
+    // }
 }
 
 .page-header-container {
