@@ -1,4 +1,6 @@
 .ntg-image-carousel {
+    background-color: var(--current-theme-color, transparent);
+    color: var(--current-theme-text-color, $body-color);
     overflow-x: clip;
 
     .flickity-carousel {

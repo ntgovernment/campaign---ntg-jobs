@@ -99,6 +99,7 @@
     }
 
     &-title {
+        color: inherit;
         @include font-size($h4-font-size);
     }
 
@@ -230,7 +231,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            color: var(--current-theme-secondary-text, $black);
             background-color: var(--current-theme-secondary, $ntg-barkly);
             opacity: 0;
             transition: 0.2s opacity ease-out;
@@ -238,6 +238,7 @@
 
         #{$this}-body,
         #{$this}-footer {
+            color: var(--current-theme-secondary-text, $black);
             padding: 3.375rem 2.25rem;
         }
 
@@ -252,7 +253,7 @@
                 color: inherit;
 
                 &::after {
-                    color: $ntg-dark-gray; // temporary
+                    color: var(--current-theme-secondary-text, $black);
                 }
             }
         }

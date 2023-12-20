@@ -39,7 +39,8 @@
         }
     }
 
-    &[data-bs-theme="default"] .card {
+    &[data-bs-theme="default"] .card,
+    &[data-bs-theme="white"] .card {
         &:not(.card--flip) {
             .card-body,
             .card-footer {
@@ -49,7 +50,7 @@
         }
     }
 
-    &:not([data-bs-theme="default"]) .card {
+    &:not([data-bs-theme="default"]):not(.ntg-cards-carousel--testimonial) .card {
         --#{$prefix}card-color: #{$body-color};
         --#{$prefix}card-bg: #{$white};
 

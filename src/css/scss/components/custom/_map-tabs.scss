@@ -1,11 +1,14 @@
-//Default color definitions
+// default color definitions
 .ntg-map-tabs {
-    --map-tabs-background-color: var(--current-theme-color, #0D2C4D);
-    --map-tabs-background-color-light: var(--current-theme-color-lighter, #112936);
-    --map-tabs-text-color: var(--current-theme-text-color, #{$white});
-        
+    // --map-tabs-background-color: var(--current-theme-color, #0D2C4D);
+    // --map-tabs-background-color-light: var(--current-theme-color-lighter, #112936);
+    // --map-tabs-text-color: var(--current-theme-text-color, #{$white});
+    --map-tabs-background-color: #0D2C4D;
+    --map-tabs-background-color-light: #112936;
+    --map-tabs-text-color: #fff;
+
     .btn-outline-default {
-        @include button-outline-variant($white);
+        @include button-outline-variant(#fff);
     }
 }
 

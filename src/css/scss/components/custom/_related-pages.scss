@@ -1,11 +1,11 @@
-//Default color definitions
+// default colour definitions
 .ntg-related-pages {    
     --related-pages-background-color: #{$ntg-territory-stone};
     --related-pages-text-color: #{$ntg-dark-gray};
     --related-pages-special-color: #{$white};
 }
 
-//Color definitions when html or body has data-bs-theme
+// colour definitions when html or body has data-bs-theme
 [data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
     .ntg-related-pages {
         --related-pages-background-color: var(--current-theme-tertiary);
@@ -14,7 +14,7 @@
     }
 }
 
-//Color definitions when footer has data-bs-theme
+// colour definitions when footer has data-bs-theme
 .ntg-related-pages[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
     --related-pages-background-color: var(--current-theme-color);
     --related-pages-text-color: var(--current-theme-text-color);
@@ -50,5 +50,15 @@
         &::before {
             color: var(--related-pages-special-color);
         }
+
+        &.active {
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+
+    a {
+        font-weight: 400;
     }
 }
