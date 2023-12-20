@@ -20898,7 +20898,7 @@ textarea.form-control-lg {
   background-color: var(--current-theme-color);
   color: var(--current-theme-text-color);
   --accordion-background-color: var(--current-theme-text-color, #D7D2CB);
-  --accordion-text-color: var(--current-theme-color, #2B292D);
+  --accordion-text-color: var(--current-theme-text-color-reverse, #2B292D);
 }
 
 .accordion {
