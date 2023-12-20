@@ -22,4 +22,8 @@
             padding-left: 0;
         }
     }
+
+    &-item + &-item::before {
+        color: var(--current-theme-text-color, #{$white});
+    }
 }

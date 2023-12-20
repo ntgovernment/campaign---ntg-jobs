@@ -1,7 +1,7 @@
 .ntg-banner {
     $this: &;
-    color: $white;
     text-shadow: $text-shadow;
+    color: var(--current-theme-text-color, #{$white});
 
     .container {
         height: 100%;
@@ -58,7 +58,7 @@
 
             + .breadcrumb-item {
                 &::before {
-                    filter: brightness(0) invert(100%) drop-shadow($text-shadow);
+                    // filter: drop-shadow($text-shadow);
                 }
             }
         }
