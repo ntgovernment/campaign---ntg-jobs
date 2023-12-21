@@ -1,6 +1,6 @@
 .ntg-icon-and-description {
-    background-color: var(--current-theme-color, #{$ntg-dark-blue});
-    color: var(--current-theme-text-color, #{$white});
+    background-color: var(--current-theme-color, transparent);
+    color: var(--current-theme-text-color, $body-color);
 
     &__wrapper {
         display: flex;

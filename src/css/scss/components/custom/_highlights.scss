@@ -1,8 +1,11 @@
 .ntg-highlights {
+    color: var(--current-theme-text-color, $body-color);
+    background: var(--current-theme-color, transparent);
+
     &__highlight {
         position: relative;
         padding-left: 1rem;
-        border-left: 4px solid $primary; // temporary
+        border-left: 4px solid var(--current-theme-secondary, $ntg-olive-green);
 
         &:focus-within {
             @include focus();

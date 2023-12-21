@@ -15550,6 +15550,7 @@ textarea.form-control-lg {
   --current-theme-color: #D7D2CB;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #cac3ba;
   --current-theme-color-lighter: #e0dcd7;
   --current-theme-primary: #D7D2CB;
@@ -15802,6 +15803,7 @@ textarea.form-control-lg {
   --current-theme-color: #2B292D;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #1c1a1d;
   --current-theme-color-lighter: #353338;
   --current-theme-primary: #2B292D;
@@ -16054,6 +16056,7 @@ textarea.form-control-lg {
   --current-theme-color: #E5004D;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #c60043;
   --current-theme-color-lighter: #f90054;
   --current-theme-primary: #E5004D;
@@ -16306,6 +16309,7 @@ textarea.form-control-lg {
   --current-theme-color: #0E2C4D;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #091d33;
   --current-theme-color-lighter: #11365e;
   --current-theme-primary: #0E2C4D;
@@ -16558,6 +16562,7 @@ textarea.form-control-lg {
   --current-theme-color: #FB471F;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #000;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #f73104;
   --current-theme-color-lighter: #fb5733;
   --current-theme-primary: #FB471F;
@@ -16810,6 +16815,7 @@ textarea.form-control-lg {
   --current-theme-color: #104735;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #0a2e22;
   --current-theme-color-lighter: #145841;
   --current-theme-primary: #104735;
@@ -17062,6 +17068,7 @@ textarea.form-control-lg {
   --current-theme-color: #092522;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #030c0b;
   --current-theme-color-lighter: #0d3531;
   --current-theme-primary: #092522;
@@ -17314,6 +17321,7 @@ textarea.form-control-lg {
   --current-theme-color: #B1E2F9;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #95d7f7;
   --current-theme-color-lighter: #c4e9fa;
   --current-theme-primary: #B1E2F9;
@@ -17566,6 +17574,7 @@ textarea.form-control-lg {
   --current-theme-color: #F2A900;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #d39400;
   --current-theme-color-lighter: #ffb407;
   --current-theme-primary: #F2A900;
@@ -17818,6 +17827,7 @@ textarea.form-control-lg {
   --current-theme-color: #F6EFF6;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #ebdbeb;
   --current-theme-color-lighter: #fdfcfd;
   --current-theme-primary: #F6EFF6;
@@ -18070,6 +18080,7 @@ textarea.form-control-lg {
   --current-theme-color: #7F1F7F;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #661966;
   --current-theme-color-lighter: #8f238f;
   --current-theme-primary: #7F1F7F;
@@ -18322,6 +18333,7 @@ textarea.form-control-lg {
   --current-theme-color: #DAD9DA;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #cbc9cb;
   --current-theme-color-lighter: #e4e3e4;
   --current-theme-primary: #DAD9DA;
@@ -18574,6 +18586,7 @@ textarea.form-control-lg {
   --current-theme-color: #454347;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #363437;
   --current-theme-color-lighter: #4f4d51;
   --current-theme-primary: #454347;
@@ -18826,6 +18839,7 @@ textarea.form-control-lg {
   --current-theme-color: #0093B8;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #000;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #007b99;
   --current-theme-color-lighter: #00a3cc;
   --current-theme-primary: #0093B8;
@@ -19078,6 +19092,7 @@ textarea.form-control-lg {
   --current-theme-color: #4F1F6F;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #3e1857;
   --current-theme-color-lighter: #5a237f;
   --current-theme-primary: #4F1F6F;
@@ -19330,6 +19345,7 @@ textarea.form-control-lg {
   --current-theme-color: #FBF2EA;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #f6e2d0;
   --current-theme-color-lighter: #fefdfb;
   --current-theme-primary: #FBF2EA;
@@ -19582,6 +19598,7 @@ textarea.form-control-lg {
   --current-theme-color: #1f1f5f;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #171748;
   --current-theme-color-lighter: #24246e;
   --current-theme-primary: #1f1f5f;
@@ -19834,6 +19851,7 @@ textarea.form-control-lg {
   --current-theme-color: #fff;
   --current-theme-bg-contrast-color: #000;
   --current-theme-text-color: #2B292D;
+  --current-theme-text-color-reverse: #fff;
   --current-theme-color-darker: #f0f0f0;
   --current-theme-color-lighter: white;
   --current-theme-primary: #fff;
@@ -20086,6 +20104,7 @@ textarea.form-control-lg {
   --current-theme-color: #C33726;
   --current-theme-bg-contrast-color: ;
   --current-theme-text-color: #fff;
+  --current-theme-text-color-reverse: #2B292D;
   --current-theme-color-darker: #a93021;
   --current-theme-color-lighter: #d43c29;
   --current-theme-primary: #C33726;
@@ -20898,7 +20917,7 @@ textarea.form-control-lg {
   background-color: var(--current-theme-color);
   color: var(--current-theme-text-color);
   --accordion-background-color: var(--current-theme-text-color, #D7D2CB);
-  --accordion-text-color: var(--current-theme-color, #2B292D);
+  --accordion-text-color: var(--current-theme-text-color-reverse, #2B292D);
 }
 
 .accordion {
@@ -21154,6 +21173,7 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 .card-title {
+  color: inherit;
   font-size: var(--h4-size);
 }
 .card-text ul li:before {
@@ -21262,7 +21282,6 @@ textarea.form-control-lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: var(--current-theme-secondary-text, #000);
   background-color: var(--current-theme-secondary, #FB471F);
   opacity: 0;
   -webkit-transition: 0.2s opacity ease-out;
@@ -21270,6 +21289,7 @@ textarea.form-control-lg {
 }
 .card--flip .card-body,
 .card--flip .card-footer {
+  color: var(--current-theme-secondary-text, #000);
   padding: 3.375rem 2.25rem;
 }
 .card--flip .card-body {
@@ -21282,7 +21302,7 @@ textarea.form-control-lg {
   color: inherit;
 }
 .card--flip .card-footer a::after {
-  color: #2B292D;
+  color: var(--current-theme-secondary-text, #000);
 }
 
 .container-slim {
@@ -21680,18 +21700,19 @@ h3:target,
   }
 }
 .ntg-cards-carousel[data-bs-theme=default] .card:not(.card--flip) .card-body,
-.ntg-cards-carousel[data-bs-theme=default] .card:not(.card--flip) .card-footer {
+.ntg-cards-carousel[data-bs-theme=default] .card:not(.card--flip) .card-footer, .ntg-cards-carousel[data-bs-theme=white] .card:not(.card--flip) .card-body,
+.ntg-cards-carousel[data-bs-theme=white] .card:not(.card--flip) .card-footer {
   padding-left: 0;
   padding-right: 0;
 }
-.ntg-cards-carousel:not([data-bs-theme=default]) .card {
+.ntg-cards-carousel:not([data-bs-theme=default]):not(.ntg-cards-carousel--testimonial) .card {
   --bs-card-color: #2B292D;
   --bs-card-bg: #fff;
 }
-.ntg-cards-carousel:not([data-bs-theme=default]) .card-link {
+.ntg-cards-carousel:not([data-bs-theme=default]):not(.ntg-cards-carousel--testimonial) .card-link {
   color: #2B292D;
 }
-.ntg-cards-carousel:not([data-bs-theme=default]) .card-link::after {
+.ntg-cards-carousel:not([data-bs-theme=default]):not(.ntg-cards-carousel--testimonial) .card-link::after {
   color: #104735;
 }
 .ntg-cards-carousel .flickity-button {
@@ -22039,6 +22060,11 @@ h3:target,
   .ntg-cards-carousel--testimonial .flickity-prev-next-button.next {
     right: calc(50% - 45px);
   }
+}
+
+.ntg-columns {
+  background-color: var(--current-theme-color);
+  color: var(--current-theme-text-color);
 }
 
 .ntg-featured-testimonial {
@@ -22665,22 +22691,6 @@ main {
 .mm-menu.header-scroll {
   --header-text-color: #2B292D;
 }
-.page-header-container .btn-default,
-.mm-menu .btn-default {
-  --bs-btn-color: var(--current-theme-tertiary-text, #fff);
-  --bs-btn-bg: var(--current-theme-tertiary, #104735);
-  --bs-btn-border-color: var(--current-theme-tertiary, #104735);
-  --bs-btn-hover-color: var(--current-theme-tertiary-text, #fff);
-  --bs-btn-hover-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
-  --bs-btn-hover-border-color: var(--current-theme-tertiary-bg-subtle, #0d392a);
-  --bs-btn-active-color: var(--current-theme-tertiary-text, #fff);
-  --bs-btn-active-bg: var(--current-theme-tertiary-bg-subtle, #0e3c2d);
-  --bs-btn-active-border-color: var(--current-theme-tertiary-border-subtle, #0d392a);
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: var(--current-theme-tertiary-text, #fff);
-  --bs-btn-disabled-bg: var(--current-theme-tertiary, #104735);
-  --bs-btn-disabled-border-color: var(--current-theme-tertiary, #104735);
-}
 
 .page-header-container {
   --header-text-color: #fff;
@@ -22867,10 +22877,14 @@ main {
   outline: none;
 }
 
+.ntg-highlights {
+  color: var(--current-theme-text-color, #2B292D);
+  background: var(--current-theme-color, transparent);
+}
 .ntg-highlights__highlight {
   position: relative;
   padding-left: 1rem;
-  border-left: 4px solid #D7D2CB;
+  border-left: 4px solid var(--current-theme-secondary, #104735);
 }
 .ntg-highlights__highlight:focus-within {
   -webkit-box-shadow: none !important;
@@ -22917,8 +22931,8 @@ main {
 }
 
 .ntg-icon-and-description {
-  background-color: var(--current-theme-color, #0E2C4D);
-  color: var(--current-theme-text-color, #fff);
+  background-color: var(--current-theme-color, transparent);
+  color: var(--current-theme-text-color, #2B292D);
 }
 .ntg-icon-and-description__wrapper {
   display: -webkit-box;
@@ -22936,6 +22950,8 @@ main {
 }
 
 .ntg-image-carousel {
+  background-color: var(--current-theme-color, transparent);
+  color: var(--current-theme-text-color, #2B292D);
   overflow-x: clip;
 }
 @media (max-width: 1500px) {
@@ -23304,6 +23320,8 @@ main {
   color: var(--header-text-color);
   padding-top: 3rem;
   padding-bottom: 3rem;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 .ntg-main-nav__panel:not(.open) {
   top: -9999px;
@@ -23388,9 +23406,9 @@ main {
 }
 
 .ntg-map-tabs {
-  --map-tabs-background-color: var(--current-theme-color, #0D2C4D);
-  --map-tabs-background-color-light: var(--current-theme-color-lighter, #112936);
-  --map-tabs-text-color: var(--current-theme-text-color, #fff);
+  --map-tabs-background-color: #0D2C4D;
+  --map-tabs-background-color-light: #112936;
+  --map-tabs-text-color: #fff;
 }
 .ntg-map-tabs .btn-outline-default {
   --bs-btn-color: #fff;
@@ -23685,6 +23703,12 @@ main {
 }
 .ntg-related-pages li::before {
   color: var(--related-pages-special-color);
+}
+.ntg-related-pages li.active a {
+  font-weight: 700;
+}
+.ntg-related-pages a {
+  font-weight: 400;
 }
 
 .search-global,

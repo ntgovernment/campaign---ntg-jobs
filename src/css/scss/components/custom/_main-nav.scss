@@ -186,6 +186,7 @@
         color: var(--header-text-color);
         padding-top: 3rem;
         padding-bottom: 3rem;
+        box-shadow: 0 2px 8px rgba($black, 0.2);
 
         &:not(.open) {
             top: -9999px;
