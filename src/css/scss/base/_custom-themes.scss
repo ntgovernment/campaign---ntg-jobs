@@ -130,91 +130,91 @@
             --bs-link-color-rgb: #{to-rgb(map.get($value, "link-color"))};
             --bs-link-hover-color: #{map.get($value, "link-hover-color")};
             --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "link-hover-color"))};
-        }
 
-        [data-bs-theme="primary"] {
-            --current-theme-color: var(--bs-primary);
-            --current-theme-text-color: var(--bs-primary-text);
-            --current-theme-color-darker: #{darken(map.get($value, "primary"), 6)};
-            --current-theme-color-lighter: #{lighten(map.get($value, "primary"), 4)};
+            [data-bs-theme="primary"] {
+                --current-theme-color: var(--bs-primary);
+                --current-theme-text-color: var(--bs-primary-text);
+                --current-theme-color-darker: #{darken(map.get($value, "primary"), 6)};
+                --current-theme-color-lighter: #{lighten(map.get($value, "primary"), 4)};
 
-            --bs-link-color: #{map.get($value, "primary-link-color")};
-            --bs-link-color-rgb: #{to-rgb(map.get($value, "primary-link-color"))};
-            --bs-link-hover-color: #{map.get($value, "primary-link-hover-color")};
-            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "primary-link-hover-color"))};
+                --bs-link-color: #{map.get($value, "primary-link-color")};
+                --bs-link-color-rgb: #{to-rgb(map.get($value, "primary-link-color"))};
+                --bs-link-hover-color: #{map.get($value, "primary-link-hover-color")};
+                --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "primary-link-hover-color"))};
 
-            // Override for text-colored button for primary theme
-            // This is to ensure the button gets primary color when primary theme is selected
-            .btn-outline-default {
-                @include button-outline-variant(map.get($value, "primary-text"))
+                // Override for text-colored button for primary theme
+                // This is to ensure the button gets primary color when primary theme is selected
+                .btn-outline-default {
+                    @include button-outline-variant(map.get($value, "primary-text"))
+                }
             }
-        }
 
-        [data-bs-theme="secondary"] {
-            --current-theme-color: var(--bs-secondary);
-            --current-theme-text-color: var(--bs-secondary-text);
-            --current-theme-color-darker: #{darken(map.get($value, "secondary"), 6)};
-            --current-theme-color-lighter: #{lighten(map.get($value, "secondary"), 4)};
+            [data-bs-theme="secondary"] {
+                --current-theme-color: var(--bs-secondary);
+                --current-theme-text-color: var(--bs-secondary-text);
+                --current-theme-color-darker: #{darken(map.get($value, "secondary"), 6)};
+                --current-theme-color-lighter: #{lighten(map.get($value, "secondary"), 4)};
 
-            --bs-link-color: #{map.get($value, "secondary-link-color")};
-            --bs-link-color-rgb: #{to-rgb(map.get($value, "secondary-link-color"))};
-            --bs-link-hover-color: #{map.get($value, "secondary-link-hover-color")};
-            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "secondary-link-hover-color"))};
+                --bs-link-color: #{map.get($value, "secondary-link-color")};
+                --bs-link-color-rgb: #{to-rgb(map.get($value, "secondary-link-color"))};
+                --bs-link-hover-color: #{map.get($value, "secondary-link-hover-color")};
+                --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "secondary-link-hover-color"))};
 
-            // Override for text-colored button for secondary theme
-            // This is to ensure the button gets secondary color when secondary theme is selected
-            .btn-outline-default {
-                @include button-outline-variant(map.get($value, "secondary-text"))
+                // Override for text-colored button for secondary theme
+                // This is to ensure the button gets secondary color when secondary theme is selected
+                .btn-outline-default {
+                    @include button-outline-variant(map.get($value, "secondary-text"))
+                }
             }
-        }
 
-        [data-bs-theme="tertiary"] {
-            --current-theme-color: var(--bs-tertiary);
-            --current-theme-text-color: var(--bs-tertiary-text);
-            --current-theme-color-darker: #{darken(map.get($value, "tertiary"), 6)};
-            --current-theme-color-lighter: #{lighten(map.get($value, "tertiary"), 4)};
+            [data-bs-theme="tertiary"] {
+                --current-theme-color: var(--bs-tertiary);
+                --current-theme-text-color: var(--bs-tertiary-text);
+                --current-theme-color-darker: #{darken(map.get($value, "tertiary"), 6)};
+                --current-theme-color-lighter: #{lighten(map.get($value, "tertiary"), 4)};
 
-            --bs-link-color: #{map.get($value, "tertiary-link-color")};
-            --bs-link-color-rgb: #{to-rgb(map.get($value, "tertiary-link-color"))};
-            --bs-link-hover-color: #{map.get($value, "tertiary-link-hover-color")};
-            --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "tertiary-link-hover-color"))};
+                --bs-link-color: #{map.get($value, "tertiary-link-color")};
+                --bs-link-color-rgb: #{to-rgb(map.get($value, "tertiary-link-color"))};
+                --bs-link-hover-color: #{map.get($value, "tertiary-link-hover-color")};
+                --bs-link-hover-color-rgb: #{to-rgb(map.get($value, "tertiary-link-hover-color"))};
 
-            // Override for text-colored button for tertiary theme
-            // This is to ensure the button gets tertiary color when tertiary theme is selected
-            .btn-outline-default {
-                @include button-outline-variant(map.get($value, "tertiary-text"))
+                // Override for text-colored button for tertiary theme
+                // This is to ensure the button gets tertiary color when tertiary theme is selected
+                .btn-outline-default {
+                    @include button-outline-variant(map.get($value, "tertiary-text"))
+                }
             }
-        }
-        
-        .btn-primary {
-            @include button-variant(map.get($value, "primary"), map.get($value, "primary"), map.get($value, "primary-text"))
-        }
-        .btn-secondary {
-            @include button-variant(map.get($value, "secondary"), map.get($value, "secondary"), map.get($value, "secondary-text"))
-        }
-        .btn-tertiary {
-            @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
-        }
-        
-        .btn-outline-primary {
-            @include button-outline-variant(map.get($value, "primary"))
-        }
-        .btn-outline-secondary {
-            @include button-outline-variant(map.get($value, "secondary"))
-        }
-        .btn-outline-tertiary {
-            @include button-outline-variant(map.get($value, "tertiary"))
-        }
+            
+            .btn-primary {
+                @include button-variant(map.get($value, "primary"), map.get($value, "primary"), map.get($value, "primary-text"))
+            }
+            .btn-secondary {
+                @include button-variant(map.get($value, "secondary"), map.get($value, "secondary"), map.get($value, "secondary-text"))
+            }
+            .btn-tertiary {
+                @include button-variant(map.get($value, "tertiary"), map.get($value, "tertiary"), map.get($value, "tertiary-text"))
+            }
+            
+            .btn-outline-primary {
+                @include button-outline-variant(map.get($value, "primary"))
+            }
+            .btn-outline-secondary {
+                @include button-outline-variant(map.get($value, "secondary"))
+            }
+            .btn-outline-tertiary {
+                @include button-outline-variant(map.get($value, "tertiary"))
+            }
 
-        // Button outline that takes the default font color as the color and border for the theme
-        .btn-outline-default {
-            @include button-outline-variant(map.get($value, "text-color"))
-        }
+            // Button outline that takes the default font color as the color and border for the theme
+            .btn-outline-default {
+                @include button-outline-variant(map.get($value, "text-color"))
+            }
 
-        .accordion {
-            $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{map.get($value, 'main')}' /></svg>");
-            --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
-            --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+            .accordion {
+                $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{map.get($value, 'main')}' /></svg>");
+                --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+                --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+            }
         }
     }
 }
