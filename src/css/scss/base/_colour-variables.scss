@@ -207,6 +207,7 @@ $accesible-color-definitions: (
 );
 
 //All this can be used as [data-bs-theme="color-name"]
+//Need to get the colors from $accessible-color-definitions so that we can get the respective accessible color. Not having the color in $accessible-color-definitions will cause an error
 $theme-color-definitions: (
 	"territory-stone" : (
 		"primary": map.get($accesible-color-definitions, "territory-stone"),
@@ -304,7 +305,6 @@ $theme-color-definitions: (
 		"tertiary": map.get($accesible-color-definitions, "dark-gray"),
 	),
 );
-
 
 $base-colors: ();
 $base-colors-primary: ();
