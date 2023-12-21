@@ -76,7 +76,7 @@ $theme-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, va
 $black-gradient-subtle: linear-gradient(0, rgba(0, 0, 0, 0.52) 4.18%, rgba(0, 0, 0, 0.00) 38.51%);
 
 $min-contrast-ratio:   4.5;
-$color-contrast-dark:      $black;
+$color-contrast-dark:      $ntg-dark-gray;
 $color-contrast-light:     $white;
 
 $accesible-color-definitions: (
@@ -199,535 +199,211 @@ $accesible-color-definitions: (
 	"red-dirt": (
 		"color": $ntg-red-dirt,
 		"accessible-color": $white
+	),
+	"ocean-blue": (
+		"color": $ntg-ocean-blue,
+		"accessible-color": $white
 	)
 );
 
+//All this can be used as [data-bs-theme="color-name"]
 $theme-color-definitions: (
 	"territory-stone" : (
-		"primary": map-get($accesible-color-definitions, "territory-stone"),
-		"secondary": map-get($accesible-color-definitions, "olive-green"),
-		"tertiary": map-get($accesible-color-definitions, "grey")
+		"primary": map.get($accesible-color-definitions, "territory-stone"),
+		"secondary": map.get($accesible-color-definitions, "olive-green"),
+		"tertiary": map.get($accesible-color-definitions, "grey"),
 	),
 	"dark-gray" : (
-		"primary": map-get($accesible-color-definitions, "dark-gray"),
-		"secondary": map-get($accesible-color-definitions, "charcoal-grey-10"),
-		"tertiary": map-get($accesible-color-definitions, "territory-stone")
+		"primary": map.get($accesible-color-definitions, "dark-gray"),
+		"secondary": map.get($accesible-color-definitions, "charcoal-grey-10"),
+		"tertiary": map.get($accesible-color-definitions, "territory-stone"),
 	),
 	"central-australia" : (
-		"primary": map-get($accesible-color-definitions, "central-australia"),
-		"secondary": map-get($accesible-color-definitions, "pink"),
-		"tertiary": map-get($accesible-color-definitions, "darkest-blue")
+		"primary": map.get($accesible-color-definitions, "central-australia"),
+		"secondary": map.get($accesible-color-definitions, "pink"),
+		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"dark-blue" : (
-		"primary": map-get($accesible-color-definitions, "dark-blue"),
-		"secondary": map-get($accesible-color-definitions, "top-end"),
-		"tertiary": map-get($accesible-color-definitions, "darkest-blue")
+		"primary": map.get($accesible-color-definitions, "dark-blue"),
+		"secondary": map.get($accesible-color-definitions, "top-end"),
+		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"barkly" : (
-		"primary": map-get($accesible-color-definitions, "barkly"),
-		"secondary": map-get($accesible-color-definitions, "baby-orange"),
-		"tertiary": map-get($accesible-color-definitions, "darkest-blue")
+		"primary": map.get($accesible-color-definitions, "barkly"),
+		"secondary": map.get($accesible-color-definitions, "baby-orange"),
+		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"olive-green" : (
-		"primary": map-get($accesible-color-definitions, "olive-green"),
-		"secondary": map-get($accesible-color-definitions, "green-tree-frog"),
-		"tertiary": map-get($accesible-color-definitions, "darker-green")
+		"primary": map.get($accesible-color-definitions, "olive-green"),
+		"secondary": map.get($accesible-color-definitions, "green-tree-frog"),
+		"tertiary": map.get($accesible-color-definitions, "darker-green"),
 	),
 	"dark-green" : (
-		"primary": map-get($accesible-color-definitions, "dark-green"),
-		"secondary": map-get($accesible-color-definitions, "territory-stone"),
-		"tertiary": map-get($accesible-color-definitions, "darker-green")
+		"primary": map.get($accesible-color-definitions, "dark-green"),
+		"secondary": map.get($accesible-color-definitions, "territory-stone"),
+		"tertiary": map.get($accesible-color-definitions, "darker-green"),
 	),
 	"baby-blue" : (
-		"primary": map-get($accesible-color-definitions, "baby-blue"),
-		"secondary": map-get($accesible-color-definitions, "top-end"),
-		"tertiary": map-get($accesible-color-definitions, "sky-blue")
+		"primary": map.get($accesible-color-definitions, "baby-blue"),
+		"secondary": map.get($accesible-color-definitions, "top-end"),
+		"tertiary": map.get($accesible-color-definitions, "sky-blue"),
 	),
 	"big-rivers" : (
-		"primary": map-get($accesible-color-definitions, "big-rivers"),
-		"secondary": map-get($accesible-color-definitions, "dark-blue"),
-		"tertiary": map-get($accesible-color-definitions, "darkest-blue")
+		"primary": map.get($accesible-color-definitions, "big-rivers"),
+		"secondary": map.get($accesible-color-definitions, "dark-blue"),
+		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"fairy-wren-7" : (
-		"primary": map-get($accesible-color-definitions, "fairy-wren-7"),
-		"secondary": map-get($accesible-color-definitions, "fairy-wren"),
-		"tertiary": map-get($accesible-color-definitions, "bush-plum")
+		"primary": map.get($accesible-color-definitions, "fairy-wren-7"),
+		"secondary": map.get($accesible-color-definitions, "fairy-wren"),
+		"tertiary": map.get($accesible-color-definitions, "bush-plum"),
 	),
 	"fairy-wren" : (
-		"primary": map-get($accesible-color-definitions, "fairy-wren"),
-		"secondary": map-get($accesible-color-definitions, "fairy-wren-7"),
-		"tertiary": map-get($accesible-color-definitions, "bush-plum")
+		"primary": map.get($accesible-color-definitions, "fairy-wren"),
+		"secondary": map.get($accesible-color-definitions, "fairy-wren-7"),
+		"tertiary": map.get($accesible-color-definitions, "bush-plum"),
 	),
 	"charcoal-grey-20" : (
-		"primary": map-get($accesible-color-definitions, "charcoal-grey-20"),
-		"secondary": map-get($accesible-color-definitions, "charcoal-grey-40"),
-		"tertiary": map-get($accesible-color-definitions, "charcoal-grey-60")
+		"primary": map.get($accesible-color-definitions, "charcoal-grey-20"),
+		"secondary": map.get($accesible-color-definitions, "charcoal-grey-40"),
+		"tertiary": map.get($accesible-color-definitions, "charcoal-grey-60"),
 	),
 	"charcoal-grey" : (
-		"primary": map-get($accesible-color-definitions, "charcoal-grey"),
-		"secondary": map-get($accesible-color-definitions, "white"),
-		"tertiary": map-get($accesible-color-definitions, "dark-gray")
+		"primary": map.get($accesible-color-definitions, "charcoal-grey"),
+		"secondary": map.get($accesible-color-definitions, "white"),
+		"tertiary": map.get($accesible-color-definitions, "dark-gray"),
 	),
 	"top-end" : (
-		"primary": map-get($accesible-color-definitions, "top-end"),
-		"secondary": map-get($accesible-color-definitions, "desert-yam-7"),
-		"tertiary": map-get($accesible-color-definitions, "ocean-blue")
+		"secondary": map.get($accesible-color-definitions, "desert-yam-7"),
+		"primary": map.get($accesible-color-definitions, "top-end"),
+		"tertiary": map.get($accesible-color-definitions, "ocean-blue"),
 	),
 	"bush-plum" : (
-		"primary": map-get($accesible-color-definitions, "bush-plum"),
-		"secondary": map-get($accesible-color-definitions, "fairy-wren"),
-		"tertiary": map-get($accesible-color-definitions, "dark-blue")
+		"primary": map.get($accesible-color-definitions, "bush-plum"),
+		"secondary": map.get($accesible-color-definitions, "fairy-wren"),
+		"tertiary": map.get($accesible-color-definitions, "dark-blue"),
 	),
 	"desert-yam-7" : (
-		"primary": map-get($accesible-color-definitions, "desert-yam-7"),
-		"secondary": map-get($accesible-color-definitions, "olive-green"),
-		"tertiary": map-get($accesible-color-definitions, "territory-stone")
+		"primary": map.get($accesible-color-definitions, "desert-yam-7"),
+		"secondary": map.get($accesible-color-definitions, "olive-green"),
+		"tertiary": map.get($accesible-color-definitions, "territory-stone"),
 	),
 	"arafura-blue" : (
-		"primary": map-get($accesible-color-definitions, "arafura-blue"),
-		"secondary": map-get($accesible-color-definitions, "top-end"),
-		"tertiary": map-get($accesible-color-definitions, "darkest-blue")
+		"primary": map.get($accesible-color-definitions, "arafura-blue"),
+		"secondary": map.get($accesible-color-definitions, "top-end"),
+		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"white" : (
-		"primary": map-get($accesible-color-definitions, "white"),
-		"secondary": map-get($accesible-color-definitions, "territory-stone"),
-		"tertiary": map-get($accesible-color-definitions, "olive-green")
+		"primary": map.get($accesible-color-definitions, "white"),
+		"secondary": map.get($accesible-color-definitions, "territory-stone"),
+		"tertiary": map.get($accesible-color-definitions, "olive-green"),
 	),
 	"desert-yam" : (
-		"primary": map-get($accesible-color-definitions, "desert-yam"),
-		"secondary": map-get($accesible-color-definitions, "red-dirt"),
-		"tertiary": map-get($accesible-color-definitions, "dark-gray")
+		"primary": map.get($accesible-color-definitions, "desert-yam"),
+		"secondary": map.get($accesible-color-definitions, "red-dirt"),
+		"tertiary": map.get($accesible-color-definitions, "dark-gray"),
 	),
 );
 
 
 $base-colors: ();
+$base-colors-primary: ();
+$base-colors-secondary: ();
+$base-colors-tertiary: ();
 
-// use the main color for each theme-colors
 @each $color-name, $color-values in $theme-color-definitions {
+	$primary-color: map.get(map.get($color-values, "primary"), "color");
+	$primary-color-dark: darken($primary-color, 6);
+	$primary-color-light: lighten($primary-color, 4);
+	$primary-accessible-color: map.get(map.get($color-values, "primary"), "accessible-color");
+	$secondary-color: map.get(map.get($color-values, "secondary"), "color");
+	$secondary-color-dark: darken($secondary-color, 6);
+	$secondary-color-light: lighten($secondary-color, 4);
+	$secondary-accessible-color: map.get(map.get($color-values, "secondary"), "accessible-color");
+	$tertiary-color: map.get(map.get($color-values, "tertiary"), "color");
+	$tertiary-color-dark: darken($tertiary-color, 6);
+	$tertiary-color-light: lighten($tertiary-color, 4);
+	$tertiary-accessible-color: map.get(map.get($color-values, "tertiary"), "accessible-color");
+
+	//Keeping the chunks manageable by separting primary tertiary and secondary variables
 	$base-colors: map-merge($base-colors, (
 		#{$color-name}: (
-			"main": map.get(
-				map.get($color-values, "primary"), 
-				"color"
-			),
-			"text-color": map.get(
-				map.get($color-values, "primary"), 
-				"accessible-color"
-			),
-			"text-color-reverse": color-contrast(map.get(map.get($color-values, "primary"), "accessible-color")),
-			"link-color": map.get(map.get($color-values, "primary"), "accessible-color"),
-			"link-hover-color": map.get(map.get($color-values, "primary"), "accessible-color"),
-			"primary": map.get(map.get($color-values, "primary"), "color"),
-			"primary-text": map.get(map.get($color-values, "primary"), "accessible-color"),
-			"primary-link-color": map.get(map.get($color-values, "primary"), "accessible-color"),
-			"primary-link-hover-color": map.get(map.get($color-values, "primary"), "accessible-color"),
+			"main": $primary-color,
+			"color": $primary-color,
+			"color-rgb": to-rgb($primary-color),
+			"color-darker": $primary-color-dark,
+			"color-darker-text": color-contrast($primary-color-dark),
+			"color-lighter": $primary-color-light,
+			"color-lighter-text": color-contrast($primary-color-light),
+			"text-color": $primary-accessible-color,
+			"text-color-rgb": to-rgb($primary-accessible-color),
+			"text-color-reverse": color-contrast($primary-accessible-color),
+			"link-color": $primary-accessible-color,
+			"link-color-rgb": to-rgb($primary-accessible-color),
+			"link-hover-color": $primary-accessible-color,
+			"link-hover-color-rgb": to-rgb($primary-accessible-color),
+			"border-subtle": tint-color($primary-color, 30%),
+			"bg-subtle": tint-color($primary-color, 60%)
+		)
+	));
+
+	$base-colors-primary: map-merge($base-colors-primary, (
+		#{$color-name}: (
+			"primary": $primary-color,
+			"primary-darker": $primary-color-dark,
+			"primary-darker-text": color-contrast($primary-color-dark),
+			"primary-lighter": $primary-color-light,
+			"primary-lighter-text": color-contrast($primary-color-light),
+			"primary-rgb": to-rgb($primary-color),
+			"primary-text": $primary-accessible-color,
+			"primary-text-rgb": to-rgb($primary-accessible-color),
+			"primary-text-reverse": color-contrast($primary-accessible-color),
+			"primary-text-reverse-rgb": to-rgb(color-contrast($primary-accessible-color)),
+			"primary-link-color": $primary-accessible-color,
+			"primary-link-color-rgb": to-rgb($primary-accessible-color),
+			"primary-link-hover-color": $primary-accessible-color,
+			"primary-link-hover-color-rgb": to-rgb($primary-accessible-color),
+		)
+	));
+
+	$base-colors-secondary: map-merge($base-colors-secondary, (
+		#{$color-name}: (
+			"secondary": $secondary-color,
+			"secondary-darker": $secondary-color-dark,
+			"secondary-darker-text": color-contrast($secondary-color-dark),
+			"secondary-lighter": $secondary-color-light,
+			"secondary-lighter-text": color-contrast($secondary-color-light),
+			"secondary-rgb": to-rgb($secondary-color),
+			"secondary-text": $secondary-accessible-color,
+			"secondary-text-rgb": to-rgb($secondary-accessible-color),
+			"secondary-text-reverse": color-contrast($secondary-accessible-color),
+			"secondary-text-reverse-rgb": to-rgb(color-contrast($secondary-accessible-color)),
+			"secondary-link-color": $secondary-accessible-color,
+			"secondary-link-color-rgb": to-rgb($secondary-accessible-color),
+			"secondary-link-hover-color": $secondary-accessible-color,
+			"secondary-link-hover-color-rgb": to-rgb($secondary-accessible-color),
+		)
+	));
+
+	$base-colors-tertiary: map-merge($base-colors-tertiary, (
+		#{$color-name}: (
+			"tertiary": $tertiary-color,
+			"tertiary-darker": $tertiary-color-dark,
+			"tertiary-darker-text": color-contrast($tertiary-color-dark),
+			"tertiary-lighter": $tertiary-color-light,
+			"tertiary-lighter-text": color-contrast($tertiary-color-light),
+			"tertiary-rgb": to-rgb($tertiary-color),
+			"tertiary-text": $tertiary-accessible-color,
+			"tertiary-text-rgb": to-rgb($tertiary-accessible-color),
+			"tertiary-text-reverse": color-contrast($tertiary-accessible-color),
+			"tertiary-text-reverse-rgb": to-rgb(color-contrast($tertiary-accessible-color)),
+			"tertiary-link-color": $tertiary-accessible-color,
+			"tertiary-link-color-rgb": to-rgb($tertiary-accessible-color),
+			"tertiary-link-hover-color": $tertiary-accessible-color,
+			"tertiary-link-hover-color-rgb": to-rgb($tertiary-accessible-color),
 		)
 	));
 }
-
-$base-colors: (
-	"territory-stone" : (
-		"main": map-get($accesible-color-definitions, "territory-stone", "color"),
-		"primary": $ntg-territory-stone,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-olive-green,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-grey,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-territory-stone, 30%),
-		"bg-subtle-color": tint-color($ntg-territory-stone, 60%)
-	),
-	"dark-gray" : (
-		"main": $ntg-dark-gray,
-		"primary": $ntg-dark-gray,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-charcoal-grey-10,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-territory-stone,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-dark-gray, 30%),
-		"bg-subtle-color": tint-color($ntg-dark-gray, 60%)
-	),
-	"central-australia" : (
-		"main": $ntg-central-australia,
-		"primary": $ntg-central-australia,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-pink,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-darkest-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-central-australia, 30%),
-		"bg-subtle-color": tint-color($ntg-central-australia, 60%)
-	),
-	"dark-blue" : (
-		"main": $ntg-dark-blue,
-		"primary": $ntg-dark-blue,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-top-end,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-darkest-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-dark-blue, 30%),
-		"bg-subtle-color": tint-color($ntg-dark-blue, 60%)
-	),
-	"barkly" : (
-		"main": $ntg-barkly,
-		"primary": $ntg-barkly,
-		"primary-text": $black,
-		"primary-link-color": $black,
-		"primary-link-hover-color": $black,
-		"secondary": $ntg-baby-orange,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-darkest-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $black,
-		"text-color-reverse": $white,
-		"link-color": $black,
-		"link-hover-color": $black,
-		"border-subtle-color": tint-color($ntg-barkly, 30%),
-		"bg-subtle-color": tint-color($ntg-barkly, 60%)
-	),
-	"olive-green" : (
-		"main": $ntg-olive-green,
-		"primary": $ntg-olive-green,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-green-tree-frog,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-darker-green,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-olive-green, 30%),
-		"bg-subtle-color": tint-color($ntg-olive-green, 60%)
-	),
-	"dark-green" : (
-		"main": $ntg-dark-green,
-		"primary": $ntg-dark-green,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-territory-stone,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-darker-green,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-dark-green, 30%),
-		"bg-subtle-color": tint-color($ntg-dark-green, 60%)
-	),
-	"baby-blue" : (
-		"main": $ntg-baby-blue,
-		"primary": $ntg-baby-blue,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-top-end,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-sky-blue,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-baby-blue, 30%),
-		"bg-subtle-color": tint-color($ntg-baby-blue, 60%)
-	),
-	"big-rivers" : (
-		"main": $ntg-big-rivers,
-		"primary": $ntg-big-rivers,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-dark-blue,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-darkest-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-big-rivers, 30%),
-		"bg-subtle-color": tint-color($ntg-big-rivers, 60%)
-	),
-	"fairy-wren-7" : (
-		"main": $ntg-fairy-wren-7,
-		"primary": $ntg-fairy-wren-7,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-fairy-wren,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-bush-plum,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-fairy-wren-7, 30%),
-		"bg-subtle-color": tint-color($ntg-fairy-wren-7, 60%)
-	),
-	"fairy-wren" : (
-		"main": $ntg-fairy-wren,
-		"primary": $ntg-fairy-wren,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-fairy-wren-7,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-bush-plum,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-fairy-wren, 30%),
-		"bg-subtle-color": tint-color($ntg-fairy-wren, 60%)
-	),
-	"charcoal-grey-20" : (
-		"main": $ntg-charcoal-grey-20,
-		"primary": $ntg-charcoal-grey-20,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-charcoal-grey-40,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-charcoal-grey-60,
-		"tertiary-text": $black,
-		"tertiary-link-color": $black,
-		"tertiary-link-hover-color": $black,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-charcoal-grey-20, 30%),
-		"bg-subtle-color": tint-color($ntg-charcoal-grey-20, 60%)
-	),
-	"charcoal-grey" : (
-		"main": $ntg-charcoal-grey,
-		"primary": $ntg-charcoal-grey,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $white,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-dark-gray,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-charcoal-grey, 30%),
-		"bg-subtle-color": tint-color($ntg-charcoal-grey, 60%)
-	),
-	"top-end" : (
-		"main": $ntg-top-end,
-		"primary": $ntg-top-end,
-		"primary-text": $black,
-		"primary-link-color": $black,
-		"primary-link-hover-color": $black,
-		"secondary": $ntg-desert-yam-7,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-ocean-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $black,
-		"text-color-reverse": $white,
-		"link-color": $black,
-		"link-hover-color": $black,
-		"border-subtle-color": tint-color($ntg-top-end, 30%),
-		"bg-subtle-color": tint-color($ntg-top-end, 60%)
-	),
-	"bush-plum" : (
-		"main": $ntg-bush-plum,
-		"primary": $ntg-bush-plum,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-fairy-wren,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-dark-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-bush-plum, 30%),
-		"bg-subtle-color": tint-color($ntg-bush-plum, 60%)
-	),
-	"desert-yam-7" : (
-		"main": $ntg-desert-yam-7,
-		"primary": $ntg-desert-yam-7,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-olive-green,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-territory-stone,
-		"tertiary-text": $ntg-dark-gray,
-		"tertiary-link-color": $ntg-dark-gray,
-		"tertiary-link-hover-color": $ntg-dark-gray,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($ntg-desert-yam-7, 30%),
-		"bg-subtle-color": tint-color($ntg-desert-yam-7, 60%)
-	),
-	"arafura-blue" : (
-		"main": $ntg-arafura-blue,
-		"primary": $ntg-arafura-blue,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-top-end,
-		"secondary-text": $black,
-		"secondary-link-color": $black,
-		"secondary-link-hover-color": $black,
-		"tertiary": $ntg-darkest-blue,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-arafura-blue, 30%),
-		"bg-subtle-color": tint-color($ntg-arafura-blue, 60%)
-	),
-	"white" : (
-		"main": $white,
-		"primary": $white,
-		"primary-text": $ntg-dark-gray,
-		"primary-link-color": $ntg-dark-gray,
-		"primary-link-hover-color": $ntg-dark-gray,
-		"secondary": $ntg-territory-stone,
-		"secondary-text": $ntg-dark-gray,
-		"secondary-link-color": $ntg-dark-gray,
-		"secondary-link-hover-color": $ntg-dark-gray,
-		"tertiary": $ntg-olive-green,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $ntg-dark-gray,
-		"text-color-reverse": $white,
-		"link-color": $ntg-dark-gray,
-		"link-hover-color": $ntg-dark-gray,
-		"border-subtle-color": tint-color($white, 30%),
-		"bg-subtle-color": tint-color($white, 60%),
-		"bg-contrast-color": $black
-	),
-	"desert-yam" : (
-		"main": $ntg-desert-yam,
-		"primary": $ntg-desert-yam,
-		"primary-text": $white,
-		"primary-link-color": $white,
-		"primary-link-hover-color": $white,
-		"secondary": $ntg-red-dirt,
-		"secondary-text": $white,
-		"secondary-link-color": $white,
-		"secondary-link-hover-color": $white,
-		"tertiary": $ntg-dark-gray,
-		"tertiary-text": $white,
-		"tertiary-link-color": $white,
-		"tertiary-link-hover-color": $white,
-		"text-color": $white,
-		"text-color-reverse": $ntg-dark-gray,
-		"link-color": $white,
-		"link-hover-color": $white,
-		"border-subtle-color": tint-color($ntg-desert-yam, 30%),
-		"bg-subtle-color": tint-color($ntg-desert-yam, 60%)
-	),
-);
 
 $theme-colors: (
 	"primary":    $primary,
@@ -744,6 +420,6 @@ $theme-colors: (
 // use the main color for each theme-colors
 @each $color-name, $color-values in $base-colors {
 	$theme-colors: map-merge($theme-colors, (
-		#{$color-name}: map.get($color-values, main)
+		#{$color-name}: map.get($color-values, "color")
 	));
 }

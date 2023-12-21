@@ -23,13 +23,13 @@ $theme-colors-text: (
 
 @each $color-name, $color-values in $base-colors {
     $theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, (
-        #{$color-name}: map.get($color-values, "bg-subtle-color")
+        #{$color-name}: map.get($color-values, "bg-subtle")
     ));
 }
 
 @each $color-name, $color-values in $base-colors {
     $theme-colors-border-subtle: map-merge($theme-colors-border-subtle, (
-        #{$color-name}: map.get($color-values, "border-subtle-color")
+        #{$color-name}: map.get($color-values, "border-subtle")
     ));
 }
 
