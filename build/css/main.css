@@ -21636,6 +21636,9 @@ textarea.form-control-lg {
   max-width: calc(20ch + 16.75px + 0.5rem);
   margin-right: 0.5rem;
 }
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f054";
+}
 .breadcrumb-item:focus-within {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -22124,7 +22127,7 @@ h3:target,
 }
 
 .ntg-banner {
-  text-shadow: 1px 1px 0.5px #000;
+  text-shadow: 1px 1px 0.5px rgba(var(--current-theme-primary-text-reverse-rgb, 43, 41, 45), 0.5);
   color: var(--current-theme-text-color, #fff);
   /* Banner Options */
 }
@@ -22798,6 +22801,7 @@ h3:target,
 .link-chevron-right:before,
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
+.breadcrumb-item + .breadcrumb-item:before,
 .btn-chevron-right:before,
 .btn-external:before,
 .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,

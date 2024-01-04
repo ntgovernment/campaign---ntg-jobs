@@ -8,6 +8,12 @@
         max-width: calc(20ch + 16.75px + $breadcrumb-item-padding-x);
         margin-right: $breadcrumb-item-padding-x;
 
+        //Change breadcrumb item to fa chevron
+        + .breadcrumb-item::before {
+            @extend .fa;
+            content: "\f054";
+        }
+
         &:focus-within {
             @include focus();
         }
