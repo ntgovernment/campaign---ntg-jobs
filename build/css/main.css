@@ -23577,8 +23577,7 @@ main {
   outline: none;
 }
 
-.page-header-container + .ntg-hero-banner,
-.page-header-container + main > :first-child:is(.ntg-hero-banner) {
+.page-header-container + main.homepage > :first-child:is(.ntg-hero-banner) {
   padding-top: 60px;
   background-color: black;
 }
