@@ -1,3 +1,10 @@
+.page-header-container + .ntg-hero-banner,
+.page-header-container + main > :first-child:is(.ntg-hero-banner) {
+    //Matching with the gradient
+    padding-top: 60px;
+    background-color: black;
+}
+
 .ntg-hero-banner {
     $this: &;
 
