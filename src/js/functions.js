@@ -28,7 +28,7 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     initSlidingMenu();
     initJobsSlidingMenu();
     initLinkCheck();
-    
+
     window.addEventListener('resize', debounce(function(e){
         initSlidingMenu(e);
         initJobsSlidingMenu(e);
@@ -869,7 +869,7 @@ function initLinkCheck() {
             return false;
         } else {
             if(!link.querySelector('[class*="fa-external-link"]') && !link.querySelector('img')) {
-                link.insertAdjacentHTML('beforeend', '<i class="far fa-external-link ms-1" aria-hidden="true"></i>');
+                link.insertAdjacentHTML('beforeend', '<i class="far fa-external-link mx-1" aria-hidden="true"></i>');
             }
             link.setAttribute('rel', 'noopener');
             link.setAttribute('title', 'Opens in a new window');
