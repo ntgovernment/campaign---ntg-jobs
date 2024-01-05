@@ -166,7 +166,7 @@
             }
         }
 
-        &:hover {
+        &:hover, &.active {
             > a {                
                 &:before {
                     transform: scaleX(1);
@@ -261,15 +261,17 @@
         li {
             margin-bottom: 0.5rem;
             break-inside: avoid-column;
+
+            &.active a, a:hover{
+                text-decoration: underline !important;
+                text-decoration-thickness: 2px !important;
+                transform: translateX(0.25rem);
+            }
             
             a {
                 color: inherit;
                 text-decoration: none;
 
-                &:hover {
-                    text-decoration: underline !important;
-                    text-decoration-thickness: 2px !important;
-                }
             }
         }
     }
