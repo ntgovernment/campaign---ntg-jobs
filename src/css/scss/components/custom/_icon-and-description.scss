@@ -1,3 +1,17 @@
+@use "sass:map";
+
+@each $color, $map in $base-colors {
+    html[data-bs-theme="#{$color}"] {
+        @if map.get($map, "text-color") == $white {
+            .ntg-icon-and-description {
+                img {
+                    filter: brightness(0) invert(100%);
+                }
+            }
+        }
+    }
+}
+
 .ntg-icon-and-description {
     background-color: var(--current-theme-color, transparent);
     color: var(--current-theme-text-color, $body-color);
@@ -8,5 +22,15 @@
         align-items: center;
         gap: 20px;
         text-align: center;
+    }
+
+    @each $color, $map in $base-colors {
+        &[data-bs-theme="#{$color}"] {
+            @if map.get($map, "text-color") == $white {
+                img {
+                    filter: brightness(0) invert(100%);
+                }
+            }
+        }
     }
 }
