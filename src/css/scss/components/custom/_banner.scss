@@ -44,6 +44,10 @@
         h1 {
             @include font-size(68px);
         }
+
+        @include media-breakpoint-down(sm) {
+            word-break: break-all;
+        }
     }
 
     .breadcrumb {
