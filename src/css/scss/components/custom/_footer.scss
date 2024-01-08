@@ -67,6 +67,10 @@
         p {
             margin-bottom: 0;
         }
+
+        &-links {
+            margin-top: 0.5rem;
+        }
     }
 
     &__social-section {
@@ -81,7 +85,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            transition: 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
+            transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out, 0.2s transform ease-in-out;
             color:  var(--footer-text-color);
 
             &:hover {
@@ -202,6 +206,7 @@
         &-content {
             margin-bottom: 1.5rem;
             color:  var(--footer-text-color);
+            @include font-size(16px);
 
             @include media-breakpoint-up(lg) {
                 margin-bottom: 0;

@@ -35,6 +35,12 @@
         height: 100%;
     }
 
+    &__video {
+        @media (min-width: 1650px) {
+            object-fit: contain;
+        }
+    }
+
     .video-control {
         position: absolute;
         bottom: 20px;
