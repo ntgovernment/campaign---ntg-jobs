@@ -4,7 +4,7 @@
     bottom: 30px;
     right: 30px;
     background-color: var(--current-theme-secondary, $secondary);
-    border: 3px solid var(--current-theme-secondary, $secondary-text);
+    border: 3px solid var(--current-theme-secondary, $secondary);
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba($black, 0.25);
     transition: 0.2s background ease-in-out, 0.2s border-color ease-in-out;

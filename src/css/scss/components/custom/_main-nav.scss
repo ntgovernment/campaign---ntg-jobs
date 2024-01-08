@@ -262,16 +262,14 @@
             margin-bottom: 0.5rem;
             break-inside: avoid-column;
 
-            &.active a, a:hover{
-                text-decoration: underline !important;
-                text-decoration-thickness: 2px !important;
-                transform: translateX(0.25rem);
+            &.active a {
+                font-weight: 700;
             }
             
             a {
+                font-weight: 400;
                 color: inherit;
                 text-decoration: none;
-
             }
         }
     }

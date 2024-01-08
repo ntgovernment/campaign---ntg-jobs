@@ -28,7 +28,6 @@
     ul {
         @extend .list-flush !optional;
         @extend .list-chevron !optional;
-        margin-bottom: 0;
         columns: 4;
 
         @include media-breakpoint-down(xl) {
@@ -44,6 +43,10 @@
         }
     }
 
+    &__links {
+        margin-bottom: 0;
+    }
+
     li {
         break-inside: avoid-column;
 
@@ -56,9 +59,14 @@
                 font-weight: 700;
             }
         }
-    }
 
-    a {
-        font-weight: 400;
+        a {
+            font-weight: 400;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
     }
 }
