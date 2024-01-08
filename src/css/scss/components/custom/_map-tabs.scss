@@ -68,4 +68,7 @@
         z-index: 1;
     }
     
+    .tab-pane__sub-title {
+        @extend .tag;
+    }
 }

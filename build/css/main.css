@@ -752,17 +752,18 @@ a:focus {
   margin-left: 0.25rem;
 }
 
-ul:not(.nav-tabs):not(.ntg-main-nav__links) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links):not(.ntg-related-pages) {
   margin-bottom: 1.25rem;
 }
-ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
-  margin-bottom: 16px;
-}
+
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-flush, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   padding-left: 0;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   list-style-type: none;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:not(:last-child), .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
+  margin-bottom: 16px;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li {
   position: relative;
@@ -786,12 +787,10 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a, .ntg-related-pa
   transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:hover, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:focus, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
-  -webkit-transform: translateX(0.25rem);
-          transform: translateX(0.25rem);
   text-decoration: none;
 }
 
-.tag {
+.tag, .ntg-map-tabs .tab-pane__sub-title {
   font-size: 0.8421052632rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -22278,6 +22277,10 @@ h3:target,
     max-width: 540px;
   }
 }
+.ntg-call-to-action-links__content ul li > a:hover, .ntg-call-to-action-links__content ul li > a:focus {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
+}
 .ntg-call-to-action-links__content > *:last-child {
   margin-bottom: 0;
 }
@@ -22319,7 +22322,7 @@ h3:target,
   color: var(--current-theme-text-color, #2B292D);
   background: var(--current-theme-color, transparent);
 }
-.ntg-cards__content .tag {
+.ntg-cards__content .tag, .ntg-cards__content .ntg-map-tabs .tab-pane__sub-title, .ntg-map-tabs .ntg-cards__content .tab-pane__sub-title {
   color: var(--current-theme-text-color, #1A322F);
 }
 .ntg-cards__content h2, .ntg-cards__content .h2 {
@@ -22341,7 +22344,7 @@ h3:target,
 .ntg-cards-carousel h2, .ntg-cards-carousel .h2 {
   color: var(--current-theme-text-color, #104735);
 }
-.ntg-cards-carousel .tag {
+.ntg-cards-carousel .tag, .ntg-cards-carousel .ntg-map-tabs .tab-pane__sub-title, .ntg-map-tabs .ntg-cards-carousel .tab-pane__sub-title {
   color: var(--current-theme-text-color, #1A322F);
 }
 .ntg-cards-carousel .carousel-cell {
@@ -24186,9 +24189,12 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   font-weight: 700;
 }
 .ntg-main-nav__panel li a {
-  font-weight: 400;
   color: inherit;
+  font-weight: 400;
   text-decoration: none;
+}
+.ntg-main-nav__panel li a:hover {
+  text-decoration: underline !important;
 }
 
 .ntg-map-tabs {
@@ -24261,7 +24267,6 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   position: relative;
   z-index: 1;
 }
-
 #mmenu-wrapper:not(.mm-menu) {
   display: none;
 }

@@ -42,13 +42,11 @@ a {
     }
 }
 
-ul:not(.nav-tabs):not(.ntg-main-nav__links) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links):not(.ntg-related-pages) {
     margin-bottom: $paragraph-margin-bottom;
+}
 
-    li:not(:last-child) {
-        margin-bottom: 16px;
-    }
-
+ul:not(.nav-tabs):not(.ntg-main-nav__links) {
     &.list {
         &-flush {
             padding-left: 0;
@@ -56,6 +54,10 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
 
         &-chevron {
             list-style-type: none;
+
+            li:not(:last-child) {
+                margin-bottom: 16px;
+            }
 
             li {
                 position: relative;
@@ -78,7 +80,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
 
                     &:hover,
                     &:focus {
-                        transform: translateX(0.25rem);
                         text-decoration: none;
                     }
                 }

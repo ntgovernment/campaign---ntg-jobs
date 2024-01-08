@@ -45,6 +45,13 @@
         ul {
             @extend .list-flush !optional;
             @extend .list-chevron !optional;
+
+            li > a {
+                &:hover,
+                &:focus {
+                    transform: translateX(0.25rem);
+                }
+            }
         }
 
         > * {
