@@ -752,18 +752,17 @@ a:focus {
   margin-left: 0.25rem;
 }
 
-ul:not(.nav-tabs):not(.ntg-main-nav__links):not(.ntg-related-pages__links) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   margin-bottom: 1.25rem;
 }
-
+ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
+  margin-bottom: 16px;
+}
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-flush, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   padding-left: 0;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) {
   list-style-type: none;
-}
-ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:not(:last-child), .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child), .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child), .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li:not(:last-child) {
-  margin-bottom: 16px;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li {
   position: relative;
@@ -787,6 +786,8 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a, .ntg-related-pa
   transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:hover, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:focus, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
   text-decoration: none;
 }
 
@@ -22069,7 +22070,7 @@ h3:target,
   scroll-margin-top: 3rem;
 }
 
-ul li {
+#content ul li {
   margin-bottom: 0.5rem;
 }
 
@@ -22142,8 +22143,8 @@ ul li {
 }
 .ntg-banner__overlay::after {
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(14.03%, rgba(0, 0, 0, 0)), color-stop(53.87%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 14.03%, rgba(0, 0, 0, 0) 53.87%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60.94%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60.94%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -24181,13 +24182,11 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
      -moz-column-break-inside: avoid;
           break-inside: avoid-column;
 }
-.ntg-main-nav__panel li.active a, .ntg-main-nav__panel li a:hover {
-  text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  -webkit-transform: translateX(0.25rem);
-          transform: translateX(0.25rem);
+.ntg-main-nav__panel li.active a {
+  font-weight: 700;
 }
 .ntg-main-nav__panel li a {
+  font-weight: 400;
   color: inherit;
   text-decoration: none;
 }
