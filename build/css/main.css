@@ -24198,6 +24198,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 }
 .ntg-main-nav__panel li a:hover {
   text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
 }
 
 .ntg-map-tabs {
@@ -24509,6 +24510,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 }
 .ntg-related-pages li a:hover {
   text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
 }
 
 .search-global,
