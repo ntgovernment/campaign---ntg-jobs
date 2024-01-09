@@ -22266,8 +22266,8 @@ h3:target,
   }
 }
 .ntg-banner--fade .ntg-banner__overlay::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60.94%, rgba(0, 0, 0, 0)), to(var(--current-theme-color, #fff)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60.94%, var(--current-theme-color, #fff));
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60.94%, rgba(0, 0, 0, 0)), to(var(--current-theme-color, #050505)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60.94%, var(--current-theme-color, #050505));
 }
 .ntg-banner--fade + main {
   margin-top: -70px;
@@ -23699,8 +23699,8 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 }
 .ntg-hero-banner__overlay::after {
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(14.03%, rgba(0, 0, 0, 0)), color-stop(53.87%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 14.03%, rgba(0, 0, 0, 0) 53.87%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(53.87%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 53.87%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -24077,6 +24077,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   --bs-link-color-rgb: 255,255,255;
   --bs-link-hover-color-rgb: 204,204,204;
   color: var(--text-color);
+  text-shadow: 1px 1px 0.5px rgba(var(--current-theme-primary-text-reverse-rgb, 43, 41, 45), 0.5);
 }
 @media (max-width: 767.98px) {
   .jobsearch-wrapper {
@@ -24114,18 +24115,22 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .jobsearch-wrapper input::-webkit-input-placeholder {
   color: #2B292D;
   font-style: normal;
+  text-shadow: none;
 }
 .jobsearch-wrapper input::-moz-placeholder {
   color: #2B292D;
   font-style: normal;
+  text-shadow: none;
 }
 .jobsearch-wrapper input:-ms-input-placeholder {
   color: #2B292D;
   font-style: normal;
+  text-shadow: none;
 }
 .jobsearch-wrapper input::-ms-input-placeholder {
   color: #2B292D;
   font-style: normal;
+  text-shadow: none;
 }
 .jobsearch-wrapper .SumoSelect,
 .jobsearch-wrapper input,
@@ -24134,6 +24139,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .jobsearch-wrapper .SumoSelect > .CaptionCont > span.placeholder {
   color: #2B292D;
   font-style: normal;
+  text-shadow: none;
 }
 .jobsearch-wrapper .SumoSelect > .CaptionCont,
 .jobsearch-wrapper input {
