@@ -4,6 +4,7 @@
     --bs-link-color-rgb: 255,255,255;
     --bs-link-hover-color-rgb: 204,204,204;
     color: var(--text-color);
+    text-shadow: $text-shadow;
 
     @include media-breakpoint-down(md) {
         padding-bottom: 5rem;
@@ -51,6 +52,7 @@
     .SumoSelect>.CaptionCont>span.placeholder {
         color: $ntg-dark-gray;
         font-style: normal;
+        text-shadow: none;
     }
 
     .SumoSelect>.CaptionCont,
