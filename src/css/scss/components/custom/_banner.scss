@@ -51,7 +51,8 @@
     }
 
     &__quote {
-        background-color: var(--current-theme-color, $ntg-barkly);
+        color: var(--current-theme-secondary-text, $black);
+        background-color: var(--current-theme-secondary, $ntg-barkly);
         padding: 54px 36px;
         @include font-size($h5-font-size);
         font-weight: 700;
@@ -134,7 +135,7 @@
                 padding-top: clamp(440px, var(--bs-aspect-ratio), 600px);
             }
         }
-        
+
         #{$this}__wrapper {
             width: calc(100% / 3);
 

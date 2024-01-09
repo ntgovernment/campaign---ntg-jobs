@@ -295,6 +295,10 @@
         .flickity-carousel {
             padding-bottom: 6rem;
             padding-top: 3rem;
+
+            @include media-breakpoint-down(sm) {
+                padding-top: 0;
+            }
         }
 
         .flickity-viewport {
@@ -311,6 +315,12 @@
         .carousel-cell {
             width: 350px;
             height: 350px;
+
+            @include media-breakpoint-down(md) {
+                width: 250px;
+                height: 250px;
+                margin-left: 20px;
+            }
             
             &:not(.is-selected) {
                 opacity: 1;
@@ -452,8 +462,15 @@
             }
         }
         
+        .flickity-button {
+            @include media-breakpoint-down(md) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
         .flickity-prev-next-button {
-            top: calc(100%);
+            top: 100%;
             
             @include media-breakpoint-down(md) {
                 top: calc(100% - 20px);
@@ -475,5 +492,11 @@
                 }
             }
         }
+    }
+}
+
+body.testimonial {
+    .ntg-cards-carousel--testimonial {
+        background-color: var(--current-theme-tertiary, $ntg-territory-stone);
     }
 }
