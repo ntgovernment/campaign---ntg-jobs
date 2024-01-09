@@ -21804,9 +21804,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
-.card > .row {
-  height: 100%;
-}
 .card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21858,6 +21855,38 @@ textarea.form-control-lg {
 }
 .card-link:focus {
   outline: none;
+}
+.card--tall > .row {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .card--tall > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .card--tall > .row > div:first-child {
+    max-height: 250px;
+  }
+  .card--tall > .row > div:first-child > .card-video {
+    min-height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .card--tall > .row > div:first-child {
+    max-height: 440px;
+  }
+  .card--tall > .row > div:first-child > .card-video {
+    min-height: 440px;
+  }
+}
+.card--tall > .row > div:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media (min-width: 992px) {
   .card--tall .card-img-top,

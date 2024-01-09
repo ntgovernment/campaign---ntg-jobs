@@ -64,10 +64,6 @@
         height: 100%;
     }
 
-    > .row {
-        height: 100%;
-    }
-
     &-wrapper {
         display: flex;
         flex-direction: column;
@@ -145,6 +141,38 @@
     }
 
     &--tall {
+        > .row {
+            height: 100%;
+
+            @include media-breakpoint-up(md) {
+                flex-direction: column;
+            }
+
+            > div {
+                &:first-child {
+                    @include media-breakpoint-up(md) {
+                        max-height: 250px;
+
+                        > #{$this}-video {
+                            min-height: 250px;
+                        }
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        max-height: 440px;
+
+                        > #{$this}-video {
+                            min-height: 440px;
+                        }
+                    }
+                }
+                
+                &:last-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+
         #{$this}-img-top,
         #{$this}-video {
             @include media-breakpoint-up(lg) {
