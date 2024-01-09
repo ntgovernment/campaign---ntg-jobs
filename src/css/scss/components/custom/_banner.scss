@@ -50,6 +50,19 @@
         }
     }
 
+    &__quote {
+        background-color: var(--current-theme-color, $ntg-barkly);
+        padding: 54px 36px;
+        @include font-size($h5-font-size);
+        font-weight: 700;
+        text-shadow: none;
+        transform: rotate(-3deg);
+
+        @include media-breakpoint-down(lg) {
+            padding: 20px;
+        }
+    }
+
     .breadcrumb {
         justify-content: center;
         margin-bottom: 1rem;
@@ -58,12 +71,6 @@
             a,
             &.active {
                 color: inherit;
-            }
-
-            + .breadcrumb-item {
-                &::before {
-                    // filter: drop-shadow($text-shadow);
-                }
             }
         }
     }
@@ -111,6 +118,32 @@
 
         + main {
             margin-top: -70px;
+        }
+    }
+
+    &--testimonial {
+        .ratio {
+            &:before {
+                // min and max banner size; scales with bootstrap ratio
+                padding-top: clamp(440px, var(--bs-aspect-ratio), 600px);
+            }
+        }
+
+        #{$this}__wrapper {
+            width: calc(100% / 3);
+
+            @include media-breakpoint-down(xl) {
+                width: 50%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: calc((100% / 3) * 2);
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 95%;
+                margin: auto;
+            }
         }
     }
 }
