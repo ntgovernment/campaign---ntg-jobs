@@ -23705,6 +23705,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 .ntg-hero-banner__image, .ntg-hero-banner__video {
   -o-object-fit: cover;
