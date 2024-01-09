@@ -47,4 +47,12 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
         right: 20px;
         z-index: 1;
     }
+
+    &--job-search {
+        #{$this}__overlay {
+            &::after {
+                background: $black-gradient-3;
+            }
+        }
+    }
 }

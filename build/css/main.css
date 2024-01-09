@@ -22266,8 +22266,8 @@ h3:target,
   }
 }
 .ntg-banner--fade .ntg-banner__overlay::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60.94%, rgba(0, 0, 0, 0)), to(var(--current-theme-color, #050505)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60.94%, var(--current-theme-color, #050505));
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60.94%, rgba(0, 0, 0, 0)), to(var(--current-theme-color, #fff)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60.94%, var(--current-theme-color, #fff));
 }
 .ntg-banner--fade + main {
   margin-top: -70px;
@@ -23699,8 +23699,8 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 }
 .ntg-hero-banner__overlay::after {
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(53.87%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 53.87%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(14.05%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 14.05%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -23724,6 +23724,10 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
   bottom: 20px;
   right: 20px;
   z-index: 1;
+}
+.ntg-hero-banner--job-search .ntg-hero-banner__overlay::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(34.07%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.6) 34.07%, rgba(0, 0, 0, 0) 100%);
 }
 
 html[data-bs-theme=dark-gray] .ntg-icon-and-description img {
