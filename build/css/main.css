@@ -23726,8 +23726,8 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
   z-index: 1;
 }
 .ntg-hero-banner--job-search .ntg-hero-banner__overlay::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(34.07%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.6) 34.07%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(34.07%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.3) 34.07%, rgba(0, 0, 0, 0) 100%);
 }
 
 html[data-bs-theme=dark-gray] .ntg-icon-and-description img {
