@@ -72,6 +72,12 @@
             &.active {
                 color: inherit;
             }
+            
+            + .breadcrumb-item {
+                &::before {
+                    color: var(--current-theme-text-color, $white);
+                }
+            }
         }
     }
 
@@ -128,7 +134,7 @@
                 padding-top: clamp(440px, var(--bs-aspect-ratio), 600px);
             }
         }
-
+        
         #{$this}__wrapper {
             width: calc(100% / 3);
 

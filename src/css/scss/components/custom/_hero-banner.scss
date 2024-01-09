@@ -1,4 +1,5 @@
-.page-header-container + main.homepage > :first-child:is(.ntg-hero-banner) {
+body.homepage .page-header-container+.ntg-hero-banner,
+body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) {
     padding-top: 60px;
 }
 

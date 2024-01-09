@@ -30,6 +30,6 @@
     }
 
     &-item + &-item::before {
-        color: var(--current-theme-text-color, #{$white});
+        color: var(--current-theme-text-color, #{$body-color});
     }
 }
