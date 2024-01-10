@@ -23048,8 +23048,10 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 .ntg-footer__bottom p {
   margin-bottom: 0;
 }
-.ntg-footer__bottom-links {
-  margin-top: 0.5rem;
+@media (max-width: 991.98px) {
+  .ntg-footer__bottom-links {
+    margin-top: 0.5rem;
+  }
 }
 .ntg-footer__social-section {
   display: -webkit-box;

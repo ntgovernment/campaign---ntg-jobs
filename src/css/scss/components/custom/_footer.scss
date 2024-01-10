@@ -69,7 +69,9 @@
         }
 
         &-links {
-            margin-top: 0.5rem;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0.5rem;
+            }
         }
     }
 
