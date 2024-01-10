@@ -23219,7 +23219,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 }
 
 #content form .g-recaptcha {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 #content form select {
   max-width: 500px;
