@@ -23743,6 +23743,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
      object-fit: contain;
   width: 100%;
   height: 100%;
+  display: block;
 }
 .ntg-hero-banner .video-control {
   position: absolute;
