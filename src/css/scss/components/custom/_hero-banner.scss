@@ -6,7 +6,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
     $this: &;
     background-color: $black;
     position: relative;
-
+    
     // .ratio {
     //     &:before {
     //         padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
@@ -15,6 +15,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 
     &__overlay {
         position: relative;
+        
 
         &::after {
             content: '';
@@ -33,6 +34,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
         // position: absolute;
         width: 100%;
         height: 100%;
+        display: block;
     }
 
     // &__video {
