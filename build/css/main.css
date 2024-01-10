@@ -771,6 +771,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li, .ntg-related-pages 
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li::before, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li::before {
   content: "\f054";
+  color: inherit;
   font-size: inherit;
   font-weight: 700 !important;
   position: absolute;
@@ -785,6 +786,37 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a, .ntg-related-pa
 }
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:hover, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li > a:focus, .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .ntg-call-to-action-links__content ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus, .card-text ul:not(.nav-tabs):not(.ntg-main-nav__links) li > a:focus {
   text-decoration: none;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox {
+  list-style-type: none;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:not(:last-child) {
+  margin-bottom: 16px;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
+  position: relative;
+  padding-left: calc(9.5px + 0.5rem);
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li::before {
+  content: "\f45c";
+  color: var(--current-theme-text-color, #0093B8);
+  font-size: inherit;
+  font-weight: 400 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li > a {
+  display: inline-block;
+  text-decoration-thickness: 2px;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li > a:hover, ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li > a:focus {
+  text-decoration: none;
+}
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
+  padding-left: calc(19px + 1rem);
 }
 
 .tag, .ntg-map-tabs .tab-pane__sub-title {
@@ -22900,6 +22932,7 @@ body.testimonial .ntg-cards-carousel--testimonial {
 .link-chevron-right:before,
 ul:not(.nav-tabs):not(.ntg-main-nav__links).list-chevron li:before,
 .ntg-related-pages ul:not(.nav-tabs):not(.ntg-main-nav__links) li:before,
+ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 .breadcrumb-item + .breadcrumb-item:before,
 .btn-chevron-right:before,
 .btn-external:before,

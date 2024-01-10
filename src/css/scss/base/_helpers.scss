@@ -52,37 +52,50 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
             padding-left: 0;
         }
 
-        &-chevron {
+        @mixin custom-marker($icon, $weight: 700, $color: inherit) {
             list-style-type: none;
-
+            
             li:not(:last-child) {
                 margin-bottom: 16px;
             }
-
+        
             li {
                 position: relative;
                 padding-left: calc(9.5px + 0.5rem);
-
+        
                 &::before {
                     @extend .fa;
-                    content: "\f054";
+                    content: $icon;
+                    color: $color;
                     font-size: inherit;
-                    font-weight: 700 !important;
+                    font-weight: $weight !important;
                     position: absolute;
                     top: 0;
                     left: 0;
                     transform: translateY(1px);
                 }
-
+        
                 > a {
                     display: inline-block;
                     text-decoration-thickness: 2px;
-
+        
                     &:hover,
                     &:focus {
                         text-decoration: none;
                     }
                 }
+            }
+        }
+
+        &-chevron {
+            @include custom-marker("\f054");
+        }
+
+        &-checkbox {
+            @include custom-marker("\f45c", 400, var(--current-theme-text-color, $ntg-top-end));
+
+            li {
+                padding-left: calc(19px + 1rem);
             }
         }
     }
