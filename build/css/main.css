@@ -23723,12 +23723,10 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 
 .ntg-hero-banner {
   background-color: #000;
+  position: relative;
 }
-.ntg-hero-banner .ratio:before {
-  padding-top: clamp(440px, var(--bs-aspect-ratio), 740px);
-}
-.ntg-hero-banner .container {
-  height: 100%;
+.ntg-hero-banner__overlay {
+  position: relative;
 }
 .ntg-hero-banner__overlay::after {
   content: "";
@@ -23740,17 +23738,10 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
   top: 0;
 }
 .ntg-hero-banner__image, .ntg-hero-banner__video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: 100%;
-}
-@media (min-width: 1650px) {
-  .ntg-hero-banner__video {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
 }
 .ntg-hero-banner .video-control {
   position: absolute;
@@ -23758,9 +23749,20 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
   right: 20px;
   z-index: 1;
 }
+.ntg-hero-banner--job-search .ratio:before {
+  padding-top: clamp(440px, var(--bs-aspect-ratio), 740px);
+}
+.ntg-hero-banner--job-search .ntg-hero-banner__overlay {
+  position: static;
+}
 .ntg-hero-banner--job-search .ntg-hero-banner__overlay::after {
   background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(34.07%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.3) 34.07%, rgba(0, 0, 0, 0) 100%);
+}
+.ntg-hero-banner--job-search .ntg-hero-banner__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
 }
 
 html[data-bs-theme=dark-gray] .ntg-icon-and-description img {

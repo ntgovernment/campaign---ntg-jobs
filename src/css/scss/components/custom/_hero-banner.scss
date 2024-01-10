@@ -5,18 +5,17 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 .ntg-hero-banner {
     $this: &;
     background-color: $black;
+    position: relative;
 
-    .ratio {
-        &:before {
-            padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
-        }
-    }
-
-    .container {
-        height: 100%;
-    }
+    // .ratio {
+    //     &:before {
+    //         padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
+    //     }
+    // }
 
     &__overlay {
+        position: relative;
+
         &::after {
             content: '';
             background: $black-gradient-1; 
@@ -29,17 +28,17 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 
     &__image,
     &__video {
-        object-fit: cover;
-        position: absolute;
+        object-fit: contain;
+        // position: absolute;
         width: 100%;
         height: 100%;
     }
 
-    &__video {
-        @media (min-width: 1650px) {
-            object-fit: contain;
-        }
-    }
+    // &__video {
+    //     @media (min-width: 1650px) {
+    //         object-fit: contain;
+    //     }
+    // }
 
     .video-control {
         position: absolute;
@@ -49,10 +48,23 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
     }
 
     &--job-search {
+        .ratio {
+            &:before {
+                padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
+            }
+        }
+
         #{$this}__overlay {
+            position: static;
+
             &::after {
                 background: $black-gradient-3;
             }
+        }
+        
+        #{$this}__image {
+            object-fit: cover;
+            position: absolute;
         }
     }
 }
