@@ -1,18 +1,5 @@
 #in-page-nav {
-    position: relative;
     margin: 2rem 0 2.5rem 0;
-    padding-left: 1rem;
-
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 3px;
-        left: 0;
-        bottom: -1px;
-        width: 5px;
-        background-color: var(--current-theme-text-color, #{$ntg-dark-blue});
-    }
 
     h2 {
         font-size: 1rem;
@@ -23,14 +10,22 @@
 
     ul {
         margin: 0;
-        padding: 0;
+        padding-left: 1rem;
         list-style: none;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 4.25px;
+            left: 0;
+            bottom: 0;
+            width: 5px;
+            background-color: var(--current-theme-text-color, #{$ntg-arafura-blue});
+        }
     }
 
     li {
-        line-height: 1;
-        margin-bottom: 0.75rem;
-
         &:last-child {
             margin-bottom: 0;
         }

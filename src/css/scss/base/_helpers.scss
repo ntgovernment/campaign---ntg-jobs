@@ -66,7 +66,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links) {
                 &::before {
                     @extend .fa;
                     content: $icon;
-                    color: $color;
+                    @if $color != inherit {
+                        color: $color;
+                    }
                     font-size: inherit;
                     font-weight: $weight !important;
                     position: absolute;
