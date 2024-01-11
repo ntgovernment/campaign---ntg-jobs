@@ -172,6 +172,13 @@
             }
         }
 
+        #{$this}-img-zoom,
+        #{$this}-img-zoom-rotate {
+            @include media-breakpoint-down(sm) {
+                height: 100%;
+            }
+        }
+
         #{$this}-img-top,
         #{$this}-video {
             @include media-breakpoint-up(lg) {

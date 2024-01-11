@@ -21918,6 +21918,12 @@ textarea.form-control-lg {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media (max-width: 575.98px) {
+  .card--tall .card-img-zoom,
+  .card--tall .card-img-zoom-rotate {
+    height: 100%;
+  }
+}
 @media (min-width: 992px) {
   .card--tall .card-img-top,
   .card--tall .card-video {
