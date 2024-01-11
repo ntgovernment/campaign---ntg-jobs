@@ -449,7 +449,7 @@ function initMmenu() {
             "navbars": [{
                use: true,
                position: "bottom",
-               content: '<a class="btn btn-chevron-right btn-default" href="#">Move to the NT Checklist Tool</a>',
+               content: '<a class="btn btn-chevron-right btn-default" href="./?a=1322646">Search for NTG jobs</a>',
             }]
         });
 
