@@ -476,6 +476,10 @@ function initMmenu() {
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+        let btnContent;
+
+        mmenuWrapper.getAttribute("data-btn-link") ? btnContent = `<a class="btn btn-chevron-right btn-default" href="${mmenuWrapper.getAttribute("data-btn-link")}">Search for NTG jobs</a>` : ``;
+
         const mmenu = new Mmenu('#mmenu-wrapper', {
             "offCanvas": {
                 "position": "right-front"
@@ -483,7 +487,7 @@ function initMmenu() {
             "navbars": [{
                use: true,
                position: "bottom",
-               content: '<a class="btn btn-chevron-right btn-default" href="./?a=1322646">Search for NTG jobs</a>',
+               content: btnContent,
             }]
         });
 
