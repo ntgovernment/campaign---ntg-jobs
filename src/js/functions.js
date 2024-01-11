@@ -442,9 +442,11 @@ function initMmenu() {
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        let btnContent;
+        let btnContent = ``;
 
-        mmenuWrapper.getAttribute("data-btn-link") ? btnContent = `<a class="btn btn-chevron-right btn-default" href="${mmenuWrapper.getAttribute("data-btn-link")}">Search for NTG jobs</a>` : ``;
+        if(mmenuWrapper.getAttribute("data-btn-link") && mmenuWrapper.getAttribute("data-btn-text")) {
+            btnContent = `<a class="btn btn-chevron-right btn-default" href="${mmenuWrapper.getAttribute("data-btn-link")}">${mmenuWrapper.getAttribute("data-btn-text")}</a>`
+        }
 
         const mmenu = new Mmenu('#mmenu-wrapper', {
             "offCanvas": {
