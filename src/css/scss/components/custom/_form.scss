@@ -155,6 +155,7 @@
 
         li {
             position: relative;
+            display: flex;
 
             ~ li {
                 margin-top: 1rem;

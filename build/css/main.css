@@ -23343,6 +23343,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 #content .sq-form-question-option-list li,
 #content .sq-form-question-tickbox-list li {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #content .sq-form-question-option-list li ~ li,
 #content .sq-form-question-tickbox-list li ~ li {
