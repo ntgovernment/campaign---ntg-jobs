@@ -25483,6 +25483,15 @@ body.search-panel--is-hidden .search-global {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1399.98px) {
   #to-next-section {
@@ -25502,14 +25511,7 @@ body.search-panel--is-hidden .search-global {
 #to-next-section::before {
   content: "\f078";
   font-weight: 700;
-  vertical-align: middle;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 1;
+  margin-top: 3px;
 }
 
 .video-control {

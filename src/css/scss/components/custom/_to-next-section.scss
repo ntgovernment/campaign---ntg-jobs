@@ -11,6 +11,9 @@
     border-radius: 50%;
     box-shadow: $box-shadow;
     transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include media-breakpoint-down(xxl) {
         bottom: -20px;
@@ -31,9 +34,6 @@
         @extend .fa;
         content: '\f078';
         font-weight: 700;
-        vertical-align: middle;
-        display: inline-flex;
-        align-items: center;
-        line-height: 1;
+        margin-top: 3px;
     }
 }
