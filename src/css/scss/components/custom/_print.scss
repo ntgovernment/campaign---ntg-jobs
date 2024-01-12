@@ -3,6 +3,41 @@
     a:not([data-bs-toggle])::after {
         content: ' Link: ' attr(href) ;
         display: block;
+        overflow-wrap: anywhere;
+        font-family: $font-ubuntu !important;
+        color: $black;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .text-nowrap {
+        white-space: normal !important;
+    }
+
+    .card {
+        .row {
+            display: block;
+
+            > div {
+                width: 100%;
+            }
+        }
+
+        &-body {
+            padding-top: 1rem !important;
+        }
+
+        .card-wrapper > .card-footer {
+            align-self: flex-start;
+        }
+
+        .card-footer a::after {
+            padding-left: 0;
+        }
+    }
+
+    .ntg-highlights__highlight a::after {
+        padding-left: 0;
     }
 
     .accordion {

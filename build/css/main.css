@@ -25567,6 +25567,33 @@ body.search-panel--is-hidden .search-global {
   a:not([data-bs-toggle])::after {
     content: " Link: " attr(href);
     display: block;
+    overflow-wrap: anywhere;
+    font-family: "Ubuntu", var(--bs-font-sans-serif) !important;
+    color: #000;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  .text-nowrap {
+    white-space: normal !important;
+  }
+  .card .row {
+    display: block;
+  }
+  .card .row > div {
+    width: 100%;
+  }
+  .card-body {
+    padding-top: 1rem !important;
+  }
+  .card .card-wrapper > .card-footer {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .card .card-footer a::after {
+    padding-left: 0;
+  }
+  .ntg-highlights__highlight a::after {
+    padding-left: 0;
   }
   .accordion {
     --bs-accordion-bg: #fff;
