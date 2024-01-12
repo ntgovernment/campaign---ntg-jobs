@@ -25471,13 +25471,13 @@ body.search-panel--is-hidden .search-global {
 #to-next-section {
   position: absolute;
   left: calc(50% - 25px);
-  bottom: calc(33.3333333333% - 25px);
+  bottom: 20px;
   z-index: 1;
   width: 50px;
   height: 50px;
   color: var(--current-theme-text-color-reverse, #1A322F);
   background-color: var(--current-theme-text-color, #fff);
-  border: 2px solid var(--current-theme-text-color-reverse, #1A322F);
+  border: none;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -25493,15 +25493,11 @@ body.search-panel--is-hidden .search-global {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 1399.98px) {
-  #to-next-section {
-    bottom: -20px;
-  }
-}
 @media (max-width: 575.98px) {
   #to-next-section {
     width: 40px;
     height: 40px;
+    bottom: -20px;
   }
 }
 #to-next-section:hover, #to-next-section:focus {
