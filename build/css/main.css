@@ -3526,7 +3526,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
     -webkit-overflow-scrolling: touch;
   }
 }
-.form-label, #content form .sq-form-question-title {
+.form-label, #content .sq-form-question-title {
   margin-bottom: 0.5rem;
 }
 
@@ -3561,150 +3561,150 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   color: var(--bs-secondary-color);
 }
 
-.form-control, #content form .sq-form-upload-add-btn-wrapper input[type=button],
-#content form .sq-form-upload input[type=button], #content form input[type=email],
-#content form input[type=text],
-#content form input[type=number],
-#content form input[type=tel],
-#content form input[type=search],
-#content form textarea {
+.form-control, #content .sq-form-upload-add-btn-wrapper input[type=button],
+#content .sq-form-upload input[type=button], #content input[type=email],
+#content input[type=text],
+#content input[type=number],
+#content input[type=tel],
+#content input[type=search],
+#content textarea {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1.0000000009rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--bs-body-color);
+  color: #2B292D;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: var(--bs-body-bg);
+  background-color: #fff;
   background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border: var(--bs-border-width) solid var(--current-theme-text-color, #2B292D);
+  border-radius: 0;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .form-control, #content form .sq-form-upload-add-btn-wrapper input[type=button],
-  #content form .sq-form-upload input[type=button], #content form input[type=email],
-  #content form input[type=text],
-  #content form input[type=number],
-  #content form input[type=tel],
-  #content form input[type=search],
-  #content form textarea {
+  .form-control, #content .sq-form-upload-add-btn-wrapper input[type=button],
+  #content .sq-form-upload input[type=button], #content input[type=email],
+  #content input[type=text],
+  #content input[type=number],
+  #content input[type=tel],
+  #content input[type=search],
+  #content textarea {
     font-size: 1rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control, #content form .sq-form-upload-add-btn-wrapper input[type=button],
-  #content form .sq-form-upload input[type=button], #content form input[type=email],
-  #content form input[type=text],
-  #content form input[type=number],
-  #content form input[type=tel],
-  #content form input[type=search],
-  #content form textarea {
+  .form-control, #content .sq-form-upload-add-btn-wrapper input[type=button],
+  #content .sq-form-upload input[type=button], #content input[type=email],
+  #content input[type=text],
+  #content input[type=number],
+  #content input[type=tel],
+  #content input[type=search],
+  #content textarea {
     -webkit-transition: none;
     transition: none;
   }
 }
-.form-control[type=file], #content form .sq-form-upload-add-btn-wrapper input[type=file][type=button],
-#content form .sq-form-upload input[type=file][type=button], #content form input[type=file][type=email],
-#content form input[type=file][type=text],
-#content form input[type=file][type=number],
-#content form input[type=file][type=tel],
-#content form input[type=file][type=search],
-#content form textarea[type=file] {
+.form-control[type=file], #content .sq-form-upload-add-btn-wrapper input[type=file][type=button],
+#content .sq-form-upload input[type=file][type=button], #content input[type=file][type=email],
+#content input[type=file][type=text],
+#content input[type=file][type=number],
+#content input[type=file][type=tel],
+#content input[type=file][type=search],
+#content textarea[type=file] {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]), #content form .sq-form-upload-add-btn-wrapper input[type=file][type=button]:not(:disabled):not([readonly]),
-#content form .sq-form-upload input[type=file][type=button]:not(:disabled):not([readonly]), #content form input[type=file][type=email]:not(:disabled):not([readonly]),
-#content form input[type=file][type=text]:not(:disabled):not([readonly]),
-#content form input[type=file][type=number]:not(:disabled):not([readonly]),
-#content form input[type=file][type=tel]:not(:disabled):not([readonly]),
-#content form input[type=file][type=search]:not(:disabled):not([readonly]),
-#content form textarea[type=file]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), #content .sq-form-upload-add-btn-wrapper input[type=file][type=button]:not(:disabled):not([readonly]),
+#content .sq-form-upload input[type=file][type=button]:not(:disabled):not([readonly]), #content input[type=file][type=email]:not(:disabled):not([readonly]),
+#content input[type=file][type=text]:not(:disabled):not([readonly]),
+#content input[type=file][type=number]:not(:disabled):not([readonly]),
+#content input[type=file][type=tel]:not(:disabled):not([readonly]),
+#content input[type=file][type=search]:not(:disabled):not([readonly]),
+#content textarea[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus, #content form .sq-form-upload-add-btn-wrapper input[type=button]:focus,
-#content form .sq-form-upload input[type=button]:focus, #content form input[type=email]:focus,
-#content form input[type=text]:focus,
-#content form input[type=number]:focus,
-#content form input[type=tel]:focus,
-#content form input[type=search]:focus,
-#content form textarea:focus {
-  color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
-  border-color: #ebe9e5;
+.form-control:focus, #content .sq-form-upload-add-btn-wrapper input[type=button]:focus,
+#content .sq-form-upload input[type=button]:focus, #content input[type=email]:focus,
+#content input[type=text]:focus,
+#content input[type=number]:focus,
+#content input[type=tel]:focus,
+#content input[type=search]:focus,
+#content textarea:focus {
+  color: #2B292D;
+  background-color: #fff;
+  border-color: var(--current-theme-text-color, #2B292D);
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
 }
-.form-control::-webkit-date-and-time-value, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-date-and-time-value,
-#content form .sq-form-upload input[type=button]::-webkit-date-and-time-value, #content form input[type=email]::-webkit-date-and-time-value,
-#content form input[type=text]::-webkit-date-and-time-value,
-#content form input[type=number]::-webkit-date-and-time-value,
-#content form input[type=tel]::-webkit-date-and-time-value,
-#content form input[type=search]::-webkit-date-and-time-value,
-#content form textarea::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, #content .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-date-and-time-value,
+#content .sq-form-upload input[type=button]::-webkit-date-and-time-value, #content input[type=email]::-webkit-date-and-time-value,
+#content input[type=text]::-webkit-date-and-time-value,
+#content input[type=number]::-webkit-date-and-time-value,
+#content input[type=tel]::-webkit-date-and-time-value,
+#content input[type=search]::-webkit-date-and-time-value,
+#content textarea::-webkit-date-and-time-value {
   min-width: 85px;
   height: 1.5em;
   margin: 0;
 }
-.form-control::-webkit-datetime-edit, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-datetime-edit,
-#content form .sq-form-upload input[type=button]::-webkit-datetime-edit, #content form input[type=email]::-webkit-datetime-edit,
-#content form input[type=text]::-webkit-datetime-edit,
-#content form input[type=number]::-webkit-datetime-edit,
-#content form input[type=tel]::-webkit-datetime-edit,
-#content form input[type=search]::-webkit-datetime-edit,
-#content form textarea::-webkit-datetime-edit {
+.form-control::-webkit-datetime-edit, #content .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-datetime-edit,
+#content .sq-form-upload input[type=button]::-webkit-datetime-edit, #content input[type=email]::-webkit-datetime-edit,
+#content input[type=text]::-webkit-datetime-edit,
+#content input[type=number]::-webkit-datetime-edit,
+#content input[type=tel]::-webkit-datetime-edit,
+#content input[type=search]::-webkit-datetime-edit,
+#content textarea::-webkit-datetime-edit {
   display: block;
   padding: 0;
 }
-.form-control::-webkit-input-placeholder, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-input-placeholder, #content form .sq-form-upload input[type=button]::-webkit-input-placeholder, #content form input[type=email]::-webkit-input-placeholder, #content form input[type=text]::-webkit-input-placeholder, #content form input[type=number]::-webkit-input-placeholder, #content form input[type=tel]::-webkit-input-placeholder, #content form input[type=search]::-webkit-input-placeholder, #content form textarea::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, #content .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-input-placeholder, #content .sq-form-upload input[type=button]::-webkit-input-placeholder, #content input[type=email]::-webkit-input-placeholder, #content input[type=text]::-webkit-input-placeholder, #content input[type=number]::-webkit-input-placeholder, #content input[type=tel]::-webkit-input-placeholder, #content input[type=search]::-webkit-input-placeholder, #content textarea::-webkit-input-placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control::-moz-placeholder, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-moz-placeholder, #content form .sq-form-upload input[type=button]::-moz-placeholder, #content form input[type=email]::-moz-placeholder, #content form input[type=text]::-moz-placeholder, #content form input[type=number]::-moz-placeholder, #content form input[type=tel]::-moz-placeholder, #content form input[type=search]::-moz-placeholder, #content form textarea::-moz-placeholder {
+.form-control::-moz-placeholder, #content .sq-form-upload-add-btn-wrapper input[type=button]::-moz-placeholder, #content .sq-form-upload input[type=button]::-moz-placeholder, #content input[type=email]::-moz-placeholder, #content input[type=text]::-moz-placeholder, #content input[type=number]::-moz-placeholder, #content input[type=tel]::-moz-placeholder, #content input[type=search]::-moz-placeholder, #content textarea::-moz-placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, #content form .sq-form-upload-add-btn-wrapper input[type=button]:-ms-input-placeholder, #content form .sq-form-upload input[type=button]:-ms-input-placeholder, #content form input[type=email]:-ms-input-placeholder, #content form input[type=text]:-ms-input-placeholder, #content form input[type=number]:-ms-input-placeholder, #content form input[type=tel]:-ms-input-placeholder, #content form input[type=search]:-ms-input-placeholder, #content form textarea:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, #content .sq-form-upload-add-btn-wrapper input[type=button]:-ms-input-placeholder, #content .sq-form-upload input[type=button]:-ms-input-placeholder, #content input[type=email]:-ms-input-placeholder, #content input[type=text]:-ms-input-placeholder, #content input[type=number]:-ms-input-placeholder, #content input[type=tel]:-ms-input-placeholder, #content input[type=search]:-ms-input-placeholder, #content textarea:-ms-input-placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control::-ms-input-placeholder, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-ms-input-placeholder, #content form .sq-form-upload input[type=button]::-ms-input-placeholder, #content form input[type=email]::-ms-input-placeholder, #content form input[type=text]::-ms-input-placeholder, #content form input[type=number]::-ms-input-placeholder, #content form input[type=tel]::-ms-input-placeholder, #content form input[type=search]::-ms-input-placeholder, #content form textarea::-ms-input-placeholder {
+.form-control::-ms-input-placeholder, #content .sq-form-upload-add-btn-wrapper input[type=button]::-ms-input-placeholder, #content .sq-form-upload input[type=button]::-ms-input-placeholder, #content input[type=email]::-ms-input-placeholder, #content input[type=text]::-ms-input-placeholder, #content input[type=number]::-ms-input-placeholder, #content input[type=tel]::-ms-input-placeholder, #content input[type=search]::-ms-input-placeholder, #content textarea::-ms-input-placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control::placeholder, #content form .sq-form-upload-add-btn-wrapper input[type=button]::placeholder,
-#content form .sq-form-upload input[type=button]::placeholder, #content form input[type=email]::placeholder,
-#content form input[type=text]::placeholder,
-#content form input[type=number]::placeholder,
-#content form input[type=tel]::placeholder,
-#content form input[type=search]::placeholder,
-#content form textarea::placeholder {
+.form-control::placeholder, #content .sq-form-upload-add-btn-wrapper input[type=button]::placeholder,
+#content .sq-form-upload input[type=button]::placeholder, #content input[type=email]::placeholder,
+#content input[type=text]::placeholder,
+#content input[type=number]::placeholder,
+#content input[type=tel]::placeholder,
+#content input[type=search]::placeholder,
+#content textarea::placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control:disabled, #content form .sq-form-upload-add-btn-wrapper input[type=button]:disabled,
-#content form .sq-form-upload input[type=button]:disabled, #content form input[type=email]:disabled,
-#content form input[type=text]:disabled,
-#content form input[type=number]:disabled,
-#content form input[type=tel]:disabled,
-#content form input[type=search]:disabled,
-#content form textarea:disabled {
+.form-control:disabled, #content .sq-form-upload-add-btn-wrapper input[type=button]:disabled,
+#content .sq-form-upload input[type=button]:disabled, #content input[type=email]:disabled,
+#content input[type=text]:disabled,
+#content input[type=number]:disabled,
+#content input[type=tel]:disabled,
+#content input[type=search]:disabled,
+#content textarea:disabled {
   background-color: var(--bs-secondary-bg);
   opacity: 1;
 }
-.form-control::-webkit-file-upload-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-file-upload-button, #content form .sq-form-upload input[type=button]::-webkit-file-upload-button, #content form input[type=email]::-webkit-file-upload-button, #content form input[type=text]::-webkit-file-upload-button, #content form input[type=number]::-webkit-file-upload-button, #content form input[type=tel]::-webkit-file-upload-button, #content form input[type=search]::-webkit-file-upload-button, #content form textarea::-webkit-file-upload-button {
+.form-control::-webkit-file-upload-button, #content .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-file-upload-button, #content .sq-form-upload input[type=button]::-webkit-file-upload-button, #content input[type=email]::-webkit-file-upload-button, #content input[type=text]::-webkit-file-upload-button, #content input[type=number]::-webkit-file-upload-button, #content input[type=tel]::-webkit-file-upload-button, #content input[type=search]::-webkit-file-upload-button, #content textarea::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
-  color: var(--bs-body-color);
+  color: #2B292D;
   background-color: var(--bs-tertiary-bg);
   pointer-events: none;
   border-color: inherit;
@@ -3717,18 +3717,18 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.form-control::file-selector-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]::file-selector-button,
-#content form .sq-form-upload input[type=button]::file-selector-button, #content form input[type=email]::file-selector-button,
-#content form input[type=text]::file-selector-button,
-#content form input[type=number]::file-selector-button,
-#content form input[type=tel]::file-selector-button,
-#content form input[type=search]::file-selector-button,
-#content form textarea::file-selector-button {
+.form-control::file-selector-button, #content .sq-form-upload-add-btn-wrapper input[type=button]::file-selector-button,
+#content .sq-form-upload input[type=button]::file-selector-button, #content input[type=email]::file-selector-button,
+#content input[type=text]::file-selector-button,
+#content input[type=number]::file-selector-button,
+#content input[type=tel]::file-selector-button,
+#content input[type=search]::file-selector-button,
+#content textarea::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
-  color: var(--bs-body-color);
+  color: #2B292D;
   background-color: var(--bs-tertiary-bg);
   pointer-events: none;
   border-color: inherit;
@@ -3742,31 +3742,31 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::-webkit-file-upload-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-file-upload-button, #content form .sq-form-upload input[type=button]::-webkit-file-upload-button, #content form input[type=email]::-webkit-file-upload-button, #content form input[type=text]::-webkit-file-upload-button, #content form input[type=number]::-webkit-file-upload-button, #content form input[type=tel]::-webkit-file-upload-button, #content form input[type=search]::-webkit-file-upload-button, #content form textarea::-webkit-file-upload-button {
+  .form-control::-webkit-file-upload-button, #content .sq-form-upload-add-btn-wrapper input[type=button]::-webkit-file-upload-button, #content .sq-form-upload input[type=button]::-webkit-file-upload-button, #content input[type=email]::-webkit-file-upload-button, #content input[type=text]::-webkit-file-upload-button, #content input[type=number]::-webkit-file-upload-button, #content input[type=tel]::-webkit-file-upload-button, #content input[type=search]::-webkit-file-upload-button, #content textarea::-webkit-file-upload-button {
     -webkit-transition: none;
     transition: none;
   }
-  .form-control::file-selector-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]::file-selector-button,
-  #content form .sq-form-upload input[type=button]::file-selector-button, #content form input[type=email]::file-selector-button,
-  #content form input[type=text]::file-selector-button,
-  #content form input[type=number]::file-selector-button,
-  #content form input[type=tel]::file-selector-button,
-  #content form input[type=search]::file-selector-button,
-  #content form textarea::file-selector-button {
+  .form-control::file-selector-button, #content .sq-form-upload-add-btn-wrapper input[type=button]::file-selector-button,
+  #content .sq-form-upload input[type=button]::file-selector-button, #content input[type=email]::file-selector-button,
+  #content input[type=text]::file-selector-button,
+  #content input[type=number]::file-selector-button,
+  #content input[type=tel]::file-selector-button,
+  #content input[type=search]::file-selector-button,
+  #content textarea::file-selector-button {
     -webkit-transition: none;
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form .sq-form-upload input[type=button]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form input[type=email]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form input[type=text]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form input[type=number]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form input[type=tel]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form input[type=search]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content form textarea:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content .sq-form-upload-add-btn-wrapper input[type=button]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content .sq-form-upload input[type=button]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content input[type=email]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content input[type=text]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content input[type=number]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content input[type=tel]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content input[type=search]:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, #content textarea:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: var(--bs-secondary-bg);
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button, #content form .sq-form-upload-add-btn-wrapper input[type=button]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form .sq-form-upload input[type=button]:hover:not(:disabled):not([readonly])::file-selector-button, #content form input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form input[type=number]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form input[type=tel]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form input[type=search]:hover:not(:disabled):not([readonly])::file-selector-button,
-#content form textarea:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, #content .sq-form-upload-add-btn-wrapper input[type=button]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content .sq-form-upload input[type=button]:hover:not(:disabled):not([readonly])::file-selector-button, #content input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content input[type=number]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content input[type=tel]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content input[type=search]:hover:not(:disabled):not([readonly])::file-selector-button,
+#content textarea:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: var(--bs-secondary-bg);
 }
 
@@ -3833,7 +3833,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
 }
 
 textarea.form-control,
-#content form textarea {
+#content textarea {
   min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
 }
 textarea.form-control-sm {
@@ -3853,11 +3853,11 @@ textarea.form-control-lg {
 }
 .form-control-color::-moz-color-swatch {
   border: 0 !important;
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-control-color::-webkit-color-swatch {
   border: 0 !important;
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-control-color.form-control-sm {
   height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
@@ -3866,7 +3866,7 @@ textarea.form-control-lg {
   height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
 }
 
-.form-select, #content form select {
+.form-select, #content select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   display: block;
   width: 100%;
@@ -3874,49 +3874,49 @@ textarea.form-control-lg {
   font-size: 1.0000000009rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--bs-body-color);
+  color: #2B292D;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: var(--bs-body-bg);
+  background-color: #fff;
   background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border: var(--bs-border-width) solid var(--current-theme-text-color, #2B292D);
+  border-radius: 0;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .form-select, #content form select {
+  .form-select, #content select {
     font-size: 1rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-select, #content form select {
+  .form-select, #content select {
     -webkit-transition: none;
     transition: none;
   }
 }
-.form-select:focus, #content form select:focus {
-  border-color: #ebe9e5;
+.form-select:focus, #content select:focus {
+  border-color: var(--current-theme-text-color, #2B292D);
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
 }
-.form-select[multiple], #content form select[multiple], .form-select[size]:not([size="1"]), #content form select[size]:not([size="1"]) {
+.form-select[multiple], #content select[multiple], .form-select[size]:not([size="1"]), #content select[size]:not([size="1"]) {
   padding-right: 0.75rem;
   background-image: none;
 }
-.form-select:disabled, #content form select:disabled {
+.form-select:disabled, #content select:disabled {
   background-color: var(--bs-secondary-bg);
 }
-.form-select:-moz-focusring, #content form select:-moz-focusring {
+.form-select:-moz-focusring, #content select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 var(--bs-body-color);
+  text-shadow: 0 0 0 #2B292D;
 }
 
 .form-select-sm {
@@ -3940,7 +3940,7 @@ textarea.form-control-lg {
   }
 }
 
-[data-bs-theme=dark] .form-select, [data-bs-theme=dark] #content form select, #content form [data-bs-theme=dark] select {
+[data-bs-theme=dark] .form-select, [data-bs-theme=dark] #content select, #content [data-bs-theme=dark] select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
@@ -3950,9 +3950,9 @@ textarea.form-control-lg {
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
-.form-check .form-check-input, .form-check #content form input[type=radio], #content form .form-check input[type=radio],
-.form-check #content form input[type=checkbox],
-#content form .form-check input[type=checkbox] {
+.form-check .form-check-input, .form-check #content input[type=radio], #content .form-check input[type=radio],
+.form-check #content input[type=checkbox],
+#content .form-check input[type=checkbox] {
   float: left;
   margin-left: -1.5em;
 }
@@ -3962,17 +3962,17 @@ textarea.form-control-lg {
   padding-left: 0;
   text-align: right;
 }
-.form-check-reverse .form-check-input, .form-check-reverse #content form input[type=radio], #content form .form-check-reverse input[type=radio],
-.form-check-reverse #content form input[type=checkbox],
-#content form .form-check-reverse input[type=checkbox] {
+.form-check-reverse .form-check-input, .form-check-reverse #content input[type=radio], #content .form-check-reverse input[type=radio],
+.form-check-reverse #content input[type=checkbox],
+#content .form-check-reverse input[type=checkbox] {
   float: right;
   margin-right: -1.5em;
   margin-left: 0;
 }
 
-.form-check-input, #content form input[type=radio],
-#content form input[type=checkbox] {
-  --bs-form-check-bg: var(--bs-body-bg);
+.form-check-input, #content input[type=radio],
+#content input[type=checkbox] {
+  --bs-form-check-bg: #fff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 1em;
@@ -3991,58 +3991,58 @@ textarea.form-control-lg {
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox],
-#content form input[type=checkbox] {
+#content input[type=checkbox] {
   border-radius: 0.25em;
 }
-.form-check-input[type=radio], #content form input[type=radio] {
+.form-check-input[type=radio], #content input[type=radio] {
   border-radius: 50%;
 }
-.form-check-input:active, #content form input[type=radio]:active,
-#content form input[type=checkbox]:active {
+.form-check-input:active, #content input[type=radio]:active,
+#content input[type=checkbox]:active {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
-.form-check-input:focus, #content form input[type=radio]:focus,
-#content form input[type=checkbox]:focus {
-  border-color: #ebe9e5;
+.form-check-input:focus, #content input[type=radio]:focus,
+#content input[type=checkbox]:focus {
+  border-color: var(--current-theme-text-color, #2B292D);
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(227, 82, 5, 0.25);
 }
-.form-check-input:checked, #content form input[type=radio]:checked,
-#content form input[type=checkbox]:checked {
+.form-check-input:checked, #content input[type=radio]:checked,
+#content input[type=checkbox]:checked {
   background-color: #D7D2CB;
   border-color: #D7D2CB;
 }
 .form-check-input:checked[type=checkbox],
-#content form input:checked[type=checkbox] {
+#content input:checked[type=checkbox] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
-.form-check-input:checked[type=radio], #content form input:checked[type=radio] {
+.form-check-input:checked[type=radio], #content input:checked[type=radio] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate,
-#content form input[type=checkbox]:indeterminate {
+#content input[type=checkbox]:indeterminate {
   background-color: #D7D2CB;
   border-color: #D7D2CB;
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
-.form-check-input:disabled, #content form input[type=radio]:disabled,
-#content form input[type=checkbox]:disabled {
+.form-check-input:disabled, #content input[type=radio]:disabled,
+#content input[type=checkbox]:disabled {
   pointer-events: none;
   -webkit-filter: none;
           filter: none;
   opacity: 0.5;
 }
-.form-check-input[disabled] ~ .form-check-label, #content form .form-check-input[disabled] ~ input[type=radio] ~ label, #content form input[type=radio] ~ .form-check-input[disabled] ~ label,
-#content form .form-check-input[disabled] ~ input[type=checkbox] ~ label,
-#content form input[type=checkbox] ~ .form-check-input[disabled] ~ label, #content form input[disabled][type=radio] ~ .form-check-label, #content form input[disabled][type=radio] ~ label,
-#content form input[disabled][type=checkbox] ~ .form-check-label,
-#content form input[disabled][type=checkbox] ~ label, .form-check-input:disabled ~ .form-check-label, #content form .form-check-input:disabled ~ input[type=radio] ~ label, #content form input[type=radio] ~ .form-check-input:disabled ~ label,
-#content form .form-check-input:disabled ~ input[type=checkbox] ~ label,
-#content form input[type=checkbox] ~ .form-check-input:disabled ~ label, #content form input[type=radio]:disabled ~ .form-check-label, #content form input[type=radio]:disabled ~ label,
-#content form input[type=checkbox]:disabled ~ .form-check-label,
-#content form input[type=checkbox]:disabled ~ label {
+.form-check-input[disabled] ~ .form-check-label, #content .form-check-input[disabled] ~ input[type=radio] ~ label, #content input[type=radio] ~ .form-check-input[disabled] ~ label,
+#content .form-check-input[disabled] ~ input[type=checkbox] ~ label,
+#content input[type=checkbox] ~ .form-check-input[disabled] ~ label, #content input[disabled][type=radio] ~ .form-check-label, #content input[disabled][type=radio] ~ label,
+#content input[disabled][type=checkbox] ~ .form-check-label,
+#content input[disabled][type=checkbox] ~ label, .form-check-input:disabled ~ .form-check-label, #content .form-check-input:disabled ~ input[type=radio] ~ label, #content input[type=radio] ~ .form-check-input:disabled ~ label,
+#content .form-check-input:disabled ~ input[type=checkbox] ~ label,
+#content input[type=checkbox] ~ .form-check-input:disabled ~ label, #content input[type=radio]:disabled ~ .form-check-label, #content input[type=radio]:disabled ~ label,
+#content input[type=checkbox]:disabled ~ .form-check-label,
+#content input[type=checkbox]:disabled ~ label {
   cursor: default;
   opacity: 0.5;
 }
@@ -4050,9 +4050,9 @@ textarea.form-control-lg {
 .form-switch {
   padding-left: 2.5em;
 }
-.form-switch .form-check-input, .form-switch #content form input[type=radio], #content form .form-switch input[type=radio],
-.form-switch #content form input[type=checkbox],
-#content form .form-switch input[type=checkbox] {
+.form-switch .form-check-input, .form-switch #content input[type=radio], #content .form-switch input[type=radio],
+.form-switch #content input[type=checkbox],
+#content .form-switch input[type=checkbox] {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
   width: 2em;
   margin-left: -2.5em;
@@ -4063,21 +4063,21 @@ textarea.form-control-lg {
   transition: background-position 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-switch .form-check-input, .form-switch #content form input[type=radio], #content form .form-switch input[type=radio],
-  .form-switch #content form input[type=checkbox],
-  #content form .form-switch input[type=checkbox] {
+  .form-switch .form-check-input, .form-switch #content input[type=radio], #content .form-switch input[type=radio],
+  .form-switch #content input[type=checkbox],
+  #content .form-switch input[type=checkbox] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.form-switch .form-check-input:focus, .form-switch #content form input[type=radio]:focus, #content form .form-switch input[type=radio]:focus,
-.form-switch #content form input[type=checkbox]:focus,
-#content form .form-switch input[type=checkbox]:focus {
-  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ebe9e5'/%3e%3c/svg%3e");
+.form-switch .form-check-input:focus, .form-switch #content input[type=radio]:focus, #content .form-switch input[type=radio]:focus,
+.form-switch #content input[type=checkbox]:focus,
+#content .form-switch input[type=checkbox]:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='var%28--current-theme-text-color, %232B292D%29'/%3e%3c/svg%3e");
 }
-.form-switch .form-check-input:checked, .form-switch #content form input[type=radio]:checked, #content form .form-switch input[type=radio]:checked,
-.form-switch #content form input[type=checkbox]:checked,
-#content form .form-switch input[type=checkbox]:checked {
+.form-switch .form-check-input:checked, .form-switch #content input[type=radio]:checked, #content .form-switch input[type=radio]:checked,
+.form-switch #content input[type=checkbox]:checked,
+#content .form-switch input[type=checkbox]:checked {
   background-position: right center;
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
@@ -4085,9 +4085,9 @@ textarea.form-control-lg {
   padding-right: 2.5em;
   padding-left: 0;
 }
-.form-switch.form-check-reverse .form-check-input, .form-switch.form-check-reverse #content form input[type=radio], #content form .form-switch.form-check-reverse input[type=radio],
-.form-switch.form-check-reverse #content form input[type=checkbox],
-#content form .form-switch.form-check-reverse input[type=checkbox] {
+.form-switch.form-check-reverse .form-check-input, .form-switch.form-check-reverse #content input[type=radio], #content .form-switch.form-check-reverse input[type=radio],
+.form-switch.form-check-reverse #content input[type=checkbox],
+#content .form-switch.form-check-reverse input[type=checkbox] {
   margin-right: -2.5em;
   margin-left: 0;
 }
@@ -4102,16 +4102,16 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, #content form .btn-check[disabled] + input[type=reset], #content form .btn-check[disabled] + input[type=submit], .btn-check:disabled + .btn, #content form .btn-check:disabled + input[type=reset], #content form .btn-check:disabled + input[type=submit] {
+.btn-check[disabled] + .btn, #content .btn-check[disabled] + input[type=reset], #content .btn-check[disabled] + input[type=submit], .btn-check:disabled + .btn, #content .btn-check:disabled + input[type=reset], #content .btn-check:disabled + input[type=submit] {
   pointer-events: none;
   -webkit-filter: none;
           filter: none;
   opacity: 0.65;
 }
 
-[data-bs-theme=dark] .form-switch .form-check-input:not(:checked):not(:focus), [data-bs-theme=dark] .form-switch #content form input[type=radio]:not(:checked):not(:focus), #content form [data-bs-theme=dark] .form-switch input[type=radio]:not(:checked):not(:focus),
-[data-bs-theme=dark] .form-switch #content form input[type=checkbox]:not(:checked):not(:focus),
-#content form [data-bs-theme=dark] .form-switch input[type=checkbox]:not(:checked):not(:focus) {
+[data-bs-theme=dark] .form-switch .form-check-input:not(:checked):not(:focus), [data-bs-theme=dark] .form-switch #content input[type=radio]:not(:checked):not(:focus), #content [data-bs-theme=dark] .form-switch input[type=radio]:not(:checked):not(:focus),
+[data-bs-theme=dark] .form-switch #content input[type=checkbox]:not(:checked):not(:focus),
+#content [data-bs-theme=dark] .form-switch input[type=checkbox]:not(:checked):not(:focus) {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e");
 }
 
@@ -4211,16 +4211,16 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button],
-#content form .sq-form-upload .form-floating > input[type=button], #content form .form-floating > input[type=email],
-#content form .form-floating > input[type=text],
-#content form .form-floating > input[type=number],
-#content form .form-floating > input[type=tel],
-#content form .form-floating > input[type=search],
-#content form .form-floating > textarea,
+.form-floating > .form-control, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button],
+#content .sq-form-upload .form-floating > input[type=button], #content .form-floating > input[type=email],
+#content .form-floating > input[type=text],
+#content .form-floating > input[type=number],
+#content .form-floating > input[type=tel],
+#content .form-floating > input[type=search],
+#content .form-floating > textarea,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select,
-#content form .form-floating > select {
+#content .form-floating > select {
   height: calc(3.5rem + calc(var(--bs-border-width) * 2));
   min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
   line-height: 1.25;
@@ -4251,162 +4251,162 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button],
-#content form .sq-form-upload .form-floating > input[type=button], #content form .form-floating > input[type=email],
-#content form .form-floating > input[type=text],
-#content form .form-floating > input[type=number],
-#content form .form-floating > input[type=tel],
-#content form .form-floating > input[type=search],
-#content form .form-floating > textarea,
+.form-floating > .form-control, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button],
+#content .sq-form-upload .form-floating > input[type=button], #content .form-floating > input[type=email],
+#content .form-floating > input[type=text],
+#content .form-floating > input[type=number],
+#content .form-floating > input[type=tel],
+#content .form-floating > input[type=search],
+#content .form-floating > textarea,
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::-webkit-input-placeholder, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-webkit-input-placeholder, #content form .sq-form-upload .form-floating > input[type=button]::-webkit-input-placeholder, #content form .form-floating > input[type=email]::-webkit-input-placeholder, #content form .form-floating > input[type=text]::-webkit-input-placeholder, #content form .form-floating > input[type=number]::-webkit-input-placeholder, #content form .form-floating > input[type=tel]::-webkit-input-placeholder, #content form .form-floating > input[type=search]::-webkit-input-placeholder, #content form .form-floating > textarea::-webkit-input-placeholder, .form-floating > .form-control-plaintext::-webkit-input-placeholder {
+.form-floating > .form-control::-webkit-input-placeholder, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-webkit-input-placeholder, #content .sq-form-upload .form-floating > input[type=button]::-webkit-input-placeholder, #content .form-floating > input[type=email]::-webkit-input-placeholder, #content .form-floating > input[type=text]::-webkit-input-placeholder, #content .form-floating > input[type=number]::-webkit-input-placeholder, #content .form-floating > input[type=tel]::-webkit-input-placeholder, #content .form-floating > input[type=search]::-webkit-input-placeholder, #content .form-floating > textarea::-webkit-input-placeholder, .form-floating > .form-control-plaintext::-webkit-input-placeholder {
   color: transparent;
 }
-.form-floating > .form-control::-moz-placeholder, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-moz-placeholder, #content form .sq-form-upload .form-floating > input[type=button]::-moz-placeholder, #content form .form-floating > input[type=email]::-moz-placeholder, #content form .form-floating > input[type=text]::-moz-placeholder, #content form .form-floating > input[type=number]::-moz-placeholder, #content form .form-floating > input[type=tel]::-moz-placeholder, #content form .form-floating > input[type=search]::-moz-placeholder, #content form .form-floating > textarea::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+.form-floating > .form-control::-moz-placeholder, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-moz-placeholder, #content .sq-form-upload .form-floating > input[type=button]::-moz-placeholder, #content .form-floating > input[type=email]::-moz-placeholder, #content .form-floating > input[type=text]::-moz-placeholder, #content .form-floating > input[type=number]::-moz-placeholder, #content .form-floating > input[type=tel]::-moz-placeholder, #content .form-floating > input[type=search]::-moz-placeholder, #content .form-floating > textarea::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
   color: transparent;
 }
-.form-floating > .form-control:-ms-input-placeholder, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-ms-input-placeholder, #content form .sq-form-upload .form-floating > input[type=button]:-ms-input-placeholder, #content form .form-floating > input[type=email]:-ms-input-placeholder, #content form .form-floating > input[type=text]:-ms-input-placeholder, #content form .form-floating > input[type=number]:-ms-input-placeholder, #content form .form-floating > input[type=tel]:-ms-input-placeholder, #content form .form-floating > input[type=search]:-ms-input-placeholder, #content form .form-floating > textarea:-ms-input-placeholder, .form-floating > .form-control-plaintext:-ms-input-placeholder {
+.form-floating > .form-control:-ms-input-placeholder, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-ms-input-placeholder, #content .sq-form-upload .form-floating > input[type=button]:-ms-input-placeholder, #content .form-floating > input[type=email]:-ms-input-placeholder, #content .form-floating > input[type=text]:-ms-input-placeholder, #content .form-floating > input[type=number]:-ms-input-placeholder, #content .form-floating > input[type=tel]:-ms-input-placeholder, #content .form-floating > input[type=search]:-ms-input-placeholder, #content .form-floating > textarea:-ms-input-placeholder, .form-floating > .form-control-plaintext:-ms-input-placeholder {
   color: transparent;
 }
-.form-floating > .form-control::-ms-input-placeholder, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-ms-input-placeholder, #content form .sq-form-upload .form-floating > input[type=button]::-ms-input-placeholder, #content form .form-floating > input[type=email]::-ms-input-placeholder, #content form .form-floating > input[type=text]::-ms-input-placeholder, #content form .form-floating > input[type=number]::-ms-input-placeholder, #content form .form-floating > input[type=tel]::-ms-input-placeholder, #content form .form-floating > input[type=search]::-ms-input-placeholder, #content form .form-floating > textarea::-ms-input-placeholder, .form-floating > .form-control-plaintext::-ms-input-placeholder {
+.form-floating > .form-control::-ms-input-placeholder, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::-ms-input-placeholder, #content .sq-form-upload .form-floating > input[type=button]::-ms-input-placeholder, #content .form-floating > input[type=email]::-ms-input-placeholder, #content .form-floating > input[type=text]::-ms-input-placeholder, #content .form-floating > input[type=number]::-ms-input-placeholder, #content .form-floating > input[type=tel]::-ms-input-placeholder, #content .form-floating > input[type=search]::-ms-input-placeholder, #content .form-floating > textarea::-ms-input-placeholder, .form-floating > .form-control-plaintext::-ms-input-placeholder {
   color: transparent;
 }
-.form-floating > .form-control::placeholder, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::placeholder,
-#content form .sq-form-upload .form-floating > input[type=button]::placeholder, #content form .form-floating > input[type=email]::placeholder,
-#content form .form-floating > input[type=text]::placeholder,
-#content form .form-floating > input[type=number]::placeholder,
-#content form .form-floating > input[type=tel]::placeholder,
-#content form .form-floating > input[type=search]::placeholder,
-#content form .form-floating > textarea::placeholder,
+.form-floating > .form-control::placeholder, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]::placeholder,
+#content .sq-form-upload .form-floating > input[type=button]::placeholder, #content .form-floating > input[type=email]::placeholder,
+#content .form-floating > input[type=text]::placeholder,
+#content .form-floating > input[type=number]::placeholder,
+#content .form-floating > input[type=tel]::placeholder,
+#content .form-floating > input[type=search]::placeholder,
+#content .form-floating > textarea::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown), #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown), #content form .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown), #content form .form-floating > input[type=email]:not(:-moz-placeholder-shown), #content form .form-floating > input[type=text]:not(:-moz-placeholder-shown), #content form .form-floating > input[type=number]:not(:-moz-placeholder-shown), #content form .form-floating > input[type=tel]:not(:-moz-placeholder-shown), #content form .form-floating > input[type=search]:not(:-moz-placeholder-shown), #content form .form-floating > textarea:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+.form-floating > .form-control:not(:-moz-placeholder-shown), #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown), #content .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown), #content .form-floating > input[type=email]:not(:-moz-placeholder-shown), #content .form-floating > input[type=text]:not(:-moz-placeholder-shown), #content .form-floating > input[type=number]:not(:-moz-placeholder-shown), #content .form-floating > input[type=tel]:not(:-moz-placeholder-shown), #content .form-floating > input[type=search]:not(:-moz-placeholder-shown), #content .form-floating > textarea:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-ms-input-placeholder), #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder), #content form .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder), #content form .form-floating > input[type=email]:not(:-ms-input-placeholder), #content form .form-floating > input[type=text]:not(:-ms-input-placeholder), #content form .form-floating > input[type=number]:not(:-ms-input-placeholder), #content form .form-floating > input[type=tel]:not(:-ms-input-placeholder), #content form .form-floating > input[type=search]:not(:-ms-input-placeholder), #content form .form-floating > textarea:not(:-ms-input-placeholder), .form-floating > .form-control-plaintext:not(:-ms-input-placeholder) {
+.form-floating > .form-control:not(:-ms-input-placeholder), #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder), #content .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder), #content .form-floating > input[type=email]:not(:-ms-input-placeholder), #content .form-floating > input[type=text]:not(:-ms-input-placeholder), #content .form-floating > input[type=number]:not(:-ms-input-placeholder), #content .form-floating > input[type=tel]:not(:-ms-input-placeholder), #content .form-floating > input[type=search]:not(:-ms-input-placeholder), #content .form-floating > textarea:not(:-ms-input-placeholder), .form-floating > .form-control-plaintext:not(:-ms-input-placeholder) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus,
-#content form .sq-form-upload .form-floating > input[type=button]:focus, #content form .form-floating > input[type=email]:focus,
-#content form .form-floating > input[type=text]:focus,
-#content form .form-floating > input[type=number]:focus,
-#content form .form-floating > input[type=tel]:focus,
-#content form .form-floating > input[type=search]:focus,
-#content form .form-floating > textarea:focus, .form-floating > .form-control:not(:placeholder-shown), #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown),
-#content form .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown), #content form .form-floating > input[type=email]:not(:placeholder-shown),
-#content form .form-floating > input[type=text]:not(:placeholder-shown),
-#content form .form-floating > input[type=number]:not(:placeholder-shown),
-#content form .form-floating > input[type=tel]:not(:placeholder-shown),
-#content form .form-floating > input[type=search]:not(:placeholder-shown),
-#content form .form-floating > textarea:not(:placeholder-shown),
+.form-floating > .form-control:focus, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus,
+#content .sq-form-upload .form-floating > input[type=button]:focus, #content .form-floating > input[type=email]:focus,
+#content .form-floating > input[type=text]:focus,
+#content .form-floating > input[type=number]:focus,
+#content .form-floating > input[type=tel]:focus,
+#content .form-floating > input[type=search]:focus,
+#content .form-floating > textarea:focus, .form-floating > .form-control:not(:placeholder-shown), #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown),
+#content .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown), #content .form-floating > input[type=email]:not(:placeholder-shown),
+#content .form-floating > input[type=text]:not(:placeholder-shown),
+#content .form-floating > input[type=number]:not(:placeholder-shown),
+#content .form-floating > input[type=tel]:not(:placeholder-shown),
+#content .form-floating > input[type=search]:not(:placeholder-shown),
+#content .form-floating > textarea:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-webkit-autofill,
-#content form .sq-form-upload .form-floating > input[type=button]:-webkit-autofill, #content form .form-floating > input[type=email]:-webkit-autofill,
-#content form .form-floating > input[type=text]:-webkit-autofill,
-#content form .form-floating > input[type=number]:-webkit-autofill,
-#content form .form-floating > input[type=tel]:-webkit-autofill,
-#content form .form-floating > input[type=search]:-webkit-autofill,
-#content form .form-floating > textarea:-webkit-autofill,
+.form-floating > .form-control:-webkit-autofill, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-webkit-autofill,
+#content .sq-form-upload .form-floating > input[type=button]:-webkit-autofill, #content .form-floating > input[type=email]:-webkit-autofill,
+#content .form-floating > input[type=text]:-webkit-autofill,
+#content .form-floating > input[type=number]:-webkit-autofill,
+#content .form-floating > input[type=tel]:-webkit-autofill,
+#content .form-floating > input[type=search]:-webkit-autofill,
+#content .form-floating > textarea:-webkit-autofill,
 .form-floating > .form-control-plaintext:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-select, #content form .form-floating > select {
+.form-floating > .form-select, #content .form-floating > select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label, #content form .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, #content form .form-floating > textarea:not(:-moz-placeholder-shown) ~ label {
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label, #content .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, #content .form-floating > textarea:not(:-moz-placeholder-shown) ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:not(:-ms-input-placeholder) ~ label, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label, #content form .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, #content form .form-floating > textarea:not(:-ms-input-placeholder) ~ label {
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label, #content .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label, #content .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, #content .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, #content .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label, #content .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label, #content .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, #content .form-floating > textarea:not(:-ms-input-placeholder) ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:focus ~ label, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus ~ label,
-#content form .sq-form-upload .form-floating > input[type=button]:focus ~ label, #content form .form-floating > input[type=email]:focus ~ label,
-#content form .form-floating > input[type=text]:focus ~ label,
-#content form .form-floating > input[type=number]:focus ~ label,
-#content form .form-floating > input[type=tel]:focus ~ label,
-#content form .form-floating > input[type=search]:focus ~ label,
-#content form .form-floating > textarea:focus ~ label,
+.form-floating > .form-control:focus ~ label, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus ~ label,
+#content .sq-form-upload .form-floating > input[type=button]:focus ~ label, #content .form-floating > input[type=email]:focus ~ label,
+#content .form-floating > input[type=text]:focus ~ label,
+#content .form-floating > input[type=number]:focus ~ label,
+#content .form-floating > input[type=tel]:focus ~ label,
+#content .form-floating > input[type=search]:focus ~ label,
+#content .form-floating > textarea:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
-#content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown) ~ label,
-#content form .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown) ~ label,
-#content form .form-floating > input[type=email]:not(:placeholder-shown) ~ label,
-#content form .form-floating > input[type=text]:not(:placeholder-shown) ~ label,
-#content form .form-floating > input[type=number]:not(:placeholder-shown) ~ label,
-#content form .form-floating > input[type=tel]:not(:placeholder-shown) ~ label,
-#content form .form-floating > input[type=search]:not(:placeholder-shown) ~ label,
-#content form .form-floating > textarea:not(:placeholder-shown) ~ label,
+#content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown) ~ label,
+#content .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown) ~ label,
+#content .form-floating > input[type=email]:not(:placeholder-shown) ~ label,
+#content .form-floating > input[type=text]:not(:placeholder-shown) ~ label,
+#content .form-floating > input[type=number]:not(:placeholder-shown) ~ label,
+#content .form-floating > input[type=tel]:not(:placeholder-shown) ~ label,
+#content .form-floating > input[type=search]:not(:placeholder-shown) ~ label,
+#content .form-floating > textarea:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label,
-#content form .form-floating > select ~ label {
+#content .form-floating > select ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   -webkit-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
           transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label::after, #content form .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label::after, #content form .form-floating > textarea:not(:-moz-placeholder-shown) ~ label::after {
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label::after, #content .sq-form-upload .form-floating > input[type=button]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label::after, #content .form-floating > textarea:not(:-moz-placeholder-shown) ~ label::after {
   position: absolute;
   inset: 1rem 0.375rem;
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: var(--bs-body-bg);
-  border-radius: var(--bs-border-radius);
+  background-color: #fff;
+  border-radius: 0;
 }
-.form-floating > .form-control:not(:-ms-input-placeholder) ~ label::after, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label::after, #content form .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label::after, #content form .form-floating > textarea:not(:-ms-input-placeholder) ~ label::after {
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label::after, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label::after, #content .sq-form-upload .form-floating > input[type=button]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label::after, #content .form-floating > textarea:not(:-ms-input-placeholder) ~ label::after {
   position: absolute;
   inset: 1rem 0.375rem;
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: var(--bs-body-bg);
-  border-radius: var(--bs-border-radius);
+  background-color: #fff;
+  border-radius: 0;
 }
-.form-floating > .form-control:focus ~ label::after, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus ~ label::after,
-#content form .sq-form-upload .form-floating > input[type=button]:focus ~ label::after, #content form .form-floating > input[type=email]:focus ~ label::after,
-#content form .form-floating > input[type=text]:focus ~ label::after,
-#content form .form-floating > input[type=number]:focus ~ label::after,
-#content form .form-floating > input[type=tel]:focus ~ label::after,
-#content form .form-floating > input[type=search]:focus ~ label::after,
-#content form .form-floating > textarea:focus ~ label::after,
+.form-floating > .form-control:focus ~ label::after, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:focus ~ label::after,
+#content .sq-form-upload .form-floating > input[type=button]:focus ~ label::after, #content .form-floating > input[type=email]:focus ~ label::after,
+#content .form-floating > input[type=text]:focus ~ label::after,
+#content .form-floating > input[type=number]:focus ~ label::after,
+#content .form-floating > input[type=tel]:focus ~ label::after,
+#content .form-floating > input[type=search]:focus ~ label::after,
+#content .form-floating > textarea:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
-#content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown) ~ label::after,
-#content form .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > input[type=email]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > input[type=text]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > input[type=number]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > input[type=tel]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > input[type=search]:not(:placeholder-shown) ~ label::after,
-#content form .form-floating > textarea:not(:placeholder-shown) ~ label::after,
+#content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:not(:placeholder-shown) ~ label::after,
+#content .sq-form-upload .form-floating > input[type=button]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > input[type=email]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > input[type=text]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > input[type=number]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > input[type=tel]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > input[type=search]:not(:placeholder-shown) ~ label::after,
+#content .form-floating > textarea:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-select ~ label::after,
-#content form .form-floating > select ~ label::after {
+#content .form-floating > select ~ label::after {
   position: absolute;
   inset: 1rem 0.375rem;
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: var(--bs-body-bg);
-  border-radius: var(--bs-border-radius);
+  background-color: #fff;
+  border-radius: 0;
 }
-.form-floating > .form-control:-webkit-autofill ~ label, #content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-webkit-autofill ~ label,
-#content form .sq-form-upload .form-floating > input[type=button]:-webkit-autofill ~ label, #content form .form-floating > input[type=email]:-webkit-autofill ~ label,
-#content form .form-floating > input[type=text]:-webkit-autofill ~ label,
-#content form .form-floating > input[type=number]:-webkit-autofill ~ label,
-#content form .form-floating > input[type=tel]:-webkit-autofill ~ label,
-#content form .form-floating > input[type=search]:-webkit-autofill ~ label,
-#content form .form-floating > textarea:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, #content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:-webkit-autofill ~ label,
+#content .sq-form-upload .form-floating > input[type=button]:-webkit-autofill ~ label, #content .form-floating > input[type=email]:-webkit-autofill ~ label,
+#content .form-floating > input[type=text]:-webkit-autofill ~ label,
+#content .form-floating > input[type=number]:-webkit-autofill ~ label,
+#content .form-floating > input[type=tel]:-webkit-autofill ~ label,
+#content .form-floating > input[type=search]:-webkit-autofill ~ label,
+#content .form-floating > textarea:-webkit-autofill ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   -webkit-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
           transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
@@ -4416,26 +4416,26 @@ textarea.form-control-lg {
 }
 .form-floating > :disabled ~ label,
 .form-floating > .form-control:disabled ~ label,
-#content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:disabled ~ label,
-#content form .sq-form-upload .form-floating > input[type=button]:disabled ~ label,
-#content form .form-floating > input[type=email]:disabled ~ label,
-#content form .form-floating > input[type=text]:disabled ~ label,
-#content form .form-floating > input[type=number]:disabled ~ label,
-#content form .form-floating > input[type=tel]:disabled ~ label,
-#content form .form-floating > input[type=search]:disabled ~ label,
-#content form .form-floating > textarea:disabled ~ label {
+#content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:disabled ~ label,
+#content .sq-form-upload .form-floating > input[type=button]:disabled ~ label,
+#content .form-floating > input[type=email]:disabled ~ label,
+#content .form-floating > input[type=text]:disabled ~ label,
+#content .form-floating > input[type=number]:disabled ~ label,
+#content .form-floating > input[type=tel]:disabled ~ label,
+#content .form-floating > input[type=search]:disabled ~ label,
+#content .form-floating > textarea:disabled ~ label {
   color: #6c757d;
 }
 .form-floating > :disabled ~ label::after,
 .form-floating > .form-control:disabled ~ label::after,
-#content form .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:disabled ~ label::after,
-#content form .sq-form-upload .form-floating > input[type=button]:disabled ~ label::after,
-#content form .form-floating > input[type=email]:disabled ~ label::after,
-#content form .form-floating > input[type=text]:disabled ~ label::after,
-#content form .form-floating > input[type=number]:disabled ~ label::after,
-#content form .form-floating > input[type=tel]:disabled ~ label::after,
-#content form .form-floating > input[type=search]:disabled ~ label::after,
-#content form .form-floating > textarea:disabled ~ label::after {
+#content .sq-form-upload-add-btn-wrapper .form-floating > input[type=button]:disabled ~ label::after,
+#content .sq-form-upload .form-floating > input[type=button]:disabled ~ label::after,
+#content .form-floating > input[type=email]:disabled ~ label::after,
+#content .form-floating > input[type=text]:disabled ~ label::after,
+#content .form-floating > input[type=number]:disabled ~ label::after,
+#content .form-floating > input[type=tel]:disabled ~ label::after,
+#content .form-floating > input[type=search]:disabled ~ label::after,
+#content .form-floating > textarea:disabled ~ label::after {
   background-color: var(--bs-secondary-bg);
 }
 
@@ -4451,15 +4451,15 @@ textarea.form-control-lg {
           align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control, #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button],
-#content form .sq-form-upload .input-group > input[type=button], #content form .input-group > input[type=email],
-#content form .input-group > input[type=text],
-#content form .input-group > input[type=number],
-#content form .input-group > input[type=tel],
-#content form .input-group > input[type=search],
-#content form .input-group > textarea,
+.input-group > .form-control, #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button],
+#content .sq-form-upload .input-group > input[type=button], #content .input-group > input[type=email],
+#content .input-group > input[type=text],
+#content .input-group > input[type=number],
+#content .input-group > input[type=tel],
+#content .input-group > input[type=search],
+#content .input-group > textarea,
 .input-group > .form-select,
-#content form .input-group > select,
+#content .input-group > select,
 .input-group > .form-floating {
   position: relative;
   -webkit-box-flex: 1;
@@ -4468,23 +4468,23 @@ textarea.form-control-lg {
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus, #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:focus,
-#content form .sq-form-upload .input-group > input[type=button]:focus, #content form .input-group > input[type=email]:focus,
-#content form .input-group > input[type=text]:focus,
-#content form .input-group > input[type=number]:focus,
-#content form .input-group > input[type=tel]:focus,
-#content form .input-group > input[type=search]:focus,
-#content form .input-group > textarea:focus,
+.input-group > .form-control:focus, #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:focus,
+#content .sq-form-upload .input-group > input[type=button]:focus, #content .input-group > input[type=email]:focus,
+#content .input-group > input[type=text]:focus,
+#content .input-group > input[type=number]:focus,
+#content .input-group > input[type=tel]:focus,
+#content .input-group > input[type=search]:focus,
+#content .input-group > textarea:focus,
 .input-group > .form-select:focus,
-#content form .input-group > select:focus,
+#content .input-group > select:focus,
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group #content form input[type=reset], #content form .input-group input[type=reset], .input-group #content form input[type=submit], #content form .input-group input[type=submit] {
+.input-group .btn, .input-group #content input[type=reset], #content .input-group input[type=reset], .input-group #content input[type=submit], #content .input-group input[type=submit] {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group #content form input[type=reset]:focus, #content form .input-group input[type=reset]:focus, .input-group #content form input[type=submit]:focus, #content form .input-group input[type=submit]:focus {
+.input-group .btn:focus, .input-group #content input[type=reset]:focus, #content .input-group input[type=reset]:focus, .input-group #content input[type=submit]:focus, #content .input-group input[type=submit]:focus {
   z-index: 5;
 }
 
@@ -4499,12 +4499,12 @@ textarea.form-control-lg {
   font-size: 1.0000000009rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--bs-body-color);
+  color: #2B292D;
   text-align: center;
   white-space: nowrap;
   background-color: var(--bs-tertiary-bg);
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border: var(--bs-border-width) solid var(--current-theme-text-color, #2B292D);
+  border-radius: 0;
 }
 @media (min-width: 1200px) {
   .input-group-text {
@@ -4512,94 +4512,94 @@ textarea.form-control-lg {
   }
 }
 
-.input-group-lg > .form-control, #content form .sq-form-upload-add-btn-wrapper .input-group-lg > input[type=button],
-#content form .sq-form-upload .input-group-lg > input[type=button], #content form .input-group-lg > input[type=email],
-#content form .input-group-lg > input[type=text],
-#content form .input-group-lg > input[type=number],
-#content form .input-group-lg > input[type=tel],
-#content form .input-group-lg > input[type=search],
-#content form .input-group-lg > textarea,
+.input-group-lg > .form-control, #content .sq-form-upload-add-btn-wrapper .input-group-lg > input[type=button],
+#content .sq-form-upload .input-group-lg > input[type=button], #content .input-group-lg > input[type=email],
+#content .input-group-lg > input[type=text],
+#content .input-group-lg > input[type=number],
+#content .input-group-lg > input[type=tel],
+#content .input-group-lg > input[type=search],
+#content .input-group-lg > textarea,
 .input-group-lg > .form-select,
-#content form .input-group-lg > select,
+#content .input-group-lg > select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
-#content form .input-group-lg > input[type=reset],
-#content form .input-group-lg > input[type=submit] {
+#content .input-group-lg > input[type=reset],
+#content .input-group-lg > input[type=submit] {
   padding: 0.5rem 1rem;
   font-size: 1.2500000011rem;
   border-radius: var(--bs-border-radius-lg);
 }
 @media (min-width: 1200px) {
-  .input-group-lg > .form-control, #content form .sq-form-upload-add-btn-wrapper .input-group-lg > input[type=button],
-  #content form .sq-form-upload .input-group-lg > input[type=button], #content form .input-group-lg > input[type=email],
-  #content form .input-group-lg > input[type=text],
-  #content form .input-group-lg > input[type=number],
-  #content form .input-group-lg > input[type=tel],
-  #content form .input-group-lg > input[type=search],
-  #content form .input-group-lg > textarea,
+  .input-group-lg > .form-control, #content .sq-form-upload-add-btn-wrapper .input-group-lg > input[type=button],
+  #content .sq-form-upload .input-group-lg > input[type=button], #content .input-group-lg > input[type=email],
+  #content .input-group-lg > input[type=text],
+  #content .input-group-lg > input[type=number],
+  #content .input-group-lg > input[type=tel],
+  #content .input-group-lg > input[type=search],
+  #content .input-group-lg > textarea,
   .input-group-lg > .form-select,
-  #content form .input-group-lg > select,
+  #content .input-group-lg > select,
   .input-group-lg > .input-group-text,
   .input-group-lg > .btn,
-  #content form .input-group-lg > input[type=reset],
-  #content form .input-group-lg > input[type=submit] {
+  #content .input-group-lg > input[type=reset],
+  #content .input-group-lg > input[type=submit] {
     font-size: 1.25rem;
   }
 }
 
-.input-group-sm > .form-control, #content form .sq-form-upload-add-btn-wrapper .input-group-sm > input[type=button],
-#content form .sq-form-upload .input-group-sm > input[type=button], #content form .input-group-sm > input[type=email],
-#content form .input-group-sm > input[type=text],
-#content form .input-group-sm > input[type=number],
-#content form .input-group-sm > input[type=tel],
-#content form .input-group-sm > input[type=search],
-#content form .input-group-sm > textarea,
+.input-group-sm > .form-control, #content .sq-form-upload-add-btn-wrapper .input-group-sm > input[type=button],
+#content .sq-form-upload .input-group-sm > input[type=button], #content .input-group-sm > input[type=email],
+#content .input-group-sm > input[type=text],
+#content .input-group-sm > input[type=number],
+#content .input-group-sm > input[type=tel],
+#content .input-group-sm > input[type=search],
+#content .input-group-sm > textarea,
 .input-group-sm > .form-select,
-#content form .input-group-sm > select,
+#content .input-group-sm > select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
-#content form .input-group-sm > input[type=reset],
-#content form .input-group-sm > input[type=submit] {
+#content .input-group-sm > input[type=reset],
+#content .input-group-sm > input[type=submit] {
   padding: 0.25rem 0.5rem;
   font-size: calc(var(--base-font-size) / var(--scale));
   border-radius: var(--bs-border-radius-sm);
 }
 
-.input-group-lg > .form-select, #content form .input-group-lg > select,
+.input-group-lg > .form-select, #content .input-group-lg > select,
 .input-group-sm > .form-select,
-#content form .input-group-sm > select {
+#content .input-group-sm > select {
   padding-right: 3rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
-#content form .sq-form-upload-add-btn-wrapper .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=button],
-#content form .sq-form-upload .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=button],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=number],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=tel],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=search],
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > textarea,
+#content .sq-form-upload-add-btn-wrapper .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=button],
+#content .sq-form-upload .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=button],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=number],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=tel],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=search],
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > textarea,
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select,
-#content form .input-group:not(.has-validation) > .form-floating:not(:last-child) > select {
+#content .input-group:not(.has-validation) > .form-floating:not(:last-child) > select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4),
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control,
-#content form .sq-form-upload-add-btn-wrapper .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=button],
-#content form .sq-form-upload .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=button],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=number],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=tel],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=search],
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > textarea,
+#content .sq-form-upload-add-btn-wrapper .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=button],
+#content .sq-form-upload .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=button],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=number],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=tel],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=search],
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > textarea,
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select,
-#content form .input-group.has-validation > .form-floating:nth-last-child(n+3) > select {
+#content .input-group.has-validation > .form-floating:nth-last-child(n+3) > select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -4608,15 +4608,15 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-group > .form-floating:not(:first-child) > .form-control, #content form .sq-form-upload-add-btn-wrapper .input-group > .form-floating:not(:first-child) > input[type=button],
-#content form .sq-form-upload .input-group > .form-floating:not(:first-child) > input[type=button], #content form .input-group > .form-floating:not(:first-child) > input[type=email],
-#content form .input-group > .form-floating:not(:first-child) > input[type=text],
-#content form .input-group > .form-floating:not(:first-child) > input[type=number],
-#content form .input-group > .form-floating:not(:first-child) > input[type=tel],
-#content form .input-group > .form-floating:not(:first-child) > input[type=search],
-#content form .input-group > .form-floating:not(:first-child) > textarea,
+.input-group > .form-floating:not(:first-child) > .form-control, #content .sq-form-upload-add-btn-wrapper .input-group > .form-floating:not(:first-child) > input[type=button],
+#content .sq-form-upload .input-group > .form-floating:not(:first-child) > input[type=button], #content .input-group > .form-floating:not(:first-child) > input[type=email],
+#content .input-group > .form-floating:not(:first-child) > input[type=text],
+#content .input-group > .form-floating:not(:first-child) > input[type=number],
+#content .input-group > .form-floating:not(:first-child) > input[type=tel],
+#content .input-group > .form-floating:not(:first-child) > input[type=search],
+#content .input-group > .form-floating:not(:first-child) > textarea,
 .input-group > .form-floating:not(:first-child) > .form-select,
-#content form .input-group > .form-floating:not(:first-child) > select {
+#content .input-group > .form-floating:not(:first-child) > select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4650,25 +4650,25 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .was-validated #content form .sq-form-upload-add-btn-wrapper input[type=button]:valid, #content form .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:valid,
-.was-validated #content form .sq-form-upload input[type=button]:valid,
-#content form .sq-form-upload .was-validated input[type=button]:valid, .was-validated #content form input[type=email]:valid, #content form .was-validated input[type=email]:valid,
-.was-validated #content form input[type=text]:valid,
-#content form .was-validated input[type=text]:valid,
-.was-validated #content form input[type=number]:valid,
-#content form .was-validated input[type=number]:valid,
-.was-validated #content form input[type=tel]:valid,
-#content form .was-validated input[type=tel]:valid,
-.was-validated #content form input[type=search]:valid,
-#content form .was-validated input[type=search]:valid,
-.was-validated #content form textarea:valid,
-#content form .was-validated textarea:valid, .form-control.is-valid, #content form .sq-form-upload-add-btn-wrapper input.is-valid[type=button],
-#content form .sq-form-upload input.is-valid[type=button], #content form input.is-valid[type=email],
-#content form input.is-valid[type=text],
-#content form input.is-valid[type=number],
-#content form input.is-valid[type=tel],
-#content form input.is-valid[type=search],
-#content form textarea.is-valid {
+.was-validated .form-control:valid, .was-validated #content .sq-form-upload-add-btn-wrapper input[type=button]:valid, #content .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:valid,
+.was-validated #content .sq-form-upload input[type=button]:valid,
+#content .sq-form-upload .was-validated input[type=button]:valid, .was-validated #content input[type=email]:valid, #content .was-validated input[type=email]:valid,
+.was-validated #content input[type=text]:valid,
+#content .was-validated input[type=text]:valid,
+.was-validated #content input[type=number]:valid,
+#content .was-validated input[type=number]:valid,
+.was-validated #content input[type=tel]:valid,
+#content .was-validated input[type=tel]:valid,
+.was-validated #content input[type=search]:valid,
+#content .was-validated input[type=search]:valid,
+.was-validated #content textarea:valid,
+#content .was-validated textarea:valid, .form-control.is-valid, #content .sq-form-upload-add-btn-wrapper input.is-valid[type=button],
+#content .sq-form-upload input.is-valid[type=button], #content input.is-valid[type=email],
+#content input.is-valid[type=text],
+#content input.is-valid[type=number],
+#content input.is-valid[type=tel],
+#content input.is-valid[type=search],
+#content textarea.is-valid {
   border-color: var(--bs-form-valid-border-color);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23107810' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -4676,48 +4676,48 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .was-validated #content form .sq-form-upload-add-btn-wrapper input[type=button]:valid:focus, #content form .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:valid:focus,
-.was-validated #content form .sq-form-upload input[type=button]:valid:focus,
-#content form .sq-form-upload .was-validated input[type=button]:valid:focus, .was-validated #content form input[type=email]:valid:focus, #content form .was-validated input[type=email]:valid:focus,
-.was-validated #content form input[type=text]:valid:focus,
-#content form .was-validated input[type=text]:valid:focus,
-.was-validated #content form input[type=number]:valid:focus,
-#content form .was-validated input[type=number]:valid:focus,
-.was-validated #content form input[type=tel]:valid:focus,
-#content form .was-validated input[type=tel]:valid:focus,
-.was-validated #content form input[type=search]:valid:focus,
-#content form .was-validated input[type=search]:valid:focus,
-.was-validated #content form textarea:valid:focus,
-#content form .was-validated textarea:valid:focus, .form-control.is-valid:focus, #content form .sq-form-upload-add-btn-wrapper input.is-valid[type=button]:focus,
-#content form .sq-form-upload input.is-valid[type=button]:focus, #content form input.is-valid[type=email]:focus,
-#content form input.is-valid[type=text]:focus,
-#content form input.is-valid[type=number]:focus,
-#content form input.is-valid[type=tel]:focus,
-#content form input.is-valid[type=search]:focus,
-#content form textarea.is-valid:focus {
+.was-validated .form-control:valid:focus, .was-validated #content .sq-form-upload-add-btn-wrapper input[type=button]:valid:focus, #content .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:valid:focus,
+.was-validated #content .sq-form-upload input[type=button]:valid:focus,
+#content .sq-form-upload .was-validated input[type=button]:valid:focus, .was-validated #content input[type=email]:valid:focus, #content .was-validated input[type=email]:valid:focus,
+.was-validated #content input[type=text]:valid:focus,
+#content .was-validated input[type=text]:valid:focus,
+.was-validated #content input[type=number]:valid:focus,
+#content .was-validated input[type=number]:valid:focus,
+.was-validated #content input[type=tel]:valid:focus,
+#content .was-validated input[type=tel]:valid:focus,
+.was-validated #content input[type=search]:valid:focus,
+#content .was-validated input[type=search]:valid:focus,
+.was-validated #content textarea:valid:focus,
+#content .was-validated textarea:valid:focus, .form-control.is-valid:focus, #content .sq-form-upload-add-btn-wrapper input.is-valid[type=button]:focus,
+#content .sq-form-upload input.is-valid[type=button]:focus, #content input.is-valid[type=email]:focus,
+#content input.is-valid[type=text]:focus,
+#content input.is-valid[type=number]:focus,
+#content input.is-valid[type=tel]:focus,
+#content input.is-valid[type=search]:focus,
+#content textarea.is-valid:focus {
   border-color: var(--bs-form-valid-border-color);
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
 }
 
 .was-validated textarea.form-control:valid,
-.was-validated #content form textarea:valid,
-#content form .was-validated textarea:valid, textarea.form-control.is-valid,
-#content form textarea.is-valid {
+.was-validated #content textarea:valid,
+#content .was-validated textarea:valid, textarea.form-control.is-valid,
+#content textarea.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
-.was-validated .form-select:valid, .was-validated #content form select:valid, #content form .was-validated select:valid, .form-select.is-valid, #content form select.is-valid {
+.was-validated .form-select:valid, .was-validated #content select:valid, #content .was-validated select:valid, .form-select.is-valid, #content select.is-valid {
   border-color: var(--bs-form-valid-border-color);
 }
-.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated #content form select:valid:not([multiple]):not([size]), #content form .was-validated select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated #content form select:valid:not([multiple])[size="1"], #content form .was-validated select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), #content form select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], #content form select.is-valid:not([multiple])[size="1"] {
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated #content select:valid:not([multiple]):not([size]), #content .was-validated select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated #content select:valid:not([multiple])[size="1"], #content .was-validated select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), #content select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], #content select.is-valid:not([multiple])[size="1"] {
   --bs-form-select-bg-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23107810' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   padding-right: 4.125rem;
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-select:valid:focus, .was-validated #content form select:valid:focus, #content form .was-validated select:valid:focus, .form-select.is-valid:focus, #content form select.is-valid:focus {
+.was-validated .form-select:valid:focus, .was-validated #content select:valid:focus, #content .was-validated select:valid:focus, .form-select.is-valid:focus, #content select.is-valid:focus {
   border-color: var(--bs-form-valid-border-color);
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
@@ -4727,71 +4727,71 @@ textarea.form-control-lg {
   width: calc(3rem + calc(1.5em + 0.75rem));
 }
 
-.was-validated .form-check-input:valid, .was-validated #content form input[type=radio]:valid, #content form .was-validated input[type=radio]:valid,
-.was-validated #content form input[type=checkbox]:valid,
-#content form .was-validated input[type=checkbox]:valid, .form-check-input.is-valid, #content form input.is-valid[type=radio],
-#content form input.is-valid[type=checkbox] {
+.was-validated .form-check-input:valid, .was-validated #content input[type=radio]:valid, #content .was-validated input[type=radio]:valid,
+.was-validated #content input[type=checkbox]:valid,
+#content .was-validated input[type=checkbox]:valid, .form-check-input.is-valid, #content input.is-valid[type=radio],
+#content input.is-valid[type=checkbox] {
   border-color: var(--bs-form-valid-border-color);
 }
-.was-validated .form-check-input:valid:checked, .was-validated #content form input[type=radio]:valid:checked, #content form .was-validated input[type=radio]:valid:checked,
-.was-validated #content form input[type=checkbox]:valid:checked,
-#content form .was-validated input[type=checkbox]:valid:checked, .form-check-input.is-valid:checked, #content form input.is-valid[type=radio]:checked,
-#content form input.is-valid[type=checkbox]:checked {
+.was-validated .form-check-input:valid:checked, .was-validated #content input[type=radio]:valid:checked, #content .was-validated input[type=radio]:valid:checked,
+.was-validated #content input[type=checkbox]:valid:checked,
+#content .was-validated input[type=checkbox]:valid:checked, .form-check-input.is-valid:checked, #content input.is-valid[type=radio]:checked,
+#content input.is-valid[type=checkbox]:checked {
   background-color: var(--bs-form-valid-color);
 }
-.was-validated .form-check-input:valid:focus, .was-validated #content form input[type=radio]:valid:focus, #content form .was-validated input[type=radio]:valid:focus,
-.was-validated #content form input[type=checkbox]:valid:focus,
-#content form .was-validated input[type=checkbox]:valid:focus, .form-check-input.is-valid:focus, #content form input.is-valid[type=radio]:focus,
-#content form input.is-valid[type=checkbox]:focus {
+.was-validated .form-check-input:valid:focus, .was-validated #content input[type=radio]:valid:focus, #content .was-validated input[type=radio]:valid:focus,
+.was-validated #content input[type=checkbox]:valid:focus,
+#content .was-validated input[type=checkbox]:valid:focus, .form-check-input.is-valid:focus, #content input.is-valid[type=radio]:focus,
+#content input.is-valid[type=checkbox]:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
 }
-.was-validated .form-check-input:valid ~ .form-check-label, .was-validated #content form .form-check-input:valid ~ input[type=radio] ~ label, #content form .was-validated .form-check-input:valid ~ input[type=radio] ~ label, .was-validated #content form input[type=radio] ~ .form-check-input:valid ~ label, #content form .was-validated input[type=radio] ~ .form-check-input:valid ~ label,
-.was-validated #content form .form-check-input:valid ~ input[type=checkbox] ~ label,
-#content form .was-validated .form-check-input:valid ~ input[type=checkbox] ~ label,
-.was-validated #content form input[type=checkbox] ~ .form-check-input:valid ~ label,
-#content form .was-validated input[type=checkbox] ~ .form-check-input:valid ~ label, .was-validated #content form input[type=radio]:valid ~ .form-check-label, .was-validated #content form input[type=radio]:valid ~ label, #content form .was-validated input[type=radio]:valid ~ .form-check-label, #content form .was-validated input[type=radio]:valid ~ label,
-.was-validated #content form input[type=checkbox]:valid ~ .form-check-label,
-.was-validated #content form input[type=checkbox]:valid ~ label,
-#content form .was-validated input[type=checkbox]:valid ~ .form-check-label,
-#content form .was-validated input[type=checkbox]:valid ~ label, .form-check-input.is-valid ~ .form-check-label, #content form .form-check-input.is-valid ~ input[type=radio] ~ label, #content form input[type=radio] ~ .form-check-input.is-valid ~ label,
-#content form .form-check-input.is-valid ~ input[type=checkbox] ~ label,
-#content form input[type=checkbox] ~ .form-check-input.is-valid ~ label, #content form input.is-valid[type=radio] ~ .form-check-label, #content form input.is-valid[type=radio] ~ label,
-#content form input.is-valid[type=checkbox] ~ .form-check-label,
-#content form input.is-valid[type=checkbox] ~ label {
+.was-validated .form-check-input:valid ~ .form-check-label, .was-validated #content .form-check-input:valid ~ input[type=radio] ~ label, #content .was-validated .form-check-input:valid ~ input[type=radio] ~ label, .was-validated #content input[type=radio] ~ .form-check-input:valid ~ label, #content .was-validated input[type=radio] ~ .form-check-input:valid ~ label,
+.was-validated #content .form-check-input:valid ~ input[type=checkbox] ~ label,
+#content .was-validated .form-check-input:valid ~ input[type=checkbox] ~ label,
+.was-validated #content input[type=checkbox] ~ .form-check-input:valid ~ label,
+#content .was-validated input[type=checkbox] ~ .form-check-input:valid ~ label, .was-validated #content input[type=radio]:valid ~ .form-check-label, .was-validated #content input[type=radio]:valid ~ label, #content .was-validated input[type=radio]:valid ~ .form-check-label, #content .was-validated input[type=radio]:valid ~ label,
+.was-validated #content input[type=checkbox]:valid ~ .form-check-label,
+.was-validated #content input[type=checkbox]:valid ~ label,
+#content .was-validated input[type=checkbox]:valid ~ .form-check-label,
+#content .was-validated input[type=checkbox]:valid ~ label, .form-check-input.is-valid ~ .form-check-label, #content .form-check-input.is-valid ~ input[type=radio] ~ label, #content input[type=radio] ~ .form-check-input.is-valid ~ label,
+#content .form-check-input.is-valid ~ input[type=checkbox] ~ label,
+#content input[type=checkbox] ~ .form-check-input.is-valid ~ label, #content input.is-valid[type=radio] ~ .form-check-label, #content input.is-valid[type=radio] ~ label,
+#content input.is-valid[type=checkbox] ~ .form-check-label,
+#content input.is-valid[type=checkbox] ~ label {
   color: var(--bs-form-valid-color);
 }
 
-.form-check-inline .form-check-input ~ .valid-feedback, .form-check-inline #content form input[type=radio] ~ .valid-feedback, #content form .form-check-inline input[type=radio] ~ .valid-feedback,
-.form-check-inline #content form input[type=checkbox] ~ .valid-feedback,
-#content form .form-check-inline input[type=checkbox] ~ .valid-feedback {
+.form-check-inline .form-check-input ~ .valid-feedback, .form-check-inline #content input[type=radio] ~ .valid-feedback, #content .form-check-inline input[type=radio] ~ .valid-feedback,
+.form-check-inline #content input[type=checkbox] ~ .valid-feedback,
+#content .form-check-inline input[type=checkbox] ~ .valid-feedback {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):valid, .was-validated #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus):valid, #content form .sq-form-upload-add-btn-wrapper .was-validated .input-group > input[type=button]:not(:focus):valid,
-.was-validated #content form .sq-form-upload .input-group > input[type=button]:not(:focus):valid,
-#content form .sq-form-upload .was-validated .input-group > input[type=button]:not(:focus):valid, .was-validated #content form .input-group > input[type=email]:not(:focus):valid, #content form .was-validated .input-group > input[type=email]:not(:focus):valid,
-.was-validated #content form .input-group > input[type=text]:not(:focus):valid,
-#content form .was-validated .input-group > input[type=text]:not(:focus):valid,
-.was-validated #content form .input-group > input[type=number]:not(:focus):valid,
-#content form .was-validated .input-group > input[type=number]:not(:focus):valid,
-.was-validated #content form .input-group > input[type=tel]:not(:focus):valid,
-#content form .was-validated .input-group > input[type=tel]:not(:focus):valid,
-.was-validated #content form .input-group > input[type=search]:not(:focus):valid,
-#content form .was-validated .input-group > input[type=search]:not(:focus):valid,
-.was-validated #content form .input-group > textarea:not(:focus):valid,
-#content form .was-validated .input-group > textarea:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus).is-valid,
-#content form .sq-form-upload .input-group > input[type=button]:not(:focus).is-valid, #content form .input-group > input[type=email]:not(:focus).is-valid,
-#content form .input-group > input[type=text]:not(:focus).is-valid,
-#content form .input-group > input[type=number]:not(:focus).is-valid,
-#content form .input-group > input[type=tel]:not(:focus).is-valid,
-#content form .input-group > input[type=search]:not(:focus).is-valid,
-#content form .input-group > textarea:not(:focus).is-valid,
+.was-validated .input-group > .form-control:not(:focus):valid, .was-validated #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus):valid, #content .sq-form-upload-add-btn-wrapper .was-validated .input-group > input[type=button]:not(:focus):valid,
+.was-validated #content .sq-form-upload .input-group > input[type=button]:not(:focus):valid,
+#content .sq-form-upload .was-validated .input-group > input[type=button]:not(:focus):valid, .was-validated #content .input-group > input[type=email]:not(:focus):valid, #content .was-validated .input-group > input[type=email]:not(:focus):valid,
+.was-validated #content .input-group > input[type=text]:not(:focus):valid,
+#content .was-validated .input-group > input[type=text]:not(:focus):valid,
+.was-validated #content .input-group > input[type=number]:not(:focus):valid,
+#content .was-validated .input-group > input[type=number]:not(:focus):valid,
+.was-validated #content .input-group > input[type=tel]:not(:focus):valid,
+#content .was-validated .input-group > input[type=tel]:not(:focus):valid,
+.was-validated #content .input-group > input[type=search]:not(:focus):valid,
+#content .was-validated .input-group > input[type=search]:not(:focus):valid,
+.was-validated #content .input-group > textarea:not(:focus):valid,
+#content .was-validated .input-group > textarea:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus).is-valid,
+#content .sq-form-upload .input-group > input[type=button]:not(:focus).is-valid, #content .input-group > input[type=email]:not(:focus).is-valid,
+#content .input-group > input[type=text]:not(:focus).is-valid,
+#content .input-group > input[type=number]:not(:focus).is-valid,
+#content .input-group > input[type=tel]:not(:focus).is-valid,
+#content .input-group > input[type=search]:not(:focus).is-valid,
+#content .input-group > textarea:not(:focus).is-valid,
 .was-validated .input-group > .form-select:not(:focus):valid,
-.was-validated #content form .input-group > select:not(:focus):valid,
-#content form .was-validated .input-group > select:not(:focus):valid,
+.was-validated #content .input-group > select:not(:focus):valid,
+#content .was-validated .input-group > select:not(:focus):valid,
 .input-group > .form-select:not(:focus).is-valid,
-#content form .input-group > select:not(:focus).is-valid,
+#content .input-group > select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
 .input-group > .form-floating:not(:focus-within).is-valid {
   z-index: 3;
@@ -4826,25 +4826,25 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:invalid, .was-validated #content form .sq-form-upload-add-btn-wrapper input[type=button]:invalid, #content form .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:invalid,
-.was-validated #content form .sq-form-upload input[type=button]:invalid,
-#content form .sq-form-upload .was-validated input[type=button]:invalid, .was-validated #content form input[type=email]:invalid, #content form .was-validated input[type=email]:invalid,
-.was-validated #content form input[type=text]:invalid,
-#content form .was-validated input[type=text]:invalid,
-.was-validated #content form input[type=number]:invalid,
-#content form .was-validated input[type=number]:invalid,
-.was-validated #content form input[type=tel]:invalid,
-#content form .was-validated input[type=tel]:invalid,
-.was-validated #content form input[type=search]:invalid,
-#content form .was-validated input[type=search]:invalid,
-.was-validated #content form textarea:invalid,
-#content form .was-validated textarea:invalid, .form-control.is-invalid, #content form .sq-form-upload-add-btn-wrapper input.is-invalid[type=button],
-#content form .sq-form-upload input.is-invalid[type=button], #content form input.is-invalid[type=email],
-#content form input.is-invalid[type=text],
-#content form input.is-invalid[type=number],
-#content form input.is-invalid[type=tel],
-#content form input.is-invalid[type=search],
-#content form textarea.is-invalid {
+.was-validated .form-control:invalid, .was-validated #content .sq-form-upload-add-btn-wrapper input[type=button]:invalid, #content .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:invalid,
+.was-validated #content .sq-form-upload input[type=button]:invalid,
+#content .sq-form-upload .was-validated input[type=button]:invalid, .was-validated #content input[type=email]:invalid, #content .was-validated input[type=email]:invalid,
+.was-validated #content input[type=text]:invalid,
+#content .was-validated input[type=text]:invalid,
+.was-validated #content input[type=number]:invalid,
+#content .was-validated input[type=number]:invalid,
+.was-validated #content input[type=tel]:invalid,
+#content .was-validated input[type=tel]:invalid,
+.was-validated #content input[type=search]:invalid,
+#content .was-validated input[type=search]:invalid,
+.was-validated #content textarea:invalid,
+#content .was-validated textarea:invalid, .form-control.is-invalid, #content .sq-form-upload-add-btn-wrapper input.is-invalid[type=button],
+#content .sq-form-upload input.is-invalid[type=button], #content input.is-invalid[type=email],
+#content input.is-invalid[type=text],
+#content input.is-invalid[type=number],
+#content input.is-invalid[type=tel],
+#content input.is-invalid[type=search],
+#content textarea.is-invalid {
   border-color: var(--bs-form-invalid-border-color);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23C43004'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23C43004' stroke='none'/%3e%3c/svg%3e");
@@ -4852,48 +4852,48 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .was-validated #content form .sq-form-upload-add-btn-wrapper input[type=button]:invalid:focus, #content form .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:invalid:focus,
-.was-validated #content form .sq-form-upload input[type=button]:invalid:focus,
-#content form .sq-form-upload .was-validated input[type=button]:invalid:focus, .was-validated #content form input[type=email]:invalid:focus, #content form .was-validated input[type=email]:invalid:focus,
-.was-validated #content form input[type=text]:invalid:focus,
-#content form .was-validated input[type=text]:invalid:focus,
-.was-validated #content form input[type=number]:invalid:focus,
-#content form .was-validated input[type=number]:invalid:focus,
-.was-validated #content form input[type=tel]:invalid:focus,
-#content form .was-validated input[type=tel]:invalid:focus,
-.was-validated #content form input[type=search]:invalid:focus,
-#content form .was-validated input[type=search]:invalid:focus,
-.was-validated #content form textarea:invalid:focus,
-#content form .was-validated textarea:invalid:focus, .form-control.is-invalid:focus, #content form .sq-form-upload-add-btn-wrapper input.is-invalid[type=button]:focus,
-#content form .sq-form-upload input.is-invalid[type=button]:focus, #content form input.is-invalid[type=email]:focus,
-#content form input.is-invalid[type=text]:focus,
-#content form input.is-invalid[type=number]:focus,
-#content form input.is-invalid[type=tel]:focus,
-#content form input.is-invalid[type=search]:focus,
-#content form textarea.is-invalid:focus {
+.was-validated .form-control:invalid:focus, .was-validated #content .sq-form-upload-add-btn-wrapper input[type=button]:invalid:focus, #content .sq-form-upload-add-btn-wrapper .was-validated input[type=button]:invalid:focus,
+.was-validated #content .sq-form-upload input[type=button]:invalid:focus,
+#content .sq-form-upload .was-validated input[type=button]:invalid:focus, .was-validated #content input[type=email]:invalid:focus, #content .was-validated input[type=email]:invalid:focus,
+.was-validated #content input[type=text]:invalid:focus,
+#content .was-validated input[type=text]:invalid:focus,
+.was-validated #content input[type=number]:invalid:focus,
+#content .was-validated input[type=number]:invalid:focus,
+.was-validated #content input[type=tel]:invalid:focus,
+#content .was-validated input[type=tel]:invalid:focus,
+.was-validated #content input[type=search]:invalid:focus,
+#content .was-validated input[type=search]:invalid:focus,
+.was-validated #content textarea:invalid:focus,
+#content .was-validated textarea:invalid:focus, .form-control.is-invalid:focus, #content .sq-form-upload-add-btn-wrapper input.is-invalid[type=button]:focus,
+#content .sq-form-upload input.is-invalid[type=button]:focus, #content input.is-invalid[type=email]:focus,
+#content input.is-invalid[type=text]:focus,
+#content input.is-invalid[type=number]:focus,
+#content input.is-invalid[type=tel]:focus,
+#content input.is-invalid[type=search]:focus,
+#content textarea.is-invalid:focus {
   border-color: var(--bs-form-invalid-border-color);
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
 }
 
 .was-validated textarea.form-control:invalid,
-.was-validated #content form textarea:invalid,
-#content form .was-validated textarea:invalid, textarea.form-control.is-invalid,
-#content form textarea.is-invalid {
+.was-validated #content textarea:invalid,
+#content .was-validated textarea:invalid, textarea.form-control.is-invalid,
+#content textarea.is-invalid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
-.was-validated .form-select:invalid, .was-validated #content form select:invalid, #content form .was-validated select:invalid, .form-select.is-invalid, #content form select.is-invalid {
+.was-validated .form-select:invalid, .was-validated #content select:invalid, #content .was-validated select:invalid, .form-select.is-invalid, #content select.is-invalid {
   border-color: var(--bs-form-invalid-border-color);
 }
-.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated #content form select:invalid:not([multiple]):not([size]), #content form .was-validated select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated #content form select:invalid:not([multiple])[size="1"], #content form .was-validated select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), #content form select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], #content form select.is-invalid:not([multiple])[size="1"] {
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated #content select:invalid:not([multiple]):not([size]), #content .was-validated select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated #content select:invalid:not([multiple])[size="1"], #content .was-validated select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), #content select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], #content select.is-invalid:not([multiple])[size="1"] {
   --bs-form-select-bg-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23C43004'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23C43004' stroke='none'/%3e%3c/svg%3e");
   padding-right: 4.125rem;
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-select:invalid:focus, .was-validated #content form select:invalid:focus, #content form .was-validated select:invalid:focus, .form-select.is-invalid:focus, #content form select.is-invalid:focus {
+.was-validated .form-select:invalid:focus, .was-validated #content select:invalid:focus, #content .was-validated select:invalid:focus, .form-select.is-invalid:focus, #content select.is-invalid:focus {
   border-color: var(--bs-form-invalid-border-color);
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
@@ -4903,77 +4903,77 @@ textarea.form-control-lg {
   width: calc(3rem + calc(1.5em + 0.75rem));
 }
 
-.was-validated .form-check-input:invalid, .was-validated #content form input[type=radio]:invalid, #content form .was-validated input[type=radio]:invalid,
-.was-validated #content form input[type=checkbox]:invalid,
-#content form .was-validated input[type=checkbox]:invalid, .form-check-input.is-invalid, #content form input.is-invalid[type=radio],
-#content form input.is-invalid[type=checkbox] {
+.was-validated .form-check-input:invalid, .was-validated #content input[type=radio]:invalid, #content .was-validated input[type=radio]:invalid,
+.was-validated #content input[type=checkbox]:invalid,
+#content .was-validated input[type=checkbox]:invalid, .form-check-input.is-invalid, #content input.is-invalid[type=radio],
+#content input.is-invalid[type=checkbox] {
   border-color: var(--bs-form-invalid-border-color);
 }
-.was-validated .form-check-input:invalid:checked, .was-validated #content form input[type=radio]:invalid:checked, #content form .was-validated input[type=radio]:invalid:checked,
-.was-validated #content form input[type=checkbox]:invalid:checked,
-#content form .was-validated input[type=checkbox]:invalid:checked, .form-check-input.is-invalid:checked, #content form input.is-invalid[type=radio]:checked,
-#content form input.is-invalid[type=checkbox]:checked {
+.was-validated .form-check-input:invalid:checked, .was-validated #content input[type=radio]:invalid:checked, #content .was-validated input[type=radio]:invalid:checked,
+.was-validated #content input[type=checkbox]:invalid:checked,
+#content .was-validated input[type=checkbox]:invalid:checked, .form-check-input.is-invalid:checked, #content input.is-invalid[type=radio]:checked,
+#content input.is-invalid[type=checkbox]:checked {
   background-color: var(--bs-form-invalid-color);
 }
-.was-validated .form-check-input:invalid:focus, .was-validated #content form input[type=radio]:invalid:focus, #content form .was-validated input[type=radio]:invalid:focus,
-.was-validated #content form input[type=checkbox]:invalid:focus,
-#content form .was-validated input[type=checkbox]:invalid:focus, .form-check-input.is-invalid:focus, #content form input.is-invalid[type=radio]:focus,
-#content form input.is-invalid[type=checkbox]:focus {
+.was-validated .form-check-input:invalid:focus, .was-validated #content input[type=radio]:invalid:focus, #content .was-validated input[type=radio]:invalid:focus,
+.was-validated #content input[type=checkbox]:invalid:focus,
+#content .was-validated input[type=checkbox]:invalid:focus, .form-check-input.is-invalid:focus, #content input.is-invalid[type=radio]:focus,
+#content input.is-invalid[type=checkbox]:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
           box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
 }
-.was-validated .form-check-input:invalid ~ .form-check-label, .was-validated #content form .form-check-input:invalid ~ input[type=radio] ~ label, #content form .was-validated .form-check-input:invalid ~ input[type=radio] ~ label, .was-validated #content form input[type=radio] ~ .form-check-input:invalid ~ label, #content form .was-validated input[type=radio] ~ .form-check-input:invalid ~ label,
-.was-validated #content form .form-check-input:invalid ~ input[type=checkbox] ~ label,
-#content form .was-validated .form-check-input:invalid ~ input[type=checkbox] ~ label,
-.was-validated #content form input[type=checkbox] ~ .form-check-input:invalid ~ label,
-#content form .was-validated input[type=checkbox] ~ .form-check-input:invalid ~ label, .was-validated #content form input[type=radio]:invalid ~ .form-check-label, .was-validated #content form input[type=radio]:invalid ~ label, #content form .was-validated input[type=radio]:invalid ~ .form-check-label, #content form .was-validated input[type=radio]:invalid ~ label,
-.was-validated #content form input[type=checkbox]:invalid ~ .form-check-label,
-.was-validated #content form input[type=checkbox]:invalid ~ label,
-#content form .was-validated input[type=checkbox]:invalid ~ .form-check-label,
-#content form .was-validated input[type=checkbox]:invalid ~ label, .form-check-input.is-invalid ~ .form-check-label, #content form .form-check-input.is-invalid ~ input[type=radio] ~ label, #content form input[type=radio] ~ .form-check-input.is-invalid ~ label,
-#content form .form-check-input.is-invalid ~ input[type=checkbox] ~ label,
-#content form input[type=checkbox] ~ .form-check-input.is-invalid ~ label, #content form input.is-invalid[type=radio] ~ .form-check-label, #content form input.is-invalid[type=radio] ~ label,
-#content form input.is-invalid[type=checkbox] ~ .form-check-label,
-#content form input.is-invalid[type=checkbox] ~ label {
+.was-validated .form-check-input:invalid ~ .form-check-label, .was-validated #content .form-check-input:invalid ~ input[type=radio] ~ label, #content .was-validated .form-check-input:invalid ~ input[type=radio] ~ label, .was-validated #content input[type=radio] ~ .form-check-input:invalid ~ label, #content .was-validated input[type=radio] ~ .form-check-input:invalid ~ label,
+.was-validated #content .form-check-input:invalid ~ input[type=checkbox] ~ label,
+#content .was-validated .form-check-input:invalid ~ input[type=checkbox] ~ label,
+.was-validated #content input[type=checkbox] ~ .form-check-input:invalid ~ label,
+#content .was-validated input[type=checkbox] ~ .form-check-input:invalid ~ label, .was-validated #content input[type=radio]:invalid ~ .form-check-label, .was-validated #content input[type=radio]:invalid ~ label, #content .was-validated input[type=radio]:invalid ~ .form-check-label, #content .was-validated input[type=radio]:invalid ~ label,
+.was-validated #content input[type=checkbox]:invalid ~ .form-check-label,
+.was-validated #content input[type=checkbox]:invalid ~ label,
+#content .was-validated input[type=checkbox]:invalid ~ .form-check-label,
+#content .was-validated input[type=checkbox]:invalid ~ label, .form-check-input.is-invalid ~ .form-check-label, #content .form-check-input.is-invalid ~ input[type=radio] ~ label, #content input[type=radio] ~ .form-check-input.is-invalid ~ label,
+#content .form-check-input.is-invalid ~ input[type=checkbox] ~ label,
+#content input[type=checkbox] ~ .form-check-input.is-invalid ~ label, #content input.is-invalid[type=radio] ~ .form-check-label, #content input.is-invalid[type=radio] ~ label,
+#content input.is-invalid[type=checkbox] ~ .form-check-label,
+#content input.is-invalid[type=checkbox] ~ label {
   color: var(--bs-form-invalid-color);
 }
 
-.form-check-inline .form-check-input ~ .invalid-feedback, .form-check-inline #content form input[type=radio] ~ .invalid-feedback, #content form .form-check-inline input[type=radio] ~ .invalid-feedback,
-.form-check-inline #content form input[type=checkbox] ~ .invalid-feedback,
-#content form .form-check-inline input[type=checkbox] ~ .invalid-feedback {
+.form-check-inline .form-check-input ~ .invalid-feedback, .form-check-inline #content input[type=radio] ~ .invalid-feedback, #content .form-check-inline input[type=radio] ~ .invalid-feedback,
+.form-check-inline #content input[type=checkbox] ~ .invalid-feedback,
+#content .form-check-inline input[type=checkbox] ~ .invalid-feedback {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus):invalid, #content form .sq-form-upload-add-btn-wrapper .was-validated .input-group > input[type=button]:not(:focus):invalid,
-.was-validated #content form .sq-form-upload .input-group > input[type=button]:not(:focus):invalid,
-#content form .sq-form-upload .was-validated .input-group > input[type=button]:not(:focus):invalid, .was-validated #content form .input-group > input[type=email]:not(:focus):invalid, #content form .was-validated .input-group > input[type=email]:not(:focus):invalid,
-.was-validated #content form .input-group > input[type=text]:not(:focus):invalid,
-#content form .was-validated .input-group > input[type=text]:not(:focus):invalid,
-.was-validated #content form .input-group > input[type=number]:not(:focus):invalid,
-#content form .was-validated .input-group > input[type=number]:not(:focus):invalid,
-.was-validated #content form .input-group > input[type=tel]:not(:focus):invalid,
-#content form .was-validated .input-group > input[type=tel]:not(:focus):invalid,
-.was-validated #content form .input-group > input[type=search]:not(:focus):invalid,
-#content form .was-validated .input-group > input[type=search]:not(:focus):invalid,
-.was-validated #content form .input-group > textarea:not(:focus):invalid,
-#content form .was-validated .input-group > textarea:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, #content form .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus).is-invalid,
-#content form .sq-form-upload .input-group > input[type=button]:not(:focus).is-invalid, #content form .input-group > input[type=email]:not(:focus).is-invalid,
-#content form .input-group > input[type=text]:not(:focus).is-invalid,
-#content form .input-group > input[type=number]:not(:focus).is-invalid,
-#content form .input-group > input[type=tel]:not(:focus).is-invalid,
-#content form .input-group > input[type=search]:not(:focus).is-invalid,
-#content form .input-group > textarea:not(:focus).is-invalid,
+.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus):invalid, #content .sq-form-upload-add-btn-wrapper .was-validated .input-group > input[type=button]:not(:focus):invalid,
+.was-validated #content .sq-form-upload .input-group > input[type=button]:not(:focus):invalid,
+#content .sq-form-upload .was-validated .input-group > input[type=button]:not(:focus):invalid, .was-validated #content .input-group > input[type=email]:not(:focus):invalid, #content .was-validated .input-group > input[type=email]:not(:focus):invalid,
+.was-validated #content .input-group > input[type=text]:not(:focus):invalid,
+#content .was-validated .input-group > input[type=text]:not(:focus):invalid,
+.was-validated #content .input-group > input[type=number]:not(:focus):invalid,
+#content .was-validated .input-group > input[type=number]:not(:focus):invalid,
+.was-validated #content .input-group > input[type=tel]:not(:focus):invalid,
+#content .was-validated .input-group > input[type=tel]:not(:focus):invalid,
+.was-validated #content .input-group > input[type=search]:not(:focus):invalid,
+#content .was-validated .input-group > input[type=search]:not(:focus):invalid,
+.was-validated #content .input-group > textarea:not(:focus):invalid,
+#content .was-validated .input-group > textarea:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, #content .sq-form-upload-add-btn-wrapper .input-group > input[type=button]:not(:focus).is-invalid,
+#content .sq-form-upload .input-group > input[type=button]:not(:focus).is-invalid, #content .input-group > input[type=email]:not(:focus).is-invalid,
+#content .input-group > input[type=text]:not(:focus).is-invalid,
+#content .input-group > input[type=number]:not(:focus).is-invalid,
+#content .input-group > input[type=tel]:not(:focus).is-invalid,
+#content .input-group > input[type=search]:not(:focus).is-invalid,
+#content .input-group > textarea:not(:focus).is-invalid,
 .was-validated .input-group > .form-select:not(:focus):invalid,
-.was-validated #content form .input-group > select:not(:focus):invalid,
-#content form .was-validated .input-group > select:not(:focus):invalid,
+.was-validated #content .input-group > select:not(:focus):invalid,
+#content .was-validated .input-group > select:not(:focus):invalid,
 .input-group > .form-select:not(:focus).is-invalid,
-#content form .input-group > select:not(:focus).is-invalid,
+#content .input-group > select:not(:focus).is-invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid {
   z-index: 4;
 }
 
-.btn, #content form input[type=reset], #content form input[type=submit] {
+.btn, #content input[type=reset], #content input[type=submit] {
   --bs-btn-padding-x: 2rem;
   --bs-btn-padding-y: 1rem;
   --bs-btn-font-family: ;
@@ -5013,27 +5013,27 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .btn, #content form input[type=reset], #content form input[type=submit] {
+  .btn, #content input[type=reset], #content input[type=submit] {
     --bs-btn-font-size: 1rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, #content form input[type=reset], #content form input[type=submit] {
+  .btn, #content input[type=reset], #content input[type=submit] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.btn:hover, #content form input[type=reset]:hover, #content form input[type=submit]:hover {
+.btn:hover, #content input[type=reset]:hover, #content input[type=submit]:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, #content form .btn-check + input[type=reset]:hover, #content form .btn-check + input[type=submit]:hover {
+.btn-check + .btn:hover, #content .btn-check + input[type=reset]:hover, #content .btn-check + input[type=submit]:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, #content form input[type=reset]:focus-visible, #content form input[type=submit]:focus-visible {
+.btn:focus-visible, #content input[type=reset]:focus-visible, #content input[type=submit]:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
@@ -5041,22 +5041,22 @@ textarea.form-control-lg {
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, #content form .btn-check:focus-visible + input[type=reset], #content form .btn-check:focus-visible + input[type=submit] {
+.btn-check:focus-visible + .btn, #content .btn-check:focus-visible + input[type=reset], #content .btn-check:focus-visible + input[type=submit] {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, #content form .btn-check:checked + input[type=reset], #content form .btn-check:checked + input[type=submit], :not(.btn-check) + .btn:active, #content form :not(.btn-check) + input[type=reset]:active, #content form :not(.btn-check) + input[type=submit]:active, .btn:first-child:active, #content form input[type=reset]:first-child:active, #content form input[type=submit]:first-child:active, .btn.active, #content form input.active[type=reset], #content form input.active[type=submit], .btn.show, #content form input.show[type=reset], #content form input.show[type=submit] {
+.btn-check:checked + .btn, #content .btn-check:checked + input[type=reset], #content .btn-check:checked + input[type=submit], :not(.btn-check) + .btn:active, #content :not(.btn-check) + input[type=reset]:active, #content :not(.btn-check) + input[type=submit]:active, .btn:first-child:active, #content input[type=reset]:first-child:active, #content input[type=submit]:first-child:active, .btn.active, #content input.active[type=reset], #content input.active[type=submit], .btn.show, #content input.show[type=reset], #content input.show[type=submit] {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, #content form .btn-check:checked + input[type=reset]:focus-visible, #content form .btn-check:checked + input[type=submit]:focus-visible, :not(.btn-check) + .btn:active:focus-visible, #content form :not(.btn-check) + input[type=reset]:active:focus-visible, #content form :not(.btn-check) + input[type=submit]:active:focus-visible, .btn:first-child:active:focus-visible, #content form input[type=reset]:first-child:active:focus-visible, #content form input[type=submit]:first-child:active:focus-visible, .btn.active:focus-visible, #content form input.active[type=reset]:focus-visible, #content form input.active[type=submit]:focus-visible, .btn.show:focus-visible, #content form input.show[type=reset]:focus-visible, #content form input.show[type=submit]:focus-visible {
+.btn-check:checked + .btn:focus-visible, #content .btn-check:checked + input[type=reset]:focus-visible, #content .btn-check:checked + input[type=submit]:focus-visible, :not(.btn-check) + .btn:active:focus-visible, #content :not(.btn-check) + input[type=reset]:active:focus-visible, #content :not(.btn-check) + input[type=submit]:active:focus-visible, .btn:first-child:active:focus-visible, #content input[type=reset]:first-child:active:focus-visible, #content input[type=submit]:first-child:active:focus-visible, .btn.active:focus-visible, #content input.active[type=reset]:focus-visible, #content input.active[type=submit]:focus-visible, .btn.show:focus-visible, #content input.show[type=reset]:focus-visible, #content input.show[type=submit]:focus-visible {
   -webkit-box-shadow: var(--bs-btn-focus-box-shadow);
           box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, #content form input[type=reset]:disabled, #content form input[type=submit]:disabled, .btn.disabled, #content form input.disabled[type=reset], #content form input.disabled[type=submit], fieldset:disabled .btn, fieldset:disabled #content form input[type=reset], #content form fieldset:disabled input[type=reset], fieldset:disabled #content form input[type=submit], #content form fieldset:disabled input[type=submit] {
+.btn:disabled, #content input[type=reset]:disabled, #content input[type=submit]:disabled, .btn.disabled, #content input.disabled[type=reset], #content input.disabled[type=submit], fieldset:disabled .btn, fieldset:disabled #content input[type=reset], #content fieldset:disabled input[type=reset], fieldset:disabled #content input[type=submit], #content fieldset:disabled input[type=submit] {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -5064,7 +5064,7 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-.btn-primary, #content form input[type=submit] {
+.btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #D7D2CB;
   --bs-btn-border-color: #D7D2CB;
@@ -5081,7 +5081,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #D7D2CB;
 }
 
-.btn-secondary, #content form input[type=reset] {
+.btn-secondary, #content input[type=reset], #content input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #104735;
   --bs-btn-border-color: #104735;
@@ -16289,7 +16289,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=territory-stone] .btn-primary, [data-bs-theme=territory-stone] #content form input[type=submit], #content form [data-bs-theme=territory-stone] input[type=submit] {
+[data-bs-theme=territory-stone] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #D7D2CB;
   --bs-btn-border-color: #D7D2CB;
@@ -16356,7 +16356,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=dark-gray] .btn-primary, [data-bs-theme=dark-gray] #content form input[type=submit], #content form [data-bs-theme=dark-gray] input[type=submit] {
+[data-bs-theme=dark-gray] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #2B292D;
   --bs-btn-border-color: #2B292D;
@@ -16423,7 +16423,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=central-australia] .btn-primary, [data-bs-theme=central-australia] #content form input[type=submit], #content form [data-bs-theme=central-australia] input[type=submit] {
+[data-bs-theme=central-australia] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #E5004D;
   --bs-btn-border-color: #E5004D;
@@ -16490,7 +16490,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=dark-blue] .btn-primary, [data-bs-theme=dark-blue] #content form input[type=submit], #content form [data-bs-theme=dark-blue] input[type=submit] {
+[data-bs-theme=dark-blue] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
@@ -16557,7 +16557,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=barkly] .btn-primary, [data-bs-theme=barkly] #content form input[type=submit], #content form [data-bs-theme=barkly] input[type=submit] {
+[data-bs-theme=barkly] .btn-primary {
   --bs-btn-color: #000;
   --bs-btn-bg: #FB471F;
   --bs-btn-border-color: #FB471F;
@@ -16624,7 +16624,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=olive-green] .btn-primary, [data-bs-theme=olive-green] #content form input[type=submit], #content form [data-bs-theme=olive-green] input[type=submit] {
+[data-bs-theme=olive-green] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #104735;
   --bs-btn-border-color: #104735;
@@ -16691,7 +16691,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=dark-green] .btn-primary, [data-bs-theme=dark-green] #content form input[type=submit], #content form [data-bs-theme=dark-green] input[type=submit] {
+[data-bs-theme=dark-green] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1A322F;
   --bs-btn-border-color: #1A322F;
@@ -16758,7 +16758,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=baby-blue] .btn-primary, [data-bs-theme=baby-blue] #content form input[type=submit], #content form [data-bs-theme=baby-blue] input[type=submit] {
+[data-bs-theme=baby-blue] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #B1E2F9;
   --bs-btn-border-color: #B1E2F9;
@@ -16825,7 +16825,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=big-rivers] .btn-primary, [data-bs-theme=big-rivers] #content form input[type=submit], #content form [data-bs-theme=big-rivers] input[type=submit] {
+[data-bs-theme=big-rivers] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #F2A900;
   --bs-btn-border-color: #F2A900;
@@ -16892,7 +16892,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=fairy-wren-7] .btn-primary, [data-bs-theme=fairy-wren-7] #content form input[type=submit], #content form [data-bs-theme=fairy-wren-7] input[type=submit] {
+[data-bs-theme=fairy-wren-7] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #F6EFF6;
   --bs-btn-border-color: #F6EFF6;
@@ -16959,7 +16959,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=fairy-wren] .btn-primary, [data-bs-theme=fairy-wren] #content form input[type=submit], #content form [data-bs-theme=fairy-wren] input[type=submit] {
+[data-bs-theme=fairy-wren] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #7F1F7F;
   --bs-btn-border-color: #7F1F7F;
@@ -17026,7 +17026,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=charcoal-grey-20] .btn-primary, [data-bs-theme=charcoal-grey-20] #content form input[type=submit], #content form [data-bs-theme=charcoal-grey-20] input[type=submit] {
+[data-bs-theme=charcoal-grey-20] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #DAD9DA;
   --bs-btn-border-color: #DAD9DA;
@@ -17093,7 +17093,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-primary, [data-bs-theme=charcoal-grey] #content form input[type=submit], #content form [data-bs-theme=charcoal-grey] input[type=submit] {
+[data-bs-theme=charcoal-grey] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #454347;
   --bs-btn-border-color: #454347;
@@ -17160,7 +17160,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=top-end] .btn-primary, [data-bs-theme=top-end] #content form input[type=submit], #content form [data-bs-theme=top-end] input[type=submit] {
+[data-bs-theme=top-end] .btn-primary {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -17227,7 +17227,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=bush-plum] .btn-primary, [data-bs-theme=bush-plum] #content form input[type=submit], #content form [data-bs-theme=bush-plum] input[type=submit] {
+[data-bs-theme=bush-plum] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #4F1F6F;
   --bs-btn-border-color: #4F1F6F;
@@ -17294,7 +17294,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=desert-yam-7] .btn-primary, [data-bs-theme=desert-yam-7] #content form input[type=submit], #content form [data-bs-theme=desert-yam-7] input[type=submit] {
+[data-bs-theme=desert-yam-7] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #FBF2EA;
   --bs-btn-border-color: #FBF2EA;
@@ -17361,7 +17361,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=arafura-blue] .btn-primary, [data-bs-theme=arafura-blue] #content form input[type=submit], #content form [data-bs-theme=arafura-blue] input[type=submit] {
+[data-bs-theme=arafura-blue] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
@@ -17428,7 +17428,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=white] .btn-primary, [data-bs-theme=white] #content form input[type=submit], #content form [data-bs-theme=white] input[type=submit] {
+[data-bs-theme=white] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #fff;
   --bs-btn-border-color: #fff;
@@ -17495,7 +17495,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=desert-yam] .btn-primary, [data-bs-theme=desert-yam] #content form input[type=submit], #content form [data-bs-theme=desert-yam] input[type=submit] {
+[data-bs-theme=desert-yam] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #C33726;
   --bs-btn-border-color: #C33726;
@@ -17562,7 +17562,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=territory-stone] .btn-secondary, [data-bs-theme=territory-stone] #content form input[type=reset], #content form [data-bs-theme=territory-stone] input[type=reset] {
+[data-bs-theme=territory-stone] .btn-secondary, [data-bs-theme=territory-stone] #content input[type=reset], #content [data-bs-theme=territory-stone] input[type=reset], [data-bs-theme=territory-stone] #content input[type=submit], #content [data-bs-theme=territory-stone] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #104735;
   --bs-btn-border-color: #104735;
@@ -17629,7 +17629,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=dark-gray] .btn-secondary, [data-bs-theme=dark-gray] #content form input[type=reset], #content form [data-bs-theme=dark-gray] input[type=reset] {
+[data-bs-theme=dark-gray] .btn-secondary, [data-bs-theme=dark-gray] #content input[type=reset], #content [data-bs-theme=dark-gray] input[type=reset], [data-bs-theme=dark-gray] #content input[type=submit], #content [data-bs-theme=dark-gray] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #EDEDED;
   --bs-btn-border-color: #EDEDED;
@@ -17696,7 +17696,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=central-australia] .btn-secondary, [data-bs-theme=central-australia] #content form input[type=reset], #content form [data-bs-theme=central-australia] input[type=reset] {
+[data-bs-theme=central-australia] .btn-secondary, [data-bs-theme=central-australia] #content input[type=reset], #content [data-bs-theme=central-australia] input[type=reset], [data-bs-theme=central-australia] #content input[type=submit], #content [data-bs-theme=central-australia] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #FFCCDD;
   --bs-btn-border-color: #FFCCDD;
@@ -17763,7 +17763,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=dark-blue] .btn-secondary, [data-bs-theme=dark-blue] #content form input[type=reset], #content form [data-bs-theme=dark-blue] input[type=reset] {
+[data-bs-theme=dark-blue] .btn-secondary, [data-bs-theme=dark-blue] #content input[type=reset], #content [data-bs-theme=dark-blue] input[type=reset], [data-bs-theme=dark-blue] #content input[type=submit], #content [data-bs-theme=dark-blue] input[type=submit] {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -17830,7 +17830,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=barkly] .btn-secondary, [data-bs-theme=barkly] #content form input[type=reset], #content form [data-bs-theme=barkly] input[type=reset] {
+[data-bs-theme=barkly] .btn-secondary, [data-bs-theme=barkly] #content input[type=reset], #content [data-bs-theme=barkly] input[type=reset], [data-bs-theme=barkly] #content input[type=submit], #content [data-bs-theme=barkly] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #FFB8A8;
   --bs-btn-border-color: #FFB8A8;
@@ -17897,7 +17897,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=olive-green] .btn-secondary, [data-bs-theme=olive-green] #content form input[type=reset], #content form [data-bs-theme=olive-green] input[type=reset] {
+[data-bs-theme=olive-green] .btn-secondary, [data-bs-theme=olive-green] #content input[type=reset], #content [data-bs-theme=olive-green] input[type=reset], [data-bs-theme=olive-green] #content input[type=submit], #content [data-bs-theme=olive-green] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #7EAA9C;
   --bs-btn-border-color: #7EAA9C;
@@ -17964,7 +17964,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=dark-green] .btn-secondary, [data-bs-theme=dark-green] #content form input[type=reset], #content form [data-bs-theme=dark-green] input[type=reset] {
+[data-bs-theme=dark-green] .btn-secondary, [data-bs-theme=dark-green] #content input[type=reset], #content [data-bs-theme=dark-green] input[type=reset], [data-bs-theme=dark-green] #content input[type=submit], #content [data-bs-theme=dark-green] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #D7D2CB;
   --bs-btn-border-color: #D7D2CB;
@@ -18031,7 +18031,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=baby-blue] .btn-secondary, [data-bs-theme=baby-blue] #content form input[type=reset], #content form [data-bs-theme=baby-blue] input[type=reset] {
+[data-bs-theme=baby-blue] .btn-secondary, [data-bs-theme=baby-blue] #content input[type=reset], #content [data-bs-theme=baby-blue] input[type=reset], [data-bs-theme=baby-blue] #content input[type=submit], #content [data-bs-theme=baby-blue] input[type=submit] {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -18098,7 +18098,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=big-rivers] .btn-secondary, [data-bs-theme=big-rivers] #content form input[type=reset], #content form [data-bs-theme=big-rivers] input[type=reset] {
+[data-bs-theme=big-rivers] .btn-secondary, [data-bs-theme=big-rivers] #content input[type=reset], #content [data-bs-theme=big-rivers] input[type=reset], [data-bs-theme=big-rivers] #content input[type=submit], #content [data-bs-theme=big-rivers] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
@@ -18165,7 +18165,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=fairy-wren-7] .btn-secondary, [data-bs-theme=fairy-wren-7] #content form input[type=reset], #content form [data-bs-theme=fairy-wren-7] input[type=reset] {
+[data-bs-theme=fairy-wren-7] .btn-secondary, [data-bs-theme=fairy-wren-7] #content input[type=reset], #content [data-bs-theme=fairy-wren-7] input[type=reset], [data-bs-theme=fairy-wren-7] #content input[type=submit], #content [data-bs-theme=fairy-wren-7] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #7F1F7F;
   --bs-btn-border-color: #7F1F7F;
@@ -18232,7 +18232,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=fairy-wren] .btn-secondary, [data-bs-theme=fairy-wren] #content form input[type=reset], #content form [data-bs-theme=fairy-wren] input[type=reset] {
+[data-bs-theme=fairy-wren] .btn-secondary, [data-bs-theme=fairy-wren] #content input[type=reset], #content [data-bs-theme=fairy-wren] input[type=reset], [data-bs-theme=fairy-wren] #content input[type=submit], #content [data-bs-theme=fairy-wren] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #F6EFF6;
   --bs-btn-border-color: #F6EFF6;
@@ -18299,7 +18299,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=charcoal-grey-20] .btn-secondary, [data-bs-theme=charcoal-grey-20] #content form input[type=reset], #content form [data-bs-theme=charcoal-grey-20] input[type=reset] {
+[data-bs-theme=charcoal-grey-20] .btn-secondary, [data-bs-theme=charcoal-grey-20] #content input[type=reset], #content [data-bs-theme=charcoal-grey-20] input[type=reset], [data-bs-theme=charcoal-grey-20] #content input[type=submit], #content [data-bs-theme=charcoal-grey-20] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #B5B4B5;
   --bs-btn-border-color: #B5B4B5;
@@ -18366,7 +18366,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-secondary, [data-bs-theme=charcoal-grey] #content form input[type=reset], #content form [data-bs-theme=charcoal-grey] input[type=reset] {
+[data-bs-theme=charcoal-grey] .btn-secondary, [data-bs-theme=charcoal-grey] #content input[type=reset], #content [data-bs-theme=charcoal-grey] input[type=reset], [data-bs-theme=charcoal-grey] #content input[type=submit], #content [data-bs-theme=charcoal-grey] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #fff;
   --bs-btn-border-color: #fff;
@@ -18433,7 +18433,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=top-end] .btn-secondary, [data-bs-theme=top-end] #content form input[type=reset], #content form [data-bs-theme=top-end] input[type=reset] {
+[data-bs-theme=top-end] .btn-secondary, [data-bs-theme=top-end] #content input[type=reset], #content [data-bs-theme=top-end] input[type=reset], [data-bs-theme=top-end] #content input[type=submit], #content [data-bs-theme=top-end] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #FBF2EA;
   --bs-btn-border-color: #FBF2EA;
@@ -18500,7 +18500,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=bush-plum] .btn-secondary, [data-bs-theme=bush-plum] #content form input[type=reset], #content form [data-bs-theme=bush-plum] input[type=reset] {
+[data-bs-theme=bush-plum] .btn-secondary, [data-bs-theme=bush-plum] #content input[type=reset], #content [data-bs-theme=bush-plum] input[type=reset], [data-bs-theme=bush-plum] #content input[type=submit], #content [data-bs-theme=bush-plum] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #7F1F7F;
   --bs-btn-border-color: #7F1F7F;
@@ -18567,7 +18567,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=desert-yam-7] .btn-secondary, [data-bs-theme=desert-yam-7] #content form input[type=reset], #content form [data-bs-theme=desert-yam-7] input[type=reset] {
+[data-bs-theme=desert-yam-7] .btn-secondary, [data-bs-theme=desert-yam-7] #content input[type=reset], #content [data-bs-theme=desert-yam-7] input[type=reset], [data-bs-theme=desert-yam-7] #content input[type=submit], #content [data-bs-theme=desert-yam-7] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #104735;
   --bs-btn-border-color: #104735;
@@ -18634,7 +18634,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=arafura-blue] .btn-secondary, [data-bs-theme=arafura-blue] #content form input[type=reset], #content form [data-bs-theme=arafura-blue] input[type=reset] {
+[data-bs-theme=arafura-blue] .btn-secondary, [data-bs-theme=arafura-blue] #content input[type=reset], #content [data-bs-theme=arafura-blue] input[type=reset], [data-bs-theme=arafura-blue] #content input[type=submit], #content [data-bs-theme=arafura-blue] input[type=submit] {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -18701,7 +18701,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=white] .btn-secondary, [data-bs-theme=white] #content form input[type=reset], #content form [data-bs-theme=white] input[type=reset] {
+[data-bs-theme=white] .btn-secondary, [data-bs-theme=white] #content input[type=reset], #content [data-bs-theme=white] input[type=reset], [data-bs-theme=white] #content input[type=submit], #content [data-bs-theme=white] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #D7D2CB;
   --bs-btn-border-color: #D7D2CB;
@@ -18768,7 +18768,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=desert-yam] .btn-secondary, [data-bs-theme=desert-yam] #content form input[type=reset], #content form [data-bs-theme=desert-yam] input[type=reset] {
+[data-bs-theme=desert-yam] .btn-secondary, [data-bs-theme=desert-yam] #content input[type=reset], #content [data-bs-theme=desert-yam] input[type=reset], [data-bs-theme=desert-yam] #content input[type=submit], #content [data-bs-theme=desert-yam] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #961B0B;
   --bs-btn-border-color: #961B0B;
@@ -21040,11 +21040,11 @@ textarea.form-control-lg {
   }
 }
 
-.btn-primary, #content form input[type=submit] {
+.btn-primary {
   --bs-btn-color: #2B292D;
 }
 
-.btn-secondary, #content form input[type=reset] {
+.btn-secondary, #content input[type=reset], #content input[type=submit] {
   --bs-btn-color: #fff;
 }
 
@@ -21678,6 +21678,9 @@ textarea.form-control-lg {
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 0;
 }
+.breadcrumb-item.active {
+  color: var(--current-theme-text-color, #2B292D);
+}
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--current-theme-text-color, #2B292D);
 }
@@ -21704,13 +21707,13 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn, #content form input[type=reset], #content form input[type=submit] {
+.btn, #content input[type=reset], #content input[type=submit] {
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, padding 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, padding 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, padding 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, padding 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.btn:focus, #content form input[type=reset]:focus, #content form input[type=submit]:focus {
+.btn:focus, #content input[type=reset]:focus, #content input[type=submit]:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
@@ -23221,64 +23224,64 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
   }
 }
 
-#content form .g-recaptcha {
+#content .g-recaptcha {
   margin: 1.5rem 0;
 }
-#content form select {
+#content select {
   max-width: 500px;
   width: 100%;
 }
-#content form select:focus {
+#content select:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
 }
-#content form select[multiple=multiple] {
+#content select[multiple=multiple] {
   background-image: none;
   height: inherit;
 }
-#content form input[type=email],
-#content form input[type=text],
-#content form input[type=number],
-#content form input[type=tel],
-#content form input[type=search],
-#content form textarea {
+#content input[type=email],
+#content input[type=text],
+#content input[type=number],
+#content input[type=tel],
+#content input[type=search],
+#content textarea {
   max-width: 500px;
   width: 100%;
 }
-#content form input[type=email]:focus,
-#content form input[type=text]:focus,
-#content form input[type=number]:focus,
-#content form input[type=tel]:focus,
-#content form input[type=search]:focus,
-#content form textarea:focus {
+#content input[type=email]:focus,
+#content input[type=text]:focus,
+#content input[type=number]:focus,
+#content input[type=tel]:focus,
+#content input[type=search]:focus,
+#content textarea:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
 }
-#content form .sq-form-unattached {
+#content .sq-form-unattached {
   margin-bottom: 1.5rem;
 }
-#content form .sq-form-upload-add-btn-wrapper input[type=button],
-#content form .sq-form-upload input[type=button] {
+#content .sq-form-upload-add-btn-wrapper input[type=button],
+#content .sq-form-upload input[type=button] {
   width: 38px;
 }
-#content form .sq-form-upload-add-btn-wrapper input[type=button]:focus,
-#content form .sq-form-upload input[type=button]:focus {
+#content .sq-form-upload-add-btn-wrapper input[type=button]:focus,
+#content .sq-form-upload input[type=button]:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
 }
-#content form .sq-form-upload-add-btn-wrapper input[type=button] {
+#content .sq-form-upload-add-btn-wrapper input[type=button] {
   margin-top: 0.5rem;
 }
-#content form .sq-form-upload input[type=button] {
+#content .sq-form-upload input[type=button] {
   margin-left: 0.5rem;
 }
-#content form .sq-form-upload {
+#content .sq-form-upload {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23286,43 +23289,43 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
       -ms-flex-align: center;
           align-items: center;
 }
-#content form .sq-form-upload input[type=file]:focus {
+#content .sq-form-upload input[type=file]:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
 }
-#content form textarea {
+#content textarea {
   max-width: 500px;
 }
-#content form .sq-form-section ~ .sq-form-section {
+#content .sq-form-section ~ .sq-form-section {
   margin-top: 1.5rem;
 }
-#content form .sq-form-question-title {
+#content .sq-form-question-title {
   font-weight: bold;
   font-size: 1rem !important;
 }
-#content form .sq-form-question-title + .sq-form-question-note {
+#content .sq-form-question-title + .sq-form-question-note {
   margin-top: -0.5rem;
 }
-#content form .sq-form-question-note {
+#content .sq-form-question-note {
   display: block;
   margin-bottom: 0.5rem;
 }
-#content form .sq-form-question + .sq-form-question {
+#content .sq-form-question + .sq-form-question {
   margin-top: 1.5rem;
 }
-#content form .sq-form-control {
+#content .sq-form-control {
   margin-top: 1.5rem;
 }
-#content form .sq-form-question-error .sq-form-error {
+#content .sq-form-question-error .sq-form-error {
   margin-top: 0.5rem;
   color: #C43004;
   padding-left: 1rem;
   font-weight: bold;
   position: relative;
 }
-#content form .sq-form-question-error .sq-form-error:after {
+#content .sq-form-question-error .sq-form-error:after {
   content: "";
   position: absolute;
   top: 0;
@@ -23331,62 +23334,62 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
   width: 0.3rem;
   background-color: #C43004;
 }
-#content form .sq-form-question-option-list ul,
-#content form .sq-form-question-tickbox-list ul {
+#content .sq-form-question-option-list ul,
+#content .sq-form-question-tickbox-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#content form .sq-form-question-option-list li,
-#content form .sq-form-question-tickbox-list li {
+#content .sq-form-question-option-list li,
+#content .sq-form-question-tickbox-list li {
   position: relative;
 }
-#content form .sq-form-question-option-list li ~ li,
-#content form .sq-form-question-tickbox-list li ~ li {
+#content .sq-form-question-option-list li ~ li,
+#content .sq-form-question-tickbox-list li ~ li {
   margin-top: 1rem;
 }
-#content form input[type=radio],
-#content form input[type=checkbox] {
+#content input[type=radio],
+#content input[type=checkbox] {
   margin-left: 5px;
   margin-right: -5px;
 }
-#content form input[type=radio]:focus,
-#content form input[type=checkbox]:focus {
+#content input[type=radio]:focus,
+#content input[type=checkbox]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#content form input[type=radio] ~ label,
-#content form input[type=checkbox] ~ label {
+#content input[type=radio] ~ label,
+#content input[type=checkbox] ~ label {
   margin-right: 0;
   padding: 0;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
-#content form input[type=radio] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23313131' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+#content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%230093B8' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-#content form input[type=radio]:checked ~ label:after {
+#content input[type=radio]:checked ~ label:after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23313131' cx='16' cy='16' r='11'/%3E%3C/svg%3E");
 }
-#content form input[type=checkbox] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23313131' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+#content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%230093B8' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
-#content form input[type=checkbox]:checked ~ label:after {
+#content input[type=checkbox]:checked ~ label:after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23313131' d='M25.6,11.4c0.2-0.2,0.2-0.5,0-0.7l-2.3-2.3c-0.2-0.2-0.5-0.2-0.7,0L14,17l-3.6-3.6c-0.2-0.2-0.5-0.2-0.7,0l-2.3,2.3 c-0.2,0.2-0.2,0.5,0,0.7l6.3,6.3c0.2,0.2,0.5,0.2,0.7,0L25.6,11.4L25.6,11.4z'/%3E%3C/svg%3E");
 }
-#content form input[type=radio]:focus ~ label:before,
-#content form input[type=checkbox]:focus ~ label:before {
+#content input[type=radio]:focus ~ label:before,
+#content input[type=checkbox]:focus ~ label:before {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
   outline-offset: 2px;
 }
-#content form input[type=radio] ~ label:before,
-#content form input[type=radio] ~ label:after,
-#content form input[type=checkbox] ~ label:before,
-#content form input[type=checkbox] ~ label:after {
+#content input[type=radio] ~ label:before,
+#content input[type=radio] ~ label:after,
+#content input[type=checkbox] ~ label:before,
+#content input[type=checkbox] ~ label:after {
   content: "";
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   display: block;
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -23394,14 +23397,14 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
   background-repeat: no-repeat;
   z-index: 1;
   left: 0;
-  top: -2px;
+  top: 2px;
 }
-#content form input[type=radio] ~ label:before,
-#content form input[type=radio] ~ label:after {
+#content input[type=radio] ~ label:before,
+#content input[type=radio] ~ label:after {
   border-radius: 50%;
 }
-#content form input[type=radio] ~ label:after,
-#content form input[type=checkbox] ~ label:after {
+#content input[type=radio] ~ label:after,
+#content input[type=checkbox] ~ label:after {
   z-index: 2;
 }
 
@@ -23427,6 +23430,139 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 }
 .thank-you-form__text {
   font-size: 20px;
+}
+
+html[data-bs-theme=territory-stone] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=territory-stone] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=dark-gray] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=dark-gray] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=central-australia] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=central-australia] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=dark-blue] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=dark-blue] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=barkly] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23000' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=barkly] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=olive-green] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=olive-green] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=dark-green] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=dark-green] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=baby-blue] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=baby-blue] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=big-rivers] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=big-rivers] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=fairy-wren-7] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=fairy-wren-7] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=fairy-wren] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=fairy-wren] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=charcoal-grey-20] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=charcoal-grey-20] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=charcoal-grey] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=charcoal-grey] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=top-end] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23000' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=top-end] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=bush-plum] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=bush-plum] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=desert-yam-7] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=desert-yam-7] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=arafura-blue] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=arafura-blue] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=white] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=white] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
+}
+
+html[data-bs-theme=desert-yam] #content input[type=radio] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
+}
+html[data-bs-theme=desert-yam] #content input[type=checkbox] ~ label:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
 #content p + ul {
@@ -25685,8 +25821,8 @@ body.search-panel--is-hidden .search-global {
   #interactive-map,
   .back-to-top,
   .btn,
-  #content form input[type=submit],
-  #content form input[type=reset],
+  #content input[type=submit],
+  #content input[type=reset],
   .nav-link:not(.active),
   .ntg-banner,
   #in-page-nav,

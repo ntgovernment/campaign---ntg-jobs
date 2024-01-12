@@ -27,6 +27,10 @@
         + .breadcrumb-item {
             padding-left: 0;
         }
+
+        &.active {
+            color: var(--current-theme-text-color, #{$body-color});
+        }
     }
 
     &-item + &-item::before {
