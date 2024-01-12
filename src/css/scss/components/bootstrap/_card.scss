@@ -6,7 +6,7 @@
 
     $this: &;
 
-    &:not(.card-focus):focus-within {
+    &:not(.card-focus):has(:focus-visible) {
         @include focus();
     }
 

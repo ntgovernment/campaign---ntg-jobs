@@ -21666,7 +21666,7 @@ textarea.form-control-lg {
 .breadcrumb-item + .breadcrumb-item::before {
   content: "\f054";
 }
-.breadcrumb-item:focus-within {
+.breadcrumb-item:has(:focus-visible) {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
@@ -21785,7 +21785,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: var(--current-theme-text-color, #2B292D);
   --bs-card-color: var(--current-theme-text-color, #2B292D);
 }
-.card:not(.card-focus):focus-within {
+.card:not(.card-focus):has(:focus-visible) {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 3px solid #e35205;
