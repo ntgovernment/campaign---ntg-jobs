@@ -117,7 +117,7 @@ $outline-offset-width: 2px;
 
 $stretched-link-pseudo-element: before;
 
-$text-shadow: 1px 1px 0.5px rgba(var(--current-theme-primary-text-reverse-rgb, #{to-rgb($ntg-dark-gray)}), 0.5);
+$text-shadow: 2px 2px 2px rgba(var(--current-theme-primary-text-reverse-rgb, #{to-rgb($ntg-dark-gray)}), 0.75);
 $box-shadow: 0px 0px 10px rgba(#000, 0.2);
 
 $header-heights: (

@@ -28,6 +28,7 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     initSlidingMenu();
     initJobsSlidingMenu();
     initLinkCheck();
+    initToNextSection();
 
     window.addEventListener('resize', debounce(function(e){
         initSlidingMenu(e);
@@ -874,5 +875,20 @@ function initLinkCheck() {
             link.setAttribute('title', 'Opens in a new window');
             link.setAttribute('target', '_blank');
         }
+    });
+}
+
+function initToNextSection() {
+    var btn = document.getElementById('to-next-section');
+    if (!btn) {
+        return false;
+    }
+
+    btn.addEventListener('click', function () {
+        next = btn.closest('section').nextElementSibling;
+
+        next.scrollIntoView({
+            behavior: "smooth"
+        });
     });
 }
