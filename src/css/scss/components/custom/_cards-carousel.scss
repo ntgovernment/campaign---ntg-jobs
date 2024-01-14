@@ -3,8 +3,11 @@
 .ntg-cards-carousel {
     $this: &;
     color: var(--current-theme-text-color, $body-color);
-    background: var(--current-theme-color, transparent);
     overflow-x: clip;
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
     
     h2 {
         color: var(--current-theme-text-color, $ntg-olive-green);

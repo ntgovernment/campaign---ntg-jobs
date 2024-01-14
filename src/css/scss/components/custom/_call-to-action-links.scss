@@ -2,8 +2,11 @@
 
 .ntg-call-to-action-links {
     color: var(--current-theme-text-color, $primary-text);
-    background-color: var(--current-theme-color, $primary);
     position: relative;
+
+    &:not([data-bs-theme="default"]) {
+        background-color: var(--current-theme-color, $primary);
+    }
 
     img, video {
         object-fit: cover;

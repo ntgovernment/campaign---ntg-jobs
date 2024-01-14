@@ -13,8 +13,11 @@
 }
 
 .ntg-icon-and-description {
-    background-color: var(--current-theme-color, transparent);
     color: var(--current-theme-text-color, $body-color);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
 
     &__wrapper {
         display: flex;

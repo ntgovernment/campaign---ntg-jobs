@@ -1,7 +1,10 @@
 .ntg-image-carousel {
-    background-color: var(--current-theme-color, transparent);
     color: var(--current-theme-text-color, $body-color);
     overflow-x: clip;
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
 
     .flickity-carousel {
         @media (max-width: 1500px) {

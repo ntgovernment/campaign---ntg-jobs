@@ -1,4 +1,7 @@
 .ntg-columns {
-    background-color: var(--current-theme-color);
     color: var(--current-theme-text-color);
+
+    &:not([data-bs-theme="default"]) {
+        background-color: var(--current-theme-color);
+    }
 }

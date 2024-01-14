@@ -102,7 +102,7 @@
         .ratio {
             &:before {
                 // min and max banner size; scales with bootstrap ratio
-                padding-top: clamp(440px, var(--bs-aspect-ratio), 740px);
+                padding-top: clamp(440px, var(--bs-aspect-ratio), 600px);
             }
         }
 

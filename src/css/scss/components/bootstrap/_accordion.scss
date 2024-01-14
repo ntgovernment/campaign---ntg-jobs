@@ -1,8 +1,11 @@
 .ntg-accordion {
-    background-color: var(--current-theme-color);
     color: var(--current-theme-text-color);
     --accordion-background-color: var(--current-theme-text-color, #{$ntg-territory-stone});
     --accordion-text-color: var(--current-theme-text-color-reverse, #{$ntg-dark-gray});
+
+    &:not([data-bs-theme="default"]) {
+        background-color: var(--current-theme-color);
+    }
 }
 
 .accordion {

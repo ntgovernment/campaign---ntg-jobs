@@ -1,7 +1,10 @@
 .ntg-cards {
     $this: &;
     color: var(--current-theme-text-color, $body-color);
-    background: var(--current-theme-color, transparent);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
 
     &__content {
         .tag {

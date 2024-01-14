@@ -1,6 +1,9 @@
 .ntg-image-columns {
     color: var(--current-theme-text-color, $body-color);
-    background-color: var(--current-theme-color, transparent);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
 
     figure {
         height: 100%;
