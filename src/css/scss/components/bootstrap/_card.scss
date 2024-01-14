@@ -278,10 +278,20 @@
         #{$this}-footer {
             color: var(--current-theme-secondary-text, $black);
             padding: 1.375rem 2.25rem;
+
+            @include media-breakpoint-down(md) {
+                padding: 1rem;
+            }
         }
 
         #{$this}-body {
             padding-bottom: 0;
+        }
+
+        #{$this}-title {
+            @include media-breakpoint-down(md) {
+                @include font-size($h5-font-size);
+            }
         }
 
         #{$this}-footer {
