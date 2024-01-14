@@ -19,8 +19,6 @@
     }
 
     .card {
-        border: 2px solid #000;
-
         .row {
             display: block;
 
@@ -31,7 +29,7 @@
 
         &-img-top,
         &-video {
-            max-height: 440px !important;
+            max-height: 300px !important;
         }
 
         &-icon {

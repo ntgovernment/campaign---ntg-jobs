@@ -25753,9 +25753,6 @@ body.search-panel--is-hidden .search-global {
   .row {
     display: block;
   }
-  .card {
-    border: 2px solid #000;
-  }
   .card .row {
     display: block;
   }
@@ -25763,7 +25760,7 @@ body.search-panel--is-hidden .search-global {
     width: 100%;
   }
   .card-img-top, .card-video {
-    max-height: 440px !important;
+    max-height: 300px !important;
   }
   .card-icon {
     padding-top: 1rem;
