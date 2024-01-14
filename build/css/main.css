@@ -21663,10 +21663,14 @@ textarea.form-control-lg {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: calc(20ch + 16.75px + 0.5rem);
-  margin-right: 0.5rem;
+  margin-right: calc(0.5rem - 4px);
+  padding: 0 4px 4px 0;
 }
 .breadcrumb-item + .breadcrumb-item::before {
   content: "\f054";
+  font-weight: 700 !important;
+  font-size: 0.8421052632rem;
+  margin-top: 2px;
 }
 .breadcrumb-item:has(:focus-visible) {
   -webkit-box-shadow: none !important;
