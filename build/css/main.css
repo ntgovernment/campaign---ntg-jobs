@@ -25750,14 +25750,28 @@ body.search-panel--is-hidden .search-global {
   .text-nowrap {
     white-space: normal !important;
   }
+  .card {
+    border: 2px solid #000;
+  }
   .card .row {
     display: block;
   }
   .card .row > div {
     width: 100%;
   }
+  .card-img-top, .card-video {
+    max-height: 440px !important;
+  }
+  .card-icon {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
   .card-body {
-    padding-top: 1rem !important;
+    padding: 1rem !important;
+  }
+  .card-footer {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
   .card .card-wrapper > .card-footer {
     -ms-flex-item-align: start;

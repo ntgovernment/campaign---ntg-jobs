@@ -15,6 +15,8 @@
     }
 
     .card {
+        border: 2px solid #000;
+
         .row {
             display: block;
 
@@ -23,8 +25,23 @@
             }
         }
 
+        &-img-top,
+        &-video {
+            max-height: 440px !important;
+        }
+
+        &-icon {
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+
         &-body {
-            padding-top: 1rem !important;
+            padding: 1rem !important;
+        }
+
+        &-footer {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
         }
 
         .card-wrapper > .card-footer {
