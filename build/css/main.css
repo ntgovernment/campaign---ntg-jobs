@@ -22050,6 +22050,8 @@ textarea.form-control-lg {
 }
 .card--flip .card-footer a {
   color: inherit;
+  text-transform: none;
+  letter-spacing: normal;
 }
 .card--flip .card-footer a::after {
   color: var(--current-theme-secondary-text, #000);

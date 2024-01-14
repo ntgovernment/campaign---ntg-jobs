@@ -299,6 +299,8 @@
 
             a {
                 color: inherit;
+                text-transform: none;
+                letter-spacing: normal;
 
                 &::after {
                     color: var(--current-theme-secondary-text, $black);
