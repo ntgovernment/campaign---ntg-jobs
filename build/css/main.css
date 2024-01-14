@@ -25750,6 +25750,9 @@ body.search-panel--is-hidden .search-global {
   .text-nowrap {
     white-space: normal !important;
   }
+  .row {
+    display: block;
+  }
   .card {
     border: 2px solid #000;
   }
