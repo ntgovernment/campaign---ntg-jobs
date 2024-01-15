@@ -112,11 +112,26 @@
         .card {
             transform: none !important;
         }
+
+        img {
+            opacity: 1 !important;
+            filter: none !important;
+        }
     }
 
     .ntg-cards-carousel--testimonial {
         .carousel-cell {
             height: unset;
+        }
+    }
+
+    .ntg-featured-testimonial {
+        &__background {
+            position: static !important;
+
+            &::after {
+                content: none;
+            }
         }
     }
 
@@ -222,11 +237,9 @@
     .nav-link:not(.active),
     .ntg-banner,
     #in-page-nav,
-    .ntg-featured-testimonial,
-    .ntg-image-carousel,
-    .ntg-icon-and-description,
     .ntg-jobs-subsite__menu,
-    #pagination {
+    #pagination,
+    .video-control {
         display: none !important;
     }
 }

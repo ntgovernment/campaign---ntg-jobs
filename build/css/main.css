@@ -25829,8 +25829,19 @@ body.search-panel--is-hidden .search-global {
     -webkit-transform: none !important;
             transform: none !important;
   }
+  .carousel-cell img {
+    opacity: 1 !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
   .ntg-cards-carousel--testimonial .carousel-cell {
     height: unset;
+  }
+  .ntg-featured-testimonial__background {
+    position: static !important;
+  }
+  .ntg-featured-testimonial__background::after {
+    content: none;
   }
   .accordion {
     --bs-accordion-bg: #fff;
@@ -25926,11 +25937,9 @@ body.search-panel--is-hidden .search-global {
   .nav-link:not(.active),
   .ntg-banner,
   #in-page-nav,
-  .ntg-featured-testimonial,
-  .ntg-image-carousel,
-  .ntg-icon-and-description,
   .ntg-jobs-subsite__menu,
-  #pagination {
+  #pagination,
+  .video-control {
     display: none !important;
   }
 }
