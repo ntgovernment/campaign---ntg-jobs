@@ -69,6 +69,8 @@
                 .card-title {
                     color: $black !important;
                     background-color: $white !important;
+                    print-color-adjust: exact;
+                    -webkit-print-color-adjust: exact;
                     padding: 0.5rem;
                     display: inline;
                 }

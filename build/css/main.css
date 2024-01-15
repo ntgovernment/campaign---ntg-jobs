@@ -25792,6 +25792,8 @@ body.search-panel--is-hidden .search-global {
   .card--flip .card-img-overlay .card-title {
     color: #000 !important;
     background-color: #fff !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
     padding: 0.5rem;
     display: inline;
   }
