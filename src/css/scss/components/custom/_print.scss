@@ -53,10 +53,68 @@
         .card-footer a::after {
             padding-left: 0;
         }
+
+        &--flip {
+            .card-front {
+                position: relative;
+            }
+
+            .card-img-overlay {
+                text-shadow: $text-shadow;
+
+                &::before {
+                    content: none;
+                }
+
+                .card-title {
+                    color: $white !important;
+                }
+            }
+
+            
+
+            .card-back {
+                display: block !important;
+                position: static !important;
+                opacity: 1 !important;
+            }
+        }
     }
 
     .ntg-highlights__highlight a::after {
         padding-left: 0;
+    }
+
+    .flickity-button {
+        display: none;
+    }
+
+    .flickity-viewport {
+        height: 100% !important;
+    }
+
+    .flickity-slider {
+        position: static !important;
+        display: block !important;
+    }
+
+    .carousel-cell {
+        position: static !important;
+        transform: translate(0) !important;
+        margin: 0 0 1rem;
+        width: 100% !important;
+        opacity: 1 !important;
+        filter: none !important;
+
+        .card {
+            transform: none !important;
+        }
+    }
+
+    .ntg-cards-carousel--testimonial {
+        .carousel-cell {
+            height: unset;
+        }
     }
 
     .accordion {
@@ -155,7 +213,6 @@
     .ntg-footer__mid,
     .ntg-footer__bottom-links,
     .ntg-hero-banner,
-    .ntg-cards-carousel,
     #interactive-map,
     .back-to-top,
     .btn,
