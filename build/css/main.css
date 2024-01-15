@@ -25837,11 +25837,18 @@ body.search-panel--is-hidden .search-global {
   .ntg-cards-carousel--testimonial .carousel-cell {
     height: unset;
   }
+  .ntg-featured-testimonial {
+    color: #000;
+  }
   .ntg-featured-testimonial__background {
     position: static !important;
+    padding-bottom: 1rem;
   }
   .ntg-featured-testimonial__background::after {
     content: none;
+  }
+  .ntg-featured-testimonial blockquote::before {
+    color: #000;
   }
   .accordion {
     --bs-accordion-bg: #fff;

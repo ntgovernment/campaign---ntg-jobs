@@ -126,11 +126,20 @@
     }
 
     .ntg-featured-testimonial {
+        color: $black;
+
         &__background {
             position: static !important;
+            padding-bottom: 1rem;
 
             &::after {
                 content: none;
+            }
+        }
+
+        blockquote {
+            &::before {
+                color: $black;
             }
         }
     }
