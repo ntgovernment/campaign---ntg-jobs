@@ -60,18 +60,19 @@
             }
 
             .card-img-overlay {
-                text-shadow: $text-shadow;
+                display: block !important;
 
                 &::before {
                     content: none;
                 }
 
                 .card-title {
-                    color: $white !important;
+                    color: $black !important;
+                    background-color: $white !important;
+                    padding: 0.5rem;
+                    display: inline;
                 }
             }
-
-            
 
             .card-back {
                 display: block !important;

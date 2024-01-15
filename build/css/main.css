@@ -25784,13 +25784,16 @@ body.search-panel--is-hidden .search-global {
     position: relative;
   }
   .card--flip .card-img-overlay {
-    text-shadow: 2px 2px 2px rgba(var(--current-theme-primary-text-reverse-rgb, 43, 41, 45), 0.75);
+    display: block !important;
   }
   .card--flip .card-img-overlay::before {
     content: none;
   }
   .card--flip .card-img-overlay .card-title {
-    color: #fff !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    padding: 0.5rem;
+    display: inline;
   }
   .card--flip .card-back {
     display: block !important;
