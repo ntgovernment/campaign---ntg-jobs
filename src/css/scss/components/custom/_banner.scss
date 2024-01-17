@@ -150,4 +150,20 @@
             }
         }
     }
+
+    &--reverse {
+        color: var(--current-theme-text-color-reverse, $white);
+        text-shadow: $text-shadow-reverse;
+
+        .breadcrumb {
+            justify-content: center;
+            margin-bottom: 1rem;
+    
+            .breadcrumb-item + .breadcrumb-item {
+                &::before {
+                    color: var(--current-theme-text-color-reverse, $white);
+                }
+            }
+        }
+    }
 }

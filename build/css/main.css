@@ -22749,6 +22749,19 @@ h3:target,
     margin: auto;
   }
 }
+.ntg-banner--reverse {
+  color: var(--current-theme-text-color-reverse, #fff);
+  text-shadow: 2px 2px 2px rgba(var(--current-theme-primary-text-rgb, 43, 41, 45), 0.75);
+}
+.ntg-banner--reverse .breadcrumb {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+.ntg-banner--reverse .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--current-theme-text-color-reverse, #fff);
+}
 
 .ntg-call-to-action-links {
   color: var(--current-theme-text-color, #2B292D);
