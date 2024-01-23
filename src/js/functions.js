@@ -859,7 +859,7 @@ function initVideoControl() {
 }
 
 function initLinkCheck() {
-    var links = document.querySelectorAll('#content a');
+    var links = document.querySelectorAll('#content a:not(.stretched-link)');
     if(!links) {
         return false;
     }
