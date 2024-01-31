@@ -24304,6 +24304,7 @@ main {
 }
 .ntg-highlights__highlight a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .ntg-highlights__highlight a:focus {
   outline: none;
