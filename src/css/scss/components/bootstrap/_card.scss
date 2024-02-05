@@ -150,18 +150,18 @@
             > div {
                 &:first-child {
                     @include media-breakpoint-up(md) {
-                        max-height: 250px;
-
-                        > #{$this}-video {
+                        #{$this}-img-top,
+                        #{$this}-video {
                             min-height: 250px;
+                            max-height: 250px;
                         }
                     }
 
                     @include media-breakpoint-up(lg) {
-                        max-height: 440px;
-
-                        > #{$this}-video {
+                        #{$this}-img-top,
+                        #{$this}-video {
                             min-height: 440px;
+                            max-height: 440px;
                         }
                     }
                 }

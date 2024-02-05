@@ -22308,19 +22308,17 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
-  .card--tall > .row > div:first-child {
-    max-height: 250px;
-  }
-  .card--tall > .row > div:first-child > .card-video {
+  .card--tall > .row > div:first-child .card-img-top,
+  .card--tall > .row > div:first-child .card-video {
     min-height: 250px;
+    max-height: 250px;
   }
 }
 @media (min-width: 992px) {
-  .card--tall > .row > div:first-child {
-    max-height: 440px;
-  }
-  .card--tall > .row > div:first-child > .card-video {
+  .card--tall > .row > div:first-child .card-img-top,
+  .card--tall > .row > div:first-child .card-video {
     min-height: 440px;
+    max-height: 440px;
   }
 }
 .card--tall > .row > div:last-child {
