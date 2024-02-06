@@ -1,3 +1,48 @@
+.ntg-job-search-ct {
+    background-color: var(--current-theme-color);
+
+    .jobsearch-wrapper {
+        --text-color: var(--current-theme-text-color);
+        --bs-link-color-rgb: 255,255,255;
+        --bs-link-hover-color-rgb: 204,204,204;
+        color: var(--text-color);
+        text-shadow: none;
+    }
+
+    .table {
+        --bs-table-bg: var(--current-theme-text-color, #fff);
+    }
+
+    .SumoSelect .search-txt {
+        display: none !important;
+    }
+    .SumoSelect.open .search-txt {
+        display: inline-block !important;
+    }
+
+    .jobsearch-wrapper .SumoSelect > .CaptionCont, .jobsearch-wrapper input {
+        --bs-body-bg: #fff !important;
+        padding: 12px 2rem 12px 20px !important;
+        border: var(--bs-border-width) solid var(--bs-border-color) !important;
+        background-color: #fff !important;
+        font-size: calc(var(--base-font-size) / var(--scale)) !important;
+    }
+    .jobsearch-wrapper input[type=text] {
+        border-radius: 8px !important;
+    }
+
+    .jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont {
+        color: $ntg-dark-gray;
+    }
+    
+    .jobsearch-wrapper #expandSearch .SumoSelect > .CaptionCont {
+        --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E") !important;
+    }
+
+    #pagination {
+        color: var(--current-theme-text-color);
+    }
+}
 .jobsearch-wrapper {
     padding: 8rem 0;
     --text-color: #{$white};
