@@ -3,14 +3,17 @@
 
     .jobsearch-wrapper {
         --text-color: var(--current-theme-text-color);
-        --bs-link-color-rgb: 255,255,255;
-        --bs-link-hover-color-rgb: 204,204,204;
+        --bs-link-color-rgb: var(--current-theme-link-color-rgb);
+        --bs-link-hover-color-rgb: var(--current-theme-link-hover-color-rgb)
         color: var(--text-color);
         text-shadow: none;
     }
 
     .table {
         --bs-table-bg: var(--current-theme-text-color, #fff);
+        color: var(--current-theme-text-color-reverse);
+        --bs-table-color: var(--current-theme-text-color-reverse);
+        --bs-table-border-color: var(--current-theme-text-color-reverse);
     }
 
     .SumoSelect .search-txt {
