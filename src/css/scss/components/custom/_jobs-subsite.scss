@@ -8,7 +8,7 @@
 
     #searchResults .accordion {
         --bs-accordion-bg: var(--current-theme-text-color, #{$white});
-        --bs-accordion-color: var(--current-theme-color);
+        --bs-accordion-color: var(--current-theme-text-color-reverse);
         --bs-accordion-active-color: var(--bs-accordion-color);
         --bs-accordion-btn-color: var(--bs-accordion-color);
     }
