@@ -21,8 +21,9 @@
     }
 }
 
-@each $color, $value in $theme-colors-text  {
+@each $color, $value in $theme-colors-bg-subtle {
     .alert-#{$color} {
-        --#{$prefix}alert-color: #{$value};
+        --#{$prefix}alert-color: #{color-contrast($value)};
+        --#{$prefix}alert-link-color: #{color-contrast($value)};
     }
 }
