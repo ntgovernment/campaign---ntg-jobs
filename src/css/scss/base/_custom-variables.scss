@@ -106,7 +106,8 @@ $input-border-radius: 0;
 $input-focus-border-color: var(--current-theme-text-color, $body-color);
 
 // Table
-$table-border-color: $body-color;
+$table-color: var(--current-theme-text-color, $body-color);
+$table-border-color: var(--current-theme-text-color, $body-color);
 
 /* -------- Custom -------- */
   
