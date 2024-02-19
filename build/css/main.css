@@ -22804,6 +22804,11 @@ textarea.form-control-lg {
       -ms-flex: 1;
           flex: 1;
 }
+@media (min-width: 992px) {
+  .ntg-tabs .nav-item {
+    max-width: 250px;
+  }
+}
 .ntg-tabs .nav-link {
   text-transform: uppercase;
   border-left: 0;
@@ -22813,12 +22818,8 @@ textarea.form-control-lg {
   letter-spacing: 1.6px;
   line-height: 1.5;
   opacity: 0.6;
+  width: 100%;
   height: 100%;
-}
-@media (min-width: 992px) {
-  .ntg-tabs .nav-link {
-    max-width: 250px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .ntg-tabs .nav-link {
