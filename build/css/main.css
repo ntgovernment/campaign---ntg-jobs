@@ -25079,6 +25079,17 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .jobsearch-wrapper .SumoSelect .options {
   margin-bottom: 0 !important;
 }
+.jobsearch-wrapper .SumoSelect .opt {
+  font-size: 0.7368421053rem;
+}
+.jobsearch-wrapper .SumoSelect .opt span i {
+  top: calc(6px + 1rem - 14px) !important;
+  bottom: unset !important;
+}
+.jobsearch-wrapper .SumoSelect .opt label {
+  white-space: normal !important;
+  overflow: auto !important;
+}
 .jobsearch-wrapper input::-webkit-input-placeholder {
   color: #2B292D;
   font-style: normal;

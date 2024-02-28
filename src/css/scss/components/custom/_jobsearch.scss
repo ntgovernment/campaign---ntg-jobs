@@ -91,6 +91,22 @@
         .options {
             margin-bottom: 0 !important;
         }
+
+        .opt  {
+            @include font-size(14px);
+
+            span {
+                i {
+                    top: calc(6px + (1rem - 14px)) !important;
+                    bottom: unset !important;
+                }
+            }
+
+            label{
+                white-space: normal !important;
+                overflow: auto !important;
+            }
+        }
     }
 
     .SumoSelect,
