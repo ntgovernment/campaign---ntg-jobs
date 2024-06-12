@@ -7,7 +7,7 @@ window.bootstrap.Button = require('bootstrap/js/dist/button');
 window.bootstrap.Carousel = require('bootstrap/js/dist/carousel');
 window.bootstrap.Collapse = require('bootstrap/js/dist/collapse');
 require('bootstrap/js/dist/dropdown');
-// window.bootstrap.Modal = require('bootstrap/js/dist/modal');
+window.bootstrap.Modal = require('bootstrap/js/dist/modal');
 // require('bootstrap/js/dist/offcanvas');
 // require('bootstrap/js/dist/popover');
 // require('bootstrap/js/dist/scrollspy');

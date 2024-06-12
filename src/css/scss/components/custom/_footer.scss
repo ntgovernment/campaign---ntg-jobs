@@ -14,6 +14,7 @@
 }
 
 .ntg-footer {
+    $this: &;
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
 
@@ -28,6 +29,7 @@
     &__mid {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        background-color: var(--footer-background-color);
 
         @include media-breakpoint-up(lg) {
             padding-bottom: 3rem;
@@ -41,7 +43,7 @@
 
         ul {
             display: flex;
-            gap: 0.5rem;
+            gap: 0 0.5rem;
             flex-wrap: wrap;
             padding: 0;
             margin: 0;
@@ -68,10 +70,17 @@
             margin-bottom: 0;
         }
 
-        &-links {
+        &-links,
+        nav {
             @include media-breakpoint-down(lg) {
                 margin-top: 0.5rem;
             }
+        }
+    }
+
+    &__last-updated {
+        @include media-breakpoint-up(lg) {
+            text-align: right;
         }
     }
 
@@ -122,6 +131,38 @@
 
     .panel-title {
         cursor:pointer;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__background {
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            width: calc(100% / 3 * 2);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        &::after {
+            content: '';
+            background: linear-gradient(75deg, var(--footer-background-color) 10%, transparent 50%);
+            width: calc(100% / 3 * 2);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
     }
 
     .vertab {
@@ -180,6 +221,8 @@
             margin-right: 5rem;
             flex-shrink: 0;
             display: none;
+            position: relative;
+            z-index: 1;
 
             @include media-breakpoint-up(lg) {
                 display: block;
@@ -213,9 +256,27 @@
             @include media-breakpoint-up(lg) {
                 margin-bottom: 0;
             }
+
+            &.active {
+                #{$this}__background {
+                    img {
+                        animation: 1s fadeIn;
+                    }
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0.2;
+                } 
+            }
         }
     }
-    
+
     @media (min-width: 992px) {
         .vertab-accordion {
             flex-grow: 1;

@@ -1,0 +1,28 @@
+.modal {
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0;
+
+        h2 {
+            @include font-size($h3-font-size);
+            margin-bottom: 0;
+        }
+    }
+
+    &-footer {
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+
+    &-body {
+        padding: 1rem $modal-inner-padding;
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -29,6 +29,7 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     initJobsSlidingMenu();
     initLinkCheck();
     initToNextSection();
+    initRedirectPopup();
 
     window.addEventListener('resize', debounce(function(e){
         initSlidingMenu(e);
@@ -689,6 +690,14 @@ function initResponsiveTable() {
         responsiveCellHeaders(element);
         addTableAria(element);
     });
+
+    document.querySelectorAll('#content table:not([class*="custom-table-"])').forEach(function (element) {
+        var div = document.createElement('div');
+        div.classList.add('table-responsive');
+        var parent = element.parentElement;
+        parent.insertBefore(div, element);
+        div.append(element);
+    });
 }
 
 function initFlickity() {
@@ -890,5 +899,42 @@ function initToNextSection() {
         next.scrollIntoView({
             behavior: "smooth"
         });
+    });
+}
+
+function initRedirectPopup() {
+    document.querySelectorAll('#content a[data-redirect-popup="true"]').forEach(function (link) {
+        var href = link.getAttribute('href');
+        var desc = link.getAttribute('data-redirect-description');
+        var parent = link.parentElement;
+        var text = link.innerText;
+        var textIDFormat = text.toLowerCase().replace(/\s/g, '-');
+        var textARIAFormat = textIDFormat;
+
+        link.setAttribute('data-bs-toggle', 'modal');
+        link.setAttribute('data-bs-target', '#' + textIDFormat);
+
+        var modal = document.createElement('div');
+        modal.classList.add('modal', 'fade');
+        modal.setAttribute('tabindex', '-1');
+        modal.setAttribute('id', textIDFormat);
+        modal.setAttribute('aria-labelledby', textARIAFormat);
+        modal.innerHTML = `
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Redirecting...</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>${desc}</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="${href}" class="btn btn-sm btn-secondary btn-external">Redirect now</a>
+                </div>
+            </div>
+        </div>
+        `;
+        parent.insertAdjacentElement('afterend', modal);
     });
 }

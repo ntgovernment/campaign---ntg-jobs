@@ -15,7 +15,9 @@ $spacers: (
   7: $spacer * 3,
   8: $spacer * 5,
   9: $spacer * 7.5,
-  10: $spacer * 10
+  10: $spacer * 10,
+  11: $spacer * 12.5,
+  12: $spacer * 15
 );
 
 $enable-dark-mode: true;
@@ -104,6 +106,12 @@ $input-bg: $white;
 $input-border-color: var(--current-theme-text-color, $body-color);
 $input-border-radius: 0;
 $input-focus-border-color: var(--current-theme-text-color, $body-color);
+
+// Modal
+$modal-inner-padding: 2rem;
+$modal-content-border-radius: 0;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
 
 // Table
 $table-color: var(--current-theme-text-color, $body-color);

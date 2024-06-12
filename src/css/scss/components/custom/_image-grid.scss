@@ -1,11 +1,24 @@
 .ntg-image-grid {
-  a {
-    &:focus {
-      @include focus();
-    }
-  }
+	$this: &;
 
-  img {
-    object-fit: cover;
-  }
+	img,
+	video {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		aspect-ratio: 4 / 3;
+
+		&#{$this}__featured {
+			max-height: calc(184.833px * 2 + 1.5rem);
+			aspect-ratio: 16 / 9;
+
+			@include media-breakpoint-down(xxl) {
+				max-height: calc(156.75px * 2 + 1.5rem);
+			}
+
+			@include media-breakpoint-down(xxl) {
+				max-height: calc(128.633px * 2 + 1.5rem);
+			}
+		}
+	}
 }

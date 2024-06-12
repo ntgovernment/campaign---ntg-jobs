@@ -3,6 +3,11 @@
     display: none;
 }
 
+// fix modal backdrop
+:where(.mm-slideout) {
+    z-index: var(--bs-backdrop-zindex) + 1;
+}
+
 .mm-menu {
     --mm-color-background: var(--header-background-color);
     --mm-color-border: var(--header-text-color);
