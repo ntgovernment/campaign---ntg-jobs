@@ -34,8 +34,8 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
         initSlidingMenu(e);
         initJobsSlidingMenu(e);
     }));
-
 })();
+
 
 //debounce for resize
 function debounce(func){

@@ -16063,13 +16063,27 @@ class NTGJobSearch {
             const attachmentTableBody = row.querySelector(".table-attachments tbody");
 
             description.forEach((attachment) => {
-                const tableRow = `<tr>
-                <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
-                <td>${attachment.fileExtension}</td>
-                <td><a href="${attachment.fileURL}" class="text-nowrap" target="_blank" rel="noopener" title="Opens in a new window">Download<i class="fas fa-arrow-to-bottom ms-1"></i></a></td>
-            </tr>`;
+                let template = `<tr>
+                    <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
+                    <td>${attachment.fileExtension}</td>
+                    <td><a href="${attachment.fileURL}" class="text-nowrap" target="_blank" rel="noopener" title="Opens in a new window">Download<i class="fas fa-arrow-to-bottom ms-1"></i></a></td>
+                </tr>`;
 
-                attachmentTableBody.insertAdjacentHTML("beforeend", tableRow);
+                let attachmentId;
+
+                if(attachment.fileExtension == "docx") {
+                    const urlObj = new URL(attachment.fileURL);
+                    attachmentId = urlObj.searchParams.get("id");
+
+                    template +=`<tr>
+                        <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
+                        <td>HTML</td>
+                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?id=${attachmentId}" class="d-block text-nowrap" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-arrow-to-bottom ms-1"></i></a></td>` : "</td>"}
+                    </tr>`;
+                }
+
+
+                attachmentTableBody.insertAdjacentHTML("beforeend", template);
             });
 
         } else if (!Array.isArray(description)) {
