@@ -35,8 +35,8 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
         initSlidingMenu(e);
         initJobsSlidingMenu(e);
     }));
-
 })();
+
 
 //debounce for resize
 function debounce(func){
@@ -868,7 +868,7 @@ function initVideoControl() {
 }
 
 function initLinkCheck() {
-    var links = document.querySelectorAll('#content a:not(.stretched-link)');
+    var links = document.querySelectorAll('#content a:not(.stretched-link):not(.exclude-link-check)');
     if(!links) {
         return false;
     }
