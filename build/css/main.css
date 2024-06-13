@@ -3466,10 +3466,10 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   padding: 0.25rem 0.25rem;
 }
 
-.table-bordered > :not(caption) > * {
+.table-bordered > :not(caption) > *, #fileResult table > :not(caption) > * {
   border-width: var(--bs-border-width) 0;
 }
-.table-bordered > :not(caption) > * > * {
+.table-bordered > :not(caption) > * > *, #fileResult table > :not(caption) > * > * {
   border-width: 0 var(--bs-border-width);
 }
 
@@ -26638,6 +26638,39 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .jobsearch-wrapper #expandSearchBtn:hover,
 .jobsearch-wrapper #expandFullSearch:hover {
   padding-right: inherit !important;
+}
+
+/* These styles are specific to the job description page 'viewFile.html' where HTML is generated from DOCX */
+#fileResult table th > *:last-child, #fileResult table td > *:last-child {
+  margin-bottom: 0;
+}
+#fileResult table h2, #fileResult table .h2 {
+  font-size: var(--h4-size);
+}
+#fileResult table h2:only-child, #fileResult table .h2:only-child {
+  margin: 1rem 0;
+}
+#fileResult table p {
+  font-weight: 400;
+}
+#fileResult .table-responsive {
+  margin-bottom: 1rem;
+  scrollbar-color: var(--current-theme-tertiary) var(--current-theme-tertiary-text);
+  scrollbar-width: thin;
+}
+#fileResult .table-responsive::-webkit-scrollbar {
+  background-color: var(--current-theme-tertiary-text);
+  height: 8px;
+}
+#fileResult .table-responsive::-webkit-scrollbar-thumb {
+  background-color: var(--current-theme-tertiary-text);
+}
+#fileResult .table-responsive, #fileResult table {
+  transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  /* IE 9 */
+  -webkit-transform: rotateX(180deg);
+  /* Safari and Chrome */
 }
 
 .ntg-jobs-subsite {

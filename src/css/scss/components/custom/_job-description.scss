@@ -2,8 +2,6 @@
 
 #fileResult {
     table {
-        @extend .table-bordered;
-
         th, td {
             > * {
                 &:last-child {
