@@ -190,8 +190,19 @@ class NTGJobSearch {
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
             attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments"));
 
-            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>`)
+            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>`);
+            accordionBody.insertAdjacentHTML("beforeend", `<button class="mt-2 ms-2 btn btn-outline-olive-green py-1" data-url="https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>`);
             accordion.appendChild(accordionItem);
+
+            var share = accordionItem.querySelector('button');
+            share.addEventListener('click', function () {
+                var url = share.getAttribute('data-url');
+                navigator.clipboard.writeText(url);
+                share.innerHTML = 'Copied!<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i>';
+                setTimeout(() => {
+                        share.innerHTML = 'Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i>'
+                }, '1000');
+            });
         });
 
         this.searchResultsWrapper.innerHTML = "";

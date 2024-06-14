@@ -3466,10 +3466,10 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   padding: 0.25rem 0.25rem;
 }
 
-.table-bordered > :not(caption) > *, #fileResult table > :not(caption) > * {
+.table-bordered > :not(caption) > * {
   border-width: var(--bs-border-width) 0;
 }
-.table-bordered > :not(caption) > * > *, #fileResult table > :not(caption) > * > * {
+.table-bordered > :not(caption) > * > * {
   border-width: 0 var(--bs-border-width);
 }
 
