@@ -13,6 +13,7 @@
     }
 }
 
+.fa-brands,
 .fab {
     &:before,
     &:after {
@@ -26,11 +27,22 @@
     }
 }
 
+.fa-solid,
 .fas,
+.fa-regular,
 .far,
+.fa-light,
 .fal,
 .fak {
     font-family: 'Font Awesome 5 Pro' !important;
+    font-style: normal !important;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa-sharp {
+    font-family: 'Font Awesome 6 Sharp' !important;
     font-style: normal !important;
     font-variant: normal;
     text-rendering: auto;
