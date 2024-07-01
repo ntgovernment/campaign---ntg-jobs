@@ -1,23 +1,101 @@
 .ntg-image-grid {
 	$this: &;
 
-	img,
-	video {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		aspect-ratio: 4 / 3;
+	&__item {
+		position: relative;
 
-		&#{$this}__featured {
-			max-height: calc(184.833px * 2 + 1.5rem);
-			aspect-ratio: 16 / 9;
+		&:has(a) {
+			&::after {
+				content: '';
+				background: linear-gradient(to top, rgba($black, .52) 0%, transparent 100%);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				opacity: 0;
+				transition: 0.2s opacity ease-in-out;
+				
+				@include media-breakpoint-down(lg) {
+					opacity: 1;
+				}
+			}
+		}
 
-			@include media-breakpoint-down(xxl) {
-				max-height: calc(156.75px * 2 + 1.5rem);
+		&:has(a:hover),
+		&:has(a:focus) {
+			&::after {
+				opacity: 1;
+			}
+		}
+
+		img,
+		video {
+			width: 100%;
+			object-fit: cover;
+			aspect-ratio: 4 / 3;
+		}
+
+		img {
+			height: auto;
+		}
+
+		video {
+			height: 100%;
+			display: flex;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			padding: 1rem;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			opacity: 0;
+			transition: 0.2s opacity ease-in-out;
+
+			@include media-breakpoint-down(lg) {
+				opacity: 1;
 			}
 
-			@include media-breakpoint-down(xxl) {
-				max-height: calc(128.633px * 2 + 1.5rem);
+			&:hover,
+			&:focus {
+				opacity: 1;
+			}
+
+			i {
+				font-size: $font-size-sm;
+				margin-left: 0.5rem;
+				line-height: 1.5;
+			}
+		}
+
+		&.featured {
+			img,
+			video {
+				aspect-ratio: 16 / 9;
+				max-height: calc(184.833px * 2 + 1.5rem);
+				
+				@include media-breakpoint-down(xxl) {
+					max-height: calc(156.75px * 2 + 1.5rem);
+				}
+			
+				@include media-breakpoint-down(xl) {
+					max-height: calc(128.633px * 2 + 1.5rem);
+				}
+			}
+			
+			a {
+				@include media-breakpoint-up(lg) {
+					padding: 2rem;
+				}
 			}
 		}
 	}
