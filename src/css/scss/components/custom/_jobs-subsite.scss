@@ -211,6 +211,33 @@
                     outline-offset: -3px;
                 }
             }
+
+            .social-share {
+                display: inline-flex;
+                gap: 0.35rem;
+
+                &__link {
+                    @include font-size(30px);
+                    transition: 0.2s transform ease-in-out;
+
+                    &:hover,
+                    &:focus {
+                        transform: scale(1.1);
+                    }
+
+                    &.facebook {
+                        color: #1877F2;
+                    }
+
+                    &.x {
+                        color: #000000;
+                    }
+
+                    &.linkedin {
+                        color: #0077B5;
+                    }
+                }
+            }
         }
     }
 
