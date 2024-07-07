@@ -1,0 +1,371 @@
+@use "sass:map";
+
+.ntg-carousel-banner {
+    $this: &;
+    background-color: var(--current-theme-color, $primary);
+    position: relative;
+
+    &::before {
+        content: '';
+        background: $black-gradient-4;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .ratio {
+        &::before {
+            padding-top: clamp(500px, map.get($aspect-ratios, '16x9'), 600px);
+        }
+    }
+
+    &__content {
+        color: var(--current-theme-text-color, $primary-text);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        padding-top: map.get($header-heights, "mobile");
+
+        @include media-breakpoint-up(sm) {
+            padding-top: map.get($header-heights, "tablet");
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: map.get($header-heights, "desktop");
+        }
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    &__text {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h1 {
+            @include media-breakpoint-down(lg) {
+                @include font-size($h3-font-size);
+            }
+        }
+
+        .btn {
+            align-self: flex-start;
+        }
+    }
+
+    &__background {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .carousel {
+        z-index: 0;
+    }
+
+    .carousel-inner {
+        &::before {
+            content: '';
+            background: linear-gradient(315deg, rgba(0, 0, 0, 60%) 0%, rgba(0, 0, 0, 20%) 20%, rgba(0, 0, 0, 10%) 30%, rgba(0, 0, 0, 0) 100%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+    }
+
+    .carousel-control {
+        &-prev,
+        &-next {
+            top: unset;
+            bottom: 2rem;
+            width: 2rem;
+            z-index: 3;
+
+            &:focus {
+                @include focus();
+            }
+
+            @include media-breakpoint-down(sm) {
+                bottom: 1rem;
+            }
+        }
+
+        &-prev {
+            left: unset;
+            right: 4rem;
+
+            @include media-breakpoint-down(sm) {
+                right: 2.75rem;
+            }
+        }
+
+        &-next {
+            right: 2rem;
+
+            @include media-breakpoint-down(sm) {
+                right: 0.75rem;
+            }
+        }
+
+        &-prev-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 320 512'%3e%3cpath d='M34.5 239L228.9 44.7c9.4-9.4 24.6-9.4 33.9 0l22.7 22.7c9.4 9.4 9.4 24.5 0 33.9L131.5 256l154 154.8c9.3 9.4 9.3 24.5 0 33.9l-22.7 22.7c-9.4 9.4-24.6 9.4-33.9 0L34.5 273c-9.4-9.4-9.4-24.6 0-33.9z'/%3e%3c/svg%3e");
+        }
+
+        &-next-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 320 512'%3e%3cpath d='M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 33.9z'/%3e%3c/svg%3e");
+        }
+    }
+
+    &--type-1 {
+        &::before {
+            background: $black-gradient-5;
+        }
+
+        #{$this}__text {
+            padding-right: 3rem;
+            
+            @include media-breakpoint-down(lg) {
+                padding-right: 1rem;
+            }
+        }
+
+        .carousel {
+            width: 50%;
+            margin-left: auto;
+        }
+    }
+
+    &--type-2 {
+        #{$this}__content {
+            color: $white;
+        }
+
+        #{$this}__text {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        } 
+    }
+
+    &--type-3 {
+        &::before {
+            background: var(--current-theme-color, $primary);
+            opacity: 0.8;
+        }
+
+        #{$this}__text {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+    }
+
+    &--type-4 {
+        &::before {
+            background: $black-gradient-5;
+        }
+
+        #{$this}__content {
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+
+        #{$this}__text {
+            width: calc(100% / 3);
+            margin-left: auto;
+            padding-left: 3rem;
+            padding-right: 3rem;
+
+            @include media-breakpoint-down(xxl) {
+                width: 50%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        .carousel {
+            width: calc(100% / 3 * 2);
+
+            @include media-breakpoint-down(xxl) {
+                width: 50%;
+            }
+        }
+
+        .carousel-control {
+            &-prev {
+                right: calc(100% / 3 + 4rem);
+
+                @include media-breakpoint-down(xxl) {
+                    right: calc(50% + 4rem);
+                }
+            }
+
+            &-next {
+                right: calc(100% / 3 + 2rem);
+
+                @include media-breakpoint-down(xxl) {
+                    right: calc(50% + 2rem);
+                }
+            }
+        }
+    }
+
+    &--type-5 {
+        #{$this}__content {
+            .container {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        #{$this}__text {
+            background-color: var(--current-theme-color);
+            color: var(--current-theme-text-color);
+            height: unset;
+            padding: 3rem 2rem;
+            width: 40%;
+
+            @include media-breakpoint-down(xxl) {
+                width: 50%;
+            }
+
+            @include media-breakpoint-down(xl) {
+                width: 60%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding: 2rem;
+                width: 70%;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding: 1.5rem;
+                width: 80%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &--type-6 {
+        &::before {
+           content: none; 
+        }
+
+        #{$this}__wrapper {
+            @extend .container;
+            
+            @include media-breakpoint-down(md) {
+                display: flex;
+                flex-direction: column;
+
+                #{$this}__content {
+                    order: 2;
+                }
+
+                .carousel {
+                    order: 1;
+                }
+            }
+        }
+
+        #{$this}__content {
+            margin-bottom: 2rem;
+            z-index: 0;
+            
+            @include media-breakpoint-down(md) {
+                position: static;
+                padding-top: 0;
+
+                .container {
+                    max-width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+
+        #{$this}__text {
+            padding-right: 3rem;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+
+        .carousel {
+            margin-top: map.get($header-heights, "mobile");
+            margin-bottom: 2rem;
+            
+            @include media-breakpoint-up(sm) {
+                margin-top: map.get($header-heights, "tablet");
+                
+            }
+        
+            @include media-breakpoint-up(md) {
+                width: 50%;
+                margin-left: auto;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: map.get($header-heights, "desktop");
+            }
+        }
+
+        .carousel-inner {
+            z-index: 0;
+        }
+
+        .carousel-item {
+            &.ratio {
+                &::before {
+                    @include media-breakpoint-down(md) {
+                        padding-top: 200px;
+                    }
+                }
+            }
+        }
+
+        .carousel-control {
+            &-prev,
+            &-next {
+                bottom: 1rem;
+            }
+
+            &-prev {
+                right: 2.5rem;
+            }
+
+            &-next {
+                right: 0.5rem;
+            }
+        }
+    }
+}
