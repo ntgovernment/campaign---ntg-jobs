@@ -26939,32 +26939,6 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   }
 }
 
-.interactive-map {
-  width: 1092px;
-  height: 585px;
-  margin-left: -150px;
-}
-@media (min-width: 576px) {
-  .interactive-map {
-    margin-left: -125px;
-  }
-}
-@media (min-width: 992px) {
-  .interactive-map {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: -100px;
-    width: auto;
-    height: auto;
-    margin-left: 0;
-  }
-}
-@media (min-width: 1200px) {
-  .interactive-map {
-    right: 0;
-  }
-}
 .interactive-map__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
