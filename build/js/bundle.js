@@ -303,11 +303,11 @@ function initInteractiveMap() {
                 allGroupsNT.forEach(region => {
                     if(region.id == dataMapRegion) {
                         //Fill White if the tab references to the region
-                        region.querySelectorAll("path").forEach(path=> {
+                        region.querySelectorAll("path:not(.exclude)").forEach(path=> {
                             path.setAttribute("fill", "#FFFFFF");
                         })
                     } else {
-                        region.querySelectorAll("path").forEach(path=> {
+                        region.querySelectorAll("path:not(.exclude)").forEach(path=> {
                             path.setAttribute("fill", "#6E8094");
                         })
                     }

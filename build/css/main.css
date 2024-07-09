@@ -26939,6 +26939,29 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   }
 }
 
+.interactive-map {
+  width: 1092px;
+  height: 585px;
+}
+@media (max-width: 991.98px) {
+  .interactive-map {
+    -webkit-transform: scale(2) translateY(150px);
+            transform: scale(2) translateY(150px);
+  }
+}
+@media (min-width: 992px) {
+  .interactive-map {
+    display: block;
+    position: absolute;
+    bottom: -75px;
+    right: -200px;
+  }
+}
+@media (min-width: 1400px) {
+  .interactive-map {
+    right: -50px;
+  }
+}
 .interactive-map__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26958,7 +26981,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .interactive-map #NT g:not(.exclude) {
   cursor: pointer;
 }
-.interactive-map #NT g:not(.exclude):hover {
+.interactive-map #NT g:not(.exclude):hover path:not(.exclude) {
   stroke: white;
   stroke-width: 2;
 }

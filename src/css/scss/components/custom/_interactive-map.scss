@@ -1,22 +1,20 @@
 .interactive-map {
     width: 1092px;
     height: 585px;
-    margin-left: -150px;
 
-    @include media-breakpoint-up(sm) {
-        margin-left: -125px;
+    @include media-breakpoint-down(lg) {
+        transform: scale(2) translateY(150px);
     }
 
     @include media-breakpoint-up(lg) {
         display: block;
         position: absolute;
-        bottom: 0;
-        right: -100px;
-        margin-left: 0;
+        bottom: -75px;
+        right: -200px;
     }
 
-    @include media-breakpoint-up(xl) {
-        right: 0
+    @include media-breakpoint-up(xxl) {
+        right: -50px;
     }
 
     &__wrapper {
@@ -33,15 +31,16 @@
         cursor: pointer;
 
         &:hover {
-            stroke: white;
-            stroke-width: 2;
+            path:not(.exclude) {
+                stroke: white;
+                stroke-width: 2;
+            }
         }
     }
 
     path {
         transition: 0.2s fill ease-in-out;
     }
-
 
     svg {
         @include media-breakpoint-down(lg) {
