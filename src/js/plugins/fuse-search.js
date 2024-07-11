@@ -3,6 +3,7 @@
 class NTGJobSearch {
     constructor() {
         const api = ""
+        this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
         const vacancySearchForm = document.getElementById("vacancySearchForm");
@@ -369,7 +370,23 @@ class NTGJobSearch {
         }
 
         if(!this._isEmptyOrNull(location)) {
-            searchQuery["$and"].push({ "locationList.locationCodeDesc": this._wrapInQuotesAndJoin(location) });
+            if(location.includes("Remote")) {
+                let excludeLocationArray = this.allLocations.map(loc => {
+                    return `!"${loc}"`
+                });
+
+                const finalExcludeArray = excludeLocationArray.filter(eloc => {
+                    const filteredEloc = eloc.replace(/!/g, '').replace(/"/g, '');
+
+                    return !location.includes(filteredEloc)
+                })
+
+                const searchString = finalExcludeArray.join(" ");
+
+                searchQuery["$and"].push({ "locationList.locationCodeDesc": searchString});
+            } else {
+                searchQuery["$and"].push({ "locationList.locationCodeDesc": this._wrapInQuotesAndJoin(location) });
+            }
         }
 
         if(!this._isEmptyOrNull(vacancyType)) {
@@ -546,6 +563,8 @@ class NTGJobSearch {
     //Helper function to wrap array items into double quotes and join the array with |
     _wrapInQuotesAndJoin(array) {
         const arrayInQuotes = array.map(arrayItem => `"${arrayItem}"`);
+
+        console.log(arrayInQuotes)
 
         return `'` + arrayInQuotes.join("|'");
     }

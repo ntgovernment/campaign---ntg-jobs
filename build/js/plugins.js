@@ -15695,6 +15695,7 @@ class NTGJobSearch {
         }
         
         this._fetchNTGJobs().then((data) => {
+
             this._setupFuseSearch(data);
 
             vacancySearchForm && vacancySearchForm.addEventListener("submit", this._onFormSubmitCb.bind(this));
@@ -15722,6 +15723,22 @@ class NTGJobSearch {
             this._showResults(filteredResults);
 
         })
+    }
+
+    _getSectionsByAgency(data) {
+        const agencySections = {};
+
+        data.forEach(item => {
+            const { agency, section } = item;
+            if (!agencySections[agency]) {
+                agencySections[agency] = [];
+            }
+            if (!agencySections[agency].includes(section)) {
+                agencySections[agency].push(section);
+            }
+        });
+
+        return agencySections;
     }
 
     _populateFieldsPerSearchParam(formData) {
@@ -15872,8 +15889,20 @@ class NTGJobSearch {
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
             attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments"));
 
-            accordionBody.insertAdjacentHTML("beforeend", `<a href="${url}" class="mt-2 me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>`);
-            accordionBody.insertAdjacentHTML("beforeend", `<button class="mt-2 btn btn-outline-olive-green py-1" data-url="https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>`);
+            const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978`;
+
+            const lastAccordionRow = `<div class="d-flex align-items-center">
+                    <a href="${url}" class="me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
+                    <button class="btn btn-outline-olive-green py-1 me-2" data-url="${jobUrl}">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>
+                    <div class="social-share">
+                        <a class="social-share__link facebook" href="https://www.facebook.com/sharer.php?u=${jobUrl}" target="_blank" title="Share on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="social-share__link linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=${jobUrl}" target="_blank" title="Share on linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="social-share__link x" href="https://x.com/intent/tweet?url=${jobUrl}&text=${jobTitle}" target="_blank" title="Share on X"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                </div>`;
+
+            accordionBody.insertAdjacentHTML("beforeend", lastAccordionRow);
+
             accordion.appendChild(accordionItem);
 
             var share = accordionItem.querySelector('button');
@@ -16022,7 +16051,33 @@ class NTGJobSearch {
         }
 
         if(!this._isEmptyOrNull(location)) {
-            searchQuery["$and"].push({ "locationList.locationCodeDesc": this._wrapInQuotesAndJoin(location) });
+            console.log(location)
+            if(location.includes("Remote")) {
+                const allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
+
+                const excludeAllString = '!Darwin,!Palmerston,!"Alice Springs",!Katherine,!"Tennant Creek",!Nhulunbuy';
+
+                const excludeLocationArray =  excludeAllString.split(",");
+
+                const abc = excludeLocationArray.filter(eloc => {
+                    const filteredEloc = eloc.replace(/!/g, '').replace(/"/g, '');
+
+                    return !location.includes(filteredEloc)
+                })
+
+                const searchString = abc.join(" ");
+
+
+                
+                searchQuery["$and"].push({ "locationList.locationCodeDesc": searchString});
+
+
+                // const index = location.indexOf("Remote");
+                // location.splice(index, 1)
+            } else {
+                console.log(this._wrapInQuotesAndJoin(location))
+                searchQuery["$and"].push({ "locationList.locationCodeDesc": this._wrapInQuotesAndJoin(location) });
+            }
         }
 
         if(!this._isEmptyOrNull(vacancyType)) {
@@ -16033,6 +16088,7 @@ class NTGJobSearch {
             searchQuery["$and"].push({ "employmentCategoryList.employmentCategoryCodeDesc": this._wrapInQuotesAndJoin(category) });
         }
 
+        console.log(searchQuery)
         return searchQuery;
     }
 
@@ -16199,6 +16255,8 @@ class NTGJobSearch {
     //Helper function to wrap array items into double quotes and join the array with |
     _wrapInQuotesAndJoin(array) {
         const arrayInQuotes = array.map(arrayItem => `"${arrayItem}"`);
+
+        console.log(arrayInQuotes)
 
         return `'` + arrayInQuotes.join("|'");
     }

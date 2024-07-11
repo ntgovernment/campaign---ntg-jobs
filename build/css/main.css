@@ -26889,6 +26889,37 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-jobs-subsite #searchResults .accordion-button:focus {
   outline-offset: -3px;
 }
+.ntg-jobs-subsite #searchResults .accordion .social-share {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+.ntg-jobs-subsite #searchResults .accordion .social-share__link {
+  font-size: calc(1.2828947379rem + 0.4687499984vw);
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+}
+@media (min-width: 1200px) {
+  .ntg-jobs-subsite #searchResults .accordion .social-share__link {
+    font-size: 1.5789473684rem;
+  }
+}
+.ntg-jobs-subsite #searchResults .accordion .social-share__link:hover, .ntg-jobs-subsite #searchResults .accordion .social-share__link:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.ntg-jobs-subsite #searchResults .accordion .social-share__link.facebook {
+  color: #1877F2;
+}
+.ntg-jobs-subsite #searchResults .accordion .social-share__link.x {
+  color: #000000;
+}
+.ntg-jobs-subsite #searchResults .accordion .social-share__link.linkedin {
+  color: #0077B5;
+}
 .ntg-jobs-subsite #pagination {
   padding: 1rem 0;
 }
