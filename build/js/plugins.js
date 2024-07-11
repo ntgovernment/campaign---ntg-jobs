@@ -15685,6 +15685,7 @@ return Flickity;
 class NTGJobSearch {
     constructor() {
         const api = ""
+        this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
         const vacancySearchForm = document.getElementById("vacancySearchForm");
@@ -16051,31 +16052,21 @@ class NTGJobSearch {
         }
 
         if(!this._isEmptyOrNull(location)) {
-            console.log(location)
             if(location.includes("Remote")) {
-                const allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
+                let excludeLocationArray = this.allLocations.map(loc => {
+                    return `!"${loc}"`
+                });
 
-                const excludeAllString = '!Darwin,!Palmerston,!"Alice Springs",!Katherine,!"Tennant Creek",!Nhulunbuy';
-
-                const excludeLocationArray =  excludeAllString.split(",");
-
-                const abc = excludeLocationArray.filter(eloc => {
+                const finalExcludeArray = excludeLocationArray.filter(eloc => {
                     const filteredEloc = eloc.replace(/!/g, '').replace(/"/g, '');
 
                     return !location.includes(filteredEloc)
                 })
 
-                const searchString = abc.join(" ");
+                const searchString = finalExcludeArray.join(" ");
 
-
-                
                 searchQuery["$and"].push({ "locationList.locationCodeDesc": searchString});
-
-
-                // const index = location.indexOf("Remote");
-                // location.splice(index, 1)
             } else {
-                console.log(this._wrapInQuotesAndJoin(location))
                 searchQuery["$and"].push({ "locationList.locationCodeDesc": this._wrapInQuotesAndJoin(location) });
             }
         }
@@ -16088,7 +16079,6 @@ class NTGJobSearch {
             searchQuery["$and"].push({ "employmentCategoryList.employmentCategoryCodeDesc": this._wrapInQuotesAndJoin(category) });
         }
 
-        console.log(searchQuery)
         return searchQuery;
     }
 
