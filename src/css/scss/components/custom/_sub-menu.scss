@@ -1,0 +1,16 @@
+.ntg-sub-menu {
+    background-color: var(--current-theme-color, $primary);
+    color: var(--current-theme-text-color, $primary-text);
+
+    ul {
+        @extend .list-unstyled;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        a {
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}

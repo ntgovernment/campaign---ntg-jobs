@@ -11,6 +11,14 @@
 .mm-menu {
     --mm-color-background: var(--header-background-color);
     --mm-color-border: var(--header-text-color);
+    z-index: 1000;
+}
+
+.mm-wrapper--position-bottom .mm-wrapper__blocker,
+.mm-wrapper--position-left-front .mm-wrapper__blocker,
+.mm-wrapper--position-right-front .mm-wrapper__blocker,
+.mm-wrapper--position-top .mm-wrapper__blocker {
+    z-index: 999;
 }
 
 .mm-panels {

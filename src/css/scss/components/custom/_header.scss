@@ -99,11 +99,18 @@
             }
         }
     }
+
+    &:has(.ntg-sub-nav) {
+        .ntg-header {
+            padding-bottom: 0;
+        }
+    }
 }
 
 .ntg-header {
     padding: 0.5rem 0;
     transition: 0.2s padding ease-in-out;
+    position: relative; // for main nav panel positioning
     
     @include media-breakpoint-up(sm) {
         padding: 1rem 0;
@@ -202,6 +209,16 @@
                     outline: none;
                 }
             }
+        }
+    }
+
+    hr {
+        color: var(--header-text-color);
+        opacity: 0.2;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
         }
     }
 }

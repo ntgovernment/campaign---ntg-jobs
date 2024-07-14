@@ -42,7 +42,7 @@ a {
     }
 }
 
-ul:not(.nav-tabs):not(.ntg-main-nav__links):not(.ntg-related-pages) {
+ul:not(.nav-tabs):not(.ntg-main-nav__links):not(.ntg-sub-nav__links):not(.ntg-sub-menu__links):not(.ntg-related-pages) {
     margin-bottom: $paragraph-margin-bottom;
 }
 

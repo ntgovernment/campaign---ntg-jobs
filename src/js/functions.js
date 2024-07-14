@@ -7,7 +7,8 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     let jobsMenuInit = false;
 
     initMegaMenu();
-    // initPriorityNav();
+    initSubNav();
+    initPriorityNav();
     initResponsiveMenu();
     initMmenu();
     initMenuEdge();
@@ -410,14 +411,46 @@ function initMegaMenu() {
     });
 }
 
+function initSubNav() {
+    const header = document.querySelector('.page-header-container');
+    const links = document.querySelectorAll('.ntg-sub-nav__links > li');
+    const scrollSensor = 100;
+
+    links.forEach((link) => {
+        const config = {
+            attributes: true
+        };
+        const callback = (mutationList, observer) => {
+            for (const mutation of mutationList) {
+                // listen for changes in the link's attributes
+                if (mutation.type === "attributes") {
+                    var scrollPosition = scrollY;
+                    for (i = 0; i < links.length; i++) {
+                        if (links[i].classList.contains('sfHover')) {
+                            header.classList.add('header-scroll');
+                            break;
+                        } else {
+                            if (scrollPosition <= scrollSensor) {
+                                header.classList.remove('header-scroll');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // initialise MutationObserver
+        const observer = new MutationObserver(callback);
+        observer.observe(link, config);
+    });
+}
 
 function initPriorityNav() {
-    var mainNav = document.querySelector('.ntg-main-nav');
+    var mainNav = document.querySelector('.ntg-sub-nav');
     if (!mainNav) {
         return false;
     }
     
-    new PriorityNav('.ntg-main-nav');
+    new PriorityNav('.ntg-sub-nav');
 }
 
 function initResponsiveMenu() {
@@ -487,7 +520,7 @@ function initMmenu() {
 
 // dynamically shifts main nav dropdown position based on window width
 function initMenuEdge() {
-    var links = document.querySelectorAll('.ntg-main-nav__links > li');
+    var links = document.querySelectorAll('.ntg-sub-nav__links > li');
 
     if (!links) {
         return false
@@ -546,9 +579,9 @@ function initSuperfish() {
     $(document).ready(function () {
         $('ul.sf-menu').superfish({
             // options
-            delay: 250,
-            speed: 250,
-            speedOut: 250,
+            delay: 200,
+            speed: 200,
+            speedOut: 200,
             cssArrows: false
         });
     });
