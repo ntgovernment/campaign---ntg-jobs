@@ -455,12 +455,19 @@ function initPriorityNav() {
 
 function initResponsiveMenu() {
     var mainNav = document.getElementById('mainmenu');
-    if( !mainNav) {
+    if (!mainNav) {
+        return false;
+    }
+    var subNav = document.getElementById('submenu');
+    if (!subNav) {
         return false;
     }
 
     responsivemenu.init({
         wrapper: document.querySelector('#mainmenu'),
+    });
+    responsivemenu.init({
+        wrapper: document.querySelector('#submenu'),
     });
 }
 
