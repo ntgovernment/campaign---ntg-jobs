@@ -457,17 +457,24 @@ function initResponsiveMenu() {
     var mainNav = document.getElementById('mainmenu');
     if (!mainNav) {
         return false;
-    }
-    var subNav = document.getElementById('submenu');
+    };
+    var subNav = document.getElementById('subnav');
     if (!subNav) {
+        return false
+    }
+    var subMenu = document.getElementById('submenu');
+    if (!subMenu) {
         return false;
     }
 
     responsivemenu.init({
-        wrapper: document.querySelector('#mainmenu'),
+        wrapper: mainNav,
     });
     responsivemenu.init({
-        wrapper: document.querySelector('#submenu'),
+        wrapper: subNav,
+    });
+    responsivemenu.init({
+        wrapper: subMenu,
     });
 }
 
@@ -527,59 +534,67 @@ function initMmenu() {
 
 // dynamically shifts main nav dropdown position based on window width
 function initMenuEdge() {
-    var links = document.querySelectorAll('.ntg-sub-nav__links > li');
-
-    if (!links) {
+    var subNav = document.querySelectorAll('.ntg-sub-nav__links > li');
+    if (!subNav) {
+        return false
+    }
+    var subMenu = document.querySelectorAll('.ntg-sub-menu__links > li');
+    if (!subMenu) {
         return false
     }
 
-    links.forEach(link => {
-        var second = link.querySelector('ul > li > ul');
-        var third = link.querySelector('ul > li > ul > li > ul');
+    handleDropdownFlow(subNav);
+    handleDropdownFlow(subMenu);
 
-        if ((second || third) && !link.classList.contains("more")) {
-            link.addEventListener('mouseenter', function () {
-                avoidEdge();
-            });
-            link.addEventListener('keydown', function () {
-                avoidEdge();
-            });
-            link.addEventListener('touchstart', function () {
-                avoidEdge();
-            });
-        }
+    function handleDropdownFlow(links) {
+        links.forEach(link => {
+            var second = link.querySelector('ul > li > ul');
+            var third = link.querySelector('ul > li > ul > li > ul');
 
-        function avoidEdge() {
-            var offset = offset(link);
-            var left = offset.left;
-            var width_1 = 300; // second level width
-            var width_2 = 600; // third level width
-            var wnWidth = window.innerWidth;
-
-            var isSecondVisible = left + width_1 <= wnWidth;
-            var isThirdVisible = left + width_2 <= wnWidth;
-
-            if (!isThirdVisible) {
-                link.classList.add("edge");
-            } else {
-                link.classList.remove("edge");
+            if ((second || third) && !link.classList.contains("more")) {
+                link.addEventListener('mouseenter', function () {
+                    avoidEdge();
+                });
+                link.addEventListener('keydown', function () {
+                    avoidEdge();
+                });
+                link.addEventListener('touchstart', function () {
+                    avoidEdge();
+                });
             }
 
-            if (!isSecondVisible) {
-                link.classList.add("all");
-            } else {
-                link.classList.remove("all");
-            }
+            function avoidEdge() {
+                var offset = offset(link);
+                var left = offset.left;
+                var width_1 = 300; // second level width
+                var width_2 = 600; // third level width
+                var wnWidth = window.innerWidth;
 
-            function offset(elem) {
-                var rect = elem.getBoundingClientRect();
-                
-                return {
-                    left: rect.left + window.scrollX,
+                var isSecondVisible = left + width_1 <= wnWidth;
+                var isThirdVisible = left + width_2 <= wnWidth;
+
+                if (!isThirdVisible) {
+                    link.classList.add("edge");
+                } else {
+                    link.classList.remove("edge");
+                }
+
+                if (!isSecondVisible) {
+                    link.classList.add("all");
+                } else {
+                    link.classList.remove("all");
+                }
+
+                function offset(elem) {
+                    var rect = elem.getBoundingClientRect();
+                    
+                    return {
+                        left: rect.left + window.scrollX,
+                    }
                 }
             }
-        }
-    });
+        });
+    }
 }
 
 function initSuperfish() {
