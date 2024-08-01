@@ -23942,6 +23942,9 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease-in-out;
+  transition: 0.2s opacity ease-in-out;
 }
 .card--img:has(.card-body) .card-body {
   position: relative;
@@ -23956,6 +23959,9 @@ textarea.form-control-lg {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease-in-out;
+  transition: 0.2s opacity ease-in-out;
 }
 .card--img:has(.card-body) .card-title {
   color: #fff;
@@ -23968,6 +23974,12 @@ textarea.form-control-lg {
   color: #fff;
   padding-left: 0.5rem;
   font-weight: 400 !important;
+}
+.card--img:has(.card-body):hover::after, .card--img:has(.card-body):focus::after {
+  opacity: 1;
+}
+.card--img:has(.card-body):hover .card-body, .card--img:has(.card-body):focus .card-body {
+  opacity: 1;
 }
 
 .btn-close {
@@ -28662,14 +28674,17 @@ body.search-panel--is-hidden .search-global {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style-type: none;
   width: 100%;
 }
 .ntg-sub-menu ul a {
-  color: var(--header-text-color);
-  padding: 1rem 0.7rem;
+  font-weight: normal !important;
+  padding: 1rem 0.5rem;
   display: block;
   text-decoration: none;
   -webkit-transition: 0.2s color ease-in-out;
@@ -28686,14 +28701,15 @@ body.search-panel--is-hidden .search-global {
   }
 }
 .ntg-sub-menu ul > li.rm-focused > a, .ntg-sub-menu ul > li:hover > a {
-  font-weight: bold;
+  background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 5%);
+  font-weight: bold !important;
 }
 .ntg-sub-menu ul > li.rm-focused.has-children > a:after, .ntg-sub-menu ul > li:hover.has-children > a:after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .ntg-sub-menu ul > li.active > a {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .ntg-sub-menu ul > li.has-children > a:after {
   content: "\f078";
