@@ -29176,6 +29176,22 @@ body.search-panel--is-hidden .search-global {
     position: static !important;
     opacity: 1 !important;
   }
+  .card--img {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    -webkit-column-break-inside: avoid;
+       -moz-column-break-inside: avoid;
+            break-inside: avoid;
+  }
+  .card--img:has(.card-body)::after {
+    opacity: 1;
+  }
+  .card--img:has(.card-body) .card-body {
+    opacity: 1;
+  }
+  .card--img:has(.card-body) .card-link::after {
+    padding-left: 0;
+  }
   .ntg-highlights__highlight a::after {
     padding-left: 0;
   }
@@ -29318,6 +29334,7 @@ body.search-panel--is-hidden .search-global {
   #content input[type=reset],
   .nav-link:not(.active),
   .ntg-banner,
+  .ntg-carousel-banner,
   #in-page-nav,
   .ntg-jobs-subsite__menu,
   #pagination,

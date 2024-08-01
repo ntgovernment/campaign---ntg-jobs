@@ -82,6 +82,28 @@
                 opacity: 1 !important;
             }
         }
+
+        &--img {
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+            break-inside: avoid;
+
+            &:has(.card-body) {
+                &::after {
+                    opacity: 1;
+                }
+            
+                .card-body {
+                    opacity: 1;
+                }
+            
+                .card-link {
+                    &::after {
+                        padding-left: 0;
+                    } 
+                }
+            }
+        }
     }
 
     .ntg-highlights__highlight a::after {
@@ -245,6 +267,7 @@
     .btn,
     .nav-link:not(.active),
     .ntg-banner,
+    .ntg-carousel-banner,
     #in-page-nav,
     .ntg-jobs-subsite__menu,
     #pagination,
