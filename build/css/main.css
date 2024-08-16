@@ -25217,6 +25217,10 @@ body.testimonial .ntg-cards-carousel--testimonial {
 .ntg-columns:not([data-bs-theme=default]) {
   background-color: var(--current-theme-color);
 }
+.ntg-columns img {
+  max-width: 100%;
+  height: auto;
+}
 
 .ntg-featured-testimonial {
   color: #fff;
