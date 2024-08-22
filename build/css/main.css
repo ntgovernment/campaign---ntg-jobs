@@ -23922,7 +23922,8 @@ textarea.form-control-lg {
   height: 464px;
 }
 .card--img img,
-.card--img video {
+.card--img video,
+.card--img iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -23975,10 +23976,10 @@ textarea.form-control-lg {
   padding-left: 0.5rem;
   font-weight: 400 !important;
 }
-.card--img:has(.card-body):hover::after, .card--img:has(.card-body):focus::after {
+.card--img:has(.card-body):hover::after, .card--img:has(.card-body):has(.card-link:focus)::after {
   opacity: 1;
 }
-.card--img:has(.card-body):hover .card-body, .card--img:has(.card-body):focus .card-body {
+.card--img:has(.card-body):hover .card-body, .card--img:has(.card-body):has(.card-link:focus) .card-body {
   opacity: 1;
 }
 
