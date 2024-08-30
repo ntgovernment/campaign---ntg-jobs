@@ -27,14 +27,20 @@
         }
     }
 
-    #NT g:not(.exclude){
+    #NT g:not(.exclude) {
         cursor: pointer;
 
         &:hover {
-            path:not(.exclude) {
+            path:not(.exclude):not(.label) {
                 stroke: white;
                 stroke-width: 2;
             }
+        }
+    }
+
+    #NT g.active {
+        path.label:not(.darwin):not(.gove) {
+            fill: #6E8094;
         }
     }
 

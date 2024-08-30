@@ -228,11 +228,11 @@ function initInteractiveMap() {
     const allGroupsNT = interactiveMapWrapper && interactiveMapWrapper.querySelectorAll("#NT g:not(.exclude)");
     const mapTabs = document.getElementById("map-tab");
 
-    if(interactiveMapWrapper && mapTabs && allGroupsNT) {
+    if (interactiveMapWrapper && mapTabs && allGroupsNT) {
         const navLinks = document.querySelectorAll(".nav-link");
 
         //Add Listener to navLinks to toggle map
-        if(navLinks.length > 0) {
+        if (navLinks.length > 0) {
             navLinks.forEach(button => {
                 button.addEventListener("click", toggleMapRegion);
                 button.addEventListener("shown.bs.tab", toggleMapRegion);
@@ -240,10 +240,10 @@ function initInteractiveMap() {
         }
 
         //Add listener to map
-        if(interactiveMapWrapper) {
+        if (interactiveMapWrapper) {
             const ntRegion = interactiveMapWrapper.querySelector("#NT");
 
-            if(ntRegion) {
+            if (ntRegion) {
                 ntRegion.addEventListener("click", e => {
                     const closestGroup = e.target.closest("g");
                     const isExcluded = closestGroup && closestGroup.classList.contains("exclude");
@@ -266,17 +266,18 @@ function initInteractiveMap() {
         function toggleMapRegion(e) {
             const dataMapRegion = e.target.getAttribute("data-map-region");
 
-            if(dataMapRegion) {
+            if (dataMapRegion) {
                 allGroupsNT.forEach(region => {
-                    if(region.id == dataMapRegion) {
-                        //Fill White if the tab references to the region
-                        region.querySelectorAll("path:not(.exclude)").forEach(path=> {
+                    if (region.id == dataMapRegion) {
+                        region.classList.add('active');
+                        region.querySelectorAll("path:not(.exclude):not(.label)").forEach(path => {
                             path.setAttribute("fill", "#FFFFFF");
-                        })
+                        });
                     } else {
-                        region.querySelectorAll("path:not(.exclude)").forEach(path=> {
+                        region.classList.remove('active');
+                        region.querySelectorAll("path:not(.exclude):not(.label)").forEach(path => {
                             path.setAttribute("fill", "#6E8094");
-                        })
+                        });
                     }
                 })
             }

@@ -27036,9 +27036,12 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .interactive-map #NT g:not(.exclude) {
   cursor: pointer;
 }
-.interactive-map #NT g:not(.exclude):hover path:not(.exclude) {
+.interactive-map #NT g:not(.exclude):hover path:not(.exclude):not(.label) {
   stroke: white;
   stroke-width: 2;
+}
+.interactive-map #NT g.active path.label:not(.darwin):not(.gove) {
+  fill: #6E8094;
 }
 .interactive-map path {
   -webkit-transition: 0.2s fill ease-in-out;
