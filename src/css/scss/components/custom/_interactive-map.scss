@@ -3,7 +3,7 @@
     height: 585px;
 
     @include media-breakpoint-down(lg) {
-        transform: scale(2) translateY(150px);
+        transform: translate(-50px, 50px);
     }
 
     @include media-breakpoint-up(lg) {
