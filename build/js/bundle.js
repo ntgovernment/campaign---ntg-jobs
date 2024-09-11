@@ -1038,9 +1038,50 @@ function initRedirectPopup() {
 function initSubMenu() {
     var submenu = document.querySelector('.ntg-sub-menu__links'); 
     if (!submenu) { return false }
-    var slider = new Flickity(submenu, {
-        cellSelector: '.nav-cell',
-        cellAlign: 'left',
-        pageDots: false,
+    var breakpoint = '(max-width: 993px)';
+
+    if (!window.matchMedia(breakpoint).matches) {
+        initFlickity(submenu);
+    } else {
+        submenu.classList.add('collapse');
+    }
+
+    // destroy flickity at tablet width
+    window.addEventListener('resize', function () {
+        if (window.matchMedia(breakpoint).matches) {
+            if (submenu.classList.contains('flickity-enabled')) {
+                var slider = Flickity.data('.ntg-sub-menu__links');
+                slider.destroy();
+            }
+            submenu.classList.add('collapse');
+        } else {
+            if (submenu.classList.contains('collapse')) {
+                submenu.classList.remove('collapse');
+            }
+            // re-initialise flickity
+            initFlickity(submenu);
+        }
     });
+
+    function initFlickity(elem) {
+        var flkty = new Flickity(elem, {
+            cellSelector: '.nav-cell',
+            cellAlign: 'left',
+            pageDots: false,
+        });
+        
+        const cellElements = flkty.getCellElements();
+
+        for (let i = 0; i < cellElements.length; i++) {
+            const links = cellElements[i].querySelectorAll('a');
+
+            if (links.length > 0) {
+                links.forEach((link) => {
+                    link.addEventListener("focus", (e) => {
+                        flkty.select(i);
+                    })
+                });
+            }
+        }
+    }
 }
