@@ -65,6 +65,7 @@ let currentWindowWidth = $(window).width(), currentWindowHeight = $(window).heig
     initLinkCheck();
     initToNextSection();
     initRedirectPopup();
+    initSubMenu();
 
     window.addEventListener('resize', debounce(function(e){
         initSlidingMenu(e);
@@ -1026,5 +1027,15 @@ function initRedirectPopup() {
         </div>
         `;
         parent.insertAdjacentElement('afterend', modal);
+    });
+}
+
+function initSubMenu() {
+    var submenu = document.querySelector('.ntg-sub-menu__links'); 
+    if (!submenu) { return false }
+    var slider = new Flickity(submenu, {
+        cellSelector: '.nav-cell',
+        cellAlign: 'left',
+        pageDots: false,
     });
 }

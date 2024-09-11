@@ -3,13 +3,9 @@
     color: var(--current-theme-text-color, $primary-text);
 
     ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 0;
         margin: 0;
         list-style-type: none;
-        width: 100%;
 
         a {
             font-weight: normal !important;
@@ -25,7 +21,7 @@
             margin: 0;
         }
 
-        > li {
+        .flickity-slider > li {
             &.rm-focused,
             &:hover {
                 > ul {
@@ -33,7 +29,7 @@
                         display: block;
                     }
                 }
-
+                
                 > a {
                     background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 5%);
                     font-weight: bold !important;
@@ -139,87 +135,38 @@
         }
     }
 
-    .more {
-        &.rm-focused,
-        &:hover {
-            > a {
-                &:after {
-                    transform: rotate(180deg);
-                }
+    .flickity-button {
+        $icon-color: var(--current-theme-secondary, $secondary);
+        background-color: transparent;
+        border: 2px solid $icon-color;
+        transition: 0.15s background-color ease-in-out;
+
+        &-icon {
+            fill: $icon-color;
+            transition: 0.15s fill ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $icon-color;
+
+            .flickity-button-icon {
+                fill: var(--current-theme-secondary-text, $secondary-text);
             }
         }
 
-        > a {
-            &:after {
-                @extend .fa;
-                content: '\f078';
-                margin-left: 0.5rem;
-                font-size: 0.8rem;
-            }
-        }
-
-        ul {
-            right: 0;
-            left: inherit !important;
-            transition: margin 0.2s ease-out;
-
-            li {
-                &:hover {
-                    ul {
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
-
-        .tertiary {
-            position: relative;
-
-            &:hover {
-                > ul {
-                    display: block !important;
-                }
-            }
-
-            ul {
-                margin-top: 0;
-                margin-right: 0 !important;
-                right: 100%;
-                top: 0;
-            }
-
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                &:after {
-                    transform: rotate(-90deg);
-                }
-            }
-        }
-
-        .exclude {
+        &[disabled] {
             display: none;
         }
     }
 
-    .edge {
-        ul {
-            ul {
-                left: -100% !important;
-            }
+    .flickity-prev-next-button {
+        &.previous {
+            left: -54px;
         }
 
-        &.all {
-            ul {
-                right: 0;
-                left: inherit !important;
-
-                ul {
-                    right: 100%;
-                }
-            }
+        &.next {
+            right: -54px;
         }
     }
 }
