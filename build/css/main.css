@@ -25342,6 +25342,8 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 .ntg-sub-nav .more > a:after,
 .ntg-sub-nav ul > li.has-children > a:after,
 .ntg-sub-menu ul .flickity-slider > li.has-children > a:after,
+.ntg-side-nav .collapsed .collapser:after,
+.ntg-side-nav .collapser:after,
 .jobsearch-wrapper #expandSearchBtn:after,
 .jobsearch-wrapper #expandFullSearch:after,
 .ntg-header__search form button[type=submit]:after,
@@ -28532,95 +28534,60 @@ body.search-panel--is-hidden .search-global {
 }
 
 .ntg-side-nav {
-  margin-bottom: 2rem;
-}
-@media (min-width: 992px) {
-  .ntg-side-nav {
-    margin-bottom: 0;
-  }
-}
-.ntg-side-nav .accordion-button {
-  padding: 1rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-@media (max-width: 991.98px) {
-  .ntg-side-nav .accordion-collapse {
-    border-top: 1px solid #dee2e6;
-  }
-}
-@media (min-width: 992px) {
-  .ntg-side-nav .accordion-item {
-    border: none;
-  }
-}
-.ntg-side-nav .accordion-item .accordion-header {
-  display: block;
-}
-@media (min-width: 992px) {
-  .ntg-side-nav .accordion-item .accordion-header {
-    display: none;
-  }
-  .ntg-side-nav .accordion-item .accordion-header ~ #nav-default {
-    display: block !important;
-  }
+  border-top: 4px solid var(--current-theme-secondary, #104735);
 }
 @media (max-width: 991.98px) {
   .ntg-side-nav #nav-default {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
-.ntg-side-nav #nav-default > ul > li:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
 .ntg-side-nav ul {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   list-style: none;
 }
 .ntg-side-nav li {
   position: relative;
+  margin-bottom: 0 !important;
 }
 .ntg-side-nav li.active > a,
 .ntg-side-nav li.active > span {
-  color: #000;
+  color: inherit;
   font-weight: bold;
 }
-.ntg-side-nav a:hover, .ntg-side-nav a:focus {
+.ntg-side-nav a {
+  font-weight: 400;
   text-decoration: none;
+}
+.ntg-side-nav a:hover, .ntg-side-nav a:focus {
+  text-decoration: underline;
 }
 .ntg-side-nav .ntg-side-nav__toggle {
   border-radius: 0;
-  border: 1px solid #7d8083;
 }
 .ntg-side-nav .ntg-side-nav__title {
   margin: 0;
   font-size: 24px;
-  border-bottom: 3px solid #D7D2CB;
   text-decoration: none;
-  padding-bottom: 0.5rem;
-}
-@media (max-width: 991.98px) {
-  .ntg-side-nav .ntg-side-nav__title {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .ntg-side-nav .ntg-side-nav__title {
-    padding-top: 0;
-  }
+  padding: 0.5rem 0;
 }
 .ntg-side-nav a,
 .ntg-side-nav span {
   display: block;
-  padding: 1rem 0;
+  padding: 0.5rem 0.5rem;
+}
+.ntg-side-nav ul ul {
+  color: var(--current-theme-tertiary-text, #2B292D);
+  background-color: var(--current-theme-tertiary, #D7D2CB);
 }
 .ntg-side-nav ul ul a {
-  padding-right: 3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .ntg-side-nav ul ul ul a {
-  padding-left: 3.75rem;
+  padding-left: 1.5rem;
+}
+.ntg-side-nav li:has(a.ntg-side-nav__collapser) > a:not(.ntg-side-nav__collapser) {
+  padding-right: 3.5rem;
 }
 .ntg-side-nav .ntg-side-nav__collapser {
   display: block;
@@ -28628,9 +28595,11 @@ body.search-panel--is-hidden .search-global {
   right: 0;
   top: 0;
   padding: 0 1rem;
-  height: 56px;
+  height: 47.5px;
   text-decoration: none;
-  margin-right: -1rem;
+}
+.ntg-side-nav .ntg-side-nav__collapser:hover, .ntg-side-nav .ntg-side-nav__collapser:focus {
+  text-decoration: none;
 }
 .ntg-side-nav .collapser {
   position: relative;
@@ -28652,13 +28621,12 @@ body.search-panel--is-hidden .search-global {
   }
 }
 .ntg-side-nav .collapser:after {
-  content: "―";
-  font-size: 0.8421052632rem;
+  content: "\f077";
+  font-size: 1rem;
 }
 .ntg-side-nav .collapsed .collapser:after {
-  content: "…";
-  font-size: 1.0526315789rem;
-  margin-bottom: 12px;
+  content: "\f078";
+  font-size: 1rem;
 }
 .ntg-side-nav .collapse:not(.show) {
   display: none;
