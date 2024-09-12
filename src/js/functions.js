@@ -647,6 +647,18 @@ function initInPageNav() {
                 .toLowerCase()
         );
     });
+
+    // applies active class to selected anchor list element
+    inPageNav.querySelector('ul li:first-of-type').classList.add('active');
+    var indicator = inPageNav.querySelector('span');
+    inPageNav.querySelectorAll('ul li').forEach(function (item) {
+        item.addEventListener('click', function () {
+            inPageNav.querySelector('.active').removeAttribute('class');
+            item.classList.add('active');
+            var top = item.offsetTop;
+            indicator.style.top = top + 'px';
+        });
+    });
 }
 
 // adds accordion functionality to nested items in the side navigation
