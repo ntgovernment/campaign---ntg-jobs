@@ -164,7 +164,32 @@
         }
     }
 
+    .search_container-top {
+        flex-flow: column-reverse;
+        padding: 1rem 0;
+        gap: 0.5rem;
+
+        @include media-breakpoint-up(sm) {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .searchResults__total-results {
+            font-weight: 700;
+        }
+
+        .searchResults__sort {
+            max-width: 250px;
+            background-color: var(--menu-background-color);
+            color: var(--menu-text-color);
+            border: 0;
+        }
+
+    }
+
     #searchResults {
+
         .accordion {
             &-header {
                 @extend .small;

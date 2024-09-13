@@ -27497,6 +27497,37 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-jobs-subsite__menu .nav-cell a:focus {
   outline-offset: -3px;
 }
+.ntg-jobs-subsite .search_container-top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+@media (min-width: 576px) {
+  .ntg-jobs-subsite .search_container-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.ntg-jobs-subsite .search_container-top .searchResults__total-results {
+  font-weight: 700;
+}
+.ntg-jobs-subsite .search_container-top .searchResults__sort {
+  max-width: 250px;
+  background-color: var(--menu-background-color);
+  color: var(--menu-text-color);
+  border: 0;
+}
 .ntg-jobs-subsite #searchResults .accordion-item {
   border: var(--jobs-subsite-accordion-border-width, 1px) solid var(--menu-background-color);
   overflow: hidden;

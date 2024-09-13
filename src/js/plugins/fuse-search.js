@@ -8,6 +8,10 @@ class NTGJobSearch {
         //Setup vacancy search form
         const vacancySearchForm = document.getElementById("vacancySearchForm");
         this.searchResultsWrapper = document.getElementById("searchResults");
+        this.searchContainer = ".search_container";
+        this.searchSort = ".searchResults__sort";
+        this.searchResultsNumber = ".searchResults__total-results";
+        this.currentSearchResults;
 
         if(!this.searchResultsWrapper) {
             return false;
@@ -38,9 +42,11 @@ class NTGJobSearch {
             const searchResults = this._search(this._buildSearchQuery(searchFormData));
 
             const filteredResults = this._filterSearchResults(searchResults, searchFormData);
-            
+
+            this.currentSearchResults = Array.from(filteredResults);
             this._showResults(filteredResults);
 
+            document.querySelector(this.searchSort).addEventListener("change", this._onSortSelectChangeCb.bind(this));
         })
     }
 
@@ -71,7 +77,6 @@ class NTGJobSearch {
         salaryFrom = formData.get("salaryFrom"),
         salaryTo = formData.get("salaryTo"),
         listedTime = formData.get("listedTime");
-
 
         if(!this._isEmptyOrNull(searchTerm)) {
             document.getElementById("keyword").value = searchTerm
@@ -122,6 +127,10 @@ class NTGJobSearch {
         }
     }
 
+    _onSortSelectChangeCb(e) {
+        this._showResults(Array.from(this.currentSearchResults));
+    }
+
     _onFormSubmitCb(e) {
         if(this.searchResultsWrapper) {
             e && e.preventDefault();
@@ -145,19 +154,114 @@ class NTGJobSearch {
         const searchResults = this._search(this._buildSearchQuery(formData));
 
         const filteredResults = this._filterSearchResults(searchResults, formData);
-
-        $("#searchSpinner").removeClass("d-none");
+        this.currentSearchResults = Array.from(filteredResults);
         this._showResults(filteredResults);
-        $("#searchSpinner").addClass("d-none");
+    }
+    
+    /**
+     * 
+     * @param {Array} results | Array of Jobs results
+     * @returns {Array} | Array of sorted job results based on the value of the sort select
+     */
+    _sortResults(results) {
+        const sortSelectValue = $(this.searchSort)[0].value;
+
+        switch(sortSelectValue) {
+            case "closing_soon":
+                //Helper function to split date
+                /**
+                 * 
+                 * @param {String} dateString | Date in DD/MM/YYYY format
+                 * @returns {String} | Date in YYYY-MM-DD Format
+                 */
+                function checkAndConvertDateFormat(dateString) {
+                    const futureDate = "3070-01-01";
+
+                    if(dateString) {
+                        let dateParts = dateString.split('/');
+
+                        if(dateParts.length == 3) {
+                            let day = dateParts[0];
+                            let month = dateParts[1];
+                            let year = dateParts[2]; 
+        
+                            return `${year}-${month}-${day}`;
+                        } else {
+                            return futureDate;
+                        }
+                    } else {
+                        return futureDate;
+                    }
+                }
+
+                results.sort((a,b) => {
+                    const aClosingDate = new Date(checkAndConvertDateFormat(a.closingDate));
+                    const bClosingDate = new Date(checkAndConvertDateFormat(b.closingDate));
+
+                    return aClosingDate - bClosingDate;
+                });
+                break;
+            case "most_recent":
+                results.sort((a,b) => {
+                    const aAddedDate = new Date(a.dateAdded);
+                    const bAddedDate = new Date(b.dateAdded);
+
+                    return bAddedDate - aAddedDate;
+                });
+                break;
+            case "renumeration_asc": 
+                results.sort((a, b) => {
+                    const aMinRenumeration = this._getSalaryDetails(a.vacancyDesignationList).minRenumeration;
+                    const bMinRenumeration = this._getSalaryDetails(b.vacancyDesignationList).minRenumeration;
+
+                    return aMinRenumeration - bMinRenumeration;
+                });
+                break;
+            case "renumeration_dsc":
+                results.sort((a, b) => {
+                    const aMaxRenumeration = this._getSalaryDetails(a.vacancyDesignationList).maxRenumeration;
+                    const bMaxRenumeration = this._getSalaryDetails(b.vacancyDesignationList).maxRenumeration;
+
+                    return bMaxRenumeration - aMaxRenumeration;
+                });
+                break;
+            case "vacation_type":
+                results.sort((a, b) => {
+                    const aVacationType = a.vacancyType;
+                    const bVacationType = b.vacancyType;
+
+                    if(aVacationType < bVacationType) {
+                        return 1;
+                    }
+
+                    if(aVacationType > bVacationType) {
+                        return -1;
+                    }
+
+                    return 0;
+                });
+                break;
+            default:
+        }
+        
+        return results;
     }
 
     _showResults(results) {
+        results = this._sortResults(results);
+
+        //Start the seach spinner and hide the search container until results are loaded
+        $("#searchSpinner").removeClass("d-none");
+        $(this.searchContainer).addClass("d-none");
+
         $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start", behaviour: "smooth"});
 
         if(results.length <= 0) {
             this.searchResultsWrapper.innerHTML = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
             return false;
         }
+
+        $(this.searchResultsNumber).html(`${results.length} results`);
 
         const wrapper = document.createElement("div");
         wrapper.classList.add("search-results-wrapper");
@@ -256,6 +360,9 @@ class NTGJobSearch {
             } 
         }); 
         
+        //Hide the search spinner and show the search container class
+        $(this.searchContainer).removeClass("d-none");
+        $("#searchSpinner").addClass("d-none");
     }
 
     _search(searchQuery) {
@@ -563,9 +670,6 @@ class NTGJobSearch {
     //Helper function to wrap array items into double quotes and join the array with |
     _wrapInQuotesAndJoin(array) {
         const arrayInQuotes = array.map(arrayItem => `"${arrayItem}"`);
-
-        console.log(arrayInQuotes)
-
         return `'` + arrayInQuotes.join("|'");
     }
 
