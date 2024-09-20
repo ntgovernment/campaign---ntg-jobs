@@ -225,7 +225,7 @@ class NTGJobSearch {
                     return bMaxRenumeration - aMaxRenumeration;
                 });
                 break;
-            case "vacation_type":
+            case "vacancy_type":
                 results.sort((a, b) => {
                     const aVacationType = a.vacancyType;
                     const bVacationType = b.vacancyType;
