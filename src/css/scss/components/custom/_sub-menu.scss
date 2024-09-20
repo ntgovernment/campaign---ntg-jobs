@@ -162,6 +162,8 @@
                 > a {
                     background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 5%);
                     text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
                 }
 
                 &.has-children {
@@ -249,6 +251,8 @@
                     > a {
                         background-color: var(--current-theme-color, #{$ntg-territory-stone});
                         text-decoration: underline;
+                        text-underline-offset: 5px;
+                        text-decoration-thickness: 2px;
                     }
                 }
 
