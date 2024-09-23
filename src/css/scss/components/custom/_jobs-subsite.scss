@@ -20,6 +20,11 @@
 
 .ntg-jobs-subsite {
     &__menu {
+        --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
+        --menu-text-color: var(--current-theme-secondary-text, #2E3849);
+        --menu-special-color: var(--current-theme-secondary-text, #{$ntg-olive-green});
+        --menu-special-color-text: var(--current-theme-secondary, #{$white});
+        --jobs-subsite-border-color: var(--current-theme-text-color, #{$ntg-territory-stone});
         background-color: var(--menu-background-color);
         color: var(--menu-text-color);
         padding-top: 1rem;
@@ -60,8 +65,8 @@
             height: 45%;
             left: 28%;
             top: 27%;
+            transition: 0.2s fill ease-in-out;
 
-            
             @media (max-width: 615px) { 
                 fill: $white;
             }
@@ -132,7 +137,7 @@
                 display: inline-block;
                 text-decoration: none;
                 font-weight: normal;
-                transition: 0.2s background-color ease-in-out;
+                transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out, 0.2s border-color ease-in-out;
     
                 &::before {
                     content: attr(data-text);
@@ -153,8 +158,11 @@
                 &:hover {
                     background-color:var(--current-theme-color, #{$white});
                     color: var(--current-theme-text-color, #2E3849);
-                    font-weight: bold;
                     border-top-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+                }
+
+                &.active {
+                    font-weight: bold;
                 }
 
                 &:focus {
