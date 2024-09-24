@@ -15907,7 +15907,7 @@ class NTGJobSearch {
                     return bMaxRenumeration - aMaxRenumeration;
                 });
                 break;
-            case "vacation_type":
+            case "vacancy_type":
                 results.sort((a, b) => {
                     const aVacationType = a.vacancyType;
                     const bVacationType = b.vacancyType;
@@ -15940,6 +15940,13 @@ class NTGJobSearch {
 
         if(results.length <= 0) {
             this.searchResultsWrapper.innerHTML = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
+            
+            $(this.searchResultsNumber).html(`${results.length} results`);
+
+            //Hide the search spinner and show the search container class
+            $(this.searchContainer).removeClass("d-none");
+            $("#searchSpinner").addClass("d-none");
+
             return false;
         }
 
