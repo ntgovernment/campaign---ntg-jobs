@@ -27328,7 +27328,8 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 #fileResult .table-responsive::-webkit-scrollbar-thumb {
   background-color: var(--current-theme-tertiary-text);
 }
-#fileResult .table-responsive, #fileResult table {
+#fileResult:has(.table-responsive) .table-responsive,
+#fileResult:has(.table-responsive) table {
   transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   /* IE 9 */
