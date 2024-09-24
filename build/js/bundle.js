@@ -666,7 +666,11 @@ function initInPageNav() {
     }
 
     var list = inPageNav.querySelector('ul');
-    document.querySelectorAll('#content h2:not(.excludeAnchorList h2)').forEach(function (element, index) {
+    var headings = document.querySelectorAll('#content h2:not(.excludeAnchorList h2)');
+    if (!headings) {
+        return false;
+    }
+    headings.forEach(function (element, index) {
         var heading = element;
         if (element.querySelector('a')) {
             element = element.querySelector('a');
@@ -696,9 +700,17 @@ function initInPageNav() {
     });
 
     // applies active class to selected anchor list element
-    inPageNav.querySelector('ul li:first-of-type').classList.add('active');
+    var firstListItem = inPageNav.querySelector('ul li:first-of-type');
+    if (!firstListItem) {
+        return false;
+    }
+    firstListItem.classList.add('active');
     var indicator = inPageNav.querySelector('span');
-    inPageNav.querySelectorAll('ul li').forEach(function (item) {
+    var listItems = inPageNav.querySelectorAll('ul li');
+    if (!listItems) {
+        return false;
+    }
+    listItems.forEach(function (item) {
         item.addEventListener('click', function () {
             inPageNav.querySelector('.active').removeAttribute('class');
             item.classList.add('active');
