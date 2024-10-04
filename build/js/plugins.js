@@ -16004,7 +16004,7 @@ class NTGJobSearch {
             const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978`;
 
             const lastAccordionRow = `<div class="d-flex align-items-center">
-                    <a href="${url}" class="me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
+                    <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
                     <button class="btn btn-outline-olive-green py-1 me-2" data-url="${jobUrl}">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>
                     <div class="social-share">
                         <a class="social-share__link facebook" href="https://www.facebook.com/sharer.php?u=${jobUrl}" target="_blank" title="Share on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
