@@ -15684,7 +15684,14 @@ return Flickity;
 
 class NTGJobSearch {
     constructor() {
-        const api = ""
+        const api = "";
+        this.synonyms = {
+            "happy": ["content", "joyful", "pleased"],
+            "sad": ["unhappy", "sorrowful", "downcast"],
+            "hr": ["human resources"],
+            "senior": ["manager"],
+            "asdsfsdfsdfsdf": ["teacher"]
+        };
         this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
@@ -16001,7 +16008,7 @@ class NTGJobSearch {
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
             attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments"));
 
-            const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978`;
+            const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id%3D${positionNumber}&banner=1322978`;
 
             const lastAccordionRow = `<div class="d-flex align-items-center">
                     <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
@@ -16135,9 +16142,20 @@ class NTGJobSearch {
 
         return filteredResults;
     }
+
+    _expandQuery(query) {
+        const words = query.split(" ");
+        const expandedWords = words.flatMap(word => {
+          if (this.synonyms[word]) {
+            return [word, ...this.synonyms[word]];
+          }
+          return [word];
+        });
+        return expandedWords.join("|");
+    }
     
     _buildSearchQuery(formData) {
-        const searchTerm = formData.get("keyword"),
+        let searchTerm = formData.get("keyword"),
         agency = formData.getAll("agency[]"),
         location = formData.getAll("location[]"),
         vacancyType = formData.getAll("vacancy[]"),
@@ -16152,11 +16170,14 @@ class NTGJobSearch {
         };
 
         if(!this._isEmptyOrNull(searchTerm)) {
+            searchTerm = this._expandQuery(searchTerm);
+            console.log(searchTerm);
+
             searchQuery["$and"].push({
                 $or: [
-                    { "primaryObjective": formData.get("keyword") },
-                    { "positionNumber": formData.get("keyword") },
-                    { "jobTitle": formData.get("keyword") }
+                    { "primaryObjective": searchTerm },
+                    { "positionNumber": searchTerm },
+                    { "jobTitle": searchTerm }
                 ]
             });
         }
