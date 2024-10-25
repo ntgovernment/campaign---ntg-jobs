@@ -567,7 +567,7 @@ class NTGJobSearch {
                     template = `<tr>
                         <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
                         <td>HTML</td>
-                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?id=${attachmentId}" class="d-block text-nowrap" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-arrow-to-bottom ms-1"></i></a></td>` : "</td>"}
+                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?id=${attachmentId}" class="d-block text-nowrap view-online" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-eye ms-1"></i></a></td>` : "</td>"}
                     </tr>` + template;
                 }
 
