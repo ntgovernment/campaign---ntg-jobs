@@ -28888,6 +28888,7 @@ body.search-panel--is-hidden .search-global {
           transform: rotate(180deg);
 }
 .ntg-sub-menu .toggle + ul > li.active > a {
+  background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 5%);
   font-weight: 700 !important;
 }
 .ntg-sub-menu .toggle + ul > li.has-children > a:after {
@@ -28904,12 +28905,12 @@ body.search-panel--is-hidden .search-global {
     background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 10%);
   }
   .ntg-sub-menu .toggle + ul ul > li.rm-focused > a, .ntg-sub-menu .toggle + ul ul > li:hover > a {
-    background-color: transparent;
+    background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 15%);
     font-weight: 700 !important;
     text-decoration: none;
   }
   .ntg-sub-menu .toggle + ul ul > li.active > a {
-    background-color: transparent;
+    background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 15%);
     font-weight: 700 !important;
   }
 }
@@ -28945,6 +28946,7 @@ body.search-panel--is-hidden .search-global {
           transform: rotate(180deg);
 }
 .ntg-sub-menu ul .flickity-slider > li.active > a {
+  background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 5%);
   font-weight: bold !important;
 }
 .ntg-sub-menu ul .flickity-slider > li.has-children > a:after {
@@ -29003,7 +29005,7 @@ body.search-panel--is-hidden .search-global {
 }
 .ntg-sub-menu ul ul > li.active > a {
   background-color: var(--current-theme-color, #D7D2CB);
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .ntg-sub-menu .flickity-viewport {
   overflow: visible;

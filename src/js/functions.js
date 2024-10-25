@@ -80,7 +80,6 @@ function initJobsSlidingMenu() {
                 const carousel = document.getElementById('jobCarouselMenu');
                 const cells = carousel.querySelectorAll('.nav-cell');
                 const cellsArr = Array.from(cells);
-                console.log(cellsArr);
                 
                 for (let i = 0; i < cellsArr.length; i++) {
                     var cell = cellsArr[i];
@@ -1084,6 +1083,18 @@ function initSubMenu() {
                         flkty.select(i);
                     })
                 });
+            }
+        }
+
+        // set active link as selected cell
+        const carousel = document.getElementById('submenu');
+        const cells = carousel.querySelectorAll('.nav-cell');
+        const cellsArr = Array.from(cells);
+        
+        for (let i = 0; i < cellsArr.length; i++) {
+            var cell = cellsArr[i];
+            if (cell.classList.contains('active')) {
+                flkty.select(i, false, true);
             }
         }
     }

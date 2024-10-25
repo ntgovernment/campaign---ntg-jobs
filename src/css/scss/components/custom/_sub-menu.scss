@@ -86,6 +86,7 @@
 
                 &.active {
                     > a {
+                        background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 5%);
                         font-weight: 700 !important;
                     }
                 }
@@ -114,7 +115,7 @@
                         &.rm-focused,
                         &:hover {
                             > a {
-                                background-color: transparent;
+                                background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 15%);
                                 font-weight: 700 !important;
                                 text-decoration: none;
                             }
@@ -122,7 +123,7 @@
                 
                         &.active {
                             > a {
-                                background-color: transparent;
+                                background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 15%);
                                 font-weight: 700 !important;
                             }
                         }
@@ -177,6 +178,7 @@
 
             &.active {
                 > a {
+                    background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 5%);
                     font-weight: bold !important;
                 }
             }
@@ -259,7 +261,7 @@
                 &.active {
                     > a {
                         background-color: var(--current-theme-color, #{$ntg-territory-stone});
-                        font-weight: bold;
+                        font-weight: bold !important;
                     }
                 }
             }
