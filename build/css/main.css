@@ -57,7 +57,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #D7D2CB;
-  --bs-secondary: #104735;
+  --bs-secondary: #566b2e;
   --bs-tertiary: #919191;
   --bs-success: #107810;
   --bs-info: #107CC0;
@@ -70,7 +70,7 @@
   --bs-central-australia: #E5004D;
   --bs-dark-blue: #0E2C4D;
   --bs-barkly: #FB471F;
-  --bs-olive-green: #104735;
+  --bs-olive-green: #566b2e;
   --bs-dark-green: #1A322F;
   --bs-baby-blue: #B1E2F9;
   --bs-big-rivers: #F2A900;
@@ -86,7 +86,7 @@
   --bs-desert-yam: #C33726;
   --bs-lime-green: #C5D800;
   --bs-primary-rgb: 215, 210, 203;
-  --bs-secondary-rgb: 16, 71, 53;
+  --bs-secondary-rgb: 86, 107, 46;
   --bs-tertiary-rgb: 145, 145, 145;
   --bs-success-rgb: 16, 120, 16;
   --bs-info-rgb: 16, 124, 192;
@@ -99,7 +99,7 @@
   --bs-central-australia-rgb: 229, 0, 77;
   --bs-dark-blue-rgb: 14, 44, 77;
   --bs-barkly-rgb: 251, 71, 31;
-  --bs-olive-green-rgb: 16, 71, 53;
+  --bs-olive-green-rgb: 86, 107, 46;
   --bs-dark-green-rgb: 26, 50, 47;
   --bs-baby-blue-rgb: 177, 226, 249;
   --bs-big-rivers-rgb: 242, 169, 0;
@@ -144,7 +144,7 @@
   --bs-desert-yam-text-emphasis: #fff;
   --bs-lime-green-text-emphasis: #2B292D;
   --bs-primary-bg-subtle: #f7f6f5;
-  --bs-secondary-bg-subtle: #cfdad7;
+  --bs-secondary-bg-subtle: #dde1d5;
   --bs-success-bg-subtle: #cfe4cf;
   --bs-info-bg-subtle: #cfe5f2;
   --bs-warning-bg-subtle: #fce0d2;
@@ -156,7 +156,7 @@
   --bs-central-australia-bg-subtle: #f599b8;
   --bs-dark-blue-bg-subtle: #9fabb8;
   --bs-barkly-bg-subtle: #fdb5a5;
-  --bs-olive-green-bg-subtle: #9fb5ae;
+  --bs-olive-green-bg-subtle: #bbc4ab;
   --bs-dark-green-bg-subtle: #a3adac;
   --bs-baby-blue-bg-subtle: #e0f3fd;
   --bs-big-rivers-bg-subtle: #fadd99;
@@ -172,7 +172,7 @@
   --bs-desert-yam-bg-subtle: #e7afa8;
   --bs-lime-green-bg-subtle: #e8ef99;
   --bs-primary-border-subtle: #efedea;
-  --bs-secondary-border-subtle: #9fb5ae;
+  --bs-secondary-border-subtle: #bbc4ab;
   --bs-success-border-subtle: #9fc99f;
   --bs-info-border-subtle: #9fcbe6;
   --bs-warning-border-subtle: #f8c1a6;
@@ -184,7 +184,7 @@
   --bs-central-australia-border-subtle: #ed4d82;
   --bs-dark-blue-border-subtle: #566b82;
   --bs-barkly-border-subtle: #fc7e62;
-  --bs-olive-green-border-subtle: #587e72;
+  --bs-olive-green-border-subtle: #89976d;
   --bs-dark-green-border-subtle: #5f706d;
   --bs-baby-blue-border-subtle: #c8ebfb;
   --bs-big-rivers-border-subtle: #f6c34d;
@@ -278,7 +278,7 @@
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #e7e4e0;
-  --bs-secondary-text-emphasis: #709186;
+  --bs-secondary-text-emphasis: #9aa682;
   --bs-success-text-emphasis: #70ae70;
   --bs-info-text-emphasis: #70b0d9;
   --bs-warning-text-emphasis: #f5a179;
@@ -287,7 +287,7 @@
   --bs-dark-text-emphasis: #dee2e6;
   --bs-custom-color-text-emphasis: #e1d2f2;
   --bs-primary-bg-subtle: #2b2a29;
-  --bs-secondary-bg-subtle: #030e0b;
+  --bs-secondary-bg-subtle: #111509;
   --bs-success-bg-subtle: #031803;
   --bs-info-bg-subtle: #031926;
   --bs-warning-bg-subtle: #301406;
@@ -296,7 +296,7 @@
   --bs-dark-bg-subtle: #1a1d20;
   --bs-custom-color-bg-subtle: #8951fa;
   --bs-primary-border-subtle: #817e7a;
-  --bs-secondary-border-subtle: #0a2b20;
+  --bs-secondary-border-subtle: #34401c;
   --bs-success-border-subtle: #0a480a;
   --bs-info-border-subtle: #0a4a73;
   --bs-warning-border-subtle: #8f3b13;
@@ -2868,9 +2868,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(13, 57, 42, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(13, 57, 42, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(13, 57, 42, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(69, 86, 37, var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-tertiary {
@@ -3011,9 +3011,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(var(--bs-olive-green-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-olive-green:hover, .link-olive-green:focus {
-  color: RGBA(13, 57, 42, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(13, 57, 42, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(13, 57, 42, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(69, 86, 37, var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-dark-green {
@@ -3516,13 +3516,13 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
 
 .table-secondary {
   --bs-table-color: #2B292D;
-  --bs-table-bg: #cfdad7;
-  --bs-table-border-color: #aeb7b5;
-  --bs-table-striped-bg: #c7d1cf;
+  --bs-table-bg: #dde1d5;
+  --bs-table-border-color: #b9bcb3;
+  --bs-table-striped-bg: #d4d8cd;
   --bs-table-striped-color: #2B292D;
-  --bs-table-active-bg: #bfc8c6;
+  --bs-table-active-bg: #cbcfc4;
   --bs-table-active-color: #2B292D;
-  --bs-table-hover-bg: #c3cdca;
+  --bs-table-hover-bg: #d0d3c8;
   --bs-table-hover-color: #2B292D;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -5207,19 +5207,19 @@ textarea.form-control-lg {
 
 .btn-secondary, #content input[type=reset], #content input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 
 .btn-tertiary {
@@ -5428,19 +5428,19 @@ textarea.form-control-lg {
 
 .btn-olive-green {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 
 .btn-dark-green {
@@ -5699,19 +5699,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 
@@ -5920,19 +5920,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-olive-green {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 
@@ -17226,12 +17226,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=olive-green] {
-    --current-theme-main: #104735;
-    --current-theme-color: #104735;
-    --current-theme-color-rgb: 16, 71, 53;
-    --current-theme-color-darker: #0a2e22;
+    --current-theme-main: #566b2e;
+    --current-theme-color: #566b2e;
+    --current-theme-color-rgb: 86, 107, 46;
+    --current-theme-color-darker: #455625;
     --current-theme-color-darker-text: #fff;
-    --current-theme-color-lighter: #145841;
+    --current-theme-color-lighter: #617934;
     --current-theme-color-lighter-text: #fff;
     --current-theme-text-color: #fff;
     --current-theme-text-color-rgb: 255, 255, 255;
@@ -17240,8 +17240,8 @@ textarea.form-control-lg {
     --current-theme-link-color-rgb: 255, 255, 255;
     --current-theme-link-hover-color: #fff;
     --current-theme-link-hover-color-rgb: 255, 255, 255;
-    --current-theme-border-subtle: #587e72;
-    --current-theme-bg-subtle: #9fb5ae;
+    --current-theme-border-subtle: #89976d;
+    --current-theme-bg-subtle: #bbc4ab;
   }
 }
 [data-bs-theme=olive-green] .btn-outline-default, [data-bs-theme=olive-green] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] .view-online {
@@ -17261,7 +17261,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 [data-bs-theme=olive-green] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23104735' /%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23566b2e' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
@@ -18176,12 +18176,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=olive-green] {
-    --current-theme-primary: #104735;
-    --current-theme-primary-darker: #0a2e22;
+    --current-theme-primary: #566b2e;
+    --current-theme-primary-darker: #455625;
     --current-theme-primary-darker-text: #fff;
-    --current-theme-primary-lighter: #145841;
+    --current-theme-primary-lighter: #617934;
     --current-theme-primary-lighter-text: #fff;
-    --current-theme-primary-rgb: 16, 71, 53;
+    --current-theme-primary-rgb: 86, 107, 46;
     --current-theme-primary-text: #fff;
     --current-theme-primary-text-rgb: 255, 255, 255;
     --current-theme-primary-text-reverse: #2B292D;
@@ -18194,34 +18194,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=olive-green] .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 [data-bs-theme=olive-green] .btn-outline-primary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 [data-bs-theme=olive-green] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=olive-green] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] [data-bs-theme=primary] .view-online {
@@ -19181,12 +19181,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=territory-stone] {
-    --current-theme-secondary: #104735;
-    --current-theme-secondary-darker: #0a2e22;
+    --current-theme-secondary: #566b2e;
+    --current-theme-secondary-darker: #455625;
     --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #145841;
+    --current-theme-secondary-lighter: #617934;
     --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 16, 71, 53;
+    --current-theme-secondary-rgb: 86, 107, 46;
     --current-theme-secondary-text: #fff;
     --current-theme-secondary-text-rgb: 255, 255, 255;
     --current-theme-secondary-text-reverse: #2B292D;
@@ -19199,34 +19199,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=territory-stone] .btn-secondary, [data-bs-theme=territory-stone] #content input[type=reset], #content [data-bs-theme=territory-stone] input[type=reset], [data-bs-theme=territory-stone] #content input[type=submit], #content [data-bs-theme=territory-stone] input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 [data-bs-theme=territory-stone] .btn-outline-secondary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 [data-bs-theme=territory-stone] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-stone] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-stone] [data-bs-theme=secondary] .view-online {
@@ -20186,12 +20186,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=desert-yam-7] {
-    --current-theme-secondary: #104735;
-    --current-theme-secondary-darker: #0a2e22;
+    --current-theme-secondary: #566b2e;
+    --current-theme-secondary-darker: #455625;
     --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #145841;
+    --current-theme-secondary-lighter: #617934;
     --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 16, 71, 53;
+    --current-theme-secondary-rgb: 86, 107, 46;
     --current-theme-secondary-text: #fff;
     --current-theme-secondary-text-rgb: 255, 255, 255;
     --current-theme-secondary-text-reverse: #2B292D;
@@ -20204,34 +20204,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=desert-yam-7] .btn-secondary, [data-bs-theme=desert-yam-7] #content input[type=reset], #content [data-bs-theme=desert-yam-7] input[type=reset], [data-bs-theme=desert-yam-7] #content input[type=submit], #content [data-bs-theme=desert-yam-7] input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 [data-bs-theme=desert-yam-7] .btn-outline-secondary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .view-online {
@@ -20454,12 +20454,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=lime-green] {
-    --current-theme-secondary: #104735;
-    --current-theme-secondary-darker: #0a2e22;
+    --current-theme-secondary: #566b2e;
+    --current-theme-secondary-darker: #455625;
     --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #145841;
+    --current-theme-secondary-lighter: #617934;
     --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 16, 71, 53;
+    --current-theme-secondary-rgb: 86, 107, 46;
     --current-theme-secondary-text: #fff;
     --current-theme-secondary-text-rgb: 255, 255, 255;
     --current-theme-secondary-text-reverse: #2B292D;
@@ -20472,34 +20472,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=lime-green] .btn-secondary, [data-bs-theme=lime-green] #content input[type=reset], #content [data-bs-theme=lime-green] input[type=reset], [data-bs-theme=lime-green] #content input[type=submit], #content [data-bs-theme=lime-green] input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 [data-bs-theme=lime-green] .btn-outline-secondary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 [data-bs-theme=lime-green] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=lime-green] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=lime-green] [data-bs-theme=secondary] .view-online {
@@ -21660,12 +21660,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=white] {
-    --current-theme-tertiary: #104735;
-    --current-theme-tertiary-darker: #0a2e22;
+    --current-theme-tertiary: #566b2e;
+    --current-theme-tertiary-darker: #455625;
     --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #145841;
+    --current-theme-tertiary-lighter: #617934;
     --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 16, 71, 53;
+    --current-theme-tertiary-rgb: 86, 107, 46;
     --current-theme-tertiary-text: #fff;
     --current-theme-tertiary-text-rgb: 255, 255, 255;
     --current-theme-tertiary-text-reverse: #2B292D;
@@ -21678,34 +21678,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=white] .btn-tertiary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-bg: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e3c2d;
-  --bs-btn-hover-border-color: #0d392a;
-  --bs-btn-focus-shadow-rgb: 52, 99, 83;
+  --bs-btn-hover-bg: #495b27;
+  --bs-btn-hover-border-color: #455625;
+  --bs-btn-focus-shadow-rgb: 111, 129, 77;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d392a;
-  --bs-btn-active-border-color: #0c3528;
+  --bs-btn-active-bg: #455625;
+  --bs-btn-active-border-color: #415023;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #104735;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-bg: #566b2e;
+  --bs-btn-disabled-border-color: #566b2e;
 }
 [data-bs-theme=white] .btn-outline-tertiary {
-  --bs-btn-color: #104735;
-  --bs-btn-border-color: #104735;
+  --bs-btn-color: #566b2e;
+  --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #104735;
-  --bs-btn-hover-border-color: #104735;
-  --bs-btn-focus-shadow-rgb: 16, 71, 53;
+  --bs-btn-hover-bg: #566b2e;
+  --bs-btn-hover-border-color: #566b2e;
+  --bs-btn-focus-shadow-rgb: 86, 107, 46;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #104735;
-  --bs-btn-active-border-color: #104735;
+  --bs-btn-active-bg: #566b2e;
+  --bs-btn-active-border-color: #566b2e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #104735;
+  --bs-btn-disabled-color: #566b2e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #104735;
+  --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
 [data-bs-theme=white] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=white] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=white] [data-bs-theme=tertiary] .view-online {
@@ -23156,9 +23156,9 @@ textarea.form-control-lg {
 }
 
 .bg-secondary {
-  --current-bg-color: #104735;
-  --current-bg-color-darker: #0a2e22;
-  --current-bg-color-lighter: #145841;
+  --current-bg-color: #566b2e;
+  --current-bg-color-darker: #455625;
+  --current-bg-color-lighter: #617934;
 }
 
 .bg-tertiary {
@@ -23234,9 +23234,9 @@ textarea.form-control-lg {
 }
 
 .bg-olive-green {
-  --current-bg-color: #104735;
-  --current-bg-color-darker: #0a2e22;
-  --current-bg-color-lighter: #145841;
+  --current-bg-color: #566b2e;
+  --current-bg-color-darker: #455625;
+  --current-bg-color-lighter: #617934;
 }
 
 .bg-dark-green {
@@ -24151,8 +24151,8 @@ h3:target,
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: var(--current-theme-secondary, #104735);
-  border: 3px solid var(--current-theme-secondary, #104735);
+  background-color: var(--current-theme-secondary, #566b2e);
+  border: 3px solid var(--current-theme-secondary, #566b2e);
   border-radius: 50%;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -24448,7 +24448,7 @@ h3:target,
   color: var(--current-theme-text-color, #1A322F);
 }
 .ntg-cards__content h2, .ntg-cards__content .h2 {
-  color: var(--current-theme-text-color, #104735);
+  color: var(--current-theme-text-color, #566b2e);
 }
 @media (min-width: 768px) {
   .ntg-cards--sticky-content .ntg-cards__content {
@@ -24466,7 +24466,7 @@ h3:target,
   background: var(--current-theme-color, transparent);
 }
 .ntg-cards-carousel h2, .ntg-cards-carousel .h2 {
-  color: var(--current-theme-text-color, #104735);
+  color: var(--current-theme-text-color, #566b2e);
 }
 .ntg-cards-carousel .tag, .ntg-cards-carousel .ntg-map-tabs .tab-pane__sub-title, .ntg-map-tabs .ntg-cards-carousel .tab-pane__sub-title {
   color: var(--current-theme-text-color, #1A322F);
@@ -24514,11 +24514,11 @@ h3:target,
   color: #2B292D;
 }
 .ntg-cards-carousel:not([data-bs-theme=default]):not(.ntg-cards-carousel--testimonial) .card-link::after {
-  color: #104735;
+  color: #566b2e;
 }
 .ntg-cards-carousel .flickity-button {
   background: transparent;
-  border: 2px solid var(--current-theme-text-color, #104735);
+  border: 2px solid var(--current-theme-text-color, #566b2e);
   width: 50px;
   height: 50px;
   -webkit-transition: 0.2s background ease-in-out;
@@ -24531,7 +24531,7 @@ h3:target,
   }
 }
 .ntg-cards-carousel .flickity-button:hover, .ntg-cards-carousel .flickity-button:focus {
-  background: var(--current-theme-text-color, #104735);
+  background: var(--current-theme-text-color, #566b2e);
 }
 .ntg-cards-carousel .flickity-button:hover .flickity-button-icon, .ntg-cards-carousel .flickity-button:focus .flickity-button-icon {
   fill: var(--current-theme-color, #fff);
@@ -24543,7 +24543,7 @@ h3:target,
   outline-offset: 2px;
 }
 .ntg-cards-carousel .flickity-button .flickity-button-icon {
-  fill: var(--current-theme-text-color, #104735);
+  fill: var(--current-theme-text-color, #566b2e);
   width: 35%;
   height: 35%;
   top: 50%;
@@ -26017,7 +26017,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li:before,
 }
 .thank-you-form__icon {
   font-size: 200px;
-  color: #104735;
+  color: #566b2e;
 }
 .thank-you-form__title {
   font-size: 50px;
@@ -26456,7 +26456,7 @@ main {
 .ntg-highlights__highlight {
   position: relative;
   padding-left: 1rem;
-  border-left: 4px solid var(--current-theme-secondary, #104735);
+  border-left: 4px solid var(--current-theme-secondary, #566b2e);
 }
 .ntg-highlights__highlight:focus-within {
   -webkit-box-shadow: none !important;
@@ -26666,7 +26666,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 }
 .ntg-image-carousel .flickity-button {
   background: transparent;
-  border: 2px solid var(--current-theme-text-color, #104735);
+  border: 2px solid var(--current-theme-text-color, #566b2e);
   width: 50px;
   height: 50px;
   -webkit-transition: 0.2s background ease-in-out;
@@ -26679,7 +26679,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   }
 }
 .ntg-image-carousel .flickity-button:hover, .ntg-image-carousel .flickity-button:focus {
-  background: var(--current-theme-text-color, #104735);
+  background: var(--current-theme-text-color, #566b2e);
 }
 .ntg-image-carousel .flickity-button:hover .flickity-button-icon, .ntg-image-carousel .flickity-button:focus .flickity-button-icon {
   fill: var(--current-theme-color, #fff);
@@ -26691,7 +26691,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   outline-offset: 2px;
 }
 .ntg-image-carousel .flickity-button .flickity-button-icon {
-  fill: var(--current-theme-text-color, #104735);
+  fill: var(--current-theme-text-color, #566b2e);
   width: 35%;
   height: 35%;
   top: 50%;
@@ -27343,7 +27343,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-jobs-subsite {
   --menu-background-color: var(--current-theme-secondary, #D7D2CB);
   --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-  --menu-special-color: var(--current-theme-secondary, #104735);
+  --menu-special-color: var(--current-theme-secondary, #566b2e);
   --menu-special-color-text: var(--current-theme-secondary-text, #fff);
   --jobs-subsite-border-color: var(--current-theme-text-color, #D7D2CB);
 }
@@ -27373,7 +27373,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-jobs-subsite__menu {
   --menu-background-color: var(--current-theme-secondary, #D7D2CB);
   --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-  --menu-special-color: var(--current-theme-secondary-text, #104735);
+  --menu-special-color: var(--current-theme-secondary-text, #566b2e);
   --menu-special-color-text: var(--current-theme-secondary, #fff);
   --jobs-subsite-border-color: var(--current-theme-text-color, #D7D2CB);
   background-color: var(--menu-background-color);
@@ -27514,7 +27514,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-jobs-subsite__menu .nav-cell a.active, .ntg-jobs-subsite__menu .nav-cell a:hover {
   background-color: var(--current-theme-color, #fff);
   color: var(--current-theme-text-color, #2E3849);
-  border-top-color: var(--current-theme-tertiary, #104735);
+  border-top-color: var(--current-theme-tertiary, #566b2e);
 }
 .ntg-jobs-subsite__menu .nav-cell a.active {
   font-weight: bold;
@@ -28602,7 +28602,7 @@ body.search-panel--is-hidden .search-global {
 }
 
 .ntg-side-nav {
-  border-top: 4px solid var(--current-theme-secondary, #104735);
+  border-top: 4px solid var(--current-theme-secondary, #566b2e);
 }
 @media (max-width: 991.98px) {
   .ntg-side-nav #nav-default {
@@ -28723,7 +28723,7 @@ body.search-panel--is-hidden .search-global {
   width: auto;
   height: auto;
   color: #fff;
-  background-color: #104735;
+  background-color: #566b2e;
   text-decoration: underline;
   z-index: 600;
 }
@@ -28780,7 +28780,7 @@ body.search-panel--is-hidden .search-global {
   }
 }
 .ntg-sticky-anchor__toggle button {
-  background-color: rgba(var(--current-theme-secondary, #104735), 0.5);
+  background-color: rgba(var(--current-theme-secondary, #566b2e), 0.5);
   color: inherit;
   border: none;
   font-size: 1rem;
@@ -29053,8 +29053,8 @@ body.search-panel--is-hidden .search-global {
   transition: 0.15s fill ease-in-out;
 }
 .ntg-sub-menu .flickity-button:hover, .ntg-sub-menu .flickity-button:focus {
-  background-color: var(--current-theme-secondary, #104735);
-  border: 2px solid var(--current-theme-secondary, #104735);
+  background-color: var(--current-theme-secondary, #566b2e);
+  border: 2px solid var(--current-theme-secondary, #566b2e);
 }
 .ntg-sub-menu .flickity-button:hover .flickity-button-icon, .ntg-sub-menu .flickity-button:focus .flickity-button-icon {
   fill: var(--current-theme-secondary-text, #fff);
