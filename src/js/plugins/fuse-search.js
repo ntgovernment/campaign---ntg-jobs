@@ -465,22 +465,22 @@ class NTGJobSearch {
 
     _expandQuery(query) {
         const words = query.split(" ");
-        const expandedWords = words.flatMap(word => {
-            const expWords = [word];
 
-            this.synonyms.forEach(synonym => {
+        let expandedWords = words.flatMap(word => {
+            let expWords = [word];
+
+            this.synonyms.forEach((synonym) => {
                 if(synonym.includes(word)) {
                     expWords.push(...synonym);
-
-                    // return [...synonym]
-                }
-                
-                // return [word];
+                }                
             })
 
             return expWords;
         });
-        console.log(expandedWords)
+
+        //Keep only unique values
+        expandedWords = [...new Set(expandedWords)];
+
         return expandedWords.join("|");
     }
     
@@ -501,8 +501,7 @@ class NTGJobSearch {
 
         if(!this._isEmptyOrNull(searchTerm)) {
             searchTerm = this._expandQuery(searchTerm);
-            console.log(searchTerm);
-
+            
             searchQuery["$and"].push({
                 $or: [
                     { "primaryObjective": searchTerm },
