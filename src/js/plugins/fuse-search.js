@@ -1,15 +1,10 @@
 "use strict";
 
 class NTGJobSearch {
-    constructor() {
+    constructor(synonymDict) {
         const api = "";
-        this.synonyms = {
-            "happy": ["content", "joyful", "pleased"],
-            "sad": ["unhappy", "sorrowful", "downcast"],
-            "hr": ["human resources"],
-            "senior": ["manager"],
-            "asdsfsdfsdfsdf": ["teacher"]
-        };
+        this.synonyms = synonymDict;
+        
         this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
@@ -464,12 +459,22 @@ class NTGJobSearch {
 
     _expandQuery(query) {
         const words = query.split(" ");
-        const expandedWords = words.flatMap(word => {
-          if (this.synonyms[word]) {
-            return [word, ...this.synonyms[word]];
-          }
-          return [word];
+
+        let expandedWords = words.flatMap(word => {
+            let expWords = [word];
+
+            this.synonyms.forEach((synonym) => {
+                if(synonym.includes(word)) {
+                    expWords.push(...synonym);
+                }                
+            })
+
+            return expWords;
         });
+
+        //Keep only unique values
+        expandedWords = [...new Set(expandedWords)];
+
         return expandedWords.join("|");
     }
     
@@ -490,7 +495,6 @@ class NTGJobSearch {
 
         if(!this._isEmptyOrNull(searchTerm)) {
             searchTerm = this._expandQuery(searchTerm);
-            console.log(searchTerm);
 
             searchQuery["$and"].push({
                 $or: [
@@ -721,4 +725,4 @@ class NTGJobSearch {
     }
 }
 
-const search = (typeof Fuse != "undefined") && new NTGJobSearch();
+const search = (typeof Fuse != "undefined") && new NTGJobSearch(synonymDict);
