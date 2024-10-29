@@ -99,6 +99,11 @@
             display: flex;
         }
 
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
         a {
             color: $white;
             text-decoration: none;
@@ -132,11 +137,22 @@
         }
     }
 
+    &--1x1 {
+        #{$this}__item {
+            img,
+            video,
+            iframe {
+                aspect-ratio: 4 / 3;
+            }
+        }
+    }
+
     &--2x2,
     &--2x3 {
         #{$this}__item {
             img,
-            video {
+            video,
+            iframe {
                 aspect-ratio: 4 / 3;
         
             }
@@ -146,7 +162,8 @@
     &--2x4 {
         #{$this}__item {
             img,
-            video {
+            video,
+            iframe {
                 aspect-ratio: 1 / 1;
         
                 @include media-breakpoint-down(lg) {
