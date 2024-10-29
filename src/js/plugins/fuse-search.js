@@ -1,15 +1,9 @@
 "use strict";
 
 class NTGJobSearch {
-    constructor() {
+    constructor(synonymDict) {
         const api = "";
-        this.synonyms = [
-            ["happy", "content", "joyful", "pleased"],
-            ["sad","unhappy", "sorrowful", "downcast"],
-            ["human resources","hr"],
-            ["senior", "manager"],
-            ["asdsfsdfsdfsdf", "teacher"]
-        ];
+        this.synonyms = synonymDict;
         
         this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
@@ -501,7 +495,7 @@ class NTGJobSearch {
 
         if(!this._isEmptyOrNull(searchTerm)) {
             searchTerm = this._expandQuery(searchTerm);
-            
+
             searchQuery["$and"].push({
                 $or: [
                     { "primaryObjective": searchTerm },
@@ -731,4 +725,4 @@ class NTGJobSearch {
     }
 }
 
-const search = (typeof Fuse != "undefined") && new NTGJobSearch();
+const search = (typeof Fuse != "undefined") && new NTGJobSearch(synonymDict);
