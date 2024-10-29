@@ -3,13 +3,14 @@
 class NTGJobSearch {
     constructor() {
         const api = "";
-        this.synonyms = {
-            "happy": ["content", "joyful", "pleased"],
-            "sad": ["unhappy", "sorrowful", "downcast"],
-            "hr": ["human resources"],
-            "senior": ["manager"],
-            "asdsfsdfsdfsdf": ["teacher"]
-        };
+        this.synonyms = [
+            ["happy", "content", "joyful", "pleased"],
+            ["sad","unhappy", "sorrowful", "downcast"],
+            ["human resources","hr"],
+            ["senior", "manager"],
+            ["asdsfsdfsdfsdf", "teacher"]
+        ];
+        
         this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
@@ -465,11 +466,21 @@ class NTGJobSearch {
     _expandQuery(query) {
         const words = query.split(" ");
         const expandedWords = words.flatMap(word => {
-          if (this.synonyms[word]) {
-            return [word, ...this.synonyms[word]];
-          }
-          return [word];
+            const expWords = [word];
+
+            this.synonyms.forEach(synonym => {
+                if(synonym.includes(word)) {
+                    expWords.push(...synonym);
+
+                    // return [...synonym]
+                }
+                
+                // return [word];
+            })
+
+            return expWords;
         });
+        console.log(expandedWords)
         return expandedWords.join("|");
     }
     

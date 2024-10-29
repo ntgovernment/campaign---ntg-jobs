@@ -15685,13 +15685,14 @@ return Flickity;
 class NTGJobSearch {
     constructor() {
         const api = "";
-        this.synonyms = {
-            "happy": ["content", "joyful", "pleased"],
-            "sad": ["unhappy", "sorrowful", "downcast"],
-            "hr": ["human resources"],
-            "senior": ["manager"],
-            "asdsfsdfsdfsdf": ["teacher"]
-        };
+        this.synonyms = [
+            ["happy", "content", "joyful", "pleased"],
+            ["sad","unhappy", "sorrowful", "downcast"],
+            ["human resources","hr"],
+            ["senior", "manager"],
+            ["asdsfsdfsdfsdf", "teacher"]
+        ];
+        
         this.allLocations = ["Darwin", "Palmerston", "Alice Springs", "Katherine", "Tennant Creek", "Nhulunbuy"];
 
         //Setup vacancy search form
