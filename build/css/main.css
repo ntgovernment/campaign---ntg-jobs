@@ -23923,6 +23923,7 @@ textarea.form-control-lg {
 }
 .card--img {
   height: 464px;
+  overflow: hidden;
 }
 .card--img img,
 .card--img video,
@@ -23936,6 +23937,10 @@ textarea.form-control-lg {
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.card--img iframe {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 .card--img:has(.card-body)::after {
   content: "";
@@ -26778,6 +26783,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 
 .ntg-image-grid__item {
   position: relative;
+  overflow: hidden;
 }
 .ntg-image-grid__item:has(a)::after {
   content: "";
@@ -26820,6 +26826,9 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   width: 100%;
   height: auto;
   aspect-ratio: 4/3;
+  display: block;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 .ntg-image-grid__item a {
   color: #fff;
@@ -26924,6 +26933,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 }
 .ntg-image-layout__item {
   position: relative;
+  overflow: hidden;
 }
 .ntg-image-layout__item:has(a)::after {
   content: "";
@@ -26964,6 +26974,9 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .ntg-image-layout__item iframe {
   width: 100%;
   height: auto;
+  display: block;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 .ntg-image-layout__item a {
   color: #fff;
@@ -27024,6 +27037,10 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   .ntg-image-layout--2x4 .ntg-image-layout__item iframe {
     aspect-ratio: 4/3;
   }
+}
+.ntg-image-layout--2x4 .ntg-image-layout__item iframe {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .interactive-map {
