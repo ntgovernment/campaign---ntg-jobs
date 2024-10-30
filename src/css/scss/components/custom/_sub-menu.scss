@@ -276,7 +276,7 @@
 
         &::after {
             content: '';
-            background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 5%, transparent 95%, var(--current-theme-color, $primary) 100%);
+            background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%, transparent 97.5%, var(--current-theme-color, $primary) 100%);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -291,7 +291,7 @@
         &:has(.flickity-button.previous[disabled]) {
             .flickity-viewport {
                 &::after {
-                    background: linear-gradient(to right, transparent 95%, var(--current-theme-color, $primary) 100%);
+                    background: linear-gradient(to right, transparent 97.5%, var(--current-theme-color, $primary) 100%);
                 }
             }
         }
@@ -299,7 +299,7 @@
         &:has(.flickity-button.next[disabled]) {
             .flickity-viewport {
                 &::after {
-                    background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 5%);
+                    background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%);
                 }
             }
         }

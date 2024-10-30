@@ -29053,8 +29053,8 @@ body.search-panel--is-hidden .search-global {
 }
 .ntg-sub-menu .flickity-viewport::after {
   content: "";
-  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(5%, transparent), color-stop(95%, transparent), to(var(--current-theme-color, #D7D2CB)));
-  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 5%, transparent 95%, var(--current-theme-color, #D7D2CB) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(2.5%, transparent), color-stop(97.5%, transparent), to(var(--current-theme-color, #D7D2CB)));
+  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 2.5%, transparent 97.5%, var(--current-theme-color, #D7D2CB) 100%);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -29065,12 +29065,12 @@ body.search-panel--is-hidden .search-global {
   pointer-events: none;
 }
 .ntg-sub-menu__links:has(.flickity-button.previous[disabled]) .flickity-viewport::after {
-  background: -webkit-gradient(linear, left top, right top, color-stop(95%, transparent), to(var(--current-theme-color, #D7D2CB)));
-  background: linear-gradient(to right, transparent 95%, var(--current-theme-color, #D7D2CB) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(97.5%, transparent), to(var(--current-theme-color, #D7D2CB)));
+  background: linear-gradient(to right, transparent 97.5%, var(--current-theme-color, #D7D2CB) 100%);
 }
 .ntg-sub-menu__links:has(.flickity-button.next[disabled]) .flickity-viewport::after {
-  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(5%, transparent));
-  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 5%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(2.5%, transparent));
+  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 2.5%);
 }
 .ntg-sub-menu .flickity-button {
   background-color: transparent;
