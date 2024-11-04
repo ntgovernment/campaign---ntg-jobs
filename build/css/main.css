@@ -25235,6 +25235,13 @@ body.testimonial .ntg-cards-carousel--testimonial {
   height: auto;
 }
 
+#cc-main {
+  --cc-font-family: $font-family-base;
+  --cc-btn-primary-bg: #566b2e;
+  --cc-btn-primary-border-color: #566b2e;
+  --cc-btn-border-radius: 1000px;
+}
+
 .ntg-featured-testimonial {
   color: #fff;
   position: relative;
@@ -28955,7 +28962,6 @@ body.search-panel--is-hidden .search-global {
 .ntg-sub-menu ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 .ntg-sub-menu ul a {
   display: block;
@@ -28984,8 +28990,19 @@ body.search-panel--is-hidden .search-global {
           transform: rotate(180deg);
 }
 .ntg-sub-menu ul .flickity-slider > li.active > a {
-  background-color: color-mix(in srgb, var(--current-theme-color, #D7D2CB), #000 5%);
+  color: #2B292D;
+  background-color: #fff;
   font-weight: bold !important;
+  position: relative;
+}
+.ntg-sub-menu ul .flickity-slider > li.active > a::before {
+  content: "";
+  background: var(--current-theme-secondary, #566b2e);
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .ntg-sub-menu ul .flickity-slider > li.has-children > a:after {
   content: "\f078";
@@ -29048,29 +29065,10 @@ body.search-panel--is-hidden .search-global {
 .ntg-sub-menu .flickity-viewport {
   overflow: visible;
   overflow-x: clip;
-  width: calc(100% - 88px);
+}
+.ntg-sub-menu__links {
   margin: auto;
-}
-.ntg-sub-menu .flickity-viewport::after {
-  content: "";
-  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(2.5%, transparent), color-stop(97.5%, transparent), to(var(--current-theme-color, #D7D2CB)));
-  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 2.5%, transparent 97.5%, var(--current-theme-color, #D7D2CB) 100%);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-transition: 0.15s background ease-in-out;
-  transition: 0.15s background ease-in-out;
-  pointer-events: none;
-}
-.ntg-sub-menu__links:has(.flickity-button.previous[disabled]) .flickity-viewport::after {
-  background: -webkit-gradient(linear, left top, right top, color-stop(97.5%, transparent), to(var(--current-theme-color, #D7D2CB)));
-  background: linear-gradient(to right, transparent 97.5%, var(--current-theme-color, #D7D2CB) 100%);
-}
-.ntg-sub-menu__links:has(.flickity-button.next[disabled]) .flickity-viewport::after {
-  background: -webkit-gradient(linear, left top, right top, from(var(--current-theme-color, #D7D2CB)), color-stop(2.5%, transparent));
-  background: linear-gradient(to right, var(--current-theme-color, #D7D2CB) 0%, transparent 2.5%);
+  width: calc(100% - 108px);
 }
 .ntg-sub-menu .flickity-button {
   background-color: transparent;
@@ -29107,10 +29105,10 @@ body.search-panel--is-hidden .search-global {
   opacity: 0;
 }
 .ntg-sub-menu .flickity-prev-next-button.previous {
-  left: 0;
+  left: -54px;
 }
 .ntg-sub-menu .flickity-prev-next-button.next {
-  right: 0;
+  right: -54px;
 }
 
 .ntg-sub-nav ul {

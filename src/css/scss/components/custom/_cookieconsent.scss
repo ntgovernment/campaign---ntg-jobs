@@ -1,0 +1,10 @@
+#cc-main {
+    $cc-btn-primary-bg: #{$secondary};
+    $cc-btn-primary-color: #{$secondary-text};
+
+    --cc-font-family: $font-family-base;
+
+    --cc-btn-primary-bg: #{$cc-btn-primary-bg};
+    --cc-btn-primary-border-color: #{$cc-btn-primary-bg};
+    --cc-btn-border-radius: #{$btn-border-radius};
+}

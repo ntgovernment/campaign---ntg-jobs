@@ -136,8 +136,7 @@
     ul {
         list-style-type: none;
         padding: 0;
-        margin: 0;
-
+        
         a {
             display: block;
             font-weight: 400 !important;
@@ -178,8 +177,20 @@
 
             &.active {
                 > a {
-                    background-color: color-mix(in srgb, var(--current-theme-color, $primary), #000 5%);
+                    color: $body-color;
+                    background-color: $white;
                     font-weight: bold !important;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        background: var(--current-theme-secondary, $secondary);
+                        height: 4px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                    }
                 }
             }
             
@@ -271,38 +282,35 @@
     .flickity-viewport {
         overflow: visible;
         overflow-x: clip;
-        width: calc(100% - 88px);
-        margin: auto;
-
-        &::after {
-            content: '';
-            background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%, transparent 97.5%, var(--current-theme-color, $primary) 100%);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            transition: 0.15s background ease-in-out;
-            pointer-events: none;
-        }
     }
 
     &__links {
-        &:has(.flickity-button.previous[disabled]) {
-            .flickity-viewport {
-                &::after {
-                    background: linear-gradient(to right, transparent 97.5%, var(--current-theme-color, $primary) 100%);
-                }
-            }
-        }
+        margin: auto;
+        width: calc(100% - 108px);
 
-        &:has(.flickity-button.next[disabled]) {
-            .flickity-viewport {
-                &::after {
-                    background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%);
-                }
-            }
-        }
+        // &::after {
+        //     content: '';
+        //     background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%, transparent 97.5%, var(--current-theme-color, $primary) 100%);
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     transition: 0.15s background ease-in-out;
+        //     pointer-events: none;
+        // }
+
+        // &:has(.flickity-button.previous[disabled]) {
+        //     &::after {
+        //         background: linear-gradient(to right, transparent 97.5%, var(--current-theme-color, $primary) 100%);
+        //     }
+        // }
+
+        // &:has(.flickity-button.next[disabled]) {
+        //     &::after {
+        //         background: linear-gradient(to right, var(--current-theme-color, $primary) 0%, transparent 2.5%);
+        //     }
+        // }
     }
 
     .flickity-button {
@@ -344,11 +352,11 @@
 
     .flickity-prev-next-button {
         &.previous {
-            left: 0;
+            left: -54px;
         }
 
         &.next {
-            right: 0;
+            right: -54px;
         }
     }
 }

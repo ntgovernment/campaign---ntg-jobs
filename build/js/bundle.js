@@ -463,7 +463,7 @@ function initSubNav() {
     const header = document.querySelector('.page-header-container');
     const links = document.querySelectorAll('.ntg-sub-nav__links > li');
     const scrollSensor = 100;
-
+    
     links.forEach((link) => {
         const config = {
             attributes: true
@@ -472,12 +472,12 @@ function initSubNav() {
             for (const mutation of mutationList) {
                 // listen for changes in the link's attributes
                 if (mutation.type === "attributes") {
-                    var scrollPosition = scrollY;
                     for (i = 0; i < links.length; i++) {
                         if (links[i].classList.contains('sfHover')) {
                             header.classList.add('header-scroll');
                             break;
                         } else {
+                            var scrollPosition = scrollY;
                             if (scrollPosition <= scrollSensor) {
                                 header.classList.remove('header-scroll');
                             }
@@ -489,6 +489,49 @@ function initSubNav() {
         // initialise MutationObserver
         const observer = new MutationObserver(callback);
         observer.observe(link, config);
+    });
+
+    window.addEventListener('scroll', function () {
+        var scrollPosition = scrollY;
+        for (i = 0; i < links.length; i++) {
+            if (scrollPosition <= scrollSensor && links[i].classList.contains('sfHover')) {
+                header.classList.add('header-scroll');
+                break;
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const more = document.querySelector('.ntg-sub-nav__links .more');
+
+        const config = {
+            attributes: true
+        };
+        const callback = (mutationList, observer) => {
+            for (const mutation of mutationList) {
+                // listen for changes in the link's attributes
+                if (mutation.type === "attributes") {
+                    if (more.classList.contains('sfHover')) {
+                        header.classList.add('header-scroll');
+                    } else {
+                        var scrollPosition = scrollY;
+                        if (scrollPosition <= scrollSensor) {
+                            header.classList.remove('header-scroll');
+                        }
+                    }
+                }
+            }
+        }
+        // initialise MutationObserver
+        const observer = new MutationObserver(callback);
+        observer.observe(more, config);
+
+        window.addEventListener('scroll', function () {
+            var scrollPosition = scrollY;
+            if (scrollPosition <= scrollSensor && more.classList.contains('sfHover')) {
+                header.classList.add('header-scroll');
+            }
+        });
     });
 }
 
