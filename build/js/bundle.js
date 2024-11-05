@@ -460,6 +460,11 @@ function initMegaMenu() {
 }
 
 function initSubNav() {
+    const subNav = document.querySelector('.ntg-sub-nav');
+    if (!subNav) {
+        return false;
+    }
+
     const header = document.querySelector('.page-header-container');
     const links = document.querySelectorAll('.ntg-sub-nav__links > li');
     const scrollSensor = 100;

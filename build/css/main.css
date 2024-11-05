@@ -70,21 +70,21 @@
   --bs-central-australia: #E5004D;
   --bs-dark-blue: #0E2C4D;
   --bs-barkly: #FB471F;
-  --bs-olive-green: #566b2e;
+  --bs-territory-forest: #566b2e;
   --bs-dark-green: #1A322F;
-  --bs-baby-blue: #B1E2F9;
+  --bs-territory-sky: #B1E2F9;
   --bs-big-rivers: #F2A900;
   --bs-fairy-wren-7: #F6EFF6;
   --bs-fairy-wren: #7F1F7F;
   --bs-charcoal-grey-20: #DAD9DA;
-  --bs-charcoal-grey: #454347;
+  --bs-territory-charcoal: #454347;
   --bs-top-end: #0093B8;
-  --bs-bush-plum: #4F1F6F;
+  --bs-territory-dusk: #49234a;
   --bs-desert-yam-7: #FBF2EA;
-  --bs-arafura-blue: #1f1f5f;
+  --bs-the-territory: #1f1f5f;
   --bs-white: #fff;
   --bs-desert-yam: #C33726;
-  --bs-lime-green: #C5D800;
+  --bs-east-arnhem: #C5D800;
   --bs-primary-rgb: 215, 210, 203;
   --bs-secondary-rgb: 86, 107, 46;
   --bs-tertiary-rgb: 145, 145, 145;
@@ -99,21 +99,21 @@
   --bs-central-australia-rgb: 229, 0, 77;
   --bs-dark-blue-rgb: 14, 44, 77;
   --bs-barkly-rgb: 251, 71, 31;
-  --bs-olive-green-rgb: 86, 107, 46;
+  --bs-territory-forest-rgb: 86, 107, 46;
   --bs-dark-green-rgb: 26, 50, 47;
-  --bs-baby-blue-rgb: 177, 226, 249;
+  --bs-territory-sky-rgb: 177, 226, 249;
   --bs-big-rivers-rgb: 242, 169, 0;
   --bs-fairy-wren-7-rgb: 246, 239, 246;
   --bs-fairy-wren-rgb: 127, 31, 127;
   --bs-charcoal-grey-20-rgb: 218, 217, 218;
-  --bs-charcoal-grey-rgb: 69, 67, 71;
+  --bs-territory-charcoal-rgb: 69, 67, 71;
   --bs-top-end-rgb: 0, 147, 184;
-  --bs-bush-plum-rgb: 79, 31, 111;
+  --bs-territory-dusk-rgb: 73, 35, 74;
   --bs-desert-yam-7-rgb: 251, 242, 234;
-  --bs-arafura-blue-rgb: 31, 31, 95;
+  --bs-the-territory-rgb: 31, 31, 95;
   --bs-white-rgb: 255, 255, 255;
   --bs-desert-yam-rgb: 195, 55, 38;
-  --bs-lime-green-rgb: 197, 216, 0;
+  --bs-east-arnhem-rgb: 197, 216, 0;
   --bs-primary-text-emphasis: #2B292D;
   --bs-secondary-text-emphasis: #fff;
   --bs-tertiary-text-emphasis: #2B292D;
@@ -128,21 +128,21 @@
   --bs-central-australia-text-emphasis: #fff;
   --bs-dark-blue-text-emphasis: #fff;
   --bs-barkly-text-emphasis: #000;
-  --bs-olive-green-text-emphasis: #fff;
+  --bs-territory-forest-text-emphasis: #fff;
   --bs-dark-green-text-emphasis: #fff;
-  --bs-baby-blue-text-emphasis: #2B292D;
+  --bs-territory-sky-text-emphasis: #2B292D;
   --bs-big-rivers-text-emphasis: #2B292D;
   --bs-fairy-wren-7-text-emphasis: #2B292D;
   --bs-fairy-wren-text-emphasis: #fff;
   --bs-charcoal-grey-20-text-emphasis: #2B292D;
-  --bs-charcoal-grey-text-emphasis: #fff;
+  --bs-territory-charcoal-text-emphasis: #fff;
   --bs-top-end-text-emphasis: #000;
-  --bs-bush-plum-text-emphasis: #fff;
+  --bs-territory-dusk-text-emphasis: #fff;
   --bs-desert-yam-7-text-emphasis: #2B292D;
-  --bs-arafura-blue-text-emphasis: #fff;
+  --bs-the-territory-text-emphasis: #fff;
   --bs-white-text-emphasis: #2B292D;
   --bs-desert-yam-text-emphasis: #fff;
-  --bs-lime-green-text-emphasis: #2B292D;
+  --bs-east-arnhem-text-emphasis: #2B292D;
   --bs-primary-bg-subtle: #f7f6f5;
   --bs-secondary-bg-subtle: #dde1d5;
   --bs-success-bg-subtle: #cfe4cf;
@@ -156,21 +156,21 @@
   --bs-central-australia-bg-subtle: #f599b8;
   --bs-dark-blue-bg-subtle: #9fabb8;
   --bs-barkly-bg-subtle: #fdb5a5;
-  --bs-olive-green-bg-subtle: #bbc4ab;
+  --bs-territory-forest-bg-subtle: #bbc4ab;
   --bs-dark-green-bg-subtle: #a3adac;
-  --bs-baby-blue-bg-subtle: #e0f3fd;
+  --bs-territory-sky-bg-subtle: #e0f3fd;
   --bs-big-rivers-bg-subtle: #fadd99;
   --bs-fairy-wren-7-bg-subtle: #fbf9fb;
   --bs-fairy-wren-bg-subtle: #cca5cc;
   --bs-charcoal-grey-20-bg-subtle: #f0f0f0;
-  --bs-charcoal-grey-bg-subtle: #b5b4b5;
+  --bs-territory-charcoal-bg-subtle: #b5b4b5;
   --bs-top-end-bg-subtle: #99d4e3;
-  --bs-bush-plum-bg-subtle: #b9a5c5;
+  --bs-territory-dusk-bg-subtle: #b6a7b7;
   --bs-desert-yam-7-bg-subtle: #fdfaf7;
-  --bs-arafura-blue-bg-subtle: #a5a5bf;
+  --bs-the-territory-bg-subtle: #a5a5bf;
   --bs-white-bg-subtle: white;
   --bs-desert-yam-bg-subtle: #e7afa8;
-  --bs-lime-green-bg-subtle: #e8ef99;
+  --bs-east-arnhem-bg-subtle: #e8ef99;
   --bs-primary-border-subtle: #efedea;
   --bs-secondary-border-subtle: #bbc4ab;
   --bs-success-border-subtle: #9fc99f;
@@ -184,21 +184,21 @@
   --bs-central-australia-border-subtle: #ed4d82;
   --bs-dark-blue-border-subtle: #566b82;
   --bs-barkly-border-subtle: #fc7e62;
-  --bs-olive-green-border-subtle: #89976d;
+  --bs-territory-forest-border-subtle: #89976d;
   --bs-dark-green-border-subtle: #5f706d;
-  --bs-baby-blue-border-subtle: #c8ebfb;
+  --bs-territory-sky-border-subtle: #c8ebfb;
   --bs-big-rivers-border-subtle: #f6c34d;
   --bs-fairy-wren-7-border-subtle: #f9f4f9;
   --bs-fairy-wren-border-subtle: #a562a5;
   --bs-charcoal-grey-20-border-subtle: #e5e4e5;
-  --bs-charcoal-grey-border-subtle: #7d7b7e;
+  --bs-territory-charcoal-border-subtle: #7d7b7e;
   --bs-top-end-border-subtle: #4db3cd;
-  --bs-bush-plum-border-subtle: #84629a;
+  --bs-territory-dusk-border-subtle: #806580;
   --bs-desert-yam-7-border-subtle: #fcf6f0;
-  --bs-arafura-blue-border-subtle: #62628f;
+  --bs-the-territory-border-subtle: #62628f;
   --bs-white-border-subtle: white;
   --bs-desert-yam-border-subtle: #d57367;
-  --bs-lime-green-border-subtle: #d6e44d;
+  --bs-east-arnhem-border-subtle: #d6e44d;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -746,7 +746,7 @@ a:focus {
 }
 .link-chevron-right::after, .card-link::after {
   content: "\f054";
-  color: var(--current-theme-text-color, #4F1F6F);
+  color: var(--current-theme-text-color, #49234a);
   font-weight: 700 !important;
   padding-left: 0.75rem;
   margin-top: 2px;
@@ -2776,9 +2776,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-barkly-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-olive-green {
+.text-bg-territory-forest {
   color: #fff !important;
-  background-color: RGBA(var(--bs-olive-green-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-territory-forest-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-dark-green {
@@ -2786,9 +2786,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-dark-green-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-baby-blue {
+.text-bg-territory-sky {
   color: #2B292D !important;
-  background-color: RGBA(var(--bs-baby-blue-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-territory-sky-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-big-rivers {
@@ -2811,9 +2811,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-charcoal-grey-20-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-charcoal-grey {
+.text-bg-territory-charcoal {
   color: #fff !important;
-  background-color: RGBA(var(--bs-charcoal-grey-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-territory-charcoal-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-top-end {
@@ -2821,9 +2821,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-top-end-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-bush-plum {
+.text-bg-territory-dusk {
   color: #fff !important;
-  background-color: RGBA(var(--bs-bush-plum-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-territory-dusk-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-desert-yam-7 {
@@ -2831,9 +2831,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-desert-yam-7-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-arafura-blue {
+.text-bg-the-territory {
   color: #fff !important;
-  background-color: RGBA(var(--bs-arafura-blue-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-the-territory-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-white {
@@ -2846,9 +2846,9 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-desert-yam-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-lime-green {
+.text-bg-east-arnhem {
   color: #2B292D !important;
-  background-color: RGBA(var(--bs-lime-green-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-east-arnhem-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -3005,12 +3005,12 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(252, 108, 76, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-olive-green {
-  color: RGBA(var(--bs-olive-green-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-olive-green-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-olive-green-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-territory-forest {
+  color: RGBA(var(--bs-territory-forest-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-territory-forest-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-territory-forest-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-olive-green:hover, .link-olive-green:focus {
+.link-territory-forest:hover, .link-territory-forest:focus {
   color: RGBA(69, 86, 37, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(69, 86, 37, var(--bs-link-underline-opacity, 1)) !important;
@@ -3027,12 +3027,12 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(21, 40, 38, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-baby-blue {
-  color: RGBA(var(--bs-baby-blue-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-baby-blue-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-baby-blue-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-territory-sky {
+  color: RGBA(var(--bs-territory-sky-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-territory-sky-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-territory-sky-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-baby-blue:hover, .link-baby-blue:focus {
+.link-territory-sky:hover, .link-territory-sky:focus {
   color: RGBA(193, 232, 250, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(193, 232, 250, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(193, 232, 250, var(--bs-link-underline-opacity, 1)) !important;
@@ -3082,12 +3082,12 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(225, 225, 225, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-charcoal-grey {
-  color: RGBA(var(--bs-charcoal-grey-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-charcoal-grey-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-charcoal-grey-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-territory-charcoal {
+  color: RGBA(var(--bs-territory-charcoal-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-territory-charcoal-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-territory-charcoal-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-charcoal-grey:hover, .link-charcoal-grey:focus {
+.link-territory-charcoal:hover, .link-territory-charcoal:focus {
   color: RGBA(55, 54, 57, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(55, 54, 57, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(55, 54, 57, var(--bs-link-underline-opacity, 1)) !important;
@@ -3104,15 +3104,15 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(51, 169, 198, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-bush-plum {
-  color: RGBA(var(--bs-bush-plum-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-bush-plum-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-bush-plum-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-territory-dusk {
+  color: RGBA(var(--bs-territory-dusk-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-territory-dusk-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-territory-dusk-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-bush-plum:hover, .link-bush-plum:focus {
-  color: RGBA(63, 25, 89, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(63, 25, 89, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(63, 25, 89, var(--bs-link-underline-opacity, 1)) !important;
+.link-territory-dusk:hover, .link-territory-dusk:focus {
+  color: RGBA(58, 28, 59, var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(58, 28, 59, var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(58, 28, 59, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-desert-yam-7 {
@@ -3126,12 +3126,12 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(252, 245, 238, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-arafura-blue {
-  color: RGBA(var(--bs-arafura-blue-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-arafura-blue-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-arafura-blue-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-the-territory {
+  color: RGBA(var(--bs-the-territory-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-arafura-blue:hover, .link-arafura-blue:focus {
+.link-the-territory:hover, .link-the-territory:focus {
   color: RGBA(25, 25, 76, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(25, 25, 76, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(25, 25, 76, var(--bs-link-underline-opacity, 1)) !important;
@@ -3159,12 +3159,12 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(156, 44, 30, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-lime-green {
-  color: RGBA(var(--bs-lime-green-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-lime-green-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-lime-green-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-east-arnhem {
+  color: RGBA(var(--bs-east-arnhem-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-east-arnhem-rgb), var(--bs-link-underline-opacity, 1)) !important;
+          text-decoration-color: RGBA(var(--bs-east-arnhem-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-lime-green:hover, .link-lime-green:focus {
+.link-east-arnhem:hover, .link-east-arnhem:focus {
   color: RGBA(209, 224, 51, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(209, 224, 51, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(209, 224, 51, var(--bs-link-underline-opacity, 1)) !important;
@@ -5426,7 +5426,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #FB471F;
 }
 
-.btn-olive-green {
+.btn-territory-forest {
   --bs-btn-color: #fff;
   --bs-btn-bg: #566b2e;
   --bs-btn-border-color: #566b2e;
@@ -5460,7 +5460,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1A322F;
 }
 
-.btn-baby-blue {
+.btn-territory-sky {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #B1E2F9;
   --bs-btn-border-color: #B1E2F9;
@@ -5545,7 +5545,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #DAD9DA;
 }
 
-.btn-charcoal-grey {
+.btn-territory-charcoal {
   --bs-btn-color: #fff;
   --bs-btn-bg: #454347;
   --bs-btn-border-color: #454347;
@@ -5579,21 +5579,21 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0093B8;
 }
 
-.btn-bush-plum {
+.btn-territory-dusk {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-bg: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #200c2c;
-  --bs-btn-hover-border-color: #200c2c;
-  --bs-btn-focus-shadow-rgb: 105, 65, 133;
+  --bs-btn-hover-bg: #1d0e1e;
+  --bs-btn-hover-border-color: #1d0e1e;
+  --bs-btn-focus-shadow-rgb: 100, 68, 101;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3f1959;
-  --bs-btn-active-border-color: #3b1753;
+  --bs-btn-active-bg: #3a1c3b;
+  --bs-btn-active-border-color: #371a38;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4F1F6F;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-bg: #49234a;
+  --bs-btn-disabled-border-color: #49234a;
 }
 
 .btn-desert-yam-7 {
@@ -5613,7 +5613,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #FBF2EA;
 }
 
-.btn-arafura-blue {
+.btn-the-territory {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
@@ -5664,7 +5664,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #C33726;
 }
 
-.btn-lime-green {
+.btn-east-arnhem {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #C5D800;
   --bs-btn-border-color: #C5D800;
@@ -5919,7 +5919,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-olive-green {
+.btn-outline-territory-forest {
   --bs-btn-color: #566b2e;
   --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
@@ -5953,7 +5953,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-baby-blue {
+.btn-outline-territory-sky {
   --bs-btn-color: #B1E2F9;
   --bs-btn-border-color: #B1E2F9;
   --bs-btn-hover-color: #2B292D;
@@ -6038,7 +6038,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-charcoal-grey {
+.btn-outline-territory-charcoal {
   --bs-btn-color: #454347;
   --bs-btn-border-color: #454347;
   --bs-btn-hover-color: #fff;
@@ -6072,20 +6072,20 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-bush-plum {
-  --bs-btn-color: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+.btn-outline-territory-dusk {
+  --bs-btn-color: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4F1F6F;
-  --bs-btn-hover-border-color: #4F1F6F;
-  --bs-btn-focus-shadow-rgb: 79, 31, 111;
+  --bs-btn-hover-bg: #49234a;
+  --bs-btn-hover-border-color: #49234a;
+  --bs-btn-focus-shadow-rgb: 73, 35, 74;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4F1F6F;
-  --bs-btn-active-border-color: #4F1F6F;
+  --bs-btn-active-bg: #49234a;
+  --bs-btn-active-border-color: #49234a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #4F1F6F;
+  --bs-btn-disabled-color: #49234a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-border-color: #49234a;
   --bs-gradient: none;
 }
 
@@ -6106,7 +6106,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-arafura-blue {
+.btn-outline-the-territory {
   --bs-btn-color: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
   --bs-btn-hover-color: #fff;
@@ -6157,7 +6157,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-lime-green {
+.btn-outline-east-arnhem {
   --bs-btn-color: #C5D800;
   --bs-btn-border-color: #C5D800;
   --bs-btn-hover-color: #2B292D;
@@ -7045,11 +7045,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-barkly-text-emphasis);
 }
 
-.alert-olive-green {
-  --bs-alert-color: var(--bs-olive-green-text-emphasis);
-  --bs-alert-bg: var(--bs-olive-green-bg-subtle);
-  --bs-alert-border-color: var(--bs-olive-green-border-subtle);
-  --bs-alert-link-color: var(--bs-olive-green-text-emphasis);
+.alert-territory-forest {
+  --bs-alert-color: var(--bs-territory-forest-text-emphasis);
+  --bs-alert-bg: var(--bs-territory-forest-bg-subtle);
+  --bs-alert-border-color: var(--bs-territory-forest-border-subtle);
+  --bs-alert-link-color: var(--bs-territory-forest-text-emphasis);
 }
 
 .alert-dark-green {
@@ -7059,11 +7059,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-dark-green-text-emphasis);
 }
 
-.alert-baby-blue {
-  --bs-alert-color: var(--bs-baby-blue-text-emphasis);
-  --bs-alert-bg: var(--bs-baby-blue-bg-subtle);
-  --bs-alert-border-color: var(--bs-baby-blue-border-subtle);
-  --bs-alert-link-color: var(--bs-baby-blue-text-emphasis);
+.alert-territory-sky {
+  --bs-alert-color: var(--bs-territory-sky-text-emphasis);
+  --bs-alert-bg: var(--bs-territory-sky-bg-subtle);
+  --bs-alert-border-color: var(--bs-territory-sky-border-subtle);
+  --bs-alert-link-color: var(--bs-territory-sky-text-emphasis);
 }
 
 .alert-big-rivers {
@@ -7094,11 +7094,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-charcoal-grey-20-text-emphasis);
 }
 
-.alert-charcoal-grey {
-  --bs-alert-color: var(--bs-charcoal-grey-text-emphasis);
-  --bs-alert-bg: var(--bs-charcoal-grey-bg-subtle);
-  --bs-alert-border-color: var(--bs-charcoal-grey-border-subtle);
-  --bs-alert-link-color: var(--bs-charcoal-grey-text-emphasis);
+.alert-territory-charcoal {
+  --bs-alert-color: var(--bs-territory-charcoal-text-emphasis);
+  --bs-alert-bg: var(--bs-territory-charcoal-bg-subtle);
+  --bs-alert-border-color: var(--bs-territory-charcoal-border-subtle);
+  --bs-alert-link-color: var(--bs-territory-charcoal-text-emphasis);
 }
 
 .alert-top-end {
@@ -7108,11 +7108,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-top-end-text-emphasis);
 }
 
-.alert-bush-plum {
-  --bs-alert-color: var(--bs-bush-plum-text-emphasis);
-  --bs-alert-bg: var(--bs-bush-plum-bg-subtle);
-  --bs-alert-border-color: var(--bs-bush-plum-border-subtle);
-  --bs-alert-link-color: var(--bs-bush-plum-text-emphasis);
+.alert-territory-dusk {
+  --bs-alert-color: var(--bs-territory-dusk-text-emphasis);
+  --bs-alert-bg: var(--bs-territory-dusk-bg-subtle);
+  --bs-alert-border-color: var(--bs-territory-dusk-border-subtle);
+  --bs-alert-link-color: var(--bs-territory-dusk-text-emphasis);
 }
 
 .alert-desert-yam-7 {
@@ -7122,11 +7122,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-desert-yam-7-text-emphasis);
 }
 
-.alert-arafura-blue {
-  --bs-alert-color: var(--bs-arafura-blue-text-emphasis);
-  --bs-alert-bg: var(--bs-arafura-blue-bg-subtle);
-  --bs-alert-border-color: var(--bs-arafura-blue-border-subtle);
-  --bs-alert-link-color: var(--bs-arafura-blue-text-emphasis);
+.alert-the-territory {
+  --bs-alert-color: var(--bs-the-territory-text-emphasis);
+  --bs-alert-bg: var(--bs-the-territory-bg-subtle);
+  --bs-alert-border-color: var(--bs-the-territory-border-subtle);
+  --bs-alert-link-color: var(--bs-the-territory-text-emphasis);
 }
 
 .alert-white {
@@ -7143,11 +7143,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-desert-yam-text-emphasis);
 }
 
-.alert-lime-green {
-  --bs-alert-color: var(--bs-lime-green-text-emphasis);
-  --bs-alert-bg: var(--bs-lime-green-bg-subtle);
-  --bs-alert-border-color: var(--bs-lime-green-border-subtle);
-  --bs-alert-link-color: var(--bs-lime-green-text-emphasis);
+.alert-east-arnhem {
+  --bs-alert-color: var(--bs-east-arnhem-text-emphasis);
+  --bs-alert-bg: var(--bs-east-arnhem-bg-subtle);
+  --bs-alert-border-color: var(--bs-east-arnhem-border-subtle);
+  --bs-alert-link-color: var(--bs-east-arnhem-text-emphasis);
 }
 
 .btn-close {
@@ -8211,16 +8211,16 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-barkly-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-olive-green {
-  --bs-focus-ring-color: rgba(var(--bs-olive-green-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-territory-forest {
+  --bs-focus-ring-color: rgba(var(--bs-territory-forest-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-dark-green {
   --bs-focus-ring-color: rgba(var(--bs-dark-green-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-baby-blue {
-  --bs-focus-ring-color: rgba(var(--bs-baby-blue-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-territory-sky {
+  --bs-focus-ring-color: rgba(var(--bs-territory-sky-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-big-rivers {
@@ -8239,24 +8239,24 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-charcoal-grey {
-  --bs-focus-ring-color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-territory-charcoal {
+  --bs-focus-ring-color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-top-end {
   --bs-focus-ring-color: rgba(var(--bs-top-end-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-bush-plum {
-  --bs-focus-ring-color: rgba(var(--bs-bush-plum-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-territory-dusk {
+  --bs-focus-ring-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-desert-yam-7 {
   --bs-focus-ring-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-arafura-blue {
-  --bs-focus-ring-color: rgba(var(--bs-arafura-blue-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-the-territory {
+  --bs-focus-ring-color: rgba(var(--bs-the-territory-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-white {
@@ -8267,8 +8267,8 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-desert-yam-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-lime-green {
-  --bs-focus-ring-color: rgba(var(--bs-lime-green-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-east-arnhem {
+  --bs-focus-ring-color: rgba(var(--bs-east-arnhem-rgb), var(--bs-focus-ring-opacity));
 }
 
 .position-static {
@@ -8464,9 +8464,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-barkly-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-olive-green {
+.border-territory-forest {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-olive-green-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-territory-forest-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-dark-green {
@@ -8474,9 +8474,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-dark-green-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-baby-blue {
+.border-territory-sky {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-baby-blue-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-territory-sky-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-big-rivers {
@@ -8499,9 +8499,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-charcoal-grey {
+.border-territory-charcoal {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-top-end {
@@ -8509,9 +8509,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-top-end-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-bush-plum {
+.border-territory-dusk {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-bush-plum-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-desert-yam-7 {
@@ -8519,9 +8519,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-arafura-blue {
+.border-the-territory {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-arafura-blue-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-the-territory-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8534,9 +8534,9 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-desert-yam-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-lime-green {
+.border-east-arnhem {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-lime-green-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--bs-east-arnhem-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-black {
@@ -10117,9 +10117,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-barkly-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-olive-green {
+.text-territory-forest {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-olive-green-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-territory-forest-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-dark-green {
@@ -10127,9 +10127,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-dark-green-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-baby-blue {
+.text-territory-sky {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-baby-blue-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-territory-sky-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-big-rivers {
@@ -10152,9 +10152,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-charcoal-grey {
+.text-territory-charcoal {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-top-end {
@@ -10162,9 +10162,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-top-end-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-bush-plum {
+.text-territory-dusk {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-bush-plum-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-territory-dusk-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-desert-yam-7 {
@@ -10172,9 +10172,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-arafura-blue {
+.text-the-territory {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-arafura-blue-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-the-territory-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-white {
@@ -10187,9 +10187,9 @@ textarea.form-control-lg {
   color: rgba(var(--bs-desert-yam-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-lime-green {
+.text-east-arnhem {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-lime-green-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-east-arnhem-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-black {
@@ -10883,10 +10883,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-barkly-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-olive-green {
+.link-underline-territory-forest {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-olive-green-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-olive-green-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-territory-forest-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-territory-forest-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-dark-green {
@@ -10895,10 +10895,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-dark-green-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-baby-blue {
+.link-underline-territory-sky {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-baby-blue-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-baby-blue-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-territory-sky-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-territory-sky-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-big-rivers {
@@ -10925,10 +10925,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-charcoal-grey {
+.link-underline-territory-charcoal {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-top-end {
@@ -10937,10 +10937,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-top-end-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-bush-plum {
+.link-underline-territory-dusk {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-bush-plum-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-bush-plum-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-desert-yam-7 {
@@ -10949,10 +10949,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-arafura-blue {
+.link-underline-the-territory {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-arafura-blue-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-arafura-blue-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-white {
@@ -10967,10 +10967,10 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-desert-yam-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-lime-green {
+.link-underline-east-arnhem {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-lime-green-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-lime-green-rgb), var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgba(var(--bs-east-arnhem-rgb), var(--bs-link-underline-opacity)) !important;
+          text-decoration-color: rgba(var(--bs-east-arnhem-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline {
@@ -11097,9 +11097,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-barkly-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-olive-green {
+.bg-territory-forest {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-olive-green-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-territory-forest-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-dark-green {
@@ -11107,9 +11107,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-dark-green-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-baby-blue {
+.bg-territory-sky {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-baby-blue-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-territory-sky-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-big-rivers {
@@ -11132,9 +11132,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-charcoal-grey {
+.bg-territory-charcoal {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-charcoal-grey-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-territory-charcoal-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-top-end {
@@ -11142,9 +11142,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-top-end-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-bush-plum {
+.bg-territory-dusk {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-bush-plum-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-desert-yam-7 {
@@ -11152,9 +11152,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-arafura-blue {
+.bg-the-territory {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-arafura-blue-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-the-territory-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-white {
@@ -11167,9 +11167,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-desert-yam-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-lime-green {
+.bg-east-arnhem {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-lime-green-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-east-arnhem-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -11269,16 +11269,16 @@ textarea.form-control-lg {
   background-color: var(--bs-barkly-bg-subtle) !important;
 }
 
-.bg-olive-green-subtle {
-  background-color: var(--bs-olive-green-bg-subtle) !important;
+.bg-territory-forest-subtle {
+  background-color: var(--bs-territory-forest-bg-subtle) !important;
 }
 
 .bg-dark-green-subtle {
   background-color: var(--bs-dark-green-bg-subtle) !important;
 }
 
-.bg-baby-blue-subtle {
-  background-color: var(--bs-baby-blue-bg-subtle) !important;
+.bg-territory-sky-subtle {
+  background-color: var(--bs-territory-sky-bg-subtle) !important;
 }
 
 .bg-big-rivers-subtle {
@@ -11297,24 +11297,24 @@ textarea.form-control-lg {
   background-color: var(--bs-charcoal-grey-20-bg-subtle) !important;
 }
 
-.bg-charcoal-grey-subtle {
-  background-color: var(--bs-charcoal-grey-bg-subtle) !important;
+.bg-territory-charcoal-subtle {
+  background-color: var(--bs-territory-charcoal-bg-subtle) !important;
 }
 
 .bg-top-end-subtle {
   background-color: var(--bs-top-end-bg-subtle) !important;
 }
 
-.bg-bush-plum-subtle {
-  background-color: var(--bs-bush-plum-bg-subtle) !important;
+.bg-territory-dusk-subtle {
+  background-color: var(--bs-territory-dusk-bg-subtle) !important;
 }
 
 .bg-desert-yam-7-subtle {
   background-color: var(--bs-desert-yam-7-bg-subtle) !important;
 }
 
-.bg-arafura-blue-subtle {
-  background-color: var(--bs-arafura-blue-bg-subtle) !important;
+.bg-the-territory-subtle {
+  background-color: var(--bs-the-territory-bg-subtle) !important;
 }
 
 .bg-white-subtle {
@@ -11325,8 +11325,8 @@ textarea.form-control-lg {
   background-color: var(--bs-desert-yam-bg-subtle) !important;
 }
 
-.bg-lime-green-subtle {
-  background-color: var(--bs-lime-green-bg-subtle) !important;
+.bg-east-arnhem-subtle {
+  background-color: var(--bs-east-arnhem-bg-subtle) !important;
 }
 
 .bg-gradient {
@@ -16944,7 +16944,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 0, 0, 0;
 }
 
-[data-bs-theme=olive-green] {
+[data-bs-theme=territory-forest] {
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
 }
@@ -16954,7 +16954,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 255, 255, 255;
 }
 
-[data-bs-theme=baby-blue] {
+[data-bs-theme=territory-sky] {
   --bs-body-color: #2B292D;
   --bs-body-color-rgb: 43, 41, 45;
 }
@@ -16979,7 +16979,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 43, 41, 45;
 }
 
-[data-bs-theme=charcoal-grey] {
+[data-bs-theme=territory-charcoal] {
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
 }
@@ -16989,7 +16989,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 0, 0, 0;
 }
 
-[data-bs-theme=bush-plum] {
+[data-bs-theme=territory-dusk] {
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
 }
@@ -16999,7 +16999,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 43, 41, 45;
 }
 
-[data-bs-theme=arafura-blue] {
+[data-bs-theme=the-territory] {
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
 }
@@ -17014,7 +17014,7 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 255, 255, 255;
 }
 
-[data-bs-theme=lime-green] {
+[data-bs-theme=east-arnhem] {
   --bs-body-color: #2B292D;
   --bs-body-color-rgb: 43, 41, 45;
 }
@@ -17225,7 +17225,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=olive-green] {
+  [data-bs-theme=territory-forest] {
     --current-theme-main: #566b2e;
     --current-theme-color: #566b2e;
     --current-theme-color-rgb: 86, 107, 46;
@@ -17244,7 +17244,7 @@ textarea.form-control-lg {
     --current-theme-bg-subtle: #bbc4ab;
   }
 }
-[data-bs-theme=olive-green] .btn-outline-default, [data-bs-theme=olive-green] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] .view-online {
+[data-bs-theme=territory-forest] .btn-outline-default, [data-bs-theme=territory-forest] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-forest] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -17260,7 +17260,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
-[data-bs-theme=olive-green] .accordion {
+[data-bs-theme=territory-forest] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23566b2e' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
@@ -17307,7 +17307,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=baby-blue] {
+  [data-bs-theme=territory-sky] {
     --current-theme-main: #B1E2F9;
     --current-theme-color: #B1E2F9;
     --current-theme-color-rgb: 177, 226, 249;
@@ -17326,7 +17326,7 @@ textarea.form-control-lg {
     --current-theme-bg-subtle: #e0f3fd;
   }
 }
-[data-bs-theme=baby-blue] .btn-outline-default, [data-bs-theme=baby-blue] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=baby-blue] .view-online {
+[data-bs-theme=territory-sky] .btn-outline-default, [data-bs-theme=territory-sky] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-sky] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -17342,7 +17342,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
-[data-bs-theme=baby-blue] .accordion {
+[data-bs-theme=territory-sky] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23B1E2F9' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
@@ -17512,7 +17512,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=charcoal-grey] {
+  [data-bs-theme=territory-charcoal] {
     --current-theme-main: #454347;
     --current-theme-color: #454347;
     --current-theme-color-rgb: 69, 67, 71;
@@ -17531,7 +17531,7 @@ textarea.form-control-lg {
     --current-theme-bg-subtle: #b5b4b5;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-outline-default, [data-bs-theme=charcoal-grey] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=charcoal-grey] .view-online {
+[data-bs-theme=territory-charcoal] .btn-outline-default, [data-bs-theme=territory-charcoal] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-charcoal] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -17547,7 +17547,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
-[data-bs-theme=charcoal-grey] .accordion {
+[data-bs-theme=territory-charcoal] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23454347' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
@@ -17594,13 +17594,13 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=bush-plum] {
-    --current-theme-main: #4F1F6F;
-    --current-theme-color: #4F1F6F;
-    --current-theme-color-rgb: 79, 31, 111;
-    --current-theme-color-darker: #3e1857;
+  [data-bs-theme=territory-dusk] {
+    --current-theme-main: #49234a;
+    --current-theme-color: #49234a;
+    --current-theme-color-rgb: 73, 35, 74;
+    --current-theme-color-darker: #351935;
     --current-theme-color-darker-text: #fff;
-    --current-theme-color-lighter: #5a237f;
+    --current-theme-color-lighter: #572a58;
     --current-theme-color-lighter-text: #fff;
     --current-theme-text-color: #fff;
     --current-theme-text-color-rgb: 255, 255, 255;
@@ -17609,11 +17609,11 @@ textarea.form-control-lg {
     --current-theme-link-color-rgb: 255, 255, 255;
     --current-theme-link-hover-color: #fff;
     --current-theme-link-hover-color-rgb: 255, 255, 255;
-    --current-theme-border-subtle: #84629a;
-    --current-theme-bg-subtle: #b9a5c5;
+    --current-theme-border-subtle: #806580;
+    --current-theme-bg-subtle: #b6a7b7;
   }
 }
-[data-bs-theme=bush-plum] .btn-outline-default, [data-bs-theme=bush-plum] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=bush-plum] .view-online {
+[data-bs-theme=territory-dusk] .btn-outline-default, [data-bs-theme=territory-dusk] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -17629,8 +17629,8 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
-[data-bs-theme=bush-plum] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%234F1F6F' /%3e%3c/svg%3e");
+[data-bs-theme=territory-dusk] .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%2349234a' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
@@ -17676,7 +17676,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=arafura-blue] {
+  [data-bs-theme=the-territory] {
     --current-theme-main: #1f1f5f;
     --current-theme-color: #1f1f5f;
     --current-theme-color-rgb: 31, 31, 95;
@@ -17695,7 +17695,7 @@ textarea.form-control-lg {
     --current-theme-bg-subtle: #a5a5bf;
   }
 }
-[data-bs-theme=arafura-blue] .btn-outline-default, [data-bs-theme=arafura-blue] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=arafura-blue] .view-online {
+[data-bs-theme=the-territory] .btn-outline-default, [data-bs-theme=the-territory] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=the-territory] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -17711,7 +17711,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
-[data-bs-theme=arafura-blue] .accordion {
+[data-bs-theme=the-territory] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%231f1f5f' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
@@ -17799,7 +17799,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=lime-green] {
+  [data-bs-theme=east-arnhem] {
     --current-theme-main: #C5D800;
     --current-theme-color: #C5D800;
     --current-theme-color-rgb: 197, 216, 0;
@@ -17818,7 +17818,7 @@ textarea.form-control-lg {
     --current-theme-bg-subtle: #e8ef99;
   }
 }
-[data-bs-theme=lime-green] .btn-outline-default, [data-bs-theme=lime-green] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=lime-green] .view-online {
+[data-bs-theme=east-arnhem] .btn-outline-default, [data-bs-theme=east-arnhem] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=east-arnhem] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -17834,7 +17834,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
-[data-bs-theme=lime-green] .accordion {
+[data-bs-theme=east-arnhem] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23C5D800' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
@@ -18175,7 +18175,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=olive-green] {
+  [data-bs-theme=territory-forest] {
     --current-theme-primary: #566b2e;
     --current-theme-primary-darker: #455625;
     --current-theme-primary-darker-text: #fff;
@@ -18192,7 +18192,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=olive-green] .btn-primary {
+[data-bs-theme=territory-forest] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #566b2e;
   --bs-btn-border-color: #566b2e;
@@ -18208,7 +18208,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #566b2e;
   --bs-btn-disabled-border-color: #566b2e;
 }
-[data-bs-theme=olive-green] .btn-outline-primary {
+[data-bs-theme=territory-forest] .btn-outline-primary {
   --bs-btn-color: #566b2e;
   --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
@@ -18224,7 +18224,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
-[data-bs-theme=olive-green] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=olive-green] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] [data-bs-theme=primary] .view-online {
+[data-bs-theme=territory-forest] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=territory-forest] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-forest] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -18309,7 +18309,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=baby-blue] {
+  [data-bs-theme=territory-sky] {
     --current-theme-primary: #B1E2F9;
     --current-theme-primary-darker: #95d7f7;
     --current-theme-primary-darker-text: #2B292D;
@@ -18326,7 +18326,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=baby-blue] .btn-primary {
+[data-bs-theme=territory-sky] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #B1E2F9;
   --bs-btn-border-color: #B1E2F9;
@@ -18342,7 +18342,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #B1E2F9;
   --bs-btn-disabled-border-color: #B1E2F9;
 }
-[data-bs-theme=baby-blue] .btn-outline-primary {
+[data-bs-theme=territory-sky] .btn-outline-primary {
   --bs-btn-color: #B1E2F9;
   --bs-btn-border-color: #B1E2F9;
   --bs-btn-hover-color: #2B292D;
@@ -18358,7 +18358,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #B1E2F9;
   --bs-gradient: none;
 }
-[data-bs-theme=baby-blue] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=baby-blue] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=baby-blue] [data-bs-theme=primary] .view-online {
+[data-bs-theme=territory-sky] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=territory-sky] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-sky] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -18644,7 +18644,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=charcoal-grey] {
+  [data-bs-theme=territory-charcoal] {
     --current-theme-primary: #454347;
     --current-theme-primary-darker: #363437;
     --current-theme-primary-darker-text: #fff;
@@ -18661,7 +18661,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-primary {
+[data-bs-theme=territory-charcoal] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #454347;
   --bs-btn-border-color: #454347;
@@ -18677,7 +18677,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #454347;
   --bs-btn-disabled-border-color: #454347;
 }
-[data-bs-theme=charcoal-grey] .btn-outline-primary {
+[data-bs-theme=territory-charcoal] .btn-outline-primary {
   --bs-btn-color: #454347;
   --bs-btn-border-color: #454347;
   --bs-btn-hover-color: #fff;
@@ -18693,7 +18693,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #454347;
   --bs-gradient: none;
 }
-[data-bs-theme=charcoal-grey] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=charcoal-grey] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=charcoal-grey] [data-bs-theme=primary] .view-online {
+[data-bs-theme=territory-charcoal] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=territory-charcoal] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-charcoal] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -18778,13 +18778,13 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=bush-plum] {
-    --current-theme-primary: #4F1F6F;
-    --current-theme-primary-darker: #3e1857;
+  [data-bs-theme=territory-dusk] {
+    --current-theme-primary: #49234a;
+    --current-theme-primary-darker: #351935;
     --current-theme-primary-darker-text: #fff;
-    --current-theme-primary-lighter: #5a237f;
+    --current-theme-primary-lighter: #572a58;
     --current-theme-primary-lighter-text: #fff;
-    --current-theme-primary-rgb: 79, 31, 111;
+    --current-theme-primary-rgb: 73, 35, 74;
     --current-theme-primary-text: #fff;
     --current-theme-primary-text-rgb: 255, 255, 255;
     --current-theme-primary-text-reverse: #2B292D;
@@ -18795,39 +18795,39 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=bush-plum] .btn-primary {
+[data-bs-theme=territory-dusk] .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-bg: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #200c2c;
-  --bs-btn-hover-border-color: #200c2c;
-  --bs-btn-focus-shadow-rgb: 105, 65, 133;
+  --bs-btn-hover-bg: #1d0e1e;
+  --bs-btn-hover-border-color: #1d0e1e;
+  --bs-btn-focus-shadow-rgb: 100, 68, 101;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3f1959;
-  --bs-btn-active-border-color: #3b1753;
+  --bs-btn-active-bg: #3a1c3b;
+  --bs-btn-active-border-color: #371a38;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4F1F6F;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-bg: #49234a;
+  --bs-btn-disabled-border-color: #49234a;
 }
-[data-bs-theme=bush-plum] .btn-outline-primary {
-  --bs-btn-color: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+[data-bs-theme=territory-dusk] .btn-outline-primary {
+  --bs-btn-color: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4F1F6F;
-  --bs-btn-hover-border-color: #4F1F6F;
-  --bs-btn-focus-shadow-rgb: 79, 31, 111;
+  --bs-btn-hover-bg: #49234a;
+  --bs-btn-hover-border-color: #49234a;
+  --bs-btn-focus-shadow-rgb: 73, 35, 74;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4F1F6F;
-  --bs-btn-active-border-color: #4F1F6F;
+  --bs-btn-active-bg: #49234a;
+  --bs-btn-active-border-color: #49234a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #4F1F6F;
+  --bs-btn-disabled-color: #49234a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-border-color: #49234a;
   --bs-gradient: none;
 }
-[data-bs-theme=bush-plum] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=bush-plum] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=bush-plum] [data-bs-theme=primary] .view-online {
+[data-bs-theme=territory-dusk] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=territory-dusk] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -18912,7 +18912,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=arafura-blue] {
+  [data-bs-theme=the-territory] {
     --current-theme-primary: #1f1f5f;
     --current-theme-primary-darker: #171748;
     --current-theme-primary-darker-text: #fff;
@@ -18929,7 +18929,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=arafura-blue] .btn-primary {
+[data-bs-theme=the-territory] .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
@@ -18945,7 +18945,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #1f1f5f;
   --bs-btn-disabled-border-color: #1f1f5f;
 }
-[data-bs-theme=arafura-blue] .btn-outline-primary {
+[data-bs-theme=the-territory] .btn-outline-primary {
   --bs-btn-color: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
   --bs-btn-hover-color: #fff;
@@ -18961,7 +18961,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1f1f5f;
   --bs-gradient: none;
 }
-[data-bs-theme=arafura-blue] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=arafura-blue] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=arafura-blue] [data-bs-theme=primary] .view-online {
+[data-bs-theme=the-territory] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=the-territory] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=the-territory] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -19113,7 +19113,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=lime-green] {
+  [data-bs-theme=east-arnhem] {
     --current-theme-primary: #C5D800;
     --current-theme-primary-darker: #a9b900;
     --current-theme-primary-darker-text: #2B292D;
@@ -19130,7 +19130,7 @@ textarea.form-control-lg {
     --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=lime-green] .btn-primary {
+[data-bs-theme=east-arnhem] .btn-primary {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #C5D800;
   --bs-btn-border-color: #C5D800;
@@ -19146,7 +19146,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #C5D800;
   --bs-btn-disabled-border-color: #C5D800;
 }
-[data-bs-theme=lime-green] .btn-outline-primary {
+[data-bs-theme=east-arnhem] .btn-outline-primary {
   --bs-btn-color: #C5D800;
   --bs-btn-border-color: #C5D800;
   --bs-btn-hover-color: #2B292D;
@@ -19162,7 +19162,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #C5D800;
   --bs-gradient: none;
 }
-[data-bs-theme=lime-green] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=lime-green] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=lime-green] [data-bs-theme=primary] .view-online {
+[data-bs-theme=east-arnhem] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=east-arnhem] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=east-arnhem] [data-bs-theme=primary] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -19515,7 +19515,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=olive-green] {
+  [data-bs-theme=territory-forest] {
     --current-theme-secondary: #7EAA9C;
     --current-theme-secondary-darker: #6c9e8e;
     --current-theme-secondary-darker-text: #2B292D;
@@ -19532,7 +19532,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=olive-green] .btn-secondary, [data-bs-theme=olive-green] #content input[type=reset], #content [data-bs-theme=olive-green] input[type=reset], [data-bs-theme=olive-green] #content input[type=submit], #content [data-bs-theme=olive-green] input[type=submit] {
+[data-bs-theme=territory-forest] .btn-secondary, [data-bs-theme=territory-forest] #content input[type=reset], #content [data-bs-theme=territory-forest] input[type=reset], [data-bs-theme=territory-forest] #content input[type=submit], #content [data-bs-theme=territory-forest] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #7EAA9C;
   --bs-btn-border-color: #7EAA9C;
@@ -19548,7 +19548,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #7EAA9C;
   --bs-btn-disabled-border-color: #7EAA9C;
 }
-[data-bs-theme=olive-green] .btn-outline-secondary {
+[data-bs-theme=territory-forest] .btn-outline-secondary {
   --bs-btn-color: #7EAA9C;
   --bs-btn-border-color: #7EAA9C;
   --bs-btn-hover-color: #2B292D;
@@ -19564,7 +19564,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #7EAA9C;
   --bs-gradient: none;
 }
-[data-bs-theme=olive-green] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=olive-green] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=territory-forest] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-forest] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-forest] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -19649,7 +19649,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=baby-blue] {
+  [data-bs-theme=territory-sky] {
     --current-theme-secondary: #0093B8;
     --current-theme-secondary-darker: #007b99;
     --current-theme-secondary-darker-text: #fff;
@@ -19666,7 +19666,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=baby-blue] .btn-secondary, [data-bs-theme=baby-blue] #content input[type=reset], #content [data-bs-theme=baby-blue] input[type=reset], [data-bs-theme=baby-blue] #content input[type=submit], #content [data-bs-theme=baby-blue] input[type=submit] {
+[data-bs-theme=territory-sky] .btn-secondary, [data-bs-theme=territory-sky] #content input[type=reset], #content [data-bs-theme=territory-sky] input[type=reset], [data-bs-theme=territory-sky] #content input[type=submit], #content [data-bs-theme=territory-sky] input[type=submit] {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -19682,7 +19682,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0093B8;
   --bs-btn-disabled-border-color: #0093B8;
 }
-[data-bs-theme=baby-blue] .btn-outline-secondary {
+[data-bs-theme=territory-sky] .btn-outline-secondary {
   --bs-btn-color: #0093B8;
   --bs-btn-border-color: #0093B8;
   --bs-btn-hover-color: #000;
@@ -19698,7 +19698,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0093B8;
   --bs-gradient: none;
 }
-[data-bs-theme=baby-blue] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=baby-blue] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=baby-blue] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=territory-sky] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-sky] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-sky] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #000;
   --bs-btn-border-color: #000;
   --bs-btn-hover-color: #fff;
@@ -19984,7 +19984,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=charcoal-grey] {
+  [data-bs-theme=territory-charcoal] {
     --current-theme-secondary: #fff;
     --current-theme-secondary-darker: #f0f0f0;
     --current-theme-secondary-darker-text: #2B292D;
@@ -20001,7 +20001,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-secondary, [data-bs-theme=charcoal-grey] #content input[type=reset], #content [data-bs-theme=charcoal-grey] input[type=reset], [data-bs-theme=charcoal-grey] #content input[type=submit], #content [data-bs-theme=charcoal-grey] input[type=submit] {
+[data-bs-theme=territory-charcoal] .btn-secondary, [data-bs-theme=territory-charcoal] #content input[type=reset], #content [data-bs-theme=territory-charcoal] input[type=reset], [data-bs-theme=territory-charcoal] #content input[type=submit], #content [data-bs-theme=territory-charcoal] input[type=submit] {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #fff;
   --bs-btn-border-color: #fff;
@@ -20017,7 +20017,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #fff;
   --bs-btn-disabled-border-color: #fff;
 }
-[data-bs-theme=charcoal-grey] .btn-outline-secondary {
+[data-bs-theme=territory-charcoal] .btn-outline-secondary {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20033,7 +20033,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
-[data-bs-theme=charcoal-grey] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=charcoal-grey] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=charcoal-grey] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=territory-charcoal] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-charcoal] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-charcoal] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -20118,7 +20118,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=bush-plum] {
+  [data-bs-theme=territory-dusk] {
     --current-theme-secondary: #7F1F7F;
     --current-theme-secondary-darker: #661966;
     --current-theme-secondary-darker-text: #fff;
@@ -20135,7 +20135,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=bush-plum] .btn-secondary, [data-bs-theme=bush-plum] #content input[type=reset], #content [data-bs-theme=bush-plum] input[type=reset], [data-bs-theme=bush-plum] #content input[type=submit], #content [data-bs-theme=bush-plum] input[type=submit] {
+[data-bs-theme=territory-dusk] .btn-secondary, [data-bs-theme=territory-dusk] #content input[type=reset], #content [data-bs-theme=territory-dusk] input[type=reset], [data-bs-theme=territory-dusk] #content input[type=submit], #content [data-bs-theme=territory-dusk] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #7F1F7F;
   --bs-btn-border-color: #7F1F7F;
@@ -20151,7 +20151,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #7F1F7F;
   --bs-btn-disabled-border-color: #7F1F7F;
 }
-[data-bs-theme=bush-plum] .btn-outline-secondary {
+[data-bs-theme=territory-dusk] .btn-outline-secondary {
   --bs-btn-color: #7F1F7F;
   --bs-btn-border-color: #7F1F7F;
   --bs-btn-hover-color: #fff;
@@ -20167,7 +20167,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #7F1F7F;
   --bs-gradient: none;
 }
-[data-bs-theme=bush-plum] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=bush-plum] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=bush-plum] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=territory-dusk] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20252,7 +20252,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=arafura-blue] {
+  [data-bs-theme=the-territory] {
     --current-theme-secondary: #0093B8;
     --current-theme-secondary-darker: #007b99;
     --current-theme-secondary-darker-text: #fff;
@@ -20269,7 +20269,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 0, 0, 0;
   }
 }
-[data-bs-theme=arafura-blue] .btn-secondary, [data-bs-theme=arafura-blue] #content input[type=reset], #content [data-bs-theme=arafura-blue] input[type=reset], [data-bs-theme=arafura-blue] #content input[type=submit], #content [data-bs-theme=arafura-blue] input[type=submit] {
+[data-bs-theme=the-territory] .btn-secondary, [data-bs-theme=the-territory] #content input[type=reset], #content [data-bs-theme=the-territory] input[type=reset], [data-bs-theme=the-territory] #content input[type=submit], #content [data-bs-theme=the-territory] input[type=submit] {
   --bs-btn-color: #000;
   --bs-btn-bg: #0093B8;
   --bs-btn-border-color: #0093B8;
@@ -20285,7 +20285,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0093B8;
   --bs-btn-disabled-border-color: #0093B8;
 }
-[data-bs-theme=arafura-blue] .btn-outline-secondary {
+[data-bs-theme=the-territory] .btn-outline-secondary {
   --bs-btn-color: #0093B8;
   --bs-btn-border-color: #0093B8;
   --bs-btn-hover-color: #000;
@@ -20301,7 +20301,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0093B8;
   --bs-gradient: none;
 }
-[data-bs-theme=arafura-blue] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=arafura-blue] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=arafura-blue] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=the-territory] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=the-territory] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=the-territory] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #000;
   --bs-btn-border-color: #000;
   --bs-btn-hover-color: #fff;
@@ -20453,7 +20453,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=lime-green] {
+  [data-bs-theme=east-arnhem] {
     --current-theme-secondary: #566b2e;
     --current-theme-secondary-darker: #455625;
     --current-theme-secondary-darker-text: #fff;
@@ -20470,7 +20470,7 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=lime-green] .btn-secondary, [data-bs-theme=lime-green] #content input[type=reset], #content [data-bs-theme=lime-green] input[type=reset], [data-bs-theme=lime-green] #content input[type=submit], #content [data-bs-theme=lime-green] input[type=submit] {
+[data-bs-theme=east-arnhem] .btn-secondary, [data-bs-theme=east-arnhem] #content input[type=reset], #content [data-bs-theme=east-arnhem] input[type=reset], [data-bs-theme=east-arnhem] #content input[type=submit], #content [data-bs-theme=east-arnhem] input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #566b2e;
   --bs-btn-border-color: #566b2e;
@@ -20486,7 +20486,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #566b2e;
   --bs-btn-disabled-border-color: #566b2e;
 }
-[data-bs-theme=lime-green] .btn-outline-secondary {
+[data-bs-theme=east-arnhem] .btn-outline-secondary {
   --bs-btn-color: #566b2e;
   --bs-btn-border-color: #566b2e;
   --bs-btn-hover-color: #fff;
@@ -20502,7 +20502,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #566b2e;
   --bs-gradient: none;
 }
-[data-bs-theme=lime-green] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=lime-green] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=lime-green] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=east-arnhem] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=east-arnhem] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=east-arnhem] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20855,7 +20855,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=olive-green] {
+  [data-bs-theme=territory-forest] {
     --current-theme-tertiary: #092522;
     --current-theme-tertiary-darker: #030c0b;
     --current-theme-tertiary-darker-text: #fff;
@@ -20872,7 +20872,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=olive-green] .btn-tertiary {
+[data-bs-theme=territory-forest] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #092522;
   --bs-btn-border-color: #092522;
@@ -20888,7 +20888,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #092522;
   --bs-btn-disabled-border-color: #092522;
 }
-[data-bs-theme=olive-green] .btn-outline-tertiary {
+[data-bs-theme=territory-forest] .btn-outline-tertiary {
   --bs-btn-color: #092522;
   --bs-btn-border-color: #092522;
   --bs-btn-hover-color: #fff;
@@ -20904,7 +20904,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #092522;
   --bs-gradient: none;
 }
-[data-bs-theme=olive-green] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=olive-green] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=olive-green] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=territory-forest] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=territory-forest] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-forest] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20989,7 +20989,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=baby-blue] {
+  [data-bs-theme=territory-sky] {
     --current-theme-tertiary: #84B5CC;
     --current-theme-tertiary-darker: #6ea8c3;
     --current-theme-tertiary-darker-text: #2B292D;
@@ -21006,7 +21006,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=baby-blue] .btn-tertiary {
+[data-bs-theme=territory-sky] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #84B5CC;
   --bs-btn-border-color: #84B5CC;
@@ -21022,7 +21022,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #84B5CC;
   --bs-btn-disabled-border-color: #84B5CC;
 }
-[data-bs-theme=baby-blue] .btn-outline-tertiary {
+[data-bs-theme=territory-sky] .btn-outline-tertiary {
   --bs-btn-color: #84B5CC;
   --bs-btn-border-color: #84B5CC;
   --bs-btn-hover-color: #2B292D;
@@ -21038,7 +21038,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #84B5CC;
   --bs-gradient: none;
 }
-[data-bs-theme=baby-blue] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=baby-blue] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=baby-blue] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=territory-sky] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=territory-sky] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-sky] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -21124,12 +21124,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=fairy-wren-7] {
-    --current-theme-tertiary: #4F1F6F;
-    --current-theme-tertiary-darker: #3e1857;
+    --current-theme-tertiary: #49234a;
+    --current-theme-tertiary-darker: #351935;
     --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #5a237f;
+    --current-theme-tertiary-lighter: #572a58;
     --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 79, 31, 111;
+    --current-theme-tertiary-rgb: 73, 35, 74;
     --current-theme-tertiary-text: #fff;
     --current-theme-tertiary-text-rgb: 255, 255, 255;
     --current-theme-tertiary-text-reverse: #2B292D;
@@ -21142,34 +21142,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=fairy-wren-7] .btn-tertiary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-bg: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #200c2c;
-  --bs-btn-hover-border-color: #200c2c;
-  --bs-btn-focus-shadow-rgb: 105, 65, 133;
+  --bs-btn-hover-bg: #1d0e1e;
+  --bs-btn-hover-border-color: #1d0e1e;
+  --bs-btn-focus-shadow-rgb: 100, 68, 101;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3f1959;
-  --bs-btn-active-border-color: #3b1753;
+  --bs-btn-active-bg: #3a1c3b;
+  --bs-btn-active-border-color: #371a38;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4F1F6F;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-bg: #49234a;
+  --bs-btn-disabled-border-color: #49234a;
 }
 [data-bs-theme=fairy-wren-7] .btn-outline-tertiary {
-  --bs-btn-color: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-color: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4F1F6F;
-  --bs-btn-hover-border-color: #4F1F6F;
-  --bs-btn-focus-shadow-rgb: 79, 31, 111;
+  --bs-btn-hover-bg: #49234a;
+  --bs-btn-hover-border-color: #49234a;
+  --bs-btn-focus-shadow-rgb: 73, 35, 74;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4F1F6F;
-  --bs-btn-active-border-color: #4F1F6F;
+  --bs-btn-active-bg: #49234a;
+  --bs-btn-active-border-color: #49234a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #4F1F6F;
+  --bs-btn-disabled-color: #49234a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-border-color: #49234a;
   --bs-gradient: none;
 }
 [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .view-online {
@@ -21191,12 +21191,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=fairy-wren] {
-    --current-theme-tertiary: #4F1F6F;
-    --current-theme-tertiary-darker: #3e1857;
+    --current-theme-tertiary: #49234a;
+    --current-theme-tertiary-darker: #351935;
     --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #5a237f;
+    --current-theme-tertiary-lighter: #572a58;
     --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 79, 31, 111;
+    --current-theme-tertiary-rgb: 73, 35, 74;
     --current-theme-tertiary-text: #fff;
     --current-theme-tertiary-text-rgb: 255, 255, 255;
     --current-theme-tertiary-text-reverse: #2B292D;
@@ -21209,34 +21209,34 @@ textarea.form-control-lg {
 }
 [data-bs-theme=fairy-wren] .btn-tertiary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-bg: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #200c2c;
-  --bs-btn-hover-border-color: #200c2c;
-  --bs-btn-focus-shadow-rgb: 105, 65, 133;
+  --bs-btn-hover-bg: #1d0e1e;
+  --bs-btn-hover-border-color: #1d0e1e;
+  --bs-btn-focus-shadow-rgb: 100, 68, 101;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3f1959;
-  --bs-btn-active-border-color: #3b1753;
+  --bs-btn-active-bg: #3a1c3b;
+  --bs-btn-active-border-color: #371a38;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4F1F6F;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-bg: #49234a;
+  --bs-btn-disabled-border-color: #49234a;
 }
 [data-bs-theme=fairy-wren] .btn-outline-tertiary {
-  --bs-btn-color: #4F1F6F;
-  --bs-btn-border-color: #4F1F6F;
+  --bs-btn-color: #49234a;
+  --bs-btn-border-color: #49234a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4F1F6F;
-  --bs-btn-hover-border-color: #4F1F6F;
-  --bs-btn-focus-shadow-rgb: 79, 31, 111;
+  --bs-btn-hover-bg: #49234a;
+  --bs-btn-hover-border-color: #49234a;
+  --bs-btn-focus-shadow-rgb: 73, 35, 74;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4F1F6F;
-  --bs-btn-active-border-color: #4F1F6F;
+  --bs-btn-active-bg: #49234a;
+  --bs-btn-active-border-color: #49234a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #4F1F6F;
+  --bs-btn-disabled-color: #49234a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #4F1F6F;
+  --bs-btn-disabled-border-color: #49234a;
   --bs-gradient: none;
 }
 [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .view-online {
@@ -21324,7 +21324,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=charcoal-grey] {
+  [data-bs-theme=territory-charcoal] {
     --current-theme-tertiary: #2B292D;
     --current-theme-tertiary-darker: #1c1a1d;
     --current-theme-tertiary-darker-text: #fff;
@@ -21341,7 +21341,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=charcoal-grey] .btn-tertiary {
+[data-bs-theme=territory-charcoal] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #2B292D;
   --bs-btn-border-color: #2B292D;
@@ -21357,7 +21357,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #2B292D;
   --bs-btn-disabled-border-color: #2B292D;
 }
-[data-bs-theme=charcoal-grey] .btn-outline-tertiary {
+[data-bs-theme=territory-charcoal] .btn-outline-tertiary {
   --bs-btn-color: #2B292D;
   --bs-btn-border-color: #2B292D;
   --bs-btn-hover-color: #fff;
@@ -21373,7 +21373,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #2B292D;
   --bs-gradient: none;
 }
-[data-bs-theme=charcoal-grey] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=charcoal-grey] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=charcoal-grey] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=territory-charcoal] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=territory-charcoal] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-charcoal] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -21458,7 +21458,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=bush-plum] {
+  [data-bs-theme=territory-dusk] {
     --current-theme-tertiary: #0E2C4D;
     --current-theme-tertiary-darker: #091d33;
     --current-theme-tertiary-darker-text: #fff;
@@ -21475,7 +21475,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=bush-plum] .btn-tertiary {
+[data-bs-theme=territory-dusk] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
@@ -21491,7 +21491,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0E2C4D;
   --bs-btn-disabled-border-color: #0E2C4D;
 }
-[data-bs-theme=bush-plum] .btn-outline-tertiary {
+[data-bs-theme=territory-dusk] .btn-outline-tertiary {
   --bs-btn-color: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
   --bs-btn-hover-color: #fff;
@@ -21507,7 +21507,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0E2C4D;
   --bs-gradient: none;
 }
-[data-bs-theme=bush-plum] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=bush-plum] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=bush-plum] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=territory-dusk] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=territory-dusk] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -21592,7 +21592,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=arafura-blue] {
+  [data-bs-theme=the-territory] {
     --current-theme-tertiary: #0C2430;
     --current-theme-tertiary-darker: #061218;
     --current-theme-tertiary-darker-text: #fff;
@@ -21609,7 +21609,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=arafura-blue] .btn-tertiary {
+[data-bs-theme=the-territory] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0C2430;
   --bs-btn-border-color: #0C2430;
@@ -21625,7 +21625,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0C2430;
   --bs-btn-disabled-border-color: #0C2430;
 }
-[data-bs-theme=arafura-blue] .btn-outline-tertiary {
+[data-bs-theme=the-territory] .btn-outline-tertiary {
   --bs-btn-color: #0C2430;
   --bs-btn-border-color: #0C2430;
   --bs-btn-hover-color: #fff;
@@ -21641,7 +21641,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0C2430;
   --bs-gradient: none;
 }
-[data-bs-theme=arafura-blue] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=arafura-blue] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=arafura-blue] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=the-territory] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=the-territory] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=the-territory] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -21793,7 +21793,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=lime-green] {
+  [data-bs-theme=east-arnhem] {
     --current-theme-tertiary: #0E2C4D;
     --current-theme-tertiary-darker: #091d33;
     --current-theme-tertiary-darker-text: #fff;
@@ -21810,7 +21810,7 @@ textarea.form-control-lg {
     --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=lime-green] .btn-tertiary {
+[data-bs-theme=east-arnhem] .btn-tertiary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
@@ -21826,7 +21826,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #0E2C4D;
   --bs-btn-disabled-border-color: #0E2C4D;
 }
-[data-bs-theme=lime-green] .btn-outline-tertiary {
+[data-bs-theme=east-arnhem] .btn-outline-tertiary {
   --bs-btn-color: #0E2C4D;
   --bs-btn-border-color: #0E2C4D;
   --bs-btn-hover-color: #fff;
@@ -21842,7 +21842,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #0E2C4D;
   --bs-gradient: none;
 }
-[data-bs-theme=lime-green] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=lime-green] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=lime-green] [data-bs-theme=tertiary] .view-online {
+[data-bs-theme=east-arnhem] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=east-arnhem] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=east-arnhem] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -22110,7 +22110,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=olive-green] {
+  [data-bs-theme=territory-forest] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22127,7 +22127,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=olive-green] [data-bs-theme=primary] {
+  [data-bs-theme=territory-forest] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22137,7 +22137,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=olive-green] [data-bs-theme=secondary] {
+  [data-bs-theme=territory-forest] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22147,7 +22147,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=olive-green] [data-bs-theme=tertiary] {
+  [data-bs-theme=territory-forest] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22210,7 +22210,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=baby-blue] {
+  [data-bs-theme=territory-sky] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22227,7 +22227,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=baby-blue] [data-bs-theme=primary] {
+  [data-bs-theme=territory-sky] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22237,7 +22237,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=baby-blue] [data-bs-theme=secondary] {
+  [data-bs-theme=territory-sky] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22247,7 +22247,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=baby-blue] [data-bs-theme=tertiary] {
+  [data-bs-theme=territory-sky] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22460,7 +22460,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=charcoal-grey] {
+  [data-bs-theme=territory-charcoal] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22477,7 +22477,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=charcoal-grey] [data-bs-theme=primary] {
+  [data-bs-theme=territory-charcoal] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22487,7 +22487,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=charcoal-grey] [data-bs-theme=secondary] {
+  [data-bs-theme=territory-charcoal] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22497,7 +22497,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=charcoal-grey] [data-bs-theme=tertiary] {
+  [data-bs-theme=territory-charcoal] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22560,7 +22560,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=bush-plum] {
+  [data-bs-theme=territory-dusk] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22577,7 +22577,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=bush-plum] [data-bs-theme=primary] {
+  [data-bs-theme=territory-dusk] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22587,7 +22587,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=bush-plum] [data-bs-theme=secondary] {
+  [data-bs-theme=territory-dusk] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22597,7 +22597,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=bush-plum] [data-bs-theme=tertiary] {
+  [data-bs-theme=territory-dusk] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22660,7 +22660,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=arafura-blue] {
+  [data-bs-theme=the-territory] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22677,7 +22677,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=arafura-blue] [data-bs-theme=primary] {
+  [data-bs-theme=the-territory] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22687,7 +22687,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=arafura-blue] [data-bs-theme=secondary] {
+  [data-bs-theme=the-territory] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22697,7 +22697,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=arafura-blue] [data-bs-theme=tertiary] {
+  [data-bs-theme=the-territory] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22810,7 +22810,7 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=lime-green] {
+  [data-bs-theme=east-arnhem] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
     --bs-link-color: var(--current-theme-link-color);
@@ -22827,7 +22827,7 @@ textarea.form-control-lg {
     --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
     --bs-tertiary-rgb: var(--current-theme-tertiary-text);
   }
-  [data-bs-theme=lime-green] [data-bs-theme=primary] {
+  [data-bs-theme=east-arnhem] [data-bs-theme=primary] {
     --current-theme-color: var(--current-theme-primary);
     --current-theme-text-color: var(--current-theme-primary-text);
     --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -22837,7 +22837,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
   }
-  [data-bs-theme=lime-green] [data-bs-theme=secondary] {
+  [data-bs-theme=east-arnhem] [data-bs-theme=secondary] {
     --current-theme-color: var(--current-theme-secondary);
     --current-theme-text-color: var(--current-theme-secondary-text);
     --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -22847,7 +22847,7 @@ textarea.form-control-lg {
     --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
-  [data-bs-theme=lime-green] [data-bs-theme=tertiary] {
+  [data-bs-theme=east-arnhem] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22915,7 +22915,7 @@ textarea.form-control-lg {
   --bs-btn-color: #000;
 }
 
-.btn-olive-green {
+.btn-territory-forest {
   --bs-btn-color: #fff;
 }
 
@@ -22923,7 +22923,7 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
 }
 
-.btn-baby-blue {
+.btn-territory-sky {
   --bs-btn-color: #2B292D;
 }
 
@@ -22943,7 +22943,7 @@ textarea.form-control-lg {
   --bs-btn-color: #2B292D;
 }
 
-.btn-charcoal-grey {
+.btn-territory-charcoal {
   --bs-btn-color: #fff;
 }
 
@@ -22951,7 +22951,7 @@ textarea.form-control-lg {
   --bs-btn-color: #000;
 }
 
-.btn-bush-plum {
+.btn-territory-dusk {
   --bs-btn-color: #fff;
 }
 
@@ -22959,7 +22959,7 @@ textarea.form-control-lg {
   --bs-btn-color: #2B292D;
 }
 
-.btn-arafura-blue {
+.btn-the-territory {
   --bs-btn-color: #fff;
 }
 
@@ -22971,7 +22971,7 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
 }
 
-.btn-lime-green {
+.btn-east-arnhem {
   --bs-btn-color: #2B292D;
 }
 
@@ -23059,7 +23059,7 @@ textarea.form-control-lg {
   color: #000;
 }
 
-.bg-olive-green {
+.bg-territory-forest {
   --current-theme-color: #fff;
   --current-theme-dark-color: white;
   color: #fff;
@@ -23071,7 +23071,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.bg-baby-blue {
+.bg-territory-sky {
   --current-theme-color: #2B292D;
   --current-theme-dark-color: #2b292d;
   color: #2B292D;
@@ -23101,7 +23101,7 @@ textarea.form-control-lg {
   color: #2B292D;
 }
 
-.bg-charcoal-grey {
+.bg-territory-charcoal {
   --current-theme-color: #fff;
   --current-theme-dark-color: white;
   color: #fff;
@@ -23113,7 +23113,7 @@ textarea.form-control-lg {
   color: #000;
 }
 
-.bg-bush-plum {
+.bg-territory-dusk {
   --current-theme-color: #fff;
   --current-theme-dark-color: white;
   color: #fff;
@@ -23125,7 +23125,7 @@ textarea.form-control-lg {
   color: #2B292D;
 }
 
-.bg-arafura-blue {
+.bg-the-territory {
   --current-theme-color: #fff;
   --current-theme-dark-color: white;
   color: #fff;
@@ -23143,7 +23143,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.bg-lime-green {
+.bg-east-arnhem {
   --current-theme-color: #2B292D;
   --current-theme-dark-color: #2b292d;
   color: #2B292D;
@@ -23233,7 +23233,7 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #fb5733;
 }
 
-.bg-olive-green {
+.bg-territory-forest {
   --current-bg-color: #566b2e;
   --current-bg-color-darker: #455625;
   --current-bg-color-lighter: #617934;
@@ -23245,7 +23245,7 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #213f3c;
 }
 
-.bg-baby-blue {
+.bg-territory-sky {
   --current-bg-color: #B1E2F9;
   --current-bg-color-darker: #95d7f7;
   --current-bg-color-lighter: #c4e9fa;
@@ -23275,7 +23275,7 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #e4e3e4;
 }
 
-.bg-charcoal-grey {
+.bg-territory-charcoal {
   --current-bg-color: #454347;
   --current-bg-color-darker: #363437;
   --current-bg-color-lighter: #4f4d51;
@@ -23287,10 +23287,10 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #00a3cc;
 }
 
-.bg-bush-plum {
-  --current-bg-color: #4F1F6F;
-  --current-bg-color-darker: #3e1857;
-  --current-bg-color-lighter: #5a237f;
+.bg-territory-dusk {
+  --current-bg-color: #49234a;
+  --current-bg-color-darker: #351935;
+  --current-bg-color-lighter: #572a58;
 }
 
 .bg-desert-yam-7 {
@@ -23299,7 +23299,7 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #fefdfb;
 }
 
-.bg-arafura-blue {
+.bg-the-territory {
   --current-bg-color: #1f1f5f;
   --current-bg-color-darker: #171748;
   --current-bg-color-lighter: #24246e;
@@ -23317,7 +23317,7 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #d43c29;
 }
 
-.bg-lime-green {
+.bg-east-arnhem {
   --current-bg-color: #C5D800;
   --current-bg-color-darker: #a9b900;
   --current-bg-color-lighter: #d8ec00;
@@ -23388,7 +23388,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-olive-green {
+.alert-territory-forest {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -23398,7 +23398,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-baby-blue {
+.alert-territory-sky {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -23423,7 +23423,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-charcoal-grey {
+.alert-territory-charcoal {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -23433,7 +23433,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-bush-plum {
+.alert-territory-dusk {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -23443,7 +23443,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-arafura-blue {
+.alert-the-territory {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -23458,7 +23458,7 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-lime-green {
+.alert-east-arnhem {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -25236,6 +25236,7 @@ body.testimonial .ntg-cards-carousel--testimonial {
 }
 
 #cc-main {
+  --cc-bg: #D7D2CB;
   --cc-font-family: $font-family-base;
   --cc-btn-primary-bg: #566b2e;
   --cc-btn-primary-border-color: #566b2e;
@@ -26074,10 +26075,10 @@ html[data-bs-theme=barkly] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=olive-green] #content input[type=radio] ~ label:before {
+html[data-bs-theme=territory-forest] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=olive-green] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=territory-forest] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26088,10 +26089,10 @@ html[data-bs-theme=dark-green] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=baby-blue] #content input[type=radio] ~ label:before {
+html[data-bs-theme=territory-sky] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=baby-blue] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=territory-sky] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26123,10 +26124,10 @@ html[data-bs-theme=charcoal-grey-20] #content input[type=checkbox] ~ label:befor
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=charcoal-grey] #content input[type=radio] ~ label:before {
+html[data-bs-theme=territory-charcoal] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=charcoal-grey] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=territory-charcoal] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26137,10 +26138,10 @@ html[data-bs-theme=top-end] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=bush-plum] #content input[type=radio] ~ label:before {
+html[data-bs-theme=territory-dusk] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=bush-plum] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=territory-dusk] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26151,10 +26152,10 @@ html[data-bs-theme=desert-yam-7] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=arafura-blue] #content input[type=radio] ~ label:before {
+html[data-bs-theme=the-territory] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=arafura-blue] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=the-territory] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26172,10 +26173,10 @@ html[data-bs-theme=desert-yam] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=lime-green] #content input[type=radio] ~ label:before {
+html[data-bs-theme=east-arnhem] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
-html[data-bs-theme=lime-green] #content input[type=checkbox] ~ label:before {
+html[data-bs-theme=east-arnhem] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
@@ -26554,7 +26555,7 @@ html[data-bs-theme=dark-blue] .ntg-icon-and-description img {
           filter: brightness(0) invert(100%);
 }
 
-html[data-bs-theme=olive-green] .ntg-icon-and-description img {
+html[data-bs-theme=territory-forest] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
@@ -26569,17 +26570,17 @@ html[data-bs-theme=fairy-wren] .ntg-icon-and-description img {
           filter: brightness(0) invert(100%);
 }
 
-html[data-bs-theme=charcoal-grey] .ntg-icon-and-description img {
+html[data-bs-theme=territory-charcoal] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
 
-html[data-bs-theme=bush-plum] .ntg-icon-and-description img {
+html[data-bs-theme=territory-dusk] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
 
-html[data-bs-theme=arafura-blue] .ntg-icon-and-description img {
+html[data-bs-theme=the-territory] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
@@ -26621,7 +26622,7 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
-.ntg-icon-and-description[data-bs-theme=olive-green] img {
+.ntg-icon-and-description[data-bs-theme=territory-forest] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
@@ -26633,15 +26634,15 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
-.ntg-icon-and-description[data-bs-theme=charcoal-grey] img {
+.ntg-icon-and-description[data-bs-theme=territory-charcoal] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
-.ntg-icon-and-description[data-bs-theme=bush-plum] img {
+.ntg-icon-and-description[data-bs-theme=territory-dusk] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
-.ntg-icon-and-description[data-bs-theme=arafura-blue] img {
+.ntg-icon-and-description[data-bs-theme=the-territory] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }

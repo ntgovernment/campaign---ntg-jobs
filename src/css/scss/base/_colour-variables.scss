@@ -20,24 +20,25 @@ $ntg-deep-mauve: #845278;
 $ntg-bottle-green: #1e5e5e;
 
 /* -------- Theme Colours -------- */
+$ntg-the-territory: $ntg-arafura-blue;
+$ntg-territory-forest: #566b2e;
+$ntg-territory-dusk: #49234a;
+$ntg-territory-sky: #B1E2F9;
+$ntg-territory-charcoal: $ntg-charcoal-grey;
 $ntg-territory-stone: #D7D2CB;
-$ntg-dark-gray: #2B292D;
+$ntg-top-end: #0093B8;
 $ntg-central-australia: #E5004D;
-$ntg-dark-blue: #0E2C4D;
 $ntg-barkly: #FB471F;
-$ntg-olive-green: #566b2e;
-$ntg-dark-green: #1A322F;
-$ntg-baby-blue: #B1E2F9;
 $ntg-big-rivers: #F2A900;
+$ntg-east-arnhem: #C5D800;
+
+$ntg-dark-gray: #2B292D;
+$ntg-dark-blue: #0E2C4D;
+$ntg-dark-green: #1A322F;
 $ntg-fairy-wren-7: #F6EFF6;
 $ntg-fairy-wren: #7F1F7F;
 $ntg-charcoal-grey-20: #DAD9DA;
-$ntg-charcoal-grey: #454347;
-$ntg-top-end: #0093B8;
-$ntg-bush-plum: #4F1F6F;
 $ntg-desert-yam: #C33726;
-$ntg-lime-green: #C5D800;
-
 $ntg-grey: #919191;
 $ntg-charcoal-grey-10: #EDEDED;
 $ntg-pink: #FFCCDD;
@@ -57,7 +58,7 @@ $ntg-red-dirt: #961B0B;
 * These colors are only provided to generate utilities classes. Primary, Secondary and Tertiary colors are defined using the custom-themes.scss file.
 */
 $primary: $ntg-territory-stone;
-$secondary: $ntg-olive-green;
+$secondary: $ntg-territory-forest;
 $tertiary: $ntg-grey;
 $primary-text: $ntg-dark-gray;
 $secondary-text: $white;
@@ -105,16 +106,16 @@ $accesible-color-definitions: (
 		"color": $ntg-barkly,
 		"accessible-color": $black,
 	),
-	"olive-green" : (
-		"color": $ntg-olive-green,
+	"territory-forest" : (
+		"color": $ntg-territory-forest,
 		"accessible-color": $white,
 	),
 	"dark-green" : (
 		"color": $ntg-dark-green,
 		"accessible-color": $white,
 	),
-	"baby-blue" : (
-		"color": $ntg-baby-blue,
+	"territory-sky" : (
+		"color": $ntg-territory-sky,
 		"accessible-color": $ntg-dark-gray,
 	),
 	"big-rivers" : (
@@ -133,20 +134,20 @@ $accesible-color-definitions: (
 		"color": $ntg-charcoal-grey-20,
 		"accessible-color": $ntg-dark-gray,
 	),
-	"charcoal-grey" : (
-		"color": $ntg-charcoal-grey,
+	"territory-charcoal" : (
+		"color": $ntg-territory-charcoal,
 		"accessible-color": $white,
 	),
 	"top-end" : (
 		"color": $ntg-top-end,
 		"accessible-color": $black,
 	),
-	"bush-plum" : (
-		"color": $ntg-bush-plum,
+	"territory-dusk" : (
+		"color": $ntg-territory-dusk,
 		"accessible-color": $white,
 	),
-	"arafura-blue" : (
-		"color": $ntg-arafura-blue,
+	"the-territory" : (
+		"color": $ntg-the-territory,
 		"accessible-color": $white,
 	),
 	"white" : (
@@ -209,8 +210,8 @@ $accesible-color-definitions: (
 		"color": $ntg-ocean-blue,
 		"accessible-color": $white
 	),
-	"lime-green": (
-		"color": $ntg-lime-green,
+	"east-arnhem": (
+		"color": $ntg-east-arnhem,
 		"accessible-color": $ntg-dark-gray
 	),
 );
@@ -220,7 +221,7 @@ $accesible-color-definitions: (
 $theme-color-definitions: (
 	"territory-stone" : (
 		"primary": map.get($accesible-color-definitions, "territory-stone"),
-		"secondary": map.get($accesible-color-definitions, "olive-green"),
+		"secondary": map.get($accesible-color-definitions, "territory-forest"),
 		"tertiary": map.get($accesible-color-definitions, "grey"),
 	),
 	"dark-gray" : (
@@ -243,8 +244,8 @@ $theme-color-definitions: (
 		"secondary": map.get($accesible-color-definitions, "baby-orange"),
 		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
-	"olive-green" : (
-		"primary": map.get($accesible-color-definitions, "olive-green"),
+	"territory-forest" : (
+		"primary": map.get($accesible-color-definitions, "territory-forest"),
 		"secondary": map.get($accesible-color-definitions, "green-tree-frog"),
 		"tertiary": map.get($accesible-color-definitions, "darker-green"),
 	),
@@ -253,8 +254,8 @@ $theme-color-definitions: (
 		"secondary": map.get($accesible-color-definitions, "territory-stone"),
 		"tertiary": map.get($accesible-color-definitions, "darker-green"),
 	),
-	"baby-blue" : (
-		"primary": map.get($accesible-color-definitions, "baby-blue"),
+	"territory-sky" : (
+		"primary": map.get($accesible-color-definitions, "territory-sky"),
 		"secondary": map.get($accesible-color-definitions, "top-end"),
 		"tertiary": map.get($accesible-color-definitions, "sky-blue"),
 	),
@@ -266,20 +267,20 @@ $theme-color-definitions: (
 	"fairy-wren-7" : (
 		"primary": map.get($accesible-color-definitions, "fairy-wren-7"),
 		"secondary": map.get($accesible-color-definitions, "fairy-wren"),
-		"tertiary": map.get($accesible-color-definitions, "bush-plum"),
+		"tertiary": map.get($accesible-color-definitions, "territory-dusk"),
 	),
 	"fairy-wren" : (
 		"primary": map.get($accesible-color-definitions, "fairy-wren"),
 		"secondary": map.get($accesible-color-definitions, "fairy-wren-7"),
-		"tertiary": map.get($accesible-color-definitions, "bush-plum"),
+		"tertiary": map.get($accesible-color-definitions, "territory-dusk"),
 	),
 	"charcoal-grey-20" : (
 		"primary": map.get($accesible-color-definitions, "charcoal-grey-20"),
 		"secondary": map.get($accesible-color-definitions, "charcoal-grey-40"),
 		"tertiary": map.get($accesible-color-definitions, "charcoal-grey-60"),
 	),
-	"charcoal-grey" : (
-		"primary": map.get($accesible-color-definitions, "charcoal-grey"),
+	"territory-charcoal" : (
+		"primary": map.get($accesible-color-definitions, "territory-charcoal"),
 		"secondary": map.get($accesible-color-definitions, "white"),
 		"tertiary": map.get($accesible-color-definitions, "dark-gray"),
 	),
@@ -288,34 +289,34 @@ $theme-color-definitions: (
 		"primary": map.get($accesible-color-definitions, "top-end"),
 		"tertiary": map.get($accesible-color-definitions, "ocean-blue"),
 	),
-	"bush-plum" : (
-		"primary": map.get($accesible-color-definitions, "bush-plum"),
+	"territory-dusk" : (
+		"primary": map.get($accesible-color-definitions, "territory-dusk"),
 		"secondary": map.get($accesible-color-definitions, "fairy-wren"),
 		"tertiary": map.get($accesible-color-definitions, "dark-blue"),
 	),
 	"desert-yam-7" : (
 		"primary": map.get($accesible-color-definitions, "desert-yam-7"),
-		"secondary": map.get($accesible-color-definitions, "olive-green"),
+		"secondary": map.get($accesible-color-definitions, "territory-forest"),
 		"tertiary": map.get($accesible-color-definitions, "territory-stone"),
 	),
-	"arafura-blue" : (
-		"primary": map.get($accesible-color-definitions, "arafura-blue"),
+	"the-territory" : (
+		"primary": map.get($accesible-color-definitions, "the-territory"),
 		"secondary": map.get($accesible-color-definitions, "top-end"),
 		"tertiary": map.get($accesible-color-definitions, "darkest-blue"),
 	),
 	"white" : (
 		"primary": map.get($accesible-color-definitions, "white"),
 		"secondary": map.get($accesible-color-definitions, "territory-stone"),
-		"tertiary": map.get($accesible-color-definitions, "olive-green"),
+		"tertiary": map.get($accesible-color-definitions, "territory-forest"),
 	),
 	"desert-yam" : (
 		"primary": map.get($accesible-color-definitions, "desert-yam"),
 		"secondary": map.get($accesible-color-definitions, "red-dirt"),
 		"tertiary": map.get($accesible-color-definitions, "dark-gray"),
 	),
-	"lime-green" : (
-		"primary": map.get($accesible-color-definitions, "lime-green"),
-		"secondary": map.get($accesible-color-definitions, "olive-green"),
+	"east-arnhem" : (
+		"primary": map.get($accesible-color-definitions, "east-arnhem"),
+		"secondary": map.get($accesible-color-definitions, "territory-forest"),
 		"tertiary": map.get($accesible-color-definitions, "dark-blue"),
 	),
 );
