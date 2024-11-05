@@ -74,16 +74,12 @@
   --bs-dark-green: #1A322F;
   --bs-territory-sky: #B1E2F9;
   --bs-big-rivers: #F2A900;
-  --bs-fairy-wren-7: #F6EFF6;
-  --bs-fairy-wren: #7F1F7F;
   --bs-charcoal-grey-20: #DAD9DA;
   --bs-territory-charcoal: #454347;
   --bs-top-end: #0093B8;
   --bs-territory-dusk: #49234A;
-  --bs-desert-yam-7: #FBF2EA;
   --bs-the-territory: #1f1f5f;
   --bs-white: #fff;
-  --bs-desert-yam: #C33726;
   --bs-east-arnhem: #C5D800;
   --bs-primary-rgb: 215, 210, 203;
   --bs-secondary-rgb: 86, 106, 46;
@@ -103,16 +99,12 @@
   --bs-dark-green-rgb: 26, 50, 47;
   --bs-territory-sky-rgb: 177, 226, 249;
   --bs-big-rivers-rgb: 242, 169, 0;
-  --bs-fairy-wren-7-rgb: 246, 239, 246;
-  --bs-fairy-wren-rgb: 127, 31, 127;
   --bs-charcoal-grey-20-rgb: 218, 217, 218;
   --bs-territory-charcoal-rgb: 69, 67, 71;
   --bs-top-end-rgb: 0, 147, 184;
   --bs-territory-dusk-rgb: 73, 35, 74;
-  --bs-desert-yam-7-rgb: 251, 242, 234;
   --bs-the-territory-rgb: 31, 31, 95;
   --bs-white-rgb: 255, 255, 255;
-  --bs-desert-yam-rgb: 195, 55, 38;
   --bs-east-arnhem-rgb: 197, 216, 0;
   --bs-primary-text-emphasis: #2B292D;
   --bs-secondary-text-emphasis: #fff;
@@ -132,16 +124,12 @@
   --bs-dark-green-text-emphasis: #fff;
   --bs-territory-sky-text-emphasis: #2B292D;
   --bs-big-rivers-text-emphasis: #2B292D;
-  --bs-fairy-wren-7-text-emphasis: #2B292D;
-  --bs-fairy-wren-text-emphasis: #fff;
   --bs-charcoal-grey-20-text-emphasis: #2B292D;
   --bs-territory-charcoal-text-emphasis: #fff;
   --bs-top-end-text-emphasis: #000;
   --bs-territory-dusk-text-emphasis: #fff;
-  --bs-desert-yam-7-text-emphasis: #2B292D;
   --bs-the-territory-text-emphasis: #fff;
   --bs-white-text-emphasis: #2B292D;
-  --bs-desert-yam-text-emphasis: #fff;
   --bs-east-arnhem-text-emphasis: #2B292D;
   --bs-primary-bg-subtle: #f7f6f5;
   --bs-secondary-bg-subtle: #dde1d5;
@@ -160,16 +148,12 @@
   --bs-dark-green-bg-subtle: #a3adac;
   --bs-territory-sky-bg-subtle: #e0f3fd;
   --bs-big-rivers-bg-subtle: #fadd99;
-  --bs-fairy-wren-7-bg-subtle: #fbf9fb;
-  --bs-fairy-wren-bg-subtle: #cca5cc;
   --bs-charcoal-grey-20-bg-subtle: #f0f0f0;
   --bs-territory-charcoal-bg-subtle: #b5b4b5;
   --bs-top-end-bg-subtle: #99d4e3;
   --bs-territory-dusk-bg-subtle: #b6a7b7;
-  --bs-desert-yam-7-bg-subtle: #fdfaf7;
   --bs-the-territory-bg-subtle: #a5a5bf;
   --bs-white-bg-subtle: white;
-  --bs-desert-yam-bg-subtle: #e7afa8;
   --bs-east-arnhem-bg-subtle: #e8ef99;
   --bs-primary-border-subtle: #efedea;
   --bs-secondary-border-subtle: #bbc3ab;
@@ -188,16 +172,12 @@
   --bs-dark-green-border-subtle: #5f706d;
   --bs-territory-sky-border-subtle: #c8ebfb;
   --bs-big-rivers-border-subtle: #f6c34d;
-  --bs-fairy-wren-7-border-subtle: #f9f4f9;
-  --bs-fairy-wren-border-subtle: #a562a5;
   --bs-charcoal-grey-20-border-subtle: #e5e4e5;
   --bs-territory-charcoal-border-subtle: #7d7b7e;
   --bs-top-end-border-subtle: #4db3cd;
   --bs-territory-dusk-border-subtle: #806580;
-  --bs-desert-yam-7-border-subtle: #fcf6f0;
   --bs-the-territory-border-subtle: #62628f;
   --bs-white-border-subtle: white;
-  --bs-desert-yam-border-subtle: #d57367;
   --bs-east-arnhem-border-subtle: #d6e44d;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -2796,16 +2776,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-big-rivers-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-fairy-wren-7 {
-  color: #2B292D !important;
-  background-color: RGBA(var(--bs-fairy-wren-7-rgb), var(--bs-bg-opacity, 1)) !important;
-}
-
-.text-bg-fairy-wren {
-  color: #fff !important;
-  background-color: RGBA(var(--bs-fairy-wren-rgb), var(--bs-bg-opacity, 1)) !important;
-}
-
 .text-bg-charcoal-grey-20 {
   color: #2B292D !important;
   background-color: RGBA(var(--bs-charcoal-grey-20-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -2826,11 +2796,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   background-color: RGBA(var(--bs-territory-dusk-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-desert-yam-7 {
-  color: #2B292D !important;
-  background-color: RGBA(var(--bs-desert-yam-7-rgb), var(--bs-bg-opacity, 1)) !important;
-}
-
 .text-bg-the-territory {
   color: #fff !important;
   background-color: RGBA(var(--bs-the-territory-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -2839,11 +2804,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
 .text-bg-white {
   color: #2B292D !important;
   background-color: RGBA(var(--bs-white-rgb), var(--bs-bg-opacity, 1)) !important;
-}
-
-.text-bg-desert-yam {
-  color: #fff !important;
-  background-color: RGBA(var(--bs-desert-yam-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-east-arnhem {
@@ -3049,28 +3009,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(245, 186, 51, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-fairy-wren-7 {
-  color: RGBA(var(--bs-fairy-wren-7-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-fairy-wren-7-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-fairy-wren-7-rgb), var(--bs-link-underline-opacity, 1)) !important;
-}
-.link-fairy-wren-7:hover, .link-fairy-wren-7:focus {
-  color: RGBA(248, 242, 248, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(248, 242, 248, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(248, 242, 248, var(--bs-link-underline-opacity, 1)) !important;
-}
-
-.link-fairy-wren {
-  color: RGBA(var(--bs-fairy-wren-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-fairy-wren-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-fairy-wren-rgb), var(--bs-link-underline-opacity, 1)) !important;
-}
-.link-fairy-wren:hover, .link-fairy-wren:focus {
-  color: RGBA(102, 25, 102, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(102, 25, 102, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(102, 25, 102, var(--bs-link-underline-opacity, 1)) !important;
-}
-
 .link-charcoal-grey-20 {
   color: RGBA(var(--bs-charcoal-grey-20-rgb), var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(var(--bs-charcoal-grey-20-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -3115,17 +3053,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
           text-decoration-color: RGBA(58, 28, 59, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-desert-yam-7 {
-  color: RGBA(var(--bs-desert-yam-7-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-desert-yam-7-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-desert-yam-7-rgb), var(--bs-link-underline-opacity, 1)) !important;
-}
-.link-desert-yam-7:hover, .link-desert-yam-7:focus {
-  color: RGBA(252, 245, 238, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(252, 245, 238, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(252, 245, 238, var(--bs-link-underline-opacity, 1)) !important;
-}
-
 .link-the-territory {
   color: RGBA(var(--bs-the-territory-rgb), var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -3146,17 +3073,6 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
   -webkit-text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
           text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
-}
-
-.link-desert-yam {
-  color: RGBA(var(--bs-desert-yam-rgb), var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(var(--bs-desert-yam-rgb), var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(var(--bs-desert-yam-rgb), var(--bs-link-underline-opacity, 1)) !important;
-}
-.link-desert-yam:hover, .link-desert-yam:focus {
-  color: RGBA(156, 44, 30, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(156, 44, 30, var(--bs-link-underline-opacity, 1)) !important;
-          text-decoration-color: RGBA(156, 44, 30, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-east-arnhem {
@@ -5494,40 +5410,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #F2A900;
 }
 
-.btn-fairy-wren-7 {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fbf9fb;
-  --bs-btn-hover-border-color: #fbf9fb;
-  --bs-btn-focus-shadow-rgb: 216, 209, 216;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #f8f2f8;
-  --bs-btn-active-border-color: #f7f1f7;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #F6EFF6;
-  --bs-btn-disabled-border-color: #F6EFF6;
-}
-
-.btn-fairy-wren {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #330c33;
-  --bs-btn-hover-border-color: #330c33;
-  --bs-btn-focus-shadow-rgb: 146, 65, 146;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #661966;
-  --bs-btn-active-border-color: #5f175f;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #7F1F7F;
-  --bs-btn-disabled-border-color: #7F1F7F;
-}
-
 .btn-charcoal-grey-20 {
   --bs-btn-color: #2B292D;
   --bs-btn-bg: #DAD9DA;
@@ -5596,23 +5478,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #49234A;
 }
 
-.btn-desert-yam-7 {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fdfaf7;
-  --bs-btn-hover-border-color: #fdfaf7;
-  --bs-btn-focus-shadow-rgb: 220, 212, 206;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fcf5ee;
-  --bs-btn-active-border-color: #fbf3ec;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #FBF2EA;
-  --bs-btn-disabled-border-color: #FBF2EA;
-}
-
 .btn-the-territory {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1f1f5f;
@@ -5645,23 +5510,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #2B292D;
   --bs-btn-disabled-bg: #fff;
   --bs-btn-disabled-border-color: #fff;
-}
-
-.btn-desert-yam {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #C33726;
-  --bs-btn-border-color: #C33726;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4e160f;
-  --bs-btn-hover-border-color: #4e160f;
-  --bs-btn-focus-shadow-rgb: 204, 85, 71;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #9c2c1e;
-  --bs-btn-active-border-color: #92291d;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #C33726;
-  --bs-btn-disabled-border-color: #C33726;
 }
 
 .btn-east-arnhem {
@@ -5987,40 +5835,6 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-fairy-wren-7 {
-  --bs-btn-color: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #F6EFF6;
-  --bs-btn-hover-border-color: #F6EFF6;
-  --bs-btn-focus-shadow-rgb: 246, 239, 246;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #F6EFF6;
-  --bs-btn-active-border-color: #F6EFF6;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #F6EFF6;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #F6EFF6;
-  --bs-gradient: none;
-}
-
-.btn-outline-fairy-wren {
-  --bs-btn-color: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #7F1F7F;
-  --bs-btn-hover-border-color: #7F1F7F;
-  --bs-btn-focus-shadow-rgb: 127, 31, 127;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #7F1F7F;
-  --bs-btn-active-border-color: #7F1F7F;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #7F1F7F;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #7F1F7F;
-  --bs-gradient: none;
-}
-
 .btn-outline-charcoal-grey-20 {
   --bs-btn-color: #DAD9DA;
   --bs-btn-border-color: #DAD9DA;
@@ -6089,23 +5903,6 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-desert-yam-7 {
-  --bs-btn-color: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #FBF2EA;
-  --bs-btn-hover-border-color: #FBF2EA;
-  --bs-btn-focus-shadow-rgb: 251, 242, 234;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #FBF2EA;
-  --bs-btn-active-border-color: #FBF2EA;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FBF2EA;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FBF2EA;
-  --bs-gradient: none;
-}
-
 .btn-outline-the-territory {
   --bs-btn-color: #1f1f5f;
   --bs-btn-border-color: #1f1f5f;
@@ -6137,23 +5934,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-.btn-outline-desert-yam {
-  --bs-btn-color: #C33726;
-  --bs-btn-border-color: #C33726;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #C33726;
-  --bs-btn-hover-border-color: #C33726;
-  --bs-btn-focus-shadow-rgb: 195, 55, 38;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #C33726;
-  --bs-btn-active-border-color: #C33726;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #C33726;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #C33726;
   --bs-gradient: none;
 }
 
@@ -7073,20 +6853,6 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-big-rivers-text-emphasis);
 }
 
-.alert-fairy-wren-7 {
-  --bs-alert-color: var(--bs-fairy-wren-7-text-emphasis);
-  --bs-alert-bg: var(--bs-fairy-wren-7-bg-subtle);
-  --bs-alert-border-color: var(--bs-fairy-wren-7-border-subtle);
-  --bs-alert-link-color: var(--bs-fairy-wren-7-text-emphasis);
-}
-
-.alert-fairy-wren {
-  --bs-alert-color: var(--bs-fairy-wren-text-emphasis);
-  --bs-alert-bg: var(--bs-fairy-wren-bg-subtle);
-  --bs-alert-border-color: var(--bs-fairy-wren-border-subtle);
-  --bs-alert-link-color: var(--bs-fairy-wren-text-emphasis);
-}
-
 .alert-charcoal-grey-20 {
   --bs-alert-color: var(--bs-charcoal-grey-20-text-emphasis);
   --bs-alert-bg: var(--bs-charcoal-grey-20-bg-subtle);
@@ -7115,13 +6881,6 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-territory-dusk-text-emphasis);
 }
 
-.alert-desert-yam-7 {
-  --bs-alert-color: var(--bs-desert-yam-7-text-emphasis);
-  --bs-alert-bg: var(--bs-desert-yam-7-bg-subtle);
-  --bs-alert-border-color: var(--bs-desert-yam-7-border-subtle);
-  --bs-alert-link-color: var(--bs-desert-yam-7-text-emphasis);
-}
-
 .alert-the-territory {
   --bs-alert-color: var(--bs-the-territory-text-emphasis);
   --bs-alert-bg: var(--bs-the-territory-bg-subtle);
@@ -7134,13 +6893,6 @@ textarea.form-control-lg {
   --bs-alert-bg: var(--bs-white-bg-subtle);
   --bs-alert-border-color: var(--bs-white-border-subtle);
   --bs-alert-link-color: var(--bs-white-text-emphasis);
-}
-
-.alert-desert-yam {
-  --bs-alert-color: var(--bs-desert-yam-text-emphasis);
-  --bs-alert-bg: var(--bs-desert-yam-bg-subtle);
-  --bs-alert-border-color: var(--bs-desert-yam-border-subtle);
-  --bs-alert-link-color: var(--bs-desert-yam-text-emphasis);
 }
 
 .alert-east-arnhem {
@@ -8227,14 +7979,6 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-big-rivers-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-fairy-wren-7 {
-  --bs-focus-ring-color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-focus-ring-opacity));
-}
-
-.focus-ring-fairy-wren {
-  --bs-focus-ring-color: rgba(var(--bs-fairy-wren-rgb), var(--bs-focus-ring-opacity));
-}
-
 .focus-ring-charcoal-grey-20 {
   --bs-focus-ring-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-focus-ring-opacity));
 }
@@ -8251,20 +7995,12 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-desert-yam-7 {
-  --bs-focus-ring-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-focus-ring-opacity));
-}
-
 .focus-ring-the-territory {
   --bs-focus-ring-color: rgba(var(--bs-the-territory-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-white {
   --bs-focus-ring-color: rgba(var(--bs-white-rgb), var(--bs-focus-ring-opacity));
-}
-
-.focus-ring-desert-yam {
-  --bs-focus-ring-color: rgba(var(--bs-desert-yam-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-east-arnhem {
@@ -8484,16 +8220,6 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-big-rivers-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-fairy-wren-7 {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-border-opacity)) !important;
-}
-
-.border-fairy-wren {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-fairy-wren-rgb), var(--bs-border-opacity)) !important;
-}
-
 .border-charcoal-grey-20 {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-border-opacity)) !important;
@@ -8514,11 +8240,6 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-desert-yam-7 {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-border-opacity)) !important;
-}
-
 .border-the-territory {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-the-territory-rgb), var(--bs-border-opacity)) !important;
@@ -8527,11 +8248,6 @@ textarea.form-control-lg {
 .border-white {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
-}
-
-.border-desert-yam {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-desert-yam-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-east-arnhem {
@@ -10137,16 +9853,6 @@ textarea.form-control-lg {
   color: rgba(var(--bs-big-rivers-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-fairy-wren-7 {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-fairy-wren {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-fairy-wren-rgb), var(--bs-text-opacity)) !important;
-}
-
 .text-charcoal-grey-20 {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-text-opacity)) !important;
@@ -10167,11 +9873,6 @@ textarea.form-control-lg {
   color: rgba(var(--bs-territory-dusk-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-desert-yam-7 {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-text-opacity)) !important;
-}
-
 .text-the-territory {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-the-territory-rgb), var(--bs-text-opacity)) !important;
@@ -10180,11 +9881,6 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-desert-yam {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-desert-yam-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-east-arnhem {
@@ -10907,18 +10603,6 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-big-rivers-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-fairy-wren-7 {
-  --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-link-underline-opacity)) !important;
-}
-
-.link-underline-fairy-wren {
-  --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-fairy-wren-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-fairy-wren-rgb), var(--bs-link-underline-opacity)) !important;
-}
-
 .link-underline-charcoal-grey-20 {
   --bs-link-underline-opacity: 1;
   -webkit-text-decoration-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-link-underline-opacity)) !important;
@@ -10943,12 +10627,6 @@ textarea.form-control-lg {
           text-decoration-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-desert-yam-7 {
-  --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-link-underline-opacity)) !important;
-}
-
 .link-underline-the-territory {
   --bs-link-underline-opacity: 1;
   -webkit-text-decoration-color: rgba(var(--bs-the-territory-rgb), var(--bs-link-underline-opacity)) !important;
@@ -10959,12 +10637,6 @@ textarea.form-control-lg {
   --bs-link-underline-opacity: 1;
   -webkit-text-decoration-color: rgba(var(--bs-white-rgb), var(--bs-link-underline-opacity)) !important;
           text-decoration-color: rgba(var(--bs-white-rgb), var(--bs-link-underline-opacity)) !important;
-}
-
-.link-underline-desert-yam {
-  --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgba(var(--bs-desert-yam-rgb), var(--bs-link-underline-opacity)) !important;
-          text-decoration-color: rgba(var(--bs-desert-yam-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-east-arnhem {
@@ -11117,16 +10789,6 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-big-rivers-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-fairy-wren-7 {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-fairy-wren-7-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-fairy-wren {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-fairy-wren-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .bg-charcoal-grey-20 {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-charcoal-grey-20-rgb), var(--bs-bg-opacity)) !important;
@@ -11147,11 +10809,6 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-territory-dusk-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-desert-yam-7 {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-desert-yam-7-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .bg-the-territory {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-the-territory-rgb), var(--bs-bg-opacity)) !important;
@@ -11160,11 +10817,6 @@ textarea.form-control-lg {
 .bg-white {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-desert-yam {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-desert-yam-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-east-arnhem {
@@ -11285,14 +10937,6 @@ textarea.form-control-lg {
   background-color: var(--bs-big-rivers-bg-subtle) !important;
 }
 
-.bg-fairy-wren-7-subtle {
-  background-color: var(--bs-fairy-wren-7-bg-subtle) !important;
-}
-
-.bg-fairy-wren-subtle {
-  background-color: var(--bs-fairy-wren-bg-subtle) !important;
-}
-
 .bg-charcoal-grey-20-subtle {
   background-color: var(--bs-charcoal-grey-20-bg-subtle) !important;
 }
@@ -11309,20 +10953,12 @@ textarea.form-control-lg {
   background-color: var(--bs-territory-dusk-bg-subtle) !important;
 }
 
-.bg-desert-yam-7-subtle {
-  background-color: var(--bs-desert-yam-7-bg-subtle) !important;
-}
-
 .bg-the-territory-subtle {
   background-color: var(--bs-the-territory-bg-subtle) !important;
 }
 
 .bg-white-subtle {
   background-color: var(--bs-white-bg-subtle) !important;
-}
-
-.bg-desert-yam-subtle {
-  background-color: var(--bs-desert-yam-bg-subtle) !important;
 }
 
 .bg-east-arnhem-subtle {
@@ -16964,16 +16600,6 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 43, 41, 45;
 }
 
-[data-bs-theme=fairy-wren-7] {
-  --bs-body-color: #2B292D;
-  --bs-body-color-rgb: 43, 41, 45;
-}
-
-[data-bs-theme=fairy-wren] {
-  --bs-body-color: #fff;
-  --bs-body-color-rgb: 255, 255, 255;
-}
-
 [data-bs-theme=charcoal-grey-20] {
   --bs-body-color: #2B292D;
   --bs-body-color-rgb: 43, 41, 45;
@@ -16994,11 +16620,6 @@ textarea.form-control-lg {
   --bs-body-color-rgb: 255, 255, 255;
 }
 
-[data-bs-theme=desert-yam-7] {
-  --bs-body-color: #2B292D;
-  --bs-body-color-rgb: 43, 41, 45;
-}
-
 [data-bs-theme=the-territory] {
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
@@ -17007,11 +16628,6 @@ textarea.form-control-lg {
 [data-bs-theme=white] {
   --bs-body-color: #2B292D;
   --bs-body-color-rgb: 43, 41, 45;
-}
-
-[data-bs-theme=desert-yam] {
-  --bs-body-color: #fff;
-  --bs-body-color-rgb: 255, 255, 255;
 }
 
 [data-bs-theme=east-arnhem] {
@@ -17389,88 +17005,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=fairy-wren-7] {
-    --current-theme-main: #F6EFF6;
-    --current-theme-color: #F6EFF6;
-    --current-theme-color-rgb: 246, 239, 246;
-    --current-theme-color-darker: #ebdbeb;
-    --current-theme-color-darker-text: #2B292D;
-    --current-theme-color-lighter: #fdfcfd;
-    --current-theme-color-lighter-text: #2B292D;
-    --current-theme-text-color: #2B292D;
-    --current-theme-text-color-rgb: 43, 41, 45;
-    --current-theme-text-color-reverse: #fff;
-    --current-theme-link-color: #2B292D;
-    --current-theme-link-color-rgb: 43, 41, 45;
-    --current-theme-link-hover-color: #2B292D;
-    --current-theme-link-hover-color-rgb: 43, 41, 45;
-    --current-theme-border-subtle: #f9f4f9;
-    --current-theme-bg-subtle: #fbf9fb;
-  }
-}
-[data-bs-theme=fairy-wren-7] .btn-outline-default, [data-bs-theme=fairy-wren-7] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren-7] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren-7] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23F6EFF6' /%3e%3c/svg%3e");
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
-}
-
-@media not print {
-  [data-bs-theme=fairy-wren] {
-    --current-theme-main: #7F1F7F;
-    --current-theme-color: #7F1F7F;
-    --current-theme-color-rgb: 127, 31, 127;
-    --current-theme-color-darker: #661966;
-    --current-theme-color-darker-text: #fff;
-    --current-theme-color-lighter: #8f238f;
-    --current-theme-color-lighter-text: #fff;
-    --current-theme-text-color: #fff;
-    --current-theme-text-color-rgb: 255, 255, 255;
-    --current-theme-text-color-reverse: #2B292D;
-    --current-theme-link-color: #fff;
-    --current-theme-link-color-rgb: 255, 255, 255;
-    --current-theme-link-hover-color: #fff;
-    --current-theme-link-hover-color-rgb: 255, 255, 255;
-    --current-theme-border-subtle: #a562a5;
-    --current-theme-bg-subtle: #cca5cc;
-  }
-}
-[data-bs-theme=fairy-wren] .btn-outline-default, [data-bs-theme=fairy-wren] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%237F1F7F' /%3e%3c/svg%3e");
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
-}
-
-@media not print {
   [data-bs-theme=charcoal-grey-20] {
     --current-theme-main: #DAD9DA;
     --current-theme-color: #DAD9DA;
@@ -17635,47 +17169,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=desert-yam-7] {
-    --current-theme-main: #FBF2EA;
-    --current-theme-color: #FBF2EA;
-    --current-theme-color-rgb: 251, 242, 234;
-    --current-theme-color-darker: #f6e2d0;
-    --current-theme-color-darker-text: #2B292D;
-    --current-theme-color-lighter: #fefdfb;
-    --current-theme-color-lighter-text: #2B292D;
-    --current-theme-text-color: #2B292D;
-    --current-theme-text-color-rgb: 43, 41, 45;
-    --current-theme-text-color-reverse: #fff;
-    --current-theme-link-color: #2B292D;
-    --current-theme-link-color-rgb: 43, 41, 45;
-    --current-theme-link-hover-color: #2B292D;
-    --current-theme-link-hover-color-rgb: 43, 41, 45;
-    --current-theme-border-subtle: #fcf6f0;
-    --current-theme-bg-subtle: #fdfaf7;
-  }
-}
-[data-bs-theme=desert-yam-7] .btn-outline-default, [data-bs-theme=desert-yam-7] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam-7] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam-7] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23FBF2EA' /%3e%3c/svg%3e");
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
-}
-
-@media not print {
   [data-bs-theme=the-territory] {
     --current-theme-main: #1f1f5f;
     --current-theme-color: #1f1f5f;
@@ -17754,47 +17247,6 @@ textarea.form-control-lg {
 }
 [data-bs-theme=white] .accordion {
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23fff' /%3e%3c/svg%3e");
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
-}
-
-@media not print {
-  [data-bs-theme=desert-yam] {
-    --current-theme-main: #C33726;
-    --current-theme-color: #C33726;
-    --current-theme-color-rgb: 195, 55, 38;
-    --current-theme-color-darker: #a93021;
-    --current-theme-color-darker-text: #fff;
-    --current-theme-color-lighter: #d43c29;
-    --current-theme-color-lighter-text: #fff;
-    --current-theme-text-color: #fff;
-    --current-theme-text-color-rgb: 255, 255, 255;
-    --current-theme-text-color-reverse: #2B292D;
-    --current-theme-link-color: #fff;
-    --current-theme-link-color-rgb: 255, 255, 255;
-    --current-theme-link-hover-color: #fff;
-    --current-theme-link-hover-color-rgb: 255, 255, 255;
-    --current-theme-border-subtle: #d57367;
-    --current-theme-bg-subtle: #e7afa8;
-  }
-}
-[data-bs-theme=desert-yam] .btn-outline-default, [data-bs-theme=desert-yam] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam] .accordion {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23C33726' /%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
@@ -18443,140 +17895,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=fairy-wren-7] {
-    --current-theme-primary: #F6EFF6;
-    --current-theme-primary-darker: #ebdbeb;
-    --current-theme-primary-darker-text: #2B292D;
-    --current-theme-primary-lighter: #fdfcfd;
-    --current-theme-primary-lighter-text: #2B292D;
-    --current-theme-primary-rgb: 246, 239, 246;
-    --current-theme-primary-text: #2B292D;
-    --current-theme-primary-text-rgb: 43, 41, 45;
-    --current-theme-primary-text-reverse: #fff;
-    --current-theme-primary-text-reverse-rgb: 255, 255, 255;
-    --current-theme-primary-link-color: #2B292D;
-    --current-theme-primary-link-color-rgb: 43, 41, 45;
-    --current-theme-primary-link-hover-color: #2B292D;
-    --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
-  }
-}
-[data-bs-theme=fairy-wren-7] .btn-primary {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fbf9fb;
-  --bs-btn-hover-border-color: #fbf9fb;
-  --bs-btn-focus-shadow-rgb: 216, 209, 216;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #f8f2f8;
-  --bs-btn-active-border-color: #f7f1f7;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #F6EFF6;
-  --bs-btn-disabled-border-color: #F6EFF6;
-}
-[data-bs-theme=fairy-wren-7] .btn-outline-primary {
-  --bs-btn-color: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #F6EFF6;
-  --bs-btn-hover-border-color: #F6EFF6;
-  --bs-btn-focus-shadow-rgb: 246, 239, 246;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #F6EFF6;
-  --bs-btn-active-border-color: #F6EFF6;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #F6EFF6;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #F6EFF6;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren-7] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=fairy-wren-7] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren-7] [data-bs-theme=primary] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=fairy-wren] {
-    --current-theme-primary: #7F1F7F;
-    --current-theme-primary-darker: #661966;
-    --current-theme-primary-darker-text: #fff;
-    --current-theme-primary-lighter: #8f238f;
-    --current-theme-primary-lighter-text: #fff;
-    --current-theme-primary-rgb: 127, 31, 127;
-    --current-theme-primary-text: #fff;
-    --current-theme-primary-text-rgb: 255, 255, 255;
-    --current-theme-primary-text-reverse: #2B292D;
-    --current-theme-primary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-primary-link-color: #fff;
-    --current-theme-primary-link-color-rgb: 255, 255, 255;
-    --current-theme-primary-link-hover-color: #fff;
-    --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=fairy-wren] .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #330c33;
-  --bs-btn-hover-border-color: #330c33;
-  --bs-btn-focus-shadow-rgb: 146, 65, 146;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #661966;
-  --bs-btn-active-border-color: #5f175f;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #7F1F7F;
-  --bs-btn-disabled-border-color: #7F1F7F;
-}
-[data-bs-theme=fairy-wren] .btn-outline-primary {
-  --bs-btn-color: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #7F1F7F;
-  --bs-btn-hover-border-color: #7F1F7F;
-  --bs-btn-focus-shadow-rgb: 127, 31, 127;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #7F1F7F;
-  --bs-btn-active-border-color: #7F1F7F;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #7F1F7F;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #7F1F7F;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=fairy-wren] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren] [data-bs-theme=primary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-@media not print {
   [data-bs-theme=charcoal-grey-20] {
     --current-theme-primary: #DAD9DA;
     --current-theme-primary-darker: #cbc9cb;
@@ -18845,73 +18163,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=desert-yam-7] {
-    --current-theme-primary: #FBF2EA;
-    --current-theme-primary-darker: #f6e2d0;
-    --current-theme-primary-darker-text: #2B292D;
-    --current-theme-primary-lighter: #fefdfb;
-    --current-theme-primary-lighter-text: #2B292D;
-    --current-theme-primary-rgb: 251, 242, 234;
-    --current-theme-primary-text: #2B292D;
-    --current-theme-primary-text-rgb: 43, 41, 45;
-    --current-theme-primary-text-reverse: #fff;
-    --current-theme-primary-text-reverse-rgb: 255, 255, 255;
-    --current-theme-primary-link-color: #2B292D;
-    --current-theme-primary-link-color-rgb: 43, 41, 45;
-    --current-theme-primary-link-hover-color: #2B292D;
-    --current-theme-primary-link-hover-color-rgb: 43, 41, 45;
-  }
-}
-[data-bs-theme=desert-yam-7] .btn-primary {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fdfaf7;
-  --bs-btn-hover-border-color: #fdfaf7;
-  --bs-btn-focus-shadow-rgb: 220, 212, 206;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fcf5ee;
-  --bs-btn-active-border-color: #fbf3ec;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #FBF2EA;
-  --bs-btn-disabled-border-color: #FBF2EA;
-}
-[data-bs-theme=desert-yam-7] .btn-outline-primary {
-  --bs-btn-color: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #FBF2EA;
-  --bs-btn-hover-border-color: #FBF2EA;
-  --bs-btn-focus-shadow-rgb: 251, 242, 234;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #FBF2EA;
-  --bs-btn-active-border-color: #FBF2EA;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FBF2EA;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FBF2EA;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam-7] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=desert-yam-7] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam-7] [data-bs-theme=primary] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
   [data-bs-theme=the-territory] {
     --current-theme-primary: #1f1f5f;
     --current-theme-primary-darker: #171748;
@@ -19042,73 +18293,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #2B292D;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=desert-yam] {
-    --current-theme-primary: #C33726;
-    --current-theme-primary-darker: #a93021;
-    --current-theme-primary-darker-text: #fff;
-    --current-theme-primary-lighter: #d43c29;
-    --current-theme-primary-lighter-text: #fff;
-    --current-theme-primary-rgb: 195, 55, 38;
-    --current-theme-primary-text: #fff;
-    --current-theme-primary-text-rgb: 255, 255, 255;
-    --current-theme-primary-text-reverse: #2B292D;
-    --current-theme-primary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-primary-link-color: #fff;
-    --current-theme-primary-link-color-rgb: 255, 255, 255;
-    --current-theme-primary-link-hover-color: #fff;
-    --current-theme-primary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=desert-yam] .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #C33726;
-  --bs-btn-border-color: #C33726;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4e160f;
-  --bs-btn-hover-border-color: #4e160f;
-  --bs-btn-focus-shadow-rgb: 204, 85, 71;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #9c2c1e;
-  --bs-btn-active-border-color: #92291d;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #C33726;
-  --bs-btn-disabled-border-color: #C33726;
-}
-[data-bs-theme=desert-yam] .btn-outline-primary {
-  --bs-btn-color: #C33726;
-  --bs-btn-border-color: #C33726;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #C33726;
-  --bs-btn-hover-border-color: #C33726;
-  --bs-btn-focus-shadow-rgb: 195, 55, 38;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #C33726;
-  --bs-btn-active-border-color: #C33726;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #C33726;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #C33726;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam] [data-bs-theme=primary] .btn-outline-default, [data-bs-theme=desert-yam] [data-bs-theme=primary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam] [data-bs-theme=primary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
 
@@ -19783,140 +18967,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=fairy-wren-7] {
-    --current-theme-secondary: #7F1F7F;
-    --current-theme-secondary-darker: #661966;
-    --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #8f238f;
-    --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 127, 31, 127;
-    --current-theme-secondary-text: #fff;
-    --current-theme-secondary-text-rgb: 255, 255, 255;
-    --current-theme-secondary-text-reverse: #2B292D;
-    --current-theme-secondary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-secondary-link-color: #fff;
-    --current-theme-secondary-link-color-rgb: 255, 255, 255;
-    --current-theme-secondary-link-hover-color: #fff;
-    --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=fairy-wren-7] .btn-secondary, [data-bs-theme=fairy-wren-7] #content input[type=reset], #content [data-bs-theme=fairy-wren-7] input[type=reset], [data-bs-theme=fairy-wren-7] #content input[type=submit], #content [data-bs-theme=fairy-wren-7] input[type=submit] {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #330c33;
-  --bs-btn-hover-border-color: #330c33;
-  --bs-btn-focus-shadow-rgb: 146, 65, 146;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #661966;
-  --bs-btn-active-border-color: #5f175f;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #7F1F7F;
-  --bs-btn-disabled-border-color: #7F1F7F;
-}
-[data-bs-theme=fairy-wren-7] .btn-outline-secondary {
-  --bs-btn-color: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #7F1F7F;
-  --bs-btn-hover-border-color: #7F1F7F;
-  --bs-btn-focus-shadow-rgb: 127, 31, 127;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #7F1F7F;
-  --bs-btn-active-border-color: #7F1F7F;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #7F1F7F;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #7F1F7F;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren-7] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=fairy-wren-7] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren-7] [data-bs-theme=secondary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=fairy-wren] {
-    --current-theme-secondary: #F6EFF6;
-    --current-theme-secondary-darker: #ebdbeb;
-    --current-theme-secondary-darker-text: #2B292D;
-    --current-theme-secondary-lighter: #fdfcfd;
-    --current-theme-secondary-lighter-text: #2B292D;
-    --current-theme-secondary-rgb: 246, 239, 246;
-    --current-theme-secondary-text: #2B292D;
-    --current-theme-secondary-text-rgb: 43, 41, 45;
-    --current-theme-secondary-text-reverse: #fff;
-    --current-theme-secondary-text-reverse-rgb: 255, 255, 255;
-    --current-theme-secondary-link-color: #2B292D;
-    --current-theme-secondary-link-color-rgb: 43, 41, 45;
-    --current-theme-secondary-link-hover-color: #2B292D;
-    --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
-  }
-}
-[data-bs-theme=fairy-wren] .btn-secondary, [data-bs-theme=fairy-wren] #content input[type=reset], #content [data-bs-theme=fairy-wren] input[type=reset], [data-bs-theme=fairy-wren] #content input[type=submit], #content [data-bs-theme=fairy-wren] input[type=submit] {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fbf9fb;
-  --bs-btn-hover-border-color: #fbf9fb;
-  --bs-btn-focus-shadow-rgb: 216, 209, 216;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #f8f2f8;
-  --bs-btn-active-border-color: #f7f1f7;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #F6EFF6;
-  --bs-btn-disabled-border-color: #F6EFF6;
-}
-[data-bs-theme=fairy-wren] .btn-outline-secondary {
-  --bs-btn-color: #F6EFF6;
-  --bs-btn-border-color: #F6EFF6;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #F6EFF6;
-  --bs-btn-hover-border-color: #F6EFF6;
-  --bs-btn-focus-shadow-rgb: 246, 239, 246;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #F6EFF6;
-  --bs-btn-active-border-color: #F6EFF6;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #F6EFF6;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #F6EFF6;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=fairy-wren] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren] [data-bs-theme=secondary] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
   [data-bs-theme=charcoal-grey-20] {
     --current-theme-secondary: #B5B4B5;
     --current-theme-secondary-darker: #a6a5a6;
@@ -20052,79 +19102,12 @@ textarea.form-control-lg {
 
 @media not print {
   [data-bs-theme=top-end] {
-    --current-theme-secondary: #FBF2EA;
-    --current-theme-secondary-darker: #f6e2d0;
-    --current-theme-secondary-darker-text: #2B292D;
-    --current-theme-secondary-lighter: #fefdfb;
-    --current-theme-secondary-lighter-text: #2B292D;
-    --current-theme-secondary-rgb: 251, 242, 234;
-    --current-theme-secondary-text: #2B292D;
-    --current-theme-secondary-text-rgb: 43, 41, 45;
-    --current-theme-secondary-text-reverse: #fff;
-    --current-theme-secondary-text-reverse-rgb: 255, 255, 255;
-    --current-theme-secondary-link-color: #2B292D;
-    --current-theme-secondary-link-color-rgb: 43, 41, 45;
-    --current-theme-secondary-link-hover-color: #2B292D;
-    --current-theme-secondary-link-hover-color-rgb: 43, 41, 45;
-  }
-}
-[data-bs-theme=top-end] .btn-secondary, [data-bs-theme=top-end] #content input[type=reset], #content [data-bs-theme=top-end] input[type=reset], [data-bs-theme=top-end] #content input[type=submit], #content [data-bs-theme=top-end] input[type=submit] {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fdfaf7;
-  --bs-btn-hover-border-color: #fdfaf7;
-  --bs-btn-focus-shadow-rgb: 220, 212, 206;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fcf5ee;
-  --bs-btn-active-border-color: #fbf3ec;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #FBF2EA;
-  --bs-btn-disabled-border-color: #FBF2EA;
-}
-[data-bs-theme=top-end] .btn-outline-secondary {
-  --bs-btn-color: #FBF2EA;
-  --bs-btn-border-color: #FBF2EA;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #FBF2EA;
-  --bs-btn-hover-border-color: #FBF2EA;
-  --bs-btn-focus-shadow-rgb: 251, 242, 234;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #FBF2EA;
-  --bs-btn-active-border-color: #FBF2EA;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FBF2EA;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FBF2EA;
-  --bs-gradient: none;
-}
-[data-bs-theme=top-end] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=top-end] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=top-end] [data-bs-theme=secondary] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=territory-dusk] {
-    --current-theme-secondary: #7F1F7F;
-    --current-theme-secondary-darker: #661966;
+    --current-theme-secondary: #1f1f5f;
+    --current-theme-secondary-darker: #171748;
     --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #8f238f;
+    --current-theme-secondary-lighter: #24246e;
     --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 127, 31, 127;
+    --current-theme-secondary-rgb: 31, 31, 95;
     --current-theme-secondary-text: #fff;
     --current-theme-secondary-text-rgb: 255, 255, 255;
     --current-theme-secondary-text-reverse: #2B292D;
@@ -20135,39 +19118,39 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=territory-dusk] .btn-secondary, [data-bs-theme=territory-dusk] #content input[type=reset], #content [data-bs-theme=territory-dusk] input[type=reset], [data-bs-theme=territory-dusk] #content input[type=submit], #content [data-bs-theme=territory-dusk] input[type=submit] {
+[data-bs-theme=top-end] .btn-secondary, [data-bs-theme=top-end] #content input[type=reset], #content [data-bs-theme=top-end] input[type=reset], [data-bs-theme=top-end] #content input[type=submit], #content [data-bs-theme=top-end] input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
+  --bs-btn-bg: #1f1f5f;
+  --bs-btn-border-color: #1f1f5f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #330c33;
-  --bs-btn-hover-border-color: #330c33;
-  --bs-btn-focus-shadow-rgb: 146, 65, 146;
+  --bs-btn-hover-bg: #0c0c26;
+  --bs-btn-hover-border-color: #0c0c26;
+  --bs-btn-focus-shadow-rgb: 65, 65, 119;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #661966;
-  --bs-btn-active-border-color: #5f175f;
+  --bs-btn-active-bg: #19194c;
+  --bs-btn-active-border-color: #171747;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #7F1F7F;
-  --bs-btn-disabled-border-color: #7F1F7F;
+  --bs-btn-disabled-bg: #1f1f5f;
+  --bs-btn-disabled-border-color: #1f1f5f;
 }
-[data-bs-theme=territory-dusk] .btn-outline-secondary {
-  --bs-btn-color: #7F1F7F;
-  --bs-btn-border-color: #7F1F7F;
+[data-bs-theme=top-end] .btn-outline-secondary {
+  --bs-btn-color: #1f1f5f;
+  --bs-btn-border-color: #1f1f5f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #7F1F7F;
-  --bs-btn-hover-border-color: #7F1F7F;
-  --bs-btn-focus-shadow-rgb: 127, 31, 127;
+  --bs-btn-hover-bg: #1f1f5f;
+  --bs-btn-hover-border-color: #1f1f5f;
+  --bs-btn-focus-shadow-rgb: 31, 31, 95;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #7F1F7F;
-  --bs-btn-active-border-color: #7F1F7F;
+  --bs-btn-active-bg: #1f1f5f;
+  --bs-btn-active-border-color: #1f1f5f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #7F1F7F;
+  --bs-btn-disabled-color: #1f1f5f;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #7F1F7F;
+  --bs-btn-disabled-border-color: #1f1f5f;
   --bs-gradient: none;
 }
-[data-bs-theme=territory-dusk] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=top-end] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=top-end] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=top-end] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20185,13 +19168,13 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=desert-yam-7] {
-    --current-theme-secondary: #566A2E;
-    --current-theme-secondary-darker: #455525;
+  [data-bs-theme=territory-dusk] {
+    --current-theme-secondary: #092522;
+    --current-theme-secondary-darker: #030c0b;
     --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #627834;
+    --current-theme-secondary-lighter: #0d3531;
     --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 86, 106, 46;
+    --current-theme-secondary-rgb: 9, 37, 34;
     --current-theme-secondary-text: #fff;
     --current-theme-secondary-text-rgb: 255, 255, 255;
     --current-theme-secondary-text-reverse: #2B292D;
@@ -20202,39 +19185,39 @@ textarea.form-control-lg {
     --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
   }
 }
-[data-bs-theme=desert-yam-7] .btn-secondary, [data-bs-theme=desert-yam-7] #content input[type=reset], #content [data-bs-theme=desert-yam-7] input[type=reset], [data-bs-theme=desert-yam-7] #content input[type=submit], #content [data-bs-theme=desert-yam-7] input[type=submit] {
+[data-bs-theme=territory-dusk] .btn-secondary, [data-bs-theme=territory-dusk] #content input[type=reset], #content [data-bs-theme=territory-dusk] input[type=reset], [data-bs-theme=territory-dusk] #content input[type=submit], #content [data-bs-theme=territory-dusk] input[type=submit] {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #566A2E;
-  --bs-btn-border-color: #566A2E;
+  --bs-btn-bg: #092522;
+  --bs-btn-border-color: #092522;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #222a12;
-  --bs-btn-hover-border-color: #222a12;
-  --bs-btn-focus-shadow-rgb: 111, 128, 77;
+  --bs-btn-hover-bg: #040f0e;
+  --bs-btn-hover-border-color: #040f0e;
+  --bs-btn-focus-shadow-rgb: 46, 70, 67;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #455525;
-  --bs-btn-active-border-color: #415023;
+  --bs-btn-active-bg: #071e1b;
+  --bs-btn-active-border-color: #071c1a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #566A2E;
-  --bs-btn-disabled-border-color: #566A2E;
+  --bs-btn-disabled-bg: #092522;
+  --bs-btn-disabled-border-color: #092522;
 }
-[data-bs-theme=desert-yam-7] .btn-outline-secondary {
-  --bs-btn-color: #566A2E;
-  --bs-btn-border-color: #566A2E;
+[data-bs-theme=territory-dusk] .btn-outline-secondary {
+  --bs-btn-color: #092522;
+  --bs-btn-border-color: #092522;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #566A2E;
-  --bs-btn-hover-border-color: #566A2E;
-  --bs-btn-focus-shadow-rgb: 86, 106, 46;
+  --bs-btn-hover-bg: #092522;
+  --bs-btn-hover-border-color: #092522;
+  --bs-btn-focus-shadow-rgb: 9, 37, 34;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #566A2E;
-  --bs-btn-active-border-color: #566A2E;
+  --bs-btn-active-bg: #092522;
+  --bs-btn-active-border-color: #092522;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #566A2E;
+  --bs-btn-disabled-color: #092522;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #566A2E;
+  --bs-btn-disabled-border-color: #092522;
   --bs-gradient: none;
 }
-[data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] .view-online {
+[data-bs-theme=territory-dusk] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=territory-dusk] [data-bs-theme=secondary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -20382,73 +19365,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #2B292D;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=desert-yam] {
-    --current-theme-secondary: #961B0B;
-    --current-theme-secondary-darker: #791609;
-    --current-theme-secondary-darker-text: #fff;
-    --current-theme-secondary-lighter: #a91e0c;
-    --current-theme-secondary-lighter-text: #fff;
-    --current-theme-secondary-rgb: 150, 27, 11;
-    --current-theme-secondary-text: #fff;
-    --current-theme-secondary-text-rgb: 255, 255, 255;
-    --current-theme-secondary-text-reverse: #2B292D;
-    --current-theme-secondary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-secondary-link-color: #fff;
-    --current-theme-secondary-link-color-rgb: 255, 255, 255;
-    --current-theme-secondary-link-hover-color: #fff;
-    --current-theme-secondary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=desert-yam] .btn-secondary, [data-bs-theme=desert-yam] #content input[type=reset], #content [data-bs-theme=desert-yam] input[type=reset], [data-bs-theme=desert-yam] #content input[type=submit], #content [data-bs-theme=desert-yam] input[type=submit] {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #961B0B;
-  --bs-btn-border-color: #961B0B;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #3c0b04;
-  --bs-btn-hover-border-color: #3c0b04;
-  --bs-btn-focus-shadow-rgb: 166, 61, 48;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #781609;
-  --bs-btn-active-border-color: #711408;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #961B0B;
-  --bs-btn-disabled-border-color: #961B0B;
-}
-[data-bs-theme=desert-yam] .btn-outline-secondary {
-  --bs-btn-color: #961B0B;
-  --bs-btn-border-color: #961B0B;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #961B0B;
-  --bs-btn-hover-border-color: #961B0B;
-  --bs-btn-focus-shadow-rgb: 150, 27, 11;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #961B0B;
-  --bs-btn-active-border-color: #961B0B;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #961B0B;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #961B0B;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam] [data-bs-theme=secondary] .btn-outline-default, [data-bs-theme=desert-yam] [data-bs-theme=secondary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam] [data-bs-theme=secondary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
 
@@ -21123,140 +20039,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=fairy-wren-7] {
-    --current-theme-tertiary: #49234A;
-    --current-theme-tertiary-darker: #351935;
-    --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #572a58;
-    --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 73, 35, 74;
-    --current-theme-tertiary-text: #fff;
-    --current-theme-tertiary-text-rgb: 255, 255, 255;
-    --current-theme-tertiary-text-reverse: #2B292D;
-    --current-theme-tertiary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-tertiary-link-color: #fff;
-    --current-theme-tertiary-link-color-rgb: 255, 255, 255;
-    --current-theme-tertiary-link-hover-color: #fff;
-    --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=fairy-wren-7] .btn-tertiary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #49234A;
-  --bs-btn-border-color: #49234A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1d0e1e;
-  --bs-btn-hover-border-color: #1d0e1e;
-  --bs-btn-focus-shadow-rgb: 100, 68, 101;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3a1c3b;
-  --bs-btn-active-border-color: #371a38;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #49234A;
-  --bs-btn-disabled-border-color: #49234A;
-}
-[data-bs-theme=fairy-wren-7] .btn-outline-tertiary {
-  --bs-btn-color: #49234A;
-  --bs-btn-border-color: #49234A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #49234A;
-  --bs-btn-hover-border-color: #49234A;
-  --bs-btn-focus-shadow-rgb: 73, 35, 74;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #49234A;
-  --bs-btn-active-border-color: #49234A;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #49234A;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #49234A;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=fairy-wren] {
-    --current-theme-tertiary: #49234A;
-    --current-theme-tertiary-darker: #351935;
-    --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #572a58;
-    --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 73, 35, 74;
-    --current-theme-tertiary-text: #fff;
-    --current-theme-tertiary-text-rgb: 255, 255, 255;
-    --current-theme-tertiary-text-reverse: #2B292D;
-    --current-theme-tertiary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-tertiary-link-color: #fff;
-    --current-theme-tertiary-link-color-rgb: 255, 255, 255;
-    --current-theme-tertiary-link-hover-color: #fff;
-    --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=fairy-wren] .btn-tertiary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #49234A;
-  --bs-btn-border-color: #49234A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1d0e1e;
-  --bs-btn-hover-border-color: #1d0e1e;
-  --bs-btn-focus-shadow-rgb: 100, 68, 101;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #3a1c3b;
-  --bs-btn-active-border-color: #371a38;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #49234A;
-  --bs-btn-disabled-border-color: #49234A;
-}
-[data-bs-theme=fairy-wren] .btn-outline-tertiary {
-  --bs-btn-color: #49234A;
-  --bs-btn-border-color: #49234A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #49234A;
-  --bs-btn-hover-border-color: #49234A;
-  --bs-btn-focus-shadow-rgb: 73, 35, 74;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #49234A;
-  --bs-btn-active-border-color: #49234A;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #49234A;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #49234A;
-  --bs-gradient: none;
-}
-[data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-@media not print {
   [data-bs-theme=charcoal-grey-20] {
     --current-theme-tertiary: #8F8E91;
     --current-theme-tertiary-darker: #807e82;
@@ -21525,73 +20307,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=desert-yam-7] {
-    --current-theme-tertiary: #D7D2CB;
-    --current-theme-tertiary-darker: #cac3ba;
-    --current-theme-tertiary-darker-text: #2B292D;
-    --current-theme-tertiary-lighter: #e0dcd7;
-    --current-theme-tertiary-lighter-text: #2B292D;
-    --current-theme-tertiary-rgb: 215, 210, 203;
-    --current-theme-tertiary-text: #2B292D;
-    --current-theme-tertiary-text-rgb: 43, 41, 45;
-    --current-theme-tertiary-text-reverse: #fff;
-    --current-theme-tertiary-text-reverse-rgb: 255, 255, 255;
-    --current-theme-tertiary-link-color: #2B292D;
-    --current-theme-tertiary-link-color-rgb: 43, 41, 45;
-    --current-theme-tertiary-link-hover-color: #2B292D;
-    --current-theme-tertiary-link-hover-color-rgb: 43, 41, 45;
-  }
-}
-[data-bs-theme=desert-yam-7] .btn-tertiary {
-  --bs-btn-color: #2B292D;
-  --bs-btn-bg: #D7D2CB;
-  --bs-btn-border-color: #D7D2CB;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #efedea;
-  --bs-btn-hover-border-color: #efedea;
-  --bs-btn-focus-shadow-rgb: 189, 185, 179;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #dfdbd5;
-  --bs-btn-active-border-color: #dbd7d0;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: #D7D2CB;
-  --bs-btn-disabled-border-color: #D7D2CB;
-}
-[data-bs-theme=desert-yam-7] .btn-outline-tertiary {
-  --bs-btn-color: #D7D2CB;
-  --bs-btn-border-color: #D7D2CB;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #D7D2CB;
-  --bs-btn-hover-border-color: #D7D2CB;
-  --bs-btn-focus-shadow-rgb: 215, 210, 203;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #D7D2CB;
-  --bs-btn-active-border-color: #D7D2CB;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #D7D2CB;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #D7D2CB;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam-7] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=desert-yam-7] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam-7] [data-bs-theme=tertiary] .view-online {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-
-@media not print {
   [data-bs-theme=the-territory] {
     --current-theme-tertiary: #0C2430;
     --current-theme-tertiary-darker: #061218;
@@ -21709,73 +20424,6 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 [data-bs-theme=white] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=white] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=white] [data-bs-theme=tertiary] .view-online {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #2B292D;
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: #2B292D;
-  --bs-btn-active-bg: #fff;
-  --bs-btn-active-border-color: #fff;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff;
-  --bs-gradient: none;
-}
-
-@media not print {
-  [data-bs-theme=desert-yam] {
-    --current-theme-tertiary: #2B292D;
-    --current-theme-tertiary-darker: #1c1a1d;
-    --current-theme-tertiary-darker-text: #fff;
-    --current-theme-tertiary-lighter: #353338;
-    --current-theme-tertiary-lighter-text: #fff;
-    --current-theme-tertiary-rgb: 43, 41, 45;
-    --current-theme-tertiary-text: #fff;
-    --current-theme-tertiary-text-rgb: 255, 255, 255;
-    --current-theme-tertiary-text-reverse: #2B292D;
-    --current-theme-tertiary-text-reverse-rgb: 43, 41, 45;
-    --current-theme-tertiary-link-color: #fff;
-    --current-theme-tertiary-link-color-rgb: 255, 255, 255;
-    --current-theme-tertiary-link-hover-color: #fff;
-    --current-theme-tertiary-link-hover-color-rgb: 255, 255, 255;
-  }
-}
-[data-bs-theme=desert-yam] .btn-tertiary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #111012;
-  --bs-btn-hover-border-color: #111012;
-  --bs-btn-focus-shadow-rgb: 75, 73, 77;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #222124;
-  --bs-btn-active-border-color: #201f22;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #2B292D;
-  --bs-btn-disabled-border-color: #2B292D;
-}
-[data-bs-theme=desert-yam] .btn-outline-tertiary {
-  --bs-btn-color: #2B292D;
-  --bs-btn-border-color: #2B292D;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2B292D;
-  --bs-btn-hover-border-color: #2B292D;
-  --bs-btn-focus-shadow-rgb: 43, 41, 45;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2B292D;
-  --bs-btn-active-border-color: #2B292D;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2B292D;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2B292D;
-  --bs-gradient: none;
-}
-[data-bs-theme=desert-yam] [data-bs-theme=tertiary] .btn-outline-default, [data-bs-theme=desert-yam] [data-bs-theme=tertiary] .ntg-jobs-subsite #searchResults .view-online, .ntg-jobs-subsite #searchResults [data-bs-theme=desert-yam] [data-bs-theme=tertiary] .view-online {
   --bs-btn-color: #fff;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #2B292D;
@@ -22310,106 +20958,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=fairy-wren-7] {
-    --bs-body-bg: var(--current-theme-color);
-    --bs-body-bg-rgb: var(--current-theme-color-rgb);
-    --bs-link-color: var(--current-theme-link-color);
-    --bs-link-color-rgb: var(--current-theme-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-link-hover-color-rgb);
-    --bs-primary: var(--current-theme-primary);
-    --bs-primary-rgb: var(--current-theme-primary-rgb);
-    --bs-primary-rgb: var(--current-theme-primary-text);
-    --bs-secondary: var(--current-theme-secondary);
-    --bs-secondary-rgb: var(--current-theme-secondary-rgb);
-    --bs-secondary-rgb: var(--current-theme-secondary-text);
-    --bs-tertiary: var(--current-theme-tertiary);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-text);
-  }
-  [data-bs-theme=fairy-wren-7] [data-bs-theme=primary] {
-    --current-theme-color: var(--current-theme-primary);
-    --current-theme-text-color: var(--current-theme-primary-text);
-    --current-theme-color-darker: var(--current-theme-primary-darker);
-    --current-theme-color-lighter: var(--current-theme-primary-lighter);
-    --bs-link-color: var(--current-theme-primary-link-color);
-    --bs-link-color-rgb: var(--current-theme-primary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
-  }
-  [data-bs-theme=fairy-wren-7] [data-bs-theme=secondary] {
-    --current-theme-color: var(--current-theme-secondary);
-    --current-theme-text-color: var(--current-theme-secondary-text);
-    --current-theme-color-darker: var(--current-theme-secondary-darker);
-    --current-theme-color-lighter: var(--current-theme-secondary-lighter);
-    --bs-link-color: var(--current-theme-secondary-link-color);
-    --bs-link-color-rgb: var(--current-theme-secondary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
-  }
-  [data-bs-theme=fairy-wren-7] [data-bs-theme=tertiary] {
-    --current-theme-color: var(--current-theme-tertiary);
-    --current-theme-text-color: var(--current-theme-tertiary-text);
-    --current-theme-color-darker: var(--current-theme-tertiary-darker);
-    --current-theme-color-lighter: var(--current-theme-tertiary-lighter);
-    --bs-link-color: var(--current-theme-tertiary-link-color);
-    --bs-link-color-rgb: var(--current-theme-tertiary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-tertiary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-tertiary-link-hover-color-rgb);
-  }
-}
-
-@media not print {
-  [data-bs-theme=fairy-wren] {
-    --bs-body-bg: var(--current-theme-color);
-    --bs-body-bg-rgb: var(--current-theme-color-rgb);
-    --bs-link-color: var(--current-theme-link-color);
-    --bs-link-color-rgb: var(--current-theme-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-link-hover-color-rgb);
-    --bs-primary: var(--current-theme-primary);
-    --bs-primary-rgb: var(--current-theme-primary-rgb);
-    --bs-primary-rgb: var(--current-theme-primary-text);
-    --bs-secondary: var(--current-theme-secondary);
-    --bs-secondary-rgb: var(--current-theme-secondary-rgb);
-    --bs-secondary-rgb: var(--current-theme-secondary-text);
-    --bs-tertiary: var(--current-theme-tertiary);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-text);
-  }
-  [data-bs-theme=fairy-wren] [data-bs-theme=primary] {
-    --current-theme-color: var(--current-theme-primary);
-    --current-theme-text-color: var(--current-theme-primary-text);
-    --current-theme-color-darker: var(--current-theme-primary-darker);
-    --current-theme-color-lighter: var(--current-theme-primary-lighter);
-    --bs-link-color: var(--current-theme-primary-link-color);
-    --bs-link-color-rgb: var(--current-theme-primary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
-  }
-  [data-bs-theme=fairy-wren] [data-bs-theme=secondary] {
-    --current-theme-color: var(--current-theme-secondary);
-    --current-theme-text-color: var(--current-theme-secondary-text);
-    --current-theme-color-darker: var(--current-theme-secondary-darker);
-    --current-theme-color-lighter: var(--current-theme-secondary-lighter);
-    --bs-link-color: var(--current-theme-secondary-link-color);
-    --bs-link-color-rgb: var(--current-theme-secondary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
-  }
-  [data-bs-theme=fairy-wren] [data-bs-theme=tertiary] {
-    --current-theme-color: var(--current-theme-tertiary);
-    --current-theme-text-color: var(--current-theme-tertiary-text);
-    --current-theme-color-darker: var(--current-theme-tertiary-darker);
-    --current-theme-color-lighter: var(--current-theme-tertiary-lighter);
-    --bs-link-color: var(--current-theme-tertiary-link-color);
-    --bs-link-color-rgb: var(--current-theme-tertiary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-tertiary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-tertiary-link-hover-color-rgb);
-  }
-}
-
-@media not print {
   [data-bs-theme=charcoal-grey-20] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
@@ -22610,56 +21158,6 @@ textarea.form-control-lg {
 }
 
 @media not print {
-  [data-bs-theme=desert-yam-7] {
-    --bs-body-bg: var(--current-theme-color);
-    --bs-body-bg-rgb: var(--current-theme-color-rgb);
-    --bs-link-color: var(--current-theme-link-color);
-    --bs-link-color-rgb: var(--current-theme-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-link-hover-color-rgb);
-    --bs-primary: var(--current-theme-primary);
-    --bs-primary-rgb: var(--current-theme-primary-rgb);
-    --bs-primary-rgb: var(--current-theme-primary-text);
-    --bs-secondary: var(--current-theme-secondary);
-    --bs-secondary-rgb: var(--current-theme-secondary-rgb);
-    --bs-secondary-rgb: var(--current-theme-secondary-text);
-    --bs-tertiary: var(--current-theme-tertiary);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-text);
-  }
-  [data-bs-theme=desert-yam-7] [data-bs-theme=primary] {
-    --current-theme-color: var(--current-theme-primary);
-    --current-theme-text-color: var(--current-theme-primary-text);
-    --current-theme-color-darker: var(--current-theme-primary-darker);
-    --current-theme-color-lighter: var(--current-theme-primary-lighter);
-    --bs-link-color: var(--current-theme-primary-link-color);
-    --bs-link-color-rgb: var(--current-theme-primary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
-  }
-  [data-bs-theme=desert-yam-7] [data-bs-theme=secondary] {
-    --current-theme-color: var(--current-theme-secondary);
-    --current-theme-text-color: var(--current-theme-secondary-text);
-    --current-theme-color-darker: var(--current-theme-secondary-darker);
-    --current-theme-color-lighter: var(--current-theme-secondary-lighter);
-    --bs-link-color: var(--current-theme-secondary-link-color);
-    --bs-link-color-rgb: var(--current-theme-secondary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
-  }
-  [data-bs-theme=desert-yam-7] [data-bs-theme=tertiary] {
-    --current-theme-color: var(--current-theme-tertiary);
-    --current-theme-text-color: var(--current-theme-tertiary-text);
-    --current-theme-color-darker: var(--current-theme-tertiary-darker);
-    --current-theme-color-lighter: var(--current-theme-tertiary-lighter);
-    --bs-link-color: var(--current-theme-tertiary-link-color);
-    --bs-link-color-rgb: var(--current-theme-tertiary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-tertiary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-tertiary-link-hover-color-rgb);
-  }
-}
-
-@media not print {
   [data-bs-theme=the-territory] {
     --bs-body-bg: var(--current-theme-color);
     --bs-body-bg-rgb: var(--current-theme-color-rgb);
@@ -22748,56 +21246,6 @@ textarea.form-control-lg {
     --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
   }
   [data-bs-theme=white] [data-bs-theme=tertiary] {
-    --current-theme-color: var(--current-theme-tertiary);
-    --current-theme-text-color: var(--current-theme-tertiary-text);
-    --current-theme-color-darker: var(--current-theme-tertiary-darker);
-    --current-theme-color-lighter: var(--current-theme-tertiary-lighter);
-    --bs-link-color: var(--current-theme-tertiary-link-color);
-    --bs-link-color-rgb: var(--current-theme-tertiary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-tertiary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-tertiary-link-hover-color-rgb);
-  }
-}
-
-@media not print {
-  [data-bs-theme=desert-yam] {
-    --bs-body-bg: var(--current-theme-color);
-    --bs-body-bg-rgb: var(--current-theme-color-rgb);
-    --bs-link-color: var(--current-theme-link-color);
-    --bs-link-color-rgb: var(--current-theme-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-link-hover-color-rgb);
-    --bs-primary: var(--current-theme-primary);
-    --bs-primary-rgb: var(--current-theme-primary-rgb);
-    --bs-primary-rgb: var(--current-theme-primary-text);
-    --bs-secondary: var(--current-theme-secondary);
-    --bs-secondary-rgb: var(--current-theme-secondary-rgb);
-    --bs-secondary-rgb: var(--current-theme-secondary-text);
-    --bs-tertiary: var(--current-theme-tertiary);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-rgb);
-    --bs-tertiary-rgb: var(--current-theme-tertiary-text);
-  }
-  [data-bs-theme=desert-yam] [data-bs-theme=primary] {
-    --current-theme-color: var(--current-theme-primary);
-    --current-theme-text-color: var(--current-theme-primary-text);
-    --current-theme-color-darker: var(--current-theme-primary-darker);
-    --current-theme-color-lighter: var(--current-theme-primary-lighter);
-    --bs-link-color: var(--current-theme-primary-link-color);
-    --bs-link-color-rgb: var(--current-theme-primary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-primary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
-  }
-  [data-bs-theme=desert-yam] [data-bs-theme=secondary] {
-    --current-theme-color: var(--current-theme-secondary);
-    --current-theme-text-color: var(--current-theme-secondary-text);
-    --current-theme-color-darker: var(--current-theme-secondary-darker);
-    --current-theme-color-lighter: var(--current-theme-secondary-lighter);
-    --bs-link-color: var(--current-theme-secondary-link-color);
-    --bs-link-color-rgb: var(--current-theme-secondary-link-color-rgb);
-    --bs-link-hover-color: var(--current-theme-secondary-link-hover-color);
-    --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
-  }
-  [data-bs-theme=desert-yam] [data-bs-theme=tertiary] {
     --current-theme-color: var(--current-theme-tertiary);
     --current-theme-text-color: var(--current-theme-tertiary-text);
     --current-theme-color-darker: var(--current-theme-tertiary-darker);
@@ -22931,14 +21379,6 @@ textarea.form-control-lg {
   --bs-btn-color: #2B292D;
 }
 
-.btn-fairy-wren-7 {
-  --bs-btn-color: #2B292D;
-}
-
-.btn-fairy-wren {
-  --bs-btn-color: #fff;
-}
-
 .btn-charcoal-grey-20 {
   --bs-btn-color: #2B292D;
 }
@@ -22955,20 +21395,12 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
 }
 
-.btn-desert-yam-7 {
-  --bs-btn-color: #2B292D;
-}
-
 .btn-the-territory {
   --bs-btn-color: #fff;
 }
 
 .btn-white {
   --bs-btn-color: #2B292D;
-}
-
-.btn-desert-yam {
-  --bs-btn-color: #fff;
 }
 
 .btn-east-arnhem {
@@ -23083,18 +21515,6 @@ textarea.form-control-lg {
   color: #2B292D;
 }
 
-.bg-fairy-wren-7 {
-  --current-theme-color: #2B292D;
-  --current-theme-dark-color: #2b292d;
-  color: #2B292D;
-}
-
-.bg-fairy-wren {
-  --current-theme-color: #fff;
-  --current-theme-dark-color: white;
-  color: #fff;
-}
-
 .bg-charcoal-grey-20 {
   --current-theme-color: #2B292D;
   --current-theme-dark-color: #2b292d;
@@ -23119,12 +21539,6 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.bg-desert-yam-7 {
-  --current-theme-color: #2B292D;
-  --current-theme-dark-color: #2b292d;
-  color: #2B292D;
-}
-
 .bg-the-territory {
   --current-theme-color: #fff;
   --current-theme-dark-color: white;
@@ -23135,12 +21549,6 @@ textarea.form-control-lg {
   --current-theme-color: #2B292D;
   --current-theme-dark-color: #2b292d;
   color: #2B292D;
-}
-
-.bg-desert-yam {
-  --current-theme-color: #fff;
-  --current-theme-dark-color: white;
-  color: #fff;
 }
 
 .bg-east-arnhem {
@@ -23257,18 +21665,6 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #ffb407;
 }
 
-.bg-fairy-wren-7 {
-  --current-bg-color: #F6EFF6;
-  --current-bg-color-darker: #ebdbeb;
-  --current-bg-color-lighter: #fdfcfd;
-}
-
-.bg-fairy-wren {
-  --current-bg-color: #7F1F7F;
-  --current-bg-color-darker: #661966;
-  --current-bg-color-lighter: #8f238f;
-}
-
 .bg-charcoal-grey-20 {
   --current-bg-color: #DAD9DA;
   --current-bg-color-darker: #cbc9cb;
@@ -23293,12 +21689,6 @@ textarea.form-control-lg {
   --current-bg-color-lighter: #572a58;
 }
 
-.bg-desert-yam-7 {
-  --current-bg-color: #FBF2EA;
-  --current-bg-color-darker: #f6e2d0;
-  --current-bg-color-lighter: #fefdfb;
-}
-
 .bg-the-territory {
   --current-bg-color: #1f1f5f;
   --current-bg-color-darker: #171748;
@@ -23309,12 +21699,6 @@ textarea.form-control-lg {
   --current-bg-color: #fff;
   --current-bg-color-darker: #f0f0f0;
   --current-bg-color-lighter: white;
-}
-
-.bg-desert-yam {
-  --current-bg-color: #C33726;
-  --current-bg-color-darker: #a93021;
-  --current-bg-color-lighter: #d43c29;
 }
 
 .bg-east-arnhem {
@@ -23408,16 +21792,6 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-fairy-wren-7 {
-  --bs-alert-color: #2B292D;
-  --bs-alert-link-color: #2B292D;
-}
-
-.alert-fairy-wren {
-  --bs-alert-color: #2B292D;
-  --bs-alert-link-color: #2B292D;
-}
-
 .alert-charcoal-grey-20 {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
@@ -23438,22 +21812,12 @@ textarea.form-control-lg {
   --bs-alert-link-color: #2B292D;
 }
 
-.alert-desert-yam-7 {
-  --bs-alert-color: #2B292D;
-  --bs-alert-link-color: #2B292D;
-}
-
 .alert-the-territory {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
 
 .alert-white {
-  --bs-alert-color: #2B292D;
-  --bs-alert-link-color: #2B292D;
-}
-
-.alert-desert-yam {
   --bs-alert-color: #2B292D;
   --bs-alert-link-color: #2B292D;
 }
@@ -26103,20 +24467,6 @@ html[data-bs-theme=big-rivers] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=fairy-wren-7] #content input[type=radio] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
-}
-html[data-bs-theme=fairy-wren-7] #content input[type=checkbox] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
-}
-
-html[data-bs-theme=fairy-wren] #content input[type=radio] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
-}
-html[data-bs-theme=fairy-wren] #content input[type=checkbox] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
-}
-
 html[data-bs-theme=charcoal-grey-20] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
@@ -26145,13 +24495,6 @@ html[data-bs-theme=territory-dusk] #content input[type=checkbox] ~ label:before 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
-html[data-bs-theme=desert-yam-7] #content input[type=radio] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%232B292D' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
-}
-html[data-bs-theme=desert-yam-7] #content input[type=checkbox] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
-}
-
 html[data-bs-theme=the-territory] #content input[type=radio] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
 }
@@ -26164,13 +24507,6 @@ html[data-bs-theme=white] #content input[type=radio] ~ label:before {
 }
 html[data-bs-theme=white] #content input[type=checkbox] ~ label:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232B292D' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
-}
-
-html[data-bs-theme=desert-yam] #content input[type=radio] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23fff' cx='16' cy='16' r='16'/%3E%3Ccircle fill='%23ffffff' cx='16' cy='16' r='14'/%3E%3C/svg%3E");
-}
-html[data-bs-theme=desert-yam] #content input[type=checkbox] ~ label:before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M0,0h32v32H0V0z'/%3E%3Cpath fill='%23ffffff' d='M2,2h28v28H2V2z'/%3E%3C/svg%3E");
 }
 
 html[data-bs-theme=east-arnhem] #content input[type=radio] ~ label:before {
@@ -26565,11 +24901,6 @@ html[data-bs-theme=dark-green] .ntg-icon-and-description img {
           filter: brightness(0) invert(100%);
 }
 
-html[data-bs-theme=fairy-wren] .ntg-icon-and-description img {
-  -webkit-filter: brightness(0) invert(100%);
-          filter: brightness(0) invert(100%);
-}
-
 html[data-bs-theme=territory-charcoal] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
@@ -26581,11 +24912,6 @@ html[data-bs-theme=territory-dusk] .ntg-icon-and-description img {
 }
 
 html[data-bs-theme=the-territory] .ntg-icon-and-description img {
-  -webkit-filter: brightness(0) invert(100%);
-          filter: brightness(0) invert(100%);
-}
-
-html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
@@ -26630,10 +24956,6 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
-.ntg-icon-and-description[data-bs-theme=fairy-wren] img {
-  -webkit-filter: brightness(0) invert(100%);
-          filter: brightness(0) invert(100%);
-}
 .ntg-icon-and-description[data-bs-theme=territory-charcoal] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
@@ -26643,10 +24965,6 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
           filter: brightness(0) invert(100%);
 }
 .ntg-icon-and-description[data-bs-theme=the-territory] img {
-  -webkit-filter: brightness(0) invert(100%);
-          filter: brightness(0) invert(100%);
-}
-.ntg-icon-and-description[data-bs-theme=desert-yam] img {
   -webkit-filter: brightness(0) invert(100%);
           filter: brightness(0) invert(100%);
 }
