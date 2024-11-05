@@ -905,7 +905,7 @@ ul:not(.nav-tabs):not(.ntg-main-nav__links).list-checkbox li {
   }
 }
 
-.list-unstyled {
+.list-unstyled, .mm-static-links ul {
   padding-left: 0;
   list-style: none;
 }
@@ -26317,8 +26317,10 @@ main {
     top: 3rem;
   }
 }
-.page-header-container:has(.ntg-sub-nav) .ntg-header {
-  padding-bottom: 0;
+@media (min-width: 992px) {
+  .page-header-container:has(.ntg-sub-nav) .ntg-header {
+    padding-bottom: 0;
+  }
 }
 
 .ntg-header {
@@ -28242,6 +28244,20 @@ html[data-bs-theme=desert-yam] .ntg-icon-and-description img {
 .mm-navbars .btn-default {
   color: var(--bs-btn-color) !important;
   border-radius: 0 !important;
+}
+
+.mm-static-links li {
+  padding: 10px 20px;
+}
+.mm-static-links a:hover {
+  text-decoration: underline;
+}
+.mm-static-links a:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 3px solid #e35205;
+  outline-offset: 2px;
+  outline: 3px solid #e35205 !important;
 }
 
 .ntg-related-pages {

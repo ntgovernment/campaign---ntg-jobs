@@ -102,7 +102,9 @@
 
     &:has(.ntg-sub-nav) {
         .ntg-header {
-            padding-bottom: 0;
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 0;
+            }
         }
     }
 }

@@ -620,6 +620,33 @@ function initMmenu() {
                             </div>
                             <span class="mm-btn--close__text">Close</span>`;
         panels.prepend(close);
+
+        // inserts static links on first panel
+        if (mmenuWrapper.getAttribute("data-link-urls") && mmenuWrapper.getAttribute("data-link-texts")) {
+            var linkUrls = mmenuWrapper.getAttribute("data-link-urls").split(',');
+            var linkTexts = mmenuWrapper.getAttribute("data-link-texts").split(',');
+
+            var panelOne = document.getElementById("mm-1");
+            var staticLinks = document.createElement('div');
+            staticLinks.setAttribute('class', "mm-static-links");
+            var linkContents = document.createElement('ul');
+
+            if (linkUrls.length == linkTexts.length) {
+                for (let i = 0; i < linkUrls.length; i++) {
+                    var url = linkUrls[i];
+                    var text = linkTexts[i];
+                    var item = document.createElement('li');
+                    item.innerHTML = `<a href="${url}">${text}</a>`;
+                    linkContents.append(item);
+                }
+            }
+
+            staticLinks.append(linkContents);
+            panelOne.append(staticLinks);
+
+            mmenuWrapper.removeAttribute('data-link-urls');
+            mmenuWrapper.removeAttribute('data-link-texts');
+        }
     });
 }
 

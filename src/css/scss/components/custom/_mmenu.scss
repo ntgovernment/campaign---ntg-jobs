@@ -208,3 +208,24 @@
         border-radius: 0 !important;
     }
 }
+
+.mm-static-links {
+    ul {
+        @extend .list-unstyled;
+    }
+
+    li {
+        padding: 10px 20px;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            @include focus();
+            outline: 3px solid $focus-color !important;
+        }
+    }
+}
