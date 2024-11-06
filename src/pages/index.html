@@ -979,7 +979,14 @@
             </footer>
         </div>
 
-        <script type="module" src="js/cookieconsent-config.js"></script>
+        <script type="module">
+            import { isFromEU } from './js/detect-europe.js';
+            console.log(isFromEU());
+            if (isFromEU()) {
+                import('./js/cookieconsent-config.js');
+            }
+        </script>
+        
     </body>
 
     <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>

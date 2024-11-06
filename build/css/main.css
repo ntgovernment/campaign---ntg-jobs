@@ -23601,10 +23601,45 @@ body.testimonial .ntg-cards-carousel--testimonial {
 
 #cc-main {
   --cc-bg: #D7D2CB;
-  --cc-font-family: $font-family-base;
+  --cc-font-family: Ubuntu, var(--bs-font-sans-serif);
+  --cc-secondary-color: #2B292D;
   --cc-btn-primary-bg: #566A2E;
   --cc-btn-primary-border-color: #566A2E;
+  --cc-btn-primary-hover-bg: color-mix(in srgb, #566A2E, #000 60%);
+  --cc-btn-primary-hover-border-color: color-mix(in srgb, #566A2E, #000 60%);
+  --cc-btn-secondary-bg: #919191;
+  --cc-btn-secondary-border-color: #919191;
+  --cc-btn-secondary-hover-bg: color-mix(in srgb, #919191, #fff 60%);
+  --cc-btn-secondary-hover-border-color: color-mix(in srgb, #919191, #fff 60%);
   --cc-btn-border-radius: 1000px;
+  --cc-separator-border-color: #000;
+  --cc-cookie-category-block-bg: #fff;
+  --cc-cookie-category-block-border: transparent;
+  --cc-cookie-category-block-hover-bg: #fff;
+  --cc-cookie-category-block-hover-border: transparent;
+  --cc-cookie-category-expanded-block-bg: #fff;
+  --cc-cookie-category-expanded-block-hover-bg: transparent;
+}
+#cc-main .pm__section {
+  border-radius: 0 !important;
+}
+#cc-main .pm__section:not(:first-of-type) {
+  background: var(--cc-cookie-category-block-bg);
+  border-color: var(--cc-cookie-category-block-border) !important;
+}
+#cc-main .pm__section--toggle {
+  border-radius: 0 !important;
+}
+#cc-main .pm__section--toggle .pm__section-title,
+#cc-main .pm__section--toggle .pm__section-desc-wrapper {
+  border-radius: 0 !important;
+}
+#cc-main .pm__close-btn {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+#cc-main .pm__footer {
+  border-top: none !important;
 }
 
 .ntg-featured-testimonial {

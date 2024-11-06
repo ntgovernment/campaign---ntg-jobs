@@ -7,7 +7,9 @@ CookieConsent.run({
             enabled: true,  // this category is enabled by default
             readOnly: true  // this category cannot be disabled
         },
-        analytics: {}
+        analytics: {
+            enabled: false
+        }
     },
 
     language: {
@@ -35,8 +37,6 @@ CookieConsent.run({
                         {
                             title: 'Strictly Necessary cookies',
                             description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
-
-                            //this field will generate a toggle linked to the 'necessary' category
                             linkedCategory: 'necessary'
                         },
                         {

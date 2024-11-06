@@ -1,12 +1,58 @@
 #cc-main {
-    --cc-bg: #{$primary};
-
     $cc-btn-primary-bg: #{$secondary};
     $cc-btn-primary-color: #{$secondary-text};
+    $cc-btn-secondary-bg: #{$tertiary};
+    $cc-btn-secondary-color: #{$tertiary-text};
 
-    --cc-font-family: $font-family-base;
+    --cc-bg: #{$primary};
+
+    --cc-font-family: #{$font-family-base};
+
+    --cc-secondary-color: #{$body-color};
 
     --cc-btn-primary-bg: #{$cc-btn-primary-bg};
     --cc-btn-primary-border-color: #{$cc-btn-primary-bg};
+    --cc-btn-primary-hover-bg: color-mix(in srgb, #{$cc-btn-primary-bg}, #000 #{$btn-hover-bg-shade-amount});
+    --cc-btn-primary-hover-border-color: color-mix(in srgb, #{$cc-btn-primary-bg}, #000 #{$btn-hover-bg-shade-amount});
+    --cc-btn-secondary-bg: #{$cc-btn-secondary-bg};
+    --cc-btn-secondary-border-color: #{$cc-btn-secondary-bg};
+    --cc-btn-secondary-hover-bg: color-mix(in srgb, #{$cc-btn-secondary-bg}, #fff #{$btn-hover-bg-shade-amount});
+    --cc-btn-secondary-hover-border-color: color-mix(in srgb, #{$cc-btn-secondary-bg}, #fff #{$btn-hover-bg-shade-amount});
     --cc-btn-border-radius: #{$btn-border-radius};
+
+    --cc-separator-border-color: #{$black};
+
+    --cc-cookie-category-block-bg: #{$white};
+    --cc-cookie-category-block-border: transparent;
+    --cc-cookie-category-block-hover-bg: #{$white};
+    --cc-cookie-category-block-hover-border: transparent;
+    --cc-cookie-category-expanded-block-bg: #{$white};
+    --cc-cookie-category-expanded-block-hover-bg: transparent;
+
+    .pm__section {
+        border-radius: 0 !important;
+
+        &:not(:first-of-type) {
+            background: var(--cc-cookie-category-block-bg);
+            border-color: var(--cc-cookie-category-block-border) !important;
+        }
+    }
+
+    .pm__section--toggle {
+        border-radius: 0 !important;
+
+        .pm__section-title,
+        .pm__section-desc-wrapper {
+            border-radius: 0 !important;
+        }
+    }
+
+    .pm__close-btn {
+        background: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .pm__footer {
+        border-top: none !important;
+    }
 }
