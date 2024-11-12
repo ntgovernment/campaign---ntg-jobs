@@ -460,10 +460,15 @@ function initMegaMenu() {
 }
 
 function initSubNav() {
+    const subNav = document.querySelector('.ntg-sub-nav');
+    if (!subNav) {
+        return false;
+    }
+
     const header = document.querySelector('.page-header-container');
     const links = document.querySelectorAll('.ntg-sub-nav__links > li');
     const scrollSensor = 100;
-
+    
     links.forEach((link) => {
         const config = {
             attributes: true
@@ -472,12 +477,12 @@ function initSubNav() {
             for (const mutation of mutationList) {
                 // listen for changes in the link's attributes
                 if (mutation.type === "attributes") {
-                    var scrollPosition = scrollY;
                     for (i = 0; i < links.length; i++) {
                         if (links[i].classList.contains('sfHover')) {
                             header.classList.add('header-scroll');
                             break;
                         } else {
+                            var scrollPosition = scrollY;
                             if (scrollPosition <= scrollSensor) {
                                 header.classList.remove('header-scroll');
                             }
@@ -489,6 +494,49 @@ function initSubNav() {
         // initialise MutationObserver
         const observer = new MutationObserver(callback);
         observer.observe(link, config);
+    });
+
+    window.addEventListener('scroll', function () {
+        var scrollPosition = scrollY;
+        for (i = 0; i < links.length; i++) {
+            if (scrollPosition <= scrollSensor && links[i].classList.contains('sfHover')) {
+                header.classList.add('header-scroll');
+                break;
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const more = document.querySelector('.ntg-sub-nav__links .more');
+
+        const config = {
+            attributes: true
+        };
+        const callback = (mutationList, observer) => {
+            for (const mutation of mutationList) {
+                // listen for changes in the link's attributes
+                if (mutation.type === "attributes") {
+                    if (more.classList.contains('sfHover')) {
+                        header.classList.add('header-scroll');
+                    } else {
+                        var scrollPosition = scrollY;
+                        if (scrollPosition <= scrollSensor) {
+                            header.classList.remove('header-scroll');
+                        }
+                    }
+                }
+            }
+        }
+        // initialise MutationObserver
+        const observer = new MutationObserver(callback);
+        observer.observe(more, config);
+
+        window.addEventListener('scroll', function () {
+            var scrollPosition = scrollY;
+            if (scrollPosition <= scrollSensor && more.classList.contains('sfHover')) {
+                header.classList.add('header-scroll');
+            }
+        });
     });
 }
 
@@ -577,6 +625,33 @@ function initMmenu() {
                             </div>
                             <span class="mm-btn--close__text">Close</span>`;
         panels.prepend(close);
+
+        // inserts static links on first panel
+        if (mmenuWrapper.getAttribute("data-link-urls") && mmenuWrapper.getAttribute("data-link-texts")) {
+            var linkUrls = mmenuWrapper.getAttribute("data-link-urls").split(',');
+            var linkTexts = mmenuWrapper.getAttribute("data-link-texts").split(',');
+
+            var panelOne = document.getElementById("mm-1");
+            var staticLinks = document.createElement('div');
+            staticLinks.setAttribute('class', "mm-static-links");
+            var linkContents = document.createElement('ul');
+
+            if (linkUrls.length == linkTexts.length) {
+                for (let i = 0; i < linkUrls.length; i++) {
+                    var url = linkUrls[i];
+                    var text = linkTexts[i];
+                    var item = document.createElement('li');
+                    item.innerHTML = `<a href="${url}">${text}</a>`;
+                    linkContents.append(item);
+                }
+            }
+
+            staticLinks.append(linkContents);
+            panelOne.append(staticLinks);
+
+            mmenuWrapper.removeAttribute('data-link-urls');
+            mmenuWrapper.removeAttribute('data-link-texts');
+        }
     });
 }
 

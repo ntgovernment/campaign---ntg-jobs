@@ -3,7 +3,8 @@
 
 	&__item {
 		position: relative;
-
+		overflow: hidden;
+		
 		&:has(a) {
 			&::after {
 				content: '';
@@ -45,6 +46,14 @@
 			display: flex;
 		}
 
+		iframe {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 4 / 3;
+			display: block;
+			transform: scale(1.4);
+		}
+
 		a {
 			color: $white;
 			text-decoration: none;
@@ -79,7 +88,8 @@
 
 		&.featured {
 			img,
-			video {
+			video,
+			iframe {
 				aspect-ratio: 16 / 9;
 				max-height: calc(184.833px * 2 + 1.5rem);
 				

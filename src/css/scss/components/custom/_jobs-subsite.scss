@@ -2,7 +2,7 @@
 .ntg-jobs-subsite {
     --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
     --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-    --menu-special-color: var(--current-theme-secondary, #{$ntg-olive-green});
+    --menu-special-color: var(--current-theme-secondary, #{$ntg-territory-forest});
     --menu-special-color-text: var(--current-theme-secondary-text, #{$white});
     --jobs-subsite-border-color: var(--current-theme-text-color, #{$ntg-territory-stone});
 
@@ -36,7 +36,7 @@
     &__menu {
         --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
         --menu-text-color: var(--current-theme-secondary-text, #2E3849);
-        --menu-special-color: var(--current-theme-secondary-text, #{$ntg-olive-green});
+        --menu-special-color: var(--current-theme-secondary-text, #{$ntg-territory-forest});
         --menu-special-color-text: var(--current-theme-secondary, #{$white});
         --jobs-subsite-border-color: var(--current-theme-text-color, #{$ntg-territory-stone});
         background-color: var(--menu-background-color);
@@ -172,7 +172,7 @@
                 &:hover {
                     background-color:var(--current-theme-color, #{$white});
                     color: var(--current-theme-text-color, #2E3849);
-                    border-top-color: var(--current-theme-tertiary, #{$ntg-olive-green});
+                    border-top-color: var(--current-theme-tertiary, #{$ntg-territory-forest});
                 }
 
                 &.active {

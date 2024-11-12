@@ -8,7 +8,7 @@
     &__highlight {
         position: relative;
         padding-left: 1rem;
-        border-left: 4px solid var(--current-theme-secondary, $ntg-olive-green);
+        border-left: 4px solid var(--current-theme-secondary, $ntg-territory-forest);
 
         &:focus-within {
             @include focus();

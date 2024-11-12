@@ -311,6 +311,7 @@
 
     &--img {
         height: 464px;
+        overflow: hidden;
 
         img,
         video,
@@ -323,6 +324,10 @@
             left: 0;
             right: 0;
             object-fit: cover;
+        }
+
+        iframe {
+            transform: scale(2);
         }
 
         &:has(#{$this}-body) {
