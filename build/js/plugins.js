@@ -15812,7 +15812,7 @@ class NTGJobSearch {
     }
 
     _onSortSelectChangeCb(e) {
-        this._showResults(Array.from(this.currentSearchResults));
+        this._showResults(Array.from(this.currentSearchResults), e);
     }
 
     _onFormSubmitCb(e) {
@@ -15839,7 +15839,7 @@ class NTGJobSearch {
 
         const filteredResults = this._filterSearchResults(searchResults, formData);
         this.currentSearchResults = Array.from(filteredResults);
-        this._showResults(filteredResults);
+        this._showResults(filteredResults, e);
     }
     
     /**
@@ -15931,14 +15931,17 @@ class NTGJobSearch {
         return results;
     }
 
-    _showResults(results) {
+    _showResults(results, e) {
         results = this._sortResults(results);
 
         //Start the seach spinner and hide the search container until results are loaded
         $("#searchSpinner").removeClass("d-none");
         $(this.searchContainer).addClass("d-none");
 
-        $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start", behaviour: "smooth"});
+        //Only scroll if showresults is coming from event like formsubmit, etc.
+        if(e) {
+            $(".ntg-jobs-subsite")[0].scrollIntoView({block: "start", behaviour: "smooth"});
+        }
 
         if(results.length <= 0) {
             this.searchResultsWrapper.innerHTML = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
