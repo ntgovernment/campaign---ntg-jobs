@@ -899,11 +899,14 @@ function initResponsiveTable() {
     });
 
     document.querySelectorAll('#content table:not([class*="custom-table-"])').forEach(function (element) {
-        var div = document.createElement('div');
-        div.classList.add('table-responsive');
         var parent = element.parentElement;
-        parent.insertBefore(div, element);
-        div.append(element);
+        
+        if (!parent.classList.contains('table-responsive')) {
+            var div = document.createElement('div');
+            div.classList.add('table-responsive');
+            parent.insertBefore(div, element);
+            div.append(element);
+        }
     });
 }
 
