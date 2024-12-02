@@ -324,6 +324,9 @@
                             Approximately 1500 kilometres lie between the Territory's two major centres, Darwin and Alice Springs - and there is
                             plenty to see in between. Darwin is closer to South-East Asia than many other Australian capital cities.
                         </p>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-cc="show-preferencesModal">View Preferences Modal</button>
+                        </p>
                     </div>
                 </section>
                 
@@ -981,9 +984,10 @@
 
         <script type="module">
             import { isFromEU } from './js/detect-europe.js';
-            console.log(isFromEU());
             if (isFromEU()) {
                 import('./js/cookieconsent-config.js');
+            } else {
+                import('./js/cookieconsent-config-pref-only.js');
             }
         </script>
         

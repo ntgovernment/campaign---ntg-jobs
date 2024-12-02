@@ -67,7 +67,7 @@
         "build:assets": "cp -r ./src/assets ./dist",
         "build:matrix": "cp -r ./dist/assets/images ./dist/css/mysource_files",
         "build:js": "browserify ./src/js/bootstrap.js --outfile ./dist/js/bootstrap.js && cp -R ./src/js/plugins ./dist/js && browserify ./src/js/utils.js --outfile ./dist/js/utils.js && browserify ./src/js/functions.js --outfile ./dist/js/functions.js && uglifyjs ./dist/js/bootstrap.js --compress -o ./dist/js/bootstrap.min.js",
-        "build:js:dev": "browserify ./src/js/bootstrap.js > ./dist/js/bootstrap.js && concat -o ./dist/js/bundle.js ./dist/js/bootstrap.js ./src/js/utils.js ./src/js/**/*.js ./src/js/functions.js && rm -rf ./dist/js/bootstrap.js && cp -r cookieconsent-config.js ./dist/js && cp -r detect-europe.js ./dist/js",
+        "build:js:dev": "browserify ./src/js/bootstrap.js > ./dist/js/bootstrap.js && concat -o ./dist/js/bundle.js ./dist/js/bootstrap.js ./src/js/utils.js ./src/js/**/*.js ./src/js/functions.js && rm -rf ./dist/js/bootstrap.js && cp -r cookieconsent-config.js ./dist/js && cp -r cookieconsent-config-pref-only.js ./dist/js && cp -r detect-europe.js ./dist/js",
         "build:dev": "npm run clean && npm run build:css:dev && npm run build:autoprefix:dev && mkdir ./dist/js && npm run build:js:dev && npm run build:assets && npm run build:matrix && npm run build:html && npm run build:filebridge",
         "build:prod": "npm run clean && npm run build:css && npm run build:autoprefix && mkdir ./dist/js && npm run build:js && npm run build:assets && npm run build:matrix && npm run build:html",
         "clean:filebridge": "rm -rf ./build",
