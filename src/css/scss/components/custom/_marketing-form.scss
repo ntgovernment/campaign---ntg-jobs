@@ -1,0 +1,46 @@
+form.marketingForm {
+    table,
+    tr,
+    th,
+    td,
+    thead,
+    tbody {
+        border-top: unset !important;
+        border-bottom: unset !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    table {
+        select {
+            line-height: 1.35;
+        }
+
+        input,
+        select {
+            font-size: 1rem !important;
+        }
+    }
+
+    .textFormFieldBlock,
+    .optionSetFormFieldBlock,
+    .dateTimeFormFieldBlock {
+        padding: 1rem 0 !important;
+    }
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+        table.multi {
+            th.columnContainer + th.columnContainer {
+                padding-left: 1rem !important;
+            }
+        }
+    }
+}

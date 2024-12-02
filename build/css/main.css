@@ -29451,6 +29451,44 @@ body.search-panel--is-hidden .search-global {
   outline-offset: 2px;
 }
 
+form.marketingForm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+form.marketingForm table,
+form.marketingForm tr,
+form.marketingForm th,
+form.marketingForm td,
+form.marketingForm thead,
+form.marketingForm tbody {
+  border-top: unset !important;
+  border-bottom: unset !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+form.marketingForm table select {
+  line-height: 1.35;
+}
+form.marketingForm table input,
+form.marketingForm table select {
+  font-size: 1rem !important;
+}
+form.marketingForm .textFormFieldBlock,
+form.marketingForm .optionSetFormFieldBlock,
+form.marketingForm .dateTimeFormFieldBlock {
+  padding: 1rem 0 !important;
+}
+@media (min-width: 768px) {
+  form.marketingForm table.multi th.columnContainer + th.columnContainer {
+    padding-left: 1rem !important;
+  }
+}
+
 @media print {
   a:not([data-bs-toggle])::after {
     content: " Link: " attr(href);
