@@ -8,7 +8,7 @@ CookieConsent.run({
             readOnly: true  // this category cannot be disabled
         },
         analytics: {
-            enabled: false
+            enabled: true
         }
     },
 
