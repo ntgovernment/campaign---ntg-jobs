@@ -15702,7 +15702,6 @@ class NTGJobSearch {
         }
         
         this._fetchNTGJobs().then((data) => {
-
             this._setupFuseSearch(data);
 
             vacancySearchForm && vacancySearchForm.addEventListener("submit", this._onFormSubmitCb.bind(this));
@@ -16008,7 +16007,7 @@ class NTGJobSearch {
             const jobUrlLinkedin = `https://jointheterritory.nt.gov.au/vacancy?id%3D${positionNumber}&banner%3D1322978`;
 
             const lastAccordionRow = `<div class="d-flex align-items-center">
-                    <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-territory-forest py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
+                    <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-territory-forest py-1" title="${url} "data-redirect-popup="true" data-redirect-description="You are leaving this website and going to jobs.nt.gov.au">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
                     <button class="btn btn-outline-territory-forest py-1 me-2" data-url="${jobUrl}">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>
                     <div class="social-share">
                         <a class="social-share__link facebook" href="https://www.facebook.com/sharer.php?u=${jobUrl}" target="_blank" title="Share on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
@@ -16034,6 +16033,41 @@ class NTGJobSearch {
 
         this.searchResultsWrapper.innerHTML = "";
         this.searchResultsWrapper.appendChild(wrapper);
+
+        this.searchResultsWrapper.querySelectorAll('a[data-redirect-popup="true"]').forEach(function (link) {
+            var href = link.getAttribute('href');
+            var desc = link.getAttribute('data-redirect-description');
+            var parent = link.parentElement;
+            var text = link.innerText;
+            var textIDFormat = text.toLowerCase().replace(/\s/g, '-');
+            var textARIAFormat = textIDFormat;
+    
+            link.setAttribute('data-bs-toggle', 'modal');
+            link.setAttribute('data-bs-target', '#' + textIDFormat);
+    
+            var modal = document.createElement('div');
+            modal.classList.add('modal', 'fade');
+            modal.setAttribute('tabindex', '-1');
+            modal.setAttribute('id', textIDFormat);
+            modal.setAttribute('aria-labelledby', textARIAFormat);
+            modal.innerHTML = `
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Redirecting...</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>${desc}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="${href}" class="btn btn-sm btn-secondary btn-external">Redirect now</a>
+                    </div>
+                </div>
+            </div>
+            `;
+            parent.insertAdjacentElement('afterend', modal);
+        });
 
         //Add Pagination
         const noOfItemsPerPage = 10;
