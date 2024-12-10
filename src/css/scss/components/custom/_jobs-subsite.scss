@@ -32,6 +32,16 @@
     --jobs-subsite-accordion-border-width: 0;
 }
 
+
+.view-online {
+    @extend .btn;
+    @extend .btn-outline-default;
+    @extend .btn-sm;
+    --bs-btn-color: var(--current-theme-text-color-reverse);
+    --bs-border-color: var(--current-theme-text-color-reverse);
+    padding: 0.5rem 1rem;
+}
+
 .ntg-jobs-subsite {
     &__menu {
         --menu-background-color: var(--current-theme-secondary, #{$ntg-territory-stone});
@@ -287,14 +297,6 @@
             }
         }
 
-        .view-online {
-            @extend .btn;
-            @extend .btn-outline-default;
-            @extend .btn-sm;
-            --bs-btn-color: var(--current-theme-text-color-reverse);
-            --bs-border-color: var(--current-theme-text-color-reverse);
-            padding: 0.5rem 1rem;
-        }
     }
 
     #pagination {

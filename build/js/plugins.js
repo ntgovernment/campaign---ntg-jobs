@@ -16008,8 +16008,8 @@ class NTGJobSearch {
             const jobUrlLinkedin = `https://jointheterritory.nt.gov.au/vacancy?id%3D${positionNumber}&banner%3D1322978`;
 
             const lastAccordionRow = `<div class="d-flex align-items-center">
-                    <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-olive-green py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
-                    <button class="btn btn-outline-olive-green py-1 me-2" data-url="${jobUrl}">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>
+                    <a href="${url}" data-agency="${agency}" data-work-unit="${section}" class="me-2 btn btn-territory-forest py-1" title="${url}">Apply now<i class="ms-3 far fa-external-link ms-05" aria-hidden="true"></i></a>
+                    <button class="btn btn-outline-territory-forest py-1 me-2" data-url="${jobUrl}">Copy link<i class="ms-3 far fa-copy ms-05" aria-hidden="true"></i></button>
                     <div class="social-share">
                         <a class="social-share__link facebook" href="https://www.facebook.com/sharer.php?u=${jobUrl}" target="_blank" title="Share on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
                         <a class="social-share__link linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=${jobUrlLinkedin}" target="_blank" title="Share on linkedin"><i class="fa-brands fa-linkedin"></i></a>
