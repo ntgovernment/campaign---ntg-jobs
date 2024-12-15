@@ -16092,15 +16092,85 @@ class NTGJobSearch {
         $("#searchSpinner").addClass("d-none");
     }
 
+    _highlightMatches(result, searchTerm) {        
+
+        const cloResult = { ...result };
+        const { item, matches } = cloResult;
+        
+        // Clone the item to avoid modifying the original
+        const highlightedItem = cloResult.item;
+
+                                    
+        function normalizeScale(num, min, max) {
+            return (num - min) / (max - min);
+        }
+
+        let score = cloResult.score;
+        let maxMatchLength = 0;
+
+        matches.forEach(match => {
+            const { key, indices } = match;
+            let text = item[key];
+
+            // Process indices in reverse order to avoid shifting
+            const highlightedText = [...indices]
+              .reverse() // Reverse to handle from the end
+              .reduce((acc, [start, end]) => {
+                const before = acc.slice(0, start);
+                const match = acc.slice(start, end + 1);
+                const after = acc.slice(end + 1);
+
+                const isWhitespaceBefore = (start > 0 && acc[start - 1] === ' ') ? 1 : 0;
+                const isWhitespaceAfter = (end < acc.length && acc[end + 1] === ' ') ? 1 : 0;
+                const isStartZero = start == 0 ? 0.5 : 0;
+                const isEnd = (end == acc.length) ? 0.5 : 0;
+                const isUppercase = (match === match.toUpperCase()) ? 1 : 0;
+                
+                if(match.length > maxMatchLength) {
+                    maxMatchLength = match.length;
+                }
+
+                score = score + isWhitespaceBefore + isWhitespaceAfter + isStartZero + isEnd + isUppercase;
+
+                // Wrap the match with <mark>
+                // return `${before}<mark>${match}</mark>${after}`;
+                return before + match + after;
+              }, text);
+        
+            highlightedItem[key] = highlightedText;
+        });
+
+        console.log(maxMatchLength)
+
+        score = score + (maxMatchLength * 2);
+        cloResult.score = score;
+        //Assuming that the maximum value can be 100
+        score = normalizeScale(score, 0, 1000);
+        
+        return cloResult;
+    }
+
     _search(searchQuery) {
         let results;
         
         if(searchQuery != "") {
             const searchResults = this.fuse.search(searchQuery);
 
-            results = searchResults.map(result => result.item);
+            const highlightedResults = searchResults.map(result => this._highlightMatches(result, searchQuery));
 
-            return results;
+            // results = searchResults.map(result => result.item);
+
+            const finalResults = highlightedResults.sort((a, b) => {
+                return b.score - a.score;
+            })
+            .map(result => result.item);
+
+            // console.log(finalResults[0]);
+            // console.log(finalResults[finalResults.length - 1])
+
+            return finalResults;
+
+            // return results;
         } else { //Return all results if the search query is empty
             results = this.fuse._docs;
         }
@@ -16189,10 +16259,15 @@ class NTGJobSearch {
             return expWords;
         });
 
+
         //Keep only unique values
         expandedWords = [...new Set(expandedWords)];
 
-        return expandedWords.join("|");
+        let expandedExactMatch = expandedWords.map(item => `'"${item}"`);
+
+        console.log(expandedExactMatch.join("|"));
+
+        return expandedExactMatch.join("|");
     }
     
     _buildSearchQuery(formData) {
@@ -16380,11 +16455,12 @@ class NTGJobSearch {
 
     _setupFuseSearch(data) {
         const fuseOptions = {
-            // isCaseSensitive: false,
-            includeScore: false,
-            threshold: 0.3,
+            isCaseSensitive: false,
             useExtendedSearch: true,
-            ignoreLocation: true,
+            includeMatches: true,
+            includeScore: true,
+            threshold: 0,
+            ignoreFieldNorm: true,
             keys: [
                 "primaryObjective", 
                 "positionNumber",
