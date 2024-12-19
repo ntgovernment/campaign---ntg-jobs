@@ -611,32 +611,61 @@
                 reader.readAsArrayBuffer(request.response);
                 reader.onload =  function(e){
                     var arrayBuffer = e.target.result;
-                    // debugger
-
-                    mammoth.convertToHtml({arrayBuffer: arrayBuffer},{
-                        styleMap: [
-                            "p[style-name='Heading 1'] => h2",
-                            "p[style-name='Heading 2'] => h3"
-                        ]
-                    }).then(function (resultObject) {
-                        fileResult.innerHTML = resultObject.value
-                        // console.log(resultObject.value)
-
-                        fileResult.querySelectorAll('table').forEach(function (element) {
-                            var parent = element.parentElement;
-
-                            if (!parent.classList.contains('table-responsive')) {
+                    
+                    if(isDocxFile(arrayBuffer)) {
+                        mammoth.convertToHtml({arrayBuffer: arrayBuffer},{
+                            styleMap: [
+                                "p[style-name='Heading 1'] => h3.heading",
+                            ]
+                        }).then(function (resultObject) {
+                            fileResult.innerHTML = resultObject.value
+        
+                            fileResult.querySelectorAll('table').forEach(function (element) {
                                 var div = document.createElement('div');
                                 div.classList.add('table-responsive');
+                                var parent = element.parentElement;
                                 parent.insertBefore(div, element);
                                 div.append(element);
-                            }
+                            });
+                        }).catch(function(error) {
+                            console.log(error)
                         });
-                    })
-                    // console.timeEnd();
+                    } else {
+                        fileResult.innerHTML = `<h2 class="h4">Looks like someone has landed their dream job.</h2>
+                        <p>Don't worry, there's more!</p>
+                        <a href="https://jointheterritory.nt.gov.au/move/sign-up-to-our-newsletter" class="btn btn-dark-green rounded-pill me-4">Sign up for job alerts</a><a href="https://jointheterritory.nt.gov.au/work/work-for-ntg/job-search" class="btn btn-territory-forest rounded-pill">Explore current vacancies</a>`;
+                    }
+
                 };
             };
             request.send();
         }
+
+        function isDocxFile(arrayBuffer) {
+            // Create a DataView to read the ArrayBuffer
+            const dataView = new DataView(arrayBuffer);
+        
+            // Check the first four bytes for the ZIP file signature
+            const firstFourBytes = [
+                dataView.getUint8(0), // First byte
+                dataView.getUint8(1), // Second byte
+                dataView.getUint8(2), // Third byte
+                dataView.getUint8(3), // Fourth byte
+            ];
+        
+            // ZIP signature for .docx files
+            const zipSignature = [0x50, 0x4B, 0x03, 0x04]; // 'PK\x03\x04'
+        
+            // Compare the two arrays
+            const isZipFile = firstFourBytes.every((byte, index) => byte === zipSignature[index]);
+        
+            if (!isZipFile) return false;
+        
+            // Further check: .docx files contain a "[Content_Types].xml" file in the archive
+            const textDecoder = new TextDecoder();
+            const fileContent = textDecoder.decode(arrayBuffer);
+            return fileContent.includes("[Content_Types].xml");
+        }
+
     </script>
 </html>

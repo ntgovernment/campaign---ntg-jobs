@@ -578,6 +578,8 @@ class NTGJobSearch {
         //Keep only unique values
         expandedWords = [...new Set(expandedWords)];
 
+        console.log(expandedWords);
+        
         let expandedExactMatch = expandedWords.map(item => `'"${item}"`);
 
         return expandedExactMatch.join("|");

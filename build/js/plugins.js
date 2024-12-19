@@ -15730,6 +15730,8 @@ class NTGJobSearch {
             this._showResults(filteredResults);
 
             document.querySelector(this.searchSort).addEventListener("change", this._onSortSelectChangeCb.bind(this));
+        }, (error) => {
+            console.log("here");
         })
     }
 
@@ -16092,18 +16094,13 @@ class NTGJobSearch {
         $("#searchSpinner").addClass("d-none");
     }
 
-    _highlightMatches(result, searchTerm) {        
+    _customScoringMatches(result, searchTerm) {        
 
         const cloResult = { ...result };
         const { item, matches } = cloResult;
         
         // Clone the item to avoid modifying the original
         const highlightedItem = cloResult.item;
-
-                                    
-        function normalizeScale(num, min, max) {
-            return (num - min) / (max - min);
-        }
 
         let score = cloResult.score;
         let maxMatchLength = 0;
@@ -16114,16 +16111,21 @@ class NTGJobSearch {
 
             // Process indices in reverse order to avoid shifting
             const highlightedText = [...indices]
-              .reverse() // Reverse to handle from the end
+              .reverse() // Reverse to handle from the end in case we need to mark the items
               .reduce((acc, [start, end]) => {
                 const before = acc.slice(0, start);
                 const match = acc.slice(start, end + 1);
                 const after = acc.slice(end + 1);
 
+                //Result gets an extra point if there is white space before
                 const isWhitespaceBefore = (start > 0 && acc[start - 1] === ' ') ? 1 : 0;
+                //Result gets an extra point if there is white space after
                 const isWhitespaceAfter = (end < acc.length && acc[end + 1] === ' ') ? 1 : 0;
+                //Result get half a point if it is in the start of the sentence
                 const isStartZero = start == 0 ? 0.5 : 0;
+                //Result get half a point if it is in the end of the sentence
                 const isEnd = (end == acc.length) ? 0.5 : 0;
+                //Result get 1 point if it is uppercase
                 const isUppercase = (match === match.toUpperCase()) ? 1 : 0;
                 
                 if(match.length > maxMatchLength) {
@@ -16132,19 +16134,21 @@ class NTGJobSearch {
 
                 score = score + isWhitespaceBefore + isWhitespaceAfter + isStartZero + isEnd + isUppercase;
 
-                // Wrap the match with <mark>
-                // return `${before}<mark>${match}</mark>${after}`;
                 return before + match + after;
               }, text);
         
             highlightedItem[key] = highlightedText;
         });
 
-        console.log(maxMatchLength)
-
+        //Add the maximum number of matched characters to the score to show the longest matching result first
         score = score + (maxMatchLength * 2);
         cloResult.score = score;
-        //Assuming that the maximum value can be 100
+
+        //Normalize the score between 0 and 1, assuming that the maximum value can be 1000                        
+        function normalizeScale(num, min, max) {
+            return (num - min) / (max - min);
+        }
+
         score = normalizeScale(score, 0, 1000);
         
         return cloResult;
@@ -16156,21 +16160,14 @@ class NTGJobSearch {
         if(searchQuery != "") {
             const searchResults = this.fuse.search(searchQuery);
 
-            const highlightedResults = searchResults.map(result => this._highlightMatches(result, searchQuery));
+            const scoreResults = searchResults.map(result => this._customScoringMatches(result, searchQuery));
 
-            // results = searchResults.map(result => result.item);
-
-            const finalResults = highlightedResults.sort((a, b) => {
+            const finalResults = scoreResults.sort((a, b) => {
                 return b.score - a.score;
             })
             .map(result => result.item);
 
-            // console.log(finalResults[0]);
-            // console.log(finalResults[finalResults.length - 1])
-
             return finalResults;
-
-            // return results;
         } else { //Return all results if the search query is empty
             results = this.fuse._docs;
         }
@@ -16245,7 +16242,7 @@ class NTGJobSearch {
     }
 
     _expandQuery(query) {
-        const words = query.split(" ");
+        const words = [query.toLowerCase()];
 
         let expandedWords = words.flatMap(word => {
             let expWords = [word];
@@ -16263,9 +16260,9 @@ class NTGJobSearch {
         //Keep only unique values
         expandedWords = [...new Set(expandedWords)];
 
+        console.log(expandedWords);
+        
         let expandedExactMatch = expandedWords.map(item => `'"${item}"`);
-
-        console.log(expandedExactMatch.join("|"));
 
         return expandedExactMatch.join("|");
     }
@@ -16489,7 +16486,17 @@ class NTGJobSearch {
 
             return jobs.vacancySearchResults;
         } catch(error) {
-            console.error(`Error fetching Data: ${error}`)
+            const alertTemplate = `<div class="alert alert-danger" role="alert">
+                        <h3 class="mb-1 fs-4">Error</h3>
+                       <p>There was an error fetching the latest vacancies. Please try again later.</p> 
+            </div>`;
+
+            this.searchResultsWrapper.insertAdjacentHTML("afterend", alertTemplate);
+
+            document.querySelector(this.searchSort).parentElement.classList.add("d-none");
+
+            console.error(`Error fetching Data: ${error}`);
+
         }
     }
 
