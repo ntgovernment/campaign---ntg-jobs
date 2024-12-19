@@ -356,6 +356,10 @@
 
 
             <main id="content">
+                <div class="container">
+                    <a id="go-back" class="btn btn-sm btn-outline-default"><i class="fas fa-chevron-left me-2"></i>Back</a>
+                </div>
+                
                 <div id="fileResult" class="container py-5"></div>
 
 
@@ -602,9 +606,17 @@
     <script>
         parseWordDocxFile();
 
-        function parseWordDocxFile(inputElement) {    
+        function parseWordDocxFile(inputElement) {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const fileId = urlParams.get('attachmentId');
+            var backBtn = document.getElementById('go-back');
+
+            // const attachmentUrl = document.getElementById("fileResult").getAttribute("data-attachment-url") + "?attachmentId=" + fileId;
+            const attachmentUrl = "./assets/docxfile.docx";
+
             var request = new XMLHttpRequest();
-            request.open('GET', "./assets/docxfile.docx", true);
+            request.open('GET', attachmentUrl, true);
             request.responseType = 'blob';
             request.onload = function() {
                 var reader = new FileReader();
@@ -619,7 +631,7 @@
                             ]
                         }).then(function (resultObject) {
                             fileResult.innerHTML = resultObject.value
-        
+
                             fileResult.querySelectorAll('table').forEach(function (element) {
                                 var div = document.createElement('div');
                                 div.classList.add('table-responsive');
@@ -627,16 +639,25 @@
                                 parent.insertBefore(div, element);
                                 div.append(element);
                             });
+                            
+                            
+                            backBtn.setAttribute('href', document.referrer);
+                            backBtn.addEventListener('click', function() {
+                                history.back();
+                                return false;
+                            });
                         }).catch(function(error) {
                             console.log(error)
                         });
                     } else {
+                        backBtn.classList.add("d-none");
                         fileResult.innerHTML = `<h2 class="h4">Looks like someone has landed their dream job.</h2>
-                        <p>Don't worry, there's more!</p>
-                        <a href="https://jointheterritory.nt.gov.au/move/sign-up-to-our-newsletter" class="btn btn-dark-green rounded-pill me-4">Sign up for job alerts</a><a href="https://jointheterritory.nt.gov.au/work/work-for-ntg/job-search" class="btn btn-territory-forest rounded-pill">Explore current vacancies</a>`;
+                        <p>Don’t worry, there’s more!</p>
+                        <a href="./?a=1342740" class="btn btn-dark-green rounded-pill me-4">Sign up for job alerts</a><a href="./?a=1322646" class="btn btn-territory-forest rounded-pill">Explore current vacancies</a>`;
                     }
 
                 };
+                
             };
             request.send();
         }
@@ -644,7 +665,7 @@
         function isDocxFile(arrayBuffer) {
             // Create a DataView to read the ArrayBuffer
             const dataView = new DataView(arrayBuffer);
-        
+
             // Check the first four bytes for the ZIP file signature
             const firstFourBytes = [
                 dataView.getUint8(0), // First byte
@@ -652,20 +673,19 @@
                 dataView.getUint8(2), // Third byte
                 dataView.getUint8(3), // Fourth byte
             ];
-        
+
             // ZIP signature for .docx files
             const zipSignature = [0x50, 0x4B, 0x03, 0x04]; // 'PK\x03\x04'
-        
+
             // Compare the two arrays
             const isZipFile = firstFourBytes.every((byte, index) => byte === zipSignature[index]);
-        
+
             if (!isZipFile) return false;
-        
+
             // Further check: .docx files contain a "[Content_Types].xml" file in the archive
             const textDecoder = new TextDecoder();
             const fileContent = textDecoder.decode(arrayBuffer);
             return fileContent.includes("[Content_Types].xml");
         }
-
     </script>
 </html>
