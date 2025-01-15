@@ -49,7 +49,7 @@ class NTGJobSearch {
 
             document.querySelector(this.searchSort).addEventListener("change", this._onSortSelectChangeCb.bind(this));
         }, (error) => {
-            console.log("here");
+            console.log("Error fetching the data. Please try again later.");
         })
     }
 
@@ -577,8 +577,6 @@ class NTGJobSearch {
 
         //Keep only unique values
         expandedWords = [...new Set(expandedWords)];
-
-        console.log(expandedWords);
         
         let expandedExactMatch = expandedWords.map(item => `'"${item}"`);
 
