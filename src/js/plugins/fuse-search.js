@@ -414,6 +414,8 @@ class NTGJobSearch {
 
     _customScoringMatches(result, searchTerm) {        
 
+        console.log(result);
+        
         const cloResult = { ...result };
         const { item, matches } = cloResult;
         
@@ -427,35 +429,40 @@ class NTGJobSearch {
             const { key, indices } = match;
             let text = item[key];
 
-            // Process indices in reverse order to avoid shifting
-            const highlightedText = [...indices]
-              .reverse() // Reverse to handle from the end in case we need to mark the items
-              .reduce((acc, [start, end]) => {
-                const before = acc.slice(0, start);
-                const match = acc.slice(start, end + 1);
-                const after = acc.slice(end + 1);
+            console.log(match)
+            console.log(indices);
+            if(match.key == "primaryObjective" && match.key == "jobTitle") {
+                // Process indices in reverse order to avoid shifting
+                const highlightedText = [...indices]
+                .reverse() // Reverse to handle from the end in case we need to mark the items
+                .reduce((acc, [start, end]) => {
+                    const before = acc.slice(0, start);
+                    const match = acc.slice(start, end + 1);
+                    const after = acc.slice(end + 1);
 
-                //Result gets an extra point if there is white space before
-                const isWhitespaceBefore = (start > 0 && acc[start - 1] === ' ') ? 1 : 0;
-                //Result gets an extra point if there is white space after
-                const isWhitespaceAfter = (end < acc.length && acc[end + 1] === ' ') ? 1 : 0;
-                //Result get half a point if it is in the start of the sentence
-                const isStartZero = start == 0 ? 0.5 : 0;
-                //Result get half a point if it is in the end of the sentence
-                const isEnd = (end == acc.length) ? 0.5 : 0;
-                //Result get 1 point if it is uppercase
-                const isUppercase = (match === match.toUpperCase()) ? 1 : 0;
-                
-                if(match.length > maxMatchLength) {
-                    maxMatchLength = match.length;
-                }
+                    //Result gets an extra point if there is white space before
+                    const isWhitespaceBefore = (start > 0 && acc[start - 1] === ' ') ? 1 : 0;
+                    //Result gets an extra point if there is white space after
+                    const isWhitespaceAfter = (end < acc.length && acc[end + 1] === ' ') ? 1 : 0;
+                    //Result get half a point if it is in the start of the sentence
+                    const isStartZero = start == 0 ? 0.5 : 0;
+                    //Result get half a point if it is in the end of the sentence
+                    const isEnd = (end == acc.length) ? 0.5 : 0;
+                    //Result get 1 point if it is uppercase
+                    const isUppercase = (match === match.toUpperCase()) ? 1 : 0;
+                    
+                    if(match.length > maxMatchLength) {
+                        maxMatchLength = match.length;
+                    }
 
-                score = score + isWhitespaceBefore + isWhitespaceAfter + isStartZero + isEnd + isUppercase;
+                    score = score + isWhitespaceBefore + isWhitespaceAfter + isStartZero + isEnd + isUppercase;
 
-                return before + match + after;
-              }, text);
-        
-            highlightedItem[key] = highlightedText;
+                    return before + match + after;
+                }, text);
+
+                highlightedItem[key] = highlightedText;
+            }
+            
         });
 
         //Add the maximum number of matched characters to the score to show the longest matching result first
