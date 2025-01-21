@@ -412,10 +412,7 @@ class NTGJobSearch {
         $("#searchSpinner").addClass("d-none");
     }
 
-    _customScoringMatches(result, searchTerm) {        
-
-        console.log(result);
-        
+    _customScoringMatches(result, searchTerm) {                
         const cloResult = { ...result };
         const { item, matches } = cloResult;
         
@@ -429,8 +426,6 @@ class NTGJobSearch {
             const { key, indices } = match;
             let text = item[key];
 
-            console.log(match)
-            console.log(indices);
             if(match.key == "primaryObjective" && match.key == "jobTitle") {
                 // Process indices in reverse order to avoid shifting
                 const highlightedText = [...indices]
@@ -519,7 +514,9 @@ class NTGJobSearch {
             let dateFilterCheck;
 
             if(dateListed && listedTime) {
-                const listedDate = new Date(dateListed);
+                //Convert Microsoft date format to JS Date
+                const timestamp = parseInt(dateListed.match(/\d+/)[0], 10);
+                const listedDate = new Date(timestamp);
 
                 const timeDifference = currentDate - listedDate;
 
