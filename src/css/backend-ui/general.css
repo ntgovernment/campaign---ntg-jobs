@@ -1,0 +1,78 @@
+.bct-wrapper .component-content {
+    min-height: 2.5rem;
+}
+
+.mbs .with-viper,
+.mbs .sq-wysiwyg-preview-wrapper {
+    padding: 0 !important;
+}
+
+.sq-wysiwyg-preview-wrapper,
+.with-viper {
+    min-width: 100% !important;
+}
+
+.sq-wysiwyg-preview-wrapper p,
+.with-viper p {
+    font-weight: 400 !important;
+}
+
+.bct-metadata .sq-metadata-description {
+    margin-top: 4px !important;
+}
+
+.component-content .flickity-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem
+}
+
+.component-content .flickity-carousel .carousel-cell {
+    flex: 0 0 33.33%;
+}
+
+.card video {
+    width: 100%;
+}
+
+/* show default and cascade checkboxes */
+.bct-metadata .sq-metadata-settings-wrapper,
+.bct-metadata .sq-metadata-cascade-wrapper,
+.bct-metadata .sq-metadata-default-wrapper {
+    display: block !important;
+    margin-bottom: 5px;
+}
+
+.bct-metadata .sq-metadata-wrapper {
+    flex-flow: column !important;
+}
+
+/* vertical tabs */
+.component-content .bct-tabs {
+    display: flex;
+}
+
+.component-content .bct-tabs .nav-tabs {
+    flex-direction: column;
+}
+
+.component-content .bct-tabs .bct-tab-pane {
+    flex: 1;
+    padding: 1rem;
+}
+
+.component-content .bct-tabs .nav-tabs .nav-link {
+    border-radius: 0;
+}
+
+.component-content .bct-tabs .nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+}
+
+.component-content .bct-tabs .mbs {
+    background-color: #f2f7fd;
+}
+
+.component-content .bct-tabs .sq-metadata-settings-wrapper {
+    width: 50px;
+}

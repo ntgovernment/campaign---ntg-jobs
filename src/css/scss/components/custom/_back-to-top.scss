@@ -1,0 +1,49 @@
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--current-theme-secondary, $secondary);
+    border: 3px solid var(--current-theme-secondary, $secondary);
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba($black, 0.25);
+    transition: 0.2s background ease-in-out, 0.2s border-color ease-in-out;
+    z-index: 1000;
+
+    &:hover,
+    &:focus-within {
+        background: var(--current-theme-tertiary, $tertiary);
+        border: 3px solid var(--current-theme-tertiary, $tertiary);
+
+        i {
+            color: var(--current-theme-tertiary-text, $tertiary-text);
+        }
+    }
+
+    button {
+        background-color: transparent;
+        appearance: none;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+
+        @include media-breakpoint-down(md) {
+            width: 42px;
+            height: 42px;
+        }
+
+        &:focus {
+            @include focus();
+        }
+    }
+
+    i {
+        color: var(--current-theme-secondary-text, $secondary-text);
+        transition: 0.2s color ease-in-out;
+    }
+}

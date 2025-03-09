@@ -1,0 +1,237 @@
+.ntg-sub-nav {
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        a {
+            color: var(--header-text-color);
+            padding: 1rem 0.7rem;
+            font-weight: bold;
+            display: block;
+            text-decoration: none;
+            transition: 0.2s color ease-in-out;
+        }
+
+        li {
+            overflow: visible;
+            position: relative;
+            margin: 0;
+        }
+
+        > li {
+            &.rm-focused,
+            &:hover {
+                > ul {
+                    @include media-breakpoint-up(lg) {
+                        display: block;
+                    }
+                }
+
+                > a {
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
+                }
+
+                &.has-children {
+                    > a {
+                        &:after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
+                }
+            }
+            
+            &.has-children {
+                > a {
+                    &:after {
+                        @extend .fa;
+                        content: '\f078';
+                        font-weight: 700 !important;
+                        margin-left: 0.5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        ul {
+            z-index: 99;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+            background-color: color-mix(in srgb, var(--current-theme-color, #{$ntg-territory-stone}), $white 20%);
+            padding: 0;
+            list-style-type: none;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba($black, 0.2);
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: -0.5rem;
+            }
+
+            li {
+                width: 100%;
+                list-style-type: none;
+            }
+
+            a {
+                color: var(--header-text-color);
+                font-weight: normal;
+                padding: 1rem 0.7rem;
+            }
+
+            > li {
+                position: relative;
+
+                &.has-children {
+                    > a {
+                        &:after {
+                            position: absolute !important;
+                            right: 0.7rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+
+                &.rm-focused,
+                &:hover {
+                    &.has-children {
+                        > a {
+                            &:after {
+                                transform: translateY(-50%) rotate(-90deg);
+                            }
+                        }
+                    }
+
+                    > a {
+                        background-color: var(--current-theme-color, #{$ntg-territory-stone});
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+                &.active {
+                    > a {
+                        background-color: var(--current-theme-color, #{$ntg-territory-stone});
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            ul {
+                left: 100%;
+                top: 0;
+                background-color: var(--current-theme-color, #{$ntg-territory-stone});
+            }
+        }
+    }
+
+    .more {
+        &.rm-focused,
+        &:hover {
+            > a {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        > a {
+            &:after {
+                @extend .fa;
+                content: '\f078';
+                margin-left: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        ul {
+            right: 0;
+            left: inherit !important;
+            transition: margin 0.2s ease-out;
+
+            li {
+                &:hover {
+                    ul {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .tertiary {
+            position: relative;
+
+            &:hover {
+                > ul {
+                    display: block !important;
+                }
+            }
+
+            ul {
+                margin-top: 0;
+                margin-right: 0 !important;
+                right: 100%;
+                top: 0;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &:after {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+
+        .exclude {
+            display: none;
+        }
+    }
+
+    .edge {
+        ul {
+            ul {
+                left: -100% !important;
+            }
+        }
+
+        &.all {
+            ul {
+                right: 0;
+                left: inherit !important;
+
+                ul {
+                    right: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.ntg-image-columns {
+    color: var(--current-theme-text-color, $body-color);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
+
+    figure {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    figcaption {
+        @include font-size(16px);
+        margin-top: 0.5rem;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 320px;
+
+        @include media-breakpoint-down(lg) {
+            height: 250px;
+        }
+    }
+}

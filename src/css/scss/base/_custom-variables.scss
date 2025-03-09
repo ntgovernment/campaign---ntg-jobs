@@ -1,0 +1,149 @@
+
+$prefix: bs-;
+
+// Key Global Bootstrap Options
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * 1,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 5,
+  9: $spacer * 7.5,
+  10: $spacer * 10,
+  11: $spacer * 12.5,
+  12: $spacer * 15
+);
+
+$enable-dark-mode: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-reduced-motion: true;
+$enable-grid-classes: true;
+$enable-container-classes: true;
+$enable-caret: true;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: true;
+$enable-negative-margins: false;
+$enable-deprecation-messages: true;
+$enable-important-utilities: true;
+$enable-smooth-scroll: true;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "32x9": calc(9 / 32 * 100%)
+);
+
+// Typography
+$font-ubuntu: 'Ubuntu', var(--bs-font-sans-serif);
+$font-ubuntu-condensed: 'Ubuntu Condensed', var(--bs-font-sans-serif);
+
+$font-family-base: $font-ubuntu;
+
+// Cards
+$card-bg: transparent;
+$card-cap-padding-y: $spacer;
+$card-cap-bg: transparent;
+$card-border-width: 0;
+$card-border-radius: 0;
+$card-inner-border-radius: 0;
+$card-height: 100%;
+
+// Accordions
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.5rem;
+$accordion-color: $ntg-dark-gray;
+$accordion-bg: $ntg-territory-stone;
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-button-color: $ntg-dark-gray;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $ntg-dark-gray;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-width: 17px;
+$accordion-icon-color: $ntg-dark-gray;
+$accordion-icon-active-color: $ntg-dark-gray;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{$accordion-icon-color}' /></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='448' height='512' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='#{$accordion-icon-active-color}' /></svg>");
+$accordion-icon-transform: rotate(180deg);
+
+// Alerts
+$alert-border-width: 3px;
+
+// Buttons
+$btn-padding-x: 2rem;
+$btn-padding-y: 1rem;
+$btn-border-radius: 1000px;
+
+$btn-padding-x-sm: 1.5rem;
+$btn-padding-y-sm: 0.75rem;
+$btn-border-radius-sm: 1000px;
+
+$btn-padding-x-lg: 2.25rem;
+$btn-padding-y-lg: 1.125rem;
+$btn-border-radius-lg: 1000px;
+
+$btn-hover-bg-shade-amount: 60%;
+$btn-hover-bg-tint-amount: 60%;
+$btn-hover-border-shade-amount: 60%;
+$btn-hover-border-tint-amount: 60%;
+
+// Breadcrumbs
+$breadcrumb-divider-color: $body-color;
+$breadcrumb-active-color: $body-color;
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8.75' height='14' viewBox='0 0 320 512'><path fill='#{$breadcrumb-divider-color}' d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'/></svg>");
+
+// Form
+$input-color: $body-color;
+$input-bg: $white;
+$input-border-color: var(--current-theme-text-color, $body-color);
+$input-border-radius: 0;
+$input-focus-border-color: var(--current-theme-text-color, $body-color);
+
+// Modal
+$modal-inner-padding: 2rem;
+$modal-content-border-radius: 0;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+
+// Table
+$table-color: var(--current-theme-text-color, $body-color);
+$table-border-color: var(--current-theme-text-color, $body-color);
+
+/* -------- Custom -------- */
+  
+// These variables are all required.
+$focus-ring-width: .25rem;
+$focus-ring-opacity: .25;
+$focus-ring-color: rgba($ntg-heliconia-orange, $focus-ring-opacity);
+$focus-ring-blur: 0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+
+// TODO: check and remove if okay
+$focus-color: $ntg-heliconia-orange;
+$focus-width: 3px;
+$outline-offset-width: 2px;
+
+$stretched-link-pseudo-element: before;
+
+$text-shadow: 2px 2px 2px rgba(var(--current-theme-primary-text-reverse-rgb, #{to-rgb($ntg-dark-gray)}), 0.75);
+$text-shadow-reverse: 2px 2px 2px rgba(var(--current-theme-primary-text-rgb, #{to-rgb($ntg-dark-gray)}), 0.75);
+$box-shadow: 0px 0px 10px rgba(#000, 0.2);
+
+$header-heights: (
+  "desktop": 102px,
+  "tablet": 96px,
+  "mobile": 80px
+);

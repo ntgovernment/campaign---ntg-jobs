@@ -1,0 +1,74 @@
+// default color definitions
+.ntg-map-tabs {
+    // --map-tabs-background-color: var(--current-theme-color, #0D2C4D);
+    // --map-tabs-background-color-light: var(--current-theme-color-lighter, #112936);
+    // --map-tabs-text-color: var(--current-theme-text-color, #{$white});
+    --map-tabs-background-color: #0D2C4D;
+    --map-tabs-background-color-light: #112936;
+    --map-tabs-text-color: #fff;
+
+    .btn-outline-default {
+        @include button-outline-variant(#fff);
+    }
+}
+
+.ntg-map-tabs {    
+    position: relative;
+    overflow: hidden;
+    background-color: var(--map-tabs-background-color);
+    color: var(--map-tabs-text-color);
+
+    .nav-tabs-wrapper {
+        background-color: var(--map-tabs-background-color-light);
+    }
+
+    .nav-link {
+        --#{$prefix}nav-tabs-link-active-color: var(--map-tabs-text-color);
+        --#{$prefix}nav-tabs-link-active-bg: transparent;
+        --#{$prefix}nav-tabs-link-active-border-color: var(--map-tabs-text-color);
+    }
+
+    .nav-tabs {
+        justify-content: space-between;
+
+        &.flickity-enabled {
+            display: block;
+            padding: 0 50px;
+
+            .nav-item {
+                width: 100%;
+                padding-bottom: var(--bs-nav-tabs-border-width, 3px);
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            .flickity-button {
+                background-color: transparent;
+                border: 2px solid var(--map-tabs-text-color);;
+                width: 30px;
+                height: 30px;
+
+                &-icon {
+                    fill: var(--map-tabs-text-color);;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        @include media-breakpoint-up(lg) {
+            min-height: 650px;
+        }
+    }
+
+    .tab-pane__bottom {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .tab-pane__sub-title {
+        @extend .tag;
+    }
+}

@@ -1,0 +1,120 @@
+.ntg-side-nav {
+    border-top: 4px solid var(--current-theme-secondary, $secondary);
+    
+    #nav-default {
+        @include media-breakpoint-down(lg) {
+            padding: 0 0.5rem;
+        }
+    }
+
+    ul {
+        margin: 0 !important;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 0 !important;
+    }
+
+    li.active {
+        > a,
+        > span {
+            color: inherit;
+            font-weight: bold;
+        }
+    }
+
+    a {
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 2px;
+        }
+    }
+
+    .ntg-side-nav__toggle {
+        border-radius: 0;
+    }
+
+    .ntg-side-nav__title {
+        margin: 0;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 0.5rem 0;
+    }
+
+    a,
+    span {
+        display: block;
+        padding: 0.5rem 0.5rem;
+    }
+
+    ul ul {
+        color: var(--current-theme-tertiary-text, $tertiary-text);
+        background-color: var(--current-theme-tertiary, $primary);
+    }
+
+    ul ul a {
+        padding-left: 1rem;
+    }
+
+    ul ul ul a {
+        padding-left: 1.5rem;
+    }
+
+    li:has(a.ntg-side-nav__collapser) {
+        > a:not(.ntg-side-nav__collapser) {
+            padding-right: calc(2.5rem + $font-size-base);
+        }
+    }
+
+    .ntg-side-nav__collapser {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 1rem;
+        height: 47.5px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .collapser {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        font-size: 0;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0 2px 0 0;
+        }
+    }
+
+    .collapser:after {
+        @extend .fa;
+        content: '\f077';
+        font-size: $font-size-base;
+    }
+
+    .collapsed .collapser:after {
+        @extend .fa;
+        content: '\f078';
+        font-size: $font-size-base;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+}

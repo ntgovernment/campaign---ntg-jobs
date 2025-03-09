@@ -1,0 +1,64 @@
+.ntg-accordion {
+    color: var(--current-theme-text-color);
+    --accordion-background-color: var(--current-theme-text-color, #{$ntg-territory-stone});
+    --accordion-text-color: var(--current-theme-text-color-reverse, #{$ntg-dark-gray});
+
+    &:not([data-bs-theme="default"]) {
+        background-color: var(--current-theme-color);
+    }
+}
+
+.accordion {
+    --bs-accordion-bg: var(--accordion-background-color);
+    --bs-accordion-color: var(--accordion-text-color);
+    --bs-accordion-active-color: var(--bs-accordion-color);
+    --bs-accordion-btn-color: var(--bs-accordion-color);
+
+    &-item {
+        &:not(:first-of-type) {
+            margin-top: 1rem;
+        }
+    }
+
+    &-header {
+        font-size: $font-size-base;
+
+        &:target {
+            display: block;
+        }
+    }
+
+    &-button {
+        font-size: inherit;
+        font-weight: inherit;
+        gap: 0.5rem;
+
+        &:focus {
+            @include focus();
+        }
+
+        &:after {
+            background-position: center;
+
+            @include media-breakpoint-down(lg) {
+                width: 0.875rem;
+                height: 0.875rem;
+                background-size: 0.875rem;
+            }
+        }
+    }
+
+    &-collapse {
+        padding: 0 1.5rem;
+    }
+
+    &-body {
+        padding: 1rem 0;
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

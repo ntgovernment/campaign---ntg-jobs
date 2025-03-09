@@ -1,0 +1,22 @@
+.component-content a {
+    pointer-events: none; /* disable all links in component preview */
+}
+
+/* Call to Action Links */
+.component-content .ntg-call-to-action-links {
+    color: var(--current-theme-text-color, #2B292D);
+}
+
+.ntg-call-to-action-links:not([data-bs-theme=default]) {
+    background-color: var(--current-theme-color, #D7D2CB);
+}
+
+.component-content .ntg-call-to-action-links img,
+.component-content .ntg-call-to-action-links video {
+    width: 100%;
+    height: auto;
+}
+
+.component-content .ntg-call-to-action-links__content {
+    padding: 1rem;
+}

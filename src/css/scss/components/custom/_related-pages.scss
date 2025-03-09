@@ -1,0 +1,73 @@
+// default colour definitions
+.ntg-related-pages {    
+    --related-pages-background-color: #{$ntg-territory-stone};
+    --related-pages-text-color: #{$ntg-dark-gray};
+    --related-pages-special-color: #{$white};
+}
+
+// colour definitions when html or body has data-bs-theme
+[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    .ntg-related-pages {
+        --related-pages-background-color: var(--current-theme-tertiary);
+        --related-pages-text-color: var(--current-theme-tertiary-text);
+        --related-pages-special-color: var(--current-theme-tertiary-text);
+    }
+}
+
+// colour definitions when footer has data-bs-theme
+.ntg-related-pages[data-bs-theme]:not([data-bs-theme="default"]):not([data-bs-theme=""]) {
+    --related-pages-background-color: var(--current-theme-color);
+    --related-pages-text-color: var(--current-theme-text-color);
+    --related-pages-special-color: var(--current-theme-text-color);
+}
+
+.ntg-related-pages {
+    background-color: var(--related-pages-background-color);
+    color: var(--related-pages-text-color);
+
+    ul {
+        @extend .list-flush !optional;
+        @extend .list-chevron !optional;
+        columns: 4;
+
+        @include media-breakpoint-down(xl) {
+            columns: 3;
+        }
+
+        @include media-breakpoint-down(lg) {
+            columns: 2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            columns: 1;
+        }
+    }
+
+    &__links {
+        margin-bottom: 0;
+    }
+
+    li {
+        break-inside: avoid-column;
+
+        &::before {
+            color: var(--related-pages-special-color);
+        }
+
+        &.active {
+            a {
+                font-weight: 700;
+            }
+        }
+
+        a {
+            font-weight: 400;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline !important;
+                text-decoration-thickness: 2px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.breadcrumb {
+    margin-bottom: 0;
+
+    &-item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(20ch + 16.75px + $breadcrumb-item-padding-x);
+        margin-right: calc($breadcrumb-item-padding-x - 4px);
+        padding: 0 4px 4px 0;
+
+        + .breadcrumb-item::before {
+            @extend .fa;
+            content: "\f054";
+            font-weight: 700 !important;
+            @include font-size(16px);
+            margin-top: 2px;
+        }
+
+        &:has(:focus-visible) {
+            @include focus();
+        }
+
+        a {
+            &:focus {
+                outline: none;
+            }
+        }
+
+        + .breadcrumb-item {
+            padding-left: 0;
+        }
+
+        &.active {
+            color: var(--current-theme-text-color, #{$body-color});
+        }
+    }
+
+    &-item + &-item::before {
+        color: var(--current-theme-text-color, #{$body-color});
+    }
+}

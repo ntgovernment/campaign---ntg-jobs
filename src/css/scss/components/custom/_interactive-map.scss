@@ -1,0 +1,57 @@
+.interactive-map {
+    width: 1092px;
+    height: 585px;
+
+    @include media-breakpoint-down(lg) {
+        transform: translate(-50px, 50px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: block;
+        position: absolute;
+        bottom: -75px;
+        right: -200px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        right: -50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+
+    #NT g:not(.exclude) {
+        cursor: pointer;
+
+        &:hover {
+            path:not(.exclude):not(.label) {
+                stroke: white;
+                stroke-width: 2;
+            }
+        }
+    }
+
+    #NT g.active {
+        path.label:not(.darwin):not(.gove) {
+            fill: #6E8094;
+        }
+    }
+
+    path {
+        transition: 0.2s fill ease-in-out;
+    }
+
+    svg {
+        @include media-breakpoint-down(lg) {
+            width: 1092px;
+            height: 585px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.ntg-highlights {
+    color: var(--current-theme-text-color, $body-color);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
+
+    &__highlight {
+        position: relative;
+        padding-left: 1rem;
+        border-left: 4px solid var(--current-theme-secondary, $ntg-territory-forest);
+
+        &:focus-within {
+            @include focus();
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// <p> tags in bootstrap have a default bottom margin
+#content {
+    p + ul {
+        margin-top: -0.5rem;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// removes the outline from links if its clicked with a mouse
+*:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+// keeps the footer at the bottom of the visible screen when there is not enough content available
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .page-header-container,
+    .ntg-footer {
+        flex: none;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+// clears the 'x' from ie
+input[type=search]::-ms-clear,
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0; 
+}
+
+// clears the 'x' from webkit browsers
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none; 
+}
+
+// allows content to appear over banner
+main {
+    position: relative;
+}

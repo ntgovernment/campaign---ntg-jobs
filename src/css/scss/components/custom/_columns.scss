@@ -1,0 +1,12 @@
+.ntg-columns {
+    color: var(--current-theme-text-color);
+
+    &:not([data-bs-theme="default"]) {
+        background-color: var(--current-theme-color);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

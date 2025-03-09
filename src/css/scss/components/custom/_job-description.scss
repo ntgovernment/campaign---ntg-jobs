@@ -1,0 +1,51 @@
+/* These styles are specific to the job description page 'viewFile.html' where HTML is generated from DOCX */
+
+#fileResult {
+    table {
+        th, td {
+            > * {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        h2 {
+            @include font-size($h4-font-size);
+
+            &:only-child {
+                margin: 1rem 0;
+            }
+        }
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    .table-responsive {
+        margin-bottom: 1rem;
+        scrollbar-color: var(--current-theme-tertiary) var(--current-theme-tertiary-text);
+        scrollbar-width: thin;
+    
+        &::-webkit-scrollbar {
+            background-color: var(--current-theme-tertiary-text);
+            height: 8px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--current-theme-tertiary-text);
+        }
+    }
+
+    &:has(.table-responsive) {
+        .table-responsive,
+        table {
+            transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            /* IE 9 */
+            -webkit-transform: rotateX(180deg);
+            /* Safari and Chrome */
+        }
+    }
+}

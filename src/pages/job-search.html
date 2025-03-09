@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Job search | Join the Territory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/43d667f0b2.js" crossorigin="anonymous"></script>
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="skip-link" aria-label="skip links navigation">
+                <a class="skip-link__link" href="#content">Skip to main content</a>
+                <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+            </nav>
+
+            <nav class="nav-menu-mobile" id="mmenu-wrapper">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                        <ul>
+                            <li><a href="./news-item.html">News item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./components.html">Components</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search-global">
+                <form action="/search/" method="get" accept-charset="UTF-8">
+                    <div class="search-global__row">
+                        <div class="search-global__field search-global__field--form">
+                            <label for="queries_name_query" class="sr-only">Search</label>
+                            <input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15" maxlength="128" class="form-search" placeholder="Search" />
+                            <button type="submit" id="edit-submit">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Popular searches</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Recently updated pages</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" title="Close search" class="search-global__close">Close</a>
+                </form>
+            </div>
+
+            <div class="page-header-container" data-bs-theme="default">
+                <header class="ntg-header" role="banner">
+                    <div class="container">
+                        <div class="ntg-header__wrapper">
+                            <a class="ntg-header__logo" href="./index.html">
+                                <svg class="ntg-header__image" width="178" height="64">
+                                    <use href="assets/images/logos/logo-territory.svg#logo-territory"></use>
+                                </svg>
+                            </a>
+
+                            <nav class="ntg-main-nav" id="mainmenu">
+                                <div class="ntg-main-nav__wrapper">
+                                    <ul class="ntg-main-nav__links">
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./index.html" role="button">Home</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="./index.html">Home</a>
+                                                            </h2>
+                                                            <p>
+                                                                With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call
+                                                                home.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="#">Cost of living</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Healthcare</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Checklist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Setting up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">What to do in the NT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Small business and startups</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Housing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Transportation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Weather</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <button class="btn btn-tertiary btn-chevron-right text-nowrap">Move to the NT Checklist</button>
+                                                            <p class="pt-3">Make sure you've got everything you need to hit the ground running.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link">
+                                            <a href="./content.html" role="button">Content</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">Content</a>
+                                                            </h2>
+                                                            <p>
+                                                                With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call
+                                                                home.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="./testimonial.html">Testimonial</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./form.html" role="button">Form</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./news.html" role="button">News</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="#">News</a>
+                                                            </h2>
+                                                            <p>
+                                                                With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call
+                                                                home.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="./news-item.html">News item</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./components-default.html" role="button">Components</a>
+                                            <div class="ntg-main-nav__panel">
+                                                <div class="container">
+                                                    <div class="ntg-main-nav__panel-wrapper">
+                                                        <div class="ntg-main-nav__panel-group" role="group">
+                                                            <h2 class="h3">
+                                                                <a href="./components-default.html">Components</a>
+                                                            </h2>
+                                                            <p>
+                                                                With a rapidly growing economy, industries and major developments, the Territory is an exciting, prosperous and vibrant place to call
+                                                                home.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ntg-main-nav__panel-columns">
+                                                            <ul class="list-flush list-chevron">
+                                                                <li>
+                                                                    <a href="./components-territory-stone.html">Territory Stone</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-dark-gray.html">Dark Gray</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-central-australia.html">Central Australia</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-dark-blue.html">Dark Blue</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-barkly.html">Barkly</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-olive-green.html">Olive Green</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-dark-green.html">Dark Green</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-baby-blue.html">Baby Blue</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-big-rivers.html">Big Rivers</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-fairy-wren-7.html">Fairy Wren 7%</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-fairy-wren.html">Fairy Wren</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-charcoal-grey-20.html">Charcoal Grey 20%</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-charcoal-grey.html">Charcoal Grey</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-top-end.html">Top End</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-bush-plum.html">Bush Plum</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-desert-yam-7.html">Desert Yam 7%</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-arafura-blue.html">Arafura Blue</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-white.html">White</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-desert-yam.html">Desert Yam</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./components-lime-green.html">Lime Green</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ntg-main-nav__link">
+                                            <a href="./job-search.html" role="button">Job search</a>
+                                        </li>
+                                    </ul>
+                                    <button class="ntg-main-nav__search d-block d-xl-none">
+                                        <span class="visually-hidden">Search</span>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="ntg-main-nav__mobile">
+                                        <a href="#mmenu-wrapper" aria-label="Open or close menu">
+                                            <span aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="ntg-header__search d-none d-xl-block">
+                                <form action="/search/" method="get" accept-charset="UTF-8">
+                                    <label for="queries_name_query" class="sr-only">Search</label>
+                                    <input
+                                        autocomplete="off"
+                                        id="queries_name_query"
+                                        name="queries_name_query"
+                                        type="search"
+                                        value=""
+                                        size="15"
+                                        maxlength="128"
+                                        class="form-search"
+                                        placeholder="Search"
+                                    />
+                                    <button type="submit"><span class="visually-hidden">Search</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <!--@@ Hero Banner @@-->
+
+            <section class="ntg-hero-banner ntg-hero-banner--job-search position-relative">
+                <div>
+                    <div class="ntg-hero-banner__overlay">
+                        <!-- Option 2: Image -->
+                        <img class="ntg-hero-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%" />
+
+                        <div class="jobsearch-wrapper position-relative z-2">
+                            <div class="container">
+                                <h2>Jobs in the Territory</h2>
+
+                                <div class="search-container small">
+                                    <form method="get" id="vacancySearchForm">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6 col-lg-3">
+                                                <label for="keyword" class="form-label text-nowrap"
+                                                    >Search Keywords or vacancy<a
+                                                        class="ps-1"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-title="By vacancy number or classification/level or keyword e.g. communication or nurse"
+                                                        ><i class="fas fa-question-circle"></i></a
+                                                ></label>
+                                                <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Keywords or vacancy number" />
+                                            </div>
+
+                                            <!--@@ Category field is repeated below for mobile @@-->
+                                            <div class="col-md-6 col-lg-3 d-none d-md-block">
+                                                <label for="jobCategory" class="form-label"
+                                                    >Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Narrow your search by job category e.g. legal or vacation employment"
+                                                        ><i class="fas fa-question-circle"></i></a
+                                                ></label>
+                                                <select id="jobCategory" name="jobCategory[]" class="form-select" aria-label="Job Category" multiple="multiple" placeholder="All Categories">
+                                                    <option value="Aboriginal Health Practitioners">Aboriginal Health Practitioners</option>
+                                                    <option value="Accounting and Finance">Accounting and Finance</option>
+                                                    <option value="Administration and Business Services">Administration and Business Services</option>
+                                                    <option value="Aged and Disability Care">Aged and Disability Care</option>
+                                                    <option value="Agriculture, Animal and Horticulture">Agriculture, Animal and Horticulture</option>
+                                                    <option value="Allied Health and Health Care Services">Allied Health and Health Care Services</option>
+                                                    <option value="Auditing and Compliance">Auditing and Compliance</option>
+                                                    <option value="Child Protection">Child Protection</option>
+                                                    <option value="Communication, Media and Public Relations">Communication, Media and Public Relations</option>
+                                                    <option value="Community Services">Community Services</option>
+                                                    <option value="Construction, Architecture and Design">Construction, Architecture and Design</option>
+                                                    <option value="Education and Training">Education and Training</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Environment, Natural Resources and Conservation">Environment, Natural Resources and Conservation</option>
+                                                    <option value="Executive and Senior Management">Executive and Senior Management</option>
+                                                    <option value="General Management">General Management</option>
+                                                    <option value="Hospitality and Food Services">Hospitality and Food Services</option>
+                                                    <option value="Housekeeping Services">Housekeeping Services</option>
+                                                    <option value="Human Resources and Work Health Safety">Human Resources and Work Health Safety</option>
+                                                    <option value="Information and Communication Technology (ICT)">Information and Communication Technology (ICT)</option>
+                                                    <option value="Information and Records Management">Information and Records Management</option>
+                                                    <option value="Legal">Legal</option>
+                                                    <option value="Mechanical Services, Vehicles and Drivers">Mechanical Services, Vehicles and Drivers</option>
+                                                    <option value="Medical Officer">Medical Officer</option>
+                                                    <option value="Nursing and Midwifery">Nursing and Midwifery</option>
+                                                    <option value="Oral Health">Oral Health</option>
+                                                    <option value="Payroll">Payroll</option>
+                                                    <option value="Police, Fire and Emergency Workers">Police, Fire and Emergency Workers</option>
+                                                    <option value="Policy and Planning">Policy and Planning</option>
+                                                    <option value="Primary Industry">Primary Industry</option>
+                                                    <option value="Prison Services">Prison Services</option>
+                                                    <option value="Probation and Parole Officer">Probation and Parole Officer</option>
+                                                    <option value="Procurement, Grants and Contract Management">Procurement, Grants and Contract Management</option>
+                                                    <option value="Professional">Professional</option>
+                                                    <option value="Program and Project Management">Program and Project Management</option>
+                                                    <option value="Property Management and Housing Services">Property Management and Housing Services</option>
+                                                    <option value="Psychology, Counselling and Social Work">Psychology, Counselling and Social Work</option>
+                                                    <option value="Rangers">Rangers</option>
+                                                    <option value="School Based Positions">School Based Positions</option>
+                                                    <option value="Science and Technology">Science and Technology</option>
+                                                    <option value="Sport and Recreation">Sport and Recreation</option>
+                                                    <option value="Teachers and Principals">Teachers and Principals</option>
+                                                    <option value="Tourism and Culture">Tourism and Culture</option>
+                                                    <option value="Trades, Maintenance and Services">Trades, Maintenance and Services</option>
+                                                    <option value="Traineeship, Cadetship and Graduate Programs">Traineeship, Cadetship and Graduate Programs</option>
+                                                    <option value="Transport and Logistics">Transport and Logistics</option>
+                                                    <option value="Vacation Employment">Vacation Employment</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="collapse" id="expandSearchMobile">
+                                            <div class="row mb-2 gy-2">
+                                                <div class="col-md-6 col-lg-3">
+                                                    <label for="department" class="form-label"
+                                                        >Department<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select a particular department or select multiple"
+                                                            ><i class="fas fa-question-circle"></i></a
+                                                    ></label>
+                                                    <select id="agency" name="agency[]" class="form-select" aria-label="Agency" multiple="multiple" placeholder="All Departments">
+                                                        <option value="Aboriginal Areas Protection Authority">Aboriginal Areas Protection Authority</option>
+                                                        <option value="Auditor-General's Office">Auditor-General's Office</option>
+                                                        <option value="Batchelor Institute of Indigenous Tertiary Education">Batchelor Institute of Indigenous Tertiary Education</option>
+                                                        <option value="Department of Corporate and Digital Development">Department of Corporate and Digital Development</option>
+                                                        <option value="Department of Education">Department of Education</option>
+                                                        <option value="Department of Environment, Parks and Water Security">Department of Environment, Parks and Water Security</option>
+                                                        <option value="Department of Health">Department of Health</option>
+                                                        <option value="Department of Industry, Tourism and Trade">Department of Industry, Tourism and Trade</option>
+                                                        <option value="Department of Infrastructure, Planning and Logistics">Department of Infrastructure, Planning and Logistics</option>
+                                                        <option value="Department of Territory Families, Housing and Communities">Department of Territory Families, Housing and Communities</option>
+                                                        <option value="Department of the Attorney-General and Justice">Department of the Attorney-General and Justice</option>
+                                                        <option value="Department of the Chief Minister and Cabinet">Department of the Chief Minister and Cabinet</option>
+                                                        <option value="Department of the Legislative Assembly">Department of the Legislative Assembly</option>
+                                                        <option value="Department of Treasury and Finance">Department of Treasury and Finance</option>
+                                                        <option value="Jacana Energy">Jacana Energy</option>
+                                                        <option value="Land Development Corporation">Land Development Corporation</option>
+                                                        <option value="Northern Territory Electoral Commission">Northern Territory Electoral Commission</option>
+                                                        <option value="NT Legal Aid Commission">NT Legal Aid Commission</option>
+                                                        <option value="NT Police, Fire and Emergency Services">NT Police, Fire and Emergency Services</option>
+                                                        <option value="Office of the Independent Commissioner Against Corruption (NT)">
+                                                            Office of the Independent Commissioner Against Corruption (NT)
+                                                        </option>
+                                                        <option value="Office of the Ombudsman">Office of the Ombudsman</option>
+                                                        <option value="Power and Water Corporation">Power and Water Corporation</option>
+                                                        <option value="Territory Generation">Territory Generation</option>
+                                                    </select>
+                                                </div>
+
+                                                <!--@@ Category field is repeated above for desktop @@-->
+                                                <div class="col-md-6 col-lg-3 d-md-none d-block">
+                                                    <label for="jobCategory" class="form-label"
+                                                        >Category<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Narrow your search by job category e.g. legal or vacation employment"
+                                                            ><i class="fas fa-question-circle"></i></a
+                                                    ></label>
+                                                    <select id="jobCategory" name="jobCategory[]" class="form-select" aria-label="Job Category" multiple="multiple" placeholder="All Categories">
+                                                        <option value="Aboriginal Health Practitioners">Aboriginal Health Practitioners</option>
+                                                        <option value="Accounting and Finance">Accounting and Finance</option>
+                                                        <option value="Administration and Business Services">Administration and Business Services</option>
+                                                        <option value="Aged and Disability Care">Aged and Disability Care</option>
+                                                        <option value="Agriculture, Animal and Horticulture">Agriculture, Animal and Horticulture</option>
+                                                        <option value="Allied Health and Health Care Services">Allied Health and Health Care Services</option>
+                                                        <option value="Auditing and Compliance">Auditing and Compliance</option>
+                                                        <option value="Child Protection">Child Protection</option>
+                                                        <option value="Communication, Media and Public Relations">Communication, Media and Public Relations</option>
+                                                        <option value="Community Services">Community Services</option>
+                                                        <option value="Construction, Architecture and Design">Construction, Architecture and Design</option>
+                                                        <option value="Education and Training">Education and Training</option>
+                                                        <option value="Engineering">Engineering</option>
+                                                        <option value="Environment, Natural Resources and Conservation">Environment, Natural Resources and Conservation</option>
+                                                        <option value="Executive and Senior Management">Executive and Senior Management</option>
+                                                        <option value="General Management">General Management</option>
+                                                        <option value="Hospitality and Food Services">Hospitality and Food Services</option>
+                                                        <option value="Housekeeping Services">Housekeeping Services</option>
+                                                        <option value="Human Resources and Work Health Safety">Human Resources and Work Health Safety</option>
+                                                        <option value="Information and Communication Technology (ICT)">Information and Communication Technology (ICT)</option>
+                                                        <option value="Information and Records Management">Information and Records Management</option>
+                                                        <option value="Legal">Legal</option>
+                                                        <option value="Mechanical Services, Vehicles and Drivers">Mechanical Services, Vehicles and Drivers</option>
+                                                        <option value="Medical Officer">Medical Officer</option>
+                                                        <option value="Nursing and Midwifery">Nursing and Midwifery</option>
+                                                        <option value="Oral Health">Oral Health</option>
+                                                        <option value="Payroll">Payroll</option>
+                                                        <option value="Police, Fire and Emergency Workers">Police, Fire and Emergency Workers</option>
+                                                        <option value="Policy and Planning">Policy and Planning</option>
+                                                        <option value="Primary Industry">Primary Industry</option>
+                                                        <option value="Prison Services">Prison Services</option>
+                                                        <option value="Probation and Parole Officer">Probation and Parole Officer</option>
+                                                        <option value="Procurement, Grants and Contract Management">Procurement, Grants and Contract Management</option>
+                                                        <option value="Professional">Professional</option>
+                                                        <option value="Program and Project Management">Program and Project Management</option>
+                                                        <option value="Property Management and Housing Services">Property Management and Housing Services</option>
+                                                        <option value="Psychology, Counselling and Social Work">Psychology, Counselling and Social Work</option>
+                                                        <option value="Rangers">Rangers</option>
+                                                        <option value="School Based Positions">School Based Positions</option>
+                                                        <option value="Science and Technology">Science and Technology</option>
+                                                        <option value="Sport and Recreation">Sport and Recreation</option>
+                                                        <option value="Teachers and Principals">Teachers and Principals</option>
+                                                        <option value="Tourism and Culture">Tourism and Culture</option>
+                                                        <option value="Trades, Maintenance and Services">Trades, Maintenance and Services</option>
+                                                        <option value="Traineeship, Cadetship and Graduate Programs">Traineeship, Cadetship and Graduate Programs</option>
+                                                        <option value="Transport and Logistics">Transport and Logistics</option>
+                                                        <option value="Vacation Employment">Vacation Employment</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-3">
+                                                    <label for="location" class="form-label"
+                                                        >Location<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select a specific region or location"><i class="fas fa-question-circle"></i></a
+                                                    ></label>
+                                                    <select id="location" name="location[]" class="form-select" aria-label="Job locations" multiple="multiple" placeholder="All locations">
+                                                        <option value="Alice Springs">Alice Springs</option>
+                                                        <option value="Darwin">Darwin Region</option>
+                                                        <option value="Katherine">Katherine</option>
+                                                        <option value="Nhulunbuy">Nhulunbuy</option>
+                                                        <option value="Tennant Creek">Tennant Creek</option>
+                                                        <option value="Remote">Remote</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-3">
+                                                    <label for="vacancy" class="form-label"
+                                                        >Vacancy<a class="ps-1" data-bs-toggle="tooltip" data-bs-title="Select from full-time, part-time, temp/contract or casual positions"
+                                                            ><i class="fas fa-question-circle"></i></a
+                                                    ></label>
+                                                    <select id="vacancy" name="vacancy[]" class="form-select" aria-label="Vacancy" multiple="multiple" placeholder="All vacancies">
+                                                        <option value="Ongoing (Permanent) - Full Time">Ongoing (Permanent) - Full Time</option>
+                                                        <option value="Ongoing (Permanent) - Part Time">Ongoing (Permanent) - Part Time</option>
+                                                        <option value="Fixed (Temporary) - Full Time">Fixed (Temporary) - Full Time</option>
+                                                        <option value="Fixed (Temporary) - Part Time">Fixed (Temporary) - Part Time</option>
+                                                        <option value="Casual">Casual</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-2">
+                                                <a
+                                                    id="expandSearchBtn"
+                                                    data-bs-toggle="collapse"
+                                                    href="#expandSearch"
+                                                    role="button"
+                                                    aria-expanded="false"
+                                                    aria-controls="expandSearch"
+                                                    class="collapsed"
+                                                >
+                                                    search
+                                                </a>
+                                            </div>
+                                            <div class="collapse" id="expandSearch">
+                                                <div class="row gy-2">
+                                                    <div class="col-lg">
+                                                        <div class="row g-2">
+                                                            <div class="col-7">
+                                                                <label for="renumerationFrom" class="form-label visually-hidden">Renumeration from</label>
+                                                                <select id="renumerationFrom" name="renumerationFrom" class="form-select rounded-pill renumerationFrom" aria-label="Renumeration From">
+                                                                    <option value="0" selected>$0</option>
+                                                                    <option value="30000">$30k</option>
+                                                                    <option value="40000">$40k</option>
+                                                                    <option value="50000">$50k</option>
+                                                                    <option value="60000">$60k</option>
+                                                                    <option value="70000">$70k</option>
+                                                                    <option value="80000">$80k</option>
+                                                                    <option value="100000">$100k</option>
+                                                                    <option value="120000">$120k</option>
+                                                                    <option value="150000">$150k</option>
+                                                                    <option value="200000">$200k</option>
+                                                                    <option value="250000">$250k</option>
+                                                                    <option value="350000">$350k</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <label for="renumerationTo" class="form-label visually-hidden">Renumeration to</label>
+                                                                <select id="renumerationTo" name="renumerationTo" class="form-select rounded-pill renumerationTo" aria-label="Renumeration To">
+                                                                    <option value="0">$0</option>
+                                                                    <option value="30000">$30k</option>
+                                                                    <option value="40000">$40k</option>
+                                                                    <option value="50000">$50k</option>
+                                                                    <option value="60000">$60k</option>
+                                                                    <option value="70000">$70k</option>
+                                                                    <option value="80000">$80k</option>
+                                                                    <option value="100000">$100k</option>
+                                                                    <option value="120000">$120k</option>
+                                                                    <option value="150000">$150k</option>
+                                                                    <option value="200000">$200k</option>
+                                                                    <option value="250000">$250k</option>
+                                                                    <option value="350000">$350k</option>
+                                                                    <option value="max" selected>$350k+</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg">
+                                                        <div class="row g-2">
+                                                            <div class="col-7 salaryFrom">
+                                                                <label for="salaryFrom" class="form-label visually-hidden">Salary from</label>
+                                                                <select id="salaryFrom" name="salaryFrom" class="form-select rounded-pill salaryFrom" aria-label="Salary From">
+                                                                    <option value="0" selected>$0</option>
+                                                                    <option value="30000">$30k</option>
+                                                                    <option value="40000">$40k</option>
+                                                                    <option value="50000">$50k</option>
+                                                                    <option value="60000">$60k</option>
+                                                                    <option value="70000">$70k</option>
+                                                                    <option value="80000">$80k</option>
+                                                                    <option value="100000">$100k</option>
+                                                                    <option value="120000">$120k</option>
+                                                                    <option value="150000">$150k</option>
+                                                                    <option value="200000">$200k</option>
+                                                                    <option value="250000">$250k</option>
+                                                                    <option value="350000">$350k</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-5 salaryTo">
+                                                                <label for="salaryTo" class="form-label visually-hidden">Salary to</label>
+                                                                <select id="salaryTo" name="salaryTo" class="form-select rounded-pill salaryTo" aria-label="Salary To">
+                                                                    <option value="0">$0</option>
+                                                                    <option value="30000">$30k</option>
+                                                                    <option value="40000">$40k</option>
+                                                                    <option value="50000">$50k</option>
+                                                                    <option value="60000">$60k</option>
+                                                                    <option value="70000">$70k</option>
+                                                                    <option value="80000">$80k</option>
+                                                                    <option value="100000">$100k</option>
+                                                                    <option value="120000">$120k</option>
+                                                                    <option value="150000">$150k</option>
+                                                                    <option value="200000">$200k</option>
+                                                                    <option value="250000">$250k</option>
+                                                                    <option value="350000">$350k</option>
+                                                                    <option value="max" selected>$350k+</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xxl-auto">
+                                                        <div class="row">
+                                                            <div class="col-7 col-lg-auto">
+                                                                <label for="listedTime" class="form-label visually-hidden">Listed time</label>
+                                                                <select id="listedTime" name="listedTime" class="form-select rounded-pill listedTime" aria-label="Listed Time">
+                                                                    <option value="anytime">Anytime</option>
+                                                                    <option value="today">Today</option>
+                                                                    <option value="3">Last 3 days</option>
+                                                                    <option value="7">Last 7 days</option>
+                                                                    <option value="14">Last 14 days</option>
+                                                                    <option value="30">Last 30 days</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-2">
+                                            <a
+                                                id="expandFullSearch"
+                                                data-bs-toggle="collapse"
+                                                href="#expandSearchMobile"
+                                                role="button"
+                                                aria-expanded="false"
+                                                aria-controls="expandSearchMobile"
+                                                class="collapsed"
+                                            >
+                                                search
+                                            </a>
+                                        </div>
+
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-8 col-md-4">
+                                                <button type="submit" class="btn btn-central-australia rounded-pill w-100 py-2">SEARCH</button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <a href="?" class="reset text-white">RESET</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <main class="">
+                <section class="ntg-jobs-subsite">
+                    <div class="ntg-jobs-subsite__menu" data-bs-theme="central-australia">
+                        <div class="container">
+                            <ul id="jobCarouselMenu">
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Job Search">Job Search</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Applying for a job">Applying for a job</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Career pathways">Career pathways</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Applying for a job">Applying for a job</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a class="active" aria-current="page" href="#" data-text="Applying for a job">Applying for a job</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Career pathways">Career pathways</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Applying for a job">Applying for a job</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Career pathways">Career pathways</a>
+                                </li>
+                                <li class="nav-cell">
+                                    <a href="#" data-text="Applying for a job">Applying for a job</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row align-items-center small py-2 gy-2">
+                            <div class="col-md">Don't let opportunities pass you by. Get vacancies emailed to you as soon as they become available.</div>
+
+                            <div class="col-md-auto">
+                                <button class="btn btn btn-outline-default py-1 border-1"><i class="far fa-envelope me-1"></i>Job Alert</button>
+                                <button class="btn btn btn-outline-default py-1 border-1"><i class="far fa-user me-1"></i>Login</button>
+                            </div>
+                        </div>
+
+                        <div class="text-center d-none" id="searchSpinner">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
+                        <div class="search_container">
+                            <div class="d-flex search_container-top">
+                                <div class="searchResults__total-results"></div>
+
+                                <div class="d-flex align-items-center justify-content-sm-center gap-2">
+                                    <label for="searchResults__sort">Sort by:</label>
+                                    <select class="searchResults__sort form-select rounded-pill" id="searchResults__sort">
+                                        <option value="search_relevance" selected>Search relevance</option>
+                                        <option value="closing_soon">Closing soon</option>
+                                        <option value="most_recent">Most recent</option>
+                                        <option value="renumeration_asc">Renumeration (Lowest to Highest)</option>
+                                        <option value="renumeration_dsc">Renumeration (Highest to Lowest)</option>
+                                        <option value="vacancy_type">Vacancy type</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div id="searchResults" data-search-json="./jobs.json" data-url-dochtml="./viewFile.html"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div class="back-to-top" aria-hidden="true">
+                <button>
+                    <span class="visually-hidden">Back to top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+
+            <footer class="ntg-footer" role="contentinfo">
+                <div class="ntg-footer__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center gy-3">
+                            <div class="col-md-3 col-xl-2">
+                                <a href="#" target="_blank" title="Opens in a new window">
+                                    <svg width="179" class="ntg-header__image" width="198" height="71">
+                                        <use href="assets/images/logos/logo-ntg-footer.svg#ntglogo"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <div class="ntg-footer__social-section">
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ntg-footer__mid">
+                    <div class="container">
+                        <div class="vertab-container">
+                            <div class="vertab-menu">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item"> Early Careers </a>
+                                    <a href="#" class="list-group-item"> Correction Careers </a>
+                                    <a href="#" class="list-group-item"> Environment Careers </a>
+                                    <a href="#" class="list-group-item"> Correction Careers </a>
+                                    <a href="#" class="list-group-item"> Early Careers </a>
+                                </div>
+                            </div>
+
+                            <div id="accordion" class="vertab-accordion panel-group">
+                                <div class="vertab-content">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse1">Early Careers</h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse small">
+                                        <div class="panel-body">
+                                            <ul class="list-flush list-chevron">
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertab-content">
+                                    <div class="panel-heading" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse2">
+                                        <h4 class="panel-title">Correction Careers</h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse small">
+                                        <div class="panel-body">
+                                            <ul class="list-flush list-chevron">
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertab-content">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse3">Environment Careers</h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse small">
+                                        <div class="panel-body">
+                                            <ul class="list-flush list-chevron">
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertab-content">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse4">Correction Careers</h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse small">
+                                        <div class="panel-body">
+                                            <ul class="list-flush list-chevron">
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertab-content">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse5">Early Careers</h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse small">
+                                        <div class="panel-body">
+                                            <ul class="list-flush list-chevron">
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                                <li><a href="#">Internal Link goes here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-md-none">
+                            <div class="ntg-footer__social-section">
+                                <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-instagram"></i></a>
+                                <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-youtube"></i></a>
+                                <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ntg-footer__bottom">
+                    <div class="container">
+                        <div class="row align-items-start small py-2 gy-1">
+                            <nav class="order-2 order-lg-1 col-lg ntg-footer__bottom-links" aria-label="footer">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy"
+                                            ><span>Copyright, disclaimer and privacy</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nt.gov.au/law/rights/freedom-of-information"
+                                            ><span>Freedom of information</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nt.gov.au/page/interpreter-services"><span>Interpreter services</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Site map</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Contacts</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Feedback</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="order-1 order-lg-2 col-lg-auto">
+                                <p>© 2022 Northern Territory Government.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        var synonymDict = [["human resources", "hr"],["work health and safety", "whs"],["nurse", "ain", "cnc", "rn", "en"],["domestic violence", "dv"],["teacher", "esd"],["communications", "pr"],["chief executive officer", "ceo", "coo"],["manager", "director", "sr"],["information technology", "ict", "it", "ux", "seo"],["executive assistance","executive assistant", "ea"]];
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</html>

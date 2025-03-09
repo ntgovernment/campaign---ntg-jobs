@@ -1,0 +1,505 @@
+@use "sass:map";
+
+.ntg-cards-carousel {
+    $this: &;
+    color: var(--current-theme-text-color, $body-color);
+    overflow-x: clip;
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
+    
+    h2 {
+        color: var(--current-theme-text-color, $ntg-territory-forest);
+    }
+
+    .tag {
+        color: var(--current-theme-text-color, $ntg-dark-green);
+    }
+
+    .carousel-cell {
+        width: 95%;
+        margin-right: 0.75rem;
+        transition: 0.2s opacity, 0.2s filter;
+
+        &:not(.is-selected) {
+            opacity: 0.2;
+            filter: grayscale(100%);
+        }
+
+        @include media-breakpoint-up(md) {
+            width: calc((100% - 3rem) / 2); // 2 cells in viewport
+            margin-right: 1.5rem;
+
+            &.is-selected + .carousel-cell {
+                opacity: 1;
+                filter: none;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 2rem;
+        }
+    }
+
+    &[data-bs-theme="default"] .card,
+    &[data-bs-theme="white"] .card {
+        &:not(.card--flip) {
+            .card-body,
+            .card-footer {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &:not([data-bs-theme="default"]):not(.ntg-cards-carousel--testimonial) .card {
+        --#{$prefix}card-color: #{$body-color};
+        --#{$prefix}card-bg: #{$white};
+
+        &-link {
+            color: $body-color;
+
+            &::after {
+                color: $ntg-territory-forest;
+            }
+        }
+    }
+
+    .flickity-button {
+        background: transparent;
+        border: 2px solid var(--current-theme-text-color, $secondary);
+        width: 50px;
+        height: 50px;
+        transition: 0.2s background ease-in-out;
+
+        @include media-breakpoint-down(md) {
+            width: 30px;
+            height: 30px;
+        }
+
+        &:hover,
+        &:focus {
+            background: var(--current-theme-text-color, $secondary);
+
+            .flickity-button-icon {
+                fill: var(--current-theme-color, $white);
+            }
+        }
+
+        &:focus {
+            @include focus();
+        }
+
+        .flickity-button-icon {
+            fill: var(--current-theme-text-color, $secondary);
+            width: 35%;
+            height: 35%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.2s fill ease-in-out;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .flickity-carousel {
+            padding-bottom: calc(40px + 0.5rem);
+        }
+
+        .flickity-viewport {
+            overflow: visible;
+        }
+
+        .flickity-prev-next-button {
+            top: calc(100% - 15px);
+    
+            &.previous {
+                left: 0;
+            }
+    
+            &.next {
+                right: calc(100% - 65px);
+            }
+        }
+    }
+
+    &--flow-right {        
+        @include media-breakpoint-up(md) {
+            #{$this}__content {
+                width: 50%;
+            }
+
+            .flickity-carousel {
+                padding-top: 2rem;
+            }
+
+            .flickity-viewport {
+                overflow: visible;
+            }
+
+            .flickity-prev-next-button {
+                top: calc(-2rem - 25px);
+
+                &.previous {
+                    left: calc(100% - 110px);
+                }
+
+                &.next {
+                    right: 0;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 6rem) / 4); // 4 cells in viewport
+
+                &.is-selected {
+                    + .carousel-cell,
+                    + .carousel-cell + .carousel-cell,
+                    + .carousel-cell + .carousel-cell + .carousel-cell {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &--centred {
+        @include media-breakpoint-up(md) {
+            #{$this}__content {
+                text-align: center;
+            }
+
+            .flickity-prev-next-button {
+                &.previous {
+                    left: calc(50% - 55px);
+                }
+
+                &.next {
+                    right: calc(50% - 55px);
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 4rem) / 3);
+
+                &.is-selected {
+                    +.carousel-cell,
+                    +.carousel-cell + .carousel-cell {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
+            }
+        }
+        
+        @media (min-width: map.get($container-max-widths, md)) and (max-width: 1500px) {
+            .flickity-carousel {
+                padding-bottom: calc(50px + 1rem);
+            }
+
+            .flickity-prev-next-button {
+                top: calc(100% - 25px);
+            }
+        }
+
+        @media (min-width: 1500px) {
+            .flickity-prev-next-button {
+                &.previous {
+                    left: -66px;
+                }
+
+                &.next {
+                    right: -66px;
+                }
+            }
+        }
+    }
+
+    &--tall {
+        @include media-breakpoint-up(md) {
+            overflow-y: clip;
+
+            > .container > .row > div {
+                    &:first-child {
+                        position: relative;
+                        z-index: 1;
+        
+                    &::after {
+                        content: "";
+                        background-color: var(--current-theme-color, $white);
+                        position: absolute;
+                        top: -1px;
+                        bottom: -1px;
+                        left: -9999px;
+                        right: calc(($container-padding-x / 2) * -1);
+                        z-index: -1;
+                    }
+                }
+            }
+
+            #{$this}__content {
+                position: sticky;
+                transition: 0.25s top ease-in-out;
+            }
+
+            .flickity-viewport {
+                overflow: visible;
+            }
+
+            .carousel-cell {
+                width: 100%;
+            }
+
+            .flickity-button {
+                background: $white;
+                border-width: 0;
+                box-shadow: 0 0 10px rgba(99, 101, 107, 0.5);
+                z-index: 1;
+
+                .flickity-button-icon {
+                    fill: $black;
+                }
+            }
+            
+            .flickity-prev-next-button {
+                &.previous {
+                    left: -25px;
+                }
+
+                &.next {
+                    right: -25px;
+                }
+
+                &[disabled] {
+                    display: none;
+                }
+            }
+        }
+        
+        @include media-breakpoint-up(lg) {
+            .carousel-cell {
+                width: calc((100% - 2rem) / 2); // 2 cells in viewport
+
+                &.is-selected + .carousel-cell {
+                    opacity: 1;
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    &--testimonial {
+        .flickity-carousel {
+            padding-bottom: 6rem;
+            padding-top: 3rem;
+
+            @include media-breakpoint-down(sm) {
+                padding-top: 0;
+            }
+        }
+
+        .flickity-viewport {
+            overflow: visible;
+        }
+
+        .flickity-slider {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 0 0.5em 0.5em 0.5em 0.5em 1fr auto;
+            grid-row-gap: 0.5em !important;
+        }
+
+        .carousel-cell {
+            width: 350px;
+            height: 350px;
+
+            @include media-breakpoint-down(md) {
+                width: 250px;
+                height: 250px;
+                margin-left: 20px;
+            }
+            
+            &:not(.is-selected) {
+                opacity: 1;
+                filter: none;
+            }
+
+            &:nth-child(n + 1) {
+                grid-row: 4 / -1;
+                
+                .card {
+                    transform: rotate(-4deg);
+                    
+                    &:hover,
+                    &:focus {
+                        transform: rotate(-3deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 2) {
+                grid-row: 3 / -1;
+                
+                .card {
+                    transform: rotate(2deg);
+                    
+                    &:hover,
+                    &:focus {
+                        transform: rotate(1deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 3) {
+                grid-row: 3 / -12;
+            }
+
+            &:nth-child(n + 4) {
+                grid-row: 2 / -2;
+                
+                .card {
+                    transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 5) {
+                grid-row: 1 / -1;
+                
+                .card {
+                    transform: rotate(-4deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(-3deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 6) {
+                grid-row: 2 / -1;
+                
+                .card {
+                    transform: rotate(2deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(1deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 7) {
+                grid-row: 3 / -2;
+                
+                .card {
+                    transform: rotate(-1deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            &:nth-child(n + 8) {
+                grid-row: 4 / -2;
+                
+                .card {
+                    transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
+                }
+            }
+
+            &:nth-child(n + 9) {
+                grid-row: 3 / -1;
+                
+                .card {
+                    transform: rotate(-1deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            &:nth-child(n + 10) {
+                grid-row: 4 / -2;
+                
+                .card {
+                    transform: rotate(5deg);
+
+                    &:hover,
+                    &:focus {
+                        transform: rotate(4deg);
+                    }
+                }
+            }
+
+            .card {
+                height: 100%;
+                transition: 0.2s transform linear;
+
+                .card-inner {
+                    flex-grow: 1;
+                }
+
+                .card-back {
+                    height: 100%;
+                }
+            }
+        }
+        
+        .flickity-button {
+            @include media-breakpoint-down(md) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .flickity-prev-next-button {
+            top: 100%;
+            
+            @include media-breakpoint-down(md) {
+                top: calc(100% - 20px);
+            }
+
+            &.previous {
+                left: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    left: calc(50% - 45px);
+                }
+            }
+
+            &.next {
+                right: calc(50% - 55px);
+
+                @include media-breakpoint-down(md) {
+                    right: calc(50% - 45px);
+                }
+            }
+        }
+    }
+}
+
+body.testimonial {
+    .ntg-cards-carousel--testimonial {
+        background-color: var(--current-theme-tertiary, $ntg-territory-stone);
+    }
+}

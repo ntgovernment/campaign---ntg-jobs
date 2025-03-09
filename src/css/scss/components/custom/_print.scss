@@ -1,0 +1,277 @@
+@media print {
+    
+    a:not([data-bs-toggle])::after {
+        content: ' Link: ' attr(href) ;
+        display: block;
+        overflow-wrap: anywhere;
+        font-family: $font-ubuntu !important;
+        color: $black;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .text-nowrap {
+        white-space: normal !important;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .card {
+        .row {
+            display: block;
+
+            > div {
+                width: 100%;
+            }
+        }
+
+        &-img-top,
+        &-video {
+            max-height: 300px !important;
+        }
+
+        &-icon {
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        &-body {
+            padding: 1rem !important;
+        }
+
+        &-footer {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        .card-wrapper > .card-footer {
+            align-self: flex-start;
+        }
+
+        .card-footer a::after {
+            padding-left: 0;
+        }
+
+        &--flip {
+            .card-front {
+                position: relative;
+            }
+
+            .card-img-overlay {
+                display: block !important;
+
+                &::before {
+                    content: none;
+                }
+
+                .card-title {
+                    color: $black !important;
+                    background-color: $white !important;
+                    print-color-adjust: exact;
+                    -webkit-print-color-adjust: exact;
+                    padding: 0.5rem;
+                    display: inline;
+                }
+            }
+
+            .card-back {
+                display: block !important;
+                position: static !important;
+                opacity: 1 !important;
+            }
+        }
+
+        &--img {
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+            break-inside: avoid;
+
+            &:has(.card-body) {
+                &::after {
+                    opacity: 1;
+                }
+            
+                .card-body {
+                    opacity: 1;
+                }
+            
+                .card-link {
+                    &::after {
+                        padding-left: 0;
+                    } 
+                }
+            }
+        }
+    }
+
+    .ntg-highlights__highlight a::after {
+        padding-left: 0;
+    }
+
+    .flickity-button {
+        display: none;
+    }
+
+    .flickity-viewport {
+        height: 100% !important;
+    }
+
+    .flickity-slider {
+        position: static !important;
+        display: block !important;
+    }
+
+    .carousel-cell {
+        position: static !important;
+        transform: translate(0) !important;
+        margin: 0 0 1rem;
+        width: 100% !important;
+        opacity: 1 !important;
+        filter: none !important;
+
+        .card {
+            transform: none !important;
+        }
+
+        img {
+            opacity: 1 !important;
+            filter: none !important;
+        }
+    }
+
+    .ntg-cards-carousel--testimonial {
+        .carousel-cell {
+            height: unset;
+        }
+    }
+
+    .ntg-featured-testimonial {
+        color: $black;
+
+        &__background {
+            position: static !important;
+            padding-bottom: 1rem;
+
+            &::after {
+                content: none;
+            }
+        }
+
+        blockquote {
+            &::before {
+                color: $black;
+            }
+        }
+    }
+
+    .accordion {
+        --bs-accordion-bg: #{$white};
+        --bs-accordion-color: #{$black};
+        --bs-accordion-active-color: #{$black};
+        --bs-accordion-btn-color: #{$black};
+        --bs-accordion-border-width: 2px;
+        --bs-accordion-border-color: #{$black};
+    }
+
+    .accordion-button {
+        box-shadow: none !important;
+
+        &::after {
+            transform: rotate(180deg) !important;
+        }
+    }
+
+    .accordion-item:not(:first-of-type) {
+        border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    }
+
+    .accordion .collapse,
+    .ntg-cards > .container > .row {
+        display: block !important;
+    }
+
+    body,
+    .ntg-call-to-action-links,
+    .ntg-map-tabs,
+    .nav-tabs-wrapper,
+    .nav-link.active,
+    .ntg-accordion,
+    .ntg-related-pages {
+        background-color: #FFF !important;
+        color: #000 !important;
+    }
+
+    .ntg-related-pages li::before {
+        color: #000 !important;
+    }
+
+    .container,
+    .container-slim,
+    .tab-pane__bottom {
+        width: 100% !important;
+        max-width: unset;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 1.5rem;
+    }
+
+    .page-header-container {
+        position: static !important;
+        --header-text-color: #000 !important;
+        --header-background-color: #fff !important;
+        display: block !important;
+        transform: translateY(0) !important;
+        box-shadow: none !important;
+    }
+
+    .ntg-footer {
+        --footer-text-color: #000;
+        --footer-background-color: transparent;
+        --footer-background-color-light: var(--footer-background-color);
+    }
+
+    .ntg-footer__top {
+        padding: 1.5rem !important;
+    }
+
+    .ntg-map-tabs .tab-content {
+        min-height: unset;
+    }
+
+    .ntg-call-to-action-links,
+    .ntg-related-pages {
+        border: 2px solid #000;
+    }
+
+    .ntg-map-tabs .nav-tabs {
+        justify-content: flex-start;    
+    }
+
+    .tab-pane__top {
+        text-align: left !important;
+    }
+
+    .ntg-banner--fade + main {
+        margin-top: 0 !important;
+    }
+
+    .ntg-main-nav,
+    .ntg-header__search,
+    .ntg-footer__social-section,
+    .ntg-footer__mid,
+    .ntg-footer__bottom-links,
+    .ntg-hero-banner,
+    #interactive-map,
+    .back-to-top,
+    .btn,
+    .nav-link:not(.active),
+    .ntg-banner,
+    .ntg-carousel-banner,
+    #in-page-nav,
+    .ntg-jobs-subsite__menu,
+    #pagination,
+    .video-control {
+        display: none !important;
+    }
+}

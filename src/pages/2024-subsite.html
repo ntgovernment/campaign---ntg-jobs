@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="default">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Content | Join the Territory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/43d667f0b2.js" crossorigin="anonymous"></script>
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body class="standard">
+        <div id="wrapper">
+            <nav class="skip-link" aria-label="skip links navigation">
+                <a class="skip-link__link" href="#content">Skip to main content</a>
+                <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+            </nav>
+
+            <nav class="nav-menu-mobile" id="mmenu-wrapper" data-link-urls="#,#,#,#" data-link-texts="Work,Move,Live,Learn">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                        <ul>
+                            <li><a href="./news-item.html">News item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./components.html">Components</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search-global">
+                <form action="/search/" method="get" accept-charset="UTF-8">
+                    <div class="search-global__row">
+                        <div class="search-global__field search-global__field--form">
+                            <label for="queries_name_query" class="sr-only">Search</label>
+                            <input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15" maxlength="128" class="form-search" placeholder="Search" />
+                            <button type="submit" id="edit-submit">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Popular searches</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Recently updated pages</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" title="Close search" class="search-global__close">Close</a>
+                </form>
+            </div>
+
+            <div class="page-header-container" data-bs-theme="default">
+                <header class="ntg-header" role="banner">
+                    <div class="container">
+                        <div class="ntg-header__wrapper">
+                            <a class="ntg-header__logo" href="./index.html">
+                                <svg class="ntg-header__image" width="178" height="64">
+                                    <use href="assets/images/logos/logo-territory.svg#logo-territory"></use>
+                                </svg>
+                            </a>
+
+                            <nav class="ntg-main-nav" id="mainmenu">
+                                <div class="ntg-main-nav__wrapper">
+                                    <ul class="ntg-main-nav__links">
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./index.html" role="button">Home</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link">
+                                            <a href="./content.html" role="button">Content</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./form.html" role="button">Form</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./news.html" role="button">News</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link has-children">
+                                            <a href="./components-default.html" role="button">Components</a>
+                                        </li>
+                                        <li class="ntg-main-nav__link">
+                                            <a href="./job-search.html" role="button">Job search</a>
+                                        </li>
+                                    </ul>
+                                    <button class="ntg-main-nav__search d-block d-xl-none">
+                                        <span class="visually-hidden">Search</span>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="ntg-main-nav__mobile">
+                                        <a href="#mmenu-wrapper" aria-label="Open or close menu">
+                                            <span aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="ntg-header__search d-none d-xl-block">
+                                <form action="/search/" method="get" accept-charset="UTF-8">
+                                    <label for="queries_name_query" class="sr-only">Search</label>
+                                    <input
+                                        autocomplete="off"
+                                        id="queries_name_query"
+                                        name="queries_name_query"
+                                        type="search"
+                                        value=""
+                                        size="15"
+                                        maxlength="128"
+                                        class="form-search"
+                                        placeholder="Search"
+                                    />
+                                    <button type="submit"><span class="visually-hidden">Search</span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </header>
+                <nav class="ntg-sub-nav" id="subnav">
+                    <div class="container">
+                        <ul class="ntg-sub-nav__links sf-menu">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Discover teaching</a>
+                                <ul>
+                                    <li><a href="#">What do teachers do?</a></li>
+                                    <li><a href="#">What qualifications do I need?</a></li>
+                                    <li><a href="#">How much do teachers get paid?</a></li>
+                                    <li><a href="#">What types of jobs are available?</a></li>
+                                    <li class="has-children active">
+                                        <a href="#">Teacher pathways</a>
+                                        <ul>
+                                            <li class="active"><a href="#">Tips and advice</a></li>
+                                            <li><a href="#">Assistant Teachers</a></li>
+                                            <li><a href="#">Healthcare</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Teaching in the Territory</a>
+                            </li>
+                            <li>
+                                <a href="#">Employee Support</a>
+                            </li>
+                            <li>
+                                <a href="#">How to apply</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">How to apply</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">How to apply</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">How to apply</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <section class="ntg-banner ntg-banner--solid">
+                <div class="ratio ratio-16x9">
+                    <div class="ntg-banner__overlay">
+                        <img class="ntg-banner__image" src="assets/images/banners/trek-larapinta.jpg" alt="Placeholder banner" style="object-position: 50% 50%" />
+                    </div>
+                    <div class="ntg-banner__content">
+                        <div class="container">
+                            <div class="ntg-banner__wrapper">
+                                <div class="ntg-banner__text">
+                                    <h1>Teaching in the Territory</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="ntg-sub-menu mb-4" id="submenu" data-bs-theme="default">
+                <div class="container">
+                    <button class="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#sub-menu-links" aria-expanded="false" aria-controls="sub-menu-links">Pages in this section</button>
+                    <ul class="ntg-sub-menu__links" id="sub-menu-links">
+                        <li class="nav-cell"><a href="#">Home</a></li>
+                        <li class="nav-cell "><a href="#">Layouts</a></li>
+                        <li class="nav-cell"><a href="#">Page</a></li>
+                        <li class="nav-cell"><a href="#">What types of jobs are available?</a></li>
+                        <li class="nav-cell active has-children">
+                            <a href="#">Teacher pathways</a>
+                            <ul>
+                                <li><a href="#">Tips and advice</a></li>
+                                <li><a href="#">Assistant Teachers</a></li>
+                                <li><a href="#">Healthcare</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main id="content" class="pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 order-1 order-lg-2">
+                            <nav aria-label="breadcrumb" class="mb-4">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Content</li>
+                                </ol>
+                            </nav>
+                            <section>
+                                <h2>Tips and advice</h2>
+                                <p>Picture a place where beautiful landscapes and a stunning coastline surround a busy, multicultural city.</p>
+                                <p>A cultural melting pot where great food and new friends paired with a unique outdoor lifestyle awaits you. Welcome to Darwin, the traditional lands of the Larrakia people.</p>
+                                <p>Picture a place where beautiful landscapes and a stunning coastline surround a busy, multicultural city.</p>
+                                <p>A cultural melting pot where great food and new friends paired with a unique outdoor lifestyle awaits you. Welcome to Darwin, the traditional lands of the Larrakia people.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 order-2 order-lg-1">
+                            <aside class="ntg-side-nav" aria-label="Side navigation">
+                                <div id="nav-default">
+                                    <h2 class="ntg-side-nav__title">In this section</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="./index.html">Home</a>
+                                        </li>
+                                        <li class="active">
+                                            <span>Content</span>
+                                        </li>
+                                        <li>
+                                            <a href="./form.html">Form</a>
+                                        </li>
+                                        <li>
+                                            <a href="./news.html">News</a>
+                                            <a href="#" class="ntg-side-nav__collapser collapsed" data-bs-toggle="collapse" data-bs-target="#sideNavLevelTwo-1" aria-expanded="false" aria-controls="sideNavLevelTwo-1">
+                                                <div class="collapser">Toggle</div>
+                                            </a>
+                                            <ul class="collapse" id="sideNavLevelTwo-1">
+                                                <li class="active">
+                                                    <a href="./news-item.html">News item</a>
+                                                    <a href="#" class="ntg-side-nav__collapser collapsed" data-bs-toggle="collapse" data-bs-target="#sideNavLevelThree-1" aria-expanded="false" aria-controls="sideNavLevelThree-1">
+                                                        <div class="collapser">Toggle</div>
+                                                    </a>
+                                                    <ul class="collapse" id="sideNavLevelThree-1">
+                                                        <li>
+                                                            <a href="./news-item.html">News item</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./components.html">Components</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="back-to-top" aria-hidden="true">
+                <button>
+                    <span class="visually-hidden">Back to top</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+
+            <footer class="ntg-footer" role="contentinfo">
+                <div class="ntg-footer__wrapper">
+                    <div class="ntg-footer__top">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center gy-3">
+                                <div class="col-md-3 col-xl-2">
+                                    <a href="#" target="_blank" title="Opens in a new window">
+                                        <svg width="179" class="ntg-header__image" width="198" height="71">
+                                            <use href="assets/images/logos/logo-ntg-footer.svg#ntglogo"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-auto d-none d-md-block">
+                                    <div class="ntg-footer__social-section">
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-youtube"></i></a>
+                                        <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ntg-footer__mid">
+                        <div class="container">
+                            <div class="vertab-container">
+                                <div class="vertab-menu">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item"> Early Careers </a>
+                                        <a href="#" class="list-group-item"> Correction Careers </a>
+                                        <a href="#" class="list-group-item"> Environment Careers </a>
+                                        <a href="#" class="list-group-item"> Correction Careers </a>
+                                        <a href="#" class="list-group-item"> Early Careers </a>
+                                    </div>
+                                </div>
+
+                                <div id="accordion" class="vertab-accordion panel-group">
+                                    <div class="vertab-content">
+                                        <div class="ntg-footer__background">
+                                            <img src="assets/images/tradesmen.jpg" alt="Placeholder img" />
+                                        </div>
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse1">Early Careers</h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <div class="panel-description">
+                                                    <p>A job with the Department of Infrastructure, Planning and Logistics can help you excel your career in a place of boundless opportunities.</p>
+                                                    <p>Build your career by building the Territory.</p>
+                                                </div>
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="ntg-footer__background">
+                                            <img src="assets/images/migration.jpg" alt="Placeholder img" />
+                                        </div>
+                                        <div class="panel-heading" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse2">
+                                            <h4 class="panel-title">Correction Careers</h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="ntg-footer__background">
+                                            <img src="assets/images/ubirr-sunset.jpg" alt="Placeholder img" />
+                                        </div>
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse3">Environment Careers</h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse4">Correction Careers</h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vertab-content">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-bs-toggle="collapse" data-bs-parent="#accordion" data-bs-target="#collapse5">Early Careers</h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse small">
+                                            <div class="panel-body">
+                                                <ul class="list-flush list-chevron">
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                    <li><a href="#">Internal Link goes here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-md-none">
+                                <div class="ntg-footer__social-section">
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" title="Opens in a new window" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ntg-footer__bottom">
+                    <div class="container">
+                        <div class="row align-items-center small py-2 gy-1">
+                            <nav class="order-2 order-lg-1 col-lg" aria-label="footer">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy"
+                                            ><span>Copyright, disclaimer and privacy</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nt.gov.au/law/rights/freedom-of-information"
+                                            ><span>Freedom of information</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nt.gov.au/page/interpreter-services"><span>Interpreter services</span>&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Site map</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Contacts</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Feedback</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="order-1 order-lg-2 col-lg-auto">
+                                <p>© 2022 Northern Territory Government.</p>
+                                <p class="ntg-footer__last-updated">Page last updated 12th June 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</html>

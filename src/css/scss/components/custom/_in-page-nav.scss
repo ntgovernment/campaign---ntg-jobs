@@ -1,0 +1,42 @@
+#in-page-nav {
+    margin: 2rem 0 2.5rem 0;
+
+    h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 1rem;
+        list-style: none;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 4.25px;
+            left: 0;
+            bottom: 0;
+            width: 5px;
+            background-color: var(--current-theme-text-color, #{$ntg-arafura-blue});
+        }
+    }
+
+    li {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        display: inline-block;
+        @extend .small;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

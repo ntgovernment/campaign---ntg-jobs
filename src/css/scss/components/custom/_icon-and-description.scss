@@ -1,0 +1,39 @@
+@use "sass:map";
+
+@each $color, $map in $base-colors {
+    html[data-bs-theme="#{$color}"] {
+        @if map.get($map, "text-color") == $white {
+            .ntg-icon-and-description {
+                img {
+                    filter: brightness(0) invert(100%);
+                }
+            }
+        }
+    }
+}
+
+.ntg-icon-and-description {
+    color: var(--current-theme-text-color, $body-color);
+
+    &:not([data-bs-theme="default"]) {
+        background: var(--current-theme-color, transparent);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    @each $color, $map in $base-colors {
+        &[data-bs-theme="#{$color}"] {
+            @if map.get($map, "text-color") == $white {
+                img {
+                    filter: brightness(0) invert(100%);
+                }
+            }
+        }
+    }
+}
