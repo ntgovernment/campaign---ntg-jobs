@@ -1,5 +1,9 @@
 .has-side-nav {
     .ntg-image-carousel {
+        .flickity-carousel {
+            padding-bottom: 66px;
+        }
+        
         .flickity-prev-next-button {
             top: calc(100% - 25px);
 
