@@ -43,7 +43,7 @@
     --bs-body-color-rgb: 255, 255, 255;
 }
 
-.component-content [data-bs-theme=territory-stone] {
+.component-content [data-bs-theme=sand] {
     --bs-body-color: #2B292D;
     --bs-body-color-rgb: 43, 41, 45;
 }
@@ -144,7 +144,7 @@
 }
 
 @media not print {
-    .component-content [data-bs-theme=territory-stone] {
+    .component-content [data-bs-theme=sand] {
         --current-theme-main: #D7D2CB;
         --current-theme-color: #D7D2CB;
         --current-theme-color-rgb: 215, 210, 203;
@@ -220,7 +220,7 @@
         --bs-tertiary-rgb: var(--current-theme-tertiary-text);
     }
 
-    .component-content [data-bs-theme=territory-stone] [data-bs-theme=primary] {
+    .component-content [data-bs-theme=sand] [data-bs-theme=primary] {
         --current-theme-color: var(--current-theme-primary);
         --current-theme-text-color: var(--current-theme-primary-text);
         --current-theme-color-darker: var(--current-theme-primary-darker);
@@ -231,7 +231,7 @@
         --bs-link-hover-color-rgb: var(--current-theme-primary-link-hover-color-rgb);
     }
 
-    .component-content [data-bs-theme=territory-stone] [data-bs-theme=secondary] {
+    .component-content [data-bs-theme=sand] [data-bs-theme=secondary] {
         --current-theme-color: var(--current-theme-secondary);
         --current-theme-text-color: var(--current-theme-secondary-text);
         --current-theme-color-darker: var(--current-theme-secondary-darker);
@@ -242,7 +242,7 @@
         --bs-link-hover-color-rgb: var(--current-theme-secondary-link-hover-color-rgb);
     }
 
-    .component-content [data-bs-theme=territory-stone] [data-bs-theme=tertiary] {
+    .component-content [data-bs-theme=sand] [data-bs-theme=tertiary] {
         --current-theme-color: var(--current-theme-tertiary);
         --current-theme-text-color: var(--current-theme-tertiary-text);
         --current-theme-color-darker: var(--current-theme-tertiary-darker);
