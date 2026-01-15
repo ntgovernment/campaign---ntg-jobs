@@ -1,7 +1,29 @@
 table {
     @extend .table;
+}
 
-    tbody {
-        @extend .table-group-divider;
+.table {
+    > :not(caption) > * > * {
+        padding: 1.25rem 0.5rem;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &-striped {
+        > :not(caption) > * > * {
+            &:first-child {
+                padding-left: 0.5rem;
+            }
+
+            &:last-child {
+                padding-right: 0.5rem;
+            }
+        }
     }
 }
