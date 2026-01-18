@@ -1,0 +1,30 @@
+.ntg-show-hide-text {
+    &__button {
+        display: inline-block;
+        background: none;
+        appearance: none;
+        border: 0;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        span {
+            margin-right: 0.5rem;
+        }
+
+        i {
+            font-size: 0.9rem;
+        }
+
+        &[aria-expanded='true'] {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
