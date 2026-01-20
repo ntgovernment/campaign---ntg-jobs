@@ -892,15 +892,20 @@ function initFlickity() {
 
     carousels.forEach(function (carousel) {
         var alignment = carousel.getAttribute('data-align');
+        var pageDots = carousel.getAttribute('data-pagedots');
 
         if (!alignment) {
             alignment = 'center';
         }
 
+        if (!pageDots) {
+            pageDots = false;
+        }
+
         var flkty = new Flickity(carousel, {
             // options
             cellAlign: alignment,
-            pageDots: false,
+            pageDots: pageDots,
             lazyLoad: 2,
         });
 
