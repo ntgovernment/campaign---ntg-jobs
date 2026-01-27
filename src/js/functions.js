@@ -33,6 +33,7 @@ let currentWindowWidth = $(window).width(),
     initRedirectPopup();
     initSubMenu();
     initShowHideText();
+    initStepProgress();
 
     window.addEventListener(
         'resize',
@@ -1207,5 +1208,78 @@ function initShowHideText() {
                 text.textContent = 'Show more';
             }
         });
+    });
+}
+
+// Step Progress (Horizontal Interactive)
+function initStepProgress() {
+    const horizontalSteps = document.querySelectorAll('.ntg-step-progress-horizontal');
+
+    horizontalSteps.forEach(function (stepProgress) {
+        const steps = stepProgress.querySelectorAll('.ntg-step-progress__step');
+        const contentContainer = stepProgress.querySelector('.ntg-step-progress__content');
+
+        if (!contentContainer) return;
+
+        // Store content for each step
+        const stepContents = [];
+        steps.forEach(function (step, index) {
+            const contentId = step.getAttribute('data-step-content');
+            if (contentId) {
+                const contentEl = document.getElementById(contentId);
+                if (contentEl) {
+                    stepContents[index] = contentEl.innerHTML;
+                    contentEl.remove(); // Remove from DOM
+                }
+            }
+        });
+
+        // Function to update step states
+        function updateSteps(clickedIndex) {
+            steps.forEach(function (step, index) {
+                step.classList.remove('current', 'completed');
+
+                if (index < clickedIndex) {
+                    step.classList.add('completed');
+                } else if (index === clickedIndex) {
+                    step.classList.add('current');
+                }
+            });
+
+            // Update content
+            if (stepContents[clickedIndex]) {
+                contentContainer.innerHTML = stepContents[clickedIndex];
+            }
+        }
+
+        // Add click handlers
+        steps.forEach(function (step, index) {
+            step.addEventListener('click', function () {
+                updateSteps(index);
+            });
+
+            step.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    updateSteps(index);
+                }
+            });
+
+            // Make focusable
+            step.setAttribute('tabindex', '0');
+            step.setAttribute('role', 'button');
+        });
+
+        // Initialize with first step's content
+        const currentStep = stepProgress.querySelector('.ntg-step-progress__step.current');
+        if (currentStep) {
+            const currentIndex = Array.from(steps).indexOf(currentStep);
+            if (stepContents[currentIndex]) {
+                contentContainer.innerHTML = stepContents[currentIndex];
+            }
+        } else if (stepContents[0]) {
+            contentContainer.innerHTML = stepContents[0];
+            updateSteps(0);
+        }
     });
 }

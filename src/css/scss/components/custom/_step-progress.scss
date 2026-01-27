@@ -1,0 +1,270 @@
+// Step Progress Component
+// =========================================
+
+.ntg-step-progress {
+    // Horizontal variant
+    &.ntg-step-progress-horizontal {
+        .ntg-step-progress__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin-bottom: 2rem;
+
+            // Connector line
+            &::before {
+                content: '';
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                right: 25px;
+                height: 2px;
+                background-color: #d1d5db;
+                z-index: 0;
+            }
+        }
+
+        .ntg-step-progress__step {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover:not(.completed):not(.current) {
+                .ntg-step-progress__circle {
+                    background-color: #f3f4f6;
+                }
+            }
+
+            // Line segment between steps
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                width: 100%;
+                height: 2px;
+                background-color: #d1d5db;
+                z-index: -1;
+            }
+
+            // Completed state
+            &.completed {
+                &::after {
+                    background-color: #0f766e;
+                }
+
+                .ntg-step-progress__circle {
+                    background-color: #0f766e;
+                    color: white;
+                    border-color: #0f766e;
+                }
+            }
+
+            // Current state
+            &.current {
+                .ntg-step-progress__circle {
+                    background-color: #0f766e;
+                    color: white;
+                    border-color: #0f766e;
+                    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.2);
+                }
+
+                .ntg-step-progress__label {
+                    font-weight: 600;
+                    color: #0f766e;
+                }
+            }
+        }
+
+        .ntg-step-progress__circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            border: 2px solid #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #6b7280;
+            transition: all 0.3s ease;
+            margin-bottom: 0.75rem;
+        }
+
+        .ntg-step-progress__label {
+            font-size: 0.875rem;
+            color: #6b7280;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .ntg-step-progress__content {
+            min-height: 200px;
+            padding: 2rem;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    }
+
+    // Vertical variant
+    &.ntg-step-progress-vertical {
+        .ntg-step-progress__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .ntg-step-progress__step {
+            display: flex;
+            gap: 1.5rem;
+            position: relative;
+
+            // Connector line
+            &:not(:last-child)::before {
+                content: '';
+                position: absolute;
+                left: 17px;
+                top: 50px;
+                width: 2px;
+                height: calc(100% + 2rem);
+                background-color: #d1d5db;
+                z-index: 0;
+            }
+
+            // Completed state
+            &.completed {
+                &::before {
+                    background-color: #0f766e;
+                }
+
+                .ntg-step-progress__circle {
+                    background-color: #0f766e;
+                    color: white;
+                    border-color: #0f766e;
+                }
+            }
+
+            // Current state
+            &.current {
+                .ntg-step-progress__circle {
+                    background-color: #0f766e;
+                    color: white;
+                    border-color: #0f766e;
+                    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.2);
+                }
+            }
+        }
+
+        .ntg-step-progress__circle {
+            width: 35px;
+            height: 35px;
+            min-width: 35px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            border: 2px solid #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #6b7280;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ntg-step-progress__content {
+            flex: 1;
+
+            h3 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-bottom: 0.75rem;
+                color: #111827;
+            }
+
+            p {
+                margin-bottom: 0.75rem;
+                color: #4b5563;
+                line-height: 1.6;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // Responsive adjustments - Switch horizontal to vertical below large breakpoint
+    @media (max-width: 991.98px) {
+        &.ntg-step-progress-horizontal {
+            .ntg-step-progress__wrapper {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: stretch;
+
+                // Remove horizontal connector line
+                &::before {
+                    display: none;
+                }
+            }
+
+            .ntg-step-progress__step {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1.5rem;
+                position: relative;
+
+                // Remove horizontal segment lines
+                &:not(:last-child)::after {
+                    display: none;
+                }
+
+                // Add vertical connector line like vertical variant
+                &:not(:last-child)::before {
+                    content: '';
+                    position: absolute;
+                    left: 17px;
+                    top: 50px;
+                    width: 2px;
+                    height: calc(100% + 2rem);
+                    background-color: #d1d5db;
+                    z-index: 0;
+                }
+
+                // Completed state for vertical line
+                &.completed {
+                    &::before {
+                        background-color: #0f766e;
+                    }
+                }
+            }
+
+            .ntg-step-progress__circle {
+                width: 35px;
+                height: 35px;
+                min-width: 35px;
+                margin-bottom: 0;
+                font-size: 1rem;
+            }
+
+            .ntg-step-progress__label {
+                flex: 1;
+                text-align: left;
+                align-self: center;
+                font-size: 1rem;
+            }
+
+            .ntg-step-progress__content {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
