@@ -1211,9 +1211,9 @@ function initShowHideText() {
     });
 }
 
-// Step Progress (Horizontal Interactive)
 function initStepProgress() {
-    const horizontalSteps = document.querySelectorAll('.ntg-step-progress-horizontal');
+    const horizontalSteps = document.querySelectorAll('.ntg-step-progress--horizontal');
+    const lgBreakpoint = 992;
 
     horizontalSteps.forEach(function (stepProgress) {
         const steps = stepProgress.querySelectorAll('.ntg-step-progress__step');
@@ -1252,23 +1252,48 @@ function initStepProgress() {
             }
         }
 
+        // Function to enable/disable interactivity based on screen size
+        function toggleInteractivity() {
+            const isLargeScreen = window.innerWidth >= lgBreakpoint;
+
+            steps.forEach(function (step, index) {
+                if (isLargeScreen) {
+                    // Enable interactivity on large screens
+                    step.style.cursor = 'pointer';
+                    step.setAttribute('tabindex', '0');
+                    step.setAttribute('role', 'button');
+                } else {
+                    // Disable interactivity on small screens
+                    step.style.cursor = 'default';
+                    step.removeAttribute('tabindex');
+                    step.removeAttribute('role');
+                }
+            });
+        }
+
         // Add click handlers
         steps.forEach(function (step, index) {
             step.addEventListener('click', function () {
-                updateSteps(index);
-            });
-
-            step.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
+                // Only allow clicks on large screens
+                if (window.innerWidth >= lgBreakpoint) {
                     updateSteps(index);
                 }
             });
 
-            // Make focusable
-            step.setAttribute('tabindex', '0');
-            step.setAttribute('role', 'button');
+            step.addEventListener('keydown', function (e) {
+                // Only allow keyboard navigation on large screens
+                if (window.innerWidth >= lgBreakpoint && (e.key === 'Enter' || e.key === ' ')) {
+                    e.preventDefault();
+                    updateSteps(index);
+                }
+            });
         });
+
+        // Initialize interactivity
+        toggleInteractivity();
+
+        // Update interactivity on resize
+        window.addEventListener('resize', debounce(toggleInteractivity));
 
         // Initialize with first step's content
         const currentStep = stepProgress.querySelector('.ntg-step-progress__step.current');
