@@ -32,6 +32,7 @@ let currentWindowWidth = $(window).width(),
     initToNextSection();
     initRedirectPopup();
     initSubMenu();
+    initStepProgress();
 
     window.addEventListener(
         'resize',
@@ -1188,4 +1189,34 @@ function initSubMenu() {
             }
         }
     }
+}
+
+function initStepProgress() {
+    var progresses = document.querySelectorAll('.ntg-step-progress .nav-tabs');
+    if (!progresses) {
+        return false;
+    }
+
+    progresses.forEach(function (progress) {
+        var steps = progress.querySelectorAll('.nav-link');
+        var totalSteps = steps.length;
+
+        steps.forEach(function (step, index) {
+            step.addEventListener('click', function () {
+                var progressPercent = (index / (totalSteps - 1)) * 100;
+                if (progressPercent === 100) {
+                    progressPercent = 99; // set to 99% to prevent overflow
+                }
+                progress.style.setProperty('--progress-fill', progressPercent + '%');
+
+                for (let i = 0; i < steps.length; i++) {
+                    if (i < index) {
+                        steps[i].classList.add('completed');
+                    } else {
+                        steps[i].classList.remove('completed');
+                    }
+                }
+            });
+        });
+    });
 }
