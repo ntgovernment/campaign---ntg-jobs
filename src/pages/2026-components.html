@@ -396,7 +396,7 @@
                         </table>
                     </div>
 
-                    <section class="ntg-show-hide-text">
+                    <section class="ntg-show-hide-text mb-5">
                         <div class="ntg-show-hide-text__content">
                             <h4>While much of Australia shivers through the winter months of June&ndash;July, in the NT the sun is shining and the great outdoors beckon.</h4>
                             <p>
@@ -407,16 +407,50 @@
                         <div class="ntg-show-hide-text__hidden collapse" id="hidden-text">
                             <p>Even throughout the colder months, the Top End remains welcoming and warm, while the Red Centre greets you with sunny skies andperfect weather for exploring.</p>
                         </div>
-                        <button
-                            class="ntg-show-hide-text__button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#hidden-text"
-                            aria-expanded="false"
-                            aria-controls="hidden-text"
-                        >
+                        <button class="ntg-show-hide-text__button" type="button" data-bs-toggle="collapse" data-bs-target="#hidden-text" aria-expanded="false" aria-controls="hidden-text">
                             <span>Show more</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </button>
+                    </section>
+
+                    <section class="ntg-tab-content ntg-tab-content--horizontal" data-bs-theme="default">
+                        <ul class="nav nav-tabs" id="tab-nav" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link active"
+                                    id="tab-1-link"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#tab-1-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="tab-1-pane"
+                                    aria-selected="true"
+                                >
+                                    Tab one
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab-2-link" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">
+                                    Tab two
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab-3-link" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">
+                                    Tab three
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tab-content">
+                            <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="tab-1-tab" tabindex="0">
+                                <h4>While much of Australia shivers through the winter months of June&ndash;July, in the NT the sun is shining and the great outdoors beckon.</h4>
+                                <p>
+                                    During Australia's summer months, tropical storms fill the waterfalls in the Top End, and wildlife is at its most active. In the Red Centre, waterholes are ready to
+                                    reward you with a refreshing dip.
+                                </p>
+                                <p>Even throughout the colder months, the Top End remains welcoming and warm, while the Red Centre greets you with sunny skies andperfect weather for exploring.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="tab-2-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="tab-3-tab" tabindex="0">...</div>
+                        </div>
                     </section>
                 </div>
             </main>

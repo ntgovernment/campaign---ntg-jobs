@@ -1,0 +1,43 @@
+.ntg-tab-content {
+    .nav {
+        border-bottom: 2px solid $ntg-charcoal-grey-20;
+        margin-bottom: 2rem;
+
+        &-item {
+            margin-bottom: 0 !important;
+        }
+
+        &-link {
+            background-color: transparent;
+            color: $body-color;
+            font-weight: 500;
+            padding: 0.75rem 0.5rem;
+            border: none;
+            border-radius: 0;
+
+            &:hover {
+                color: var(--current-theme-primary, $ntg-top-end);
+            }
+
+            &:focus {
+                @include focus();
+            }
+
+            &.active {
+                background-color: transparent;
+                color: var(--current-theme-primary, $ntg-top-end);
+                position: relative;
+
+                &::after {
+                    content: '';
+                    background: var(--current-theme-primary, $ntg-top-end);
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1px;
+                }
+            }
+        }
+    }
+}
