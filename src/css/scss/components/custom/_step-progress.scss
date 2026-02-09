@@ -1,11 +1,12 @@
 .ntg-step-progress {
+    $this: &;
+
     .nav {
         justify-content: space-between;
         margin-bottom: 2rem;
         border-bottom: none;
         position: relative;
 
-        /* Progress Track */
         &::before {
             content: '';
             background-color: var(--current-theme-tertiary, $tertiary);
@@ -17,7 +18,6 @@
             z-index: 0;
         }
 
-        /* Progress Fill */
         &::after {
             content: '';
             background-color: var(--current-theme-secondary, $secondary);
@@ -57,6 +57,41 @@
             &.completed {
                 background-color: var(--current-theme-secondary, $secondary);
                 color: var(--current-theme-secondary-text, $secondary-text);
+            }
+        }
+    }
+
+    &--vertical {
+        #{$this}__wrapper {
+            display: flex;
+        }
+
+        .nav {
+            flex-direction: column;
+            margin-bottom: 0;
+            margin-right: 2rem;
+
+            &::before {
+                width: 5px;
+                height: 99%;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &::after {
+                width: 5px;
+                height: var(--progress-fill, 0%);
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 0.15s height linear;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 2rem !important;
+                }
             }
         }
     }
