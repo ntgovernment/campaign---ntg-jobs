@@ -7,7 +7,7 @@ table {
         > * > * {
             padding: 1rem 0.25rem;
             line-height: 1.4;
-            border-bottom: 1px solid $black;
+            border-bottom: 1px solid var(--current-theme-primary-text, $primary-text);
             box-shadow: none;
         }
 

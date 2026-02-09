@@ -11,14 +11,14 @@
 
         &-link {
             background-color: transparent;
-            color: $body-color;
+            color: var(--current-theme-primary-text, $primary-text);
             font-weight: 500;
             padding: 0.75rem 0.5rem;
             border: none;
             border-radius: 0;
 
             &:hover {
-                color: var(--current-theme-primary, $ntg-top-end);
+                color: var(--current-theme-secondary, $secondary);
             }
 
             &:focus {
@@ -27,12 +27,12 @@
 
             &.active {
                 background-color: transparent;
-                color: var(--current-theme-primary, $ntg-top-end);
+                color: var(--current-theme-secondary, $secondary);
                 position: relative;
 
                 &::after {
                     content: '';
-                    background: var(--current-theme-primary, $ntg-top-end);
+                    background: var(--current-theme-secondary, $secondary);
                     height: 2px;
                     position: absolute;
                     left: 0;
@@ -53,7 +53,7 @@
                 flex-basis: 25%;
                 flex-direction: column;
                 border-bottom: none;
-                border-right: 3px solid var(--current-theme-primary, $ntg-top-end);
+                border-right: 3px solid var(--current-theme-secondary, $secondary);
                 margin-bottom: 0;
                 margin-right: 2rem;
 
