@@ -1202,7 +1202,11 @@ function initStepProgress() {
         var totalSteps = steps.length;
 
         steps.forEach(function (step, index) {
-            step.addEventListener('click', function () {
+            step.addEventListener('shown.bs.tab', function () {
+                updateProgress();
+            });
+
+            function updateProgress() {
                 var progressPercent = (index / (totalSteps - 1)) * 100;
                 if (progressPercent === 100) {
                     progressPercent = 99; // set to 99% to prevent overflow
@@ -1216,7 +1220,7 @@ function initStepProgress() {
                         steps[i].classList.remove('completed');
                     }
                 }
-            });
+            }
         });
     });
 }
