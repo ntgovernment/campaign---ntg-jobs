@@ -33,6 +33,7 @@ let currentWindowWidth = $(window).width(),
     initRedirectPopup();
     initSubMenu();
     initStepProgress();
+    initFlipCards();
 
     window.addEventListener(
         'resize',
@@ -1222,5 +1223,49 @@ function initStepProgress() {
                 }
             }
         });
+    });
+}
+
+function initFlipCards() {
+    var flipCards = document.querySelectorAll('.ntg-image-flip-cards__card');
+    if (!flipCards.length) {
+        return false;
+    }
+
+    // Check if device supports touch
+    var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    flipCards.forEach(function (card) {
+        // For touch devices, use click/touch to toggle
+        if (isTouchDevice) {
+            card.addEventListener('click', function (e) {
+                // Don't flip if clicking on a link or button in the back
+                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button')) {
+                    if (!card.classList.contains('is-flipped')) {
+                        e.preventDefault();
+                    }
+                    return;
+                }
+
+                // Close all other flipped cards first
+                flipCards.forEach(function (otherCard) {
+                    if (otherCard !== card) {
+                        otherCard.classList.remove('is-flipped');
+                    }
+                });
+
+                // Toggle this card
+                card.classList.toggle('is-flipped');
+            });
+
+            // Close flipped cards when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.ntg-image-flip-cards__card')) {
+                    flipCards.forEach(function (card) {
+                        card.classList.remove('is-flipped');
+                    });
+                }
+            });
+        }
     });
 }
