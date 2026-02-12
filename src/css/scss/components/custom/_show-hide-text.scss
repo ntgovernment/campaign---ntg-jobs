@@ -33,7 +33,7 @@
             @include focus();
         }
 
-        &:not(.collapsed) {
+        &[aria-expanded='true'] {
             i {
                 transform: rotate(180deg);
             }
