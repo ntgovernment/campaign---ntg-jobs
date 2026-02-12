@@ -1,4 +1,7 @@
 .ntg-show-hide-text {
+    background-color: var(--current-theme-primary, transparent);
+    color: var(--current-theme-primary-text, $body-color);
+
     &__button {
         appearance: none;
         background: none;
