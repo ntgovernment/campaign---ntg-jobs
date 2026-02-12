@@ -874,9 +874,10 @@ function initResponsiveTable() {
     });
 
     document.querySelectorAll('#content table:not([class*="custom-table-"])').forEach(function (element) {
-        var parent = element.parentElement;
+        var parent1 = element.parentElement;
+        var parent2 = parent1.parentElement;
 
-        if (!parent.classList.contains('table-responsive')) {
+        if (!parent1.classList.contains('table-responsive') && !parent2.classList.contains('table-responsive')) {
             var div = document.createElement('div');
             div.classList.add('table-responsive');
             parent.insertBefore(div, element);
