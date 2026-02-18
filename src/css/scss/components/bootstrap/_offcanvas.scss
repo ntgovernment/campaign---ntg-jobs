@@ -34,6 +34,10 @@
         }
     }
 
+    &-title {
+        @include font-size($h4-font-size);
+    }
+
     &-body {
         padding-top: 0;
     }
