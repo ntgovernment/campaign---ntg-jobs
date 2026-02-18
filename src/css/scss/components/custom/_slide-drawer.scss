@@ -12,8 +12,9 @@
         position: fixed;
         z-index: 1000;
         top: 40%;
-        right: -50px;
-        transform: rotate(-90deg) translateX(50%);
+        right: 0;
+        transform: rotate(-90deg) translate(50%, -50%);
+        transform-origin: right center;
         transition: 0.2s background-color ease-in-out;
 
         &:hover {
