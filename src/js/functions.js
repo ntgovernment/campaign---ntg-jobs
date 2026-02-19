@@ -34,6 +34,7 @@ let currentWindowWidth = $(window).width(),
     initSubMenu();
     initStepProgress();
     initFlipCards();
+    initShowHideText();
 
     window.addEventListener(
         'resize',
@@ -1268,5 +1269,24 @@ function initFlipCards() {
                 }
             });
         }
+    });
+}
+
+function initShowHideText() {
+    var buttons = document.querySelectorAll('.ntg-show-hide-text__button');
+    if (!buttons) {
+        return false;
+    }
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var expanded = button.getAttribute('aria-expanded') === 'true' ? true : false;
+            var text = button.querySelector('span');
+            if (expanded) {
+                text.innerText = 'Show less';
+            } else {
+                text.innerText = 'Show more';
+            }
+        });
     });
 }
