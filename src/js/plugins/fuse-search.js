@@ -214,16 +214,20 @@ class NTGJobSearch {
                 break;
             case "renumeration_asc": 
                 results.sort((a, b) => {
-                    const aMinRenumeration = this._getSalaryDetails(a.vacancyDesignationList).minRenumeration;
-                    const bMinRenumeration = this._getSalaryDetails(b.vacancyDesignationList).minRenumeration;
+                    const aSalaryDetails = this._getSalaryDetails(a.vacancyDesignationList);
+                    const bSalaryDetails = this._getSalaryDetails(b.vacancyDesignationList);
+                    const aMinRenumeration = aSalaryDetails ? aSalaryDetails.minRenumeration : Infinity;
+                    const bMinRenumeration = bSalaryDetails ? bSalaryDetails.minRenumeration : Infinity;
 
                     return aMinRenumeration - bMinRenumeration;
                 });
                 break;
             case "renumeration_dsc":
                 results.sort((a, b) => {
-                    const aMaxRenumeration = this._getSalaryDetails(a.vacancyDesignationList).maxRenumeration;
-                    const bMaxRenumeration = this._getSalaryDetails(b.vacancyDesignationList).maxRenumeration;
+                    const aSalaryDetails = this._getSalaryDetails(a.vacancyDesignationList);
+                    const bSalaryDetails = this._getSalaryDetails(b.vacancyDesignationList);
+                    const aMaxRenumeration = aSalaryDetails ? aSalaryDetails.maxRenumeration : -Infinity;
+                    const bMaxRenumeration = bSalaryDetails ? bSalaryDetails.maxRenumeration : -Infinity;
 
                     return bMaxRenumeration - aMaxRenumeration;
                 });
@@ -289,6 +293,11 @@ class NTGJobSearch {
             let accordionItem = document.createElement("div");
             accordionItem.classList.add("accordion-item");
 
+            const salaryDetails = this._getSalaryDetails(vacancyDesignationList);
+            const salaryRangeHtml = salaryDetails && salaryDetails.salaryText 
+                ? `<div class="salaryRange">${salaryDetails.salaryText}</div>` 
+                : '';
+
             let dataTemplate = `<div class="accordion-header" id="heading-${rtfId}">
                 <a href="#" class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-${rtfId}" aria-expanded="false">
                     <div class="d-flex justify-content-between align-items-start w-100 pe-3">
@@ -300,9 +309,7 @@ class NTGJobSearch {
                         ${vacancyType}
                     </div>
                     
-                    <div class="salaryRange">
-                        ${this._getSalaryDetails(vacancyDesignationList) ? this._getSalaryDetails(vacancyDesignationList).salaryText : ''}
-                    </div>
+                    ${salaryRangeHtml}
                 </a>
             </div>
             <div id="collapse-${rtfId}" class="accordion-collapse multi-collapse accordion-item-content collapse" data-bs-parent="#jobsearchAccordion">
@@ -749,12 +756,39 @@ class NTGJobSearch {
                 }
             })
 
+            // Check if we have at least a designation
+            if (!minSalaryDesignation) {
+                return false;
+            }
+
             let salaryText;
 
+            // Helper function to build salary text for a designation
+            const buildDesignationText = (designation) => {
+                let text = designation.advertisedCode || '';
+                
+                if (designation.packageRange) {
+                    text += ` - Remuneration Package ${designation.packageRange}`;
+                    
+                    if (designation.salaryRange) {
+                        text += ` (including salary ${designation.salaryRange})`;
+                    }
+                }
+                
+                return text;
+            };
+
             if (minSalaryDesignation == maxSalaryDesignation) {
-                salaryText = `${minSalaryDesignation.advertisedCode} - Remuneration Package ${minSalaryDesignation.packageRange} (including salary ${minSalaryDesignation.salaryRange})`;
+                salaryText = buildDesignationText(minSalaryDesignation);
             } else {
-                salaryText = `${minSalaryDesignation.advertisedCode} - Remuneration Package ${minSalaryDesignation.packageRange} (including salary ${minSalaryDesignation.salaryRange}) To ${maxSalaryDesignation.advertisedCode} - Remuneration Package ${maxSalaryDesignation.packageRange} (including salary ${maxSalaryDesignation.salaryRange})`;
+                const minText = buildDesignationText(minSalaryDesignation);
+                const maxText = buildDesignationText(maxSalaryDesignation);
+                salaryText = `${minText} To ${maxText}`;
+            }
+            
+            // Don't return result if there's no text at all
+            if (!salaryText || !salaryText.trim()) {
+                return false;
             }
             
             return {
