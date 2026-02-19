@@ -363,7 +363,7 @@
                     </div>
                 </div>
 
-                <div id="fileResult" class="container py-5"></div>
+                <div id="fileResult" class="container py-5" data-search-json="./jobs.json"></div>
 
                 <!--@@ Breadcrumb @@-->
                 <!-- <nav aria-label="breadcrumb">
@@ -602,17 +602,40 @@
     <script>
         parseWordDocxFile();
 
-        function parseWordDocxFile(inputElement) {
+        async function parseWordDocxFile(inputElement) {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const fileId = urlParams.get('attachmentId');
-            const jobId = urlParams.get('id') || urlParams.get('jobId') || fileId;
+            const attachmentId = urlParams.get('attachmentId');
+            const rtfIdParam = urlParams.get('rtfId') || urlParams.get('id');
             var backBtn = document.getElementById('go-back');
             var applyBtn = document.getElementById('apply-now');
+            var fileResult = document.getElementById('fileResult');
 
-            // Set up the apply button URL if we have a job ID
-            if (jobId) {
-                const jobUrl = `https://jobs.nt.gov.au/Home/JobDetails?rtfId=${jobId}`;
+            // Fetch job data from API to get the rtfId
+            let jobRtfId = rtfIdParam;
+
+            if (!jobRtfId) {
+                try {
+                    const apiUrl = fileResult.getAttribute('data-search-json');
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+                    const jobs = data.vacancySearchResults || data;
+
+                    // Find the job by attachmentId or use the first job if no match
+                    if (attachmentId) {
+                        const matchedJob = jobs.find((job) => job.attachmentsList && job.attachmentsList.some((att) => att.attachmentId == attachmentId || att.id == attachmentId));
+                        if (matchedJob) {
+                            jobRtfId = matchedJob.rtfId;
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error fetching job data:', error);
+                }
+            }
+
+            // Set up the apply button URL if we have an rtfId
+            if (jobRtfId) {
+                const jobUrl = `https://jobs.nt.gov.au/Home/JobDetails?rtfId=${jobRtfId}`;
                 applyBtn.href = jobUrl;
                 applyBtn.style.display = 'inline-block';
             }

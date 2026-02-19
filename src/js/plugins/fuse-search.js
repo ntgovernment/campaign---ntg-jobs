@@ -328,7 +328,7 @@ class NTGJobSearch {
             specialInstructions && accordionBody.appendChild(this._createDescriptionRow("Special Instructions", specialInstructions));
 
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
-            attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments", positionNumber));
+            attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments", rtfId));
 
             const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978`;
             const jobUrlLinkedin = `https://jointheterritory.nt.gov.au/vacancy?id%3D${positionNumber}&banner%3D1322978`;
@@ -661,6 +661,7 @@ class NTGJobSearch {
      * @param {string} title | This will be used as the title for the row
      * @param {string | []} description | Can be string or array. If an array, it would not work unless specialDesc is defined
      * @param {String} specialDesc | location and attachments specialDesc available, will generate the descriptions based on those
+     * @param {String} vacancyNo | For attachments, this should be the rtfId of the job
      * @returns 
      */
     _createDescriptionRow(title, description, specialDesc, vacancyNo) {
@@ -709,7 +710,7 @@ class NTGJobSearch {
                     template = `<tr>
                         <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
                         <td>HTML</td>
-                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?attachmentId=${attachmentId}&id=${vacancyNo}" class="d-block text-nowrap view-online" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-eye ms-1"></i></a></td>` : "</td>"}
+                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?attachmentId=${attachmentId}&rtfId=${vacancyNo}" class="d-block text-nowrap view-online" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-eye ms-1"></i></a></td>` : "</td>"}
                     </tr>` + template;
                 }
 
