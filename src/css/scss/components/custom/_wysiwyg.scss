@@ -1,5 +1,6 @@
 .ntg-wysiwyg {
     img {
-        @extend .img-fluid;
+        width: 100%;
+        height: auto;
     }
 }
