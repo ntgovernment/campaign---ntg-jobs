@@ -224,6 +224,10 @@ $accesible-color-definitions: (
         'color': $ntg-east-arnhem,
         'accessible-color': $ntg-dark-gray,
     ),
+    'coastline': (
+        'color': $ntg-coastline,
+        'accessible-color': $black,
+    ),
     'desert-yam': (
         // to be deleted
         'color': $ntg-desert-yam,
@@ -348,6 +352,11 @@ $theme-color-definitions: (
         'primary': map.get($accesible-color-definitions, 'east-arnhem'),
         'secondary': map.get($accesible-color-definitions, 'territory-forest'),
         'tertiary': map.get($accesible-color-definitions, 'dark-blue'),
+    ),
+    'coastline': (
+        'primary': map.get($accesible-color-definitions, 'coastline'),
+        'secondary': map.get($accesible-color-definitions, 'dark-blue'),
+        'tertiary': map.get($accesible-color-definitions, 'territory-charcoal'),
     ),
     'desert-yam': (
         // to be deleted

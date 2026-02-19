@@ -74,8 +74,8 @@
     }
 
     &__back {
-        background-color: var(--current-theme-primary, $primary);
-        color: var(--current-theme-primary-text, $primary-text);
+        background-color: var(--current-theme-secondary, $secondary);
+        color: var(--current-theme-secondary-text, $secondary-text);
         display: flex;
         align-items: center;
         justify-content: center;
