@@ -3,7 +3,7 @@
     --accordion-background-color: var(--current-theme-text-color, #{$ntg-sand});
     --accordion-text-color: var(--current-theme-text-color-reverse, #{$ntg-dark-gray});
 
-    &:not([data-bs-theme="default"]) {
+    &:not([data-bs-theme='default']) {
         background-color: var(--current-theme-color);
     }
 }
@@ -22,6 +22,7 @@
 
     &-header {
         font-size: $font-size-base;
+        font-weight: 700;
 
         &:target {
             display: block;
