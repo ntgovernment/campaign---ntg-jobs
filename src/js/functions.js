@@ -881,7 +881,7 @@ function initResponsiveTable() {
         if (!parent1.classList.contains('table-responsive') && !parent2.classList.contains('table-responsive')) {
             var div = document.createElement('div');
             div.classList.add('table-responsive');
-            parent.insertBefore(div, element);
+            parent1.insertBefore(div, element);
             div.append(element);
         }
     });

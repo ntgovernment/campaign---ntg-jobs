@@ -6,7 +6,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
     $this: &;
     background-color: $black;
     position: relative;
-    
+
     // .ratio {
     //     &:before {
     //         padding-top: clamp(440px, var(--bs-aspect-ratio), 740px); // min and max banner size
@@ -15,16 +15,25 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
 
     &__overlay {
         position: relative;
-        
 
         &::after {
             content: '';
-            background: $black-gradient-1; 
+            background: $black-gradient-1;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+        }
+
+        &:empty {
+            min-height: 600px;
+            background-color: var(--current-theme-primary, $primary);
+            color: var(--current-theme-primary-text, $primary-text);
+
+            @include media-breakpoint-down(md) {
+                min-height: 400px;
+            }
         }
     }
 
@@ -64,7 +73,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
                 background: $black-gradient-3;
             }
         }
-        
+
         #{$this}__image {
             object-fit: cover;
             position: absolute;
