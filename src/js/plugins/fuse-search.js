@@ -328,7 +328,7 @@ class NTGJobSearch {
             specialInstructions && accordionBody.appendChild(this._createDescriptionRow("Special Instructions", specialInstructions));
 
             locationList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Locations", locationList, "location"));
-            attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments", positionNumber));
+            attachmentsList.length > 0 && accordionBody.appendChild(this._createDescriptionRow("Attachments", attachmentsList, "attachments", positionNumber, rtfId));
 
             const jobUrl = `https://jointheterritory.nt.gov.au/vacancy?id=${positionNumber}&banner=1322978`;
             const jobUrlLinkedin = `https://jointheterritory.nt.gov.au/vacancy?id%3D${positionNumber}&banner%3D1322978`;
@@ -663,7 +663,7 @@ class NTGJobSearch {
      * @param {String} specialDesc | location and attachments specialDesc available, will generate the descriptions based on those
      * @returns 
      */
-    _createDescriptionRow(title, description, specialDesc, vacancyNo) {
+    _createDescriptionRow(title, description, specialDesc, vacancyNo, rtfId) {
         let row = document.createElement("div");
         row.classList.add("row","mb-2");
 
@@ -709,7 +709,7 @@ class NTGJobSearch {
                     template = `<tr>
                         <td>${attachment.fileName && attachment.fileName.split("-")[0]}</td>
                         <td>HTML</td>
-                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?attachmentId=${attachmentId}&id=${vacancyNo}" class="d-block text-nowrap view-online" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-eye ms-1"></i></a></td>` : "</td>"}
+                        <td>${attachment.fileExtension == "docx" ? `<a href="${this.searchResultsWrapper.getAttribute("data-url-dochtml")}?attachmentId=${attachmentId}&id=${vacancyNo}&rtfId=${rtfId}" class="d-block text-nowrap view-online" target="_blank" rel="noopener" title="Opens in a new window">View Online<i class="fas fa-eye ms-1"></i></a></td>` : "</td>"}
                     </tr>` + template;
                 }
 
