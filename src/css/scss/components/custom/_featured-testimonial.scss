@@ -34,7 +34,7 @@
             z-index: 1;
         }
 
-        &:empty {
+        &:not(:has(img, video)) {
             background-color: var(--current-theme-primary, $primary);
             color: var(--current-theme-primary-text, $primary-text);
         }

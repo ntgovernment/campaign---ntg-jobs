@@ -17,7 +17,7 @@
             top: 0;
         }
 
-        &:empty {
+        &:not(:has(.ntg-banner__image, .ntg-banner__video)) {
             background-color: var(--current-theme-primary, $primary);
             color: var(--current-theme-primary-text, $primary-text);
         }

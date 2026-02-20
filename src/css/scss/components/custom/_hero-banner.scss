@@ -26,7 +26,7 @@ body.homepage .page-header-container + main > :first-child:is(.ntg-hero-banner) 
             right: 0;
         }
 
-        &:empty {
+        &:not(:has(.ntg-hero-banner__image, .ntg-hero-banner__video)) {
             min-height: 600px;
             background-color: var(--current-theme-primary, $primary);
             color: var(--current-theme-primary-text, $primary-text);
