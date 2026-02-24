@@ -2,7 +2,7 @@
     $this: &;
     color: $white;
     position: relative;
-    
+
     &__background {
         position: absolute;
         top: 0;
@@ -33,6 +33,11 @@
             right: 20px;
             z-index: 1;
         }
+
+        &:not(:has(img, video)) {
+            background-color: var(--current-theme-primary, $primary);
+            color: var(--current-theme-primary-text, $primary-text);
+        }
     }
 
     &__content {
@@ -44,7 +49,7 @@
             @include media-breakpoint-up(lg) {
                 max-width: calc(100% * (2 / 3));
             }
-        
+
             @include media-breakpoint-up(xl) {
                 max-width: 50%;
             }
@@ -60,11 +65,11 @@
             @include font-size($h4-font-size);
             padding-left: calc(1rem + 32px);
             position: relative;
-            
+
             @include media-breakpoint-down(lg) {
                 margin-bottom: 0.75rem;
             }
-    
+
             &::before {
                 @extend .fa;
                 content: '\f10d';
