@@ -267,7 +267,9 @@ class NTGJobSearch {
         }
 
         if(results.length <= 0) {
-            this.searchResultsWrapper.innerHTML = "<p class='small'>There are no jobs for the search. Try searching something else or try again later</p>"; 
+            const urlWithoutParams = window.location.origin + window.location.pathname;
+            
+            this.searchResultsWrapper.innerHTML = `<p class='small'>Nothing popped up that matched your search. Stay with us and search all <a href='https://jointheterritory.nt.gov.au/work/work-for-ntg/job-search'>NT Government jobs.</a></p>`; 
             
             $(this.searchResultsNumber).html(`${results.length} results`);
 
