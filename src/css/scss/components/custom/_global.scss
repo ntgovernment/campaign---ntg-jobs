@@ -50,3 +50,38 @@ input[type="search"]::-webkit-search-results-decoration {
 main {
     position: relative;
 }
+
+blockquote {
+    position: relative;
+    border-left: 3px solid #d0d0d0;
+    padding: 0 3rem 0rem 1rem;
+    margin: 1.5rem 0 1.5rem 3.5rem;
+    
+    &::before {
+        content: '\f10d';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        position: absolute;
+        left: -3.5rem;
+        top: -10px;
+        font-size: 3rem;
+        color: var(--current-theme-primary-text, #d0d0d0);
+        line-height: 1;
+    }
+    
+    &::after {
+        content: '\f10e';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        position: absolute;
+        right: 0.25rem;
+        bottom: -15px;
+        font-size: 3rem;
+        color: var(--current-theme-primary-text, #d0d0d0);
+        line-height: 1;
+    }
+    
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
