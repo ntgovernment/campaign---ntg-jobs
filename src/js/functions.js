@@ -1,4 +1,5 @@
 let mapTabCarousel;
+let tabContentCarousel;
 let jobCarouselMenu;
 let currentWindowWidth = $(window).width(),
     currentWindowHeight = $(window).height();
@@ -100,6 +101,7 @@ function initJobsSlidingMenu() {
 function initSlidingMenu() {
     const mq = window.matchMedia('(max-width: 993px)');
     const mapTabs = document.getElementById('map-tab');
+    const tabContentTabs = document.getElementById('tab-nav');
 
     if (mapTabs) {
         if (mq.matches) {
@@ -120,6 +122,28 @@ function initSlidingMenu() {
         } else {
             mapTabCarousel && mapTabCarousel.destroy();
             mapTabCarousel = undefined;
+        }
+    }
+
+    if (tabContentTabs) {
+        if (mq.matches) {
+            if (!tabContentCarousel) {
+                tabContentCarousel = new Flickity(tabContentTabs, {
+                    cellAlign: 'left',
+                    percentPosition: false,
+                    pageDots: false,
+                    contain: true,
+                });
+
+                tabContentCarousel.on('change', (index) => {
+                    tabContentCarousel.cells[index].element.querySelector('button').dispatchEvent(new Event('click'));
+                });
+
+                tabContentCarousel.select(0);
+            }
+        } else {
+            tabContentCarousel && tabContentCarousel.destroy();
+            tabContentCarousel = undefined;
         }
     }
 }

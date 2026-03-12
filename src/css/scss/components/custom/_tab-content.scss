@@ -73,5 +73,35 @@
                 flex-basis: 75%;
             }
         }
+
+        @include media-breakpoint-down(lg) {
+            .nav {
+                &.flickity-enabled {
+                    display: block;
+                    padding: 0 50px;
+                    border-bottom: 2px solid $ntg-charcoal-grey-20;
+
+                    .nav-item {
+                        width: 100%;
+                        padding-bottom: var(--bs-nav-tabs-border-width, 3px);
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+
+                    .flickity-button {
+                        background-color: transparent;
+                        border: 2px solid var(--current-theme-secondary, $secondary);
+                        width: 30px;
+                        height: 30px;
+
+                        &-icon {
+                            fill: var(--current-theme-secondary, $secondary);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
