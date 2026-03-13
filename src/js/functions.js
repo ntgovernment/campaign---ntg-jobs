@@ -101,7 +101,7 @@ function initJobsSlidingMenu() {
 function initSlidingMenu() {
     const mq = window.matchMedia('(max-width: 993px)');
     const mapTabs = document.getElementById('map-tab');
-    const tabContentTabs = document.getElementById('tab-nav');
+    const tabContentTabsGroup = document.querySelectorAll('.nav-tabs');
 
     if (mapTabs) {
         if (mq.matches) {
@@ -125,26 +125,29 @@ function initSlidingMenu() {
         }
     }
 
-    if (tabContentTabs) {
-        if (mq.matches) {
-            if (!tabContentCarousel) {
-                tabContentCarousel = new Flickity(tabContentTabs, {
-                    cellAlign: 'left',
-                    percentPosition: false,
-                    pageDots: false,
-                    contain: true,
-                });
+    if (tabContentTabsGroup) {
+        tabContentTabsGroup.forEach((tabContentTabs) => {
+            if (mq.matches) {
+                if (!tabContentCarousel) {
+                    tabContentCarousel = new Flickity(tabContentTabs, {
+                        cellAlign: 'left',
+                        percentPosition: false,
+                        pageDots: false,
+                        contain: true,
+                    });
 
-                tabContentCarousel.on('change', (index) => {
-                    tabContentCarousel.cells[index].element.querySelector('button').dispatchEvent(new Event('click'));
-                });
+                    tabContentCarousel.on('change', (index) => {
+                        tabContentCarousel.cells[index].element.querySelector('button').dispatchEvent(new Event('click'));
+                    });
 
-                tabContentCarousel.select(0);
+                    tabContentCarousel.select(0);
+                }
+            } else {
+                tabContentCarousel && tabContentCarousel.destroy();
+                tabContentCarousel = undefined;
             }
-        } else {
-            tabContentCarousel && tabContentCarousel.destroy();
-            tabContentCarousel = undefined;
-        }
+        });
+        
     }
 }
 
