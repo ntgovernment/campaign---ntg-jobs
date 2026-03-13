@@ -16,15 +16,11 @@
             }
 
             &.previous {
-                @media (min-width: 1500px) {
-                    left: calc(50% - 55px);
-                }
+                left: calc(50% - 55px);
             }
 
             &.next {
-                @media (min-width: 1500px) {
-                    right: calc(50% - 55px);
-                }
+                right: calc(50% - 55px);
             }
         }
     }
@@ -40,9 +36,7 @@
     }
 
     .flickity-carousel {
-        @media (max-width: 1500px) {
-            padding-bottom: 66px;
-        }
+        padding-bottom: 66px;
     }
 
     .flickity-viewport {
@@ -102,13 +96,12 @@
     }
 
     .flickity-prev-next-button {
+        top: calc(100% - 25px);
+
         @include media-breakpoint-down(md) {
             top: calc(100% - 20px);
         }
 
-        @media (max-width: 1500px) {
-            top: calc(100% - 25px);
-        }
 
         &.previous {
             left: calc(50% - 55px);
@@ -117,9 +110,6 @@
                 left: calc(50% - 45px);
             }
 
-            @media (min-width: 1500px) {
-                left: -66px;
-            }
         }
 
         &.next {
@@ -127,10 +117,6 @@
 
             @include media-breakpoint-down(md) {
                 right: calc(50% - 45px);
-            }
-
-            @media (min-width: 1500px) {
-                right: -66px;
             }
         }
     }
