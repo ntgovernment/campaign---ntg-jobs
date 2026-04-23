@@ -716,7 +716,7 @@ function initInPageNav() {
     }
 
     var list = inPageNav.querySelector('ul');
-    var headings = document.querySelectorAll('#content h2:not(.excludeAnchorList h2)');
+    var headings = document.querySelectorAll('#content h2:not(.excludeAnchorList)');
     if (!headings) {
         return false;
     }
