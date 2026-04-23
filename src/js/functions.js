@@ -100,6 +100,7 @@ function initJobsSlidingMenu() {
 function initSlidingMenu() {
     const mq = window.matchMedia('(max-width: 993px)');
     const mapTabs = document.getElementById('map-tab');
+    const tabContentTabsGroup = document.querySelectorAll('.ntg-tab-content .nav-tabs');
 
     if (mapTabs) {
         if (mq.matches) {
@@ -121,6 +122,37 @@ function initSlidingMenu() {
             mapTabCarousel && mapTabCarousel.destroy();
             mapTabCarousel = undefined;
         }
+    }
+
+    if (tabContentTabsGroup && tabContentTabsGroup.length) {
+        // store flickity instances on each node so multiple groups are handled
+        tabContentTabsGroup.forEach((tabContentTabs) => {
+            // use property on element to track instance
+            const instanceKey = '_flickitySlidingMenu';
+
+            if (mq.matches) {
+                if (!tabContentTabs[instanceKey]) {
+                    const flkty = new Flickity(tabContentTabs, {
+                        cellAlign: 'left',
+                        percentPosition: false,
+                        pageDots: false,
+                        contain: true,
+                    });
+
+                    flkty.on('change', (index) => {
+                        flkty.cells[index].element.querySelector('button').dispatchEvent(new Event('click'));
+                    });
+
+                    flkty.select(0);
+                    tabContentTabs[instanceKey] = flkty;
+                }
+            } else {
+                if (tabContentTabs[instanceKey]) {
+                    tabContentTabs[instanceKey].destroy();
+                    delete tabContentTabs[instanceKey];
+                }
+            }
+        });
     }
 }
 
