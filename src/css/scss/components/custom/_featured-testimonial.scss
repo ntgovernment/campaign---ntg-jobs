@@ -65,6 +65,8 @@
             @include font-size($h4-font-size);
             padding-left: calc(1rem + 32px);
             position: relative;
+            border-left: none;
+            margin-left: 0;
 
             @include media-breakpoint-down(lg) {
                 margin-bottom: 0.75rem;
