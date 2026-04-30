@@ -1,7 +1,6 @@
 @media print {
-    
     a:not([data-bs-toggle])::after {
-        content: ' Link: ' attr(href) ;
+        content: ' Link: ' attr(href);
         display: block;
         overflow-wrap: anywhere;
         font-family: $font-ubuntu !important;
@@ -92,15 +91,15 @@
                 &::after {
                     opacity: 1;
                 }
-            
+
                 .card-body {
                     opacity: 1;
                 }
-            
+
                 .card-link {
                     &::after {
                         padding-left: 0;
-                    } 
+                    }
                 }
             }
         }
@@ -199,7 +198,7 @@
     .nav-link.active,
     .ntg-accordion,
     .ntg-related-pages {
-        background-color: #FFF !important;
+        background-color: #fff !important;
         color: #000 !important;
     }
 
@@ -245,7 +244,7 @@
     }
 
     .ntg-map-tabs .nav-tabs {
-        justify-content: flex-start;    
+        justify-content: flex-start;
     }
 
     .tab-pane__top {
@@ -254,6 +253,33 @@
 
     .ntg-banner--fade + main {
         margin-top: 0 !important;
+    }
+
+    .ntg-show-hide-text {
+        &__hidden {
+            display: block !important;
+        }
+
+        &__button {
+            display: none !important;
+        }
+    }
+
+    .ntg-tab-content,
+    .ntg-step-progress {
+        .nav {
+            display: none !important;
+        }
+
+        .tab-pane {
+            display: block !important;
+        }
+    }
+
+    .ntg-content-slider {
+        &__content {
+            padding: 0 !important;
+        }
     }
 
     .ntg-main-nav,
@@ -271,7 +297,9 @@
     #in-page-nav,
     .ntg-jobs-subsite__menu,
     #pagination,
-    .video-control {
+    .video-control,
+    .ntg-slide-drawer button,
+    .ntg-image-flip-cards {
         display: none !important;
     }
 }
