@@ -1,0 +1,47 @@
+.ntg-single-job {
+    background-color: var(--current-theme-primary, transparent);
+    color: var(--current-theme-primary-text, $body-color);
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -9999px;
+        right: -9999px;
+        bottom: 0;
+        background: var(--current-theme-primary, transparent);
+        z-index: -1;
+    }
+
+    .btn.btn-apply-now {
+        --bs-btn-color: var(--current-theme-secondary-text, #fff);
+        --bs-btn-bg: var(--current-theme-secondary, #566a2e);
+        --bs-btn-border-color: var(--current-theme-secondary, #566a2e);
+        --bs-btn-hover-bg: var(--current-theme-secondary-darker, #222a12);
+        --bs-btn-hover-border-color: var(--current-theme-secondary-darker, #222a12);
+        --bs-btn-hover-color: var(--current-theme-secondary-darker-text, #fff);
+        --bs-btn-active-bg: var(--current-theme-secondary-darker, #222a12);
+        --bs-btn-active-border-color: var(--current-theme-secondary-darker, #222a12);
+        --bs-btn-active-color: var(--current-theme-secondary-darker-text, #fff);
+    }
+
+    .table-responsive:not([data-bs-theme='default']) .table-striped > tbody > tr:nth-child(2n + 1) > *,
+    .table-responsive:not([data-bs-theme='default']) .table > tbody > tr:nth-child(2n + 1) > *,
+    .table-responsive:not([data-bs-theme='default']) table > tbody > tr:nth-child(2n + 1) > * {
+        background-color: unset;
+        color: unset;
+    }
+    .table-responsive:not([data-bs-theme='default']) .table-striped > tbody > tr:nth-child(2n) > *,
+    .table-responsive:not([data-bs-theme='default']) .table > tbody > tr:nth-child(2n) > *,
+    .table-responsive:not([data-bs-theme='default']) table > tbody > tr:nth-child(2n) > * {
+        background-color: unset;
+        color: unset;
+    }
+    .table-responsive:not([data-bs-theme='default']) .table-striped > tbody > tr > *,
+    .table-responsive:not([data-bs-theme='default']) .table > tbody > tr > *,
+    .table-responsive:not([data-bs-theme='default']) table > tbody > tr > * {
+        border-bottom: 1px solid var(--current-theme-primary-text, #2b292d);
+    }
+}

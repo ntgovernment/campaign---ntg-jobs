@@ -1,0 +1,109 @@
+.ntg-tab-content {
+    $this: &;
+
+    .nav {
+        border-bottom: 2px solid $ntg-charcoal-grey-20;
+        margin-bottom: 2rem;
+
+        &-item {
+            margin-bottom: 0 !important;
+        }
+
+        &-link {
+            background-color: transparent;
+            color: var(--current-theme-primary-text, $primary-text);
+            font-weight: 500;
+            padding: 0.75rem 0.5rem;
+            border: none;
+            border-radius: 0;
+
+            &:hover {
+                color: var(--current-theme-secondary, $secondary);
+            }
+
+            &:focus {
+                @include focus();
+            }
+
+            &.active {
+                background-color: transparent;
+                color: var(--current-theme-secondary, $secondary);
+                position: relative;
+
+                &::after {
+                    content: '';
+                    background: var(--current-theme-secondary, $secondary);
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1px;
+                }
+            }
+        }
+    }
+
+    &--vertical {
+        @include media-breakpoint-up(lg) {
+            #{$this}__wrapper {
+                display: flex;
+            }
+
+            .nav {
+                flex-basis: 25%;
+                flex-direction: column;
+                border-bottom: none;
+                border-right: 3px solid var(--current-theme-secondary, $secondary);
+                margin-bottom: 0;
+                margin-right: 2rem;
+
+                &-link {
+                    text-align: left;
+                    padding-left: 0;
+
+                    &.active {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+
+            .tab-content {
+                flex-basis: 75%;
+            }
+        }
+
+        
+    }
+
+    @include media-breakpoint-down(lg) {
+        .nav {
+            &.flickity-enabled {
+                display: block;
+                padding: 0 50px;
+                border-bottom: 2px solid $ntg-charcoal-grey-20;
+
+                .nav-item {
+                    width: 100%;
+                    padding-bottom: var(--bs-nav-tabs-border-width, 3px);
+
+                    button {
+                        width: 100%;
+                    }
+                }
+
+                .flickity-button {
+                    background-color: transparent;
+                    border: 2px solid var(--current-theme-secondary, $secondary);
+                    width: 30px;
+                    height: 30px;
+
+                    &-icon {
+                        fill: var(--current-theme-secondary, $secondary);
+                    }
+                }
+            }
+        }
+    }
+}

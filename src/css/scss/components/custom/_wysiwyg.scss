@@ -1,0 +1,9 @@
+.ntg-wysiwyg {
+    background-color: var(--current-theme-primary, transparent);
+    color: var(--current-theme-primary-text, $body-color);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

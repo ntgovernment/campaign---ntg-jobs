@@ -1,0 +1,42 @@
+.ntg-show-hide-text {
+    background-color: var(--current-theme-primary, transparent);
+    color: var(--current-theme-primary-text, $body-color);
+
+    &__button {
+        appearance: none;
+        background: none;
+        border: none;
+        padding: 0;
+        color: var(--current-theme-primary-text, $primary-text);
+        font-weight: 700;
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+
+        span {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+        }
+
+        i {
+            font-size: 0.8rem;
+        }
+
+        &:hover {
+            span {
+                text-decoration: none;
+            }
+        }
+
+        &:focus {
+            @include focus();
+        }
+
+        &[aria-expanded='true'] {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

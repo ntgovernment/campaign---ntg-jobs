@@ -1,0 +1,28 @@
+.ntg-slide-drawer {
+    button[data-bs-toggle='offcanvas'] {
+        appearance: none;
+        background-color: var(--current-theme-secondary, $secondary);
+        color: var(--current-theme-secondary-text, $secondary-text);
+        border: none;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 0.25rem 0.75rem;
+        font-weight: 500;
+        white-space: nowrap;
+        position: fixed;
+        z-index: 1000;
+        top: 40%;
+        right: 0;
+        transform: rotate(-90deg) translate(50%, -50%);
+        transform-origin: right center;
+        transition: 0.2s background-color ease-in-out;
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--current-theme-secondary, $secondary) 90%, $white 10%);
+        }
+
+        &:focus {
+            @include focus();
+        }
+    }
+}

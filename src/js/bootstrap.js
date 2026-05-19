@@ -8,7 +8,7 @@ window.bootstrap.Carousel = require('bootstrap/js/dist/carousel');
 window.bootstrap.Collapse = require('bootstrap/js/dist/collapse');
 require('bootstrap/js/dist/dropdown');
 window.bootstrap.Modal = require('bootstrap/js/dist/modal');
-// require('bootstrap/js/dist/offcanvas');
+require('bootstrap/js/dist/offcanvas');
 // require('bootstrap/js/dist/popover');
 // require('bootstrap/js/dist/scrollspy');
 require('bootstrap/js/dist/tab');
@@ -16,5 +16,5 @@ require('bootstrap/js/dist/tab');
 window.bootstrap.Tooltip = require('bootstrap/js/dist/tooltip');
 
 //Enable tooltips
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));

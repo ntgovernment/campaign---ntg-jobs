@@ -1,0 +1,86 @@
+.ntg-content-slider {
+    &__content {
+        background-color: var(--current-theme-secondary, $secondary);
+        color: var(--current-theme-secondary-text, $secondary-text);
+        padding: 2rem;
+    }
+
+    .flickity-carousel {
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 54px;
+        }
+    }
+
+    .flickity-button {
+        background-color: transparent;
+        border: 3px solid var(--current-theme-primary-text, $primary-text);
+        transition: 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+
+        &-icon {
+            fill: var(--current-theme-primary-text, $primary-text);
+            width: 40%;
+            height: 40%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.2s fill ease-in-out;
+        }
+
+        &:hover {
+            background-color: var(--current-theme-primary-text, $primary-text);
+
+            .flickity-button-icon {
+                fill: var(--current-theme-primary-text-reverse, $primary-text-reverse);
+            }
+        }
+
+        &:focus {
+            @include focus();
+        }
+
+        &.previous {
+            left: -10px;
+            transform: translate(-100%, -50%);
+
+            @include media-breakpoint-down(lg) {
+                top: 100%;
+                left: calc(50% - 5px);
+                transform: translate(-100%, -100%);
+            }
+        }
+
+        &.next {
+            right: -10px;
+            transform: translate(100%, -50%);
+
+            @include media-breakpoint-down(lg) {
+                top: 100%;
+                right: calc(50% - 5px);
+                transform: translate(100%, -100%);
+            }
+        }
+    }
+
+    .flickity-page-dots {
+        width: auto;
+        bottom: 2rem;
+        right: 2rem;
+
+        @include media-breakpoint-down(lg) {
+            bottom: calc(2rem + 54px);
+        }
+
+        .dot {
+            background-color: var(--current-theme-secondary-text-reverse, $secondary-text-reverse);
+            border: 1px solid var(--current-theme-secondary-text, $secondary-text);
+            width: 13px;
+            height: 13px;
+            margin: 0 5px;
+            opacity: 1;
+
+            &.is-selected {
+                background-color: var(--current-theme-secondary-text, $secondary-text);
+            }
+        }
+    }
+}

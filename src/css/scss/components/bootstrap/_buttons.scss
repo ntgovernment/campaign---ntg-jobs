@@ -51,12 +51,7 @@
 .btn {
     // TODO: adapt to colour theme
 
-    transition:
-        color 0.15s ease-in-out,
-        background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out,
-        padding 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, padding 0.15s ease-in-out;
 
     &:focus {
         @include focus();
@@ -70,9 +65,9 @@
 }
 
 .btn-chevron-right {
-    @include btn-icon("\f054");
+    @include btn-icon('\f054');
 }
 
 .btn-external {
-    @include btn-icon("\f35d", $animation: false);
+    @include btn-icon('\f35d', $animation: false);
 }

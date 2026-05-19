@@ -212,7 +212,7 @@
     --bs-btn-disabled-border-color: #212529;
 }
 
-.component-content .btn-territory-stone {
+.component-content .btn-sand {
     --bs-btn-color: #2B292D;
     --bs-btn-bg: #D7D2CB;
     --bs-btn-border-color: #D7D2CB;
@@ -705,7 +705,7 @@
     --bs-gradient: none;
 }
 
-.component-content .btn-outline-territory-stone {
+.component-content .btn-outline-sand {
     --bs-btn-color: #D7D2CB;
     --bs-btn-border-color: #D7D2CB;
     --bs-btn-hover-color: #2B292D;
@@ -1045,7 +1045,7 @@
     --bs-gradient: none;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-outline-default {
+.component-content [data-bs-theme=sand] .btn-outline-default {
     --bs-btn-color: #2B292D;
     --bs-btn-border-color: #2B292D;
     --bs-btn-hover-color: #fff;
@@ -1402,7 +1402,7 @@
     --bs-gradient: none;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-primary {
+.component-content [data-bs-theme=sand] .btn-primary {
     --bs-btn-color: #2B292D;
     --bs-btn-bg: #D7D2CB;
     --bs-btn-border-color: #D7D2CB;
@@ -1419,7 +1419,7 @@
     --bs-btn-disabled-border-color: #D7D2CB;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-outline-primary {
+.component-content [data-bs-theme=sand] .btn-outline-primary {
     --bs-btn-color: #D7D2CB;
     --bs-btn-border-color: #D7D2CB;
     --bs-btn-hover-color: #2B292D;
@@ -1436,7 +1436,7 @@
     --bs-gradient: none;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-secondary {
+.component-content [data-bs-theme=sand] .btn-secondary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #104735;
     --bs-btn-border-color: #104735;
@@ -1453,7 +1453,7 @@
     --bs-btn-disabled-border-color: #104735;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-outline-secondary {
+.component-content [data-bs-theme=sand] .btn-outline-secondary {
     --bs-btn-color: #104735;
     --bs-btn-border-color: #104735;
     --bs-btn-hover-color: #fff;
@@ -1470,7 +1470,7 @@
     --bs-gradient: none;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-tertiary {
+.component-content [data-bs-theme=sand] .btn-tertiary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #919191;
     --bs-btn-border-color: #919191;
@@ -1487,7 +1487,7 @@
     --bs-btn-disabled-border-color: #919191;
 }
 
-.component-content [data-bs-theme=territory-stone] .btn-outline-tertiary {
+.component-content [data-bs-theme=sand] .btn-outline-tertiary {
     --bs-btn-color: #919191;
     --bs-btn-border-color: #919191;
     --bs-btn-hover-color: #2B292D;
