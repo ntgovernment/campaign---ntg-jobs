@@ -212,7 +212,7 @@
             left: 0;
             top: 100%;
             display: none;
-            background-color: color-mix(in srgb, var(--current-theme-color, #{$ntg-territory-stone}), $white 20%);
+            background-color: color-mix(in srgb, var(--current-theme-color, #{$ntg-sand}), $white 20%);
             padding: 0;
             list-style-type: none;
             width: 300px;
@@ -262,7 +262,7 @@
                     }
 
                     > a {
-                        background-color: var(--current-theme-color, #{$ntg-territory-stone});
+                        background-color: var(--current-theme-color, #{$ntg-sand});
                         text-decoration: underline;
                         text-underline-offset: 5px;
                         text-decoration-thickness: 2px;
@@ -271,7 +271,7 @@
 
                 &.active {
                     > a {
-                        background-color: var(--current-theme-color, #{$ntg-territory-stone});
+                        background-color: var(--current-theme-color, #{$ntg-sand});
                         font-weight: bold !important;
                     }
                 }

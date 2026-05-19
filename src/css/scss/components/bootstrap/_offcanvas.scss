@@ -1,0 +1,50 @@
+.offcanvas {
+    background-color: var(--current-theme-secondary, $secondary);
+    color: var(--current-theme-secondary-text, $secondary-text);
+
+    &.offcanvas-start {
+        border-right: none;
+    }
+
+    &-header {
+        padding-top: calc($offcanvas-padding-y + 1rem);
+
+        .btn-close {
+            background: none;
+            opacity: 1;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                @extend .fa;
+                content: '\f00d';
+                color: var(--current-theme-secondary-text, $secondary-text);
+                transition: 0.2s color ease-in-out;
+            }
+
+            &:hover {
+                &::before {
+                    color: var(--current-theme-primary, $primary);
+                }
+            }
+        }
+    }
+
+    &-title {
+        @include font-size($h4-font-size);
+    }
+
+    &-body {
+        padding-top: 0;
+    }
+
+    &-backdrop {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
