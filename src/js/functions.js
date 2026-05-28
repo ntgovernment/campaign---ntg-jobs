@@ -340,10 +340,10 @@ function initInteractiveMap() {
 
 function initSumoSelect() {
     const selectWithMultipleSelection = $('#vacancySearchForm select[multiple]');
-    selectWithMultipleSelection.SumoSelect({ search: true, searchText: 'Enter here.' });
+    selectWithMultipleSelection.SumoSelect({ search: true, searchText: 'Enter here.', forceCustomRendering: true });
 
     const selectWithSingleSelection = $('#vacancySearchForm select:not([multiple])');
-    selectWithSingleSelection.SumoSelect();
+    selectWithSingleSelection.SumoSelect({ forceCustomRendering: true });
 }
 
 function initStickyHeader() {
