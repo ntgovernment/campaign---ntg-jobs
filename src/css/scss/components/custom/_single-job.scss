@@ -2,7 +2,6 @@
     background-color: var(--current-theme-primary, transparent);
     color: var(--current-theme-primary-text, $body-color);
     position: relative;
-    z-index: 0;
 
     &::before {
         content: '';
